@@ -186,8 +186,8 @@
   padding-top: 1.35rem;
   border-top: 1px solid var(--border-subtle);
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.1rem;
 }
 
 .pulse-stat__value {
@@ -701,6 +701,18 @@
   border-radius: var(--radius-xs);
 }
 
+.time-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  padding: 0.1rem 0.48rem;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+}
+
 .anchor-tag {
   font-family: var(--font-mono);
   font-size: 0.66rem;
@@ -1048,7 +1060,7 @@
 
 .viz-callout-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.9rem;
   margin-top: 1.25rem;
   padding-top: 1.1rem;
@@ -1518,6 +1530,14 @@
 
   .hero__artwork {
     max-width: 560px;
+  }
+
+  .pulse-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .viz-callout-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .rubric-sliders {

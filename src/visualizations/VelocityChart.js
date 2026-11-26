@@ -102,6 +102,9 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
   const auto2026 = items.filter((b) => b.date.startsWith('2026') && b.aiRole === 'Autonomous AI').length;
   const auto2026Pct = count2026 ? Math.round((auto2026 / count2026) * 100) : 0;
   const h2_2026 = items.filter((b) => b.date >= '2026-07-01').length;
+  const openProblems = items.filter((b) => typeof b.yearsUnsolved === 'number' && b.yearsUnsolved > 0);
+  const totalOpenYears = openProblems.reduce((sum, b) => sum + b.yearsUnsolved, 0);
+  const openProblemCount = openProblems.length;
 
   const yBarTicks = [];
   for (let v = 0; v <= maxBar; v += step) yBarTicks.push(v);
@@ -289,7 +292,11 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
       <div class="viz-callout-grid">
         <div>
           <div class="viz-callout__num">${h2_2026} milestones</div>
-          <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 25), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of all indexed AI breakthroughs.</div>
+          <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 25), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of active AI breakthroughs.</div>
+        </div>
+        <div>
+          <div class="viz-callout__num">${totalOpenYears.toLocaleString('en-US')}+ yrs</div>
+          <div class="viz-callout__text">Combined human years unsolved across ${openProblemCount} open problems—many finalized by AI in hours to weeks.</div>
         </div>
         <div>
           <div class="viz-callout__num">${auto2026Pct}% autonomous</div>

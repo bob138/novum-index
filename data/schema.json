@@ -83,6 +83,7 @@
             ]
           },
           "yearsUnsolved": { "type": ["integer", "null"], "minimum": 0 },
+          "aiTimeToSolve": { "type": ["string", "null"], "minLength": 2, "maxLength": 48 },
           "isAnchor": { "type": "boolean" },
           "whyItMatters": { "type": "string", "minLength": 20, "maxLength": 240 },
           "summary": { "type": "string", "minLength": 40 },

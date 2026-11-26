@@ -15,6 +15,9 @@ export function renderHeader(meta, allItems, theme) {
   const count2024 = allItems.filter((b) => b.date.startsWith('2024')).length;
   const count2026 = allItems.filter((b) => b.date.startsWith('2026')).length;
   const accelFactor = count2024 > 0 ? `${(count2026 / count2024).toFixed(1)}×` : `${count2026}`;
+  const openProblems = allItems.filter((b) => typeof b.yearsUnsolved === 'number' && b.yearsUnsolved > 0);
+  const totalOpenYears = openProblems.reduce((sum, b) => sum + b.yearsUnsolved, 0);
+  const openProblemCount = openProblems.length;
 
   return `
     <header class="site-nav" role="banner">
@@ -85,14 +88,19 @@ export function renderHeader(meta, allItems, theme) {
             <div class="pulse-stat__note">${waveCount} in 2024–26 · ${anchorCount} in 2020–23</div>
           </div>
           <div class="pulse-stat">
-            <div class="pulse-stat__value">${autonomousPct}%</div>
-            <div class="pulse-stat__label">Autonomous AI-Led</div>
-            <div class="pulse-stat__note">${autonomousCount} autonomous · ${assistedCount} AI-assisted</div>
+            <div class="pulse-stat__value">${totalOpenYears.toLocaleString('en-US')}+ yrs</div>
+            <div class="pulse-stat__label">Human Years Unsolved</div>
+            <div class="pulse-stat__note">Across ${openProblemCount} open problems · hrs–wks for AI</div>
           </div>
           <div class="pulse-stat">
             <div class="pulse-stat__value">${formallyVerifiedCount}</div>
             <div class="pulse-stat__label">Formally Verified</div>
             <div class="pulse-stat__note">Machine-checked in Lean / proofs</div>
+          </div>
+          <div class="pulse-stat">
+            <div class="pulse-stat__value">${autonomousPct}%</div>
+            <div class="pulse-stat__label">Autonomous AI-Led</div>
+            <div class="pulse-stat__note">${autonomousCount} autonomous · ${assistedCount} AI-assisted</div>
           </div>
           <div class="pulse-stat">
             <div class="pulse-stat__value">${accelFactor}</div>

@@ -106,6 +106,22 @@ function validate() {
       if (!VERIFICATION_STATUSES.has(item.verificationStatus)) {
         errors.push(`${ctx}: invalid verificationStatus "${item.verificationStatus}"`);
       }
+      if (
+        item.yearsUnsolved !== undefined &&
+        item.yearsUnsolved !== null &&
+        (!Number.isInteger(item.yearsUnsolved) || item.yearsUnsolved < 0)
+      ) {
+        errors.push(`${ctx}: yearsUnsolved must be a non-negative integer or null`);
+      }
+      if (
+        item.aiTimeToSolve !== undefined &&
+        item.aiTimeToSolve !== null &&
+        (typeof item.aiTimeToSolve !== 'string' ||
+          item.aiTimeToSolve.trim().length < 2 ||
+          item.aiTimeToSolve.length > 48)
+      ) {
+        errors.push(`${ctx}: aiTimeToSolve must be a string (2–48 chars) or null`);
+      }
       if (!Array.isArray(item.subfields) || item.subfields.length === 0) {
         errors.push(`${ctx}: subfields must be a non-empty array`);
       }

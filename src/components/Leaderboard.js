@@ -98,6 +98,13 @@ export function renderLeaderboard(items, totalCount, sortBy = 'impact') {
                 </span>
                 ${item.isAnchor ? '<span class="anchor-tag" title="2020–2023 historical calibration benchmark">Calibration Anchor</span>' : ''}
                 <span class="ai-tag">${escapeHtml(item.aiRole)}</span>
+                ${
+                  item.yearsUnsolved && item.aiTimeToSolve
+                    ? `<span class="time-tag" title="${item.yearsUnsolved} human years unsolved vs. ${escapeHtml(item.aiTimeToSolve)} with AI">${item.yearsUnsolved}y → ${escapeHtml(item.aiTimeToSolve)}</span>`
+                    : item.aiTimeToSolve
+                      ? `<span class="time-tag" title="Documented AI time to solution">AI: ${escapeHtml(item.aiTimeToSolve)}</span>`
+                      : ''
+                }
                 <span class="entry-cell__date">${formatDate(item.date)}</span>
               </div>
               <div class="entry-cell__title">${escapeHtml(item.title)}</div>

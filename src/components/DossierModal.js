@@ -67,9 +67,13 @@ export function renderDossierModal(item, allRanked, weights) {
               ${renderStatusBadge(item.verificationStatus)}
               <span class="ai-tag">${escapeHtml(item.aiRole)}</span>
               ${
-                item.yearsUnsolved
-                  ? `<span class="ai-tag">${item.yearsUnsolved} years open</span>`
-                  : ''
+                item.yearsUnsolved && item.aiTimeToSolve
+                  ? `<span class="time-tag">${item.yearsUnsolved}y open → ${escapeHtml(item.aiTimeToSolve)} AI</span>`
+                  : item.yearsUnsolved
+                    ? `<span class="ai-tag">${item.yearsUnsolved} years open</span>`
+                    : item.aiTimeToSolve
+                      ? `<span class="time-tag">AI time: ${escapeHtml(item.aiTimeToSolve)}</span>`
+                      : ''
               }
             </div>
             <h2 class="dossier__title" id="dossier-title">${escapeHtml(item.title)}</h2>
@@ -85,6 +89,21 @@ export function renderDossierModal(item, allRanked, weights) {
               <dt class="dossier__meta-label">AI System / Provenance</dt>
               <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.aiSystem || item.aiRole)}</dd>
             </div>
+            ${
+              item.yearsUnsolved || item.aiTimeToSolve
+                ? `
+            <div style="grid-column: 1 / -1;">
+              <dt class="dossier__meta-label">Human Wait vs. AI Time to Solution</dt>
+              <dd class="dossier__meta-value mono" style="margin: 0;">${
+                item.yearsUnsolved && item.aiTimeToSolve
+                  ? `${item.yearsUnsolved} human years unsolved → ${escapeHtml(item.aiTimeToSolve)} with AI`
+                  : item.yearsUnsolved
+                    ? `${item.yearsUnsolved} human years unsolved prior to this breakthrough`
+                    : `${escapeHtml(item.aiTimeToSolve)} with AI`
+              }</dd>
+            </div>`
+                : ''
+            }
             <div>
               <dt class="dossier__meta-label">Key Contributors</dt>
               <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.contributors.join(', '))}</dd>
