@@ -115,10 +115,10 @@ const TIER_DEFINITIONS = [
 const PARADIGM_DEFINITIONS = [
   {
     key: 'Symbolic / Classical',
-    era: '1996 – 2019',
+    era: '1976 – 2019',
     colorVar: 'var(--ink-muted)',
     summary:
-      'Pre-deep-learning automated theorem provers (EQP), SAT solvers (Cube-and-Conquer), and abductive logic robotics (Adam). Delivered high logical rigor within narrow formal domains at roughly one landmark per decade.',
+      'Pre-deep-learning rule induction (Meta-DENDRAL), automated conjecturing (Graffiti), theorem provers (EQP), SAT solvers (Cube-and-Conquer), and abductive logic robotics (Adam). Delivered high rigor within narrow formal domains at roughly one landmark per decade.',
   },
   {
     key: 'Neural / Deep Learning',
@@ -466,9 +466,9 @@ function renderMethodologyPage() {
         <!-- 7. Historical Pioneers & Calibration Anchors -->
         <section class="meth-section" id="anchors" aria-labelledby="h-anchors">
           <div class="meth-section__eyebrow">Section 07</div>
-          <h2 class="meth-section__title" id="h-anchors">Historical Pioneers &amp; Calibration Anchors (1996–2023)</h2>
+          <h2 class="meth-section__title" id="h-anchors">Historical Pioneers &amp; Calibration Anchors (1976–2023)</h2>
           <p class="meth-prose">
-            Fast-moving waves suffer from recency bias. To keep composite scores calibrated on an absolute scale—and to anchor the left side of the exponential growth curve—the index maintains <strong>${anchors.length} historical anchor milestones</strong> (<code>isAnchor: true</code>): 3 pre-2020 symbolic pioneers (1996–2016) and 8 early neural-era landmarks (2020–2023, starting with Halicin and AlphaFold 2). Every 2024–2026 score is benchmarked against these anchors—for instance, AlphaFold 2 (<code>98.3</code>) sets the upper reference ceiling for multi-disciplinary paradigm shifts.
+            Fast-moving waves suffer from recency bias. To keep composite scores calibrated on an absolute scale—and to anchor the left side of the 50-year exponential growth curve—the index maintains <strong>${anchors.length} historical anchor milestones</strong> (<code>isAnchor: true</code>): 5 pre-2020 symbolic pioneers (1976–2016: Meta-DENDRAL, Graffiti, Robbins, Adam, and Boolean Pythagorean Triples) and 8 early neural-era landmarks (2020–2023, starting with Halicin and AlphaFold 2). Every 2024–2026 score is benchmarked against these anchors—for instance, AlphaFold 2 (<code>98.3</code>) sets the upper reference ceiling for multi-disciplinary paradigm shifts.
           </p>
 
           <div class="meth-table-wrap">

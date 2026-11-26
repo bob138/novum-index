@@ -128,7 +128,7 @@ export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
         <div>
           <h2 class="viz-card__title">AI-for-Science Catalyst &amp; Influence Network</h2>
           <p class="viz-card__desc">
-            Traces how pre-2020 symbolic pioneers (Robbins, Adam, Pythagorean Triples), 2020–2023 neural anchors (Halicin, AlphaFold 2, AlphaTensor, FunSearch), and 2024–2025 architectures catalyzed the 2026 surge. Hover to trace chains; drag to pan or zoom; click any node for its dossier.
+            Traces how pre-2020 symbolic pioneers (Meta-DENDRAL, Graffiti, Robbins, Adam, Pythagorean Triples), 2020–2023 neural anchors (Halicin, AlphaFold 2, AlphaTensor, FunSearch), and 2024–2025 architectures catalyzed the 2026 surge. Hover to trace chains; drag to pan or zoom; click any node for its dossier.
           </p>
         </div>
 

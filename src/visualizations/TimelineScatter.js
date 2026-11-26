@@ -32,7 +32,7 @@ export const SCATTER_Y_METRICS = {
 };
 
 export const SCATTER_PRESETS = [
-  { id: 'all', label: 'All (1996–26)' },
+  { id: 'all', label: 'All (1976–26)' },
   { id: '2020-2026', label: '2020–26', tMin: '2019-11-01', tMax: '2026-12-20' },
   { id: '2024-2026', label: '2024–26', tMin: '2023-12-01', tMax: '2026-12-20' },
   { id: '2026', label: '2026', tMin: '2025-12-20', tMax: '2026-12-10' },
@@ -49,7 +49,13 @@ function buildDynamicXTicks(tMin, tMax) {
   const startD = new Date(tMin);
   const endD = new Date(tMax);
 
-  if (spanDays > 4000) {
+  if (spanDays > 12000) {
+    const startYear = Math.ceil(startD.getUTCFullYear() / 5) * 5;
+    for (let y = startYear; y <= endD.getUTCFullYear(); y += 5) {
+      const t = Date.UTC(y, 0, 1);
+      if (t >= tMin && t <= tMax) ticks.push({ t, label: String(y), major: y % 10 === 0 });
+    }
+  } else if (spanDays > 4000) {
     const startYear = Math.ceil(startD.getUTCFullYear() / 5) * 5;
     for (let y = startYear; y <= endD.getUTCFullYear(); y += 5) {
       const t = Date.UTC(y, 0, 1);
@@ -194,7 +200,7 @@ export function renderTimelineScatter(items, opts = {}) {
   const modernStartX = margin.left + pioneerZoneW + pioneerGap;
   const modernW = innerW - pioneerZoneW - pioneerGap;
 
-  const pioneerMinTime = toTimestamp('1994-01-01');
+  const pioneerMinTime = toTimestamp('1973-01-01');
   const pioneerMaxTime = toTimestamp('2019-06-01');
 
   let minTime;
@@ -209,14 +215,14 @@ export function renderTimelineScatter(items, opts = {}) {
     minTime = toTimestamp('2019-11-01');
     maxTime = hasWave ? toTimestamp('2026-12-20') : toTimestamp('2024-03-01');
   } else if (timeScale === 'linear' && hasPioneers && hasModern) {
-    minTime = toTimestamp('1995-06-01');
+    minTime = toTimestamp('1974-06-01');
     maxTime = toTimestamp('2027-02-01');
   } else {
     minTime = hasEarlyAnchors
       ? toTimestamp('2019-11-01')
       : hasWave
         ? toTimestamp('2024-04-01')
-        : toTimestamp('1994-01-01');
+        : toTimestamp('1973-01-01');
     maxTime = hasWave
       ? toTimestamp('2026-12-20')
       : hasEarlyAnchors
@@ -270,7 +276,7 @@ export function renderTimelineScatter(items, opts = {}) {
   if (splitPioneerZone) {
     xTicks = hasWave
       ? [
-          { t: toTimestamp('1996-10-10'), label: '’96', major: false },
+          { t: toTimestamp('1976-10-01'), label: '’76', major: false },
           { t: toTimestamp('2016-05-03'), label: '’16', major: false },
           { t: toTimestamp('2020-01-01'), label: '2020', major: true },
           { t: toTimestamp('2021-01-01'), label: '2021', major: true },
@@ -282,7 +288,7 @@ export function renderTimelineScatter(items, opts = {}) {
           { t: toTimestamp('2026-11-25'), label: 'Nov 26', major: false },
         ]
       : [
-          { t: toTimestamp('2009-01-01'), label: '1996–2016', major: false },
+          { t: toTimestamp('1996-10-10'), label: '1976–2016', major: false },
           { t: toTimestamp('2020-01-01'), label: '2020', major: true },
           { t: toTimestamp('2021-01-01'), label: '2021', major: true },
           { t: toTimestamp('2022-01-01'), label: '2022', major: true },
@@ -356,7 +362,7 @@ export function renderTimelineScatter(items, opts = {}) {
   // Pick non-overlapping callout labels — allow more labels when zoomed in!
   const waveLabelBudget = isZoomed ? 22 : 12;
   const prioritized = [
-    ...positioned.filter((p) => p.item.date < '2020-01-01').slice(0, 3),
+    ...positioned.filter((p) => p.item.date < '2020-01-01').slice(0, 5),
     ...positioned.filter((p) => p.item.isAnchor && p.item.date >= '2020-01-01').slice(0, 5),
     ...positioned.filter((p) => !p.item.isAnchor).slice(0, waveLabelBudget),
   ];
@@ -612,7 +618,7 @@ export function renderTimelineScatter(items, opts = {}) {
               text-anchor="middle"
               class="viz-annotation"
               pointer-events="none"
-            >1996–2019 · Symbolic</text>
+            >1976–2019 · Symbolic</text>
           `
               : ''
           }
@@ -1017,7 +1023,7 @@ export function bindScatterInteractions(svg, rankedMap, opts, callbacks) {
       const newYMin = Math.max(0, Math.min(100 - spanY, yMin + dY));
       const newYMax = Math.min(100, newYMin + spanY);
       onZoomChange({
-        tMin: Math.max(toTimestamp('1994-01-01'), tMin + dt),
+        tMin: Math.max(toTimestamp('1973-01-01'), tMin + dt),
         tMax: Math.min(toTimestamp('2027-06-01'), tMax + dt),
         yMin: newYMin,
         yMax: newYMax,
@@ -1067,13 +1073,13 @@ export function bindScatterInteractions(svg, rankedMap, opts, callbacks) {
       const focusT = invertX(Math.max(mLeft, Math.min(mLeft + innerW, pt.x)));
       const focusY = invertY(Math.max(mTop, Math.min(mTop + innerH, pt.y)));
 
-      const newSpanT = Math.max(DAY_MS * 10, Math.min(DAY_MS * 12000, (tMax - tMin) * factor));
+      const newSpanT = Math.max(DAY_MS * 10, Math.min(DAY_MS * 20000, (tMax - tMin) * factor));
       const newSpanY = Math.max(5, Math.min(100, (yMax - yMin) * factor));
 
       const tFrac = Math.max(0.05, Math.min(0.95, (focusT - tMin) / Math.max(1, tMax - tMin)));
       const yFrac = Math.max(0.05, Math.min(0.95, (focusY - yMin) / Math.max(1, yMax - yMin)));
 
-      const newTMin = Math.max(toTimestamp('1994-01-01'), focusT - tFrac * newSpanT);
+      const newTMin = Math.max(toTimestamp('1973-01-01'), focusT - tFrac * newSpanT);
       const newTMax = Math.min(toTimestamp('2027-06-01'), newTMin + newSpanT);
       const newYMin = Math.max(0, focusY - yFrac * newSpanY);
       const newYMax = Math.min(100, newYMin + newSpanY);

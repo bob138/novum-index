@@ -141,7 +141,7 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
         </select>
 
         <select id="filter-year" class="filter-select" aria-label="Filter by timeframe">
-          <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (1996–2026)</option>
+          <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (1976–2026)</option>
           <option value="2024-2026" ${state.year === '2024-2026' ? 'selected' : ''}>2024–2026 Wave</option>
           <option value="anchors" ${state.year === 'anchors' ? 'selected' : ''}>2020–2023 Early Neural</option>
           <option value="pre-2020" ${state.year === 'pre-2020' ? 'selected' : ''}>Pre-2020 Symbolic</option>

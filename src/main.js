@@ -608,7 +608,7 @@ function attachGlobalListeners() {
         const newHalfT = Math.max(86400000 * 5, ((curTMax - curTMin) * factor) / 2);
         const newHalfY = Math.max(3, Math.min(50, ((curYMax - curYMin) * factor) / 2));
 
-        const minBound = Date.parse('1994-01-01T00:00:00Z');
+        const minBound = Date.parse('1973-01-01T00:00:00Z');
         const maxBound = Date.parse('2027-02-01T00:00:00Z');
         const fullModernSpan = Date.parse('2026-12-20T00:00:00Z') - Date.parse('2019-11-01T00:00:00Z');
 

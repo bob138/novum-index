@@ -1,7 +1,7 @@
 import { DISCIPLINE_META, escapeHtml } from '../scoring.js';
 
 const ANCHOR_PERIODS = [
-  { id: 'pre-2020', label: '< 2020*', start: '1990-01-01', end: '2019-12-31', isAnchorBucket: true, isPioneerBucket: true },
+  { id: 'pre-2020', label: '< 2020*', start: '1970-01-01', end: '2019-12-31', isAnchorBucket: true, isPioneerBucket: true },
   { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', isAnchorBucket: true },
   { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', isAnchorBucket: true },
   { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', isAnchorBucket: true },
@@ -24,7 +24,7 @@ const WAVE_QUARTERS = [
 ];
 
 const ANNUAL_PERIODS = [
-  { id: 'pre-2020', label: '< 2020*', start: '1990-01-01', end: '2019-12-31', isAnchorBucket: true, isPioneerBucket: true },
+  { id: 'pre-2020', label: '< 2020*', start: '1970-01-01', end: '2019-12-31', isAnchorBucket: true, isPioneerBucket: true },
   { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', isAnchorBucket: true },
   { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', isAnchorBucket: true },
   { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', isAnchorBucket: true },
@@ -275,12 +275,12 @@ export function renderVelocityChart(items, opts = {}) {
 
   const footnoteText =
     granularity === 'monthly2026'
-      ? '*Nov 2026 reflects partial month through Nov 26, 2026 · Cumulative curve includes prior 1996–2025 milestones'
+      ? '*Nov 2026 reflects partial month through Nov 26, 2026 · Cumulative curve includes prior 1976–2025 milestones'
       : granularity === 'quarterly'
         ? '*Q4 2026 reflects partial quarter through Nov 26, 2026 · Cumulative curve includes pre-2024 milestones'
         : granularity === 'annual'
-          ? `${hasPioneers ? '*< 2020 spans 24 yrs (1996–2019) · ' : '*'}2026 reflects partial year through Nov 26, 2026`
-          : `${hasPioneers ? '*< 2020 spans 24 yrs (1996–2019) · ' : '*'}Q4 2026 reflects partial quarter through Nov 26, 2026`;
+          ? `${hasPioneers ? '*< 2020 spans 44 yrs (1976–2019) · ' : '*'}2026 reflects partial year through Nov 26, 2026`
+          : `${hasPioneers ? '*< 2020 spans 44 yrs (1976–2019) · ' : '*'}Q4 2026 reflects partial quarter through Nov 26, 2026`;
 
   return `
     <div class="viz-card">

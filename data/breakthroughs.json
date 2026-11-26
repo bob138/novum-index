@@ -4218,6 +4218,130 @@
           "type": "announcement"
         }
       ]
+    },
+    {
+      "id": "graffiti-graph-conjectures-1986",
+      "title": "Graffiti Autonomously Generates Novel Graph Theory Conjectures Studied by Erdős & Chung",
+      "shortTitle": "Graffiti (1986)",
+      "date": "1986-03-01",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Graph Theory",
+        "Automated Conjecturing",
+        "Mathematical Chemistry"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "Graffiti (Heuristic Invariant Search + Dalmatian Filter)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "First automated mathematical conjecturing system to produce genuinely novel open conjectures that sparked ~80 peer-reviewed papers by leading mathematicians.",
+      "summary": "Developed by Siemion Fajtlowicz at the University of Houston and publicly unveiled in 1986 with its first 18 conjectures, Graffiti searched algebraic expressions across graph invariants and retained candidate inequalities holding without counterexample across a curated graph database—later refined with the Dalmatian informativeness heuristic. Its conjectures in graph theory and mathematical chemistry (fullerenes) proved deep enough to inspire roughly 80 published papers by mathematicians including Paul Erdős, Fan Chung, Béla Bollobás, Noga Alon, and László Lovász.",
+      "technicalHighlights": [
+        "Autonomously generated Graffiti Conjecture 2 (average distance ≤ independence number for any connected graph), proved by Fan Chung in 1988, and the residue–independence inequality proved by Favaron, Mahéo, and Saclé in 1991.",
+        "Introduced the Dalmatian heuristic to suppress true-but-trivial statements by retaining only inequalities strictly sharper than all prior bounds on at least one graph.",
+        "Extended into mathematical chemistry, formulating novel structural conjectures on fullerene and benzenoid molecular graphs."
+      ],
+      "caveats": "Generated conjectures empirically from finite graph databases rather than proving theorems; many candidate inequalities were later refuted by counterexamples, illustrating both the power and fragility of pure symbolic heuristic search.",
+      "contributors": [
+        "Siemion Fajtlowicz",
+        "Ermelinda DeLaViña"
+      ],
+      "institutions": [
+        "University of Houston"
+      ],
+      "scores": {
+        "foundational": 77,
+        "ripple": 83,
+        "verification": 90,
+        "velocity": 70
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated empirically that a computer program can originate genuinely novel, non-trivial mathematical hypotheses rather than merely checking human proofs.",
+        "ripple": "Sparked ~80 peer-reviewed papers across combinatorics and mathematical chemistry and established the automated conjecturing lineage leading to DeepMind Knot Theory and AlphaEvolve.",
+        "verification": "Multiple core Graffiti conjectures were formally proved and published in top refereed venues (Discrete Mathematics, Journal of Graph Theory) by leading mathematicians.",
+        "velocity": "Compressed systematic exploration of invariant inequalities across hundreds of graphs, though narrow symbolic templates limited scope to inequality-form conjectures."
+      },
+      "enables": [
+        "deepmind-knot-theory-2021",
+        "funsearch-2023"
+      ],
+      "sources": [
+        {
+          "label": "Discrete Mathematics — S. Fajtlowicz, On Conjectures of Graffiti (1988)",
+          "url": "https://doi.org/10.1016/0012-365X(88)90199-9",
+          "type": "paper"
+        },
+        {
+          "label": "arXiv:2409.19379 — Historical Survey of Graffiti & TxGraffiti",
+          "url": "https://arxiv.org/abs/2409.19379",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "meta-dendral-mass-spec-1976",
+      "title": "Meta-DENDRAL Discovers Novel Mass-Spectrometry Rules Published in JACS",
+      "shortTitle": "Meta-DENDRAL (1976)",
+      "date": "1976-10-01",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Analytical Chemistry",
+        "Mass Spectrometry",
+        "Symbolic Rule Learning"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "Meta-DENDRAL (Symbolic Rule-Formation Expert System)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "Widely regarded as the earliest peer-reviewed scientific discovery made by a machine learning system—inferring new chemical fragmentation rules accepted in JACS.",
+      "summary": "Built at Stanford by Bruce Buchanan, Dennis Smith, Edward Feigenbaum, Joshua Lederberg, and Carl Djerassi as the rule-learning companion to Heuristic DENDRAL, Meta-DENDRAL analyzed empirical mass spectra and molecular structures of aliphatic amines and ketoandrostanes to induce new bond-cleavage fragmentation rules automatically. Published in the Journal of the American Chemical Society in October 1976, several of Meta-DENDRAL’s induced rules for mono- and polyketoandrostanes were judged novel by chemists and entered the refereed chemical literature.",
+      "technicalHighlights": [
+        "Used a theory-constrained generate-and-test rule-induction pipeline (RULEGEN and RULEMOD) to learn interpretable chemical cleavage rules directly from empirical spectra.",
+        "Discovered previously unformulated mass-spectrometry fragmentation rules for mono-, di-, and triketoandrostanes published in JACS (1976).",
+        "Established the knowledge-rich machine learning paradigm and directly inspired Tom Mitchell’s version-space framework and subsequent AI-for-chemistry systems."
+      ],
+      "caveats": "Operated inside a tightly hand-engineered symbolic chemistry representation and required substantial expert curation; its rules were domain-specific analytical heuristics rather than general physical laws.",
+      "contributors": [
+        "Bruce G. Buchanan",
+        "Dennis H. Smith",
+        "William C. White",
+        "Roy J. Gritter",
+        "Edward A. Feigenbaum",
+        "Joshua Lederberg",
+        "Carl Djerassi"
+      ],
+      "institutions": [
+        "Stanford University"
+      ],
+      "scores": {
+        "foundational": 76,
+        "ripple": 84,
+        "verification": 92,
+        "velocity": 66
+      },
+      "scoreRationale": {
+        "foundational": "Marked the historical birth of AI-assisted scientific rule discovery by producing novel, publishable chemical rules from empirical data.",
+        "ripple": "Catalyzed decades of cheminformatics, expert systems, and machine learning for molecular inference—the 50-year ancestor of modern AI chemistry.",
+        "verification": "Peer-reviewed and published in the Journal of the American Chemical Society (JACS 98(20): 6168–6178) and empirically validated against spectral data.",
+        "velocity": "Automated tedious spectral rule induction that previously required expert chemists, though handcrafted LISP knowledge bases limited throughput."
+      },
+      "enables": [
+        "robot-scientist-adam-2009",
+        "gnome-materials-2023"
+      ],
+      "sources": [
+        {
+          "label": "JACS — Automatic Rule Formation in Mass Spectrometry by Meta-DENDRAL (Oct 1976)",
+          "url": "https://doi.org/10.1021/ja00436a017",
+          "type": "paper"
+        }
+      ]
     }
   ]
 }

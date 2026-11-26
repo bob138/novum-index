@@ -61,7 +61,7 @@ export function renderHeader(meta, allItems, theme) {
       <div class="container">
         <div class="hero__grid">
           <div>
-            <p class="hero__kicker">Open-Source AI-for-Science Ledger · 1996–2026 Paradigm &amp; Acceleration Tracker</p>
+            <p class="hero__kicker">Open-Source AI-for-Science Ledger · 1976–2026 Paradigm &amp; Acceleration Tracker</p>
             <h1 class="hero__title">
               Tracking the <em>exponential</em> rise of AI in scientific discovery.
             </h1>
