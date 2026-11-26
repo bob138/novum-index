@@ -468,7 +468,7 @@ function renderMethodologyPage() {
           <div class="meth-section__eyebrow">Section 07</div>
           <h2 class="meth-section__title" id="h-anchors">Historical Pioneers &amp; Calibration Anchors (1976–2023)</h2>
           <p class="meth-prose">
-            Fast-moving waves suffer from recency bias. To keep composite scores calibrated on an absolute scale—and to anchor the left side of the 50-year exponential growth curve—the index maintains <strong>${anchors.length} historical anchor milestones</strong> (<code>isAnchor: true</code>): 5 pre-2020 symbolic pioneers (1976–2016: Meta-DENDRAL, Graffiti, Robbins, Adam, and Boolean Pythagorean Triples) and 8 early neural-era landmarks (2020–2023, starting with Halicin and AlphaFold 2). Every 2024–2026 score is benchmarked against these anchors—for instance, AlphaFold 2 (<code>98.3</code>) sets the upper reference ceiling for multi-disciplinary paradigm shifts.
+            Fast-moving waves suffer from recency bias. To keep composite scores calibrated on an absolute scale—and to anchor the left side of the 50-year exponential growth curve—the index maintains <strong>${anchors.length} historical anchor milestones</strong> (<code>isAnchor: true</code>): ${anchors.filter((a) => a.date < '2020-01-01').length} pre-2020 symbolic pioneers (1976–2016: Meta-DENDRAL, Graffiti, Robbins, Adam, and Boolean Pythagorean Triples) and ${anchors.filter((a) => a.date >= '2020-01-01').length} early 2020–2023 landmarks (starting with Halicin, FermiNet, and AlphaFold 2). Every 2024–2026 score is benchmarked against these anchors—for instance, AlphaFold 2 (<code>98.3</code>) sets the upper reference ceiling for multi-disciplinary paradigm shifts.
           </p>
 
           <div class="meth-table-wrap">

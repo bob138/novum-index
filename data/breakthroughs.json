@@ -3739,6 +3739,61 @@
       ]
     },
     {
+      "id": "chai-2-antibody-design-2025",
+      "title": "Chai-2 Achieves Double-Digit Zero-Shot De Novo Design of Full-Length Therapeutic Antibodies & GPCR Agonists",
+      "shortTitle": "Chai-2 Zero-Shot Antibodies",
+      "date": "2025-12-03",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "De Novo Antibody Design",
+        "Biologics & GPCR Engineering",
+        "All-Atom Generative Models"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Chai-2 (All-Atom Generative Antibody Design Model)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "First model with double-digit zero-shot hit rates designing full-length IgG antibodies, functional GPCR agonists, and mutation-specific cancer binders from <50 designs instead of million-clone libraries.",
+      "summary": "Following its June 2025 launch, Chai Discovery published a December 2025 bioRxiv study (10.1101/2025.11.29.691346v2) demonstrating Chai-2’s atomic-precision zero-shot design of full-length monoclonal antibodies (IgGs) against notoriously hard target classes. Evaluating fewer than 50 in silico designs per target without wet-lab library screening, Chai-2 achieved a 100% target hit rate across tested GPCRs (median 24% per-target hit rate), produced the first in silico-designed functional GPCR agonist antibodies, generated low-nanomolar IgGs discriminating single amino-acid cancer mutations on peptide–MHC complexes, and yielded >86% therapeutic-grade developability profiles.",
+      "technicalHighlights": [
+        "Designed full-length IgG antibodies with >86% therapeutic-grade developability and experimental crystal structures matching in silico predictions to atomic accuracy.",
+        "Generated validated binders for all tested GPCRs (median 24% hit rate from <50 designs) including the first functional GPCR agonist antibodies designed purely in silico.",
+        "Produced low-nanomolar peptide–MHC antibodies selectively distinguishing single-residue tumor neoepitope mutations from wild-type peptides."
+      ],
+      "caveats": "Posted as a company-authored bioRxiv preprint with proprietary model weights; designed antibodies are proof-of-concept preclinical binders rather than clinical drug candidates.",
+      "contributors": [
+        "Chai Discovery Research Team"
+      ],
+      "institutions": [
+        "Chai Discovery"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 90,
+        "verification": 86,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Cracked zero-shot de novo design of complex, loop-heavy full-length monoclonal antibodies and functional GPCR agonists without library screening.",
+        "ripple": "Signals a structural shift in biologics drug discovery from million-clone empirical screening toward programmable, double-digit-design antibody engineering.",
+        "verification": "Backed by extensive wet-lab binding, functional agonist, developability, and experimental structural validation, though proprietary and not yet journal peer-reviewed.",
+        "velocity": "Compressed multi-month million-variant phage/yeast-display campaigns into <50 zero-shot in silico designs."
+      },
+      "enables": [
+        "gpt6-intrinsic-protein-design-2026"
+      ],
+      "sources": [
+        {
+          "label": "bioRxiv — Drug-like antibody design against challenging targets with atomic precision (Chai-2, Dec 2025)",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.11.29.691346v2.full-text",
+          "type": "paper"
+        }
+      ]
+    },
+    {
       "id": "alphaevolve-67-math-problems-2025",
       "title": "AlphaEvolve Scaled Across 67 Open Math Problems Improves Bounds & Generalizes Formulas",
       "shortTitle": "AlphaEvolve (67 Math Problems)",
@@ -3799,6 +3854,70 @@
         {
           "label": "PNAS Published Article — Mathematical discovery and exploration can be done at scale",
           "url": "https://www.pnas.org/doi/10.1073/pnas.2536158123",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "c2s-scale-cancer-therapy-2025",
+      "title": "C2S-Scale 27B Discovers & Wet-Lab Validates a Novel Cancer Immunotherapy Pathway",
+      "shortTitle": "C2S-Scale 27B Cancer Pathway",
+      "date": "2025-10-15",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Single-Cell Transcriptomics",
+        "Cancer Immunotherapy",
+        "Biomedical Foundation Models"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "C2S-Scale 27B (Gemma-Based Single-Cell Language Model)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Google DeepMind and Yale’s 27B-parameter single-cell foundation model predicted a context-dependent cancer immunotherapy drug combo (silmitasertib + low-dose interferon) that boosted antigen presentation ~50% in wet-lab tests.",
+      "summary": "Developed by Google DeepMind and Yale University and unveiled in October 2025 (bioRxiv 2025.04.14.648850v2), Cell2Sentence-Scale (C2S-Scale 27B) translates single-cell RNA-seq profiles into biological 'cell sentences' processed by a 27-billion-parameter Gemma foundation model. Running a virtual screen of >4,000 drugs across immune-context-positive and immune-context-neutral tumor microenvironments, C2S-Scale 27B generated an unexpected, context-conditioned hypothesis: that the CK2 kinase inhibitor silmitasertib (CX-4945) dramatically amplifies MHC-I antigen presentation specifically in the presence of low-dose interferon. Laboratory experiments in human neuroendocrine cell models confirmed an ~50% boost in antigen presentation—a potential mechanism for turning immunologically 'cold' tumors 'hot'.",
+      "technicalHighlights": [
+        "Scaled single-cell transcriptomic modeling to 27 billion parameters on Gemma, uncovering emergent context-dependent perturbation reasoning absent in smaller models.",
+        "Screened >4,000 compounds across dual immune contexts to predict a previously unestablished synergy between silmitasertib (CX-4945) and low-dose interferon.",
+        "Experimentally confirmed an ~50% increase in antigen presentation in human neuroendocrine cell models, validating a genuine AI-originated biomedical hypothesis."
+      ],
+      "caveats": "Validated in human in vitro cell models and posted on bioRxiv rather than a peer-reviewed clinical journal; in vivo animal oncology studies and human clinical trials are required to test therapeutic efficacy.",
+      "contributors": [
+        "Syed Asad Rizvi",
+        "David van Dijk",
+        "Curtis Jamison Perry",
+        "Google DeepMind & Yale Research Teams"
+      ],
+      "institutions": [
+        "Google DeepMind",
+        "Yale University"
+      ],
+      "scores": {
+        "foundational": 82,
+        "ripple": 86,
+        "verification": 84,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated that scaling single-cell foundation models unlocks emergent, context-conditioned biological hypothesis generation.",
+        "ripple": "Provides an open 27B single-cell reasoning model and validates a new blueprint for AI-originated combination oncology discoveries.",
+        "verification": "Experimentally confirmed in Yale wet-lab human cell models, though still a bioRxiv preprint awaiting peer review and in vivo clinical testing.",
+        "velocity": "Virtually screened >4,000 compounds across nuanced immune-context perturbations to pinpoint a non-obvious drug synergy."
+      },
+      "enables": [
+        "alphagenome-2-single-cell-2026"
+      ],
+      "sources": [
+        {
+          "label": "Google — How a Gemma model (C2S-Scale 27B) helped discover a new potential cancer therapy pathway (Oct 15, 2025)",
+          "url": "https://blog.google/innovation-and-ai/products/google-gemma-ai-cancer-therapy-discovery/",
+          "type": "announcement"
+        },
+        {
+          "label": "bioRxiv — Scaling Large Language Models for Next-Generation Single-Cell Analysis (v2, Oct 2025)",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v2",
           "type": "paper"
         }
       ]
@@ -3924,6 +4043,130 @@
       ]
     },
     {
+      "id": "opencrispr-1-gene-editor-2025",
+      "title": "OpenCRISPR-1 Becomes the First Fully AI-Designed Gene Editor Validated in Human Cells",
+      "shortTitle": "OpenCRISPR-1 AI Gene Editor",
+      "date": "2025-07-30",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Genome Editing",
+        "Protein Language Models",
+        "Synthetic Biology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Profluent Large-Scale CRISPR Protein Language Model",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Published in Nature, Profluent’s OpenCRISPR-1 is the first CRISPR-Cas genome editor generated entirely from scratch by AI—over 400 mutations from SpCas9—editing human DNA with lower off-target cuts.",
+      "summary": "First open-sourced by Profluent in April 2024 and published in Nature in July 2025 (Ruffolo et al., Nature 645: 518–525), OpenCRISPR-1 demonstrated that protein language models trained on millions of natural CRISPR operons can design functional gene-editing enzymes entirely from scratch. Sitting >400 amino-acid mutations away from canonical SpCas9 (and ~200 mutations away from any known natural Cas protein), OpenCRISPR-1 matched SpCas9 editing efficiency in human cells while cutting off-target activity by up to 95%, and was released openly for broad research and therapeutic exploration.",
+      "technicalHighlights": [
+        "Generated a complete, functional Cas9-like genome editor and guide RNA from scratch—more than 400 mutations away from SpCas9 and ~200 from any known natural protein.",
+        "Matched canonical SpCas9 on-target human-genome editing efficiency in wet-lab experiments while sharply reducing off-target cleavage.",
+        "Publicly released alongside the largest open CRISPR-Cas atlas to accelerate license-free AI-engineered gene and base editors."
+      ],
+      "caveats": "Demonstrated in human cell lines (including base-editing fusions) rather than clinical human trials; long-term in vivo immunogenicity and delivery remain under study.",
+      "contributors": [
+        "Jeffrey A. Ruffolo",
+        "Stephen Nayfach",
+        "Ali Madani"
+      ],
+      "institutions": [
+        "Profluent Bio"
+      ],
+      "scores": {
+        "foundational": 87,
+        "ripple": 90,
+        "verification": 96,
+        "velocity": 89
+      },
+      "scoreRationale": {
+        "foundational": "Crossed a historic threshold in synthetic biology: moving gene editing from mining bacterial nature to generating wholly synthetic CRISPR enzymes with AI.",
+        "ripple": "Opens patent-unencumbered, customizable gene editors engineered for specificity and lower immunogenicity across therapeutics.",
+        "verification": "Peer-reviewed in Nature (645: 518–525) with extensive human-cell editing, off-target profiling, and open-source sequence release.",
+        "velocity": "Designed a highly divergent functional CRISPR nuclease in silico without decades of microbial bioprospecting or directed evolution."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Profluent / Nature (645: 518–525, Jul 2025) — Design of highly functional genome editors by modeling the universe of CRISPR-Cas sequences",
+          "url": "https://github.com/Profluent-AI/OpenCRISPR",
+          "type": "code"
+        },
+        {
+          "label": "Profluent — Editing the Human Genome with AI (OpenCRISPR-1 Release)",
+          "url": "https://www.profluent.bio/media/editing-the-human-genome-with-ai",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "virtual-lab-nanobodies-2025",
+      "title": "Stanford’s Virtual Lab of AI Scientist Agents Designs Validated SARS-CoV-2 Nanobodies",
+      "shortTitle": "The Virtual Lab (AI Nanobodies)",
+      "date": "2025-07-29",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Multi-Agent Scientific Research",
+        "Antibody & Nanobody Design",
+        "Virology"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "The Virtual Lab (Multi-Agent LLM Team + ESM / AlphaFold-Multimer / Rosetta)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Days (in silico design)",
+      "isAnchor": false,
+      "whyItMatters": "Published in Nature, an interdisciplinary team of specialized LLM agents—led by an AI Principal Investigator—autonomously planned and ran computational workflows designing 92 novel SARS-CoV-2 nanobodies, with wet-lab confirmed binders.",
+      "summary": "Published in Nature in July 2025 by Kyle Swanson, Wesley Wu, Nash Bulaong, John Pak (CZ Biohub SF), and James Zou (Stanford University), The Virtual Lab modeled an academic research group as a team of LLM agents—an AI Principal Investigator, immunologist, computational biologist, machine learning specialist, and scientific critic—holding structured lab meetings with <1% human input. Orchestrating protein tools (ESM, AlphaFold-Multimer, Rosetta), the agent team autonomously designed 92 novel nanobody candidates targeting emerging SARS-CoV-2 variants; wet-lab validation at CZ Biohub confirmed >90% expression and identified two novel nanobodies with improved binding to recent Omicron subvariants.",
+      "technicalHighlights": [
+        "Organized specialized LLM agents into PI-led team meetings and individual tool-execution sessions with minimal (<1%) human intervention.",
+        "Autonomously selected tools, wrote analysis pipelines, and designed 92 mutated nanobody binders targeting recent SARS-CoV-2 spike variants.",
+        "Experimentally validated at Chan Zuckerberg Biohub: two newly designed nanobodies exhibited improved binding affinity to KP.3 / JN.1 variants while retaining ancestral binding."
+      ],
+      "caveats": "Optimized existing nanobody scaffolds rather than inventing wholly de novo folds from scratch, and still required human scientists to perform all physical wet-lab synthesis and binding assays.",
+      "contributors": [
+        "Kyle Swanson",
+        "Wesley Wu",
+        "John E. Pak",
+        "James Zou"
+      ],
+      "institutions": [
+        "Stanford University",
+        "Chan Zuckerberg Biohub San Francisco"
+      ],
+      "scores": {
+        "foundational": 83,
+        "ripple": 88,
+        "verification": 95,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "First Nature-published end-to-end wet-lab validation of a multi-agent LLM 'virtual research group' executing an open-ended biomedical design campaign.",
+        "ripple": "Directly popularized the multi-agent 'AI PI + specialist agents' paradigm across academia and biotech.",
+        "verification": "Peer-reviewed in Nature (646: 716–723) with full physical expression and binding-affinity measurements on 92 designed nanobodies.",
+        "velocity": "Completed full computational design, critique, and candidate selection in days with <1% human guidance."
+      },
+      "enables": [
+        "claude-art-enzyme-system-2026"
+      ],
+      "sources": [
+        {
+          "label": "Nature — The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies (Jul 2025, PMID 40730228)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40730228/",
+          "type": "paper"
+        },
+        {
+          "label": "Stanford Medicine — Researchers create ‘virtual scientists’ to solve complex biological problems",
+          "url": "https://med.stanford.edu/news/all-news/2025/07/virtual-scientist.html",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "imo-2025-gold-natural-language",
       "title": "End-to-End Natural-Language Gold Medal at IMO 2025",
       "shortTitle": "IMO 2025 AI Gold Medal",
@@ -4035,7 +4278,8 @@
         "velocity": "Enabled an instant in-silico variant-impact atlas across all 9 billion human single-nucleotide substitutions."
       },
       "enables": [
-        "alphagenome-2-single-cell-2026"
+        "alphagenome-2-single-cell-2026",
+        "c2s-scale-cancer-therapy-2025"
       ],
       "sources": [
         {
@@ -4296,7 +4540,8 @@
       },
       "enables": [
         "claude-art-enzyme-system-2026",
-        "claude-prokaryotic-vault-2026"
+        "claude-prokaryotic-vault-2026",
+        "virtual-lab-nanobodies-2025"
       ],
       "sources": [
         {
@@ -4375,6 +4620,70 @@
           "label": "Materials Horizons (2026): Audit of MatterGen novelty claims",
           "url": "https://pubs.rsc.org/mh/article/13/11/5672/1228702/Continued-challenges-in-high-throughput-materials",
           "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "alphaqubit-qec-decoder-2024",
+      "title": "AlphaQubit Outperforms Human Decoders on Real Superconducting Quantum Error Correction",
+      "shortTitle": "AlphaQubit Quantum Error Decoder",
+      "date": "2024-11-20",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Quantum Error Correction",
+        "Fault-Tolerant Quantum Computing",
+        "Recurrent Transformers"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "AlphaQubit (Recurrent-Transformer Neural QEC Decoder)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Google DeepMind and Google Quantum AI’s transformer-based decoder achieved state-of-the-art error suppression on real Sycamore superconducting surface-code qubits, beating human-crafted tensor-network and matching decoders.",
+      "summary": "Published in Nature in November 2024 by Johannes Bausch, Andrew Senior, Francisco Heras, Thomas Edlich, Pushmeet Kohli, and the Google DeepMind / Google Quantum AI teams, AlphaQubit introduced a recurrent-transformer neural decoder trained on simulated and real Sycamore quantum-processor syndrome measurements. By directly ingesting analog readout soft information and learning hardware-specific crosstalk and leakage noise, AlphaQubit reduced logical error rates by 6% over tensor-network decoders and 30% over correlated matching on distance-3 and distance-5 Sycamore surface codes—and maintained its accuracy advantage in simulations up to distance 11.",
+      "technicalHighlights": [
+        "Uses a recurrent-transformer architecture capable of consuming raw analog qubit measurement data rather than hard-thresholded binary syndromes.",
+        "Reduced logical error rates on real Google Sycamore superconducting processors by 6% vs. slow tensor-network decoders and 30% vs. standard correlated matching.",
+        "Established learned neural decoders as a core pillar of fault-tolerant quantum computing, paving the way for 2026’s AI-designed low-overhead QEC breakthroughs."
+      ],
+      "caveats": "While accurate, the original Nature AlphaQubit model was too slow for microsecond real-time superconducting decoding cycles, motivating later distilled real-time neural decoders.",
+      "contributors": [
+        "Johannes Bausch",
+        "Andrew W. Senior",
+        "Francisco J. H. Heras",
+        "Pushmeet Kohli"
+      ],
+      "institutions": [
+        "Google DeepMind",
+        "Google Quantum AI"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 88,
+        "verification": 96,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Proved that learned neural decoders can beat the best human-engineered analytical decoders on real, noisy superconducting quantum hardware.",
+        "ripple": "Accelerated industry-wide adoption of AI decoders across superconducting, trapped-ion, and neutral-atom quantum error correction roadmaps.",
+        "verification": "Peer-reviewed in Nature and validated directly on physical Google Sycamore quantum processor experiments.",
+        "velocity": "Rapidly surpassed decades of hand-crafted surface-code decoding heuristics by learning real device noise directly."
+      },
+      "enables": [
+        "sub-100k-qubit-qec-2026"
+      ],
+      "sources": [
+        {
+          "label": "Google DeepMind — AlphaQubit tackles one of quantum computing’s biggest challenges (Nature, Nov 2024)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphaqubit-quantum-error-correction/",
+          "type": "announcement"
+        },
+        {
+          "label": "Nature — Learning high-accuracy error decoding for quantum processors (Nov 2024)",
+          "url": "https://www.researchgate.net/publication/385981393_Learning_high-accuracy_error_decoding_for_quantum_processors",
+          "type": "paper"
         }
       ]
     },
@@ -4477,7 +4786,9 @@
         "verification": "Backed by direct experimental wet-lab validation across multiple independent protein targets.",
         "velocity": "Replaces months of iterative phage-display and affinity-maturation cycles with single-shot AI generation."
       },
-      "enables": [],
+      "enables": [
+        "chai-2-antibody-design-2025"
+      ],
       "sources": [
         {
           "label": "Google DeepMind: AlphaProteo generates novel proteins for biology and health research",
@@ -4544,6 +4855,71 @@
           "label": "Google DeepMind: AI achieves silver-medal standard solving IMO problems",
           "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
           "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "esm3-esmgfp-protein-2024",
+      "title": "ESM3 Simulates 500 Million Years of Evolution to Generate Novel Fluorescent Protein esmGFP",
+      "shortTitle": "ESM3 & esmGFP Protein",
+      "date": "2024-06-25",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Protein Language Models",
+        "Synthetic Biology",
+        "Multimodal Generative Biology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "ESM3 (98B-Parameter Multimodal Sequence–Structure–Function PLM)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "EvolutionaryScale’s 98B-parameter multimodal protein model generated esmGFP—a bright, functional green fluorescent protein only 58% identical to any known natural protein (a ~500M-year evolutionary leap).",
+      "summary": "Unveiled in June 2024 and published in Science (Jan 2025) by Thomas Hayes, Roshan Rao, Halil Akin, Alexander Rives, and the EvolutionaryScale team, ESM3 jointly tokenizes protein sequence, 3D atomic structure, and biological function inside a single 98-billion-parameter generative language model trained on 771 billion biological tokens. Using chain-of-thought prompting over active-site geometry and chromophore chemistry, ESM3 generated esmGFP—a bright fluorescent protein sharing only 58% sequence identity with its closest known natural relative, representing a jump equivalent to over 500 million years of natural evolution.",
+      "technicalHighlights": [
+        "First frontier-scale (98B-parameter) multimodal biological model jointly reasoning over protein sequence, 3D coordinates, and functional annotations.",
+        "Synthesized esmGFP, a wet-lab-validated bright fluorescent protein just 58% identical to the closest natural GFP—far outside natural sequence space.",
+        "Released ESM3-Open (1.4B) publicly and established multimodal chain-of-thought prompting as a new paradigm for programmable biology."
+      ],
+      "caveats": "While esmGFP was a striking wet-lab proof of concept, generating a single fluorescent protein required screening 96 candidates (and iterative refinement), and the full 98B weights remain proprietary.",
+      "contributors": [
+        "Thomas Hayes",
+        "Roshan Rao",
+        "Halil Akin",
+        "Alexander Rives"
+      ],
+      "institutions": [
+        "EvolutionaryScale",
+        "Arc Institute"
+      ],
+      "scores": {
+        "foundational": 88,
+        "ripple": 89,
+        "verification": 95,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated that scaling multimodal biological language models enables coherent leaps far across evolutionary sequence space.",
+        "ripple": "Set the blueprint for unified sequence–structure–function foundation models and programmable synthetic biology.",
+        "verification": "Peer-reviewed in Science (387: 850–858, Jan 2025) with full wet-lab expression and fluorescence spectroscopy of esmGFP.",
+        "velocity": "Traversed an estimated ~500 million years of evolutionary divergence in silico via chain-of-thought generation."
+      },
+      "enables": [
+        "opencrispr-1-gene-editor-2025",
+        "evo-2-genome-design-2025"
+      ],
+      "sources": [
+        {
+          "label": "Science — Simulating 500 million years of evolution with a language model (ESM3, doi:10.1126/science.ads0018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39818825/",
+          "type": "paper"
+        },
+        {
+          "label": "bioRxiv — Simulating 500 million years of evolution with a language model (Jul 2024)",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.07.01.600583v1",
+          "type": "paper"
         }
       ]
     },
@@ -4679,6 +5055,71 @@
       ]
     },
     {
+      "id": "coscientist-autonomous-chemistry-2023",
+      "title": "Coscientist Uses GPT-4 to Autonomously Plan, Code & Execute Real Chemical Synthesis",
+      "shortTitle": "Coscientist (CMU Wet-Lab LLM)",
+      "date": "2023-12-20",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Autonomous Chemistry Agents",
+        "Organic Synthesis",
+        "Robotic Experimentation"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Coscientist (GPT-4 + Web/Docs Search + Python + Opentrons/Cloud Lab API)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "First peer-reviewed Nature demonstration of an LLM agent autonomously designing, coding, debugging, and executing Nobel-prize-winning palladium cross-coupling reactions on real robotic wet-lab hardware.",
+      "summary": "Published in Nature in December 2023 by Daniil Boiko, Robert MacKnight, Ben Kline, and Gabe Gomes at Carnegie Mellon University, Coscientist equipped GPT-4 with web search, technical hardware documentation lookup, Python execution, and robotic liquid-handler control. Without step-by-step human programming, Coscientist autonomously planned multi-step chemical syntheses, wrote and debugged robot control scripts from hardware manuals, and successfully executed and optimized palladium-catalyzed Suzuki–Miyaura and Sonogashira cross-coupling reactions in a physical laboratory.",
+      "technicalHighlights": [
+        "Demonstrated end-to-end LLM agency spanning literature lookup, reagent selection, robotic hardware documentation reading, Python code generation, and live error recovery.",
+        "Successfully planned and executed real Suzuki–Miyaura and Sonogashira palladium-catalyzed cross-coupling reactions verified by GC–MS.",
+        "Bridges the symbolic Robot Scientist Adam (2009) era to the modern wave of tool-using LLM scientific agents (Google AI Co-Scientist, Virtual Lab, Mass Spec Skills)."
+      ],
+      "caveats": "Executed known reaction classes (cross-couplings and standard optimizations) rather than discovering new chemical reactions, and also highlighted dual-use bio/chemical safety considerations for autonomous synthesis agents.",
+      "contributors": [
+        "Daniil A. Boiko",
+        "Robert MacKnight",
+        "Ben Kline",
+        "Gabe Gomes"
+      ],
+      "institutions": [
+        "Carnegie Mellon University"
+      ],
+      "scores": {
+        "foundational": 82,
+        "ripple": 88,
+        "verification": 94,
+        "velocity": 87
+      },
+      "scoreRationale": {
+        "foundational": "Proved that general-purpose LLMs wired to scientific tools and lab robotics can cross from text reasoning into autonomous physical chemistry.",
+        "ripple": "Directly catalyzed the 2024–2026 boom in tool-augmented scientific agents across chemistry, biology, and analytical labs.",
+        "verification": "Peer-reviewed in Nature with physical wet-lab synthesis and GC–MS analytical confirmation.",
+        "velocity": "Compressed hardware-manual parsing, synthesis planning, and robotic protocol coding from days to minutes."
+      },
+      "enables": [
+        "google-ai-coscientist-2025",
+        "virtual-lab-nanobodies-2025",
+        "deepmind-mass-spec-skills-2026"
+      ],
+      "sources": [
+        {
+          "label": "Nature — Autonomous chemical research with large language models (Dec 2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/",
+          "type": "paper"
+        },
+        {
+          "label": "CMU Engineering — AI Coscientist automates scientific discovery",
+          "url": "https://engineering.cmu.edu/news-events/news/2023/12/20-ai-coscientist.html",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "funsearch-2023",
       "title": "FunSearch: First Verifiable Open-Problem Discovery via LLM Program Search",
       "shortTitle": "FunSearch (Anchor)",
@@ -4795,7 +5236,8 @@
         "velocity": "Compressed centuries of brute-force DFT crystal screening into months of active-learning compute."
       },
       "enables": [
-        "mattergen-materials-2025"
+        "mattergen-materials-2025",
+        "a-lab-autonomous-materials-2023"
       ],
       "sources": [
         {
@@ -4807,6 +5249,263 @@
           "label": "PMC Critique (2024): Artificial Intelligence Driving Materials Discovery? Perspective on GNoME",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265/",
           "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "a-lab-autonomous-materials-2023",
+      "title": "Berkeley A-Lab Pairs AI Planning & Robotics to Synthesize Inorganic Materials Autonomously",
+      "shortTitle": "Berkeley A-Lab Autonomous Synthesis",
+      "date": "2023-11-29",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Autonomous Laboratories",
+        "Solid-State Inorganic Chemistry",
+        "Active Learning"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "A-Lab (Literature-NLP + Thermodynamic Models + Active-Learning Robotics)",
+      "verificationStatus": "Contested / Partial",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "17 days (41 claimed compounds)",
+      "isAnchor": true,
+      "whyItMatters": "First closed-loop AI-driven robotic solid-state synthesis lab published in Nature alongside GNoME—claiming 41 novel inorganic compounds in 17 days, before sparking a landmark Nature debate over automated XRD phase verification.",
+      "summary": "Published in Nature alongside DeepMind’s GNoME in November 2023 by Nathan Szymanski, Bernardus Rendy, Yuxing Fei, Yan Zeng, and Gerbrand Ceder at Lawrence Berkeley National Laboratory, A-Lab integrated historical literature mining, ML stability predictions, robotic powder dosing/heating, and automated X-ray diffraction (XRD) analysis in a 24/7 closed loop—reporting synthesis of 41 out of 58 targeted novel inorganic compounds in 17 days. In early 2024, independent solid-state chemists (Leeman, Palgrave et al.) challenged the automated XRD phase identifications in a widely discussed critique, prompting refinements in how autonomous labs verify crystallographic novelty.",
+      "technicalHighlights": [
+        "Closed the loop between computational crystal prediction (Materials Project / GNoME) and physical synthesis using robotic arms, furnaces, and automated XRD characterization.",
+        "Used active learning to iteratively revise failed synthesis recipes across 355 experiments in 17 days of continuous operation.",
+        "Triggered an influential community audit (Leeman & Palgrave, 2024) highlighting why automated spectroscopic/diffraction verification remains the hardest bottleneck in self-driving labs."
+      ],
+      "caveats": "Tagged Contested / Partial because independent crystallographers (notably Robert Palgrave & Leslie Leeman) disputed the automated Rietveld/XRD phase assignments for many of the 41 claimed 'novel' compounds; the Berkeley team acknowledged misidentifications in specific cases while defending the broader autonomous-synthesis methodology.",
+      "contributors": [
+        "Nathan J. Szymanski",
+        "Yan Zeng",
+        "Kristin A. Persson",
+        "Gerbrand Ceder"
+      ],
+      "institutions": [
+        "Lawrence Berkeley National Laboratory",
+        "UC Berkeley"
+      ],
+      "scores": {
+        "foundational": 79,
+        "ripple": 85,
+        "verification": 62,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Pioneered closed-loop autonomous solid-state inorganic synthesis combining active learning with physical robotics.",
+        "ripple": "Inspired a worldwide wave of self-driving materials labs and forced crucial new standards for machine-verified analytical chemistry.",
+        "verification": "Published in Nature, but scored down under Contested / Partial due to substantive post-publication challenges to automated XRD phase-novelty assignments.",
+        "velocity": "Executed 355 physical solid-state synthesis experiments across 58 target compounds in 17 days."
+      },
+      "enables": [
+        "mattergen-materials-2025"
+      ],
+      "sources": [
+        {
+          "label": "Nature — An autonomous laboratory for the accelerated synthesis of novel materials (Nov 2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700133/",
+          "type": "paper"
+        },
+        {
+          "label": "Chemistry World — New analysis raises doubts over autonomous lab’s materials discoveries (Jan 2024)",
+          "url": "https://www.chemistryworld.com/news/new-analysis-raises-doubts-over-autonomous-labs-materials-discoveries/4018791.article",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "graphcast-weather-2023",
+      "title": "GraphCast (& GenCast) Surpass Physics-Based Global Weather Forecasting in Minutes",
+      "shortTitle": "GraphCast & GenCast Weather AI",
+      "date": "2023-11-14",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Atmospheric Physics",
+        "Graph Neural Networks",
+        "Probabilistic Forecasting"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "GraphCast (Multi-Mesh GNN) & GenCast (Diffusion Ensemble)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Under 1 min (vs. hours on supercomputers)",
+      "isAnchor": true,
+      "whyItMatters": "Beat ECMWF’s gold-standard physics weather simulator on 90% of targets in under a minute on one TPU—ushering in operational AI meteorology (extended to ensembles by GenCast in Nature 2024).",
+      "summary": "Published in Science in November 2023 by Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, and the Google DeepMind team, GraphCast trained a multi-mesh graph neural network on 39 years of ERA5 atmospheric reanalysis to produce 10-day global 0.25° weather forecasts in under one minute on a single TPU—outperforming ECMWF’s operational HRES numerical solver on 90% of 1,380 verification targets and improving tropical cyclone track prediction. In December 2024 (Nature), DeepMind’s probabilistic diffusion successor GenCast surpassed ECMWF’s flagship ENS ensemble on 97.2% of targets, permanently transforming operational meteorology worldwide.",
+      "technicalHighlights": [
+        "GraphCast (Science, Nov 2023) outperformed ECMWF’s gold-standard HRES physical solver on 90% of 1,380 atmospheric targets while running ~1,000× faster and more energy-efficiently.",
+        "Improved tracking of extreme weather including tropical cyclones, atmospheric rivers, and extreme temperature anomalies without explicit PDE solvers.",
+        "Extended to full 15-day probabilistic ensemble forecasting by GenCast (Nature, Dec 2024), beating ECMWF ENS on 97.2% of targets and deployed operationally via WeatherNext."
+      ],
+      "caveats": "Trained on historical physics-based ERA5 reanalysis data (making it dependent on traditional data-assimilation pipelines) and can face out-of-distribution tail risks under unprecedented climate regimes.",
+      "contributors": [
+        "Remi Lam",
+        "Alvaro Sanchez-Gonzalez",
+        "Ilan Price",
+        "Peter Battaglia"
+      ],
+      "institutions": [
+        "Google DeepMind"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 95,
+        "verification": 98,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated that learned neural simulators can surpass decades of hand-crafted atmospheric PDE solvers on complex chaotic global fluid dynamics.",
+        "ripple": "Reshaped global weather agencies (ECMWF AIFS, NOAA, WeatherNext), renewable-energy forecasting, and disaster preparedness within two years.",
+        "verification": "Dual landmark peer-reviewed publications (Science 2023 & Nature 2024), open-sourced code/weights, and live operational verification by national meteorological agencies.",
+        "velocity": "Compressed multi-hour supercomputer numerical weather runs into <1 minute on a single accelerator."
+      },
+      "enables": [
+        "unstable-singularities-pinns-2025"
+      ],
+      "sources": [
+        {
+          "label": "Science — Learning skillful medium-range global weather forecasting (GraphCast, Nov 2023)",
+          "url": "https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/",
+          "type": "paper"
+        },
+        {
+          "label": "Nature — Probabilistic weather forecasting with machine learning (GenCast, Dec 2024)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666454/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "alphamissense-variants-2023",
+      "title": "AlphaMissense Classifies 71 Million Human Missense Genetic Variants Proteome-Wide",
+      "shortTitle": "AlphaMissense Variant Catalog",
+      "date": "2023-09-22",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Clinical Genomics",
+        "Variant Effect Prediction",
+        "Structural Bioinformatics"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "AlphaMissense (AlphaFold-Derived Structural Variant Predictor)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "Classified 89% of all 71 million possible human missense DNA mutations as likely benign or pathogenic—turning a huge clinical 'variants of uncertain significance' blind spot into an open public catalog.",
+      "summary": "Published in Science in September 2023 by Jun Cheng, Guido Novati, Joshua Pan, Žiga Avsec, and Pushmeet Kohli at Google DeepMind, AlphaMissense adapted AlphaFold’s structural representations and combined them with population-frequency weak supervision and protein language modeling to score all 71 million single-letter amino-acid substitutions across the human proteome. Whereas only ~0.1% of missense variants had previously been clinically confirmed, AlphaMissense confidently classified 89% (57% likely benign, 32% likely pathogenic) at state-of-the-art ClinVar and deep-mutational-scanning accuracy, and was immediately integrated into Ensembl, ClinVar workflows, and rare-disease diagnostics.",
+      "technicalHighlights": [
+        "Scored all 71 million possible human missense mutations across ~19,000 proteins, classifying 89% with ~90% precision on ClinVar benchmarks.",
+        "Avoids circular clinical-label bias by training on structural context and evolutionary/population frequency distributions rather than curated disease databases.",
+        "Released openly as a proteome-wide resource immediately adopted by genomics platforms (Ensembl, gnomAD, rare-disease clinics) worldwide."
+      ],
+      "caveats": "Provides computational pathogenicity probabilities rather than standalone clinical diagnoses; misses non-coding regulatory mutations (subsequently addressed by AlphaGenome in 2025) and can be less accurate on intrinsically disordered regions.",
+      "contributors": [
+        "Jun Cheng",
+        "Guido Novati",
+        "Joshua Pan",
+        "Žiga Avsec",
+        "Pushmeet Kohli"
+      ],
+      "institutions": [
+        "Google DeepMind"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 91,
+        "verification": 96,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Bridged protein structure prediction directly into proteome-wide human genetics and evolutionary constraint modeling.",
+        "ripple": "Immediately embedded across global clinical genomics databases and rare-disease diagnostic pipelines.",
+        "verification": "Peer-reviewed in Science (adg7492) and independently benchmarked across ClinVar, Genomics England, and deep mutational scanning assays.",
+        "velocity": "Classified 71 million possible human mutations computationally where decades of wet-lab and clinical work had resolved <0.2%."
+      },
+      "enables": [
+        "alphagenome-regulatory-dna-2025"
+      ],
+      "sources": [
+        {
+          "label": "Science — Accurate proteome-wide missense variant effect prediction with AlphaMissense (Sep 2023)",
+          "url": "https://doi.org/10.1126/science.adg7492",
+          "type": "paper"
+        },
+        {
+          "label": "PubMed — AlphaMissense (PMID 37733863)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37733863/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "rfdiffusion-protein-design-2023",
+      "title": "RFdiffusion Pioneers Generative Diffusion for De Novo Functional Protein Design",
+      "shortTitle": "RFdiffusion De Novo Proteins",
+      "date": "2023-07-11",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "De Novo Protein Design",
+        "Generative Diffusion Models",
+        "Structural Biology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "RFdiffusion (RoseTTAFold Fine-Tuned SE(3) Diffusion)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "David Baker’s landmark Nature paper (central to his 2024 Nobel Prize in Chemistry) showed diffusion models can invent brand-new, experimentally validated protein binders, enzymes, and symmetric nanocages from scratch.",
+      "summary": "Published in Nature in July 2023 by Joseph Watson, David Juergens, Nathaniel Bennett, Brian Trippe, and David Baker at the University of Washington’s Institute for Protein Design, RFdiffusion adapted denoising diffusion models directly onto RoseTTAFold’s 3D protein structure network. Across unconditional generation, motif scaffolding, symmetric oligomer assembly, and high-affinity binder design, RFdiffusion achieved orders-of-magnitude higher experimental success rates than prior physics-based Rosetta protocols—with cryo-EM and X-ray crystallography confirming atomic-level fidelity to the AI-generated blueprints.",
+      "technicalHighlights": [
+        "Fine-tunes RoseTTAFold as an SE(3)-equivariant denoising diffusion network, turning structure prediction into controllable de novo protein generation.",
+        "Experimentally validated hundreds of newly invented proteins—including picomolar-to-nanomolar binders, symmetric oligomers, and functional motif scaffolds—confirmed by cryo-EM and crystallography.",
+        "Open-sourced globally and recognized as a cornerstone of computational protein design cited in David Baker’s 2024 Nobel Prize in Chemistry."
+      ],
+      "caveats": "Requires pairing with sequence-design (ProteinMPNN) and structure-filtering tools (AlphaFold 2), and challenging dynamic or small-molecule-binding pockets required later all-atom successors (RFdiffusion All-Atom, AlphaFold 3, Chai-2).",
+      "contributors": [
+        "Joseph L. Watson",
+        "David Juergens",
+        "Nathaniel R. Bennett",
+        "David Baker"
+      ],
+      "institutions": [
+        "University of Washington (Institute for Protein Design)"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 95,
+        "verification": 98,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Transformed protein engineering from slow physics-based combinatorial tweaking into controllable generative structural design—part of the 2024 Chemistry Nobel legacy.",
+        "ripple": "Became the open-source workhorse of modern generative biology, directly inspiring AlphaProteo, Chai-2, and hundreds of therapeutic design programs.",
+        "verification": "Peer-reviewed in Nature (620: 1089–1100) with extensive wet-lab, cryo-EM, and X-ray crystallographic confirmation across diverse protein classes.",
+        "velocity": "Raised de novo binder experimental hit rates by orders of magnitude, shrinking design-test campaigns from years to weeks."
+      },
+      "enables": [
+        "alphaproteo-binders-2024",
+        "esm3-esmgfp-protein-2024",
+        "chai-2-antibody-design-2025",
+        "gpt6-intrinsic-protein-design-2026"
+      ],
+      "sources": [
+        {
+          "label": "Nature — De novo design of protein structure and function with RFdiffusion (Jul 2023)",
+          "url": "https://doi.org/10.1038/s41586-023-06415-8",
+          "type": "paper"
+        },
+        {
+          "label": "Baker Lab — RFdiffusion: A generative model for protein design",
+          "url": "https://www.bakerlab.org/2023/07/11/diffusion-model-for-protein-design/",
+          "type": "announcement"
         }
       ]
     },
@@ -4866,6 +5565,66 @@
         {
           "label": "Mankowitz et al. — Faster sorting algorithms discovered using deep RL (Nature / PMC)",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10247365/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "abaucin-antibiotic-2023",
+      "title": "Deep Learning Discovers Abaucin, a Narrow-Spectrum Antibiotic Against Multidrug-Resistant A. baumannii",
+      "shortTitle": "Abaucin Superbug Antibiotic",
+      "date": "2023-05-25",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Antibiotic Discovery",
+        "Graph Neural Networks",
+        "Microbiology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Chemprop Directed Message-Passing Neural Network",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "Used a graph neural network trained on ~7,500 molecules to discover abaucin—a narrow-spectrum antibiotic active against WHO’s critical-priority hospital superbug Acinetobacter baumannii.",
+      "summary": "Published in Nature Chemical Biology in May 2023 by Gary Liu, Denise Catacutan, Jonathan Stokes (McMaster University), and James J. Collins (MIT / Broad Institute), researchers trained a directed message-passing neural network on growth-inhibition data from ~7,500 compounds and screened the Drug Repurposing Hub in silico. The top structurally novel candidate—named abaucin—exhibited potent narrow-spectrum activity against 41 multidrug-resistant clinical isolates of Acinetobacter baumannii via lipoprotein-trafficking disruption (LolE) while sparing beneficial gut commensals, and successfully controlled infections in a mouse wound model.",
+      "technicalHighlights": [
+        "Identified abaucin (RS-102895) from ~6,680 Drug Repurposing Hub molecules using a message-passing graph neural network trained on ~7,500 empirical screens.",
+        "Demonstrated selective, narrow-spectrum inhibition across 41 multidrug-resistant clinical A. baumannii isolates while sparing 50+ commensal microbiome species.",
+        "Elucidated a novel antibacterial mechanism (perturbing LolE-mediated lipoprotein trafficking) and confirmed in vivo efficacy in a murine dorsal wound infection model."
+      ],
+      "caveats": "Preclinical lead compound requiring medicinal chemistry optimization, toxicology, and human clinical trials before any therapeutic approval.",
+      "contributors": [
+        "Gary Liu",
+        "Denise B. Catacutan",
+        "Jonathan M. Stokes",
+        "James J. Collins"
+      ],
+      "institutions": [
+        "McMaster University",
+        "MIT",
+        "Broad Institute"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 83,
+        "verification": 95,
+        "velocity": 84
+      },
+      "scoreRationale": {
+        "foundational": "Proved that Halicin-style molecular deep learning generalizes to narrow-spectrum, mechanism-specific targeting of a critical Gram-negative WHO superbug.",
+        "ripple": "Accelerated global AI-driven antimicrobial discovery pipelines targeting multidrug-resistant pathogens without destroying the gut microbiome.",
+        "verification": "Peer-reviewed in Nature Chemical Biology with mechanistic genetics (LolE mutants) and in vivo mouse wound validation.",
+        "velocity": "Screened thousands of candidate compounds computationally in hours to isolate a narrow-spectrum lead."
+      },
+      "enables": [
+        "boltz-2-binding-affinity-2025"
+      ],
+      "sources": [
+        {
+          "label": "Nature Chemical Biology — Deep learning-guided discovery of an antibiotic targeting Acinetobacter baumannii (May 2023)",
+          "url": "https://doi.org/10.1038/s41589-023-01349-8",
           "type": "paper"
         }
       ]
@@ -5062,6 +5821,139 @@
       ]
     },
     {
+      "id": "alphachip-floorplanning-2021",
+      "title": "AlphaChip Uses Deep Reinforcement Learning to Design Production TPU Silicon Floorplans",
+      "shortTitle": "AlphaChip TPU Floorplanning",
+      "date": "2021-06-09",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Electronic Design Automation (EDA)",
+        "Reinforcement Learning",
+        "Hardware Co-Design"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "AlphaChip (Edge-Based Graph Neural RL Macro Placer)",
+      "verificationStatus": "Contested / Partial",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Hours (vs. weeks–months)",
+      "isAnchor": true,
+      "whyItMatters": "First deep RL method published in Nature for real-world semiconductor floorplanning—deployed in multiple Google TPU and Axion silicon generations, while sparking a landmark reproducibility debate in EDA.",
+      "summary": "Published in Nature in June 2021 by Azalia Mirhoseini, Anna Goldie, Mustafa Yazgan, Joe Wenjie Jiang, and colleagues at Google Brain (later rebranded AlphaChip by Google DeepMind in 2024), the system framed chip macro placement as a reinforcement learning game over netlist graphs. Deployed inside Google’s production TPU v5e, TPU v5p, Trillium (v6e), and Axion CPU design flows to generate floorplans in hours rather than weeks, AlphaChip also triggered a prominent academic dispute (including a 2023 UC San Diego critique by Cheng et al. and a 2024 Nature editorial investigation) over benchmark baselines and public reproducibility.",
+      "technicalHighlights": [
+        "Uses an edge-based graph neural network pre-trained across prior chip blocks so the RL policy transfers to unseen commercial chip netlists.",
+        "Adopted in real tape-outs across multiple generations of Google TPUs (v5e, v5p, Trillium) and Axion ARM CPUs, compressing floorplanning cycles from weeks to hours.",
+        "Became a touchstone case study in AI-for-engineering governance after academic EDA groups contested its comparisons against commercial placers and simulated annealing."
+      ],
+      "caveats": "Tagged Contested / Partial because while production deployment inside Google TPUs is documented, independent EDA researchers (notably Cheng et al., UC San Diego) disputed claims of superhuman performance over strong classical/commercial baselines and criticized missing proprietary test cases.",
+      "contributors": [
+        "Azalia Mirhoseini",
+        "Anna Goldie",
+        "Mustafa Yazgan",
+        "Jeff Dean"
+      ],
+      "institutions": [
+        "Google Brain / Google DeepMind"
+      ],
+      "scores": {
+        "foundational": 78,
+        "ripple": 86,
+        "verification": 68,
+        "velocity": 85
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated transferable graph-RL optimization on complex physical VLSI macro-placement problems.",
+        "ripple": "Catalyzed widespread industry investment in AI-assisted chip design (EDA) and directly contributed to designing accelerators that train newer AI models.",
+        "verification": "Published in Nature and taped out in real Google silicon, but marked down significantly due to unresolved external benchmark and reproducibility disputes.",
+        "velocity": "Compressed multi-week human macro-floorplanning iterations into hours."
+      },
+      "enables": [
+        "alphatensor-2022",
+        "alphadev-sorting-2023"
+      ],
+      "sources": [
+        {
+          "label": "Nature — A graph placement methodology for fast chip design (Jun 2021)",
+          "url": "https://doi.org/10.1038/s41586-021-03544-w",
+          "type": "paper"
+        },
+        {
+          "label": "Google DeepMind — How AlphaChip transformed computer chip design (Sep 2024)",
+          "url": "https://deepmind.google/blog/how-alphachip-transformed-computer-chip-design/",
+          "type": "announcement"
+        },
+        {
+          "label": "AlphaChip — Wikipedia (Deployment History & Benchmark Controversy)",
+          "url": "https://en.wikipedia.org/wiki/AlphaChip",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "ramanujan-machine-2021",
+      "title": "The Ramanujan Machine Automatically Generates Novel Conjectures for Fundamental Constants",
+      "shortTitle": "The Ramanujan Machine",
+      "date": "2021-02-03",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Experimental Mathematics",
+        "Number Theory",
+        "Automated Conjecture Generation"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "Ramanujan Machine (Gradient Descent & Meet-in-the-Middle Conjecture Search)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "Demonstrated in Nature that automated search algorithms can discover dozens of previously unknown continued-fraction formulas for π, e, Catalan’s constant, and ζ(3)—launching modern AI conjecture discovery.",
+      "summary": "Published in Nature in February 2021 by Gal Raayoni, Shahar Gottlieb, Yahel Manor, George Pisha, Yoav Harris, Uri Mendlovic, Doron Haviv, Yaron Hadad, and Ido Kaminer at the Technion, the Ramanujan Machine inverted the traditional theorem-proving workflow by systematically searching for new polynomial continued-fraction conjectures matching fundamental mathematical constants to high precision. It discovered dozens of previously unknown identities for π, e, Catalan’s constant, and Riemann zeta values—many subsequently proved by mathematicians—and evolved into 'conservative matrix fields' (PNAS 2024) unifying irrationality proofs.",
+      "technicalHighlights": [
+        "Combined meet-in-the-middle hash search with numerical gradient descent over continued-fraction polynomials to surface candidate identities without prior human derivations.",
+        "Discovered dozens of novel continued-fraction formulas for π, e, Catalan’s constant, and ζ(3), several of which were subsequently proved analytically.",
+        "Directly inspired the 2024 PNAS discovery of 'conservative matrix fields' unifying hundreds of constant identities and generalizing Apéry’s irrationality proof for ζ(3)."
+      ],
+      "caveats": "Generates numerical conjectures to high precision rather than proving them autonomously; human mathematicians (or separate symbolic provers) are required to verify each identity.",
+      "contributors": [
+        "Gal Raayoni",
+        "Shahar Gottlieb",
+        "Yahel Manor",
+        "Ido Kaminer"
+      ],
+      "institutions": [
+        "Technion – Israel Institute of Technology"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 82,
+        "verification": 94,
+        "velocity": 78
+      },
+      "scoreRationale": {
+        "foundational": "Pioneered automated conjecture discovery for fundamental mathematical constants and laid groundwork for conservative matrix fields.",
+        "ripple": "Re-energized automated conjecturing (alongside DeepMind’s 2021 knot-theory work) and inspired community BOINC/Ramanujan Library research.",
+        "verification": "Peer-reviewed in Nature (590: 67–73) with follow-up proofs and PNAS (2024) mathematical unification.",
+        "velocity": "Automated formula discovery that historically relied on rare human intuition, though verification remained separate."
+      },
+      "enables": [
+        "deepmind-knot-theory-2021",
+        "funsearch-2023"
+      ],
+      "sources": [
+        {
+          "label": "Nature — Generating conjectures on fundamental constants with the Ramanujan Machine (Feb 2021)",
+          "url": "https://doi.org/10.1038/s41586-021-03229-4",
+          "type": "paper"
+        },
+        {
+          "label": "PNAS — Algorithm-assisted discovery of an intrinsic order among mathematical constants (Jun 2024)",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.2321440121",
+          "type": "paper"
+        }
+      ]
+    },
+    {
       "id": "alphafold-2-2020",
       "title": "AlphaFold 2: Atomic-Accuracy Protein Structure Prediction (CASP14)",
       "shortTitle": "AlphaFold 2 (Anchor)",
@@ -5115,7 +6007,9 @@
         "alphafold-3-2024",
         "alphaproteo-binders-2024",
         "boltz-2-binding-affinity-2025",
-        "evo-2-genome-design-2025"
+        "evo-2-genome-design-2025",
+        "rfdiffusion-protein-design-2023",
+        "alphamissense-variants-2023"
       ],
       "sources": [
         {
@@ -5127,6 +6021,70 @@
           "label": "PMC Open Access Full Text (Nature Vol. 596)",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/",
           "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ferminet-quantum-chemistry-2020",
+      "title": "FermiNet Solves the Many-Electron Schrödinger Equation from First Principles",
+      "shortTitle": "FermiNet Quantum Chemistry",
+      "date": "2020-09-16",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Quantum Chemistry",
+        "Variational Quantum Monte Carlo",
+        "Ab Initio Electronic Structure"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "FermiNet (DeepMind Antisymmetric Neural Wavefunction)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "First deep-learning wavefunction ansatz to solve the many-electron Schrödinger equation from first principles at chemical accuracy—without external training data—outperforming coupled cluster on stretched bonds.",
+      "summary": "Published in Physical Review Research in September 2020 by David Pfau, James Spencer, Alexander Matthews, and W. M. C. Foulkes (DeepMind & Imperial College London), FermiNet introduced a permutation-equivariant neural network architecture obeying the Pauli exclusion principle by construction. Trained purely via variational energy minimization on physics alone (zero external training datasets), FermiNet achieved chemical accuracy across atoms, small molecules, and strongly correlated stretched bonds where gold-standard CCSD(T) breaks down, launching neural quantum Monte Carlo for chemistry and condensed-matter physics.",
+      "technicalHighlights": [
+        "Replaces fixed single-electron orbitals inside Slater determinants with many-electron neural orbitals, capturing rich electron correlation while strictly preserving fermionic antisymmetry.",
+        "Requires no precomputed quantum-chemistry training dataset—optimizing the wavefunction directly against the physical Hamiltonian via variational quantum Monte Carlo.",
+        "Outperformed gold-standard coupled-cluster CCSD(T) on bond dissociation and strongly correlated chains (such as H₁₀) and later uncovered Fermi-liquid-to-Wigner-crystal transitions in electron gases."
+      ],
+      "caveats": "High computational scaling (roughly O(N⁴) in electron count) limits ab initio FermiNet calculations to molecules and unit cells with tens of electrons rather than large biomolecules.",
+      "contributors": [
+        "David Pfau",
+        "James S. Spencer",
+        "Alexander G. D. G. Matthews",
+        "W. M. C. Foulkes"
+      ],
+      "institutions": [
+        "Google DeepMind",
+        "Imperial College London"
+      ],
+      "scores": {
+        "foundational": 88,
+        "ripple": 85,
+        "verification": 96,
+        "velocity": 80
+      },
+      "scoreRationale": {
+        "foundational": "Established neural wavefunctions as a first-principles ab initio method competitive with and surpassing classical quantum chemistry benchmarks.",
+        "ripple": "Catalyzed an entire subfield of neural quantum Monte Carlo (Psiformer, PauliNet, periodic FermiNet) spanning chemistry and condensed-matter physics.",
+        "verification": "Peer-reviewed in Physical Review Research (2, 033429), open-sourced, and independently reproduced across dozens of follow-up papers.",
+        "velocity": "Achieved breakthrough variational accuracy directly from the Schrödinger equation, though compute costs remain substantial."
+      },
+      "enables": [
+        "gnome-materials-2023"
+      ],
+      "sources": [
+        {
+          "label": "Physical Review Research — Ab initio solution of the many-electron Schrödinger equation with deep neural networks (Sep 2020)",
+          "url": "https://link.aps.org/doi/10.1103/PhysRevResearch.2.033429",
+          "type": "paper"
+        },
+        {
+          "label": "Google DeepMind — FermiNet: Quantum physics and chemistry from first principles",
+          "url": "https://deepmind.google/blog/ferminet-quantum-physics-and-chemistry-from-first-principles/",
+          "type": "announcement"
         }
       ]
     },
@@ -5183,7 +6141,8 @@
       },
       "enables": [
         "boltz-2-binding-affinity-2025",
-        "alphafold-3-2024"
+        "alphafold-3-2024",
+        "abaucin-antibiotic-2023"
       ],
       "sources": [
         {
@@ -5319,7 +6278,9 @@
         "velocity": "Pioneered automated experimental cycles, though narrow symbolic engineering kept throughput modest compared to 2025–2026 foundation models."
       },
       "enables": [
-        "google-ai-coscientist-2025"
+        "google-ai-coscientist-2025",
+        "coscientist-autonomous-chemistry-2023",
+        "a-lab-autonomous-materials-2023"
       ],
       "sources": [
         {
@@ -5439,7 +6400,8 @@
       },
       "enables": [
         "deepmind-knot-theory-2021",
-        "funsearch-2023"
+        "funsearch-2023",
+        "ramanujan-machine-2021"
       ],
       "sources": [
         {
