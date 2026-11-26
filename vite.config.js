@@ -1,3 +1,4 @@
+import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -6,5 +7,11 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        methodology: resolve(__dirname, 'methodology.html'),
+      },
+    },
   },
 });

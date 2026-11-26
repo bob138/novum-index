@@ -13,7 +13,7 @@ import {
 import { renderHeader } from './components/Header.js';
 import { renderFilterBar } from './components/FilterBar.js';
 import { renderRubricTuner } from './components/RubricTuner.js';
-import { renderLeaderboard, renderStatusBadge } from './components/Leaderboard.js';
+import { renderLeaderboard } from './components/Leaderboard.js';
 import { renderDossierModal } from './components/DossierModal.js';
 import { renderTimelineScatter } from './visualizations/TimelineScatter.js';
 import { renderVelocityChart } from './visualizations/VelocityChart.js';
@@ -249,48 +249,25 @@ function filterBreakthroughs(ranked) {
 
 function renderMethodologyFooter() {
   return `
-    <section class="methodology-band" id="methodology" aria-labelledby="methodology-heading">
-      <div class="methodology-band__grid">
-        <div>
-          <p class="hero__kicker" style="margin-bottom: 0.45rem;">Open Methodology &amp; Epistemic Rigor</p>
-          <h2 id="methodology-heading">Tracking the AI acceleration curve—from Nature papers to X &amp; GitHub</h2>
-          <p style="margin-bottom: 0.9rem;">
-            <strong>The Frontier Index</strong> exclusively tracks AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, Physics, Biology, and Materials to visualize the rate at which AI expands human knowledge. Because frontier discoveries now land on GitHub, arXiv, and X months before journal publication, we include unrefereed and Lean-verified open-internet results alongside peer-reviewed landmarks—tagged with explicit verification tiers so readers never confuse a preprint with a certified theorem.
-          </p>
-          <p>
-            Every entry lives in a single schema-validated JSON file (<code>data/breakthroughs.json</code>) scored across <strong>Foundational Depth</strong>, <strong>Cross-Field Ripple</strong>, <strong>Verification &amp; Rigor</strong>, and <strong>Discovery Velocity</strong>. Open a PR or GitHub issue anytime to log a newly posted AI breakthrough or update an entry’s audit status.
-          </p>
-        </div>
-
-        <div class="methodology-tiers">
-          <div class="methodology-tier">
-            ${renderStatusBadge('Formally Verified')}
-            <span>Machine-checked formal proof or verified artifact (e.g., Lean 4 / Mathlib kernel or exact algebraic verifier).</span>
-          </div>
-          <div class="methodology-tier">
-            ${renderStatusBadge('Peer-Reviewed')}
-            <span>Published in a refereed venue (e.g., Nature, PNAS), officially graded, or independently verified by domain specialists.</span>
-          </div>
-          <div class="methodology-tier">
-            ${renderStatusBadge('Preprint / Active Review')}
-            <span>Credible preprint, GitHub release, or social-media announcement currently undergoing independent expert audit.</span>
-          </div>
-          <div class="methodology-tier">
-            ${renderStatusBadge('Contested / Partial')}
-            <span>Notable AI result with active community controversy over scope, priority, or framing—explicitly documented.</span>
-          </div>
-        </div>
+    <section class="methodology-callout" aria-labelledby="methodology-callout-heading">
+      <div>
+        <p class="hero__kicker" style="margin-bottom: 0.25rem;">Open Methodology &amp; Epistemic Rigor</p>
+        <h2 id="methodology-callout-heading" class="methodology-callout__title">How breakthroughs are vetted, classified by AI paradigm, and scored</h2>
+        <p class="methodology-callout__desc">
+          Inspect the full 4-axis impact rubric, verification tiers, Symbolic vs. Neural vs. Neuro-Symbolic taxonomy, Human Years Unsolved accounting, and calibration anchors.
+        </p>
       </div>
+      <a href="./methodology.html" class="nav-btn nav-btn--primary methodology-callout__cta">Read Full Methodology →</a>
     </section>
 
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <strong>The Frontier Index</strong> · Open-source scientific breakthrough ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
+          <strong>The Frontier Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
         </div>
         <div class="site-footer__links">
+          <a href="./methodology.html">Full Methodology</a>
           <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-          <a href="${REPO_URL}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener noreferrer">Rubric Documentation</a>
           <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contribute Data</a>
           <a href="${REPO_URL}/issues/new?template=submit-breakthrough.yml" target="_blank" rel="noopener noreferrer">Submit Breakthrough</a>
         </div>

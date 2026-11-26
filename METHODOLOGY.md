@@ -28,14 +28,30 @@ To maintain epistemic clarity during the rapid 2025–2026 wave of AI-generated 
 3. **Preprint / Active Review**: Credible announcement accompanied by a public manuscript, GitHub repository, or X thread currently undergoing independent expert refereeing. Because frontier AI results increasingly appear online months before journal publication, capturing these early discoveries transparently is a core goal of the index.
 4. **Contested / Partial**: Notable AI discovery or formal result subject to active scholarly dispute over scope, priority, specification framing, or novelty claims.
 
-## 3. Scope & Provenance Taxonomy (`aiRole`)
+## 3. Scope, AI Paradigm & Provenance Taxonomy
 
 **The Frontier Index exclusively tracks breakthroughs with substantive AI involvement** (`AI-Assisted` or `Autonomous AI`) in order to measure and visualize the accelerating rate of AI contributions to scientific knowledge. Purely human breakthroughs—however landmark—are intentionally excluded.
 
-- **AI-Assisted**: Human researchers directing, collaborating with, or validating discoveries made using frontier AI models or specialized scientific AI architectures (e.g., AlphaFold 2/3, Claude Fable 5, Gemini 4 Carbon, GPT-6.2 Astra).
-- **Autonomous AI**: Results discovered primarily via autonomous AI search, multi-agent reasoning, or evolutionary coding loops with minimal step-by-step human guidance (e.g., AlphaTensor, AlphaDev, FunSearch, AlphaEvolve, GPT-6 Astra's Köthe disproof, Claude's black-hole physics & ART enzyme discoveries).
+### AI Paradigm (`aiParadigm`)
+To contrast classical symbolic systems with modern deep learning without muddying the neural-era curve, every entry is tagged with one of three paradigms:
+- **Symbolic / Classical** (1996–2019): Pre-deep-learning automated theorem provers (`EQP`), SAT solvers (`Cube-and-Conquer`), and abductive logic lab robotics (`Adam`).
+- **Neural / Deep Learning** (2020–2026): Deep graph neural networks, transformers, diffusion models, reinforcement learning, PINNs, and frontier LLMs operating without a formal proof kernel (e.g., Halicin, AlphaFold 2/3, GNoME, Evo 2, MatterGen).
+- **Neuro-Symbolic** (2023–2026): Neural models coupled directly to symbolic deduction engines, formal proof kernels (Lean 4 / Mathlib, SMT), or programmatic evaluators (e.g., FunSearch, AlphaGeometry, AlphaProof, AlphaEvolve, Claude/GPT/Gemini Lean pipelines).
 
-## 4. Historical Calibration Anchors (2020–2023)
+### AI Role (`aiRole`)
+- **AI-Assisted**: Human researchers directing, collaborating with, or validating discoveries made using frontier AI models or specialized scientific AI architectures (e.g., Halicin, AlphaFold 2/3, Claude Fable 5, Gemini 4 Carbon, GPT-6.2 Astra).
+- **Autonomous AI**: Results discovered primarily via autonomous AI search, multi-agent reasoning, or evolutionary coding loops with minimal step-by-step human guidance (e.g., EQP, AlphaTensor, AlphaDev, FunSearch, AlphaEvolve, GPT-6 Astra's Köthe disproof, Claude's black-hole physics & ART enzyme discoveries).
 
-To anchor the exponential acceleration curve and prevent recency inflation across the 2024–2026 wave, The Frontier Index includes seven landmark 2020–2023 AI calibration anchors (tagged `isAnchor: true`): **AlphaFold 2** (2020), **DeepMind Knot Theory & Representation Theory** (2021), **DeepMind Tokamak Plasma Control** (2022), **AlphaTensor** (2022), **AlphaDev** (2023), **GNoME** (2023), and **FunSearch** (2023). Users can toggle between the full calibrated view, the 2024–2026 wave alone, or anchors only via the timeframe selector.
+## 4. Human Years Unsolved vs. AI Time-to-Solution
+
+- `yearsUnsolved`: Recorded strictly for named open mathematical or scientific problems from the year formally posed until resolution (`null` for formalizations of already-proven theorems like Fermat's Last Theorem or general-purpose platforms so totals are never inflated).
+- `aiTimeToSolve`: Recorded strictly when primary sources document the AI runtime or human–AI turnaround (e.g., `16 hours`, `1 weekend`, `6 weeks`); left `null` otherwise.
+
+## 5. Historical Pioneers & Calibration Anchors (1996–2023)
+
+To anchor the exponential acceleration curve and prevent recency inflation across the 2024–2026 wave, The Frontier Index includes **11 historical anchor milestones** (`isAnchor: true`):
+- **3 Pre-2020 Symbolic Pioneers (1996–2016)**: **Robbins Conjecture (`EQP`, 1996)**, **Robot Scientist "Adam" (2009)**, and **Boolean Pythagorean Triples (`SAT`, 2016)**.
+- **8 Early Neural Anchors (2020–2023)**: **Halicin Antibiotic Discovery (Feb 2020)**, **AlphaFold 2 (Nov 2020)**, **DeepMind Knot Theory (2021)**, **Tokamak RL Plasma Control (2022)**, **AlphaTensor (2022)**, **AlphaDev (2023)**, **GNoME (2023)**, and **FunSearch (2023)**.
+
+See the interactive methodology page at [`https://bob138.github.io/frontier-index/methodology.html`](https://bob138.github.io/frontier-index/methodology.html) for live index distributions, anchor tables, and clickable weight-preset links.
 

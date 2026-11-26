@@ -1216,7 +1216,7 @@
         "Formal Verification"
       ],
       "aiRole": "Autonomous AI",
-      "aiParadigm": "Neural / Deep Learning",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Unreleased Claude Research Model (Anthropic)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -1340,7 +1340,7 @@
         "Combinatorics"
       ],
       "aiRole": "Autonomous AI",
-      "aiParadigm": "Neural / Deep Learning",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Internal GPT-6 Astra (OpenAI)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 27,
