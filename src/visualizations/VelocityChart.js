@@ -316,14 +316,14 @@ export function renderVelocityChart(items, groupBy = 'paradigm') {
           <line x1="${margin.left}" y1="${margin.top + innerH}" x2="${width - margin.right}" y2="${margin.top + innerH}" class="viz-axis-line" />
           <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">AI BREAKTHROUGHS / PERIOD</text>
           <text x="${width - 14}" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(90 ${width - 14} ${margin.top + innerH / 2})" class="viz-axis-label" style="fill: var(--accent-primary);">CUMULATIVE BREAKTHROUGHS</text>
-          <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">${hasPioneers ? '*< 2020 spans 24 yrs (1996–2019) · ' : '*'}Q4 2026 reflects partial quarter through Nov 25, 2026</text>
+          <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">${hasPioneers ? '*< 2020 spans 24 yrs (1996–2019) · ' : '*'}Q4 2026 reflects partial quarter through Nov 26, 2026</text>
         </svg>
       </div>
 
       <div class="viz-callout-grid">
         <div>
           <div class="viz-callout__num">${h2_2026} milestones</div>
-          <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 25), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of active AI breakthroughs.</div>
+          <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 26), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of active AI breakthroughs.</div>
         </div>
         <div>
           <div class="viz-callout__num">${totalOpenYears.toLocaleString('en-US')}+ yrs</div>
@@ -335,7 +335,7 @@ export function renderVelocityChart(items, groupBy = 'paradigm') {
         </div>
         <div>
           <div class="viz-callout__num">${count2024 ? (count2026 / count2024).toFixed(1) + '×' : count2026}</div>
-          <div class="viz-callout__text">2026 vs. 2024 annual AI discovery pace (${count2026} in 2026 through Nov 25 vs. ${count2024} in all of 2024).</div>
+          <div class="viz-callout__text">2026 vs. 2024 annual AI discovery pace (${count2026} in 2026 through Nov 26 vs. ${count2024} in all of 2024).</div>
         </div>
       </div>
     </div>

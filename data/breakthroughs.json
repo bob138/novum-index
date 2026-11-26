@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.0.0",
-    "lastUpdated": "2026-11-25",
+    "lastUpdated": "2026-11-26",
     "defaultWeights": {
       "foundational": 35,
       "ripple": 25,
@@ -135,6 +135,363 @@
           "label": "Caiolo, Ferroni & Hoster — Dual Chow polynomials of matroids and posets (arXiv:2605.28474)",
           "url": "https://arxiv.org/abs/2605.28474",
           "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "matrix-multiplication-exponent-9-4-2026",
+      "title": "Exact Matrix Multiplication Exponent ω = 9/4 Over Every Field (Claimed Proof & Lean)",
+      "shortTitle": "Matrix Mult. Exponent ω = 9/4",
+      "date": "2026-11-24",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Algebraic Complexity",
+        "Matrix Multiplication",
+        "Tensor Geometry",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 57,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims to settle the 57-year quest since Strassen (1969) by proving ω = 9/4 = 2.25 exactly over every field—simultaneously slashing the upper bound from 2.371 and refuting the famous ω = 2 conjecture.",
+      "summary": "Building on its October 2 upper bound (ω ≤ 9/4, independently exposed by Amir Shpilka at ECCC and extended over arbitrary fields by Amanov, van den Berg, and Zuiddam), OpenAI released a 111-page November 24 preprint via its Euclidean tensor geometry framework claiming the matching lower bound ω ≥ 9/4 over every field. Corollary 1.2 asserts every n × n formal arithmetic circuit needs at least ⌈n^(9/4)/2⌉ multiplication or division gates, pinning the asymptotic rank of matrix multiplication to n^(9/4).",
+      "technicalHighlights": [
+        "Pairs the verified ω ≤ 9/4 upper bound (far below the prior 2.371177 record) with a new matching lower bound ω ≥ 9/4 via Euclidean geometry in the asymptotic spectrum of tensors.",
+        "Accompanied by a Lean 4 formalization (ExactExponent.lean) proving the exact square exponent 9/4 for division-free circuits over every field.",
+        "Part of OpenAI’s November 24 family 379 release spanning seven interconnected tensor-geometry and complexity manuscripts."
+      ],
+      "caveats": "Unreviewed preprint released November 24, 2026. Notably, the accompanying Lean 4 formalization is narrower than the full manuscript—covering division-free formal polynomial circuits rather than arbitrary circuits with division—so the general lower bound still awaits full human specialist refereeing.",
+      "contributors": [
+        "OpenAI Math Research Team",
+        "Amir Shpilka & Jeroen Zuiddam et al. (Upper-Bound Expositions)"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Tel Aviv University & University of Amsterdam (Upper-Bound Checks)"
+      ],
+      "scores": {
+        "foundational": 95,
+        "ripple": 91,
+        "verification": 64,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "If fully verified, pinning down the exact matrix multiplication exponent ω = 9/4 resolves one of the crown-jewel open problems in theoretical computer science.",
+        "ripple": "Reshapes algebraic complexity, tensor rank theory, and every algorithm whose runtime is parameterized by ω.",
+        "verification": "Upper bound already has independent human expositions and Lean checks division-free circuits, but the full Nov 24 lower bound remains unreviewed.",
+        "velocity": "Compressed decades of incremental ~0.0001 improvements into a single leap to 2.25 plus matching lower bound within two months."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — The matrix multiplication exponent is nine fourths (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Proof — ExactExponent.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean",
+          "type": "formal-verification"
+        },
+        {
+          "label": "OpenAI Math Release History (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/history.md",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "strongly-polynomial-lp-smale9-2026",
+      "title": "Strongly Polynomial-Time Linear Programming Algorithm Answering Smale’s Ninth Problem",
+      "shortTitle": "Strongly Polynomial LP (Smale #9)",
+      "date": "2026-11-24",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Mathematical Optimization",
+        "Linear Programming",
+        "Algorithms",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 28,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims a deterministic strongly polynomial algorithm for linear programming with arbitrary real coefficients—resolving Smale’s 1998 Ninth Problem with a Lean 4 RAM formalization.",
+      "summary": "Posted in OpenAI’s November 24 math release (family 380), this manuscript presents a deterministic algorithm solving any explicitly given linear program with arbitrary real coefficients in a number of arithmetic operations polynomial solely in the number of variables and constraints (independent of coefficient bit-lengths), while preserving polynomial bit-length on rational inputs. It returns exact primal–dual optimal pairs, improving rays, or sparse infeasibility certificates, and extends to convex quadratic programming and turn-based mean-payoff games.",
+      "technicalHighlights": [
+        "Directly targets Smale’s Ninth Problem (1998)—whether linear programming admits a strongly polynomial algorithm.",
+        "Includes Lean 4 formalizations of strongly polynomial feasibility and optimization on fixed rational RAM programs, certifying primal–dual equality.",
+        "Released alongside a companion disproof of the Polynomial Hirsch Conjecture, proving strongly polynomial LP is achievable even though simplex edge-paths can be superpolynomial."
+      ],
+      "caveats": "Fresh November 24 unrefereed preprint. Independent optimization theorists must audit the Lean RAM cost model, formal statement alignment, and constant-factor practicality.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 90,
+        "verification": 65,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Answers one of Steve Smale’s 18 landmark 21st-century mathematical problems open since 1998.",
+        "ripple": "Linear programming underpins operations research, economics, control theory, and combinatorial optimization worldwide.",
+        "verification": "Includes machine-checked Lean 4 RAM feasibility/optimization proofs, but independent human audit of definitions and paper proof has just begun.",
+        "velocity": "Delivered alongside its dual polytope-diameter refutation in a single automated research family."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — Strongly polynomial linear programming (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/Strongly-polynomial-linear-programming-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Formalization — Optimization.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/Optimization/LinearProgramming/Optimization.lean",
+          "type": "formal-verification"
+        }
+      ]
+    },
+    {
+      "id": "polynomial-hirsch-disproof-2026",
+      "title": "Lean-Formalized Disproof of the Polynomial Hirsch Conjecture for Simple Polytopes",
+      "shortTitle": "Polynomial Hirsch Disproof",
+      "date": "2026-11-24",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Discrete Geometry",
+        "Polytope Theory",
+        "Linear Optimization",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 69,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Constructs bounded simple rational polytopes whose vertex–edge graph diameter grows superpolynomially in facet count—refuting the 69-year-old Polynomial Hirsch Conjecture.",
+      "summary": "While Francisco Santos disproved the linear Hirsch conjecture in 2010, the Polynomial Hirsch Conjecture—asking whether the diameter of every d-dimensional polytope with n facets is bounded by a polynomial in n and d—remained the central open question governing the worst-case complexity of simplex methods. OpenAI’s November 24 companion manuscript constructs bounded simple rational polytopes with n facets and subpolynomial dimension whose graph diameter exceeds every fixed power of n, formalized in Lean 4.",
+      "technicalHighlights": [
+        "Shows superpolynomial vertex separation persists even if moves may cross faces of dimension up to s(n) = n^o(1).",
+        "Formalized in Lean 4 (OAI/Geometry/Hirsch/Main.lean) with Comparator challenge statements verifying the bounded simple rational polytope construction.",
+        "Paired with OpenAI’s strongly polynomial LP paper, cleanly separating polytope graph diameter from linear-programming tractability."
+      ],
+      "caveats": "Released November 24, 2026 without peer review; requires independent geometric and formal-statement verification to confirm the Lean polytope definitions match standard bounded simple polytopes.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 83,
+        "verification": 66,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Refutes the flagship 1957 geometric conjecture governing the combinatorial diameter of convex polytopes.",
+        "ripple": "Settles the theoretical ceiling for edge-following simplex pivot rules across optimization and polyhedral combinatorics.",
+        "verification": "Backed by Lean 4 refutation theorems and Comparator specs, pending independent audit by discrete geometers.",
+        "velocity": "Closed a 69-year geometric barrier simultaneously with Smale’s Ninth Problem."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — Superpolynomial graph diameter of simple polytopes (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Formalization — Hirsch/Main.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/Geometry/Hirsch/Main.lean",
+          "type": "formal-verification"
+        }
+      ]
+    },
+    {
+      "id": "sunflower-conjecture-lean-2026",
+      "title": "Lean-Formalized Proof of the 1960 Erdős–Rado Fixed-Petal Sunflower Conjecture",
+      "shortTitle": "Erdős–Rado Sunflower Conjecture",
+      "date": "2026-11-24",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Extremal Combinatorics",
+        "Set Systems",
+        "Tensor Geometry",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 66,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims an exponential B_r^k upper bound settling the 66-year-old Erdős–Rado Sunflower Conjecture for every fixed petal count r ≥ 3, accompanied by a Lean 4 formalization.",
+      "summary": "Posed by Paul Erdős and Richard Rado in 1960, the Sunflower Conjecture asks whether every family of more than C_r^k sets of size k contains an r-sunflower (r sets with identical pairwise intersections). Following the landmark 2019 Alweiss–Lovett–Wu–Zhang (log k)^k breakthrough, OpenAI’s November 24 preprint applies Euclidean geometry of the asymptotic spectrum of tensors to remove the log-factor barrier completely, proving an exponential bound B_r^k with Lean 4 formalization of the fixed-petal theorem.",
+      "technicalHighlights": [
+        "Proves that for every r ≥ 3, more than B_r^k sets of size ≤ k force an r-sunflower, with log B_r = O((log r)^4 (log log 2r)^(5/2)).",
+        "Accompanied by a Lean 4 formalization (FixedBase.lean) proving existence of the exponential base C_r for every r ≥ 3.",
+        "Demonstrates unexpected transfer from algebraic tensor-spectrum geometry directly into extremal combinatorics."
+      ],
+      "caveats": "Unreviewed November 24 preprint; the Lean file formalizes existence of C_r while the sharper quantitative dependence of B_r on r appears in the manuscript and awaits independent combinatorial refereeing.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 90,
+        "ripple": 85,
+        "verification": 65,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Settles one of Paul Erdős’s most famous and widely cited 1960 conjectures in extremal combinatorics.",
+        "ripple": "Sunflower lemmas are core tools in circuit complexity, pseudorandomness, data structures, and matrix multiplication.",
+        "verification": "Includes a Lean 4 proof of the fixed-base exponential theorem, awaiting independent review of both Lean definitions and quantitative manuscript bounds.",
+        "velocity": "Bridged the final gap from the 2019 (log k)^k bound to the full exponential conjecture via AI-developed tensor geometry."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — An exponential bound for sunflowers (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/An-exponential-bound-for-sunflowers-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Formalization — FixedBase.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/Combinatorics/Sunflower/FixedBase.lean",
+          "type": "formal-verification"
+        }
+      ]
+    },
+    {
+      "id": "fft-integer-mult-exponents-2026",
+      "title": "Optimal N(log N)^(1/2+o(1)) Exponents for Finite Fourier Transforms & Integer Multiplication",
+      "shortTitle": "Sub-n log n FFT & Integer Mult.",
+      "date": "2026-11-24",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Algorithms",
+        "Fast Fourier Transform",
+        "Computational Complexity",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 53,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Breaks the half-century O(n log n) barrier for both finite Fourier transforms and multitape integer multiplication, proving N(log N)^(1/2+o(1)) bounds with Lean 4 formalizations.",
+      "summary": "Since Cooley–Tukey (1965), Schönhage–Strassen (1971), and Morgenstern’s 1973 lower-bound conjecture, computer scientists widely believed O(n log n) was optimal for both the Fast Fourier Transform and integer multiplication (achieved in 2019 by Harvey and van der Hoeven). Twin November 24 OpenAI preprints prove matching N(log N)^(1/2+o(1)) linear-circuit complexity for finite abelian Fourier transforms and deterministic multitape integer multiplication—beating O(n log n) by a full √(log n) factor—with matching conditional lower bounds under Weak ETH and Lean 4 formalizations.",
+      "technicalHighlights": [
+        "Establishes N(log N)^(1/2+o(1)) binary linear gate complexity for finite abelian Fourier transforms and formal polynomial multiplication over every field.",
+        "Constructs a deterministic multitape Turing machine multiplying two n-bit integers in n(1+log n)^(1/2+o(1)) time and O(n) space, with matching Ω(n√log n) lower bound under Weak ETH.",
+        "Both upper and lower bounds are accompanied by Lean 4 formalizations in openai/math (FiniteFourier and NearSquareRoot modules)."
+      ],
+      "caveats": "Unrefereed November 24 preprints. Because beating O(n log n) for FFT and integer multiplication overturns 50+ years of textbook consensus, rigorous independent checking of the gate/Turing models and hidden constants is essential.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 91,
+        "ripple": 88,
+        "verification": 65,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Overturns the 50-year textbook O(n log n) optimality assumption for two of computer science’s most fundamental primitives.",
+        "ripple": "Directly impacts signal processing theory, computer algebra, cryptography, and fine-grained complexity.",
+        "verification": "Formalized in Lean 4 for both single/batched FFT and multitape multiplication, pending independent community audit.",
+        "velocity": "Generated as part of an autonomous tensor-geometry synthesis sweep across seven foundational CS problems."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — The logarithmic exponent of finite Fourier transforms (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-logarithmic-exponent-of-finite-Fourier-transforms-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Preprint — The logarithmic exponent of integer multiplication on tapes (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-logarithmic-exponent-of-integer-multiplication-on-tapes-November-24-2026/paper.pdf",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "gpt6-intrinsic-protein-design-2026",
+      "title": "GPT-6 Models Demonstrate Intrinsic Wet-Lab Protein Design via Reasoning & Code",
+      "shortTitle": "GPT-6 Intrinsic Protein Design",
+      "date": "2026-11-24",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Protein Design",
+        "Antibody Engineering",
+        "Structural Biology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "GPT-6.2 & Internal GPT-6 Reasoning Models",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Shows general-purpose frontier reasoning models can design functional wet-lab protein binders and predict molecular docking using reasoning and code—surpassing specialized models like DiffDock.",
+      "summary": "In a November 24, 2026 preprint and wet-lab collaboration with Onava, OpenAI demonstrated that general-purpose GPT-6 reasoning models possess intrinsic protein-design capabilities using natural-language reasoning and code alone. Across 322 lab-tested minibinders against five protein targets, 35 bound their targets (10.9% hit rate across all five targets), while 66–70% of redesigned antibody/VHH binding loops retained target binding. On blind and covalent small-molecule docking benchmarks, GPT-6.2 and an internal model achieved 92–97% accuracy versus 50–60% for DiffDock.",
+      "technicalHighlights": [
+        "Wet-lab verified with Onava: 35 of 322 GPT-6.2-designed minibinders bound targets across all 5 tested proteins; 70% of 182 VHH and 66% of 272 therapeutic antibody loop redesigns retained binding.",
+        "Reached 93–96% blind docking accuracy (vs. 50% for DiffDock-L) and 92–97% covalent docking accuracy on the Scarpino dataset (vs. 60% for DiffDock).",
+        "Demonstrated prompt-steerable structural motif scaffolding via explicit physics/chemistry reasoning and code rather than bespoke structural diffusion weights."
+      ],
+      "caveats": "Preprint not yet peer-reviewed. OpenAI candidly notes that specialized models (ProteinMPNN, ESMFold) still assisted sequence selection/filtering in the wet-lab workflow, and de novo structure prediction from raw sequence remains a weakness.",
+      "contributors": [
+        "OpenAI Science Team",
+        "Onava Experimental Biology Team"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Onava"
+      ],
+      "scores": {
+        "foundational": 83,
+        "ripple": 88,
+        "verification": 76,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Signals a paradigm shift where general-purpose reasoning LLMs rival or outperform specialized structural-biology models.",
+        "ripple": "Lowers the barrier to programmable therapeutic binder and antibody engineering through natural-language prompting.",
+        "verification": "Backed by physical wet-lab binding assays across five targets with Onava, though still at preprint stage and partially assisted by specialized sequence tools.",
+        "velocity": "Compressed multi-model computational protein engineering pipelines into promptable reasoning-and-code loops."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI — GPT-6 models demonstrate intrinsic protein-design capabilities (Nov 24, 2026)",
+          "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+          "type": "announcement"
         }
       ]
     },
@@ -668,66 +1025,6 @@
       ]
     },
     {
-      "id": "eth-refutation-claim-2026",
-      "title": "Claimed Refutation of the Exponential Time Hypothesis (ETH)",
-      "shortTitle": "ETH Refutation Claim",
-      "date": "2026-10-26",
-      "discipline": "Computer Science & AI",
-      "subfields": [
-        "Fine-Grained Complexity",
-        "SAT Algorithms",
-        "Formal Verification"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neural / Deep Learning",
-      "aiSystem": "OpenAI Frontier Reasoning Model",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 25,
-      "aiTimeToSolve": null,
-      "whyItMatters": "If confirmed, a subexponential algorithm for 3-SAT would overturn the foundational hardness assumption behind modern fine-grained complexity theory.",
-      "summary": "On October 26, 2026, OpenAI announced three major AI-assisted theoretical results—including a manuscript and public Lean formalization claiming a subexponential-time algorithm refuting the Exponential Time Hypothesis (ETH), formulated by Impagliazzo and Paturi in 2001. ETH conjectures that 3-SAT requires 2^Ω(n) time and serves as the bedrock for hundreds of conditional lower bounds across graph algorithms, dynamic programming, and parameterized complexity.",
-      "technicalHighlights": [
-        "Published alongside a public Lean formalization and algorithmic manuscript for community examination.",
-        "Even if valid, refuting ETH does not imply P = NP, as subexponential time (e.g., 2^o(n)) remains super-polynomial.",
-        "Triggered an intensive global audit by complexity theorists inspecting whether the Lean theorem statement matches classical 3-SAT complexity."
-      ],
-      "caveats": "Independent mathematical acceptance remains pending. Experts emphasize that even machine-checked proofs require human verification that the formal theorem matches the intended computational model without subtle specification loopholes.",
-      "contributors": [
-        "Dan Roberts",
-        "OpenAI Science Team"
-      ],
-      "institutions": [
-        "OpenAI"
-      ],
-      "scores": {
-        "foundational": 93,
-        "ripple": 89,
-        "verification": 58,
-        "velocity": 96
-      },
-      "scoreRationale": {
-        "foundational": "ETH is one of the most influential conjectures in theoretical computer science; refuting it would rewrite fine-grained complexity.",
-        "ripple": "Would topple or require revisiting hundreds of conditional lower bounds in parameterized and graph algorithms.",
-        "verification": "Marked down significantly because independent community audit of the Lean specification and algorithm is still active.",
-        "velocity": "An extraordinary surprise given that most complexity theorists strongly expected ETH to be true."
-      },
-      "enables": [
-        "deterministic-factoring-lean-2026"
-      ],
-      "sources": [
-        {
-          "label": "OpenAI: Working with academic communities to build scientific understanding",
-          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-          "type": "announcement"
-        },
-        {
-          "label": "PopularAI Audit: OpenAI's ETH proof claim — What has actually been verified?",
-          "url": "https://www.popularai.org/p/openai-exponential-time-hypothesis-proof",
-          "type": "explainer"
-        }
-      ]
-    },
-    {
       "id": "kakeya-higher-dim-2026",
       "title": "Proposed Proof of the Higher-Dimensional Kakeya Conjecture (n ≥ 4)",
       "shortTitle": "Kakeya Conjecture (n ≥ 4)",
@@ -780,6 +1077,74 @@
         {
           "label": "Kakeya Conjecture Explained: The 3D Proof and 2026 Update",
           "url": "https://www.effortlessmath.com/blog/kakeya-conjecture-explained/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "eth-refutation-claim-2026",
+      "title": "Claimed Refutation of the Exponential Time Hypothesis (ETH)",
+      "shortTitle": "ETH Refutation Claim",
+      "date": "2026-10-25",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Fine-Grained Complexity",
+        "SAT Algorithms",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Reasoning Model + Lean 4 (also independently Claude)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 25,
+      "aiTimeToSolve": null,
+      "whyItMatters": "If confirmed, a subexponential algorithm for 3-SAT would overturn the foundational hardness assumption behind modern fine-grained complexity theory.",
+      "summary": "On October 25–26, 2026, OpenAI released a preprint and >100,000-line Lean formalization claiming a deterministic subexponential-time, polynomial-space algorithm that counts satisfying assignments of fixed-width CNF formulas—refuting the Exponential Time Hypothesis (ETH, Impagliazzo & Paturi 2001). Hours later, Anthropic posted an independent Claude proof of the same claim. An independent working group led by Russell Impagliazzo, Ramamohan Paturi, and MIT’s Ryan Williams is auditing the proofs and Lean specifications.",
+      "technicalHighlights": [
+        "Exhibits a claimed deterministic subexponential-time, polynomial-space exact counting algorithm for fixed-width CNF formulas (3-SAT case refutes ETH).",
+        "Independently targeted on the same day by both OpenAI’s internal model and Anthropic’s Claude, each paired with large-scale Lean 4 formalizations.",
+        "Independent specialist working group led by Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams convened to examine the algorithm and Lean statements."
+      ],
+      "caveats": "Explicitly remains an uncertified claim under active specialist audit. Impagliazzo, Paturi, and Williams emphasized that their involvement is not yet certification; checking >100k lines of Lean requires verifying that the formal definitions match classical 3-SAT complexity without specification loopholes.",
+      "contributors": [
+        "OpenAI Science Team",
+        "Anthropic Research (Independent Claim)",
+        "Russell Impagliazzo, Ramamohan Paturi & Ryan Williams (Audit Group)"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Anthropic",
+        "UC San Diego & MIT (Independent Audit)"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 89,
+        "verification": 58,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "ETH is one of the most influential conjectures in theoretical computer science; refuting it would rewrite fine-grained complexity.",
+        "ripple": "Would topple or require revisiting hundreds of conditional lower bounds in parameterized and graph algorithms.",
+        "verification": "Marked down significantly because independent community audit of the Lean specification and algorithm is still active.",
+        "velocity": "An extraordinary surprise given that most complexity theorists strongly expected ETH to be true."
+      },
+      "enables": [
+        "deterministic-factoring-lean-2026"
+      ],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — The Exponential Time Hypothesis is False (Oct 25, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI — Working with academic communities to build scientific understanding",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "type": "announcement"
+        },
+        {
+          "label": "Computational Complexity Blog — The Exponential Time Refutation",
+          "url": "https://blog.computationalcomplexity.org/2026/10/the-exponential-time-refutation.html",
           "type": "explainer"
         }
       ]
@@ -898,6 +1263,133 @@
           "label": "Fello AI — What OpenAI Released on 6 October 2026 (Audit Breakdown)",
           "url": "https://felloai.com/ai-solved-math-problems/",
           "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "hodge-cm-abelian-varieties-2026",
+      "title": "Lean-Formalized Proof of the Rational Hodge Conjecture for CM Abelian Varieties",
+      "shortTitle": "Hodge Conjecture (CM Abelian)",
+      "date": "2026-10-06",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Algebraic Geometry",
+        "Hodge Theory",
+        "Arithmetic Geometry",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 76,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims a Lean-formalized resolution of the Millennium-tier Rational Hodge Conjecture across all complex abelian varieties of CM type, implying the Tate conjecture for abelian varieties over finite fields.",
+      "summary": "One of the flagship results highlighted from OpenAI’s October 2026 mathematical release (revised Oct 6, with a Lean 4 formalization added Oct 26 and Comparator namespace fixes Oct 29), this manuscript claims to prove the rational Hodge conjecture for every complex projective abelian variety of CM type in every dimension and codimension. By classic theorems of James Milne, this also implies the Tate conjecture for all abelian varieties over finite fields and the Hodge standard conjecture for abelian varieties in arbitrary characteristic.",
+      "technicalHighlights": [
+        "Targets the entire CM locus of complex abelian varieties—a major longstanding partial case of the 1950 Hodge Conjecture Millennium Problem.",
+        "Accompanied by a Lean 4 formalization quantifying over polarized lattice models and Deligne’s Clay formulation of algebraic cycle classes.",
+        "Notably, companion K3-surface papers from the same family were withdrawn on Oct 7 after a sign error was caught, while the core CM abelian variety theorem was retained and formalized in Lean."
+      ],
+      "caveats": "Remains an unrefereed preprint undergoing intense specialist scrutiny (including commentary by Terence Tao and algebraic geometers). Companion K3 papers had to be withdrawn due to a sign error, underscoring the need for full human audit of the Lean statement.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 92,
+        "ripple": 84,
+        "verification": 64,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Settles the Hodge Conjecture across the entire CM abelian locus and carries deep arithmetic-geometry consequences via Milne’s theorems.",
+        "ripple": "Links complex algebraic geometry, Hodge theory, and the Tate conjecture over finite fields.",
+        "verification": "Backed by a Lean 4 formalization added Oct 26, but remains unreviewed and surrounded by earlier withdrawals in companion K3 manuscripts.",
+        "velocity": "Generated autonomously by an internal reasoning model and formalized in Lean within weeks."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — The rational Hodge conjecture for CM abelian varieties (Oct 6, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "Terence Tao — The status of the Hodge conjecture (Blog)",
+          "url": "https://terrytao.wordpress.com/2026/09/12/the-status-of-the-hodge-conjecture/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "lattice-standard-model-chiral-2026",
+      "title": "Candidate Nonperturbative Lattice Definition of the Standard Model with GPT-6 Astra & Lean",
+      "shortTitle": "Standard Model on a Lattice",
+      "date": "2026-10-06",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Particle Physics",
+        "Lattice Gauge Theory",
+        "Chiral Fermions",
+        "Formal Verification"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "GPT-6 Astra + Lean 4 (also Claude Opus 5.5 in follow-ups)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 28,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "UCSB physicist Nathaniel Craig and GPT-6 Astra proposed a Lean-formalized gauge-invariant measure for lattice chiral fermions—sparking AI-assisted follow-ups by Edward Witten and others within weeks.",
+      "summary": "Giving the chiral weak force of the Standard Model a rigorous nonperturbative spacetime-lattice definition remained open for over 25 years after Martin Lüscher’s 1998 Abelian prescription (and >50 years since the Standard Model’s formulation). On October 6, 2026, UC Santa Barbara particle theorist Nathaniel Craig posted arXiv:2610.09093—crediting GPT-6 Astra with leading the detailed refinement proof and 16 kernel-checked Lean 4 modules—proposing a smooth, exponentially local, gauge-invariant overlap-fermion measure. Within five weeks, Stephen Hsu, Edward Witten (crediting Claude Opus 5.5), and Dorota Grabowska posted follow-up lattice chiral papers.",
+      "technicalHighlights": [
+        "Extends Lüscher’s 1998 overlap-fermion phase reconstruction to non-Abelian anomaly-free chiral gauge theories including the Standard Model.",
+        "Accompanied by 16 Lean 4 modules verified without placeholders (archived on Zenodo) alongside private technical feedback from Maarten Golterman, Andreas Kronfeld, and Yigal Shamir.",
+        "Catalyzed a rapid 5-week theoretical physics burst including an arXiv paper by Edward Witten crediting Claude Opus 5.5."
+      ],
+      "caveats": "Explicitly presented by Craig as a candidate definition in principle rather than a settled theorem or practical Monte Carlo algorithm. Finite-spacing reflection positivity, residual disconnected-sector phases, and the interacting continuum limit remain open, and peer review is pending.",
+      "contributors": [
+        "Nathaniel Craig",
+        "Edward Witten (Follow-up w/ Claude)",
+        "GPT-6 Astra"
+      ],
+      "institutions": [
+        "UC Santa Barbara (KITP)",
+        "OpenAI",
+        "Institute for Advanced Study (Follow-up)"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 85,
+        "verification": 68,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "Addresses one of the deepest foundational open problems in nonperturbative quantum field theory and the Standard Model.",
+        "ripple": "Immediately galvanized leading theoretical physicists—including Edward Witten—to engage with AI-assisted lattice gauge theory.",
+        "verification": "Backed by 16 Lean 4 modules and specialist dialogue, though Craig candidly stresses Lean cannot substitute for physical peer review and open reflection-positivity checks.",
+        "velocity": "Turned an unproved human strategy into a detailed Lean-formalized candidate construction and triggered four major arXiv papers in 35 days."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "arXiv:2610.09093 — A gauge-invariant measure for lattice chiral fermions (Oct 6, 2026)",
+          "url": "https://arxiv.org/abs/2610.09093",
+          "type": "paper"
+        },
+        {
+          "label": "Zenodo — Mathematical companion and Lean 4 formalization",
+          "url": "https://zenodo.org/records/23196062",
+          "type": "formal-verification"
+        },
+        {
+          "label": "OpenAI Science Blog — A step toward defining the Standard Model on a lattice (Nov 15, 2026)",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model/",
+          "type": "announcement"
         }
       ]
     },
@@ -1758,6 +2250,65 @@
       ]
     },
     {
+      "id": "borsuk-conjecture-dim63-2026",
+      "title": "AI-Assisted Counterexample Lowers Borsuk’s Conjecture Threshold to Dimension n = 63",
+      "shortTitle": "Borsuk’s Conjecture (n = 63)",
+      "date": "2026-05-15",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Discrete Geometry",
+        "Combinatorial Geometry",
+        "Exact Arithmetic"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "GPT-5.5 Pro (independently reproduced w/ Claude)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 13,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Independent researcher Max Grinsztajn used GPT-5.5 Pro to break the 13-year Jenrich/Bondarenko record (n = 64) with an explicit 321-point counterexample in dimension 63.",
+      "summary": "Since Bondarenko and Jenrich established in 2013 that Karol Borsuk’s 1933 partition conjecture fails for finite point sets in dimension 64, no smaller finite counterexample had been found for 13 years. In May 2026, Max Grinsztajn prompted GPT-5.5 Pro to discover a 321-point three-distance configuration in ℝ^63 requiring at least 65 smaller-diameter parts. In August 2026, Nicholas Konz independently prompted Claude to rediscover the exact same 321-point construction point-for-point, adding an open one-command exact-arithmetic certificate.",
+      "technicalHighlights": [
+        "Lowers the smallest known finite-set counterexample dimension for Borsuk’s conjecture from n = 64 (2013) to n = 63 using a 321-point configuration.",
+        "Independently rediscovered point-for-point (including exact rescaling scalar μ = (-1 + √222)/13) by Claude in August 2026 with a public exact-arithmetic verifier.",
+        "Demonstrates grassroots, reproducible mathematical record-breaking by independent researchers using off-the-shelf frontier AI models."
+      ],
+      "caveats": "Circulated via open-internet notes and independent exact-arithmetic verification repos rather than formal journal refereeing; still far above the open finite-set gap between dimensions 4 and 62.",
+      "contributors": [
+        "Max Grinsztajn",
+        "Nicholas Konz (Independent Exact Certificate)"
+      ],
+      "institutions": [
+        "Independent Research"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 74,
+        "verification": 84,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Breaks a 13-year dimensional record on one of discrete geometry’s classic partition problems.",
+        "ripple": "Showcased independent convergence across two different frontier AI families (GPT-5.5 Pro and Claude) on the exact same geometric object.",
+        "verification": "Easily machine-checkable via exact algebraic arithmetic over all 321 points, though not yet formally journal-refereed.",
+        "velocity": "Cracked a 13-year combinatorial geometry standstill via consumer-accessible AI prompting."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Nicholas Konz — Independent Claude Reproduction & Exact-Arithmetic Verifier",
+          "url": "https://nickk124.github.io/borsuk/",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Wikipedia — Borsuk’s Conjecture (n = 63 Record Documentation)",
+          "url": "https://en.wikipedia.org/wiki/Borsuk%27s_conjecture",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "viazovska-sphere-packing-lean-2026",
       "title": "Gauss Agent Autoformalizes Viazovska’s 8D & 24D Sphere Packing Proofs in Lean 4",
       "shortTitle": "Sphere Packing 8D/24D (Lean)",
@@ -2081,6 +2632,63 @@
       ]
     },
     {
+      "id": "gauss-strong-pnt-lean-2025",
+      "title": "Gauss Autoformalization Agent Formally Proves the Strong Prime Number Theorem in Lean",
+      "shortTitle": "Gauss: Strong PNT (Lean 4)",
+      "date": "2025-09-18",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Analytic Number Theory",
+        "Autoformalization",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Gauss Autoformalization Agent (Math, Inc.)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "3 weeks",
+      "isAnchor": false,
+      "whyItMatters": "Autonomously completed Alex Kontorovich and Terence Tao’s PrimeNumberTheoremAnd Lean challenge—generating ~25,000 lines of verified Lean 4 code and >1,000 theorems in three weeks.",
+      "summary": "In September 2025, Math, Inc. unveiled Gauss, an autonomous autoformalization agent that completed the Strong Prime Number Theorem formalization challenge launched by Terence Tao and Alex Kontorovich in 2024. Operating largely autonomously over three weeks, Gauss wrote roughly 25,000 lines of Lean 4 code and formally proved over 1,000 lemmas and theorems, demonstrating for the first time that AI agents could sustain multi-week, library-scale formal mathematics engineering.",
+      "technicalHighlights": [
+        "Produced ~25,000 lines of kernel-checked Lean 4 code and >1,000 formal theorems completing the Strong Prime Number Theorem project.",
+        "Directly paved the way for Math, Inc.’s 200,000-line Lean formalization of Viazovska’s 8D/24D sphere packing (March 2026) and the 11-day Fermat’s Last Theorem formalization (Sept 2026).",
+        "Marked the shift from single-problem Olympiad provers (2024) to repository-scale autonomous formalization agents (2025–2026)."
+      ],
+      "caveats": "Formalized an already-known landmark theorem in analytic number theory rather than discovering a new theorem, though it proved out the core autonomous Lean infrastructure behind 2026’s breakthroughs.",
+      "contributors": [
+        "Math, Inc. Engineering Team",
+        "Alex Kontorovich & Terence Tao (Challenge Architects)"
+      ],
+      "institutions": [
+        "Math, Inc."
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 89,
+        "verification": 98,
+        "velocity": 93
+      },
+      "scoreRationale": {
+        "foundational": "Proved that autonomous AI agents can execute complex, multi-thousand-line analytic number theory formalizations end-to-end.",
+        "ripple": "Directly enabled the 2026 wave of 200k-line Lean formalizations (Sphere Packing, Fermat’s Last Theorem, and research-level proof checking).",
+        "verification": "100% kernel-checked in Lean 4 against public Mathlib challenge specifications.",
+        "velocity": "Completed a multi-month community formalization roadmap in three weeks of autonomous agent execution."
+      },
+      "enables": [
+        "viazovska-sphere-packing-lean-2026",
+        "fermat-last-theorem-lean-2026"
+      ],
+      "sources": [
+        {
+          "label": "Math, Inc. — Introducing Gauss, an agent for autoformalization (Sept 2025)",
+          "url": "https://www.math.inc/gauss",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "unstable-singularities-pinns-2025",
       "title": "AI Discovers Unstable Fluid Blow-Up Singularities to Near-Machine Precision",
       "shortTitle": "Unstable PDE Singularities (PINNs)",
@@ -2384,7 +2992,8 @@
       "enables": [
         "alphaevolve-67-math-problems-2025",
         "sub-100k-qubit-qec-2026",
-        "deepmind-verified-quantum-algos-2026"
+        "deepmind-verified-quantum-algos-2026",
+        "matrix-multiplication-exponent-9-4-2026"
       ],
       "sources": [
         {
