@@ -104,8 +104,10 @@ export function renderModelQuadrantChart(rows, opts = {}) {
   const refY = scaleY(meanY);
 
   // Compute deterministic non-overlapping coordinates for bubbles sharing identical (volume, y)
+  // plus gentle horizontal spread for single-breakthrough specialists (vol ≈ 1) to avoid a vertical wall
   const sortedForDraw = [...rows].sort((a, b) => b.cumulativeImpact - a.cumulativeImpact);
   const bucketSeen = new Map();
+  let singleVolIdx = 0;
   const points = sortedForDraw.map((row) => {
     const yVal = yAxisMode === 'peakImpact' ? row.peakImpact : row.avgImpact;
     const key = `${row.volume.toFixed(1)}_${Math.round(yVal * 2)}`;
@@ -113,9 +115,14 @@ export function renderModelQuadrantChart(rows, opts = {}) {
     bucketSeen.set(key, idx + 1);
     const jitterAngle = idx * 2.39996;
     const jitterR = idx === 0 ? 0 : Math.min(18, 6 + idx * 3.5);
+    const singleSpreadX =
+      row.volume <= 1.05 ? (((singleVolIdx++ * 7) % 11) - 5) * 2.4 : 0;
     const cx = Math.max(
-      margin.left + 10,
-      Math.min(margin.left + innerW - 10, scaleX(row.volume) + Math.cos(jitterAngle) * jitterR)
+      margin.left + 12,
+      Math.min(
+        margin.left + innerW - 12,
+        scaleX(row.volume) + Math.cos(jitterAngle) * jitterR + singleSpreadX
+      )
     );
     const cy = Math.max(
       margin.top + 10,
@@ -149,16 +156,18 @@ export function renderModelQuadrantChart(rows, opts = {}) {
       .replace(/\s*\([^)]*\)$/, '')
       .replace(/\s+Lineage$/, '')
       .replace(/\s+Structural Suite$/, '');
-    const text = rawLabel.length > 24 ? `${rawLabel.slice(0, 22)}…` : rawLabel;
-    const estW = text.length * 7.2 + 12;
+    const text = rawLabel.length > 22 ? `${rawLabel.slice(0, 20)}…` : rawLabel;
+    const estW = text.length * 7.4 + 14;
     const estH = 15;
     const offsets = [
-      { dx: 0, dy: -(pt.r + 8), anchor: 'middle' },
-      { dx: pt.r + 8, dy: 4, anchor: 'start' },
-      { dx: -(pt.r + 8), dy: 4, anchor: 'end' },
-      { dx: 0, dy: pt.r + 15, anchor: 'middle' },
-      { dx: pt.r + 6, dy: -(pt.r + 4), anchor: 'start' },
-      { dx: -(pt.r + 6), dy: -(pt.r + 4), anchor: 'end' },
+      { dx: 0, dy: -(pt.r + 10), anchor: 'middle' },
+      { dx: pt.r + 10, dy: 4, anchor: 'start' },
+      { dx: -(pt.r + 10), dy: 4, anchor: 'end' },
+      { dx: 0, dy: pt.r + 16, anchor: 'middle' },
+      { dx: pt.r + 8, dy: -(pt.r + 6), anchor: 'start' },
+      { dx: -(pt.r + 8), dy: -(pt.r + 6), anchor: 'end' },
+      { dx: pt.r + 8, dy: pt.r + 14, anchor: 'start' },
+      { dx: -(pt.r + 8), dy: pt.r + 14, anchor: 'end' },
     ];
     for (const off of offsets) {
       const lx = pt.cx + off.dx;
@@ -167,14 +176,15 @@ export function renderModelQuadrantChart(rows, opts = {}) {
       const x1 = x0 + estW;
       const y0 = ly - estH + 3;
       const y1 = ly + 3;
-      if (x0 < margin.left + 2 || x1 > width - margin.right - 2) continue;
+      if (x0 < margin.left + 4 || x1 > width - margin.right - 4) continue;
       if (y0 < margin.top + 18 || y1 > margin.top + innerH - 18) continue;
       const hitsLabel = placedLabels.some(
         (b) => !(x1 + 5 < b.x0 || x0 - 5 > b.x1 || y1 + 4 < b.y0 || y0 - 4 > b.y1)
       );
       if (hitsLabel) continue;
       const hitsBubble = points.some((other) => {
-        const padR = other.r + (other.row.verifiedCount > 0 ? 5 : 2.5);
+        if (other === pt) return false;
+        const padR = other.r + (other.row.verifiedCount > 0 ? 7 : 5);
         const nearestX = Math.max(x0, Math.min(other.cx, x1));
         const nearestY = Math.max(y0, Math.min(other.cy, y1));
         return Math.hypot(other.cx - nearestX, other.cy - nearestY) < padR;
@@ -187,6 +197,7 @@ export function renderModelQuadrantChart(rows, opts = {}) {
           y="${ly.toFixed(1)}"
           text-anchor="${off.anchor}"
           class="viz-node-label"
+          style="paint-order:stroke;stroke:var(--bg-surface);stroke-width:4px;stroke-linejoin:round;"
           pointer-events="none"
         >${escapeHtml(text)}</text>
       `);

@@ -2,6 +2,7 @@ import { DISCIPLINE_META, escapeHtml, formatDate } from '../scoring.js';
 
 export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
   const chainDepth = opts.chainDepth === 'direct' ? 'direct' : 'full';
+  const scope = opts.scope === 'all' ? 'all' : 'hubs';
   const byId = new Map(allRankedItems.map((b) => [b.id, b]));
   const filteredSet = new Set(filteredItems.map((b) => b.id));
 
@@ -14,9 +15,35 @@ export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
     }
   }
 
-  const relevantEdges = allEdges.filter(
+  let relevantEdges = allEdges.filter(
     (e) => filteredSet.has(e.from) || filteredSet.has(e.to)
   );
+  const fullConnectedIds = new Set();
+  const degree = new Map();
+  for (const e of relevantEdges) {
+    fullConnectedIds.add(e.from);
+    fullConnectedIds.add(e.to);
+    degree.set(e.from, (degree.get(e.from) || 0) + 1);
+    degree.set(e.to, (degree.get(e.to) || 0) + 1);
+  }
+
+  // In "Key Hubs" mode (when dataset is large), focus on high-connectivity hubs & major landmarks
+  // so the graph stays compact, scannable, and well-proportioned without a 3,200px vertical wall.
+  if (scope === 'hubs' && fullConnectedIds.size > 68) {
+    const hubKeep = new Set();
+    for (const id of fullConnectedIds) {
+      const item = byId.get(id);
+      const deg = degree.get(id) || 0;
+      if (deg >= 2 || (item && item.compositeScore >= 91.5)) {
+        hubKeep.add(id);
+      }
+    }
+    const hubEdges = relevantEdges.filter((e) => hubKeep.has(e.from) && hubKeep.has(e.to));
+    if (hubEdges.length >= 12) {
+      relevantEdges = hubEdges;
+    }
+  }
+
   const connectedIds = new Set();
   for (const e of relevantEdges) {
     connectedIds.add(e.from);
@@ -38,9 +65,15 @@ export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
 
   const allColumns = [
     {
-      id: 'anchors',
-      title: '≤ 2023 · PIONEERS',
-      match: (n) => n.date < '2024-01-01',
+      id: 'pioneers',
+      title: '1969–2019 · PIONEERS',
+      match: (n) => n.date < '2020-01-01',
+      items: [],
+    },
+    {
+      id: 'breakout',
+      title: '2020–2023 · BREAKOUT',
+      match: (n) => n.date >= '2020-01-01' && n.date < '2024-01-01',
       items: [],
     },
     {
@@ -94,15 +127,15 @@ export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
 
   const colCount = columns.length;
   const maxRows = Math.max(...columns.map((c) => c.items.length), 3);
-  const width = colCount >= 5 ? 1240 : colCount >= 4 ? 1140 : 1040;
-  const nodeW = colCount >= 5 ? 204 : colCount >= 4 ? 222 : 248;
-  const nodeH = 52;
-  const rowGap = 13;
-  const topPad = 52;
-  const bottomPad = 28;
-  const height = Math.max(450, topPad + maxRows * (nodeH + rowGap) + bottomPad);
+  const width = colCount >= 6 ? 1360 : colCount >= 5 ? 1240 : colCount >= 4 ? 1140 : 1040;
+  const nodeW = colCount >= 6 ? 192 : colCount >= 5 ? 204 : colCount >= 4 ? 222 : 248;
+  const nodeH = 48;
+  const rowGap = 10;
+  const topPad = 48;
+  const bottomPad = 24;
+  const height = Math.max(460, topPad + maxRows * (nodeH + rowGap) + bottomPad);
 
-  const sidePad = 24;
+  const sidePad = 20;
   const usableW = width - sidePad * 2 - nodeW;
   const colX = columns.map((_, idx) =>
     colCount === 1 ? (width - nodeW) / 2 : sidePad + (idx / (colCount - 1)) * usableW
@@ -111,7 +144,10 @@ export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
   const nodePos = new Map();
   columns.forEach((col, cIdx) => {
     const totalH = col.items.length * nodeH + Math.max(0, col.items.length - 1) * rowGap;
-    const startY = topPad + Math.max(0, (height - topPad - bottomPad - totalH) / 2);
+    const startY =
+      height > 680
+        ? topPad
+        : topPad + Math.max(0, (height - topPad - bottomPad - totalH) / 2);
     col.items.forEach((item, rIdx) => {
       nodePos.set(item.id, {
         x: colX[cIdx],
@@ -128,11 +164,15 @@ export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
         <div>
           <h2 class="viz-card__title">AI-for-Science Catalyst &amp; Influence Network</h2>
           <p class="viz-card__desc">
-            Traces how pre-2020 symbolic pioneers (Meta-DENDRAL, Graffiti, Robbins, Adam, Pythagorean Triples), 2020–2023 neural anchors (Halicin, AlphaFold 2, AlphaTensor, FunSearch), and 2024–2025 architectures catalyzed the 2026 surge. Hover to trace chains; drag to pan or zoom; click any node for its dossier.
+            Traces multi-decade lineages from 1969–2019 pioneers and 2020–2023 breakouts into the 2024–2026 surge. Hover any node to trace its full chain; drag to pan, scroll/zoom, or click for its dossier.
           </p>
         </div>
 
         <div class="viz-toolbar" aria-label="Influence graph controls">
+          <div class="segmented-ctrl segmented-ctrl--sm" role="group" aria-label="Graph scope">
+            <button type="button" data-lineage-scope="hubs" aria-pressed="${scope === 'hubs' ? 'true' : 'false'}" title="Show major multi-link hubs and top impact milestones">Key Hubs</button>
+            <button type="button" data-lineage-scope="all" aria-pressed="${scope === 'all' ? 'true' : 'false'}" title="Show all ${fullConnectedIds.size} linked breakthroughs">All (${fullConnectedIds.size})</button>
+          </div>
           <div class="segmented-ctrl segmented-ctrl--sm" role="group" aria-label="Lineage highlight depth">
             <button type="button" data-lineage-depth="full" aria-pressed="${chainDepth === 'full' ? 'true' : 'false'}" title="Trace all transitive upstream ancestors and downstream descendants">Full Chain</button>
             <button type="button" data-lineage-depth="direct" aria-pressed="${chainDepth === 'direct' ? 'true' : 'false'}" title="Highlight immediate 1-hop connections only">1-Hop</button>
@@ -163,9 +203,9 @@ export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
         </span>
       </div>
 
-      <div class="viz-stage viz-stage--interactive viz-stage--pan">
+      <div class="viz-stage viz-stage--interactive viz-stage--pan viz-stage--lineage">
         <svg
-          class="viz-svg"
+          class="viz-svg viz-svg--lineage"
           id="lineage-graph-svg"
           viewBox="0 0 ${width} ${height}"
           data-base-w="${width}"

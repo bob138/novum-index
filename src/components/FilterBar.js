@@ -104,63 +104,87 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
           .join('')}
       </div>
 
-      <div class="filter-row">
-        <div class="search-box">
-          <svg class="search-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input
-            type="search"
-            id="search-input"
-            class="search-box__input"
-            placeholder="Search breakthroughs, conjectures, authors, AI models..."
-            value="${escapeHtml(state.search)}"
-            aria-label="Search breakthroughs"
-          />
-          <span class="search-box__kbd" aria-hidden="true">/</span>
+      <div class="filter-row ${state.mobileFiltersOpen ? 'filter-row--expanded' : ''}">
+        <div class="filter-row__primary">
+          <div class="search-box">
+            <svg class="search-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input
+              type="search"
+              id="search-input"
+              class="search-box__input"
+              placeholder="Search breakthroughs, models…"
+              value="${escapeHtml(state.search)}"
+              aria-label="Search breakthroughs"
+            />
+            <span class="search-box__kbd" aria-hidden="true">/</span>
+          </div>
+
+          ${(() => {
+            const secondaryCount =
+              (state.paradigm !== 'all' ? 1 : 0) +
+              (state.aiRole !== 'all' ? 1 : 0) +
+              (state.status !== 'all' ? 1 : 0) +
+              (state.year !== 'all' ? 1 : 0) +
+              (state.sortBy !== 'impact' ? 1 : 0);
+            return `
+              <button
+                type="button"
+                class="mobile-filter-toggle"
+                id="mobile-filters-toggle-btn"
+                aria-expanded="${state.mobileFiltersOpen ? 'true' : 'false'}"
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                <span>Filters${secondaryCount > 0 ? ` (${secondaryCount})` : ''}</span>
+              </button>
+            `;
+          })()}
         </div>
 
-        <select id="filter-paradigm" class="filter-select" aria-label="Filter by AI paradigm">
-          <option value="all" ${state.paradigm === 'all' ? 'selected' : ''}>All Paradigms</option>
-          <option value="modern" ${state.paradigm === 'modern' ? 'selected' : ''}>Neural &amp; Hybrid (2020+)</option>
-          <option value="Neural / Deep Learning" ${state.paradigm === 'Neural / Deep Learning' ? 'selected' : ''}>Neural / Deep Learning</option>
-          <option value="Neuro-Symbolic" ${state.paradigm === 'Neuro-Symbolic' ? 'selected' : ''}>Neuro-Symbolic</option>
-          <option value="Symbolic / Classical" ${state.paradigm === 'Symbolic / Classical' ? 'selected' : ''}>Symbolic (&lt;2020)</option>
-        </select>
+        <div class="filter-row__selects">
+          <select id="filter-paradigm" class="filter-select" aria-label="Filter by AI paradigm">
+            <option value="all" ${state.paradigm === 'all' ? 'selected' : ''}>All Paradigms</option>
+            <option value="modern" ${state.paradigm === 'modern' ? 'selected' : ''}>Neural &amp; Hybrid (2020+)</option>
+            <option value="Neural / Deep Learning" ${state.paradigm === 'Neural / Deep Learning' ? 'selected' : ''}>Neural / Deep Learning</option>
+            <option value="Neuro-Symbolic" ${state.paradigm === 'Neuro-Symbolic' ? 'selected' : ''}>Neuro-Symbolic</option>
+            <option value="Symbolic / Classical" ${state.paradigm === 'Symbolic / Classical' ? 'selected' : ''}>Symbolic / Classical</option>
+          </select>
 
-        <select id="filter-ai-role" class="filter-select" aria-label="Filter by AI role">
-          <option value="all" ${state.aiRole === 'all' ? 'selected' : ''}>All AI Roles</option>
-          <option value="Autonomous AI" ${state.aiRole === 'Autonomous AI' ? 'selected' : ''}>Autonomous AI</option>
-          <option value="AI-Assisted" ${state.aiRole === 'AI-Assisted' ? 'selected' : ''}>AI-Assisted</option>
-        </select>
+          <select id="filter-ai-role" class="filter-select" aria-label="Filter by AI role">
+            <option value="all" ${state.aiRole === 'all' ? 'selected' : ''}>All AI Roles</option>
+            <option value="Autonomous AI" ${state.aiRole === 'Autonomous AI' ? 'selected' : ''}>Autonomous AI</option>
+            <option value="AI-Assisted" ${state.aiRole === 'AI-Assisted' ? 'selected' : ''}>AI-Assisted</option>
+          </select>
 
-        <select id="filter-status" class="filter-select" aria-label="Filter by verification status">
-          <option value="all" ${state.status === 'all' ? 'selected' : ''}>All Verification</option>
-          <option value="Formally Verified" ${state.status === 'Formally Verified' ? 'selected' : ''}>Formally Verified</option>
-          <option value="Peer-Reviewed" ${state.status === 'Peer-Reviewed' ? 'selected' : ''}>Peer-Reviewed</option>
-          <option value="Preprint / Active Review" ${state.status === 'Preprint / Active Review' ? 'selected' : ''}>Active Review</option>
-          <option value="Contested / Partial" ${state.status === 'Contested / Partial' ? 'selected' : ''}>Contested / Partial</option>
-        </select>
+          <select id="filter-status" class="filter-select" aria-label="Filter by verification status">
+            <option value="all" ${state.status === 'all' ? 'selected' : ''}>All Verification</option>
+            <option value="Formally Verified" ${state.status === 'Formally Verified' ? 'selected' : ''}>Formally Verified</option>
+            <option value="Peer-Reviewed" ${state.status === 'Peer-Reviewed' ? 'selected' : ''}>Peer-Reviewed</option>
+            <option value="Preprint / Active Review" ${state.status === 'Preprint / Active Review' ? 'selected' : ''}>Active Review</option>
+            <option value="Contested / Partial" ${state.status === 'Contested / Partial' ? 'selected' : ''}>Contested / Partial</option>
+          </select>
 
-        <select id="filter-year" class="filter-select" aria-label="Filter by timeframe">
-          <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (1969–2026)</option>
-          <option value="2024-2026" ${state.year === '2024-2026' ? 'selected' : ''}>2024–2026 Wave</option>
-          <option value="anchors" ${state.year === 'anchors' ? 'selected' : ''}>2020–2023 Early Wave</option>
-          <option value="pre-2020" ${state.year === 'pre-2020' ? 'selected' : ''}>Pre-2020 Pioneers (1969–2019)</option>
-          <option value="2026" ${state.year === '2026' ? 'selected' : ''}>2026 Only</option>
-          <option value="2025" ${state.year === '2025' ? 'selected' : ''}>2025 Only</option>
-          <option value="2024" ${state.year === '2024' ? 'selected' : ''}>2024 Only</option>
-        </select>
+          <select id="filter-year" class="filter-select" aria-label="Filter by timeframe">
+            <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (1969–2026)</option>
+            <option value="2024-2026" ${state.year === '2024-2026' ? 'selected' : ''}>2024–2026 Wave</option>
+            <option value="anchors" ${state.year === 'anchors' ? 'selected' : ''}>2020–2023 Early Wave</option>
+            <option value="pre-2020" ${state.year === 'pre-2020' ? 'selected' : ''}>Pre-2020 Pioneers (1969–2019)</option>
+            <option value="2026" ${state.year === '2026' ? 'selected' : ''}>2026 Only</option>
+            <option value="2025" ${state.year === '2025' ? 'selected' : ''}>2025 Only</option>
+            <option value="2024" ${state.year === '2024' ? 'selected' : ''}>2024 Only</option>
+          </select>
 
-        <select id="sort-by" class="filter-select" aria-label="Sort breakthroughs">
-          <option value="impact" ${state.sortBy === 'impact' ? 'selected' : ''}>Sort: Impact</option>
-          <option value="newest" ${state.sortBy === 'newest' ? 'selected' : ''}>Sort: Most Recent</option>
-          <option value="oldest" ${state.sortBy === 'oldest' ? 'selected' : ''}>Sort: Chronological</option>
-        </select>
+          <select id="sort-by" class="filter-select" aria-label="Sort breakthroughs">
+            <option value="impact" ${state.sortBy === 'impact' ? 'selected' : ''}>Sort: Impact</option>
+            <option value="newest" ${state.sortBy === 'newest' ? 'selected' : ''}>Sort: Most Recent</option>
+            <option value="oldest" ${state.sortBy === 'oldest' ? 'selected' : ''}>Sort: Chronological</option>
+          </select>
 
-        ${
-          hasFilters
-            ? `<button type="button" class="filter-clear" id="clear-filters-btn">Reset filters</button>`
-            : ''
-        }
+          ${
+            hasFilters
+              ? `<button type="button" class="filter-clear" id="clear-filters-btn">Reset</button>`
+              : ''
+          }
+        </div>
       </div>
     </div>
   `;

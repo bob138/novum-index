@@ -1,6 +1,5 @@
 import { escapeHtml } from '../scoring.js';
-
-const REPO_URL = 'https://github.com/bob138/novum-index';
+import { renderNavbar } from './Navbar.js';
 
 export function renderHeader(meta, allItems, theme) {
   const totalCount = allItems.length;
@@ -21,42 +20,7 @@ export function renderHeader(meta, allItems, theme) {
   const openProblemCount = openProblems.length;
 
   return `
-    <header class="site-nav" role="banner">
-      <div class="container site-nav__inner">
-        <a href="#top" class="site-brand" id="brand-home">
-          <img src="./favicon.svg" alt="" class="site-brand__mark" width="28" height="28" />
-          <span class="site-brand__title">The Novum Index</span>
-          <span class="site-brand__edition">Edition ${escapeHtml(meta.lastUpdated)}</span>
-        </a>
-        <nav class="site-nav__actions" aria-label="Site actions">
-          <button
-            type="button"
-            class="nav-btn"
-            id="theme-toggle-btn"
-            aria-label="Toggle color theme"
-            title="Switch between archival paper and obsidian dark mode"
-          >
-            ${
-              theme === 'dark'
-                ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><span>Paper</span>`
-                : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><span>Dark</span>`
-            }
-          </button>
-          <a href="./models.html" class="nav-btn nav-btn--models" id="nav-models">AI Systems</a>
-          <a href="./methodology.html" class="nav-btn nav-btn--methodology" id="nav-methodology">Methodology</a>
-          <a
-            href="${REPO_URL}/issues/new?template=submit-breakthrough.yml"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-btn nav-btn--primary"
-            id="nav-submit-btn"
-          >
-            <span class="nav-submit-full">Submit Breakthrough</span>
-            <span class="nav-submit-short">Submit</span>
-          </a>
-        </nav>
-      </div>
-    </header>
+    ${renderNavbar({ activePage: 'index', theme, editionLabel: `Edition ${meta.lastUpdated}` })}
 
     <section class="hero" id="top">
       <div class="container">
@@ -67,7 +31,7 @@ export function renderHeader(meta, allItems, theme) {
               Tracking the <em>exponential</em> rise of AI in scientific discovery.
             </h1>
             <p class="hero__lead">
-              From five decades of pre-2020 symbolic theorem provers, expert systems, and early neural pioneers (1969–2019) to the deep-learning breakout (Halicin, AlphaFold 2) and today’s surge of autonomous neural and neuro-symbolic discoveries, The Novum Index tracks exclusively AI-assisted and AI-led breakthroughs—separating paradigms cleanly while visualizing the curve over time.
+              From five decades of pre-2020 symbolic provers and early neural pioneers (1969–2019) through AlphaFold 2 and today’s surge of autonomous neuro-symbolic discoveries—transparently verified, paradigm-tagged, and impact-ranked.
             </p>
           </div>
           <figure class="hero__artwork">

@@ -348,10 +348,12 @@ function buildScatterSvgContent(items, opts = {}) {
       cy += jitter.dy;
     }
 
+    const zoomScale = isZoomed ? 1.0 : 0.78;
     const r =
-      6.0 +
-      (item.scores.ripple / 100) * 4.8 +
-      (item.yearsUnsolved ? Math.min(3.5, item.yearsUnsolved / 45) : 0);
+      (5.2 +
+        (item.scores.ripple / 100) * 4.2 +
+        (item.yearsUnsolved ? Math.min(3.0, item.yearsUnsolved / 50) : 0)) *
+      zoomScale;
 
     // Only clamp nodes inside the frame when unzoomed; when zoomed/panned, let SVG clipPath clip smoothly
     if (!isZoomed) {
@@ -370,9 +372,20 @@ function buildScatterSvgContent(items, opts = {}) {
       p.cy <= margin.top + innerH + p.r
   ).length;
 
-  // Pick non-overlapping callout labels — allow more labels when zoomed in
+  // Pick non-overlapping callout labels — prioritize canonical editorial landmarks first
+  const CURATED_LANDMARKS = [
+    'sam-lemma-atp-1969',
+    'robbins-conjecture-eqp-1996',
+    'behler-parrinello-nn-potentials-2007',
+    'alphafold-2-2020',
+    'funsearch-2023',
+    'alphafold-3-2024',
+    'riemann-hypothesis-lean-2026',
+  ];
   const waveLabelBudget = isZoomed ? 22 : 12;
+  const posById = new Map(positioned.map((p) => [p.item.id, p]));
   const prioritized = [
+    ...CURATED_LANDMARKS.map((id) => posById.get(id)).filter(Boolean),
     ...positioned.filter((p) => p.item.date < '2020-01-01').slice(0, 5),
     ...positioned.filter((p) => p.item.isAnchor && p.item.date >= '2020-01-01').slice(0, 5),
     ...positioned.filter((p) => !p.item.isAnchor).slice(0, waveLabelBudget),
@@ -396,20 +409,35 @@ function buildScatterSvgContent(items, opts = {}) {
     }
     const cleanText = node.item.shortTitle
       .replace(' (Anchor)', '')
-      .replace('Robbins Conjecture (EQP, 1996)', 'Robbins (1996)')
-      .replace('Robot Scientist Adam (2009)', 'Adam (2009)')
+      .replace('SAM’s Lemma (SAM V ATP, 1969)', 'SAM’s Lemma ’69')
+      .replace('Robbins Conjecture (EQP, 1996)', 'Robbins ’96')
+      .replace('Behler–Parrinello NN Potentials (2007)', 'Behler–Parrinello ’07')
+      .replace('Robot Scientist Adam (2009)', 'Adam ’09')
       .replace(' (SAT)', ' (2016)');
-    const labelW = cleanText.length * 6.2 + 12;
+    const labelW = cleanText.length * 6.5 + 12;
     const labelH = 15;
-    const preferredRight = node.cx > width - 220;
-    const candidates = preferredRight ? [true, false] : [false, true];
+    const nearRight = node.cx > width - 220;
+    const placements = nearRight
+      ? [
+          { lx: node.cx - node.r - 7, ly: node.cy + 3.5, anchor: 'end', boxLeft: node.cx - node.r - 7 - labelW, boxTop: node.cy - labelH / 2 },
+          { lx: node.cx, ly: node.cy - node.r - 7, anchor: 'middle', boxLeft: node.cx - labelW / 2, boxTop: node.cy - node.r - 7 - labelH },
+          { lx: node.cx, ly: node.cy + node.r + 14, anchor: 'middle', boxLeft: node.cx - labelW / 2, boxTop: node.cy + node.r + 2 },
+        ]
+      : [
+          { lx: node.cx + node.r + 7, ly: node.cy + 3.5, anchor: 'start', boxLeft: node.cx + node.r + 7, boxTop: node.cy - labelH / 2 },
+          { lx: node.cx, ly: node.cy - node.r - 7, anchor: 'middle', boxLeft: node.cx - labelW / 2, boxTop: node.cy - node.r - 7 - labelH },
+          { lx: node.cx, ly: node.cy - node.r - 8, anchor: 'start', boxLeft: node.cx, boxTop: node.cy - node.r - 8 - labelH },
+          { lx: node.cx - node.r - 7, ly: node.cy + 3.5, anchor: 'end', boxLeft: node.cx - node.r - 7 - labelW, boxTop: node.cy - labelH / 2 },
+          { lx: node.cx, ly: node.cy + node.r + 14, anchor: 'middle', boxLeft: node.cx - labelW / 2, boxTop: node.cy + node.r + 2 },
+          { lx: node.cx, ly: node.cy + node.r + 15, anchor: 'start', boxLeft: node.cx, boxTop: node.cy + node.r + 3 },
+        ];
 
-    for (const alignRight of candidates) {
-      const lx = alignRight ? node.cx - node.r - 8 : node.cx + node.r + 8;
-      const boxLeft = alignRight ? lx - labelW : lx;
-      const boxTop = node.cy - labelH / 2;
-
+    for (const pl of placements) {
+      const { lx, ly, anchor, boxLeft, boxTop } = pl;
       if (boxLeft < margin.left + 2 || boxLeft + labelW > width - margin.right - 2) {
+        continue;
+      }
+      if (boxTop < margin.top + 2 || boxTop + labelH > margin.top + innerH - 2) {
         continue;
       }
 
@@ -424,7 +452,7 @@ function buildScatterSvgContent(items, opts = {}) {
 
       const overlapsCircle = positioned.some((other) => {
         if (other.item.id === node.item.id) return false;
-        const pad = other.r + 5;
+        const pad = other.r + 4.5;
         return (
           other.cx + pad > boxLeft &&
           other.cx - pad < boxLeft + labelW &&
@@ -442,8 +470,8 @@ function buildScatterSvgContent(items, opts = {}) {
         top: boxTop,
         bottom: boxTop + labelH,
         lx,
-        ly: node.cy + 3.5,
-        anchor: alignRight ? 'end' : 'start',
+        ly,
+        anchor,
       });
       break;
     }

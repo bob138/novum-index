@@ -1,55 +1,55 @@
 import { DISCIPLINE_META, escapeHtml } from '../scoring.js';
 
 const ANCHOR_PERIODS = [
-  { id: 'pre-2020', label: '< 2020*', start: '1965-01-01', end: '2019-12-31', isAnchorBucket: true, isPioneerBucket: true },
-  { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', isAnchorBucket: true },
-  { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', isAnchorBucket: true },
-  { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', isAnchorBucket: true },
-  { id: '2023', label: '2023', start: '2023-01-01', end: '2023-12-31', isAnchorBucket: true },
+  { id: 'pre-2020', label: '< 2020*', start: '1965-01-01', end: '2019-12-31', yearsSpan: 51, isAnchorBucket: true, isPioneerBucket: true },
+  { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', yearsSpan: 1, isAnchorBucket: true },
+  { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', yearsSpan: 1, isAnchorBucket: true },
+  { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', yearsSpan: 1, isAnchorBucket: true },
+  { id: '2023', label: '2023', start: '2023-01-01', end: '2023-12-31', yearsSpan: 1, isAnchorBucket: true },
 ];
 
 const WAVE_QUARTERS = [
-  { id: '2024-Q1', label: 'Q1 24', start: '2024-01-01', end: '2024-03-31', isAnchorBucket: false },
-  { id: '2024-Q2', label: 'Q2 24', start: '2024-04-01', end: '2024-06-30', isAnchorBucket: false },
-  { id: '2024-Q3', label: 'Q3 24', start: '2024-07-01', end: '2024-09-30', isAnchorBucket: false },
-  { id: '2024-Q4', label: 'Q4 24', start: '2024-10-01', end: '2024-12-31', isAnchorBucket: false },
-  { id: '2025-Q1', label: 'Q1 25', start: '2025-01-01', end: '2025-03-31', isAnchorBucket: false },
-  { id: '2025-Q2', label: 'Q2 25', start: '2025-04-01', end: '2025-06-30', isAnchorBucket: false },
-  { id: '2025-Q3', label: 'Q3 25', start: '2025-07-01', end: '2025-09-30', isAnchorBucket: false },
-  { id: '2025-Q4', label: 'Q4 25', start: '2025-10-01', end: '2025-12-31', isAnchorBucket: false },
-  { id: '2026-Q1', label: 'Q1 26', start: '2026-01-01', end: '2026-03-31', isAnchorBucket: false },
-  { id: '2026-Q2', label: 'Q2 26', start: '2026-04-01', end: '2026-06-30', isAnchorBucket: false },
-  { id: '2026-Q3', label: 'Q3 26', start: '2026-07-01', end: '2026-09-30', isAnchorBucket: false },
-  { id: '2026-Q4', label: 'Q4 26*', start: '2026-10-01', end: '2026-12-31', isAnchorBucket: false },
+  { id: '2024-Q1', label: 'Q1 24', start: '2024-01-01', end: '2024-03-31', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2024-Q2', label: 'Q2 24', start: '2024-04-01', end: '2024-06-30', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2024-Q3', label: 'Q3 24', start: '2024-07-01', end: '2024-09-30', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2024-Q4', label: 'Q4 24', start: '2024-10-01', end: '2024-12-31', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2025-Q1', label: 'Q1 25', start: '2025-01-01', end: '2025-03-31', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2025-Q2', label: 'Q2 25', start: '2025-04-01', end: '2025-06-30', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2025-Q3', label: 'Q3 25', start: '2025-07-01', end: '2025-09-30', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2025-Q4', label: 'Q4 25', start: '2025-10-01', end: '2025-12-31', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2026-Q1', label: 'Q1 26', start: '2026-01-01', end: '2026-03-31', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2026-Q2', label: 'Q2 26', start: '2026-04-01', end: '2026-06-30', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2026-Q3', label: 'Q3 26', start: '2026-07-01', end: '2026-09-30', yearsSpan: 0.25, isAnchorBucket: false },
+  { id: '2026-Q4', label: 'Q4 26*', start: '2026-10-01', end: '2026-12-31', yearsSpan: 57 / 365.25, isAnchorBucket: false },
 ];
 
 const ANNUAL_PERIODS = [
-  { id: 'pre-2020', label: '< 2020*', start: '1965-01-01', end: '2019-12-31', isAnchorBucket: true, isPioneerBucket: true },
-  { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', isAnchorBucket: true },
-  { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', isAnchorBucket: true },
-  { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', isAnchorBucket: true },
-  { id: '2023', label: '2023', start: '2023-01-01', end: '2023-12-31', isAnchorBucket: true },
-  { id: '2024', label: '2024', start: '2024-01-01', end: '2024-12-31', isAnchorBucket: false },
-  { id: '2025', label: '2025', start: '2025-01-01', end: '2025-12-31', isAnchorBucket: false },
-  { id: '2026', label: '2026*', start: '2026-01-01', end: '2026-12-31', isAnchorBucket: false },
+  { id: 'pre-2020', label: '< 2020*', start: '1965-01-01', end: '2019-12-31', yearsSpan: 51, isAnchorBucket: true, isPioneerBucket: true },
+  { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', yearsSpan: 1, isAnchorBucket: true },
+  { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', yearsSpan: 1, isAnchorBucket: true },
+  { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', yearsSpan: 1, isAnchorBucket: true },
+  { id: '2023', label: '2023', start: '2023-01-01', end: '2023-12-31', yearsSpan: 1, isAnchorBucket: true },
+  { id: '2024', label: '2024', start: '2024-01-01', end: '2024-12-31', yearsSpan: 1, isAnchorBucket: false },
+  { id: '2025', label: '2025', start: '2025-01-01', end: '2025-12-31', yearsSpan: 1, isAnchorBucket: false },
+  { id: '2026', label: '2026*', start: '2026-01-01', end: '2026-12-31', yearsSpan: 330 / 365.25, isAnchorBucket: false },
 ];
 
 const MONTHLY_2026_PERIODS = [
-  { id: '2026-01', label: 'Jan 26', start: '2026-01-01', end: '2026-01-31', isAnchorBucket: false },
-  { id: '2026-02', label: 'Feb 26', start: '2026-02-01', end: '2026-02-28', isAnchorBucket: false },
-  { id: '2026-03', label: 'Mar 26', start: '2026-03-01', end: '2026-03-31', isAnchorBucket: false },
-  { id: '2026-04', label: 'Apr 26', start: '2026-04-01', end: '2026-04-30', isAnchorBucket: false },
-  { id: '2026-05', label: 'May 26', start: '2026-05-01', end: '2026-05-31', isAnchorBucket: false },
-  { id: '2026-06', label: 'Jun 26', start: '2026-06-01', end: '2026-06-30', isAnchorBucket: false },
-  { id: '2026-07', label: 'Jul 26', start: '2026-07-01', end: '2026-07-31', isAnchorBucket: false },
-  { id: '2026-08', label: 'Aug 26', start: '2026-08-01', end: '2026-08-31', isAnchorBucket: false },
-  { id: '2026-09', label: 'Sep 26', start: '2026-09-01', end: '2026-09-30', isAnchorBucket: false },
-  { id: '2026-10', label: 'Oct 26', start: '2026-10-01', end: '2026-10-31', isAnchorBucket: false },
-  { id: '2026-11', label: 'Nov 26*', start: '2026-11-01', end: '2026-11-30', isAnchorBucket: false },
+  { id: '2026-01', label: 'Jan 26', start: '2026-01-01', end: '2026-01-31', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-02', label: 'Feb 26', start: '2026-02-01', end: '2026-02-28', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-03', label: 'Mar 26', start: '2026-03-01', end: '2026-03-31', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-04', label: 'Apr 26', start: '2026-04-01', end: '2026-04-30', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-05', label: 'May 26', start: '2026-05-01', end: '2026-05-31', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-06', label: 'Jun 26', start: '2026-06-01', end: '2026-06-30', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-07', label: 'Jul 26', start: '2026-07-01', end: '2026-07-31', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-08', label: 'Aug 26', start: '2026-08-01', end: '2026-08-31', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-09', label: 'Sep 26', start: '2026-09-01', end: '2026-09-30', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-10', label: 'Oct 26', start: '2026-10-01', end: '2026-10-31', yearsSpan: 1 / 12, isAnchorBucket: false },
+  { id: '2026-11', label: 'Nov 26*', start: '2026-11-01', end: '2026-11-30', yearsSpan: 26 / 365.25, isAnchorBucket: false },
 ];
 
 const PARADIGM_SERIES = [
-  { key: 'Symbolic / Classical', label: 'Symbolic / Classical (Pre-2020)', colorVar: 'var(--ink-muted)' },
+  { key: 'Symbolic / Classical', label: 'Symbolic / Classical', colorVar: 'var(--ink-muted)' },
   { key: 'Neural / Deep Learning', label: 'Neural / Deep Learning', colorVar: 'var(--disc-cs)' },
   { key: 'Neuro-Symbolic', label: 'Neuro-Symbolic (Neural + Formal)', colorVar: 'var(--disc-math)' },
 ];
@@ -177,9 +177,13 @@ export function computeVelocityData(items, opts = {}) {
         score: b.compositeScore.toFixed(1),
       }));
 
+    const span = p.yearsSpan || 1;
+    const annualizedRate = inP.length / span;
+
     return {
       ...p,
       total: inP.length,
+      annualizedRate,
       counts,
       periodYears,
       cumulativeCount,
@@ -195,6 +199,7 @@ export function computeVelocityData(items, opts = {}) {
 export function renderVelocityChart(items, opts = {}) {
   const groupBy = typeof opts === 'string' ? opts : opts.groupBy || 'paradigm';
   const granularity = typeof opts === 'string' ? 'default' : opts.granularity || 'default';
+  const barMode = typeof opts === 'string' ? 'count' : opts.barMode === 'rate' ? 'rate' : 'count';
   const yScale = typeof opts === 'string' ? 'linear' : opts.yScale === 'log' ? 'log' : 'linear';
   const curveMetricKey =
     typeof opts === 'string'
@@ -205,8 +210,8 @@ export function renderVelocityChart(items, opts = {}) {
   const curveMeta = CURVE_METRICS[curveMetricKey];
 
   const width = 1060;
-  const height = 445;
-  const margin = { top: 38, right: 68, bottom: 54, left: 54 };
+  const height = 450;
+  const margin = { top: 38, right: 68, bottom: 58, left: 56 };
   const innerW = width - margin.left - margin.right;
   const innerH = height - margin.top - margin.bottom;
 
@@ -215,8 +220,24 @@ export function renderVelocityChart(items, opts = {}) {
     granularity,
   });
 
-  const rawMaxBar = Math.max(4, ...buckets.map((b) => b.total));
-  const step = rawMaxBar <= 6 ? 1 : rawMaxBar <= 12 ? 2 : rawMaxBar <= 18 ? 3 : rawMaxBar <= 32 ? 4 : 8;
+  const getBucketBarVal = (b) => (barMode === 'rate' ? b.annualizedRate : b.total);
+  const rawMaxBar = Math.max(4, ...buckets.map(getBucketBarVal));
+  const step =
+    rawMaxBar <= 6
+      ? 1
+      : rawMaxBar <= 12
+        ? 2
+        : rawMaxBar <= 18
+          ? 3
+          : rawMaxBar <= 32
+            ? 4
+            : rawMaxBar <= 64
+              ? 8
+              : rawMaxBar <= 140
+                ? 20
+                : rawMaxBar <= 320
+                  ? 50
+                  : 100;
   let maxBar = Math.ceil(rawMaxBar / step) * step;
   if (rawMaxBar / maxBar > 0.85) maxBar += step;
 
@@ -256,14 +277,20 @@ export function renderVelocityChart(items, opts = {}) {
       ? margin.left + activeAnchorCount * slotW
       : null;
 
-  const count2024 = items.filter((b) => b.date.startsWith('2024')).length;
+  // Non-redundant curve-specific callouts (Hero Pulse Strip already shows total, open years, and 2026 vs 2024 pace)
+  const pre2020Items = items.filter((b) => b.date < '2020-01-01');
+  const pre2020Pace = pre2020Items.length / 51;
   const count2026 = items.filter((b) => b.date.startsWith('2026')).length;
+  const pace2026 = count2026 / (330 / 365.25);
+  const paceMultiplier = pre2020Pace > 0 ? Math.round(pace2026 / pre2020Pace) : 0;
+
+  const q4_2026 = items.filter((b) => b.date >= '2026-10-01');
+  const q4NeuroSym = q4_2026.filter((b) => b.aiParadigm === 'Neuro-Symbolic').length;
+  const q4NeuroSymPct = q4_2026.length ? Math.round((q4NeuroSym / q4_2026.length) * 100) : 0;
+
   const auto2026 = items.filter((b) => b.date.startsWith('2026') && b.aiRole === 'Autonomous AI').length;
   const auto2026Pct = count2026 ? Math.round((auto2026 / count2026) * 100) : 0;
   const h2_2026 = items.filter((b) => b.date >= '2026-07-01').length;
-  const openProblems = items.filter((b) => typeof b.yearsUnsolved === 'number' && b.yearsUnsolved > 0);
-  const totalOpenYears = openProblems.reduce((sum, b) => sum + b.yearsUnsolved, 0);
-  const openProblemCount = openProblems.length;
 
   const yBarTicks = [];
   for (let v = 0; v <= maxBar; v += step) yBarTicks.push(v);
@@ -274,13 +301,15 @@ export function renderVelocityChart(items, opts = {}) {
       : [0, 0.25, 0.5, 0.75, 1].map((frac) => Math.round(maxCum * frac));
 
   const footnoteText =
-    granularity === 'monthly2026'
-      ? '*Nov 2026 reflects partial month through Nov 26, 2026 · Cumulative curve includes prior 1969–2025 milestones'
-      : granularity === 'quarterly'
-        ? '*Q4 2026 reflects partial quarter through Nov 26, 2026 · Cumulative curve includes pre-2024 milestones'
-        : granularity === 'annual'
-          ? `${hasPioneers ? '*< 2020 spans 51 yrs (1969–2019) · ' : '*'}2026 reflects partial year through Nov 26, 2026`
-          : `${hasPioneers ? '*< 2020 spans 51 yrs (1969–2019) · ' : '*'}Q4 2026 reflects partial quarter through Nov 26, 2026`;
+    barMode === 'rate'
+      ? '*Bars normalized to annualized breakthroughs/yr (51 yrs for <2020; partial elapsed days for Q4/Nov 2026)'
+      : granularity === 'monthly2026'
+        ? '*Nov 2026 reflects partial month through Nov 26, 2026 · Cumulative curve includes prior 1969–2025 milestones'
+        : granularity === 'quarterly'
+          ? '*Q4 2026 reflects partial quarter through Nov 26, 2026 · Cumulative curve includes pre-2024 milestones'
+          : granularity === 'annual'
+            ? `${hasPioneers ? '*< 2020 hatched bar sums 51 yrs (0.9/yr) · ' : '*'}2026 reflects partial year through Nov 26, 2026`
+            : `${hasPioneers ? '*< 2020 hatched bar sums 51 yrs (0.9/yr) · ' : '*'}Q4 2026 reflects partial quarter through Nov 26, 2026`;
 
   return `
     <div class="viz-card">
@@ -288,7 +317,7 @@ export function renderVelocityChart(items, opts = {}) {
         <div>
           <h2 class="viz-card__title">AI Scientific Acceleration &amp; Paradigm Shift Curve</h2>
           <p class="viz-card__desc">
-            Switch cadence, stack dimensions, cumulative metric, or toggle a <strong>Log</strong> right axis to inspect exponential linearity. Hover any period column for full breakdown and top breakthroughs.
+            Switch between <strong>Raw Count</strong> and <strong>Pace (/yr)</strong> to compare the 51-year pre-2020 baseline fairly against single quarters, or toggle a <strong>Log</strong> right axis.
           </p>
         </div>
 
@@ -322,6 +351,12 @@ export function renderVelocityChart(items, opts = {}) {
             <button type="button" data-velocity-granularity="annual" aria-pressed="${granularity === 'annual' ? 'true' : 'false'}">Annual</button>
             <button type="button" data-velocity-granularity="quarterly" aria-pressed="${granularity === 'quarterly' ? 'true' : 'false'}">2024–26 Qtr</button>
             <button type="button" data-velocity-granularity="monthly2026" aria-pressed="${granularity === 'monthly2026' ? 'true' : 'false'}">2026 Monthly</button>
+          </div>
+
+          <span class="viz-ctrl-label">Bars</span>
+          <div class="segmented-ctrl segmented-ctrl--sm" role="group" aria-label="Bar display metric">
+            <button type="button" data-velocity-barmode="count" aria-pressed="${barMode === 'count' ? 'true' : 'false'}" title="Raw count of breakthroughs per bucket">Raw Count</button>
+            <button type="button" data-velocity-barmode="rate" aria-pressed="${barMode === 'rate' ? 'true' : 'false'}" title="Annualized discovery pace (breakthroughs per year) — normalizes 51-year pre-2020 era against single quarters">Pace (/yr)</button>
           </div>
         </div>
 
@@ -370,6 +405,12 @@ export function renderVelocityChart(items, opts = {}) {
           role="img"
           aria-label="Stacked bar and cumulative line chart showing exponential acceleration of AI scientific breakthroughs"
         >
+          <defs>
+            <pattern id="pioneer-bar-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="var(--bg-surface)" stroke-width="2" stroke-opacity="0.38" />
+            </pattern>
+          </defs>
+
           ${
             dividerX !== null
               ? `
@@ -456,13 +497,15 @@ export function renderVelocityChart(items, opts = {}) {
             .map((b, idx) => {
               const xCenter = margin.left + idx * slotW + slotW / 2;
               const xLeft = xCenter - barW / 2;
+              const scaleDivisor = barMode === 'rate' ? b.yearsSpan || 1 : 1;
               let acc = 0;
               const rects = series
                 .map((s) => {
                   const cnt = b.counts[s.key] || 0;
                   if (cnt === 0) return '';
+                  const segVal = cnt / scaleDivisor;
                   const yBottom = yBar(acc);
-                  acc += cnt;
+                  acc += segVal;
                   const yTop = yBar(acc);
                   const h = Math.max(2, yBottom - yTop);
                   return `
@@ -482,10 +525,21 @@ export function renderVelocityChart(items, opts = {}) {
                 })
                 .join('');
 
+              const hatchOverlay =
+                b.isPioneerBucket && barMode === 'count' && b.total > 0
+                  ? `<rect x="${xLeft.toFixed(1)}" y="${yBar(b.total).toFixed(1)}" width="${barW.toFixed(1)}" height="${Math.max(2, margin.top + innerH - yBar(b.total)).toFixed(1)}" fill="url(#pioneer-bar-hatch)" rx="2" pointer-events="none" />`
+                  : '';
+
               return `
                 <g>
                   ${rects}
-                  <text x="${xCenter.toFixed(1)}" y="${margin.top + innerH + 22}" text-anchor="middle" class="viz-axis-label">${b.label}</text>
+                  ${hatchOverlay}
+                  <text x="${xCenter.toFixed(1)}" y="${margin.top + innerH + 20}" text-anchor="middle" class="viz-axis-label">${b.label}</text>
+                  ${
+                    b.isPioneerBucket && barMode === 'count'
+                      ? `<text x="${xCenter.toFixed(1)}" y="${margin.top + innerH + 33}" text-anchor="middle" class="viz-axis-label" style="font-size:9px;fill:var(--ink-muted);">(51-yr sum)</text>`
+                      : ''
+                  }
                 </g>
               `;
             })
@@ -519,12 +573,13 @@ export function renderVelocityChart(items, opts = {}) {
             )
             .join('')}
 
-          <!-- Bar Count Labels (rendered above curve with halo & collision avoidance) -->
+          <!-- Bar Value Labels (rendered above curve with halo & collision avoidance) -->
           ${buckets
             .map((b, idx) => {
-              if (b.total <= 0) return '';
+              const barVal = getBucketBarVal(b);
+              if (barVal <= 0) return '';
               const xCenter = margin.left + idx * slotW + slotW / 2;
-              const barTopY = yBar(b.total);
+              const barTopY = yBar(barVal);
               const curveY = linePoints[idx].y;
               let labelY = barTopY - 7;
               if (Math.abs(labelY - curveY) < 14) {
@@ -535,7 +590,13 @@ export function renderVelocityChart(items, opts = {}) {
                 }
               }
               const insideBar = labelY > barTopY;
-              return `<text x="${xCenter.toFixed(1)}" y="${labelY.toFixed(1)}" text-anchor="middle" class="viz-axis-label" style="font-weight:600;fill:${insideBar ? '#ffffff' : 'var(--ink-primary)'};${insideBar ? '' : 'paint-order:stroke;stroke:var(--bg-surface);stroke-width:3.5px;stroke-linejoin:round;'}pointer-events:none;">${b.total}</text>`;
+              const formattedVal =
+                barMode === 'rate'
+                  ? barVal < 10
+                    ? barVal.toFixed(1)
+                    : String(Math.round(barVal))
+                  : String(b.total);
+              return `<text x="${xCenter.toFixed(1)}" y="${labelY.toFixed(1)}" text-anchor="middle" class="viz-axis-label" style="font-weight:600;fill:${insideBar ? '#ffffff' : 'var(--ink-primary)'};${insideBar ? '' : 'paint-order:stroke;stroke:var(--bg-surface);stroke-width:3.5px;stroke-linejoin:round;'}pointer-events:none;">${formattedVal}</text>`;
             })
             .join('')}
 
@@ -554,7 +615,7 @@ export function renderVelocityChart(items, opts = {}) {
                 fill="transparent"
                 tabindex="0"
                 role="button"
-                aria-label="${escapeHtml(b.label)}: ${b.total} breakthroughs, ${b.cumulativeCount} cumulative"
+                aria-label="${escapeHtml(b.label)}: ${b.total} breakthroughs (${b.annualizedRate.toFixed(1)}/yr), ${b.cumulativeCount} cumulative"
               />
             `;
             })
@@ -562,7 +623,7 @@ export function renderVelocityChart(items, opts = {}) {
 
           <!-- Baseline & Axis Titles -->
           <line x1="${margin.left}" y1="${margin.top + innerH}" x2="${width - margin.right}" y2="${margin.top + innerH}" class="viz-axis-line" pointer-events="none" />
-          <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">AI BREAKTHROUGHS / PERIOD</text>
+          <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">${barMode === 'rate' ? 'ANNUALIZED PACE (BREAKTHROUGHS / YR)' : 'AI BREAKTHROUGHS / PERIOD'}</text>
           <text x="${width - 14}" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(90 ${width - 14} ${margin.top + innerH / 2})" class="viz-axis-label" style="fill: var(--accent-primary);">${escapeHtml(curveMeta.axisLabel)}${yScale === 'log' ? ' (LOG)' : ''}</text>
           <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">${escapeHtml(footnoteText)}</text>
         </svg>
@@ -570,20 +631,20 @@ export function renderVelocityChart(items, opts = {}) {
 
       <div class="viz-callout-grid">
         <div>
+          <div class="viz-callout__num">${paceMultiplier ? `~${paceMultiplier}×` : `${Math.round(pace2026)}/yr`}</div>
+          <div class="viz-callout__text">Annualized pace jump from pre-2020 pioneers (${pre2020Pace.toFixed(1)}/yr across 51 yrs) to 2026 (${Math.round(pace2026)}/yr run-rate).</div>
+        </div>
+        <div>
           <div class="viz-callout__num">${h2_2026} milestones</div>
           <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 26), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of active AI breakthroughs.</div>
         </div>
         <div>
-          <div class="viz-callout__num">${totalOpenYears.toLocaleString('en-US')}+ yrs</div>
-          <div class="viz-callout__text">Combined human years unsolved across ${openProblemCount} open problems—many finalized by AI in hours to weeks.</div>
+          <div class="viz-callout__num">${q4NeuroSymPct}% neuro-sym</div>
+          <div class="viz-callout__text">Share of Q4 2026 breakthroughs pairing neural search with formal verifiers (${q4NeuroSym} of ${q4_2026.length} in Q4).</div>
         </div>
         <div>
           <div class="viz-callout__num">${auto2026Pct}% autonomous</div>
           <div class="viz-callout__text">Share of 2026 breakthroughs led autonomously by AI agents (${auto2026} of ${count2026} within active filters).</div>
-        </div>
-        <div>
-          <div class="viz-callout__num">${count2024 ? (count2026 / count2024).toFixed(1) + '×' : count2026}</div>
-          <div class="viz-callout__text">2026 vs. 2024 annual AI discovery pace (${count2026} in 2026 through Nov 26 vs. ${count2024} in all of 2024).</div>
         </div>
       </div>
     </div>
@@ -625,11 +686,15 @@ export function bindVelocityInteractions(svg, items, opts, callbacks) {
               .join('')}</div>`
           : '';
 
+      const paceText = b.isPre2020
+        ? `${b.annualizedRate.toFixed(1)}/yr across ${b.yearsSpan} yrs`
+        : `${b.annualizedRate < 10 ? b.annualizedRate.toFixed(1) : Math.round(b.annualizedRate)}/yr pace`;
+
       showTooltip(
         ev,
         `
           <div class="viz-tooltip__title">${escapeHtml(b.label)} — ${b.total} breakthrough${b.total === 1 ? '' : 's'}</div>
-          <div class="viz-tooltip__meta">Cumulative: ${b.cumulativeCount} total · ${b.cumulativeYears.toLocaleString('en-US')}+ human yrs unsolved</div>
+          <div class="viz-tooltip__meta">Rate: <strong>${paceText}</strong> · Cumulative: ${b.cumulativeCount} total · ${b.cumulativeYears.toLocaleString('en-US')}+ human yrs unsolved</div>
           ${breakdown ? `<div style="margin-bottom:0.35rem;font-size:0.75rem;">${breakdown}</div>` : ''}
           ${topHtml}
         `

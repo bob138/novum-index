@@ -40,6 +40,7 @@ const state = {
   theme: loadInitialTheme(),
   view: 'leaderboard',
   tunerOpen: false,
+  mobileFiltersOpen: false,
   discipline: 'all',
   paradigm: 'all',
   aiRole: 'all',
@@ -60,11 +61,13 @@ const state = {
   velocity: {
     groupBy: 'paradigm',
     granularity: 'default',
+    barMode: 'count',
     yScale: 'linear',
     curveMetric: 'count',
   },
   lineage: {
     chainDepth: 'full',
+    scope: 'hubs',
   },
 };
 
@@ -409,7 +412,7 @@ function renderApp({ preserveSearchFocus = false } = {}) {
       </div>
     </main>
 
-    ${renderDossierModal(activeDossier, allRanked, state.weights)}
+    ${renderDossierModal(activeDossier, allRanked, state.weights, filtered)}
   `;
 
   // Bind dynamic SVG interactions
@@ -466,6 +469,13 @@ function attachGlobalListeners() {
     const tunerBtn = e.target.closest('#tuner-toggle-btn');
     if (tunerBtn) {
       state.tunerOpen = !state.tunerOpen;
+      renderApp();
+      return;
+    }
+
+    const mobileFiltersBtn = e.target.closest('#mobile-filters-toggle-btn');
+    if (mobileFiltersBtn) {
+      state.mobileFiltersOpen = !state.mobileFiltersOpen;
       renderApp();
       return;
     }
@@ -574,7 +584,7 @@ function attachGlobalListeners() {
         const newHalfT = Math.max(86400000 * 5, ((curTMax - curTMin) * factor) / 2);
         const newHalfY = Math.max(3, Math.min(50, ((curYMax - curYMin) * factor) / 2));
 
-        const minBound = Date.parse('1973-01-01T00:00:00Z');
+        const minBound = Date.parse('1966-01-01T00:00:00Z');
         const maxBound = Date.parse('2027-02-01T00:00:00Z');
         const fullModernSpan = Date.parse('2026-12-20T00:00:00Z') - Date.parse('2019-11-01T00:00:00Z');
 
@@ -602,6 +612,13 @@ function attachGlobalListeners() {
       return;
     }
 
+    const velBarBtn = e.target.closest('[data-velocity-barmode]');
+    if (velBarBtn) {
+      state.velocity.barMode = velBarBtn.dataset.velocityBarmode;
+      renderResultsOnly();
+      return;
+    }
+
     const velGranBtn = e.target.closest('[data-velocity-granularity]');
     if (velGranBtn) {
       state.velocity.granularity = velGranBtn.dataset.velocityGranularity;
@@ -624,6 +641,13 @@ function attachGlobalListeners() {
     }
 
     // Lineage Graph controls
+    const lineageScopeBtn = e.target.closest('[data-lineage-scope]');
+    if (lineageScopeBtn) {
+      state.lineage.scope = lineageScopeBtn.dataset.lineageScope;
+      renderResultsOnly();
+      return;
+    }
+
     const lineageDepthBtn = e.target.closest('[data-lineage-depth]');
     if (lineageDepthBtn) {
       state.lineage.chainDepth = lineageDepthBtn.dataset.lineageDepth;
@@ -713,11 +737,35 @@ function attachGlobalListeners() {
     }
   });
 
-  // Keyboard shortcuts: Escape closes dossier, '/' focuses search, Enter/Space activates SVG nodes
+  // Keyboard shortcuts: Escape closes dossier, ←/→ steps dossiers, '/' focuses search, Enter/Space activates SVG nodes
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && state.activeDossierId) {
       state.activeDossierId = null;
       renderApp();
+      return;
+    }
+
+    if (
+      state.activeDossierId &&
+      (e.key === 'ArrowLeft' || e.key === 'ArrowRight') &&
+      !e.metaKey &&
+      !e.ctrlKey &&
+      !e.altKey &&
+      document.activeElement?.tagName !== 'INPUT' &&
+      document.activeElement?.tagName !== 'TEXTAREA' &&
+      document.activeElement?.tagName !== 'SELECT'
+    ) {
+      const btn = document.getElementById(
+        e.key === 'ArrowLeft' ? 'dossier-prev-btn' : 'dossier-next-btn'
+      );
+      const nextId = btn?.dataset?.openDossier;
+      if (nextId) {
+        e.preventDefault();
+        state.activeDossierId = nextId;
+        renderApp();
+        const dialog = document.getElementById('dossier-dialog');
+        if (dialog) dialog.scrollTop = 0;
+      }
       return;
     }
 

@@ -83,11 +83,6 @@ export function renderLeaderboard(items, totalCount, sortBy = 'impact') {
           >
             <div class="rank-cell">
               <span class="rank-num ${item.rank <= 3 ? 'rank-num--top' : ''}">#${rankPad}</span>
-              ${
-                item.yearsUnsolved
-                  ? `<span class="rank-years" title="Years open before this breakthrough">${item.yearsUnsolved}y open</span>`
-                  : ''
-              }
             </div>
 
             <div class="entry-cell">
@@ -96,25 +91,15 @@ export function renderLeaderboard(items, totalCount, sortBy = 'impact') {
                   <span class="disc-tag__dot" style="background: ${disc.colorVar};"></span>
                   ${escapeHtml(item.discipline)}
                 </span>
-                ${
-                  item.aiParadigm === 'Symbolic / Classical'
-                    ? '<span class="anchor-tag" title="Pre-2020 classical / symbolic AI pioneer">Symbolic Pioneer</span>'
-                    : item.isAnchor
-                      ? '<span class="anchor-tag" title="2020–2023 early neural calibration benchmark">2020–23 Anchor</span>'
-                      : ''
-                }
-                <span class="ai-tag">${escapeHtml(item.aiRole)}</span>
-                ${
-                  item.aiParadigm !== 'Symbolic / Classical'
-                    ? `<span class="ai-tag" title="AI architectural paradigm">${item.aiParadigm === 'Neuro-Symbolic' ? 'Neuro-Symbolic' : 'Neural'}</span>`
-                    : ''
-                }
+                <span class="ai-tag">${escapeHtml(item.aiParadigm === 'Neuro-Symbolic' ? 'Neuro-Symbolic' : item.aiParadigm === 'Symbolic / Classical' ? 'Symbolic' : 'Neural')} · ${escapeHtml(item.aiRole === 'Autonomous AI' ? 'Autonomous' : 'AI-Assisted')}</span>
                 ${
                   item.yearsUnsolved && item.aiTimeToSolve
                     ? `<span class="time-tag" title="${item.yearsUnsolved} human years unsolved vs. ${escapeHtml(item.aiTimeToSolve)} with AI">${item.yearsUnsolved}y → ${escapeHtml(item.aiTimeToSolve)}</span>`
-                    : item.aiTimeToSolve
-                      ? `<span class="time-tag" title="Documented AI time to solution">AI: ${escapeHtml(item.aiTimeToSolve)}</span>`
-                      : ''
+                    : item.yearsUnsolved
+                      ? `<span class="time-tag" title="${item.yearsUnsolved} human years unsolved">${item.yearsUnsolved}y open</span>`
+                      : item.aiTimeToSolve
+                        ? `<span class="time-tag" title="Documented AI time to solution">${escapeHtml(item.aiTimeToSolve)}</span>`
+                        : ''
                 }
                 <span class="entry-cell__date">${formatDate(item.date)}</span>
               </div>
@@ -127,15 +112,17 @@ export function renderLeaderboard(items, totalCount, sortBy = 'impact') {
               ${renderStatusBadge(item.verificationStatus)}
             </div>
 
-            <div class="col-breakdown" title="Foundational Depth / Cross-Field Ripple / Verification / Velocity">
+            <div class="col-breakdown" title="${DIMENSIONS.map((d) => `${d.shortLabel}: ${item.scores[d.key]}`).join(' · ')}">
               <div class="mini-bars">
                 ${DIMENSIONS.map((d) => {
                   const val = item.scores[d.key];
                   const letter = d.key === 'foundational' ? 'D' : d.key === 'ripple' ? 'R' : d.key === 'verification' ? 'V' : 'A';
+                  const visualPct = Math.max(12, Math.min(100, Math.round(((val - 55) / 45) * 100)));
                   return `
-                    <div class="mini-bar-col">
+                    <div class="mini-bar-col" title="${escapeHtml(d.label)}: ${val}/100">
+                      <span class="mini-bar-val">${val}</span>
                       <div class="mini-bar-track">
-                        <div class="mini-bar-fill" style="height: ${val}%; background: ${disc.colorVar}; opacity: ${0.42 + (val / 100) * 0.58};"></div>
+                        <div class="mini-bar-fill" style="height: ${visualPct}%; background: ${disc.colorVar}; opacity: ${0.45 + (visualPct / 100) * 0.55};"></div>
                       </div>
                       <span class="mini-bar-lbl">${letter}</span>
                     </div>

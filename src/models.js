@@ -25,6 +25,7 @@ import {
   bindModelChartInteractions,
 } from './visualizations/ModelCharts.js';
 import { renderStatusBadge } from './components/Leaderboard.js';
+import { renderNavbar } from './components/Navbar.js';
 import {
   loadInitialTheme,
   applyTheme,
@@ -177,15 +178,16 @@ function renderPulseStrip(allRows, filteredBreakthroughs, allRanked) {
     .sort((a, b) => b.avgImpact - a.avgImpact || b.volume - a.volume);
   const topAvgMulti = byAvgMulti[0] || allRows[0] || null;
 
-  const short = (str, n = 22) => {
+  const short = (str, n = 18) => {
     if (!str) return '—';
     const clean = str
+      .replace(/^RoseTTAFold\s*&\s*RFdiffusion.*$/i, 'RoseTTAFold Suite')
       .replace(/\s*\([^)]*\)$/, '')
       .replace(/\s+Lineage$/, '')
       .replace(/\s+Structural Suite$/, ' Suite')
       .replace(/\s+Regulatory Suite$/, '')
       .replace(/\s+& Research$/, '');
-    return clean.length > n ? `${clean.slice(0, n - 1)}…` : clean;
+    return clean.length > n ? `${clean.slice(0, n - 1).trimEnd()}…` : clean;
   };
 
   return `
@@ -196,22 +198,22 @@ function renderPulseStrip(allRows, filteredBreakthroughs, allRanked) {
         <div class="pulse-stat__note">${famCount} families · ${modCount} systems · ${filteredBreakthroughs.length} results</div>
       </div>
       <div class="pulse-stat">
-        <div class="pulse-stat__value models-stat-title">${escapeHtml(short(topCum?.name, 20))}</div>
+        <div class="pulse-stat__value models-stat-title" title="${escapeHtml(topCum?.name || '')}">${escapeHtml(short(topCum?.name, 18))}</div>
         <div class="pulse-stat__label">#1 Cumulative Impact</div>
         <div class="pulse-stat__note">${topCum ? `${Math.round(topCum.cumulativeImpact).toLocaleString('en-US')} pts · ${formatVolume(topCum.volume)} vol` : 'No matching systems'}</div>
       </div>
       <div class="pulse-stat">
-        <div class="pulse-stat__value models-stat-title">${escapeHtml(short(topPeak?.name, 20))}</div>
+        <div class="pulse-stat__value models-stat-title" title="${escapeHtml(topPeak?.name || '')}">${escapeHtml(short(topPeak?.name, 18))}</div>
         <div class="pulse-stat__label">#1 Peak Breakthrough</div>
-        <div class="pulse-stat__note">${topPeak ? `${topPeak.peakImpact.toFixed(1)}/100 · ${escapeHtml(short(topPeak.peakBreakthrough?.shortTitle, 24))}` : '—'}</div>
+        <div class="pulse-stat__note">${topPeak ? `${topPeak.peakImpact.toFixed(1)}/100 · ${escapeHtml(short(topPeak.peakBreakthrough?.shortTitle, 22))}` : '—'}</div>
       </div>
       <div class="pulse-stat">
-        <div class="pulse-stat__value models-stat-title">${escapeHtml(short(topVerified?.name, 20))}</div>
+        <div class="pulse-stat__value models-stat-title" title="${escapeHtml(topVerified?.name || '')}">${escapeHtml(short(topVerified?.name, 18))}</div>
         <div class="pulse-stat__label">#1 Formal Verification</div>
         <div class="pulse-stat__note">${topVerified ? `${formatVolume(topVerified.verifiedCount)} Lean/Coq/SAT proofs (${topVerified.verifiedRate}%)` : '0 formal proofs in filter'}</div>
       </div>
       <div class="pulse-stat">
-        <div class="pulse-stat__value models-stat-title">${escapeHtml(short(topAvgMulti?.name, 20))}</div>
+        <div class="pulse-stat__value models-stat-title" title="${escapeHtml(topAvgMulti?.name || '')}">${escapeHtml(short(topAvgMulti?.name, 18))}</div>
         <div class="pulse-stat__label">Top Avg Impact (2+ Hits)</div>
         <div class="pulse-stat__note">${topAvgMulti ? `${topAvgMulti.avgImpact.toFixed(1)} avg across ${formatVolume(topAvgMulti.volume)} results` : '—'}</div>
       </div>
@@ -374,7 +376,7 @@ function renderControlsBar(allBreakthroughs) {
             type="search"
             id="models-search-input"
             class="search-box__input"
-            placeholder="Search models, labs, architectures, or breakthroughs (e.g., AlphaFold, Claude, GPT-6, EQP)..."
+            placeholder="Search models or labs…"
             value="${escapeHtml(state.search)}"
             aria-label="Search AI systems and models"
           />
@@ -771,44 +773,7 @@ function renderPage() {
 
   const app = document.getElementById('app');
   app.innerHTML = `
-    <header class="site-nav" role="banner">
-      <div class="container site-nav__inner">
-        <a href="./" class="site-brand">
-          <img src="./favicon.svg" alt="" class="site-brand__mark" width="28" height="28" />
-          <span class="site-brand__title">The Novum Index</span>
-          <span class="site-brand__edition">AI Systems</span>
-        </a>
-        <nav class="site-nav__actions" aria-label="Site actions">
-          <button
-            type="button"
-            class="nav-btn"
-            id="theme-toggle-btn"
-            aria-label="Toggle color theme"
-            title="Switch between archival paper and obsidian dark mode"
-          >
-            ${
-              state.theme === 'dark'
-                ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><span>Paper</span>`
-                : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><span>Dark</span>`
-            }
-          </button>
-          <a href="./" class="nav-btn">
-            <span class="nav-submit-full">← Breakthrough Index</span>
-            <span class="nav-submit-short">← Index</span>
-          </a>
-          <a href="./methodology.html" class="nav-btn nav-btn--methodology">Methodology</a>
-          <a
-            href="${REPO_URL}/issues/new?template=submit-breakthrough.yml"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-btn nav-btn--primary"
-          >
-            <span class="nav-submit-full">Submit Breakthrough</span>
-            <span class="nav-submit-short">Submit</span>
-          </a>
-        </nav>
-      </div>
-    </header>
+    ${renderNavbar({ activePage: 'models', theme: state.theme, editionLabel: 'AI Systems' })}
 
     <section class="hero meth-hero">
       <div class="container">
@@ -817,7 +782,7 @@ function renderPage() {
           Which AI models and systems are driving the <em>largest</em> scientific impact?
         </h1>
         <p class="hero__lead meth-hero__lead">
-          Compare cumulative impact, breakthrough volume, average quality, peak discoveries, formal verification rates, and autonomy across model families, specific neural networks, neuro-symbolic proof agents, research labs, and classical symbolic AIs. Multi-model breakthroughs default to Nature Index–style fractional (<code>1/k</code>) credit so shares always sum cleanly to the exact dataset total.
+          Compare cumulative impact, volume, quality, formal verification, and autonomy across model families, specific systems, labs, and classical provers—defaulting to Nature Index–style fractional (<code>1/k</code>) credit.
         </p>
 
         <div id="models-pulse-wrap">

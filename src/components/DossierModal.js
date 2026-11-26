@@ -9,7 +9,7 @@ import { renderStatusBadge } from './Leaderboard.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
 
-export function renderDossierModal(item, allRanked, weights) {
+export function renderDossierModal(item, allRanked, weights, navList = null) {
   if (!item) return '';
 
   const disc = DISCIPLINE_META[item.discipline];
@@ -20,6 +20,18 @@ export function renderDossierModal(item, allRanked, weights) {
     (other) => Array.isArray(other.enables) && other.enables.includes(item.id)
   );
   const enablesList = (item.enables || []).map((id) => byId.get(id)).filter(Boolean);
+
+  const list = Array.isArray(navList) && navList.length > 0 ? navList : allRanked;
+  const curIdx = list.findIndex((b) => b.id === item.id);
+  const prevItem = curIdx > 0 ? list[curIdx - 1] : null;
+  const nextItem = curIdx >= 0 && curIdx < list.length - 1 ? list[curIdx + 1] : null;
+
+  const anchorBadgeText =
+    item.date < '2020-01-01'
+      ? 'PRE-2020 PIONEER'
+      : item.isAnchor
+        ? '2020–23 ANCHOR'
+        : '';
 
   return `
     <div class="dossier-backdrop" id="dossier-backdrop" role="presentation">
@@ -32,9 +44,25 @@ export function renderDossierModal(item, allRanked, weights) {
       >
         <div class="dossier__topbar">
           <span class="dossier__rank-pill">
-            RANK #${String(item.rank).padStart(2, '0')} · IMPACT ${item.compositeScore.toFixed(1)}/100
+            RANK #${String(item.rank).padStart(2, '0')} · IMPACT ${item.compositeScore.toFixed(1)}/100${anchorBadgeText ? ` · ${anchorBadgeText}` : ''}
           </span>
           <div class="dossier__topbar-actions">
+            <div class="dossier__step-group" role="group" aria-label="Step between breakthroughs">
+              <button
+                type="button"
+                class="icon-btn icon-btn--compact"
+                id="dossier-prev-btn"
+                ${prevItem ? `data-open-dossier="${escapeHtml(prevItem.id)}" title="Previous: ${escapeHtml(prevItem.shortTitle)} (←)"` : 'disabled aria-disabled="true"'}
+                aria-label="Previous breakthrough"
+              >←</button>
+              <button
+                type="button"
+                class="icon-btn icon-btn--compact"
+                id="dossier-next-btn"
+                ${nextItem ? `data-open-dossier="${escapeHtml(nextItem.id)}" title="Next: ${escapeHtml(nextItem.shortTitle)} (→)"` : 'disabled aria-disabled="true"'}
+                aria-label="Next breakthrough"
+              >→</button>
+            </div>
             <button
               type="button"
               class="icon-btn"
@@ -63,23 +91,15 @@ export function renderDossierModal(item, allRanked, weights) {
                 <span class="disc-tag__dot" style="background: ${disc.colorVar};"></span>
                 ${escapeHtml(item.discipline)}
               </span>
-              ${
-                item.aiParadigm === 'Symbolic / Classical'
-                  ? '<span class="anchor-tag">Pre-2020 Symbolic Pioneer</span>'
-                  : item.isAnchor
-                    ? '<span class="anchor-tag">2020–2023 Calibration Anchor</span>'
-                    : ''
-              }
               ${renderStatusBadge(item.verificationStatus)}
-              <span class="ai-tag">${escapeHtml(item.aiRole)}</span>
-              <span class="ai-tag">${escapeHtml(item.aiParadigm)}</span>
+              <span class="ai-tag">${escapeHtml(item.aiParadigm)} · ${escapeHtml(item.aiRole)}</span>
               ${
                 item.yearsUnsolved && item.aiTimeToSolve
                   ? `<span class="time-tag">${item.yearsUnsolved}y open → ${escapeHtml(item.aiTimeToSolve)} AI</span>`
                   : item.yearsUnsolved
-                    ? `<span class="ai-tag">${item.yearsUnsolved} years open</span>`
+                    ? `<span class="time-tag">${item.yearsUnsolved} years open</span>`
                     : item.aiTimeToSolve
-                      ? `<span class="time-tag">AI time: ${escapeHtml(item.aiTimeToSolve)}</span>`
+                      ? `<span class="time-tag">AI: ${escapeHtml(item.aiTimeToSolve)}</span>`
                       : ''
               }
             </div>
