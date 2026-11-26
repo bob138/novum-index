@@ -1,0 +1,13 @@
+{
+  "name": "novum-index",
+  "compatibility_date": "2026-11-26",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "routes": [
+    { "pattern": "novumindex.org", "custom_domain": true },
+    { "pattern": "www.novumindex.org", "custom_domain": true }
+  ]
+}
