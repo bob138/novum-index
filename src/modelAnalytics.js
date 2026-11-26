@@ -753,6 +753,18 @@ export function classifyBreakthroughSystems(item) {
   }
 
   // AlphaFold Structural Biology Lineage
+  if (s.includes('alphafold 1')) {
+    return [
+      {
+        familyId: 'alphafold',
+        familyName: 'AlphaFold Structural Suite',
+        modelId: 'alphafold-1',
+        modelName: 'AlphaFold 1 (CASP13)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Google DeepMind & Research',
+      },
+    ];
+  }
   if (s.includes('alphafold 2')) {
     return [
       {
@@ -1380,13 +1392,273 @@ export function classifyBreakthroughSystems(item) {
     ];
   }
 
-  // Automated SAT Solvers (Cube-and-Conquer / CaDiCaL — Heule Group)
+  // Pre-2020 Early Neural & Clinical / Genomic / Physics AI Pioneers (1988–2019)
+  if (s.includes('qian–sejnowski') || s.includes('qian-sejnowski')) {
+    return [
+      {
+        familyId: 'early-protein-nns',
+        familyName: 'Early Protein Structure Neural Nets (Qian–Sejnowski / PHD)',
+        modelId: 'qian-sejnowski-nn',
+        modelName: 'Qian–Sejnowski Feedforward Protein NN',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Johns Hopkins University',
+      },
+    ];
+  }
+  if (s.includes('phd (profile-fed')) {
+    return [
+      {
+        familyId: 'early-protein-nns',
+        familyName: 'Early Protein Structure Neural Nets (Qian–Sejnowski / PHD)',
+        modelId: 'phd-protein-nn',
+        modelName: 'PHD Evolutionary-Profile Neural Net',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'EMBL Heidelberg',
+      },
+    ];
+  }
+  if (s.includes('raptorx-contact')) {
+    return [
+      {
+        familyId: 'raptorx-contact',
+        familyName: 'RaptorX-Contact (2D Deep ResNet)',
+        modelId: 'raptorx-contact-resnet',
+        modelName: 'RaptorX-Contact (1D+2D Deep ResNet)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Toyota Technological Institute at Chicago',
+      },
+    ];
+  }
+  if (s.includes('deepbind')) {
+    return [
+      {
+        familyId: 'deepbind',
+        familyName: 'DeepBind Genomic CNN',
+        modelId: 'deepbind-cnn',
+        modelName: 'DeepBind CNN',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'University of Toronto',
+      },
+    ];
+  }
+  if (s.includes('deepsea')) {
+    return [
+      {
+        familyId: 'deepsea',
+        familyName: 'DeepSEA Genomic CNN',
+        modelId: 'deepsea-cnn',
+        modelName: 'DeepSEA Multi-Task CNN',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Princeton University',
+      },
+    ];
+  }
+  if (s.includes('deepvariant')) {
+    return [
+      {
+        familyId: 'google-deepvariant',
+        familyName: 'Google DeepVariant',
+        modelId: 'deepvariant-cnn',
+        modelName: 'DeepVariant Genomic CNN',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Google DeepMind & Research',
+      },
+    ];
+  }
+  if (s.includes('spliceai')) {
+    return [
+      {
+        familyId: 'illumina-spliceai',
+        familyName: 'Illumina SpliceAI',
+        modelId: 'spliceai-dilated-cnn',
+        modelName: 'SpliceAI (32-Layer Dilated CNN)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Illumina AI Lab',
+      },
+    ];
+  }
+  if (s.includes('inception-v3 retinal cnn')) {
+    return [
+      {
+        familyId: 'google-clinical-vision',
+        familyName: 'Google Clinical Imaging Deep Learning',
+        modelId: 'google-retinal-inception-v3',
+        modelName: 'Google Diabetic Retinopathy CNN',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Google DeepMind & Research',
+      },
+    ];
+  }
+  if (s.includes('deepmind 3d u-net')) {
+    return [
+      {
+        familyId: 'google-clinical-vision',
+        familyName: 'Google Clinical Imaging Deep Learning',
+        modelId: 'deepmind-moorfields-3d-oct',
+        modelName: 'DeepMind 3D U-Net OCT Triage',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Google DeepMind & Research',
+      },
+    ];
+  }
+  if (s.includes('inception-v3 dermatology cnn')) {
+    return [
+      {
+        familyId: 'stanford-clinical-vision',
+        familyName: 'Stanford Clinical Dermatology CNN',
+        modelId: 'stanford-dermatology-cnn',
+        modelName: 'Stanford Skin Cancer Inception-v3 CNN',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Stanford University',
+      },
+    ];
+  }
+  if (s.includes('ibm watson') || s.includes('knit')) {
+    return [
+      {
+        familyId: 'ibm-watson-knit',
+        familyName: 'IBM Watson / KnIT',
+        modelId: 'ibm-watson-knit',
+        modelName: 'IBM Watson KnIT (Knowledge Integration Toolkit)',
+        architecture: 'Neuro-Symbolic LLM + Verifier',
+        lab: 'IBM Research',
+      },
+    ];
+  }
+  if (s.includes('behler–parrinello') || s.includes('behler-parrinello')) {
+    return [
+      {
+        familyId: 'behler-parrinello-bpnn',
+        familyName: 'Behler–Parrinello Neural Potentials',
+        modelId: 'behler-parrinello-bpnn',
+        modelName: 'Behler–Parrinello Symmetry-Function NN',
+        architecture: 'Domain Science Neural Net',
+        lab: 'ETH Zurich',
+      },
+    ];
+  }
+  if (s.includes('higgs / susy')) {
+    return [
+      {
+        familyId: 'uci-lhc-dnn',
+        familyName: 'UCI LHC Particle Discovery DNN',
+        modelId: 'uci-lhc-dnn',
+        modelName: 'Baldi–Sadowski–Whiteson LHC Deep NN',
+        architecture: 'Domain Science Neural Net',
+        lab: 'UC Irvine',
+      },
+    ];
+  }
+  if (s.includes('dark reactions')) {
+    return [
+      {
+        familyId: 'dark-reactions-ml',
+        familyName: 'Dark Reactions Materials ML',
+        modelId: 'dark-reactions-svm-tree',
+        modelName: 'Dark Reactions SVM & Decision-Tree ML',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Haverford College / Purdue',
+      },
+    ];
+  }
+  if (s.includes('neural-network quantum states')) {
+    return [
+      {
+        familyId: 'carleo-troyer-nqs',
+        familyName: 'Neural-Network Quantum States (NQS)',
+        modelId: 'carleo-troyer-rbm-nqs',
+        modelName: 'Carleo–Troyer RBM Quantum Wavefunction',
+        architecture: 'Domain Science Neural Net',
+        lab: 'ETH Zurich',
+      },
+    ];
+  }
+  if (s.includes('strong-lensing deep cnn')) {
+    return [
+      {
+        familyId: 'stanford-lensing-cnn',
+        familyName: 'Stanford KIPAC Strong-Lensing CNN',
+        modelId: 'hezaveh-lensing-cnn',
+        modelName: 'Hezaveh Strong-Lensing CNN Ensemble',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Stanford University',
+      },
+    ];
+  }
+  if (s.includes('d³m') || s.includes('deep density displacement')) {
+    return [
+      {
+        familyId: 'flatiron-d3m',
+        familyName: 'Flatiron / CMU D³M Cosmology NN',
+        modelId: 'd3m-3d-unet',
+        modelName: 'D³M 3D Cosmic Structure U-Net',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Flatiron Institute / CMU',
+      },
+    ];
+  }
+
+  // Cohesive Pre-2020 Symbolic & Formal Reasoning Dynasties
+  if (s.includes('aura / niutp') || s.includes('otter (argonne') || s.startsWith('eqp')) {
+    const isAura = s.includes('aura');
+    const isOtter = s.includes('otter');
+    return [
+      {
+        familyId: 'argonne-atp',
+        familyName: 'Argonne Automated Theorem Provers (AURA / EQP / OTTER)',
+        modelId: isAura ? 'argonne-aura' : isOtter ? 'argonne-otter' : 'argonne-eqp',
+        modelName: isAura ? 'AURA / NIUTP Prover' : isOtter ? 'OTTER Equational Prover' : 'EQP Equational Prover',
+        architecture: 'Classical Symbolic & SAT AI',
+        lab: 'Argonne National Laboratory',
+      },
+    ];
+  }
+  if (s.includes('coq proof assistant')) {
+    const isMathComp = s.includes('mathematical components');
+    return [
+      {
+        familyId: 'coq-proof-assistant',
+        familyName: 'Coq Symbolic Proof Assistant (SSReflect / MathComp)',
+        modelId: isMathComp ? 'coq-mathcomp' : 'coq-ssreflect',
+        modelName: isMathComp ? 'Coq + Mathematical Components' : 'Coq + SSReflect',
+        architecture: 'Classical Symbolic & SAT AI',
+        lab: 'Microsoft Research–INRIA',
+      },
+    ];
+  }
+  if (s.includes('robot scientist adam') || s.includes('robot scientist eve')) {
+    const isEve = s.includes('eve');
+    return [
+      {
+        familyId: 'robot-scientist',
+        familyName: 'Robot Scientist Series (Adam & Eve)',
+        modelId: isEve ? 'robot-scientist-eve' : 'robot-scientist-adam',
+        modelName: isEve ? 'Robot Scientist Eve' : 'Robot Scientist Adam',
+        architecture: 'Classical Symbolic & SAT AI',
+        lab: isEve ? 'University of Cambridge / Manchester' : 'Aberystwyth University',
+      },
+    ];
+  }
+
+  // Automated SAT Solvers (Konev–Lisitsa Liverpool + Heule Group UT Austin / CMU)
   if (s.includes('sat solver') || s.includes('cadical')) {
+    if (s.includes('glucose & plingeling')) {
+      return [
+        {
+          familyId: 'automated-sat-solvers',
+          familyName: 'Automated SAT Solvers (DRUP / DRAT)',
+          modelId: 'glucose-plingeling-sat',
+          modelName: 'Glucose / Plingeling SAT Solvers (DRUP)',
+          architecture: 'Classical Symbolic & SAT AI',
+          lab: 'University of Liverpool',
+        },
+      ];
+    }
     const isCadical = s.includes('cadical');
     return [
       {
         familyId: 'automated-sat-solvers',
-        familyName: 'Automated SAT Solvers (Cube-and-Conquer / CaDiCaL)',
+        familyName: 'Automated SAT Solvers (DRUP / DRAT)',
         modelId: isCadical ? 'cadical-sat-solver' : 'cube-and-conquer-sat',
         modelName: isCadical ? 'CaDiCaL SAT Solver (DRAT)' : 'Cube-and-Conquer SAT Solver (DRAT)',
         architecture: 'Classical Symbolic & SAT AI',
@@ -1395,7 +1667,7 @@ export function classifyBreakthroughSystems(item) {
     ];
   }
 
-  // Symbolic / Classical Pioneers (1976–2021)
+  // Symbolic / Classical Pioneers (1969–2021)
   if (item.aiParadigm === 'Symbolic / Classical') {
     const cleanName = item.aiSystem.split('(')[0].trim();
     const slug = cleanName.toLowerCase().replace(/[^a-z0-9]+/g, '-');

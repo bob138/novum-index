@@ -432,10 +432,10 @@ function renderControlsBar(allBreakthroughs) {
         </select>
 
         <select id="models-filter-era" class="filter-select" aria-label="Filter by historical era">
-          <option value="all" ${state.era === 'all' ? 'selected' : ''}>All Eras (1976–2026)</option>
+          <option value="all" ${state.era === 'all' ? 'selected' : ''}>All Eras (1969–2026)</option>
           <option value="2024-2026" ${state.era === '2024-2026' ? 'selected' : ''}>2024–2026 Modern Wave</option>
-          <option value="2020-2023" ${state.era === '2020-2023' ? 'selected' : ''}>2020–2023 Early Neural</option>
-          <option value="pre-2020" ${state.era === 'pre-2020' ? 'selected' : ''}>Pre-2020 Symbolic Pioneers</option>
+          <option value="2020-2023" ${state.era === '2020-2023' ? 'selected' : ''}>2020–2023 Early Wave</option>
+          <option value="pre-2020" ${state.era === 'pre-2020' ? 'selected' : ''}>Pre-2020 Pioneers (1969–2019)</option>
         </select>
 
         <select id="models-rubric-preset" class="filter-select" aria-label="Impact scoring rubric weights">
@@ -843,7 +843,7 @@ function renderPage() {
 
     <section class="hero meth-hero">
       <div class="container">
-        <p class="hero__kicker">AI Systems, Neural Nets &amp; Symbolic Provers · 1976–2026 Attribution Ledger</p>
+        <p class="hero__kicker">AI Systems, Neural Nets &amp; Symbolic Provers · 1969–2026 Attribution Ledger</p>
         <h1 class="hero__title meth-hero__title">
           Which AI models and systems are driving the <em>largest</em> scientific impact?
         </h1>

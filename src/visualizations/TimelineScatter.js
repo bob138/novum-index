@@ -32,7 +32,7 @@ export const SCATTER_Y_METRICS = {
 };
 
 export const SCATTER_PRESETS = [
-  { id: 'all', label: 'All (1976–26)' },
+  { id: 'all', label: 'All (1969–26)' },
   { id: '2020-2026', label: '2020–26', tMin: '2019-11-01', tMax: '2026-12-20' },
   { id: '2024-2026', label: '2024–26', tMin: '2023-12-01', tMax: '2026-12-20' },
   { id: '2026', label: '2026', tMin: '2025-12-20', tMax: '2026-12-10' },
@@ -183,12 +183,12 @@ function buildScatterSvgContent(items, opts = {}) {
   const isZoomed = Boolean(customZoom) || presetId !== 'all';
   const splitPioneerZone = !isZoomed && timeScale === 'split' && hasPioneers && hasModern;
 
-  const pioneerZoneW = splitPioneerZone ? Math.round(innerW * 0.14) : 0;
+  const pioneerZoneW = splitPioneerZone ? Math.round(innerW * 0.19) : 0;
   const pioneerGap = splitPioneerZone ? 16 : 0;
   const modernStartX = margin.left + pioneerZoneW + pioneerGap;
   const modernW = innerW - pioneerZoneW - pioneerGap;
 
-  const pioneerMinTime = toTimestamp('1973-01-01');
+  const pioneerMinTime = toTimestamp('1966-01-01');
   const pioneerMaxTime = toTimestamp('2019-12-31');
 
   let minTime;
@@ -203,14 +203,14 @@ function buildScatterSvgContent(items, opts = {}) {
     minTime = toTimestamp('2019-11-01');
     maxTime = hasWave ? toTimestamp('2026-12-20') : toTimestamp('2024-03-01');
   } else if (timeScale === 'linear' && hasPioneers && hasModern) {
-    minTime = toTimestamp('1974-06-01');
+    minTime = toTimestamp('1967-06-01');
     maxTime = toTimestamp('2027-02-01');
   } else {
     minTime = hasEarlyAnchors
       ? toTimestamp('2019-11-01')
       : hasWave
         ? toTimestamp('2024-04-01')
-        : toTimestamp('1973-01-01');
+        : toTimestamp('1966-01-01');
     maxTime = hasWave
       ? toTimestamp('2026-12-20')
       : hasEarlyAnchors
@@ -265,8 +265,9 @@ function buildScatterSvgContent(items, opts = {}) {
   if (splitPioneerZone) {
     xTicks = hasWave
       ? [
-          { t: toTimestamp('1976-10-01'), label: '’76', major: false },
-          { t: toTimestamp('2016-05-03'), label: '’16', major: false },
+          { t: toTimestamp('1969-01-01'), label: '’69', major: false },
+          { t: toTimestamp('1996-10-10'), label: '’96', major: false },
+          { t: toTimestamp('2017-01-01'), label: '’17', major: false },
           { t: toTimestamp('2020-01-01'), label: '2020', major: true },
           { t: toTimestamp('2021-01-01'), label: '2021', major: true },
           { t: toTimestamp('2022-01-01'), label: '2022', major: true },
@@ -277,7 +278,7 @@ function buildScatterSvgContent(items, opts = {}) {
           { t: toTimestamp('2026-11-25'), label: 'Nov 26', major: false },
         ]
       : [
-          { t: toTimestamp('1996-10-10'), label: '1976–2016', major: false },
+          { t: toTimestamp('1994-01-01'), label: '1969–2019', major: false },
           { t: toTimestamp('2020-01-01'), label: '2020', major: true },
           { t: toTimestamp('2021-01-01'), label: '2021', major: true },
           { t: toTimestamp('2022-01-01'), label: '2022', major: true },
@@ -483,7 +484,7 @@ function buildScatterSvgContent(items, opts = {}) {
         text-anchor="middle"
         class="viz-annotation"
         pointer-events="none"
-      >1976–2019 · Symbolic</text>
+      >1969–2019 · Pioneers</text>
     `
         : ''
     }

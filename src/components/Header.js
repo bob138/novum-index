@@ -62,12 +62,12 @@ export function renderHeader(meta, allItems, theme) {
       <div class="container">
         <div class="hero__grid">
           <div>
-            <p class="hero__kicker">Open-Source AI-for-Science Ledger · 1976–2026 Paradigm &amp; Acceleration Tracker</p>
+            <p class="hero__kicker">Open-Source AI-for-Science Ledger · 1969–2026 Paradigm &amp; Acceleration Tracker</p>
             <h1 class="hero__title">
               Tracking the <em>exponential</em> rise of AI in scientific discovery.
             </h1>
             <p class="hero__lead">
-              From rare pre-2020 symbolic pioneers to the deep-learning breakout (Halicin, AlphaFold 2) and today’s surge of autonomous neural and neuro-symbolic discoveries posted directly to GitHub, arXiv, and X, The Novum Index tracks exclusively AI-assisted and AI-led breakthroughs—separating paradigms cleanly while visualizing the curve over time.
+              From five decades of pre-2020 symbolic theorem provers, expert systems, and early neural pioneers (1969–2019) to the deep-learning breakout (Halicin, AlphaFold 2) and today’s surge of autonomous neural and neuro-symbolic discoveries, The Novum Index tracks exclusively AI-assisted and AI-led breakthroughs—separating paradigms cleanly while visualizing the curve over time.
             </p>
           </div>
           <figure class="hero__artwork">

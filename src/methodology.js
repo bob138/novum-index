@@ -115,24 +115,24 @@ const TIER_DEFINITIONS = [
 const PARADIGM_DEFINITIONS = [
   {
     key: 'Symbolic / Classical',
-    era: '1976 – 2019',
+    era: '1969 – 2020',
     colorVar: 'var(--ink-muted)',
     summary:
-      'Pre-deep-learning rule induction (Meta-DENDRAL), automated conjecturing (Graffiti), theorem provers (EQP), SAT solvers (Cube-and-Conquer), and abductive logic robotics (Adam). Delivered high rigor within narrow formal domains at roughly one landmark per decade.',
+      'Automated theorem provers (SAM V, AURA, EQP, OTTER, FINDER), expert systems (Meta-DENDRAL, MYCIN, PROSPECTOR), inductive logic & robot scientists (Golem, Adam, Eve), symbolic regression (Eureqa, SINDy), formal proof assistants (Coq, HOL Light), SAT solvers (Glucose, Cube-and-Conquer), and exact game solvers (Chinook, Cepheus).',
   },
   {
     key: 'Neural / Deep Learning',
-    era: '2020 – 2026',
+    era: '1988 – 2026',
     colorVar: 'var(--disc-cs)',
     summary:
-      'Graph neural networks, transformers, diffusion models, reinforcement learning, physics-informed networks, and frontier LLMs operating without a formal theorem-proving kernel (e.g., Halicin, AlphaFold 2/3, GNoME, Evo 2, MatterGen, GPT-5.2 gluon amplitudes).',
+      'From early scientific neural pioneers (Qian–Sejnowski, PHD, Behler–Parrinello potentials, DeepBind, DeepSEA, RaptorX-Contact, Carleo–Troyer NQS, DeepVariant, AlphaFold 1, SpliceAI, D³M) to modern foundation models (AlphaFold 2/3, GNoME, Evo 2, MatterGen, GPT-5.2 gluon amplitudes).',
   },
   {
     key: 'Neuro-Symbolic',
-    era: '2023 – 2026',
+    era: '2014 – 2026',
     colorVar: 'var(--disc-math)',
     summary:
-      'Neural models tightly coupled to symbolic deduction engines, formal proof kernels (Lean 4 / Mathlib, SMT), or automated programmatic evaluators (e.g., FunSearch, AlphaGeometry, AlphaProof, AlphaEvolve, Claude/GPT/Gemini Lean pipelines)—combining neural intuition with formal certainty.',
+      'Neural models tightly coupled to symbolic deduction engines, formal proof kernels (Lean 4 / Mathlib, Coq, SMT), MCTS, knowledge graphs, or automated programmatic evaluators (e.g., IBM KnIT, 3N-MCTS, AI Feynman, FunSearch, AlphaGeometry, AlphaProof, AlphaEvolve, Claude/GPT/Gemini Lean pipelines).',
   },
 ];
 
@@ -467,9 +467,12 @@ function renderMethodologyPage() {
         <!-- 7. Historical Pioneers & Calibration Anchors -->
         <section class="meth-section" id="anchors" aria-labelledby="h-anchors">
           <div class="meth-section__eyebrow">Section 07</div>
-          <h2 class="meth-section__title" id="h-anchors">Historical Pioneers &amp; Calibration Anchors (1976–2023)</h2>
+          <h2 class="meth-section__title" id="h-anchors">Historical Pioneers &amp; Calibration Anchors (1969–2023)</h2>
           <p class="meth-prose">
-            Fast-moving waves suffer from recency bias. To keep composite scores calibrated on an absolute scale—and to anchor the left side of the 50-year exponential growth curve—the index maintains <strong>${anchors.length} historical anchor milestones</strong> (<code>isAnchor: true</code>): ${anchors.filter((a) => a.date < '2020-01-01').length} pre-2020 symbolic pioneers (1976–2016: Meta-DENDRAL, Graffiti, Robbins, Adam, and Boolean Pythagorean Triples) and ${anchors.filter((a) => a.date >= '2020-01-01').length} early 2020–2023 landmarks (starting with Halicin, FermiNet, and AlphaFold 2). Every 2024–2026 score is benchmarked against these anchors—for instance, AlphaFold 2 (<code>98.3</code>) sets the upper reference ceiling for multi-disciplinary paradigm shifts.
+            Fast-moving waves suffer from recency and selection bias. To keep composite scores calibrated on an absolute scale—and to ensure the pre-wave baseline cannot be accused of under-counting earlier eras—the index maintains an exhaustive <strong>${anchors.length} historical anchor milestones</strong> (<code>isAnchor: true</code>): <strong>${anchors.filter((a) => a.date < '2020-01-01').length} pre-2020 pioneers (1969–2019)</strong> spanning both <em>Symbolic / Classical AI</em> (SAM V, Meta-DENDRAL, MYCIN, AURA, PROSPECTOR, Graffiti, Golem, FINDER/MGTP, EQP, OTTER, Coq Four Color &amp; Feit–Thompson, NASA ST5, Chinook, Adam, Eureqa, Erdős Discrepancy SAT, Flyspeck, Cepheus, Eve, SINDy, Boolean Pythagorean Triples, Schur Number Five) and <em>Early Neural / ML Science</em> (Qian–Sejnowski, PHD, Behler–Parrinello potentials, Baldi LHC, IBM KnIT, DeepBind, DeepSEA, Dark Reactions, Gulshan, RaptorX-Contact, Esteva, Carleo–Troyer NQS, Hezaveh lensing, Kepler-90i, 3N-MCTS, Moorfields OCT, DeepVariant, AlphaFold 1, SpliceAI, D³M, GENTRL), plus <strong>${anchors.filter((a) => a.date >= '2020-01-01').length} early 2020–2023 landmarks</strong> (starting with Halicin, FermiNet, and AlphaFold 2).
+          </p>
+          <p class="meth-prose" style="margin-top:0.75rem;">
+            <strong>Strict AI-Only Boundary:</strong> To preserve scientific integrity, we intentionally exclude milestones that relied on custom non-AI brute-force computation or numerical verification without AI reasoning/learning (e.g., Appel &amp; Haken’s 1976 Fortran Four Color search, Lam et al.’s 1989 Cray-1A projective-plane search, and Tucker’s 1999 interval-arithmetic Lorenz proof), as well as symbolic AI systems that only rediscovered known textbook laws or theorems (e.g., Logic Theorist 1956, BACON 1981). Every 2024–2026 score is benchmarked against these ${anchors.length} anchors—with AlphaFold 2 (<code>98.3</code>) setting the upper reference ceiling for multi-disciplinary paradigm shifts.
           </p>
 
           <div class="meth-table-wrap">

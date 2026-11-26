@@ -8,7 +8,8 @@
 
 ## Features
 
-- **AI-Only Impact, Paradigm & Chronological Tracker**: Curates 104 AI-assisted and autonomous AI breakthroughs across 5 core disciplines and 50 years (1976–2026)—contrasting 5 pre-2020 symbolic AI pioneers (Meta-DENDRAL 1976, Graffiti 1986, Robbins Conjecture 1996, Robot Scientist Adam 2009, Boolean Pythagorean Triples 2016) and 17 early 2020–2023 landmarks (starting with Halicin, FermiNet, and AlphaFold 2) against 82 breakthroughs from the 2024–2026 neural and neuro-symbolic wave.
+- **AI-Only Impact, Paradigm & Chronological Tracker**: Curates 186 AI-assisted and autonomous AI breakthroughs across 5 core disciplines and 57 years (1969–2026)—contrasting an exhaustive 44-entry pre-2020 baseline of symbolic theorem provers, expert systems, SAT solvers, and early neural pioneers (SAM V 1969 through AlphaFold 1 & SpliceAI 2019) and 23 early 2020–2023 landmarks (Halicin, FermiNet, AlphaFold 2) against 119 breakthroughs from the 2024–2026 neural and neuro-symbolic wave.
+- **AI Systems & Model Rankings Ledger (`models.html`)**: Compares cumulative impact, breakthrough volume, average quality, peak discoveries, formal verification rates, and autonomy across model families, specific neural networks, neuro-symbolic provers, labs, and classical symbolic AIs with Nature Index–style fractional (`1/k`) credit.
 - **Interactive Rubric Weight Tuner**: Adjust the four scoring weights live (or try presets like *Strict Formalists*, *Real-World Ripple*, or *AI Inflection*) and copy a shareable URL encoding your exact custom ranking.
 - **Explicit Verification Tiers & Early Open-Internet Tracking**: Every milestone is labeled `Formally Verified`, `Peer-Reviewed`, `Preprint / Active Review`, or `Contested / Partial` alongside candid caveats—capturing both *Nature* landmarks and newly posted X/GitHub/Lean discoveries (such as the Lean-verified disproof of the Caiolo–Ferroni–Hoster conjecture).
 - **Interactive Data Visualizations**:
