@@ -7,7 +7,7 @@ import {
 } from '../scoring.js';
 import { renderStatusBadge } from './Leaderboard.js';
 
-const REPO_URL = 'https://github.com/bob138/frontier-index';
+const REPO_URL = 'https://github.com/bob138/novum-index';
 
 export function renderDossierModal(item, allRanked, weights) {
   if (!item) return '';

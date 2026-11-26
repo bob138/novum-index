@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bob138.github.io/frontier-index/data/schema.json",
-  "title": "The Frontier Index Breakthroughs Dataset",
+  "$id": "https://bob138.github.io/novum-index/data/schema.json",
+  "title": "The Novum Index Breakthroughs Dataset",
   "type": "object",
   "required": ["meta", "breakthroughs"],
   "properties": {

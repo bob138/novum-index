@@ -1,9 +1,9 @@
 {
-  "name": "frontier-index",
+  "name": "novum-index",
   "version": "1.0.0",
   "private": false,
   "type": "module",
-  "description": "The Frontier Index — An open-source interactive tracker, visualization suite, and impact ranking of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, and the Sciences.",
+  "description": "The Novum Index — An open-source interactive tracker, visualization suite, and impact ranking of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, and the Sciences.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -1,5 +1,5 @@
 /**
- * The Frontier Index — Dynamic Impact Scoring & Presets Engine
+ * The Novum Index — Dynamic Impact Scoring & Presets Engine
  *
  * Computes composite 0–100 impact scores from four transparent dimensions:
  *   - foundational: Foundational Depth

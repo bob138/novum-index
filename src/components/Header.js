@@ -1,6 +1,6 @@
 import { escapeHtml } from '../scoring.js';
 
-const REPO_URL = 'https://github.com/bob138/frontier-index';
+const REPO_URL = 'https://github.com/bob138/novum-index';
 
 export function renderHeader(meta, allItems, theme) {
   const totalCount = allItems.length;
@@ -25,7 +25,7 @@ export function renderHeader(meta, allItems, theme) {
       <div class="container site-nav__inner">
         <a href="#top" class="site-brand" id="brand-home">
           <img src="./favicon.svg" alt="" class="site-brand__mark" width="28" height="28" />
-          <span class="site-brand__title">The Frontier Index</span>
+          <span class="site-brand__title">The Novum Index</span>
           <span class="site-brand__edition">Edition ${escapeHtml(meta.lastUpdated)}</span>
         </a>
         <nav class="site-nav__actions" aria-label="Site actions">
@@ -66,7 +66,7 @@ export function renderHeader(meta, allItems, theme) {
               Tracking the <em>exponential</em> rise of AI in scientific discovery.
             </h1>
             <p class="hero__lead">
-              From rare pre-2020 symbolic pioneers to the deep-learning breakout (Halicin, AlphaFold 2) and today’s surge of autonomous neural and neuro-symbolic discoveries posted directly to GitHub, arXiv, and X, The Frontier Index tracks exclusively AI-assisted and AI-led breakthroughs—separating paradigms cleanly while visualizing the curve over time.
+              From rare pre-2020 symbolic pioneers to the deep-learning breakout (Halicin, AlphaFold 2) and today’s surge of autonomous neural and neuro-symbolic discoveries posted directly to GitHub, arXiv, and X, The Novum Index tracks exclusively AI-assisted and AI-led breakthroughs—separating paradigms cleanly while visualizing the curve over time.
             </p>
           </div>
           <figure class="hero__artwork">
@@ -76,7 +76,7 @@ export function renderHeader(meta, allItems, theme) {
               loading="eager"
             />
             <figcaption class="hero__artwork-caption">
-              <span>PLATE I · FRONTIER INDEX</span>
+              <span>PLATE I · NOVUM INDEX</span>
               <span>MIT LICENSE</span>
             </figcaption>
           </figure>

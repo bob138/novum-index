@@ -7,7 +7,9 @@
     <script>
       (function () {
         try {
-          var saved = localStorage.getItem('frontier-index-theme-pref');
+          var saved =
+            localStorage.getItem('novum-index-theme-pref') ||
+            localStorage.getItem('frontier-index-theme-pref');
           var theme =
             saved === 'dark' || saved === 'light'
               ? saved
@@ -18,7 +20,7 @@
         } catch (e) {}
       })();
     </script>
-    <title>The Frontier Index — Tracking the Exponential Rise of AI in Scientific Discovery</title>
+    <title>The Novum Index — AI Scientific Breakthroughs &amp; Acceleration Curve</title>
     <meta
       name="description"
       content="An open-source interactive index tracking, verifying, and visualizing the exponential rate of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, Physics, Biology, and Chemistry."
@@ -26,20 +28,20 @@
 
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bob138.github.io/frontier-index/" />
-    <meta property="og:title" content="The Frontier Index — AI Scientific Breakthroughs & Acceleration Curve" />
+    <meta property="og:url" content="https://bob138.github.io/novum-index/" />
+    <meta property="og:title" content="The Novum Index — AI Scientific Breakthroughs & Acceleration Curve" />
     <meta
       property="og:description"
       content="Tracking 68 AI-assisted and autonomous AI breakthroughs (1996–2026)—contrasting pre-2020 symbolic pioneers against the exponential neural and neuro-symbolic surge."
     />
-    <meta property="og:image" content="https://bob138.github.io/frontier-index/og-card.jpg" />
+    <meta property="og:image" content="https://bob138.github.io/novum-index/og-card.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The Frontier Index" />
+    <meta name="twitter:title" content="The Novum Index — AI Scientific Breakthroughs" />
     <meta
       name="twitter:description"
       content="Tracking and visualizing the exponential growth of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, Physics, Biology, and Chemistry."
     />
-    <meta name="twitter:image" content="https://bob138.github.io/frontier-index/og-card.jpg" />
+    <meta name="twitter:image" content="https://bob138.github.io/novum-index/og-card.jpg" />
 
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

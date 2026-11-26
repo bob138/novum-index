@@ -28,7 +28,7 @@ import {
   bindLineageInteractions,
 } from './visualizations/LineageGraph.js';
 
-const REPO_URL = 'https://github.com/bob138/frontier-index';
+const REPO_URL = 'https://github.com/bob138/novum-index';
 const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
 
 const state = {
@@ -65,7 +65,8 @@ const state = {
 
 let toastTimer = null;
 
-const THEME_STORAGE_KEY = 'frontier-index-theme-pref';
+const THEME_STORAGE_KEY = 'novum-index-theme-pref';
+const LEGACY_THEME_STORAGE_KEY = 'frontier-index-theme-pref';
 
 function getSystemTheme() {
   try {
@@ -80,7 +81,9 @@ function getSystemTheme() {
 
 function getSavedThemePreference() {
   try {
-    const saved = localStorage.getItem(THEME_STORAGE_KEY);
+    const saved =
+      localStorage.getItem(THEME_STORAGE_KEY) ||
+      localStorage.getItem(LEGACY_THEME_STORAGE_KEY);
     if (saved === 'dark' || saved === 'light') return saved;
   } catch {
     // ignore storage errors
@@ -285,7 +288,7 @@ function renderMethodologyFooter() {
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <strong>The Frontier Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
+          <strong>The Novum Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
         </div>
         <div class="site-footer__links">
           <a href="./methodology.html">Full Methodology</a>
@@ -299,10 +302,10 @@ function renderMethodologyFooter() {
 }
 
 function showToast(message) {
-  let el = document.getElementById('frontier-toast');
+  let el = document.getElementById('novum-toast');
   if (!el) {
     el = document.createElement('div');
-    el.id = 'frontier-toast';
+    el.id = 'novum-toast';
     el.className = 'toast';
     el.setAttribute('role', 'status');
     el.setAttribute('aria-live', 'polite');

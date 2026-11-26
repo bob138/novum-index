@@ -13,8 +13,9 @@ import {
 } from './scoring.js';
 import { renderStatusBadge } from './components/Leaderboard.js';
 
-const REPO_URL = 'https://github.com/bob138/frontier-index';
-const THEME_STORAGE_KEY = 'frontier-index-theme-pref';
+const REPO_URL = 'https://github.com/bob138/novum-index';
+const THEME_STORAGE_KEY = 'novum-index-theme-pref';
+const LEGACY_THEME_STORAGE_KEY = 'frontier-index-theme-pref';
 const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
 
 function getSystemTheme() {
@@ -30,7 +31,9 @@ function getSystemTheme() {
 
 function getSavedThemePreference() {
   try {
-    const saved = localStorage.getItem(THEME_STORAGE_KEY);
+    const saved =
+      localStorage.getItem(THEME_STORAGE_KEY) ||
+      localStorage.getItem(LEGACY_THEME_STORAGE_KEY);
     if (saved === 'dark' || saved === 'light') return saved;
   } catch {
     // ignore
@@ -162,7 +165,7 @@ function renderMethodologyPage() {
       <div class="container site-nav__inner">
         <a href="./" class="site-brand">
           <img src="./favicon.svg" alt="" class="site-brand__mark" width="28" height="28" />
-          <span class="site-brand__title">The Frontier Index</span>
+          <span class="site-brand__title">The Novum Index</span>
           <span class="site-brand__edition">Edition ${escapeHtml(dataset.meta.lastUpdated)}</span>
         </a>
         <nav class="site-nav__actions" aria-label="Site actions">
@@ -200,10 +203,10 @@ function renderMethodologyPage() {
       <div class="container">
         <p class="hero__kicker">Open Methodology &amp; Epistemic Framework · Edition ${escapeHtml(dataset.meta.lastUpdated)}</p>
         <h1 class="hero__title meth-hero__title">
-          How The Frontier Index curates, verifies, and <em>transparently</em> ranks AI-driven science.
+          How The Novum Index curates, verifies, and <em>transparently</em> ranks AI-driven science.
         </h1>
         <p class="hero__lead meth-hero__lead">
-          Comparing discoveries across pure mathematics, theoretical computer science, physics, biology, and chemistry is inherently judgment-laden. Rather than hiding behind an opaque leaderboard, every score, verification tier, paradigm tag, and time-compression figure in The Frontier Index is governed by the explicit, auditable rubric documented below—and readers can override every weight live.
+          Named after <em>novum</em>—Latin for “the genuinely new thing,” honoring Francis Bacon’s 1620 <em>Novum Organum</em> as artificial intelligence becomes science’s new instrument—The Novum Index governs every score, verification tier, paradigm tag, and time-compression figure with an explicit, auditable rubric that readers can override live.
         </p>
 
         <nav class="meth-toc" aria-label="Methodology sections">
@@ -227,7 +230,7 @@ function renderMethodologyPage() {
           <div class="meth-section__eyebrow">Section 01</div>
           <h2 class="meth-section__title" id="h-scope">Scope, Inclusion Criteria &amp; Open-Internet Tracking</h2>
           <p class="meth-prose">
-            <strong>The Frontier Index exclusively tracks AI-assisted and AI-led scientific breakthroughs.</strong> Exclusively human discoveries—however monumental—are intentionally out of scope. This strict focus allows the index to isolate and measure the rate at which artificial intelligence contributes to human scientific knowledge and to visualize the paradigm shift from early symbolic provers to modern neural and neuro-symbolic systems.
+            <strong>The Novum Index exclusively tracks AI-assisted and AI-led scientific breakthroughs.</strong> Exclusively human discoveries—however monumental—are intentionally out of scope. This strict focus allows the index to isolate and measure the rate at which artificial intelligence contributes to human scientific knowledge and to visualize the paradigm shift from early symbolic provers to modern neural and neuro-symbolic systems.
           </p>
 
           <div class="meth-two-col">
@@ -423,7 +426,7 @@ function renderMethodologyPage() {
           <div class="meth-section__eyebrow">Section 06</div>
           <h2 class="meth-section__title" id="h-time">Human Years Unsolved vs. AI Time-to-Solution</h2>
           <p class="meth-prose">
-            To quantify discovery acceleration concretely, The Frontier Index tracks two strictly conservative temporal fields:
+            To quantify discovery acceleration concretely, The Novum Index tracks two strictly conservative temporal fields:
           </p>
           <ul class="meth-list meth-list--wide">
             <li><strong><code>yearsUnsolved</code> (${totalOpenYears.toLocaleString('en-US')}+ combined years across ${openProblems.length} open problems):</strong> Populated <em>only</em> when a breakthrough resolves or breaks a well-defined, named open scientific or mathematical problem, measured from the year it was formally posed until resolution. We intentionally set <code>yearsUnsolved: null</code> for formalizations of already-proven theorems (such as Fermat’s Last Theorem or Viazovska’s sphere packing) and general-purpose scientific platforms so the cumulative human-years total is never inflated.</li>
@@ -511,17 +514,17 @@ function renderMethodologyPage() {
             </div>
             <div class="meth-card">
               <h3>Impact × Time Map</h3>
-              <p class="meth-prose-sm">Plots announcement date against composite Impact Score. Pre-2020 symbolic pioneers occupy a compressed left band as diamonds (<code>◆</code>) so 24 sparse years never distort the linear 2020–2026 neural zone (<code>●</code>). Marker radius scales with Cross-Field Ripple and open-problem age; outer rings denote formal verification.</p>
+              <p class="meth-prose-sm">Plots announcement date against composite Impact (or any individual sub-score) with interactive box-zoom, pan mode, time presets (including <code>Q4 2026</code>), <code>Split</code> vs. <code>Linear</code> time scaling, and <code>Auto</code> vs. <code>0–100</code> Y-scaling. Symbolic pioneers appear as diamonds (<code>◆</code>); neural &amp; neuro-symbolic milestones as circles (<code>●</code>); outer rings denote formal verification.</p>
               <a class="meth-link" href="./?view=timeline">Open Impact × Time Map →</a>
             </div>
             <div class="meth-card">
               <h3>Acceleration Curve</h3>
-              <p class="meth-prose-sm">Pairs a compressed <code>&lt; 2020*</code> (24-year) pioneer bar and annual <code>2020–2023</code> anchor bars with quarterly <code>2024–2026</code> cadence bars and a cumulative discovery curve. Toggle between <strong>By Paradigm</strong>, <strong>By AI Role</strong>, and <strong>By Discipline</strong> to see neural and neuro-symbolic output overtake classical symbolic AI.</p>
+              <p class="meth-prose-sm">Pairs stacked breakthrough bars (grouped <strong>By Paradigm</strong>, <strong>By AI Role</strong>, or <strong>By Discipline</strong>) with a cumulative curve supporting <code>Linear</code> or <code>Log</code> right-axis scaling, switchable cadence (<code>Era + Qtr</code>, <code>Annual</code>, <code>2024–26 Qtr</code>, <code>2026 Monthly</code>), and cumulative <code>Count</code>, <code>Human Yrs</code>, or <code>Impact Sum</code> overlays.</p>
               <a class="meth-link" href="./?view=velocity">Open Acceleration Curve →</a>
             </div>
             <div class="meth-card">
               <h3>Influence Graph (Catalyst DAG)</h3>
-              <p class="meth-prose-sm">Maps documented causal dependencies (<code>enables</code> edges) across five chronological columns (<code>≤ 2023 Pioneers</code> → <code>2024</code> → <code>2025</code> → <code>Q1–Q3 2026</code> → <code>Q4 2026</code>), tracing how earlier architectures and provers unlocked downstream breakthroughs.</p>
+              <p class="meth-prose-sm">Maps documented causal dependencies (<code>enables</code> edges) across five chronological columns with smooth pan &amp; zoom and <code>Full Chain</code> vs. <code>1-Hop</code> highlighting, tracing how earlier architectures and provers unlocked downstream breakthroughs.</p>
               <a class="meth-link" href="./?view=lineage">Open Influence Graph →</a>
             </div>
           </div>
@@ -547,7 +550,7 @@ function renderMethodologyPage() {
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <strong>The Frontier Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
+          <strong>The Novum Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
         </div>
         <div class="site-footer__links">
           <a href="./">Live Index</a>
