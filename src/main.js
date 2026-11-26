@@ -291,6 +291,7 @@ function renderMethodologyFooter() {
           <strong>The Novum Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
         </div>
         <div class="site-footer__links">
+          <a href="./models.html">AI Systems &amp; Models</a>
           <a href="./methodology.html">Full Methodology</a>
           <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contribute Data</a>

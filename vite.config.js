@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        models: resolve(__dirname, 'models.html'),
         methodology: resolve(__dirname, 'methodology.html'),
       },
     },

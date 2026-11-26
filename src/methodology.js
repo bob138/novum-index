@@ -186,6 +186,7 @@ function renderMethodologyPage() {
             <span class="nav-submit-full">← Back to Index</span>
             <span class="nav-submit-short">← Index</span>
           </a>
+          <a href="./models.html" class="nav-btn nav-btn--models">AI Systems</a>
           <a
             href="${REPO_URL}/issues/new?template=submit-breakthrough.yml"
             target="_blank"
@@ -554,6 +555,7 @@ function renderMethodologyPage() {
         </div>
         <div class="site-footer__links">
           <a href="./">Live Index</a>
+          <a href="./models.html">AI Systems &amp; Models</a>
           <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           <a href="${REPO_URL}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener noreferrer">Methodology Markdown</a>
           <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contribute Data</a>
