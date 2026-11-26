@@ -86,12 +86,12 @@ export function renderHeader(meta, allItems, theme) {
           <div class="pulse-stat">
             <div class="pulse-stat__value">${totalCount}</div>
             <div class="pulse-stat__label">AI Breakthroughs</div>
-            <div class="pulse-stat__note">${waveCount} in 2024–26 · ${earlyNeuralCount} in 2020–23 · ${pioneerCount} pre-2020</div>
+            <div class="pulse-stat__note">${waveCount} wave · ${earlyNeuralCount} early neural · ${pioneerCount} pre-2020</div>
           </div>
           <div class="pulse-stat">
             <div class="pulse-stat__value">${totalOpenYears.toLocaleString('en-US')}+ yrs</div>
             <div class="pulse-stat__label">Human Years Unsolved</div>
-            <div class="pulse-stat__note">Across ${openProblemCount} open problems · hrs–wks for AI</div>
+            <div class="pulse-stat__note">${openProblemCount} open problems · hrs–wks via AI</div>
           </div>
           <div class="pulse-stat">
             <div class="pulse-stat__value">${formallyVerifiedCount}</div>

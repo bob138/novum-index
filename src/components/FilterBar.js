@@ -119,11 +119,11 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
         </div>
 
         <select id="filter-paradigm" class="filter-select" aria-label="Filter by AI paradigm">
-          <option value="all" ${state.paradigm === 'all' ? 'selected' : ''}>All AI Paradigms</option>
-          <option value="modern" ${state.paradigm === 'modern' ? 'selected' : ''}>Modern Neural &amp; Hybrid (2020+)</option>
+          <option value="all" ${state.paradigm === 'all' ? 'selected' : ''}>All Paradigms</option>
+          <option value="modern" ${state.paradigm === 'modern' ? 'selected' : ''}>Neural &amp; Hybrid (2020+)</option>
           <option value="Neural / Deep Learning" ${state.paradigm === 'Neural / Deep Learning' ? 'selected' : ''}>Neural / Deep Learning</option>
           <option value="Neuro-Symbolic" ${state.paradigm === 'Neuro-Symbolic' ? 'selected' : ''}>Neuro-Symbolic</option>
-          <option value="Symbolic / Classical" ${state.paradigm === 'Symbolic / Classical' ? 'selected' : ''}>Symbolic / Classical (&lt;2020)</option>
+          <option value="Symbolic / Classical" ${state.paradigm === 'Symbolic / Classical' ? 'selected' : ''}>Symbolic (&lt;2020)</option>
         </select>
 
         <select id="filter-ai-role" class="filter-select" aria-label="Filter by AI role">
@@ -133,7 +133,7 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
         </select>
 
         <select id="filter-status" class="filter-select" aria-label="Filter by verification status">
-          <option value="all" ${state.status === 'all' ? 'selected' : ''}>All Verification Tiers</option>
+          <option value="all" ${state.status === 'all' ? 'selected' : ''}>All Verification</option>
           <option value="Formally Verified" ${state.status === 'Formally Verified' ? 'selected' : ''}>Formally Verified</option>
           <option value="Peer-Reviewed" ${state.status === 'Peer-Reviewed' ? 'selected' : ''}>Peer-Reviewed</option>
           <option value="Preprint / Active Review" ${state.status === 'Preprint / Active Review' ? 'selected' : ''}>Active Review</option>
@@ -141,17 +141,17 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
         </select>
 
         <select id="filter-year" class="filter-select" aria-label="Filter by timeframe">
-          <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (1996 – 2026)</option>
-          <option value="2024-2026" ${state.year === '2024-2026' ? 'selected' : ''}>2024 – 2026 Wave Only</option>
-          <option value="anchors" ${state.year === 'anchors' ? 'selected' : ''}>2020 – 2023 Early Neural</option>
-          <option value="pre-2020" ${state.year === 'pre-2020' ? 'selected' : ''}>Pre-2020 Symbolic Pioneers</option>
+          <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (1996–2026)</option>
+          <option value="2024-2026" ${state.year === '2024-2026' ? 'selected' : ''}>2024–2026 Wave</option>
+          <option value="anchors" ${state.year === 'anchors' ? 'selected' : ''}>2020–2023 Early Neural</option>
+          <option value="pre-2020" ${state.year === 'pre-2020' ? 'selected' : ''}>Pre-2020 Symbolic</option>
           <option value="2026" ${state.year === '2026' ? 'selected' : ''}>2026 Only</option>
           <option value="2025" ${state.year === '2025' ? 'selected' : ''}>2025 Only</option>
           <option value="2024" ${state.year === '2024' ? 'selected' : ''}>2024 Only</option>
         </select>
 
         <select id="sort-by" class="filter-select" aria-label="Sort breakthroughs">
-          <option value="impact" ${state.sortBy === 'impact' ? 'selected' : ''}>Sort: Impact Score</option>
+          <option value="impact" ${state.sortBy === 'impact' ? 'selected' : ''}>Sort: Impact</option>
           <option value="newest" ${state.sortBy === 'newest' ? 'selected' : ''}>Sort: Most Recent</option>
           <option value="oldest" ${state.sortBy === 'oldest' ? 'selected' : ''}>Sort: Chronological</option>
         </select>

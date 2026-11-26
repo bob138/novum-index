@@ -127,7 +127,7 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
         <div>
           <h2 class="viz-card__title">AI-for-Science Catalyst &amp; Influence Network</h2>
           <p class="viz-card__desc">
-            Traces how foundational 2020–2023 AI milestones (AlphaFold 2, DeepMind Knot Theory, AlphaTensor, AlphaDev, GNoME, FunSearch) and 2024–2025 architectures catalyzed the 2026 surge. Hover any node to trace its upstream &amp; downstream chain; click to open its dossier.
+            Traces how pre-2020 symbolic pioneers (Robbins, Adam, Pythagorean Triples), 2020–2023 neural anchors (Halicin, AlphaFold 2, AlphaTensor, FunSearch), and 2024–2025 architectures catalyzed the 2026 surge. Hover any node to trace its upstream &amp; downstream chain; click to open its dossier.
           </p>
         </div>
       </div>
@@ -231,7 +231,9 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
                 const rawTitle = item.shortTitle.replace(' (Anchor)', '');
                 const maxChars = colCount >= 5 ? 25 : 29;
                 const displayTitle =
-                  rawTitle.length > maxChars ? `${rawTitle.slice(0, maxChars - 1).trimEnd()}…` : rawTitle;
+                  rawTitle.length > maxChars
+                    ? `${rawTitle.slice(0, maxChars - 1).replace(/[,(\-–—\s]+$/, '')}…`
+                    : rawTitle;
                 return `
                 <g
                   class="lineage-node"

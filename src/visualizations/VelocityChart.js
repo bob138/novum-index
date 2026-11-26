@@ -96,7 +96,8 @@ export function renderVelocityChart(items, groupBy = 'paradigm') {
 
   const rawMaxBar = Math.max(4, ...buckets.map((b) => b.total));
   const step = rawMaxBar <= 6 ? 1 : rawMaxBar <= 12 ? 2 : rawMaxBar <= 18 ? 3 : 4;
-  const maxBar = Math.ceil(rawMaxBar / step) * step;
+  let maxBar = Math.ceil(rawMaxBar / step) * step;
+  if (rawMaxBar / maxBar > 0.85) maxBar += step;
   const maxCum = Math.max(5, buckets[buckets.length - 1]?.cumulativeCount || 5);
 
   const slotW = innerW / buckets.length;
@@ -282,11 +283,6 @@ export function renderVelocityChart(items, groupBy = 'paradigm') {
               return `
                 <g>
                   ${rects}
-                  ${
-                    b.total > 0
-                      ? `<text x="${xCenter.toFixed(1)}" y="${(yBar(b.total) - 7).toFixed(1)}" text-anchor="middle" class="viz-axis-label" style="font-weight:600;fill:var(--ink-primary);">${b.total}</text>`
-                      : ''
-                  }
                   <text x="${xCenter.toFixed(1)}" y="${margin.top + innerH + 22}" text-anchor="middle" class="viz-axis-label">${b.label}</text>
                 </g>
               `;
@@ -310,6 +306,27 @@ export function renderVelocityChart(items, groupBy = 'paradigm') {
             </circle>
           `
             )
+            .join('')}
+
+          <!-- Bar Count Labels (rendered above curve with halo & collision avoidance) -->
+          ${buckets
+            .map((b, idx) => {
+              if (b.total <= 0) return '';
+              const xCenter = margin.left + idx * slotW + slotW / 2;
+              const barTopY = yBar(b.total);
+              const curveY = linePoints[idx].y;
+              let labelY = barTopY - 7;
+              // If label would overlap the cumulative dot, place cleanly above the dot or inside the top of tall bars
+              if (Math.abs(labelY - curveY) < 14) {
+                if (margin.top + innerH - barTopY > 26) {
+                  labelY = barTopY + 14;
+                } else {
+                  labelY = Math.min(barTopY - 7, curveY - 11);
+                }
+              }
+              const insideBar = labelY > barTopY;
+              return `<text x="${xCenter.toFixed(1)}" y="${labelY.toFixed(1)}" text-anchor="middle" class="viz-axis-label" style="font-weight:600;fill:${insideBar ? '#ffffff' : 'var(--ink-primary)'};${insideBar ? '' : 'paint-order:stroke;stroke:var(--bg-surface);stroke-width:3.5px;stroke-linejoin:round;'}pointer-events:none;">${b.total}</text>`;
+            })
             .join('')}
 
           <!-- Baseline & Axis Titles -->

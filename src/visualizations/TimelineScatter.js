@@ -152,9 +152,10 @@ export function renderTimelineScatter(items) {
     return { item, cx, cy, r };
   });
 
-  // Pick non-overlapping callout labels for highest-ranked & anchor items
+  // Pick non-overlapping callout labels for pre-2020 pioneers, 2020–23 anchors & top wave items
   const prioritized = [
-    ...positioned.filter((p) => p.item.isAnchor).slice(0, 4),
+    ...positioned.filter((p) => p.item.date < '2020-01-01').slice(0, 3),
+    ...positioned.filter((p) => p.item.isAnchor && p.item.date >= '2020-01-01').slice(0, 4),
     ...positioned.filter((p) => !p.item.isAnchor).slice(0, 12),
   ];
   const seenPriority = new Set();
@@ -166,7 +167,11 @@ export function renderTimelineScatter(items) {
 
   const placedLabels = [];
   for (const node of labelCandidates) {
-    const cleanText = node.item.shortTitle.replace(' (Anchor)', '');
+    const cleanText = node.item.shortTitle
+      .replace(' (Anchor)', '')
+      .replace('Robbins Conjecture (EQP, 1996)', 'Robbins (1996)')
+      .replace('Robot Scientist Adam (2009)', 'Adam (2009)')
+      .replace(' (SAT)', ' (2016)');
     const labelW = cleanText.length * 6.3 + 12;
     const labelH = 15;
     const preferredRight = node.cx > width - 220;
@@ -242,7 +247,7 @@ export function renderTimelineScatter(items) {
           .join('')}
         <span class="viz-legend__item" style="margin-left: auto;">
           <span style="display:inline-block;width:8px;height:8px;background:var(--ink-muted);transform:rotate(45deg);margin-right:2px;"></span>
-          <span>◆ Symbolic (&lt;2020)</span>
+          <span>Symbolic (&lt;2020)</span>
         </span>
         <span class="viz-legend__item">
           <span class="viz-legend__ring"></span>
@@ -269,6 +274,7 @@ export function renderTimelineScatter(items) {
               height="${innerH}"
               fill="var(--bg-surface-alt)"
               opacity="0.72"
+              pointer-events="none"
             />
             <line
               x1="${pioneerDividerX.toFixed(1)}"
@@ -278,12 +284,14 @@ export function renderTimelineScatter(items) {
               stroke="var(--border-strong)"
               stroke-width="1.3"
               stroke-dasharray="3 3"
+              pointer-events="none"
             />
             <text
               x="${(margin.left + (pioneerDividerX - margin.left) / 2).toFixed(1)}"
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
+              pointer-events="none"
             >1996–2019 · Symbolic</text>
           `
               : ''
@@ -300,6 +308,7 @@ export function renderTimelineScatter(items) {
               height="${innerH}"
               fill="var(--bg-surface-alt)"
               opacity="0.38"
+              pointer-events="none"
             />
             <line
               x1="${anchorDividerX.toFixed(1)}"
@@ -309,18 +318,21 @@ export function renderTimelineScatter(items) {
               stroke="var(--border-strong)"
               stroke-width="1.2"
               stroke-dasharray="4 4"
+              pointer-events="none"
             />
             <text
               x="${((pioneerDividerX ?? margin.left) + (anchorDividerX - (pioneerDividerX ?? margin.left)) / 2).toFixed(1)}"
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
+              pointer-events="none"
             >2020–23 · Early Neural</text>
             <text
               x="${(anchorDividerX + (width - margin.right - anchorDividerX) / 2).toFixed(1)}"
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
+              pointer-events="none"
             >2024–2026 Neural &amp; Neuro-Symbolic Wave</text>
           `
               : ''
@@ -337,12 +349,14 @@ export function renderTimelineScatter(items) {
               height="${innerH}"
               fill="var(--accent-warm-soft)"
               rx="4"
+              pointer-events="none"
             />
             <text
               x="${(floodX1 + Math.max(18, floodX2 - floodX1) / 2).toFixed(1)}"
               y="${margin.top + 16}"
               text-anchor="middle"
               class="viz-annotation"
+              pointer-events="none"
             >Q4 26 Surge</text>
           `
               : ''
@@ -353,7 +367,7 @@ export function renderTimelineScatter(items) {
             .map((val) => {
               const y = scaleY(val);
               return `
-              <line x1="${margin.left}" y1="${y.toFixed(1)}" x2="${width - margin.right}" y2="${y.toFixed(1)}" class="viz-grid-line" />
+              <line x1="${margin.left}" y1="${y.toFixed(1)}" x2="${width - margin.right}" y2="${y.toFixed(1)}" class="viz-grid-line" pointer-events="none" />
               <text x="${margin.left - 10}" y="${(y + 4).toFixed(1)}" text-anchor="end" class="viz-axis-label">${val}</text>
             `;
             })
@@ -371,6 +385,7 @@ export function renderTimelineScatter(items) {
                 y2="${margin.top + innerH}"
                 class="${t.major ? 'viz-axis-line' : 'viz-grid-line'}"
                 opacity="${t.major ? '0.5' : '0.4'}"
+                pointer-events="none"
               />
               <text x="${x.toFixed(1)}" y="${margin.top + innerH + 22}" text-anchor="middle" class="viz-axis-label">${t.label}</text>
             `;
@@ -378,8 +393,8 @@ export function renderTimelineScatter(items) {
             .join('')}
 
           <!-- Axes Baseline -->
-          <line x1="${margin.left}" y1="${margin.top + innerH}" x2="${width - margin.right}" y2="${margin.top + innerH}" class="viz-axis-line" />
-          <line x1="${margin.left}" y1="${margin.top}" x2="${margin.left}" y2="${margin.top + innerH}" class="viz-axis-line" />
+          <line x1="${margin.left}" y1="${margin.top + innerH}" x2="${width - margin.right}" y2="${margin.top + innerH}" class="viz-axis-line" pointer-events="none" />
+          <line x1="${margin.left}" y1="${margin.top}" x2="${margin.left}" y2="${margin.top + innerH}" class="viz-axis-line" pointer-events="none" />
 
           <!-- Y Axis Title -->
           <text
@@ -402,7 +417,10 @@ export function renderTimelineScatter(items) {
                 item.verificationStatus === 'Contested / Partial' ||
                 item.verificationStatus === 'Preprint / Active Review';
               const lbl = labelMap.get(item.id);
-              const dSize = r * 1.45;
+              const dHalf = r * 1.12;
+              const ringHalf = dHalf + 4.4;
+              const diamondPoints = (h) =>
+                `${cx.toFixed(1)},${(cy - h).toFixed(1)} ${(cx + h).toFixed(1)},${cy.toFixed(1)} ${cx.toFixed(1)},${(cy + h).toFixed(1)} ${(cx - h).toFixed(1)},${cy.toFixed(1)}`;
 
               return `
               <g
@@ -416,24 +434,20 @@ export function renderTimelineScatter(items) {
                 ${
                   isFormal
                     ? isSymbolic
-                      ? `<rect x="${(cx - (dSize + 4.5) / 2).toFixed(1)}" y="${(cy - (dSize + 4.5) / 2).toFixed(1)}" width="${(dSize + 4.5).toFixed(1)}" height="${(dSize + 4.5).toFixed(1)}" rx="1.5" transform="rotate(45 ${cx.toFixed(1)} ${cy.toFixed(1)})" fill="none" stroke="${disc.colorVar}" stroke-width="1.5" opacity="0.85" />`
-                      : `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(r + 3.8).toFixed(1)}" fill="none" stroke="${disc.colorVar}" stroke-width="1.5" opacity="0.85" />`
+                      ? `<polygon points="${diamondPoints(ringHalf)}" fill="none" stroke="${disc.colorVar}" stroke-width="1.5" stroke-linejoin="round" opacity="0.85" pointer-events="none" />`
+                      : `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(r + 3.8).toFixed(1)}" fill="none" stroke="${disc.colorVar}" stroke-width="1.5" opacity="0.85" pointer-events="none" />`
                     : ''
                 }
                 ${
                   isSymbolic
-                    ? `<rect
+                    ? `<polygon
                         class="scatter-node__circle"
-                        x="${(cx - dSize / 2).toFixed(1)}"
-                        y="${(cy - dSize / 2).toFixed(1)}"
-                        width="${dSize.toFixed(1)}"
-                        height="${dSize.toFixed(1)}"
-                        rx="1.5"
-                        transform="rotate(45 ${cx.toFixed(1)} ${cy.toFixed(1)})"
+                        points="${diamondPoints(dHalf)}"
                         fill="${disc.colorVar}"
-                        fill-opacity="0.88"
+                        fill-opacity="0.9"
                         stroke="var(--bg-surface)"
                         stroke-width="1.5"
+                        stroke-linejoin="round"
                       />`
                     : `<circle
                         class="scatter-node__circle"
