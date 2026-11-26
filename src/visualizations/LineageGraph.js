@@ -55,9 +55,15 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
       items: [],
     },
     {
-      id: '2026',
-      title: '2026 · FRONTIER WAVE',
-      match: (n) => n.date >= '2026-01-01',
+      id: '2026-early',
+      title: 'Q1–Q3 2026 · SURGE',
+      match: (n) => n.date >= '2026-01-01' && n.date < '2026-10-01',
+      items: [],
+    },
+    {
+      id: '2026-q4',
+      title: 'Q4 2026 · FRONTIER',
+      match: (n) => n.date >= '2026-10-01',
       items: [],
     },
   ];
@@ -87,10 +93,10 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
 
   const colCount = columns.length;
   const maxRows = Math.max(...columns.map((c) => c.items.length), 3);
-  const width = colCount >= 4 ? 1140 : 1040;
-  const nodeW = colCount >= 4 ? 222 : 248;
-  const nodeH = 54;
-  const rowGap = 15;
+  const width = colCount >= 5 ? 1240 : colCount >= 4 ? 1140 : 1040;
+  const nodeW = colCount >= 5 ? 204 : colCount >= 4 ? 222 : 248;
+  const nodeH = 52;
+  const rowGap = 13;
   const topPad = 52;
   const bottomPad = 28;
   const height = Math.max(450, topPad + maxRows * (nodeH + rowGap) + bottomPad);
@@ -119,9 +125,9 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
     <div class="viz-card">
       <div class="viz-card__header">
         <div>
-          <h2 class="viz-card__title">Cross-Field Influence &amp; Catalyst Network</h2>
+          <h2 class="viz-card__title">AI-for-Science Catalyst &amp; Influence Network</h2>
           <p class="viz-card__desc">
-            Traces how landmark 2020–2023 anchors (AlphaFold 2, AlphaTensor, GNoME, FunSearch) and 2024–2025 foundations catalyzed the 2026 surge. Hover any node to trace its upstream &amp; downstream chain; click to open its dossier.
+            Traces how foundational 2020–2023 AI milestones (AlphaFold 2, DeepMind Knot Theory, AlphaTensor, AlphaDev, GNoME, FunSearch) and 2024–2025 architectures catalyzed the 2026 surge. Hover any node to trace its upstream &amp; downstream chain; click to open its dossier.
           </p>
         </div>
       </div>
@@ -222,7 +228,10 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
               .map((item) => {
                 const pos = nodePos.get(item.id);
                 const disc = DISCIPLINE_META[item.discipline];
-                const displayTitle = item.shortTitle.replace(' (Anchor)', '');
+                const rawTitle = item.shortTitle.replace(' (Anchor)', '');
+                const maxChars = colCount >= 5 ? 25 : 29;
+                const displayTitle =
+                  rawTitle.length > maxChars ? `${rawTitle.slice(0, maxChars - 1).trimEnd()}…` : rawTitle;
                 return `
                 <g
                   class="lineage-node"

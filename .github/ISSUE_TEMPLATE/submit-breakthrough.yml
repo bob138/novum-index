@@ -43,18 +43,24 @@ body:
   - type: dropdown
     id: ai_role
     attributes:
-      label: AI Provenance
+      label: AI Role (AI-Assisted or Autonomous AI only)
       options:
         - Autonomous AI
         - AI-Assisted
-        - Human
+    validations:
+      required: true
+  - type: input
+    id: ai_system
+    attributes:
+      label: AI Model / System Used
+      placeholder: "e.g., GPT-6.2 Astra + Lean 4, Claude Fable 5.2, Gemini 4 Carbon"
     validations:
       required: true
   - type: textarea
     id: sources
     attributes:
-      label: Primary Source URLs (arXiv, DOI, Lean repo, official announcement)
-      placeholder: "https://arxiv.org/abs/..."
+      label: Primary Source URLs (arXiv, DOI, Lean/GitHub repo, X post, or official announcement)
+      placeholder: "https://arxiv.org/abs/... or https://x.com/... or https://github.com/..."
     validations:
       required: true
   - type: textarea

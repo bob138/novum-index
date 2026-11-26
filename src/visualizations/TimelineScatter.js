@@ -92,14 +92,19 @@ export function renderTimelineScatter(items) {
     seenCoords.set(bucket, count + 1);
     if (count > 0) {
       const angle = count * 2.15;
-      cx += Math.cos(angle) * 10;
-      cy += Math.sin(angle) * 10;
+      const dist = 9 + Math.min(8, Math.floor(count / 3) * 4);
+      cx += Math.cos(angle) * dist;
+      cy += Math.sin(angle) * dist;
     }
 
     const r =
-      6.2 +
-      (item.scores.ripple / 100) * 5.2 +
-      (item.yearsUnsolved ? Math.min(3.8, item.yearsUnsolved / 42) : 0);
+      6.0 +
+      (item.scores.ripple / 100) * 4.8 +
+      (item.yearsUnsolved ? Math.min(3.5, item.yearsUnsolved / 45) : 0);
+
+    cx = Math.max(margin.left + r + 2, Math.min(width - margin.right - r - 2, cx));
+    cy = Math.max(margin.top + r + 2, Math.min(margin.top + innerH - r - 2, cy));
+
     return { item, cx, cy, r };
   });
 
@@ -173,9 +178,9 @@ export function renderTimelineScatter(items) {
     <div class="viz-card">
       <div class="viz-card__header">
         <div>
-          <h2 class="viz-card__title">Impact × Time Landscape</h2>
+          <h2 class="viz-card__title">AI Impact × Time Landscape</h2>
           <p class="viz-card__desc">
-            Every breakthrough plotted by announcement date and live composite Impact Index—showing the compression from isolated 2020–2023 landmarks into the 2025–2026 flood. Circle size reflects cross-field ripple &amp; problem age; outer rings mark formally verified results.
+            Every AI-assisted and AI-led breakthrough plotted by announcement date and live composite Impact Index—showing the compression from isolated 2020–2023 landmarks into the dense 2026 wave. Circle size reflects cross-field ripple &amp; problem age; outer rings mark formally verified results.
           </p>
         </div>
       </div>

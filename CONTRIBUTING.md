@@ -13,8 +13,9 @@ All index data lives in [`data/breakthroughs.json`](./data/breakthroughs.json) a
 
 1. Fork this repository and create a new branch (`git checkout -b add-my-breakthrough`).
 2. Add or edit an entry in `data/breakthroughs.json`, ensuring:
-   - Every claim is backed by at least one **primary verifiable URL** (arXiv, DOI/PubMed, official Lean verification statement, or lab paper).
-   - `verificationStatus` accurately reflects current community consensus—do not mark unreviewed preprints as `Peer-Reviewed` or `Formally Verified`.
+   - The breakthrough is **AI-assisted or AI-led** (`aiRole` must be `"AI-Assisted"` or `"Autonomous AI"`) and specifies a non-empty `aiSystem` (model/architecture name). Exclusively human discoveries are out of scope.
+   - Every claim is backed by at least one **primary verifiable URL** (arXiv, DOI/PubMed, official Lean/GitHub verification repository, lab paper, or primary researcher announcement on X).
+   - `verificationStatus` accurately reflects current community consensus—do not mark unreviewed preprints or social posts as `Peer-Reviewed` or `Formally Verified` unless independently machine-checked or published.
    - `caveats` candidly notes open limitations, scope boundaries, or pending audits.
    - `scoreRationale` justifies each of the four 0–100 sub-scores (see [METHODOLOGY.md](./METHODOLOGY.md)).
    - Update `meta.lastUpdated` to today's date (`YYYY-MM-DD`).

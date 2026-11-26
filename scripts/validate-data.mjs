@@ -14,7 +14,7 @@ const DISCIPLINES = new Set([
   'Chemistry & Materials',
 ]);
 
-const AI_ROLES = new Set(['Autonomous AI', 'AI-Assisted', 'Human']);
+const AI_ROLES = new Set(['Autonomous AI', 'AI-Assisted']);
 
 const VERIFICATION_STATUSES = new Set([
   'Formally Verified',
@@ -29,6 +29,7 @@ const SOURCE_TYPES = new Set([
   'announcement',
   'explainer',
   'code',
+  'social-post',
 ]);
 
 const SCORE_KEYS = ['foundational', 'ripple', 'verification', 'velocity'];
@@ -98,7 +99,10 @@ function validate() {
       }
       if (!DATE_RE.test(item.date || '')) errors.push(`${ctx}: date must be YYYY-MM-DD`);
       if (!DISCIPLINES.has(item.discipline)) errors.push(`${ctx}: invalid discipline "${item.discipline}"`);
-      if (!AI_ROLES.has(item.aiRole)) errors.push(`${ctx}: invalid aiRole "${item.aiRole}"`);
+      if (!AI_ROLES.has(item.aiRole)) errors.push(`${ctx}: invalid aiRole "${item.aiRole}" (must be Autonomous AI or AI-Assisted)`);
+      if (typeof item.aiSystem !== 'string' || item.aiSystem.trim().length < 2) {
+        errors.push(`${ctx}: aiSystem must be a non-empty string identifying the AI model or architecture`);
+      }
       if (!VERIFICATION_STATUSES.has(item.verificationStatus)) {
         errors.push(`${ctx}: invalid verificationStatus "${item.verificationStatus}"`);
       }

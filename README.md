@@ -1,21 +1,21 @@
 # The Frontier Index
 
-**An open-source interactive website tracking, visualizing, and transparently impact-ranking the most significant breakthroughs across Mathematics, Computer Science, Physics, Biology, and Chemistry/Materials.**
+**An open-source interactive website tracking, visualizing, and transparently impact-ranking the exponential rise of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, Physics, Biology, and Chemistry/Materials.**
 
-> Rapidly advancing AI reasoning models, formal proof assistants (Lean 4), and foundational human insight have triggered a historic acceleration in scientific output. **The Frontier Index** cuts through the noise—separating machine-verified theorems and replicated discoveries from early preprints and contested claims.
+> Rapidly advancing AI reasoning models, autonomous multi-agent loops, and formal proof assistants (Lean 4) have triggered an exponential surge in scientific output—with major results increasingly posted directly to GitHub, arXiv, and X well before traditional journal publication. **The Frontier Index** tracks exclusively AI-assisted and AI-led discoveries, separating machine-verified theorems and replicated discoveries from early preprints and contested claims.
 
 ![The Frontier Index Editorial Cover](./public/og-card.jpg)
 
 ## Features
 
-- **Transparent Impact Leaderboard**: Ranks 33 curated breakthroughs across 5 core disciplines—27 from the 2024–2026 wave calibrated against 6 landmark 2020–2023 anchors (AlphaFold 2, AlphaTensor, NIF Fusion Ignition, Aperiodic Monotile, GNoME, and FunSearch)—using a 4-axis Composite Impact Index (**Foundational Depth**, **Cross-Field Ripple**, **Verification & Rigor**, and **Discovery Velocity**).
+- **AI-Only Impact & Chronological Tracker**: Curates 54 AI-assisted and autonomous AI breakthroughs across 5 core disciplines—47 from the 2024–2026 wave calibrated against 7 landmark 2020–2023 AI anchors (AlphaFold 2, DeepMind Knot Theory, Tokamak RL Plasma Control, AlphaTensor, AlphaDev, GNoME, and FunSearch)—sortable by composite Impact Index or most-recent date.
 - **Interactive Rubric Weight Tuner**: Adjust the four scoring weights live (or try presets like *Strict Formalists*, *Real-World Ripple*, or *AI Inflection*) and copy a shareable URL encoding your exact custom ranking.
-- **Explicit Verification Tiers**: Every milestone is labeled `Formally Verified`, `Peer-Reviewed`, `Preprint / Active Review`, or `Contested / Partial` alongside candid caveats.
+- **Explicit Verification Tiers & Early Open-Internet Tracking**: Every milestone is labeled `Formally Verified`, `Peer-Reviewed`, `Preprint / Active Review`, or `Contested / Partial` alongside candid caveats—capturing both *Nature* landmarks and newly posted X/GitHub/Lean discoveries (such as the Lean-verified disproof of the Caiolo–Ferroni–Hoster conjecture).
 - **Interactive Data Visualizations**:
-  - **Impact × Time Landscape**: Interactive scatter map contrasting 2020–2023 anchors against the 2024–2026 compression and Q4 2026 surge.
-  - **Acceleration & Cumulative Impact Curve**: Annual anchors + quarterly discovery cadence grouped by AI Provenance (`Human` / `AI-Assisted` / `Autonomous AI`) or Discipline.
-  - **Cross-Field Influence Graph**: 4-column chronological DAG tracing how 2020–2023 anchors and 2024–2025 foundations catalyzed 2026 breakthroughs.
-- **Deep-Dive Breakthrough Dossiers**: Click any entry for plain-English + technical summaries, written rationale for every sub-score, lineage navigation, primary source links, and direct `#breakthrough/<id>` share links.
+  - **AI Impact × Time Landscape**: Interactive scatter map contrasting 2020–2023 AI anchors against the dense 2024–2026 wave and Q4 2026 surge.
+  - **AI Scientific Acceleration & Cumulative Growth Curve**: Annual 2020–2023 anchors + quarterly 2024–2026 cadence bars (`AI-Assisted` vs. `Autonomous AI`, or by Discipline) paired with the cumulative AI breakthrough growth curve.
+  - **AI-for-Science Catalyst Network**: 4-column chronological DAG tracing how 2020–2023 AI anchors and 2024–2025 foundations catalyzed 2026 breakthroughs.
+- **Deep-Dive Breakthrough Dossiers**: Click any entry for plain-English + technical summaries, written rationale for every sub-score, lineage navigation, primary source links (including arXiv, Lean repos, and X announcements), and direct `#breakthrough/<id>` share links.
 - **Editorial Craft**: Archival warm-paper light theme + obsidian dark mode, responsive layout, zero heavy framework dependencies.
 
 ## Quick Start

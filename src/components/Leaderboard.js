@@ -33,7 +33,7 @@ export function renderStatusBadge(status) {
   `;
 }
 
-export function renderLeaderboard(items, totalCount) {
+export function renderLeaderboard(items, totalCount, sortBy = 'impact') {
   if (items.length === 0) {
     return `
       <div class="leaderboard">
@@ -45,13 +45,20 @@ export function renderLeaderboard(items, totalCount) {
     `;
   }
 
+  const sortLabel =
+    sortBy === 'newest'
+      ? 'Sorted by most recent'
+      : sortBy === 'oldest'
+        ? 'Sorted chronologically'
+        : 'Ranked by composite Impact Index';
+
   return `
     <div class="results-meta">
-      <span>Showing <strong class="mono">${items.length}</strong> of <span class="mono">${totalCount}</span> indexed breakthroughs · Ranked by composite Impact Index</span>
+      <span>Showing <strong class="mono">${items.length}</strong> of <span class="mono">${totalCount}</span> AI breakthroughs · ${sortLabel}</span>
       <span>Click any entry to inspect its dossier, score rationale &amp; primary sources</span>
     </div>
 
-    <div class="leaderboard" role="region" aria-label="Ranked breakthroughs leaderboard">
+    <div class="leaderboard" role="region" aria-label="Ranked AI breakthroughs leaderboard">
       <div class="leaderboard__head" aria-hidden="true">
         <span>Rank</span>
         <span>Breakthrough &amp; Significance</span>
@@ -65,6 +72,7 @@ export function renderLeaderboard(items, totalCount) {
           const disc = DISCIPLINE_META[item.discipline];
           const rankPad = String(item.rank).padStart(2, '0');
           const leadInst = item.institutions.slice(0, 2).join(' · ');
+          const metaLine = item.aiSystem ? `${leadInst} · ${item.aiSystem}` : leadInst;
 
           return `
           <button
@@ -94,7 +102,7 @@ export function renderLeaderboard(items, totalCount) {
               </div>
               <div class="entry-cell__title">${escapeHtml(item.title)}</div>
               <p class="entry-cell__why">${escapeHtml(item.whyItMatters)}</p>
-              <div class="entry-cell__contributors">${escapeHtml(leadInst)}</div>
+              <div class="entry-cell__contributors">${escapeHtml(metaLine)}</div>
             </div>
 
             <div class="col-status">

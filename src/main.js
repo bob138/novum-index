@@ -34,6 +34,7 @@ const state = {
   aiRole: 'all',
   status: 'all',
   year: 'all',
+  sortBy: 'impact',
   search: '',
   weights: { ...DEFAULT_WEIGHTS },
   activeDossierId: null,
@@ -92,6 +93,11 @@ function hydrateStateFromUrl() {
   const discParam = params.get('discipline');
   if (discParam) state.discipline = discParam;
 
+  const sortParam = params.get('sort');
+  if (['impact', 'newest', 'oldest'].includes(sortParam)) {
+    state.sortBy = sortParam;
+  }
+
   const hash = window.location.hash;
   if (hash.startsWith('#breakthrough/')) {
     const id = decodeURIComponent(hash.slice('#breakthrough/'.length));
@@ -124,6 +130,12 @@ function syncUrl() {
     url.searchParams.delete('discipline');
   }
 
+  if (state.sortBy !== 'impact') {
+    url.searchParams.set('sort', state.sortBy);
+  } else {
+    url.searchParams.delete('sort');
+  }
+
   if (state.activeDossierId) {
     url.hash = `#breakthrough/${encodeURIComponent(state.activeDossierId)}`;
   } else if (url.hash.startsWith('#breakthrough/')) {
@@ -139,7 +151,7 @@ function syncUrl() {
 
 function filterBreakthroughs(ranked) {
   const q = state.search.trim().toLowerCase();
-  return ranked.filter((item) => {
+  const filtered = ranked.filter((item) => {
     if (state.discipline !== 'all' && item.discipline !== state.discipline) return false;
     if (state.aiRole !== 'all' && item.aiRole !== state.aiRole) return false;
     if (state.status !== 'all' && item.verificationStatus !== state.status) return false;
@@ -173,6 +185,18 @@ function filterBreakthroughs(ranked) {
     }
     return true;
   });
+
+  if (state.sortBy === 'newest') {
+    return [...filtered].sort(
+      (a, b) => b.date.localeCompare(a.date) || b.compositeScore - a.compositeScore
+    );
+  }
+  if (state.sortBy === 'oldest') {
+    return [...filtered].sort(
+      (a, b) => a.date.localeCompare(b.date) || b.compositeScore - a.compositeScore
+    );
+  }
+  return filtered;
 }
 
 function renderMethodologyFooter() {
@@ -181,31 +205,31 @@ function renderMethodologyFooter() {
       <div class="methodology-band__grid">
         <div>
           <p class="hero__kicker" style="margin-bottom: 0.45rem;">Open Methodology &amp; Epistemic Rigor</p>
-          <h2 id="methodology-heading">Separating lasting breakthroughs from hype</h2>
+          <h2 id="methodology-heading">Tracking the AI acceleration curve—from Nature papers to X &amp; GitHub</h2>
           <p style="margin-bottom: 0.9rem;">
-            As AI reasoning models and automated proof systems accelerate research output, distinguishing machine-verified theorems and replicated discoveries from early or contested preprints matters more than ever. Every entry in The Frontier Index is scored openly across four dimensions—<strong>Foundational Depth</strong>, <strong>Cross-Field Ripple</strong>, <strong>Verification &amp; Rigor</strong>, and <strong>Discovery Velocity</strong>—with written justifications and primary source links.
+            <strong>The Frontier Index</strong> exclusively tracks AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, Physics, Biology, and Materials to visualize the rate at which AI expands human knowledge. Because frontier discoveries now land on GitHub, arXiv, and X months before journal publication, we include unrefereed and Lean-verified open-internet results alongside peer-reviewed landmarks—tagged with explicit verification tiers so readers never confuse a preprint with a certified theorem.
           </p>
           <p>
-            The entire dataset lives in a single schema-validated JSON file (<code>data/breakthroughs.json</code>). Researchers and readers are invited to open pull requests or GitHub issues to nominate new discoveries, update verification status as audits conclude, or debate impact weights.
+            Every entry lives in a single schema-validated JSON file (<code>data/breakthroughs.json</code>) scored across <strong>Foundational Depth</strong>, <strong>Cross-Field Ripple</strong>, <strong>Verification &amp; Rigor</strong>, and <strong>Discovery Velocity</strong>. Open a PR or GitHub issue anytime to log a newly posted AI breakthrough or update an entry’s audit status.
           </p>
         </div>
 
         <div class="methodology-tiers">
           <div class="methodology-tier">
             ${renderStatusBadge('Formally Verified')}
-            <span>Machine-checked formal proof or verified artifact (e.g., Lean 4 / Mathlib kernel or algebraic verifier).</span>
+            <span>Machine-checked formal proof or verified artifact (e.g., Lean 4 / Mathlib kernel or exact algebraic verifier).</span>
           </div>
           <div class="methodology-tier">
             ${renderStatusBadge('Peer-Reviewed')}
-            <span>Published in a refereed venue (e.g., Nature, STOC), officially graded, or independently replicated.</span>
+            <span>Published in a refereed venue (e.g., Nature, PNAS), officially graded, or independently verified by domain specialists.</span>
           </div>
           <div class="methodology-tier">
             ${renderStatusBadge('Preprint / Active Review')}
-            <span>Major credible announcement currently undergoing independent expert examination and definition audits.</span>
+            <span>Credible preprint, GitHub release, or social-media announcement currently undergoing independent expert audit.</span>
           </div>
           <div class="methodology-tier">
             ${renderStatusBadge('Contested / Partial')}
-            <span>Notable result with active community controversy over scope, priority, or novelty—explicitly documented.</span>
+            <span>Notable AI result with active community controversy over scope, priority, or framing—explicitly documented.</span>
           </div>
         </div>
       </div>
@@ -285,7 +309,7 @@ function bindScatterTooltips(rankedMap) {
         <div class="viz-tooltip__meta">${escapeHtml(item.discipline)} · ${formatDate(item.date)} · ${escapeHtml(item.verificationStatus)}</div>
         <div>
           <span class="viz-tooltip__score">Impact ${item.compositeScore.toFixed(1)}/100</span>
-          · ${escapeHtml(item.aiRole)}
+          · ${escapeHtml(item.aiRole)}${item.aiSystem ? ` (${escapeHtml(item.aiSystem)})` : ''}
         </div>
       `;
       const x = Math.min(window.innerWidth - 320, Math.max(12, ev.clientX + 14));
@@ -311,7 +335,7 @@ function renderActiveView(filtered, allRanked) {
       return renderLineageGraph(filtered, allRanked);
     case 'leaderboard':
     default:
-      return renderLeaderboard(filtered, allRanked.length);
+      return renderLeaderboard(filtered, allRanked.length, state.sortBy);
   }
 }
 
@@ -427,6 +451,7 @@ function attachGlobalListeners() {
       state.aiRole = 'all';
       state.status = 'all';
       state.year = 'all';
+      state.sortBy = 'impact';
       state.search = '';
       renderApp();
       return;
@@ -495,6 +520,9 @@ function attachGlobalListeners() {
       renderApp();
     } else if (e.target.id === 'filter-year') {
       state.year = e.target.value;
+      renderApp();
+    } else if (e.target.id === 'sort-by') {
+      state.sortBy = e.target.value;
       renderApp();
     }
   });

@@ -1,12 +1,14 @@
 import { DISCIPLINE_META, escapeHtml } from '../scoring.js';
 
 const ANCHOR_PERIODS = [
-  { id: '2020-21', label: '2020–21', start: '2020-01-01', end: '2021-12-31', isAnchorBucket: true },
+  { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', isAnchorBucket: true },
+  { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', isAnchorBucket: true },
   { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', isAnchorBucket: true },
   { id: '2023', label: '2023', start: '2023-01-01', end: '2023-12-31', isAnchorBucket: true },
 ];
 
 const WAVE_QUARTERS = [
+  { id: '2024-Q1', label: 'Q1 24', start: '2024-01-01', end: '2024-03-31', isAnchorBucket: false },
   { id: '2024-Q2', label: 'Q2 24', start: '2024-04-01', end: '2024-06-30', isAnchorBucket: false },
   { id: '2024-Q3', label: 'Q3 24', start: '2024-07-01', end: '2024-09-30', isAnchorBucket: false },
   { id: '2024-Q4', label: 'Q4 24', start: '2024-10-01', end: '2024-12-31', isAnchorBucket: false },
@@ -21,14 +23,13 @@ const WAVE_QUARTERS = [
 ];
 
 const AI_SERIES = [
-  { key: 'Human', label: 'Human', colorVar: 'var(--ink-secondary)' },
   { key: 'AI-Assisted', label: 'AI-Assisted', colorVar: 'var(--disc-cs)' },
   { key: 'Autonomous AI', label: 'Autonomous AI', colorVar: 'var(--disc-physics)' },
 ];
 
 export function renderVelocityChart(items, groupBy = 'aiRole') {
-  const width = 1040;
-  const height = 435;
+  const width = 1060;
+  const height = 440;
   const margin = { top: 38, right: 64, bottom: 52, left: 54 };
   const innerW = width - margin.left - margin.right;
   const innerH = height - margin.top - margin.bottom;
@@ -50,6 +51,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
         }))
       : AI_SERIES;
 
+  let cumulativeCount = 0;
   let cumulativeImpact = 0;
   const buckets = periods.map((p) => {
     const inP = items.filter((b) => b.date >= p.start && b.date <= p.end);
@@ -58,29 +60,34 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
     for (const b of inP) {
       const k = groupBy === 'discipline' ? b.discipline : b.aiRole;
       counts[k] = (counts[k] || 0) + 1;
+      cumulativeCount += 1;
       cumulativeImpact += b.compositeScore;
     }
     return {
       ...p,
       total: inP.length,
       counts,
+      cumulativeCount,
       cumulativeImpact: Math.round(cumulativeImpact),
     };
   });
 
-  const maxBar = Math.max(4, ...buckets.map((b) => b.total));
-  const maxCum = Math.max(100, buckets[buckets.length - 1]?.cumulativeImpact || 100);
+  const rawMaxBar = Math.max(4, ...buckets.map((b) => b.total));
+  const step = rawMaxBar <= 6 ? 1 : rawMaxBar <= 12 ? 2 : rawMaxBar <= 18 ? 3 : 4;
+  const maxBar = Math.ceil(rawMaxBar / step) * step;
+  const maxCum = Math.max(5, buckets[buckets.length - 1]?.cumulativeCount || 5);
 
   const slotW = innerW / buckets.length;
-  const barW = Math.min(44, slotW * 0.58);
+  const barW = Math.min(38, slotW * 0.58);
 
   const yBar = (val) => margin.top + innerH - (val / maxBar) * innerH;
   const yCum = (val) => margin.top + innerH - (val / maxCum) * innerH;
 
   const linePoints = buckets.map((b, idx) => ({
     x: margin.left + idx * slotW + slotW / 2,
-    y: yCum(b.cumulativeImpact),
-    val: b.cumulativeImpact,
+    y: yCum(b.cumulativeCount),
+    val: b.cumulativeCount,
+    impact: b.cumulativeImpact,
     label: b.label,
   }));
 
@@ -92,21 +99,20 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
 
   const count2024 = items.filter((b) => b.date.startsWith('2024')).length;
   const count2026 = items.filter((b) => b.date.startsWith('2026')).length;
-  const ai2026 = items.filter((b) => b.date.startsWith('2026') && b.aiRole !== 'Human').length;
-  const ai2026Pct = count2026 ? Math.round((ai2026 / count2026) * 100) : 0;
+  const auto2026 = items.filter((b) => b.date.startsWith('2026') && b.aiRole === 'Autonomous AI').length;
+  const auto2026Pct = count2026 ? Math.round((auto2026 / count2026) * 100) : 0;
   const h2_2026 = items.filter((b) => b.date >= '2026-07-01').length;
 
   const yBarTicks = [];
-  const step = maxBar <= 6 ? 1 : 2;
   for (let v = 0; v <= maxBar; v += step) yBarTicks.push(v);
 
   return `
     <div class="viz-card">
       <div class="viz-card__header">
         <div>
-          <h2 class="viz-card__title">Breakthrough Acceleration &amp; Cumulative Impact</h2>
+          <h2 class="viz-card__title">AI Scientific Acceleration &amp; Cumulative Growth Curve</h2>
           <p class="viz-card__desc">
-            Annual 2020–2023 calibration anchors alongside quarterly 2024–2026 breakthrough cadence (bars) and cumulative composite impact (line), revealing the steep H2 2026 inflection.
+            Annual 2020–2023 AI anchors alongside quarterly 2024–2026 breakthrough cadence (bars) and cumulative AI discoveries (line), tracking the exponential H2 2026 inflection.
           </p>
         </div>
 
@@ -116,7 +122,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
             id="vel-group-ai"
             data-velocity-group="aiRole"
             aria-pressed="${groupBy === 'aiRole' ? 'true' : 'false'}"
-          >By AI Provenance</button>
+          >By AI Role</button>
           <button
             type="button"
             id="vel-group-disc"
@@ -139,7 +145,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
           .join('')}
         <span class="viz-legend__item" style="margin-left: auto;">
           <span style="display:inline-block;width:16px;height:2.5px;background:var(--accent-primary);border-radius:2px;"></span>
-          <span>Cumulative Impact Index (right axis)</span>
+          <span>Cumulative AI Breakthroughs (right axis)</span>
         </span>
       </div>
 
@@ -149,7 +155,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
           id="velocity-chart-svg"
           viewBox="0 0 ${width} ${height}"
           role="img"
-          aria-label="Stacked bar and cumulative line chart showing acceleration of scientific breakthroughs from 2020 anchors through late 2026"
+          aria-label="Stacked bar and cumulative line chart showing exponential acceleration of AI scientific breakthroughs from 2020 through late 2026"
         >
           ${
             dividerX !== null
@@ -176,13 +182,13 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
-            >Annual Anchors</text>
+            >Annual Anchors (2020–23)</text>
             <text
               x="${(dividerX + (width - margin.right - dividerX) / 2).toFixed(1)}"
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
-            >Quarterly Breakthrough Cadence (2024–2026)</text>
+            >Quarterly AI Breakthrough Cadence (2024–2026)</text>
           `
               : ''
           }
@@ -198,7 +204,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
             })
             .join('')}
 
-          <!-- Right Axis labels (Cumulative Impact) -->
+          <!-- Right Axis labels (Cumulative Breakthroughs) -->
           ${[0, 0.25, 0.5, 0.75, 1]
             .map((frac) => {
               const val = Math.round(maxCum * frac);
@@ -253,7 +259,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
             })
             .join('')}
 
-          <!-- Cumulative Impact Curve -->
+          <!-- Cumulative Growth Curve -->
           <path
             d="${linePath}"
             fill="none"
@@ -266,7 +272,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
             .map(
               (pt) => `
             <circle cx="${pt.x.toFixed(1)}" cy="${pt.y.toFixed(1)}" r="3.8" fill="var(--bg-surface)" stroke="var(--accent-primary)" stroke-width="2.2">
-              <title>${pt.label}: Cumulative Impact ${pt.val}</title>
+              <title>${pt.label}: ${pt.val} cumulative AI breakthroughs (Cumulative Impact: ${pt.impact})</title>
             </circle>
           `
             )
@@ -274,24 +280,24 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
 
           <!-- Baseline & Axis Titles -->
           <line x1="${margin.left}" y1="${margin.top + innerH}" x2="${width - margin.right}" y2="${margin.top + innerH}" class="viz-axis-line" />
-          <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">BREAKTHROUGHS / PERIOD</text>
-          <text x="${width - 14}" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(90 ${width - 14} ${margin.top + innerH / 2})" class="viz-axis-label" style="fill: var(--accent-primary);">CUMULATIVE IMPACT</text>
-          <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">*Q4 2026 reflects data through Nov 25, 2026</text>
+          <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">AI BREAKTHROUGHS / PERIOD</text>
+          <text x="${width - 14}" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(90 ${width - 14} ${margin.top + innerH / 2})" class="viz-axis-label" style="fill: var(--accent-primary);">CUMULATIVE BREAKTHROUGHS</text>
+          <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">*Q4 2026 reflects partial quarter through Nov 25, 2026</text>
         </svg>
       </div>
 
       <div class="viz-callout-grid">
         <div>
           <div class="viz-callout__num">${h2_2026} milestones</div>
-          <div class="viz-callout__text">Published in H2 2026 alone (Jul – Nov 25), representing ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of the filtered index.</div>
+          <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 25), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of all indexed AI breakthroughs.</div>
         </div>
         <div>
-          <div class="viz-callout__num">${ai2026Pct}% AI-involved</div>
-          <div class="viz-callout__text">Share of 2026 breakthroughs using AI assistance or autonomous discovery (${ai2026} of ${count2026}).</div>
+          <div class="viz-callout__num">${auto2026Pct}% autonomous</div>
+          <div class="viz-callout__text">Share of 2026 breakthroughs led autonomously by AI agents (${auto2026} of ${count2026} within active filters).</div>
         </div>
         <div>
           <div class="viz-callout__num">${count2024 ? (count2026 / count2024).toFixed(1) + '×' : count2026}</div>
-          <div class="viz-callout__text">2026 vs. 2024 breakthrough cadence (${count2026} in 2026 vs. ${count2024} in 2024 within active filters).</div>
+          <div class="viz-callout__text">2026 vs. 2024 annual AI discovery pace (${count2026} in 2026 through Nov 25 vs. ${count2024} in all of 2024).</div>
         </div>
       </div>
     </div>

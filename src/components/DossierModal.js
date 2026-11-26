@@ -83,7 +83,7 @@ export function renderDossierModal(item, allRanked, weights) {
             </div>
             <div>
               <dt class="dossier__meta-label">AI System / Provenance</dt>
-              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.aiSystem || 'Pure Human Research')}</dd>
+              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.aiSystem || item.aiRole)}</dd>
             </div>
             <div>
               <dt class="dossier__meta-label">Key Contributors</dt>

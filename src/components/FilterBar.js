@@ -34,6 +34,7 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
     state.aiRole !== 'all' ||
     state.status !== 'all' ||
     state.year !== 'all' ||
+    state.sortBy !== 'impact' ||
     state.search.trim() !== '';
 
   return `
@@ -109,18 +110,17 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
             type="search"
             id="search-input"
             class="search-box__input"
-            placeholder="Search breakthroughs, authors, theorems, AI models..."
+            placeholder="Search breakthroughs, conjectures, authors, AI models..."
             value="${escapeHtml(state.search)}"
             aria-label="Search breakthroughs"
           />
           <span class="search-box__kbd" aria-hidden="true">/</span>
         </div>
 
-        <select id="filter-ai-role" class="filter-select" aria-label="Filter by AI involvement">
-          <option value="all" ${state.aiRole === 'all' ? 'selected' : ''}>All Provenance</option>
+        <select id="filter-ai-role" class="filter-select" aria-label="Filter by AI role">
+          <option value="all" ${state.aiRole === 'all' ? 'selected' : ''}>All AI Roles</option>
           <option value="Autonomous AI" ${state.aiRole === 'Autonomous AI' ? 'selected' : ''}>Autonomous AI</option>
           <option value="AI-Assisted" ${state.aiRole === 'AI-Assisted' ? 'selected' : ''}>AI-Assisted</option>
-          <option value="Human" ${state.aiRole === 'Human' ? 'selected' : ''}>Human</option>
         </select>
 
         <select id="filter-status" class="filter-select" aria-label="Filter by verification status">
@@ -138,6 +138,12 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
           <option value="2026" ${state.year === '2026' ? 'selected' : ''}>2026 Only</option>
           <option value="2025" ${state.year === '2025' ? 'selected' : ''}>2025 Only</option>
           <option value="2024" ${state.year === '2024' ? 'selected' : ''}>2024 Only</option>
+        </select>
+
+        <select id="sort-by" class="filter-select" aria-label="Sort breakthroughs">
+          <option value="impact" ${state.sortBy === 'impact' ? 'selected' : ''}>Sort: Impact Score</option>
+          <option value="newest" ${state.sortBy === 'newest' ? 'selected' : ''}>Sort: Most Recent</option>
+          <option value="oldest" ${state.sortBy === 'oldest' ? 'selected' : ''}>Sort: Chronological</option>
         </select>
 
         ${

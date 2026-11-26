@@ -9,9 +9,12 @@ export function renderHeader(meta, allItems, theme) {
   const formallyVerifiedCount = allItems.filter(
     (b) => b.verificationStatus === 'Formally Verified'
   ).length;
-  const aiInvolvedCount = allItems.filter((b) => b.aiRole !== 'Human').length;
-  const aiSharePct = Math.round((aiInvolvedCount / Math.max(1, totalCount)) * 100);
-  const totalOpenYears = allItems.reduce((sum, b) => sum + (b.yearsUnsolved || 0), 0);
+  const autonomousCount = allItems.filter((b) => b.aiRole === 'Autonomous AI').length;
+  const assistedCount = totalCount - autonomousCount;
+  const autonomousPct = Math.round((autonomousCount / Math.max(1, totalCount)) * 100);
+  const count2024 = allItems.filter((b) => b.date.startsWith('2024')).length;
+  const count2026 = allItems.filter((b) => b.date.startsWith('2026')).length;
+  const accelFactor = count2024 > 0 ? `${(count2026 / count2024).toFixed(1)}×` : `${count2026}`;
 
   return `
     <header class="site-nav" role="banner">
@@ -54,12 +57,12 @@ export function renderHeader(meta, allItems, theme) {
       <div class="container">
         <div class="hero__grid">
           <div>
-            <p class="hero__kicker">Open-Source Scientific Ledger · 2024–2026 Wave + 2020–2023 Anchors</p>
+            <p class="hero__kicker">Open-Source AI-for-Science Ledger · 2020–2026 Acceleration Tracker</p>
             <h1 class="hero__title">
-              Tracking the breakthroughs <em>reshaping</em> human knowledge.
+              Tracking the <em>exponential</em> rise of AI in scientific discovery.
             </h1>
             <p class="hero__lead">
-              Rapidly advancing AI systems, formal theorem provers, and foundational human insight have unleashed an unprecedented wave of discoveries across Mathematics, Computer Science, Physics, Biology, and Materials. The Frontier Index curates, verifies, and transparently ranks the milestones moving the frontier—calibrated against landmark 2020–2023 anchors like AlphaFold 2.
+              From early milestones like AlphaFold 2 and AlphaTensor to autonomous multi-agent proofs and rapid discoveries posted directly to GitHub, arXiv, and X, AI is accelerating scientific output at an unprecedented rate. The Frontier Index curates exclusively AI-assisted and AI-led breakthroughs—verifying provenance, tracking unpublished claims alongside formally verified theorems, and visualizing the curve over time.
             </p>
           </div>
           <figure class="hero__artwork">
@@ -78,8 +81,13 @@ export function renderHeader(meta, allItems, theme) {
         <div class="pulse-strip" aria-label="Index overview metrics">
           <div class="pulse-stat">
             <div class="pulse-stat__value">${totalCount}</div>
-            <div class="pulse-stat__label">Landmark Breakthroughs</div>
-            <div class="pulse-stat__note">${waveCount} from 2024–26 · ${anchorCount} calibration anchors</div>
+            <div class="pulse-stat__label">AI Breakthroughs</div>
+            <div class="pulse-stat__note">${waveCount} in 2024–26 · ${anchorCount} in 2020–23</div>
+          </div>
+          <div class="pulse-stat">
+            <div class="pulse-stat__value">${autonomousPct}%</div>
+            <div class="pulse-stat__label">Autonomous AI-Led</div>
+            <div class="pulse-stat__note">${autonomousCount} autonomous · ${assistedCount} AI-assisted</div>
           </div>
           <div class="pulse-stat">
             <div class="pulse-stat__value">${formallyVerifiedCount}</div>
@@ -87,14 +95,9 @@ export function renderHeader(meta, allItems, theme) {
             <div class="pulse-stat__note">Machine-checked in Lean / proofs</div>
           </div>
           <div class="pulse-stat">
-            <div class="pulse-stat__value">${totalOpenYears}+ yrs</div>
-            <div class="pulse-stat__label">Open-Problem Age Tackled</div>
-            <div class="pulse-stat__note">Combined years across named conjectures</div>
-          </div>
-          <div class="pulse-stat">
-            <div class="pulse-stat__value">${aiSharePct}%</div>
-            <div class="pulse-stat__label">AI-Assisted or Autonomous</div>
-            <div class="pulse-stat__note">${aiInvolvedCount} of ${totalCount} indexed milestones</div>
+            <div class="pulse-stat__value">${accelFactor}</div>
+            <div class="pulse-stat__label">2026 vs. 2024 Pace</div>
+            <div class="pulse-stat__note">${count2026} in 2026 vs. ${count2024} in 2024</div>
           </div>
         </div>
       </div>

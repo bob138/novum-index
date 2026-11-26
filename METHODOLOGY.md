@@ -24,17 +24,18 @@ Readers can override the weights $w_i$ interactively via the **Tune Ranking Weig
 To maintain epistemic clarity during the rapid 2025–2026 wave of AI-generated research, every entry carries one of four explicit tiers:
 
 1. **Formally Verified**: Backed by a machine-checked proof or formal artifact (e.g., Lean 4 kernel verified by independent maintainers, or exact algebraic/programmatic verification). *Note: Formal verification confirms logical validity relative to formal definitions; any remaining human-readability or definition-alignment caveats are always noted explicitly.*
-2. **Peer-Reviewed**: Published in a refereed scientific journal or top-tier conference (e.g., *Nature*, *Science*, *STOC*), officially graded by competition organizers (e.g., IMO), or independently replicated across labs.
-3. **Preprint / Active Review**: Credible announcement accompanied by a public manuscript or formalization currently undergoing independent expert refereeing.
-4. **Contested / Partial**: Notable discovery or formal result subject to active scholarly dispute over scope, priority, specification framing, or novelty claims.
+2. **Peer-Reviewed**: Published in a refereed scientific journal or top-tier conference (e.g., *Nature*, *PNAS*, *NeurIPS*), officially graded by competition organizers (e.g., IMO), or independently verified and digested by named domain specialists.
+3. **Preprint / Active Review**: Credible announcement accompanied by a public manuscript, GitHub repository, or X thread currently undergoing independent expert refereeing. Because frontier AI results increasingly appear online months before journal publication, capturing these early discoveries transparently is a core goal of the index.
+4. **Contested / Partial**: Notable AI discovery or formal result subject to active scholarly dispute over scope, priority, specification framing, or novelty claims.
 
-## 3. Provenance Taxonomy (`aiRole`)
+## 3. Scope & Provenance Taxonomy (`aiRole`)
 
-- **Human**: Primarily human-conceived and proved/executed without frontier AI synthesis.
-- **AI-Assisted**: Human researchers directing, collaborating with, or validating discoveries made using frontier AI models or specialized scientific AI architectures.
-- **Autonomous AI**: Results discovered primarily via autonomous AI search, multi-agent reasoning, or evolutionary coding loops with minimal step-by-step human guidance.
+**The Frontier Index exclusively tracks breakthroughs with substantive AI involvement** (`AI-Assisted` or `Autonomous AI`) in order to measure and visualize the accelerating rate of AI contributions to scientific knowledge. Purely human breakthroughs—however landmark—are intentionally excluded.
+
+- **AI-Assisted**: Human researchers directing, collaborating with, or validating discoveries made using frontier AI models or specialized scientific AI architectures (e.g., AlphaFold 2/3, Claude Fable 5, Gemini 4 Carbon, GPT-6.2 Astra).
+- **Autonomous AI**: Results discovered primarily via autonomous AI search, multi-agent reasoning, or evolutionary coding loops with minimal step-by-step human guidance (e.g., AlphaTensor, AlphaDev, FunSearch, AlphaEvolve, GPT-6 Astra's Köthe disproof, Claude's black-hole physics & ART enzyme discoveries).
 
 ## 4. Historical Calibration Anchors (2020–2023)
 
-To keep impact scores grounded rather than suffering from recency inflation during the rapid 2024–2026 wave, The Frontier Index includes six landmark 2020–2023 calibration anchors (tagged `isAnchor: true`): **AlphaFold 2** (2020), **AlphaTensor** (2022), **NIF Nuclear Fusion Ignition** (2022), the **Aperiodic Monotile** (2023), **GNoME** (2023), and **FunSearch** (2023). Users can toggle between the full calibrated view, the 2024–2026 wave alone, or anchors only via the timeframe selector.
+To anchor the exponential acceleration curve and prevent recency inflation across the 2024–2026 wave, The Frontier Index includes seven landmark 2020–2023 AI calibration anchors (tagged `isAnchor: true`): **AlphaFold 2** (2020), **DeepMind Knot Theory & Representation Theory** (2021), **DeepMind Tokamak Plasma Control** (2022), **AlphaTensor** (2022), **AlphaDev** (2023), **GNoME** (2023), and **FunSearch** (2023). Users can toggle between the full calibrated view, the 2024–2026 wave alone, or anchors only via the timeframe selector.
 

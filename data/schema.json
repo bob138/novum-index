@@ -36,6 +36,7 @@
           "discipline",
           "subfields",
           "aiRole",
+          "aiSystem",
           "verificationStatus",
           "whyItMatters",
           "summary",
@@ -69,9 +70,9 @@
           },
           "aiRole": {
             "type": "string",
-            "enum": ["Autonomous AI", "AI-Assisted", "Human"]
+            "enum": ["Autonomous AI", "AI-Assisted"]
           },
-          "aiSystem": { "type": ["string", "null"] },
+          "aiSystem": { "type": "string", "minLength": 2 },
           "verificationStatus": {
             "type": "string",
             "enum": [
@@ -136,7 +137,7 @@
                 "url": { "type": "string", "pattern": "^https?://" },
                 "type": {
                   "type": "string",
-                  "enum": ["paper", "formal-verification", "announcement", "explainer", "code"]
+                  "enum": ["paper", "formal-verification", "announcement", "explainer", "code", "social-post"]
                 }
               }
             }
