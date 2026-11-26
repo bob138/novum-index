@@ -1175,9 +1175,11 @@
   cursor: grab;
   overflow: hidden;
   border-radius: var(--radius-xs);
+  touch-action: none;
 }
 
-.viz-stage--pan svg:active {
+.viz-stage--pan svg:active,
+.viz-stage--interactive svg.is-panning {
   cursor: grabbing;
 }
 

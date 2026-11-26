@@ -367,6 +367,7 @@ function bindActiveViewInteractions(filtered, rankedMap) {
   if (state.view === 'timeline') {
     bindScatterInteractions(
       document.getElementById('timeline-scatter-svg'),
+      filtered,
       rankedMap,
       state.scatter,
       {
