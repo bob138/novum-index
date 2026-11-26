@@ -27,6 +27,11 @@ import {
   renderLineageGraph,
   bindLineageInteractions,
 } from './visualizations/LineageGraph.js';
+import {
+  loadInitialTheme,
+  applyTheme,
+  subscribeThemeSync,
+} from './theme.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
 const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
@@ -64,47 +69,6 @@ const state = {
 };
 
 let toastTimer = null;
-
-const THEME_STORAGE_KEY = 'novum-index-theme-pref';
-const LEGACY_THEME_STORAGE_KEY = 'frontier-index-theme-pref';
-
-function getSystemTheme() {
-  try {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-  } catch {
-    // ignore
-  }
-  return 'light';
-}
-
-function getSavedThemePreference() {
-  try {
-    const saved =
-      localStorage.getItem(THEME_STORAGE_KEY) ||
-      localStorage.getItem(LEGACY_THEME_STORAGE_KEY);
-    if (saved === 'dark' || saved === 'light') return saved;
-  } catch {
-    // ignore storage errors
-  }
-  return null;
-}
-
-function loadInitialTheme() {
-  return getSavedThemePreference() || getSystemTheme();
-}
-
-function applyTheme(theme, { persist = false } = {}) {
-  document.documentElement.setAttribute('data-theme', theme);
-  if (persist) {
-    try {
-      localStorage.setItem(THEME_STORAGE_KEY, theme);
-    } catch {
-      // ignore
-    }
-  }
-}
 
 function isCustomWeights(weights) {
   return DIMENSIONS.some(
@@ -796,19 +760,11 @@ function attachGlobalListeners() {
     }
   });
 
-  if (window.matchMedia) {
-    const media = window.matchMedia('(prefers-color-scheme: dark)');
-    const onSystemThemeChange = (ev) => {
-      if (getSavedThemePreference()) return;
-      state.theme = ev.matches ? 'dark' : 'light';
-      renderApp();
-    };
-    if (typeof media.addEventListener === 'function') {
-      media.addEventListener('change', onSystemThemeChange);
-    } else if (typeof media.addListener === 'function') {
-      media.addListener(onSystemThemeChange);
-    }
-  }
+  subscribeThemeSync((nextTheme) => {
+    if (nextTheme === state.theme) return;
+    state.theme = nextTheme;
+    renderApp();
+  });
 }
 
 hydrateStateFromUrl();

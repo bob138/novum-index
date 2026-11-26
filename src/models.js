@@ -25,36 +25,16 @@ import {
   bindModelChartInteractions,
 } from './visualizations/ModelCharts.js';
 import { renderStatusBadge } from './components/Leaderboard.js';
+import {
+  loadInitialTheme,
+  applyTheme,
+  subscribeThemeSync,
+} from './theme.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
-const THEME_STORAGE_KEY = 'novum-index-theme-pref';
-const LEGACY_THEME_STORAGE_KEY = 'frontier-index-theme-pref';
-
-function getSystemTheme() {
-  try {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-  } catch {
-    // ignore
-  }
-  return 'light';
-}
-
-function getSavedThemePreference() {
-  try {
-    const saved =
-      localStorage.getItem(THEME_STORAGE_KEY) ||
-      localStorage.getItem(LEGACY_THEME_STORAGE_KEY);
-    if (saved === 'dark' || saved === 'light') return saved;
-  } catch {
-    // ignore
-  }
-  return null;
-}
 
 const state = {
-  theme: getSavedThemePreference() || getSystemTheme(),
+  theme: loadInitialTheme(),
   groupBy: 'family',
   sortBy: 'cumulativeImpact',
   attribution: 'fractional',
@@ -69,17 +49,6 @@ const state = {
   search: '',
   expandedIds: new Set(),
 };
-
-function applyTheme(theme, { persist = false } = {}) {
-  document.documentElement.setAttribute('data-theme', theme);
-  if (persist) {
-    try {
-      localStorage.setItem(THEME_STORAGE_KEY, theme);
-    } catch {
-      // ignore
-    }
-  }
-}
 
 function hydrateStateFromUrl() {
   const params = new URLSearchParams(window.location.search);
@@ -1057,6 +1026,11 @@ function attachListeners() {
       syncUrl();
       renderResultsRegion();
     }
+  });
+  subscribeThemeSync((nextTheme) => {
+    if (nextTheme === state.theme) return;
+    state.theme = nextTheme;
+    renderPage();
   });
 }
 

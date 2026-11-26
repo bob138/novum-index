@@ -12,47 +12,16 @@ import {
   rankBreakthroughs,
 } from './scoring.js';
 import { renderStatusBadge } from './components/Leaderboard.js';
+import {
+  loadInitialTheme,
+  applyTheme,
+  subscribeThemeSync,
+} from './theme.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
-const THEME_STORAGE_KEY = 'novum-index-theme-pref';
-const LEGACY_THEME_STORAGE_KEY = 'frontier-index-theme-pref';
 const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
 
-function getSystemTheme() {
-  try {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-  } catch {
-    // ignore
-  }
-  return 'light';
-}
-
-function getSavedThemePreference() {
-  try {
-    const saved =
-      localStorage.getItem(THEME_STORAGE_KEY) ||
-      localStorage.getItem(LEGACY_THEME_STORAGE_KEY);
-    if (saved === 'dark' || saved === 'light') return saved;
-  } catch {
-    // ignore
-  }
-  return null;
-}
-
-let currentTheme = getSavedThemePreference() || getSystemTheme();
-
-function applyTheme(theme, { persist = false } = {}) {
-  document.documentElement.setAttribute('data-theme', theme);
-  if (persist) {
-    try {
-      localStorage.setItem(THEME_STORAGE_KEY, theme);
-    } catch {
-      // ignore
-    }
-  }
-}
+let currentTheme = loadInitialTheme();
 
 const RUBRIC_BANDS = {
   foundational: [
@@ -577,18 +546,10 @@ document.addEventListener('click', (e) => {
   }
 });
 
-if (window.matchMedia) {
-  const media = window.matchMedia('(prefers-color-scheme: dark)');
-  const onSystemChange = (ev) => {
-    if (getSavedThemePreference()) return;
-    currentTheme = ev.matches ? 'dark' : 'light';
-    renderMethodologyPage();
-  };
-  if (typeof media.addEventListener === 'function') {
-    media.addEventListener('change', onSystemChange);
-  } else if (typeof media.addListener === 'function') {
-    media.addListener(onSystemChange);
-  }
-}
+subscribeThemeSync((nextTheme) => {
+  if (nextTheme === currentTheme) return;
+  currentTheme = nextTheme;
+  renderMethodologyPage();
+});
 
 renderMethodologyPage();
