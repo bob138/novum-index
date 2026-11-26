@@ -11,6 +11,70 @@
   },
   "breakthroughs": [
     {
+      "id": "null-cone-quantum-gravity-gpt6-2026",
+      "title": "GPT-6 Astra Assists Algebraic Quantization of 4D Vacuum Gravity from the Null Cone",
+      "shortTitle": "Null-Cone Quantum Gravity (GPT-6)",
+      "date": "2026-11-25",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Quantum Gravity",
+        "Operator Algebras",
+        "Lorentzian Path Integrals"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI GPT-6 Astra (~400M tokens over several months)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Proposes an algebraic quantization of 4D vacuum gravity on null cones—recovering finite graviton amplitudes, Sen’s 1-loop entropy log correction, and semiclassical Einstein equations after ~400M tokens with GPT-6 Astra.",
+      "summary": "Stanford theoretical physicist Venkatesa Chandrasekaran posted an 83-page hep-th preprint proposing a background-independent, nonperturbative quantization of four-dimensional vacuum general relativity formulated on intersecting null cones of causal diamonds. In the paper’s acknowledgments, Chandrasekaran discloses developing several calculations and proofs over months of back-and-forth collaboration with OpenAI’s GPT-6 Astra (~400M total tokens supplied by OpenAI). Constructing a Type I operator algebra and Lorentzian path integral at finite Newton’s constant G_N, the framework yields a finite closed-form graviton pair-creation amplitude (where perturbative expansion in G_N diverges logarithmically), a finite-dimensional causal-diamond Hilbert space with a discrete area spectrum, Bekenstein–Hawking entropy matching Ashoke Sen’s 1-loop logarithmic correction (106/45), an algebraic ER = EPR realization, and the 1-loop semiclassical Einstein equations in the low-energy limit.",
+      "technicalHighlights": [
+        "Solves first-order gravitational constraints on intersecting null boundaries at finite G_N to build a nonperturbative Hilbert space whose observable algebra generates a Type I factor.",
+        "Computes a finite closed-form nonperturbative amplitude for graviton pair creation/annihilation on a null cone, showing perturbative logarithmic divergence arises from expanding in G_N before summing modes.",
+        "Recovers finite-dimensional causal-diamond Hilbert spaces, discrete corner-area spectra, Bekenstein–Hawking entropy with Ashoke Sen’s 1-loop logarithmic coefficient (106/45), an algebraic ER = EPR criterion, and 1-loop semiclassical Einstein equations."
+      ],
+      "caveats": "Freshly posted, unrefereed 83-page v1 preprint covering pure vacuum gravity only (no Standard Model matter fields—not a 'Theory of Everything'). Chandrasekaran candidly flags heuristic steps (e.g., Wigner-function estimates to non-commuting matrix elements) and open representation-equivalence questions in footnotes, and the acknowledgments do not itemize which individual derivations came from GPT-6 Astra versus the author. Independent specialist audit (including two-loop Goroff–Sagnotti tests) will take months.",
+      "contributors": [
+        "Venkatesa Chandrasekaran",
+        "GPT-6 Astra"
+      ],
+      "institutions": [
+        "Stanford University"
+      ],
+      "scores": {
+        "foundational": 88,
+        "ripple": 84,
+        "verification": 62,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Ambitious nonperturbative candidate framework for 4D vacuum quantum gravity passing major internal consistency checks (finite graviton amplitude, Sen’s 1-loop black hole entropy correction, and semiclassical Einstein equations).",
+        "ripple": "Synthesizes edge modes, null-boundary phase space, operator algebras, and Lorentzian path integrals while showcasing months-long, ~400M-token AI collaboration at the frontier of theoretical physics.",
+        "verification": "Docked sharply because the 83-page v1 preprint was posted Nov 25–26, 2026 with zero independent specialist audit, no formal proof artifact, pure-gravity scope, and author-noted heuristic steps.",
+        "velocity": "Demonstrates sustained multi-month (~400M token) human–AI co-derivation in one of the most technically demanding arenas of mathematical physics."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Venkatesa Chandrasekaran — An algebraic quantization of gravity from the null cone (arXiv:2611.34924)",
+          "url": "https://arxiv.org/abs/2611.34924",
+          "type": "paper"
+        },
+        {
+          "label": "explainx.ai — GPT-6 Astra Quantum Gravity Paper: What Is Claimed vs. Verified (Nov 26, 2026)",
+          "url": "https://explainx.ai/blog/chandrasekaran-quantum-gravity-null-cone-gpt-6-astra-400m-tokens-claimed-vs-verified-2026",
+          "type": "explainer"
+        },
+        {
+          "label": "Kingy AI — A 4D quantum gravity proposal built from light cones (Nov 26, 2026)",
+          "url": "https://kingy.ai/blog/quantum-gravity-from-null-cones/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "deepmind-mass-spec-skills-2026",
       "title": "DeepMind Mass Spec Skills Elucidates Molecular Structures from Tandem Mass Spectra",
       "shortTitle": "Mass Spec Skills (Antigravity)",
@@ -1668,7 +1732,9 @@
         "verification": "Backed by 16 Lean 4 modules and specialist dialogue, though Craig candidly stresses Lean cannot substitute for physical peer review and open reflection-positivity checks.",
         "velocity": "Turned an unproved human strategy into a detailed Lean-formalized candidate construction and triggered four major arXiv papers in 35 days."
       },
-      "enables": [],
+      "enables": [
+        "null-cone-quantum-gravity-gpt6-2026"
+      ],
       "sources": [
         {
           "label": "arXiv:2610.09093 — A gauge-invariant measure for lattice chiral fermions (Oct 6, 2026)",
