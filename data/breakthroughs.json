@@ -11,6 +11,68 @@
   },
   "breakthroughs": [
     {
+      "id": "deepmind-mass-spec-skills-2026",
+      "title": "DeepMind Mass Spec Skills Elucidates Molecular Structures from Tandem Mass Spectra",
+      "shortTitle": "Mass Spec Skills (Antigravity)",
+      "date": "2026-11-25",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Analytical Chemistry",
+        "Mass Spectrometry",
+        "Tool-Augmented Scientific Agents"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Gemini + Mass Spec Skills (Google Antigravity / SIRIUS / MetFrag / RDKit)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Hours (vs. days–months)",
+      "isAnchor": false,
+      "whyItMatters": "Pairs Gemini reasoning with deterministic cheminformatics tools to solve tandem mass spectra at >90% accuracy—a direct 50-year successor to Stanford’s Meta-DENDRAL (1976).",
+      "summary": "Google DeepMind released Mass Spec Skills for Google Antigravity, combining Gemini’s chemical reasoning with deterministic mass-spectrometry tools (matchms, SIRIUS, MAGMa, MetFrag, RDKit) and spectral databases (GNPS, MoNA, PubChem) to tackle the 'dark matter' of metabolomics (~95% unannotated tandem mass spectra). In end-to-end evaluations, the agentic workflow raised molecular structure elucidation accuracy from <4% for raw LLMs to over 90% (~97% on known-molecule benchmarks), compressing analytical workflows that take human chemists days or months into hours.",
+      "technicalHighlights": [
+        "Integrates Gemini chemical reasoning with deterministic spectral-analysis tools (SIRIUS, MetFrag, MAGMa, matchms, RDKit) inside an inspectable skill workflow.",
+        "Boosts end-to-end MS/MS structure elucidation from <4% (unassisted LLM baseline) to >90% (~97% on known-molecule benchmarks).",
+        "Closes a 50-year arc in AI-for-chemistry directly linking Stanford’s 1976 Meta-DENDRAL symbolic rule learner to modern neuro-symbolic scientific agents."
+      ],
+      "caveats": "Released as a Google DeepMind technical blog post and open skill suite rather than a peer-reviewed analytical chemistry paper; generalization to truly novel natural products outside spectral/chemical databases requires independent wet-lab validation.",
+      "contributors": [
+        "Robert Brunck",
+        "Stefan Ganscha",
+        "Swaroop Guntupalli",
+        "Dariusz Lasecki",
+        "Gabriella Marfani",
+        "Jack Mason",
+        "Hussain Masoom",
+        "Rose Mirshafian",
+        "Eliseo Papa",
+        "Zoi Tsangalidou"
+      ],
+      "institutions": [
+        "Google DeepMind"
+      ],
+      "scores": {
+        "foundational": 78,
+        "ripple": 86,
+        "verification": 80,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrates how neuro-symbolic tool orchestration unlocks a 50-year bottleneck in analytical chemistry (tandem mass-spectrum elucidation).",
+        "ripple": "Directly applicable across metabolomics, natural-product discovery, forensics, and pharmaceutical characterization where ~95% of spectra go unannotated.",
+        "verification": "Backed by public open-source skills and reproducible benchmark evaluations, though formal journal peer review and blind novel-compound studies remain pending.",
+        "velocity": "Compresses manual multi-day or multi-month MS/MS structure elucidation campaigns into hours with >90% accuracy."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Google DeepMind — Interpreting mass spectra with Google Antigravity (Nov 25, 2026)",
+          "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "google-cogentic-factoring-2026",
       "title": "Google Cogentic Autonomously Produces 6 Math Papers Led by Claimed Unconditional L[1/3] Integer Factoring Bound",
       "shortTitle": "Cogentic L[1/3] Factoring & 6 Papers",
@@ -139,130 +201,6 @@
       ]
     },
     {
-      "id": "deepmind-mass-spec-skills-2026",
-      "title": "DeepMind Mass Spec Skills Elucidates Molecular Structures from Tandem Mass Spectra",
-      "shortTitle": "Mass Spec Skills (Antigravity)",
-      "date": "2026-11-25",
-      "discipline": "Chemistry & Materials",
-      "subfields": [
-        "Analytical Chemistry",
-        "Mass Spectrometry",
-        "Tool-Augmented Scientific Agents"
-      ],
-      "aiRole": "AI-Assisted",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "Gemini + Mass Spec Skills (Google Antigravity / SIRIUS / MetFrag / RDKit)",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": null,
-      "aiTimeToSolve": "Hours (vs. days–months)",
-      "isAnchor": false,
-      "whyItMatters": "Pairs Gemini reasoning with deterministic cheminformatics tools to solve tandem mass spectra at >90% accuracy—a direct 50-year successor to Stanford’s Meta-DENDRAL (1976).",
-      "summary": "Google DeepMind released Mass Spec Skills for Google Antigravity, combining Gemini’s chemical reasoning with deterministic mass-spectrometry tools (matchms, SIRIUS, MAGMa, MetFrag, RDKit) and spectral databases (GNPS, MoNA, PubChem) to tackle the 'dark matter' of metabolomics (~95% unannotated tandem mass spectra). In end-to-end evaluations, the agentic workflow raised molecular structure elucidation accuracy from <4% for raw LLMs to over 90% (~97% on known-molecule benchmarks), compressing analytical workflows that take human chemists days or months into hours.",
-      "technicalHighlights": [
-        "Integrates Gemini chemical reasoning with deterministic spectral-analysis tools (SIRIUS, MetFrag, MAGMa, matchms, RDKit) inside an inspectable skill workflow.",
-        "Boosts end-to-end MS/MS structure elucidation from <4% (unassisted LLM baseline) to >90% (~97% on known-molecule benchmarks).",
-        "Closes a 50-year arc in AI-for-chemistry directly linking Stanford’s 1976 Meta-DENDRAL symbolic rule learner to modern neuro-symbolic scientific agents."
-      ],
-      "caveats": "Released as a Google DeepMind technical blog post and open skill suite rather than a peer-reviewed analytical chemistry paper; generalization to truly novel natural products outside spectral/chemical databases requires independent wet-lab validation.",
-      "contributors": [
-        "Robert Brunck",
-        "Stefan Ganscha",
-        "Swaroop Guntupalli",
-        "Dariusz Lasecki",
-        "Gabriella Marfani",
-        "Jack Mason",
-        "Hussain Masoom",
-        "Rose Mirshafian",
-        "Eliseo Papa",
-        "Zoi Tsangalidou"
-      ],
-      "institutions": [
-        "Google DeepMind"
-      ],
-      "scores": {
-        "foundational": 78,
-        "ripple": 86,
-        "verification": 80,
-        "velocity": 91
-      },
-      "scoreRationale": {
-        "foundational": "Demonstrates how neuro-symbolic tool orchestration unlocks a 50-year bottleneck in analytical chemistry (tandem mass-spectrum elucidation).",
-        "ripple": "Directly applicable across metabolomics, natural-product discovery, forensics, and pharmaceutical characterization where ~95% of spectra go unannotated.",
-        "verification": "Backed by public open-source skills and reproducible benchmark evaluations, though formal journal peer review and blind novel-compound studies remain pending.",
-        "velocity": "Compresses manual multi-day or multi-month MS/MS structure elucidation campaigns into hours with >90% accuracy."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "Google DeepMind — Interpreting mass spectra with Google Antigravity (Nov 25, 2026)",
-          "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
-          "type": "announcement"
-        }
-      ]
-    },
-    {
-      "id": "hadwiger-covering-3d-2026",
-      "title": "Gemini 4 Carbon & Lean 4 Prove Hadwiger’s 3D Covering Conjecture",
-      "shortTitle": "Hadwiger 3D Covering (Gemini 4)",
-      "date": "2026-11-24",
-      "discipline": "Mathematics",
-      "subfields": [
-        "Convex & Discrete Geometry",
-        "Formal Verification",
-        "Combinatorial Geometry"
-      ],
-      "aiRole": "AI-Assisted",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "Google Gemini 4 Carbon Experimental Harness (Lean 4)",
-      "verificationStatus": "Formally Verified",
-      "yearsUnsolved": 69,
-      "aiTimeToSolve": null,
-      "isAnchor": false,
-      "whyItMatters": "Proved the 70-year-old 3D Hadwiger covering conjecture (every compact 3D convex body can be covered by 8 smaller copies)—discovered by Gemini 4 Carbon and verified in 13,663 lines of Lean 4.",
-      "summary": "Dror Aiger, Sariel Har-Peled, and Goran Žužić posted a self-contained proof resolving Hadwiger’s 1957 covering / Boltyanski illumination conjecture in three dimensions, lowering the general upper bound from 14 to the optimal 8. Discovered via an experimental Google harness atop Gemini 4 Carbon with minimal human steering, the complete proof is formalized in 13,663 lines of Lean 4 across 34 files against an 18-line standalone specification.",
-      "technicalHighlights": [
-        "Unconditionally proved c(K) ≤ 8 for every compact 3D convex body without symmetry assumptions (improving Prymak’s bound of 14).",
-        "Combines John’s position, Cauchy’s planar perimeter formula, shadow-boundary curve variation, and Helly’s theorem in ℝ³.",
-        "Completely verified in 13,663 lines of Lean 4 with Mathlib using only standard axioms, checked against an 18-line specification."
-      ],
-      "caveats": "Unrefereed v1 arXiv preprint; author-reported Lean/Comparator audits await independent community replay, and higher dimensions (d ≥ 4) remain open.",
-      "contributors": [
-        "Dror Aiger",
-        "Sariel Har-Peled",
-        "Goran Žužić",
-        "Gemini 4 Carbon"
-      ],
-      "institutions": [
-        "Google Research",
-        "University of Illinois Urbana-Champaign"
-      ],
-      "scores": {
-        "foundational": 86,
-        "ripple": 78,
-        "verification": 92,
-        "velocity": 96
-      },
-      "scoreRationale": {
-        "foundational": "Settled a classic 69-year-old conjecture in convex and discrete geometry (3D case).",
-        "ripple": "First headline research theorem publicly proved and Lean-formalized by Google’s Gemini 4 Carbon model.",
-        "verification": "13,663-line Lean 4 proof checked against an 18-line standalone statement; independent replay still pending.",
-        "velocity": "Both the geometric proof and full Lean formalization were synthesized via an experimental Gemini 4 Carbon harness."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "Aiger, Har-Peled & Žužić — Hadwiger’s Covering Conjecture in Three Dimensions (arXiv:2611.32334)",
-          "url": "https://arxiv.org/abs/2611.32334",
-          "type": "paper"
-        },
-        {
-          "label": "John D. Cook — Covering a body with eight smaller copies of itself (Explainer)",
-          "url": "https://www.johndcook.com/blog/2026/11/25/hadwiger-covering/",
-          "type": "explainer"
-        }
-      ]
-    },
-    {
       "id": "caiolo-ferroni-hoster-disproof-2026",
       "title": "Lean-Verified Disproof of the Caiolo–Ferroni–Hoster Dual Chow Conjecture for Matroids",
       "shortTitle": "Caiolo–Ferroni–Hoster Disproof",
@@ -325,249 +263,6 @@
           "label": "Caiolo, Ferroni & Hoster — Dual Chow polynomials of matroids and posets (arXiv:2605.28474)",
           "url": "https://arxiv.org/abs/2605.28474",
           "type": "paper"
-        }
-      ]
-    },
-    {
-      "id": "matrix-multiplication-exponent-9-4-2026",
-      "title": "Exact Matrix Multiplication Exponent ω = 9/4 Over Every Field (Claimed Proof & Lean)",
-      "shortTitle": "Matrix Mult. Exponent ω = 9/4",
-      "date": "2026-11-24",
-      "discipline": "Computer Science & AI",
-      "subfields": [
-        "Algebraic Complexity",
-        "Matrix Multiplication",
-        "Tensor Geometry",
-        "Formal Verification"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "OpenAI Internal Math Model + Lean 4",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 57,
-      "aiTimeToSolve": null,
-      "isAnchor": false,
-      "whyItMatters": "Claims to settle the 57-year quest since Strassen (1969) by proving ω = 9/4 = 2.25 exactly over every field—simultaneously slashing the upper bound from 2.371 and refuting the famous ω = 2 conjecture.",
-      "summary": "Building on its October 2 upper bound (ω ≤ 9/4, independently exposed by Amir Shpilka at ECCC and extended over arbitrary fields by Amanov, van den Berg, and Zuiddam), OpenAI released a 111-page November 24 preprint via its Euclidean tensor geometry framework claiming the matching lower bound ω ≥ 9/4 over every field. Corollary 1.2 asserts every n × n formal arithmetic circuit needs at least ⌈n^(9/4)/2⌉ multiplication or division gates, pinning the asymptotic rank of matrix multiplication to n^(9/4).",
-      "technicalHighlights": [
-        "Pairs the verified ω ≤ 9/4 upper bound (far below the prior 2.371177 record) with a new matching lower bound ω ≥ 9/4 via Euclidean geometry in the asymptotic spectrum of tensors.",
-        "Accompanied by a Lean 4 formalization (ExactExponent.lean) proving the exact square exponent 9/4 for division-free circuits over every field.",
-        "Part of OpenAI’s November 24 family 379 release spanning seven interconnected tensor-geometry and complexity manuscripts."
-      ],
-      "caveats": "Unreviewed preprint released November 24, 2026. Notably, the accompanying Lean 4 formalization is narrower than the full manuscript—covering division-free formal polynomial circuits rather than arbitrary circuits with division—so the general lower bound still awaits full human specialist refereeing.",
-      "contributors": [
-        "OpenAI Math Research Team",
-        "Amir Shpilka & Jeroen Zuiddam et al. (Upper-Bound Expositions)"
-      ],
-      "institutions": [
-        "OpenAI",
-        "Tel Aviv University & University of Amsterdam (Upper-Bound Checks)"
-      ],
-      "scores": {
-        "foundational": 95,
-        "ripple": 91,
-        "verification": 64,
-        "velocity": 96
-      },
-      "scoreRationale": {
-        "foundational": "If fully verified, pinning down the exact matrix multiplication exponent ω = 9/4 resolves one of the crown-jewel open problems in theoretical computer science.",
-        "ripple": "Reshapes algebraic complexity, tensor rank theory, and every algorithm whose runtime is parameterized by ω.",
-        "verification": "Upper bound already has independent human expositions and Lean checks division-free circuits, but the full Nov 24 lower bound remains unreviewed.",
-        "velocity": "Compressed decades of incremental ~0.0001 improvements into a single leap to 2.25 plus matching lower bound within two months."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "OpenAI Math Preprint — The matrix multiplication exponent is nine fourths (Nov 24, 2026)",
-          "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
-          "type": "paper"
-        },
-        {
-          "label": "OpenAI Math Lean Proof — ExactExponent.lean",
-          "url": "https://github.com/openai/math/blob/main/lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean",
-          "type": "formal-verification"
-        },
-        {
-          "label": "OpenAI Math Release History (Nov 24, 2026)",
-          "url": "https://github.com/openai/math/blob/main/history.md",
-          "type": "announcement"
-        }
-      ]
-    },
-    {
-      "id": "strongly-polynomial-lp-smale9-2026",
-      "title": "Strongly Polynomial-Time Linear Programming Algorithm Answering Smale’s Ninth Problem",
-      "shortTitle": "Strongly Polynomial LP (Smale #9)",
-      "date": "2026-11-24",
-      "discipline": "Computer Science & AI",
-      "subfields": [
-        "Mathematical Optimization",
-        "Linear Programming",
-        "Algorithms",
-        "Formal Verification"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "OpenAI Internal Math Model + Lean 4",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 28,
-      "aiTimeToSolve": null,
-      "isAnchor": false,
-      "whyItMatters": "Claims a deterministic strongly polynomial algorithm for linear programming with arbitrary real coefficients—resolving Smale’s 1998 Ninth Problem with a Lean 4 RAM formalization.",
-      "summary": "Posted in OpenAI’s November 24 math release (family 380), this manuscript presents a deterministic algorithm solving any explicitly given linear program with arbitrary real coefficients in a number of arithmetic operations polynomial solely in the number of variables and constraints (independent of coefficient bit-lengths), while preserving polynomial bit-length on rational inputs. It returns exact primal–dual optimal pairs, improving rays, or sparse infeasibility certificates, and extends to convex quadratic programming and turn-based mean-payoff games.",
-      "technicalHighlights": [
-        "Directly targets Smale’s Ninth Problem (1998)—whether linear programming admits a strongly polynomial algorithm.",
-        "Includes Lean 4 formalizations of strongly polynomial feasibility and optimization on fixed rational RAM programs, certifying primal–dual equality.",
-        "Released alongside a companion disproof of the Polynomial Hirsch Conjecture, proving strongly polynomial LP is achievable even though simplex edge-paths can be superpolynomial."
-      ],
-      "caveats": "Fresh November 24 unrefereed preprint. Independent optimization theorists must audit the Lean RAM cost model, formal statement alignment, and constant-factor practicality.",
-      "contributors": [
-        "OpenAI Math Research Team"
-      ],
-      "institutions": [
-        "OpenAI"
-      ],
-      "scores": {
-        "foundational": 93,
-        "ripple": 90,
-        "verification": 65,
-        "velocity": 95
-      },
-      "scoreRationale": {
-        "foundational": "Answers one of Steve Smale’s 18 landmark 21st-century mathematical problems open since 1998.",
-        "ripple": "Linear programming underpins operations research, economics, control theory, and combinatorial optimization worldwide.",
-        "verification": "Includes machine-checked Lean 4 RAM feasibility/optimization proofs, but independent human audit of definitions and paper proof has just begun.",
-        "velocity": "Delivered alongside its dual polytope-diameter refutation in a single automated research family."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "OpenAI Math Preprint — Strongly polynomial linear programming (Nov 24, 2026)",
-          "url": "https://github.com/openai/math/blob/main/preprints/Strongly-polynomial-linear-programming-November-24-2026/paper.pdf",
-          "type": "paper"
-        },
-        {
-          "label": "OpenAI Math Lean Formalization — Optimization.lean",
-          "url": "https://github.com/openai/math/blob/main/lean/OAI/Optimization/LinearProgramming/Optimization.lean",
-          "type": "formal-verification"
-        }
-      ]
-    },
-    {
-      "id": "polynomial-hirsch-disproof-2026",
-      "title": "Lean-Formalized Disproof of the Polynomial Hirsch Conjecture for Simple Polytopes",
-      "shortTitle": "Polynomial Hirsch Disproof",
-      "date": "2026-11-24",
-      "discipline": "Mathematics",
-      "subfields": [
-        "Discrete Geometry",
-        "Polytope Theory",
-        "Linear Optimization",
-        "Formal Verification"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "OpenAI Internal Math Model + Lean 4",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 69,
-      "aiTimeToSolve": null,
-      "isAnchor": false,
-      "whyItMatters": "Constructs bounded simple rational polytopes whose vertex–edge graph diameter grows superpolynomially in facet count—refuting the 69-year-old Polynomial Hirsch Conjecture.",
-      "summary": "While Francisco Santos disproved the linear Hirsch conjecture in 2010, the Polynomial Hirsch Conjecture—asking whether the diameter of every d-dimensional polytope with n facets is bounded by a polynomial in n and d—remained the central open question governing the worst-case complexity of simplex methods. OpenAI’s November 24 companion manuscript constructs bounded simple rational polytopes with n facets and subpolynomial dimension whose graph diameter exceeds every fixed power of n, formalized in Lean 4.",
-      "technicalHighlights": [
-        "Shows superpolynomial vertex separation persists even if moves may cross faces of dimension up to s(n) = n^o(1).",
-        "Formalized in Lean 4 (OAI/Geometry/Hirsch/Main.lean) with Comparator challenge statements verifying the bounded simple rational polytope construction.",
-        "Paired with OpenAI’s strongly polynomial LP paper, cleanly separating polytope graph diameter from linear-programming tractability."
-      ],
-      "caveats": "Released November 24, 2026 without peer review; requires independent geometric and formal-statement verification to confirm the Lean polytope definitions match standard bounded simple polytopes.",
-      "contributors": [
-        "OpenAI Math Research Team"
-      ],
-      "institutions": [
-        "OpenAI"
-      ],
-      "scores": {
-        "foundational": 89,
-        "ripple": 83,
-        "verification": 66,
-        "velocity": 94
-      },
-      "scoreRationale": {
-        "foundational": "Refutes the flagship 1957 geometric conjecture governing the combinatorial diameter of convex polytopes.",
-        "ripple": "Settles the theoretical ceiling for edge-following simplex pivot rules across optimization and polyhedral combinatorics.",
-        "verification": "Backed by Lean 4 refutation theorems and Comparator specs, pending independent audit by discrete geometers.",
-        "velocity": "Closed a 69-year geometric barrier simultaneously with Smale’s Ninth Problem."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "OpenAI Math Preprint — Superpolynomial graph diameter of simple polytopes (Nov 24, 2026)",
-          "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
-          "type": "paper"
-        },
-        {
-          "label": "OpenAI Math Lean Formalization — Hirsch/Main.lean",
-          "url": "https://github.com/openai/math/blob/main/lean/OAI/Geometry/Hirsch/Main.lean",
-          "type": "formal-verification"
-        }
-      ]
-    },
-    {
-      "id": "sunflower-conjecture-lean-2026",
-      "title": "Lean-Formalized Proof of the 1960 Erdős–Rado Fixed-Petal Sunflower Conjecture",
-      "shortTitle": "Erdős–Rado Sunflower Conjecture",
-      "date": "2026-11-24",
-      "discipline": "Mathematics",
-      "subfields": [
-        "Extremal Combinatorics",
-        "Set Systems",
-        "Tensor Geometry",
-        "Formal Verification"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "OpenAI Internal Math Model + Lean 4",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 66,
-      "aiTimeToSolve": null,
-      "isAnchor": false,
-      "whyItMatters": "Claims an exponential B_r^k upper bound settling the 66-year-old Erdős–Rado Sunflower Conjecture for every fixed petal count r ≥ 3, accompanied by a Lean 4 formalization.",
-      "summary": "Posed by Paul Erdős and Richard Rado in 1960, the Sunflower Conjecture asks whether every family of more than C_r^k sets of size k contains an r-sunflower (r sets with identical pairwise intersections). Following the landmark 2019 Alweiss–Lovett–Wu–Zhang (log k)^k breakthrough, OpenAI’s November 24 preprint applies Euclidean geometry of the asymptotic spectrum of tensors to remove the log-factor barrier completely, proving an exponential bound B_r^k with Lean 4 formalization of the fixed-petal theorem.",
-      "technicalHighlights": [
-        "Proves that for every r ≥ 3, more than B_r^k sets of size ≤ k force an r-sunflower, with log B_r = O((log r)^4 (log log 2r)^(5/2)).",
-        "Accompanied by a Lean 4 formalization (FixedBase.lean) proving existence of the exponential base C_r for every r ≥ 3.",
-        "Demonstrates unexpected transfer from algebraic tensor-spectrum geometry directly into extremal combinatorics."
-      ],
-      "caveats": "Unreviewed November 24 preprint; the Lean file formalizes existence of C_r while the sharper quantitative dependence of B_r on r appears in the manuscript and awaits independent combinatorial refereeing.",
-      "contributors": [
-        "OpenAI Math Research Team"
-      ],
-      "institutions": [
-        "OpenAI"
-      ],
-      "scores": {
-        "foundational": 90,
-        "ripple": 85,
-        "verification": 65,
-        "velocity": 95
-      },
-      "scoreRationale": {
-        "foundational": "Settles one of Paul Erdős’s most famous and widely cited 1960 conjectures in extremal combinatorics.",
-        "ripple": "Sunflower lemmas are core tools in circuit complexity, pseudorandomness, data structures, and matrix multiplication.",
-        "verification": "Includes a Lean 4 proof of the fixed-base exponential theorem, awaiting independent review of both Lean definitions and quantitative manuscript bounds.",
-        "velocity": "Bridged the final gap from the 2019 (log k)^k bound to the full exponential conjecture via AI-developed tensor geometry."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "OpenAI Math Preprint — An exponential bound for sunflowers (Nov 24, 2026)",
-          "url": "https://github.com/openai/math/blob/main/preprints/An-exponential-bound-for-sunflowers-November-24-2026/paper.pdf",
-          "type": "paper"
-        },
-        {
-          "label": "OpenAI Math Lean Formalization — FixedBase.lean",
-          "url": "https://github.com/openai/math/blob/main/lean/OAI/Combinatorics/Sunflower/FixedBase.lean",
-          "type": "formal-verification"
         }
       ]
     },
@@ -686,64 +381,307 @@
       ]
     },
     {
-      "id": "linear-time-mst-gpt62-2026",
-      "title": "GPT-6.2 Astra Discovers Deterministic Linear-Time Minimum Spanning Tree Algorithm",
-      "shortTitle": "Deterministic Linear-Time MST",
-      "date": "2026-11-23",
-      "discipline": "Computer Science & AI",
+      "id": "hadwiger-covering-3d-2026",
+      "title": "Gemini 4 Carbon & Lean 4 Prove Hadwiger’s 3D Covering Conjecture",
+      "shortTitle": "Hadwiger 3D Covering (Gemini 4)",
+      "date": "2026-11-24",
+      "discipline": "Mathematics",
       "subfields": [
-        "Graph Algorithms",
-        "Comparison Complexity",
-        "Combinatorial Optimization"
+        "Convex & Discrete Geometry",
+        "Formal Verification",
+        "Combinatorial Geometry"
       ],
       "aiRole": "AI-Assisted",
-      "aiParadigm": "Neural / Deep Learning",
-      "aiSystem": "OpenAI GPT-6.2 Astra (Ultra & Max effort)",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 31,
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Google Gemini 4 Carbon Experimental Harness (Lean 4)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 69,
       "aiTimeToSolve": null,
       "isAnchor": false,
-      "whyItMatters": "Settles the classic deterministic linear-time Minimum Spanning Tree problem—the first improvement since Chazelle (JACM 2000)—with the core algorithmic ideas generated by GPT-6.2 Astra and verified by NYU & Harvard theorists.",
-      "summary": "Sanjeev Khanna (NYU Courant), Aaron Putterman (Harvard SEAS), and Junkai Song (NYU Courant) posted arXiv:2611.31187 / ECCC TR26-339 establishing a deterministic O(m)-time comparison-based algorithm for the Minimum Spanning Tree (MST) problem, breaking Bernard Chazelle’s 26-year-old O(m α(m, n)) record (JACM 2000) and matching Karger–Klein–Tarjan’s 1995 randomized linear-time bound deterministically. By proving that the deterministic comparison complexity of MST is O(m) via a novel recursive edge-filtering certificate procedure and schedule-counting argument, Pettie and Ramachandran’s 2002 reduction immediately yields a deterministic linear-time pointer-machine algorithm. In Section 1.4 ('AI Acknowledgments'), the authors transparently credit OpenAI’s GPT-6.2 Astra with generating the paper’s main ideas with minimal human intellectual intervention before the authors verified, checked, and simplified the full proof.",
+      "whyItMatters": "Proved the 70-year-old 3D Hadwiger covering conjecture (every compact 3D convex body can be covered by 8 smaller copies)—discovered by Gemini 4 Carbon and verified in 13,663 lines of Lean 4.",
+      "summary": "Dror Aiger, Sariel Har-Peled, and Goran Žužić posted a self-contained proof resolving Hadwiger’s 1957 covering / Boltyanski illumination conjecture in three dimensions, lowering the general upper bound from 14 to the optimal 8. Discovered via an experimental Google harness atop Gemini 4 Carbon with minimal human steering, the complete proof is formalized in 13,663 lines of Lean 4 across 34 files against an 18-line standalone specification.",
       "technicalHighlights": [
-        "Proves deterministic comparison complexity T*(m, n) = O(m) for Minimum Spanning Forest, yielding a deterministic linear-time MST algorithm via Pettie–Ramachandran (JACM 2002).",
-        "Provides the first deterministic asymptotic breakthrough since Chazelle’s soft-heap O(m α(m, n)) bound in 2000 and derandomizes the 1995 Karger–Klein–Tarjan linear-time milestone.",
-        "Section 1.4 explicitly credits GPT-6.2 Astra (Ultra/Max effort) with generating the core algorithmic ideas with minimal human intellectual intervention, subsequently verified and simplified by Khanna, Putterman, and Song."
+        "Unconditionally proved c(K) ≤ 8 for every compact 3D convex body without symmetry assumptions (improving Prymak’s bound of 14).",
+        "Combines John’s position, Cauchy’s planar perimeter formula, shadow-boundary curve variation, and Helly’s theorem in ℝ³.",
+        "Completely verified in 13,663 lines of Lean 4 with Mathlib using only standard axioms, checked against an 18-line specification."
       ],
-      "caveats": "Unrefereed v1 preprint posted Nov 23, 2026 without a formal Lean proof; because the Pettie–Ramachandran reduction relies on brute-force precomputation of small optimal comparison trees, the result is a foundational theoretical breakthrough rather than a drop-in practical replacement for Kruskal/Prim.",
+      "caveats": "Unrefereed v1 arXiv preprint; author-reported Lean/Comparator audits await independent community replay, and higher dimensions (d ≥ 4) remain open.",
       "contributors": [
-        "Sanjeev Khanna",
-        "Aaron Putterman",
-        "Junkai Song",
-        "GPT-6.2 Astra"
+        "Dror Aiger",
+        "Sariel Har-Peled",
+        "Goran Žužić",
+        "Gemini 4 Carbon"
       ],
       "institutions": [
-        "New York University (Courant Institute)",
-        "Harvard University (SEAS)"
+        "Google Research",
+        "University of Illinois Urbana-Champaign"
       ],
       "scores": {
-        "foundational": 91,
-        "ripple": 87,
-        "verification": 83,
+        "foundational": 86,
+        "ripple": 78,
+        "verification": 92,
         "velocity": 96
       },
       "scoreRationale": {
-        "foundational": "Settles one of the most iconic open problems in classical graph algorithms—whether deterministic MST can run in strictly linear O(m) comparison time.",
-        "ripple": "Reshapes foundational algorithms curricula and demonstrates that frontier reasoning models can invent genuinely new deterministic combinatorial algorithms.",
-        "verification": "Carefully verified, simplified, and co-authored by leading TCS researchers (Khanna, Putterman, Song), though v1 has not yet completed conference/journal peer review.",
-        "velocity": "Cracked a decades-old algorithmic barrier (open since KKT 1995 / Chazelle 2000) with core ideas generated by GPT-6.2 Astra."
+        "foundational": "Settled a classic 69-year-old conjecture in convex and discrete geometry (3D case).",
+        "ripple": "First headline research theorem publicly proved and Lean-formalized by Google’s Gemini 4 Carbon model.",
+        "verification": "13,663-line Lean 4 proof checked against an 18-line standalone statement; independent replay still pending.",
+        "velocity": "Both the geometric proof and full Lean formalization were synthesized via an experimental Gemini 4 Carbon harness."
       },
       "enables": [],
       "sources": [
         {
-          "label": "Khanna, Putterman & Song — A Deterministic Linear Time Algorithm for Minimum Spanning Tree (arXiv:2611.31187)",
-          "url": "https://arxiv.org/abs/2611.31187",
+          "label": "Aiger, Har-Peled & Žužić — Hadwiger’s Covering Conjecture in Three Dimensions (arXiv:2611.32334)",
+          "url": "https://arxiv.org/abs/2611.32334",
           "type": "paper"
         },
         {
-          "label": "ECCC Report TR26-339 — A Deterministic Linear Time Algorithm for Minimum Spanning Tree",
-          "url": "https://eccc.weizmann.ac.il/report/2026/339/",
+          "label": "John D. Cook — Covering a body with eight smaller copies of itself (Explainer)",
+          "url": "https://www.johndcook.com/blog/2026/11/25/hadwiger-covering/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "matrix-multiplication-exponent-9-4-2026",
+      "title": "Exact Matrix Multiplication Exponent ω = 9/4 Over Every Field (Claimed Proof & Lean)",
+      "shortTitle": "Matrix Mult. Exponent ω = 9/4",
+      "date": "2026-11-24",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Algebraic Complexity",
+        "Matrix Multiplication",
+        "Tensor Geometry",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 57,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims to settle the 57-year quest since Strassen (1969) by proving ω = 9/4 = 2.25 exactly over every field—simultaneously slashing the upper bound from 2.371 and refuting the famous ω = 2 conjecture.",
+      "summary": "Building on its October 2 upper bound (ω ≤ 9/4, independently exposed by Amir Shpilka at ECCC and extended over arbitrary fields by Amanov, van den Berg, and Zuiddam), OpenAI released a 111-page November 24 preprint via its Euclidean tensor geometry framework claiming the matching lower bound ω ≥ 9/4 over every field. Corollary 1.2 asserts every n × n formal arithmetic circuit needs at least ⌈n^(9/4)/2⌉ multiplication or division gates, pinning the asymptotic rank of matrix multiplication to n^(9/4).",
+      "technicalHighlights": [
+        "Pairs the verified ω ≤ 9/4 upper bound (far below the prior 2.371177 record) with a new matching lower bound ω ≥ 9/4 via Euclidean geometry in the asymptotic spectrum of tensors.",
+        "Accompanied by a Lean 4 formalization (ExactExponent.lean) proving the exact square exponent 9/4 for division-free circuits over every field.",
+        "Part of OpenAI’s November 24 family 379 release spanning seven interconnected tensor-geometry and complexity manuscripts."
+      ],
+      "caveats": "Unreviewed preprint released November 24, 2026. Notably, the accompanying Lean 4 formalization is narrower than the full manuscript—covering division-free formal polynomial circuits rather than arbitrary circuits with division—so the general lower bound still awaits full human specialist refereeing.",
+      "contributors": [
+        "OpenAI Math Research Team",
+        "Amir Shpilka & Jeroen Zuiddam et al. (Upper-Bound Expositions)"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Tel Aviv University & University of Amsterdam (Upper-Bound Checks)"
+      ],
+      "scores": {
+        "foundational": 95,
+        "ripple": 91,
+        "verification": 64,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "If fully verified, pinning down the exact matrix multiplication exponent ω = 9/4 resolves one of the crown-jewel open problems in theoretical computer science.",
+        "ripple": "Reshapes algebraic complexity, tensor rank theory, and every algorithm whose runtime is parameterized by ω.",
+        "verification": "Upper bound already has independent human expositions and Lean checks division-free circuits, but the full Nov 24 lower bound remains unreviewed.",
+        "velocity": "Compressed decades of incremental ~0.0001 improvements into a single leap to 2.25 plus matching lower bound within two months."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — The matrix multiplication exponent is nine fourths (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
           "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Proof — ExactExponent.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean",
+          "type": "formal-verification"
+        },
+        {
+          "label": "OpenAI Math Release History (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/history.md",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "polynomial-hirsch-disproof-2026",
+      "title": "Lean-Formalized Disproof of the Polynomial Hirsch Conjecture for Simple Polytopes",
+      "shortTitle": "Polynomial Hirsch Disproof",
+      "date": "2026-11-24",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Discrete Geometry",
+        "Polytope Theory",
+        "Linear Optimization",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 69,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Constructs bounded simple rational polytopes whose vertex–edge graph diameter grows superpolynomially in facet count—refuting the 69-year-old Polynomial Hirsch Conjecture.",
+      "summary": "While Francisco Santos disproved the linear Hirsch conjecture in 2010, the Polynomial Hirsch Conjecture—asking whether the diameter of every d-dimensional polytope with n facets is bounded by a polynomial in n and d—remained the central open question governing the worst-case complexity of simplex methods. OpenAI’s November 24 companion manuscript constructs bounded simple rational polytopes with n facets and subpolynomial dimension whose graph diameter exceeds every fixed power of n, formalized in Lean 4.",
+      "technicalHighlights": [
+        "Shows superpolynomial vertex separation persists even if moves may cross faces of dimension up to s(n) = n^o(1).",
+        "Formalized in Lean 4 (OAI/Geometry/Hirsch/Main.lean) with Comparator challenge statements verifying the bounded simple rational polytope construction.",
+        "Paired with OpenAI’s strongly polynomial LP paper, cleanly separating polytope graph diameter from linear-programming tractability."
+      ],
+      "caveats": "Released November 24, 2026 without peer review; requires independent geometric and formal-statement verification to confirm the Lean polytope definitions match standard bounded simple polytopes.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 83,
+        "verification": 66,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Refutes the flagship 1957 geometric conjecture governing the combinatorial diameter of convex polytopes.",
+        "ripple": "Settles the theoretical ceiling for edge-following simplex pivot rules across optimization and polyhedral combinatorics.",
+        "verification": "Backed by Lean 4 refutation theorems and Comparator specs, pending independent audit by discrete geometers.",
+        "velocity": "Closed a 69-year geometric barrier simultaneously with Smale’s Ninth Problem."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — Superpolynomial graph diameter of simple polytopes (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Formalization — Hirsch/Main.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/Geometry/Hirsch/Main.lean",
+          "type": "formal-verification"
+        }
+      ]
+    },
+    {
+      "id": "strongly-polynomial-lp-smale9-2026",
+      "title": "Strongly Polynomial-Time Linear Programming Algorithm Answering Smale’s Ninth Problem",
+      "shortTitle": "Strongly Polynomial LP (Smale #9)",
+      "date": "2026-11-24",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Mathematical Optimization",
+        "Linear Programming",
+        "Algorithms",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 28,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims a deterministic strongly polynomial algorithm for linear programming with arbitrary real coefficients—resolving Smale’s 1998 Ninth Problem with a Lean 4 RAM formalization.",
+      "summary": "Posted in OpenAI’s November 24 math release (family 380), this manuscript presents a deterministic algorithm solving any explicitly given linear program with arbitrary real coefficients in a number of arithmetic operations polynomial solely in the number of variables and constraints (independent of coefficient bit-lengths), while preserving polynomial bit-length on rational inputs. It returns exact primal–dual optimal pairs, improving rays, or sparse infeasibility certificates, and extends to convex quadratic programming and turn-based mean-payoff games.",
+      "technicalHighlights": [
+        "Directly targets Smale’s Ninth Problem (1998)—whether linear programming admits a strongly polynomial algorithm.",
+        "Includes Lean 4 formalizations of strongly polynomial feasibility and optimization on fixed rational RAM programs, certifying primal–dual equality.",
+        "Released alongside a companion disproof of the Polynomial Hirsch Conjecture, proving strongly polynomial LP is achievable even though simplex edge-paths can be superpolynomial."
+      ],
+      "caveats": "Fresh November 24 unrefereed preprint. Independent optimization theorists must audit the Lean RAM cost model, formal statement alignment, and constant-factor practicality.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 90,
+        "verification": 65,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Answers one of Steve Smale’s 18 landmark 21st-century mathematical problems open since 1998.",
+        "ripple": "Linear programming underpins operations research, economics, control theory, and combinatorial optimization worldwide.",
+        "verification": "Includes machine-checked Lean 4 RAM feasibility/optimization proofs, but independent human audit of definitions and paper proof has just begun.",
+        "velocity": "Delivered alongside its dual polytope-diameter refutation in a single automated research family."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — Strongly polynomial linear programming (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/Strongly-polynomial-linear-programming-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Formalization — Optimization.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/Optimization/LinearProgramming/Optimization.lean",
+          "type": "formal-verification"
+        }
+      ]
+    },
+    {
+      "id": "sunflower-conjecture-lean-2026",
+      "title": "Lean-Formalized Proof of the 1960 Erdős–Rado Fixed-Petal Sunflower Conjecture",
+      "shortTitle": "Erdős–Rado Sunflower Conjecture",
+      "date": "2026-11-24",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Extremal Combinatorics",
+        "Set Systems",
+        "Tensor Geometry",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Math Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 66,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims an exponential B_r^k upper bound settling the 66-year-old Erdős–Rado Sunflower Conjecture for every fixed petal count r ≥ 3, accompanied by a Lean 4 formalization.",
+      "summary": "Posed by Paul Erdős and Richard Rado in 1960, the Sunflower Conjecture asks whether every family of more than C_r^k sets of size k contains an r-sunflower (r sets with identical pairwise intersections). Following the landmark 2019 Alweiss–Lovett–Wu–Zhang (log k)^k breakthrough, OpenAI’s November 24 preprint applies Euclidean geometry of the asymptotic spectrum of tensors to remove the log-factor barrier completely, proving an exponential bound B_r^k with Lean 4 formalization of the fixed-petal theorem.",
+      "technicalHighlights": [
+        "Proves that for every r ≥ 3, more than B_r^k sets of size ≤ k force an r-sunflower, with log B_r = O((log r)^4 (log log 2r)^(5/2)).",
+        "Accompanied by a Lean 4 formalization (FixedBase.lean) proving existence of the exponential base C_r for every r ≥ 3.",
+        "Demonstrates unexpected transfer from algebraic tensor-spectrum geometry directly into extremal combinatorics."
+      ],
+      "caveats": "Unreviewed November 24 preprint; the Lean file formalizes existence of C_r while the sharper quantitative dependence of B_r on r appears in the manuscript and awaits independent combinatorial refereeing.",
+      "contributors": [
+        "OpenAI Math Research Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 90,
+        "ripple": 85,
+        "verification": 65,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Settles one of Paul Erdős’s most famous and widely cited 1960 conjectures in extremal combinatorics.",
+        "ripple": "Sunflower lemmas are core tools in circuit complexity, pseudorandomness, data structures, and matrix multiplication.",
+        "verification": "Includes a Lean 4 proof of the fixed-base exponential theorem, awaiting independent review of both Lean definitions and quantitative manuscript bounds.",
+        "velocity": "Bridged the final gap from the 2019 (log k)^k bound to the full exponential conjecture via AI-developed tensor geometry."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI Math Preprint — An exponential bound for sunflowers (Nov 24, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/An-exponential-bound-for-sunflowers-November-24-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "OpenAI Math Lean Formalization — FixedBase.lean",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/Combinatorics/Sunflower/FixedBase.lean",
+          "type": "formal-verification"
         }
       ]
     },
@@ -805,6 +743,68 @@
           "label": "Technical Breakdown: DeepMind's Gemini 4 Agents Find Faster Quantum Algorithms",
           "url": "https://cellcog.ai/blog/deepmind-gemini-4-quantum-algorithms/",
           "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "linear-time-mst-gpt62-2026",
+      "title": "GPT-6.2 Astra Discovers Deterministic Linear-Time Minimum Spanning Tree Algorithm",
+      "shortTitle": "Deterministic Linear-Time MST",
+      "date": "2026-11-23",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Graph Algorithms",
+        "Comparison Complexity",
+        "Combinatorial Optimization"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI GPT-6.2 Astra (Ultra & Max effort)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 31,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Settles the classic deterministic linear-time Minimum Spanning Tree problem—the first improvement since Chazelle (JACM 2000)—with the core algorithmic ideas generated by GPT-6.2 Astra and verified by NYU & Harvard theorists.",
+      "summary": "Sanjeev Khanna (NYU Courant), Aaron Putterman (Harvard SEAS), and Junkai Song (NYU Courant) posted arXiv:2611.31187 / ECCC TR26-339 establishing a deterministic O(m)-time comparison-based algorithm for the Minimum Spanning Tree (MST) problem, breaking Bernard Chazelle’s 26-year-old O(m α(m, n)) record (JACM 2000) and matching Karger–Klein–Tarjan’s 1995 randomized linear-time bound deterministically. By proving that the deterministic comparison complexity of MST is O(m) via a novel recursive edge-filtering certificate procedure and schedule-counting argument, Pettie and Ramachandran’s 2002 reduction immediately yields a deterministic linear-time pointer-machine algorithm. In Section 1.4 ('AI Acknowledgments'), the authors transparently credit OpenAI’s GPT-6.2 Astra with generating the paper’s main ideas with minimal human intellectual intervention before the authors verified, checked, and simplified the full proof.",
+      "technicalHighlights": [
+        "Proves deterministic comparison complexity T*(m, n) = O(m) for Minimum Spanning Forest, yielding a deterministic linear-time MST algorithm via Pettie–Ramachandran (JACM 2002).",
+        "Provides the first deterministic asymptotic breakthrough since Chazelle’s soft-heap O(m α(m, n)) bound in 2000 and derandomizes the 1995 Karger–Klein–Tarjan linear-time milestone.",
+        "Section 1.4 explicitly credits GPT-6.2 Astra (Ultra/Max effort) with generating the core algorithmic ideas with minimal human intellectual intervention, subsequently verified and simplified by Khanna, Putterman, and Song."
+      ],
+      "caveats": "Unrefereed v1 preprint posted Nov 23, 2026 without a formal Lean proof; because the Pettie–Ramachandran reduction relies on brute-force precomputation of small optimal comparison trees, the result is a foundational theoretical breakthrough rather than a drop-in practical replacement for Kruskal/Prim.",
+      "contributors": [
+        "Sanjeev Khanna",
+        "Aaron Putterman",
+        "Junkai Song",
+        "GPT-6.2 Astra"
+      ],
+      "institutions": [
+        "New York University (Courant Institute)",
+        "Harvard University (SEAS)"
+      ],
+      "scores": {
+        "foundational": 91,
+        "ripple": 87,
+        "verification": 83,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "Settles one of the most iconic open problems in classical graph algorithms—whether deterministic MST can run in strictly linear O(m) comparison time.",
+        "ripple": "Reshapes foundational algorithms curricula and demonstrates that frontier reasoning models can invent genuinely new deterministic combinatorial algorithms.",
+        "verification": "Carefully verified, simplified, and co-authored by leading TCS researchers (Khanna, Putterman, Song), though v1 has not yet completed conference/journal peer review.",
+        "velocity": "Cracked a decades-old algorithmic barrier (open since KKT 1995 / Chazelle 2000) with core ideas generated by GPT-6.2 Astra."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Khanna, Putterman & Song — A Deterministic Linear Time Algorithm for Minimum Spanning Tree (arXiv:2611.31187)",
+          "url": "https://arxiv.org/abs/2611.31187",
+          "type": "paper"
+        },
+        {
+          "label": "ECCC Report TR26-339 — A Deterministic Linear Time Algorithm for Minimum Spanning Tree",
+          "url": "https://eccc.weizmann.ac.il/report/2026/339/",
+          "type": "paper"
         }
       ]
     },
@@ -1631,66 +1631,6 @@
       ]
     },
     {
-      "id": "local-smoothing-conjecture-2026",
-      "title": "Claimed Proof & Lean Formalization of Sogge’s 1991 Local Smoothing Conjecture",
-      "shortTitle": "Local Smoothing Conjecture (Lean)",
-      "date": "2026-10-25",
-      "discipline": "Mathematics",
-      "subfields": [
-        "Harmonic Analysis",
-        "Partial Differential Equations",
-        "Formal Verification"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "OpenAI Internal Reasoning Model + Lean 4",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 35,
-      "aiTimeToSolve": null,
-      "isAnchor": false,
-      "whyItMatters": "Claims a complete resolution of Sogge’s 1991 Local Smoothing Conjecture in all dimensions n ≥ 2—the apex conjecture implying Bochner–Riesz, Fourier Restriction, and Kakeya.",
-      "summary": "Released in the openai/math repository on October 25, 2026 alongside OpenAI’s ETH refutation, a 59-page AI-generated preprint and accompanying Lean 4 formalization claim a full proof of Christopher Sogge’s 1991 Local Smoothing Conjecture for the Euclidean wave equation in every spatial dimension n ≥ 2 via a novel auxiliary PDE construction. Because Local Smoothing sits at the top of harmonic analysis’s classical implication hierarchy—implying the Bochner–Riesz, Fourier Restriction, and Kakeya conjectures—harmonic analyst Alex Iosevich described it as a potential 'historic development' pending full expert refereeing.",
-      "technicalHighlights": [
-        "Claims optimal L^p local smoothing estimates for the Euclidean wave equation across all spatial dimensions n ≥ 2 (open since Sogge 1991).",
-        "Introduces an AI-devised auxiliary PDE argument designed to bypass decades of decoupling and Kakeya bottlenecks.",
-        "Published openly in openai/math with both a 59-page LaTeX paper and accompanying Lean 4 formalization files for community audit."
-      ],
-      "caveats": "Remains an unrefereed preprint under active specialist review. As with other late-2026 self-published Lean dumps from openai/math, independent harmonic analysts must confirm that the Lean statements match the exact classical L^p space-time estimates without hidden hypotheses or scope gaps.",
-      "contributors": [
-        "OpenAI Science Team"
-      ],
-      "institutions": [
-        "OpenAI"
-      ],
-      "scores": {
-        "foundational": 94,
-        "ripple": 90,
-        "verification": 64,
-        "velocity": 97
-      },
-      "scoreRationale": {
-        "foundational": "If confirmed, resolves the crowning open conjecture of Euclidean harmonic analysis since 1991, simultaneously implying Bochner–Riesz, Restriction, and Kakeya.",
-        "ripple": "Would reshape modern Fourier analysis, dispersive PDEs, and geometric measure theory overnight.",
-        "verification": "Scored conservatively because despite accompanying Lean files, independent specialist audit and journal refereeing have not yet certified the claim.",
-        "velocity": "Autonomous AI discovery of a claimed all-dimension proof via a new auxiliary PDE technique."
-      },
-      "enables": [
-        "kakeya-higher-dim-2026"
-      ],
-      "sources": [
-        {
-          "label": "OpenAI Math — Local smoothing for the Euclidean wave equation (GitHub PDF, Oct 25, 2026)",
-          "url": "https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
-          "type": "paper"
-        },
-        {
-          "label": "Local smoothing conjecture — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Local_smoothing_conjecture",
-          "type": "explainer"
-        }
-      ]
-    },
-    {
       "id": "eth-refutation-claim-2026",
       "title": "Claimed Refutation of the Exponential Time Hypothesis (ETH)",
       "shortTitle": "ETH Refutation Claim",
@@ -1759,6 +1699,66 @@
       ]
     },
     {
+      "id": "local-smoothing-conjecture-2026",
+      "title": "Claimed Proof & Lean Formalization of Sogge’s 1991 Local Smoothing Conjecture",
+      "shortTitle": "Local Smoothing Conjecture (Lean)",
+      "date": "2026-10-25",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Harmonic Analysis",
+        "Partial Differential Equations",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Reasoning Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 35,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims a complete resolution of Sogge’s 1991 Local Smoothing Conjecture in all dimensions n ≥ 2—the apex conjecture implying Bochner–Riesz, Fourier Restriction, and Kakeya.",
+      "summary": "Released in the openai/math repository on October 25, 2026 alongside OpenAI’s ETH refutation, a 59-page AI-generated preprint and accompanying Lean 4 formalization claim a full proof of Christopher Sogge’s 1991 Local Smoothing Conjecture for the Euclidean wave equation in every spatial dimension n ≥ 2 via a novel auxiliary PDE construction. Because Local Smoothing sits at the top of harmonic analysis’s classical implication hierarchy—implying the Bochner–Riesz, Fourier Restriction, and Kakeya conjectures—harmonic analyst Alex Iosevich described it as a potential 'historic development' pending full expert refereeing.",
+      "technicalHighlights": [
+        "Claims optimal L^p local smoothing estimates for the Euclidean wave equation across all spatial dimensions n ≥ 2 (open since Sogge 1991).",
+        "Introduces an AI-devised auxiliary PDE argument designed to bypass decades of decoupling and Kakeya bottlenecks.",
+        "Published openly in openai/math with both a 59-page LaTeX paper and accompanying Lean 4 formalization files for community audit."
+      ],
+      "caveats": "Remains an unrefereed preprint under active specialist review. As with other late-2026 self-published Lean dumps from openai/math, independent harmonic analysts must confirm that the Lean statements match the exact classical L^p space-time estimates without hidden hypotheses or scope gaps.",
+      "contributors": [
+        "OpenAI Science Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 94,
+        "ripple": 90,
+        "verification": 64,
+        "velocity": 97
+      },
+      "scoreRationale": {
+        "foundational": "If confirmed, resolves the crowning open conjecture of Euclidean harmonic analysis since 1991, simultaneously implying Bochner–Riesz, Restriction, and Kakeya.",
+        "ripple": "Would reshape modern Fourier analysis, dispersive PDEs, and geometric measure theory overnight.",
+        "verification": "Scored conservatively because despite accompanying Lean files, independent specialist audit and journal refereeing have not yet certified the claim.",
+        "velocity": "Autonomous AI discovery of a claimed all-dimension proof via a new auxiliary PDE technique."
+      },
+      "enables": [
+        "kakeya-higher-dim-2026"
+      ],
+      "sources": [
+        {
+          "label": "OpenAI Math — Local smoothing for the Euclidean wave equation (GitHub PDF, Oct 25, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "Local smoothing conjecture — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Local_smoothing_conjecture",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "lehmer-problem-gemini-2026",
       "title": "Human–AI Loop with Gemini 4 Argon Breaks High-Degree Barrier in Lehmer’s Problem",
       "shortTitle": "Lehmer’s Problem (Gemini 4)",
@@ -1809,69 +1809,6 @@
           "label": "Breaking the high-degree barrier in Lehmer’s problem with a human–AI loop (arXiv:2610.30277)",
           "url": "https://arxiv.org/abs/2610.30277",
           "type": "paper"
-        }
-      ]
-    },
-    {
-      "id": "openai-math-bulk-ugc-2026",
-      "title": "OpenAI 722-Manuscript Release: Claimed Proofs of Unique Games, Quasi-RH & Kaplansky",
-      "shortTitle": "OpenAI 722-Paper Math Release (UGC)",
-      "date": "2026-10-06",
-      "discipline": "Computer Science & AI",
-      "subfields": [
-        "Computational Complexity",
-        "Pure Mathematics",
-        "Bulk Autonomous Discovery"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neural / Deep Learning",
-      "aiSystem": "OpenAI Internal Frontier Math Model",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": 24,
-      "aiTimeToSolve": "~3 hrs / family",
-      "isAnchor": false,
-      "whyItMatters": "Unprecedented 722-manuscript release across 372 problem families (235 with Lean formalizations), claiming resolutions of Unique Games Conjecture, Quasi-RH (7/8), and Kaplansky zero-divisors.",
-      "summary": "OpenAI published github.com/openai/math containing 722 manuscripts grouped into 372 result families generated from ~4,000 open problems posed to an unreleased internal model (~3 hours of Pro compute each). Headline claims with Lean entries include Subhash Khot’s 2002 Unique Games Conjecture, a 7/8 zero-free Quasi-Riemann Hypothesis, Mahler conjectures, Kaplansky’s zero-divisor refutation, and matrix multiplication ω ≤ 9/4—triggering both awe and intense community scrutiny over bulk unrefereed releases.",
-      "technicalHighlights": [
-        "Released 722 manuscripts across 372 families, with 235 families linked to machine-checkable Lean 4 challenge files (405 challenge specs).",
-        "Headline Lean-backed claims include Unique Games Conjecture (family 102), Kaplansky zero-divisor refutation (196), and Quasi-RH at 7/8 (003).",
-        "Prompted independent extraction efforts (e.g., arXiv:2610.17090) and global debate over the IAS AGMAI release guidelines."
-      ],
-      "caveats": "OpenAI’s own catalogue marked formal checks as initially \"unchecked\"; three Hodge/Weil manuscripts were retracted within 3 days after a sign error, and some Lean entries cover narrower statements than the accompanying PDFs.",
-      "contributors": [
-        "OpenAI Frontier Mathematics Team"
-      ],
-      "institutions": [
-        "OpenAI"
-      ],
-      "scores": {
-        "foundational": 93,
-        "ripple": 92,
-        "verification": 62,
-        "velocity": 100
-      },
-      "scoreRationale": {
-        "foundational": "If even a fraction of headline Lean-backed claims (UGC, Kaplansky, Quasi-RH) survive audit, it reshapes CS and math.",
-        "ripple": "Transformed the sociology of mathematics overnight—demonstrating industrial-scale autonomous theorem generation.",
-        "verification": "Marked down candidly: 235 families have Lean entries, but bulk external audits are ongoing and 3 papers were retracted.",
-        "velocity": "Generated 372 open-problem result families in a single automated sweep at ~3 hours of compute per family."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "OpenAI — github.com/openai/math (722 Manuscripts & Lean Challenge Repository)",
-          "url": "https://github.com/openai/math",
-          "type": "code"
-        },
-        {
-          "label": "Mining New Mathematical Instruments from OpenAI’s October 2026 Release (arXiv:2610.17090)",
-          "url": "https://arxiv.org/abs/2610.17090",
-          "type": "paper"
-        },
-        {
-          "label": "Fello AI — What OpenAI Released on 6 October 2026 (Audit Breakdown)",
-          "url": "https://felloai.com/ai-solved-math-problems/",
-          "type": "explainer"
         }
       ]
     },
@@ -2006,6 +1943,69 @@
       ]
     },
     {
+      "id": "openai-math-bulk-ugc-2026",
+      "title": "OpenAI 722-Manuscript Release: Claimed Proofs of Unique Games, Quasi-RH & Kaplansky",
+      "shortTitle": "OpenAI 722-Paper Math Release (UGC)",
+      "date": "2026-10-06",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Computational Complexity",
+        "Pure Mathematics",
+        "Bulk Autonomous Discovery"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI Internal Frontier Math Model",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 24,
+      "aiTimeToSolve": "~3 hrs / family",
+      "isAnchor": false,
+      "whyItMatters": "Unprecedented 722-manuscript release across 372 problem families (235 with Lean formalizations), claiming resolutions of Unique Games Conjecture, Quasi-RH (7/8), and Kaplansky zero-divisors.",
+      "summary": "OpenAI published github.com/openai/math containing 722 manuscripts grouped into 372 result families generated from ~4,000 open problems posed to an unreleased internal model (~3 hours of Pro compute each). Headline claims with Lean entries include Subhash Khot’s 2002 Unique Games Conjecture, a 7/8 zero-free Quasi-Riemann Hypothesis, Mahler conjectures, Kaplansky’s zero-divisor refutation, and matrix multiplication ω ≤ 9/4—triggering both awe and intense community scrutiny over bulk unrefereed releases.",
+      "technicalHighlights": [
+        "Released 722 manuscripts across 372 families, with 235 families linked to machine-checkable Lean 4 challenge files (405 challenge specs).",
+        "Headline Lean-backed claims include Unique Games Conjecture (family 102), Kaplansky zero-divisor refutation (196), and Quasi-RH at 7/8 (003).",
+        "Prompted independent extraction efforts (e.g., arXiv:2610.17090) and global debate over the IAS AGMAI release guidelines."
+      ],
+      "caveats": "OpenAI’s own catalogue marked formal checks as initially \"unchecked\"; three Hodge/Weil manuscripts were retracted within 3 days after a sign error, and some Lean entries cover narrower statements than the accompanying PDFs.",
+      "contributors": [
+        "OpenAI Frontier Mathematics Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 92,
+        "verification": 62,
+        "velocity": 100
+      },
+      "scoreRationale": {
+        "foundational": "If even a fraction of headline Lean-backed claims (UGC, Kaplansky, Quasi-RH) survive audit, it reshapes CS and math.",
+        "ripple": "Transformed the sociology of mathematics overnight—demonstrating industrial-scale autonomous theorem generation.",
+        "verification": "Marked down candidly: 235 families have Lean entries, but bulk external audits are ongoing and 3 papers were retracted.",
+        "velocity": "Generated 372 open-problem result families in a single automated sweep at ~3 hours of compute per family."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI — github.com/openai/math (722 Manuscripts & Lean Challenge Repository)",
+          "url": "https://github.com/openai/math",
+          "type": "code"
+        },
+        {
+          "label": "Mining New Mathematical Instruments from OpenAI’s October 2026 Release (arXiv:2610.17090)",
+          "url": "https://arxiv.org/abs/2610.17090",
+          "type": "paper"
+        },
+        {
+          "label": "Fello AI — What OpenAI Released on 6 October 2026 (Audit Breakdown)",
+          "url": "https://felloai.com/ai-solved-math-problems/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "subquadratic-3sum-subcubic-apsp-2026",
       "title": "Claude Discovers Truly Subquadratic 3SUM & Subcubic APSP Algorithms (Lean 4)",
       "shortTitle": "Subquadratic 3SUM & Subcubic APSP",
@@ -2066,6 +2066,60 @@
       ]
     },
     {
+      "id": "claude-art-enzyme-system-2026",
+      "title": "950 Claude Agents Autonomously Discover CRISPR-Like Bacteriophage Enzyme System (ART)",
+      "shortTitle": "Claude Discovers ART Enzymes",
+      "date": "2026-09-23",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Genomics",
+        "Synthetic Biology",
+        "Enzyme Discovery"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Anthropic Claude Biology Agent Fleet (~950 Agents)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "21 hours",
+      "isAnchor": false,
+      "whyItMatters": "An autonomous 21-hour run of ~950 Claude agents mined 200,000 reverse transcriptases to discover array-associated reverse transcriptases (ART)—a novel CRISPR-like genomic system.",
+      "summary": "Anthropic’s life sciences research lab unveiled its first autonomous biological discovery: ~950 Claude agents spent 21 hours (210M tokens) scanning 200,000 microbial reverse transcriptases, narrowing 3,500 candidates down to 20 systems and flagging array-associated reverse transcriptases (ART) in bacteriophages—an uncharacterized enzyme family flanked by evenly spaced CRISPR-like DNA repeats. CRISPR pioneer Feng Zhang called the finding \"genuinely intriguing.\"",
+      "technicalHighlights": [
+        "Autonomously scanned 200,000 reverse transcriptases across metagenomic databases in 21 hours to isolate a novel repeat-associated enzyme class.",
+        "Identified structural repeat arrays reminiscent of CRISPR loci in bacteriophages, pointing to a potential new programmable nucleic-acid mechanism.",
+        "Endorsed as genuinely intriguing by CRISPR pioneer Feng Zhang, accompanied by a technical preprint."
+      ],
+      "caveats": "The exact biological function and gene-editing utility of ART enzymes remain experimentally uncharacterized; wet-lab mechanistic validation is still in early stages.",
+      "contributors": [
+        "Anthropic Biology Research Lab",
+        "Claude Autonomous Bio-Agents"
+      ],
+      "institutions": [
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 83,
+        "ripple": 87,
+        "verification": 74,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Uncovered a genuinely novel microbial enzyme-and-repeat genomic architecture via autonomous agent exploration.",
+        "ripple": "Could open new programmable genome-engineering tools beyond CRISPR if biochemical activity is confirmed.",
+        "verification": "Computational genomic discovery published as a preprint; wet-lab functional characterization is still ongoing.",
+        "velocity": "Compressed months of comparative-genomics database mining into a 21-hour autonomous multi-agent run."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Anthropic Research — Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "seymour-second-neighborhood-2026",
       "title": "OpenAI Proves Seymour’s 1990 Second-Neighborhood Conjecture, Corroborated by Specialist Reproof",
       "shortTitle": "Seymour Second-Neighborhood Conjecture",
@@ -2122,60 +2176,6 @@
           "label": "Kingy AI Breakthrough Tracker — Specialist Reproof Supports Seymour’s Second-Neighborhood Claim (Nov 24, 2026)",
           "url": "https://kingy.ai/mathematics-science-breakthrough-tracker/",
           "type": "explainer"
-        }
-      ]
-    },
-    {
-      "id": "claude-art-enzyme-system-2026",
-      "title": "950 Claude Agents Autonomously Discover CRISPR-Like Bacteriophage Enzyme System (ART)",
-      "shortTitle": "Claude Discovers ART Enzymes",
-      "date": "2026-09-23",
-      "discipline": "Biology & Medicine",
-      "subfields": [
-        "Genomics",
-        "Synthetic Biology",
-        "Enzyme Discovery"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neural / Deep Learning",
-      "aiSystem": "Anthropic Claude Biology Agent Fleet (~950 Agents)",
-      "verificationStatus": "Preprint / Active Review",
-      "yearsUnsolved": null,
-      "aiTimeToSolve": "21 hours",
-      "isAnchor": false,
-      "whyItMatters": "An autonomous 21-hour run of ~950 Claude agents mined 200,000 reverse transcriptases to discover array-associated reverse transcriptases (ART)—a novel CRISPR-like genomic system.",
-      "summary": "Anthropic’s life sciences research lab unveiled its first autonomous biological discovery: ~950 Claude agents spent 21 hours (210M tokens) scanning 200,000 microbial reverse transcriptases, narrowing 3,500 candidates down to 20 systems and flagging array-associated reverse transcriptases (ART) in bacteriophages—an uncharacterized enzyme family flanked by evenly spaced CRISPR-like DNA repeats. CRISPR pioneer Feng Zhang called the finding \"genuinely intriguing.\"",
-      "technicalHighlights": [
-        "Autonomously scanned 200,000 reverse transcriptases across metagenomic databases in 21 hours to isolate a novel repeat-associated enzyme class.",
-        "Identified structural repeat arrays reminiscent of CRISPR loci in bacteriophages, pointing to a potential new programmable nucleic-acid mechanism.",
-        "Endorsed as genuinely intriguing by CRISPR pioneer Feng Zhang, accompanied by a technical preprint."
-      ],
-      "caveats": "The exact biological function and gene-editing utility of ART enzymes remain experimentally uncharacterized; wet-lab mechanistic validation is still in early stages.",
-      "contributors": [
-        "Anthropic Biology Research Lab",
-        "Claude Autonomous Bio-Agents"
-      ],
-      "institutions": [
-        "Anthropic"
-      ],
-      "scores": {
-        "foundational": 83,
-        "ripple": 87,
-        "verification": 74,
-        "velocity": 94
-      },
-      "scoreRationale": {
-        "foundational": "Uncovered a genuinely novel microbial enzyme-and-repeat genomic architecture via autonomous agent exploration.",
-        "ripple": "Could open new programmable genome-engineering tools beyond CRISPR if biochemical activity is confirmed.",
-        "verification": "Computational genomic discovery published as a preprint; wet-lab functional characterization is still ongoing.",
-        "velocity": "Compressed months of comparative-genomics database mining into a 21-hour autonomous multi-agent run."
-      },
-      "enables": [],
-      "sources": [
-        {
-          "label": "Anthropic Research — Claude discovers a novel enzyme system with CRISPR-like repeats",
-          "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
-          "type": "announcement"
         }
       ]
     },
@@ -2802,6 +2802,73 @@
         {
           "label": "Anthropic Research — Learning more about Claude’s mathematical capabilities",
           "url": "https://www.anthropic.com/research/riemann-zeta",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "evo-viable-bacteriophages-2026",
+      "title": "Evo 1 & Evo 2 Generatively Design 16 Viable Whole-Genome Bacteriophages Overcoming E. coli Resistance",
+      "shortTitle": "Evo Viable AI Bacteriophages (Science)",
+      "date": "2026-08-06",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Synthetic Biology",
+        "Genome Foundation Models",
+        "Phage Therapy"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Evo 1 & Evo 2 Genome Language Models (Arc Institute / Stanford)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Published in Science, Arc Institute and Stanford used Evo genome language models to design 16 living, replicating bacteriophage viruses from scratch that defeated phage-resistant E. coli.",
+      "summary": "Published in Science on August 6, 2026 (following a September 2025 bioRxiv preprint), Samuel H. King, Brian L. Hie, and colleagues at Stanford University and the Arc Institute demonstrated the first generative design of complete, viable viral genomes using the Evo 1 and Evo 2 genomic foundation models. Fine-tuned on Microviridae bacteriophages with ΦX174 as a design template, the models generated 302 full-genome candidates; experimental synthesis and testing yielded 16 distinct replicating phages with diverse fitness profiles. Cryo-electron microscopy confirmed that one AI-designed phage incorporated an evolutionarily distant DNA packaging protein into its capsid, and cocktails of the generated phages rapidly overcame ΦX174-resistant E. coli strains.",
+      "technicalHighlights": [
+        "Synthesized 302 AI-generated complete viral genomes from Evo 1 and Evo 2, yielding 16 viable, replicating bacteriophages in wet-lab E. coli assays.",
+        "Cryo-EM verified that an AI-generated phage successfully assembled a capsid incorporating an evolutionarily distant DNA packaging protein.",
+        "Cocktails of AI-designed phages rapidly overcame bacterial strains resistant to natural ΦX174, illustrating a path to generative phage therapy."
+      ],
+      "caveats": "Restricted intentionally to non-pathogenic bacterial viruses (bacteriophages) with strict biosafety screening; as discussed in an accompanying Science Perspective by Inglesby & Hanke, genome-scale generative models raise biosecurity governance questions alongside therapeutic promise.",
+      "contributors": [
+        "Samuel H. King",
+        "Claudia L. Driscoll",
+        "David B. Li",
+        "Brian L. Hie"
+      ],
+      "institutions": [
+        "Stanford University",
+        "Arc Institute"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 92,
+        "verification": 94,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "First experimental demonstration that generative genome language models can design complete, viable self-replicating biological genomes rather than isolated genes or proteins.",
+        "ripple": "Establishes a genome-scale blueprint for AI-designed phage therapies against antimicrobial resistance and synthetic biology.",
+        "verification": "Peer-reviewed in Science (Vol. 393, Issue 6811) with full wet-lab replication, cryo-EM structural confirmation, and resistance-escape assays.",
+        "velocity": "Compressed whole-genome evolutionary design and multi-gene epistatic compatibility into automated generative sampling."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Science (Aug 6, 2026) — Generative design of bacteriophages with genome language models (DOI: 10.1126/science.aec2657)",
+          "url": "https://www.science.org/doi/10.1126/science.aec2657",
+          "type": "paper"
+        },
+        {
+          "label": "PubMed — King et al., Science 2026 (PMID: 42561074)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42561074/",
+          "type": "paper"
+        },
+        {
+          "label": "Arc Institute — How We Built the First AI-Generated Genomes",
+          "url": "https://arcinstitute.org/news/hie-king-first-synthetic-phage",
           "type": "announcement"
         }
       ]
@@ -4043,6 +4110,128 @@
       ]
     },
     {
+      "id": "gpt4b-micro-yamanaka-2025",
+      "title": "OpenAI GPT-4b micro & Retro Biosciences Engineer Yamanaka Stem-Cell Factors with 50× Reprogramming Gains",
+      "shortTitle": "GPT-4b micro Yamanaka Factors",
+      "date": "2025-08-22",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Protein Engineering",
+        "Cellular Reprogramming",
+        "Regenerative Medicine"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI GPT-4b micro (Biology-Specialized LLM)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "OpenAI’s biology-tuned GPT-4b micro redesigned the Nobel-winning Yamanaka reprogramming proteins (SOX2 and KLF4), achieving >50× higher pluripotency marker expression and improved DNA repair in wet-lab human cells.",
+      "summary": "In August 2025, OpenAI and longevity biotech Retro Biosciences published experimental results from GPT-4b micro, a biology-specialized small language model trained on protein sequences, structural context, and protein-interaction data. Tasked with redesigning the notoriously disordered Yamanaka transcription factors SOX2 and KLF4—which have historically resisted rational mutagenesis—GPT-4b micro proposed extensive multi-mutation variants (RetroSOX and RetroKLF) that achieved over 50-fold increases in pluripotency marker expression and enhanced DNA-damage repair in wet-lab human fibroblast reprogramming assays across multiple donors.",
+      "technicalHighlights": [
+        "Engineered RetroSOX and RetroKLF variants containing dozens of simultaneous mutations across intrinsically disordered regions where structure-only tools struggle.",
+        "Wet-lab assays demonstrated >50× gains in pluripotency marker expression alongside faster reprogramming kinetics and reduced DNA damage.",
+        "Validated across multiple human donor cell lines and reprogramming protocols in Retro Biosciences laboratories."
+      ],
+      "caveats": "Disclosed via a joint OpenAI / Retro Biosciences technical report rather than a peer-reviewed journal publication; full sequence data, model weights, and independent academic replication remain limited.",
+      "contributors": [
+        "OpenAI Science Team",
+        "Retro Biosciences Research Team"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Retro Biosciences"
+      ],
+      "scores": {
+        "foundational": 83,
+        "ripple": 88,
+        "verification": 68,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Shows that sequence-trained LLMs can substantially optimize intrinsically disordered transcription factors that evade traditional structure-based protein engineering.",
+        "ripple": "Higher-efficiency, lower-damage cellular reprogramming could accelerate induced pluripotent stem cell (iPSC) manufacturing and regenerative medicine.",
+        "verification": "Backed by multi-donor wet-lab validation at Retro Biosciences, but scored conservatively pending independent peer-reviewed journal publication and open replication.",
+        "velocity": "Proposed high-order multi-mutant variants far faster than iterative directed-evolution campaigns."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI (Aug 22, 2025) — Accelerating life sciences research with Retro Biosciences",
+          "url": "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/",
+          "type": "announcement"
+        },
+        {
+          "label": "Endpoints News — OpenAI, Retro Bio detail results of GPT-4b micro protein model",
+          "url": "https://endpoints.news/openai-retro-bio-detail-results-of-ai-model-for-proteins/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "mit-generative-antibiotics-2025",
+      "title": "Generative AI Designs De Novo Antibiotics (NG1 & DN1) Defeating Drug-Resistant Gonorrhea and MRSA in Mice",
+      "shortTitle": "MIT Generative Antibiotics (NG1/DN1)",
+      "date": "2025-08-14",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Antimicrobial Discovery",
+        "Generative Chemistry",
+        "Infectious Disease"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "MIT Collins Lab Generative Fragment & Atom-Level Antibiotic AI",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Published in Cell, MIT researchers moved beyond screening existing libraries to generatively design 36M+ hypothetical molecules from scratch—yielding two novel antibiotics (NG1 and DN1) that cleared superbug infections in mice.",
+      "summary": "Published in Cell on August 14, 2025, Aarti Krishnan, Melis Anahtar, Jacqueline Valeri, James J. Collins, and colleagues at MIT and the Broad Institute used two complementary generative deep-learning platforms (fragment-based genetic algorithms and unconstrained atom-by-atom variational/graph generative models) to design over 36 million completely novel chemical candidates targeting multidrug-resistant Neisseria gonorrhoeae and MRSA. After computational filtering for toxicity, synthetic accessibility, and structural novelty, the team synthesized 24 top designs and validated two structurally unprecedented leads—NG1 (targeting a novel bacterial membrane protein LptA in gonorrhea) and DN1 (disrupting MRSA membranes)—both of which cleared infections in mouse models.",
+      "technicalHighlights": [
+        "Generated and screened >36 million previously nonexistent chemical structures from scratch rather than searching pre-built vendor libraries.",
+        "Lead candidate NG1 selectively killed multidrug-resistant Neisseria gonorrhoeae via a novel membrane-assembly target (LptA) and cured vaginal infection models in mice.",
+        "Second lead DN1 cleared topical MRSA skin infections in mice with a structurally distinct membrane-disrupting scaffold."
+      ],
+      "caveats": "Validated in preclinical mouse infection models; extensive medicinal-chemistry optimization, pharmacokinetics, toxicology, and human clinical trials are still required before patient use.",
+      "contributors": [
+        "Aarti Krishnan",
+        "Melis N. Anahtar",
+        "Jacqueline A. Valeri",
+        "James J. Collins"
+      ],
+      "institutions": [
+        "MIT",
+        "Broad Institute of MIT and Harvard"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 92,
+        "verification": 92,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Marks the inflection from AI screening existing chemical libraries (Halicin, Abaucin) to de novo generative design of structurally unprecedented, in-vivo-active antibiotics.",
+        "ripple": "Directly addresses WHO priority drug-resistant pathogens (gonorrhea and MRSA) with novel mechanisms of action.",
+        "verification": "Peer-reviewed in Cell with chemical synthesis, mechanistic target elucidation, and in vivo mouse efficacy models.",
+        "velocity": "Explored 36 million hypothetical molecules computationally before synthesizing only 24 candidates in the wet lab."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PMC / Cell (Aug 14, 2025) — A generative deep learning approach to de novo antibiotic design",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12790861/",
+          "type": "paper"
+        },
+        {
+          "label": "MIT News — Using generative AI, researchers design compounds that can kill drug-resistant bacteria",
+          "url": "https://news.mit.edu/2025/using-generative-ai-researchers-design-compounds-kill-drug-resistant-bacteria-0814",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "opencrispr-1-gene-editor-2025",
       "title": "OpenCRISPR-1 Becomes the First Fully AI-Designed Gene Editor Validated in Human Cells",
       "shortTitle": "OpenCRISPR-1 AI Gene Editor",
@@ -4358,6 +4547,132 @@
       ]
     },
     {
+      "id": "rentosertib-phase2a-ipf-2025",
+      "title": "Rentosertib (ISM001-055): First Fully AI-Discovered Target and Generative AI Drug Shows Phase 2a Clinical Efficacy",
+      "shortTitle": "Rentosertib AI Drug Phase 2a",
+      "date": "2025-06-03",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Clinical Drug Discovery",
+        "Generative Chemistry",
+        "Pulmonary Fibrosis"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Insilico Medicine Pharma.AI (PandaOmics + Chemistry42)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "18 months (target to preclinical)",
+      "isAnchor": false,
+      "whyItMatters": "Published in Nature Medicine, Insilico Medicine’s rentosertib became the first drug with both an AI-discovered biological target (TNIK) and AI-generated molecule to report positive randomized Phase 2a human clinical efficacy.",
+      "summary": "Published in Nature Medicine on June 3, 2025, a multicenter, double-blind, placebo-controlled Phase 2a clinical trial (GENESIS-IPF, 71 patients across 22 sites) evaluated rentosertib (ISM001-055), an investigational small-molecule inhibitor for idiopathic pulmonary fibrosis (IPF). Both the novel fibrotic disease target (TNIK kinase) and the drug’s chemical structure were generated by Insilico Medicine’s Pharma.AI platform (PandaOmics target discovery + Chemistry42 generative design) in roughly 18 months from target hypothesis to preclinical candidate. Over 12 weeks, patients receiving 60 mg once daily achieved a mean forced vital capacity (FVC) increase of +98.4 mL compared with −20.3 mL on placebo, with comparable safety across arms.",
+      "technicalHighlights": [
+        "First peer-reviewed Phase 2a randomized human trial where both the novel biological target (TNIK) and small-molecule inhibitor were generated by AI.",
+        "60 mg once-daily arm achieved +98.4 mL mean FVC lung-function improvement (95% CI 10.9–185.9) vs. −20.3 mL placebo over 12 weeks.",
+        "Compressed target-to-preclinical-candidate discovery from typical 4–5 years down to ~18 months, advancing toward Phase 3 trials."
+      ],
+      "caveats": "Phase 2a trial was relatively small (71 patients) and short (12 weeks, conducted in China); larger, longer global Phase 2b/3 trials are required to confirm durable clinical benefit and long-term safety.",
+      "contributors": [
+        "Zuojun Xu",
+        "Feng Ren",
+        "Alex Zhavoronkov",
+        "Insilico Medicine Clinical Team"
+      ],
+      "institutions": [
+        "Insilico Medicine",
+        "Peking Union Medical College Hospital"
+      ],
+      "scores": {
+        "foundational": 87,
+        "ripple": 93,
+        "verification": 90,
+        "velocity": 89
+      },
+      "scoreRationale": {
+        "foundational": "Crucial clinical proof-of-concept that end-to-end generative AI target identification and molecular design can translate into measurable efficacy in human patients.",
+        "ripple": "Sets a clinical benchmark for the entire AI-driven pharmaceutical industry after years of preclinical-only milestones and early Phase 1 discontinuations.",
+        "verification": "Peer-reviewed randomized, double-blind, placebo-controlled Phase 2a human clinical trial published in Nature Medicine.",
+        "velocity": "Cut target-to-preclinical discovery timeline roughly in half before entering human clinical testing."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PMC / Nature Medicine (Jun 3, 2025) — A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12353801/",
+          "type": "paper"
+        },
+        {
+          "label": "Drug Discovery Trends — Insilico’s AI-designed rentosertib clears a Phase 2a hurdle",
+          "url": "https://www.drugdiscoverytrends.com/insilicos-ai-designed-rentosertib-shows-promise-in-first-phase-2a-trial-results/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "aurora-earth-system-2025",
+      "title": "Microsoft Research Aurora: First Multi-Domain Foundation Model for the Earth System",
+      "shortTitle": "Aurora Earth System AI (Nature)",
+      "date": "2025-05-21",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Earth System Science",
+        "Atmospheric Physics",
+        "Foundation Models"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Aurora (3D Swin Transformer Earth System Foundation Model, Microsoft Research)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Published in Nature, Microsoft’s Aurora pretrained on >1M hours of geophysical data to outperform operational numerical physics simulators across air quality, ocean waves, tropical cyclones, and high-resolution weather.",
+      "summary": "Published in Nature on May 21, 2025, Cristian Bodnar, Paris Perdikaris, Richard E. Turner, and colleagues at Microsoft Research AI for Science introduced Aurora, a 1.3-billion-parameter 3D Swin Transformer foundation model pretrained on over one million hours of heterogeneous geophysical simulation and observation data. Unlike single-purpose weather neural nets, Aurora fine-tunes rapidly across distinct Earth-system domains: it outperformed operational atmospheric chemistry models (CAMS) on 74% of global air-pollution targets, beat numerical wave models on 86% of ocean-wave targets, surpassed 7 operational agencies on 100% of 5-day tropical cyclone track benchmarks, and ran ~5,000×–100,000× faster than numerical PDE solvers.",
+      "technicalHighlights": [
+        "First unified Earth-system foundation model spanning global air pollution, ocean waves, tropical cyclone tracks, and 0.1° high-resolution weather.",
+        "Outperformed all 7 operational forecasting centers on 100% of 5-day tropical cyclone track forecasts (including Typhoon Doksuri) and 92% of 10-day high-res weather targets.",
+        "Open-sourced weights and code (later extended to Aurora 1.5 in 2026) at orders-of-magnitude lower computational cost than classical PDE integration."
+      ],
+      "caveats": "Depends on historical reanalysis and numerical-model outputs for pretraining and initial conditions; extreme out-of-distribution climate regimes still require careful physical calibration.",
+      "contributors": [
+        "Cristian Bodnar",
+        "Wessel P. Bruinsma",
+        "Ana Lucic",
+        "Richard E. Turner",
+        "Paris Perdikaris"
+      ],
+      "institutions": [
+        "Microsoft Research AI for Science",
+        "University of Pennsylvania",
+        "University of Cambridge"
+      ],
+      "scores": {
+        "foundational": 88,
+        "ripple": 92,
+        "verification": 94,
+        "velocity": 93
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrates that a single pretrained foundation model can generalize across coupled geophysical PDE systems (atmosphere, chemistry, ocean waves).",
+        "ripple": "Democratizes high-resolution air-quality, cyclone, and climate forecasting for agencies and researchers without national supercomputers.",
+        "verification": "Peer-reviewed in Nature (Vol. 641, pp. 1180–1187) with open-source code, model weights, and rigorous operational benchmarks.",
+        "velocity": "Delivers forecasts up to 100,000× faster than operational atmospheric chemistry and numerical weather models."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PubMed / Nature (May 21, 2025) — A foundation model for the Earth system (DOI: 10.1038/s41586-025-09005-y)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40399684/",
+          "type": "paper"
+        },
+        {
+          "label": "GitHub — microsoft/aurora Open-Source Model & Documentation",
+          "url": "https://github.com/microsoft/aurora",
+          "type": "code"
+        }
+      ]
+    },
+    {
       "id": "alphaevolve-matrix-2025",
       "title": "AlphaEvolve: Evolutionary Coding Agent & 48-Multiplication 4×4 Matrix Algorithm",
       "shortTitle": "AlphaEvolve & 4×4 Matrix",
@@ -4474,7 +4789,9 @@
         "verification": "Open weights/code, bioRxiv/peer-reviewed benchmarks, and wet-lab synthesis of functional phage genomes.",
         "velocity": "Moved generative biology from single protein chains to whole functional viral genomes in under two years."
       },
-      "enables": [],
+      "enables": [
+        "evo-viable-bacteriophages-2026"
+      ],
       "sources": [
         {
           "label": "bioRxiv: Genome modeling and design across all domains of life with Evo 2",
@@ -4744,6 +5061,77 @@
       ]
     },
     {
+      "id": "flywire-malecns-connectome-2024",
+      "title": "FlyWire & MaleCNS: Flood-Filling Neural Networks Enable Complete Adult Fruit Fly Brain & Nerve Cord Connectomes",
+      "shortTitle": "FlyWire & MaleCNS Brain Connectome",
+      "date": "2024-10-02",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Connectomics",
+        "Systems Neuroscience",
+        "3D Computer Vision"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Google Flood-Filling Networks (FFNs) + Automated Synapse & Neurotransmitter CNNs",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "~33–44 person-yrs (vs. ~50,000 manual)",
+      "isAnchor": false,
+      "whyItMatters": "Google’s Flood-Filling Neural Networks compressed ~50,000 person-years of EM neuron tracing into ~33–44 person-years, enabling the first complete adult fruit fly brain (Nature 2024) and full brain+nerve cord (Cell 2026).",
+      "summary": "In a landmark Nature package on October 2, 2024, the FlyWire Consortium (led by Sebastian Seung and Mala Murthy at Princeton with Google Research, Cambridge, and HHMI Janelia) published the first complete neuronal wiring diagram of an adult animal brain—reconstructing 139,255 neurons and 54.5 million chemical synapses across a full Drosophila melanogaster brain from 21 million electron-microscopy images. Powered by Google’s Flood-Filling Networks (FFNs) for 3D volumetric segmentation alongside automated synapse and neurotransmitter-classification neural nets, the AI pipeline reduced an estimated ~50,000 person-years of manual tracing to ~33 person-years of proofreading. On September 3, 2026, Janelia, Cambridge, and Google extended this milestone in Cell with MaleCNS: 166,700 neurons and 124 million synaptic contacts uniting the entire male brain and ventral nerve cord from eyes to legs.",
+      "technicalHighlights": [
+        "FlyWire (Nature, Oct 2024): First complete adult brain connectome (139,255 neurons, 54.5M synapses, 8,453 cell types) plus whole-brain computational circuit simulations.",
+        "MaleCNS (Cell, Sep 2026): Extended AI segmentation to 166,700 neurons and 124M synaptic contacts uniting the full brain and ventral nerve cord (\"eyes to legs\").",
+        "Google Flood-Filling Networks + ResNet50 neurotransmitter classifiers achieved >1,000× human-effort compression over manual electron-microscopy reconstruction."
+      ],
+      "caveats": "AI automated segmentation still required 33–44 person-years of expert human proofreading to correct merge/split errors, and static connectomes do not directly capture neuromodulators, gap junctions, or synaptic plasticity.",
+      "contributors": [
+        "Sven Dorkenwald",
+        "Sebastian Seung",
+        "Mala Murthy",
+        "Gregory Jefferis",
+        "Viren Jain",
+        "FlyWire & MaleCNS Consortia"
+      ],
+      "institutions": [
+        "Princeton University",
+        "Google Research",
+        "HHMI Janelia Research Campus",
+        "University of Cambridge"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 91,
+        "verification": 96,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "First complete synaptic-resolution wiring diagrams of a complex adult animal brain and full central nervous system in the history of neuroscience.",
+        "ripple": "Already powers whole-brain behavioral simulations, cell-type atlases, and circuit-level studies of vision, navigation, and neurological disease models.",
+        "verification": "Peer-reviewed across flagship Nature (Oct 2024) and Cell (Sep 2026) collections with open-access community proofreading and public data portals.",
+        "velocity": "Compressed an estimated ~50,000 person-years of impossible manual tracing into a feasible multi-year human–AI collaboration."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PubMed / Nature (Oct 2, 2024) — Neuronal wiring diagram of an adult brain (DOI: 10.1038/s41586-024-07558-y)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39358518/",
+          "type": "paper"
+        },
+        {
+          "label": "NIH Research Matters — Complete wiring map of an adult fruit fly brain",
+          "url": "https://www.nih.gov/news-events/nih-research-matters/complete-wiring-map-adult-fruit-fly-brain",
+          "type": "explainer"
+        },
+        {
+          "label": "Progressive Robot (Oct 2026) — Google Research & Janelia MaleCNS Complete Male Fruit Fly Brain + Nerve Cord (Cell, Sep 3, 2026)",
+          "url": "https://www.progressiverobot.com/2026/10/26/ai-quests-polar-peaks-mapping-human-brain/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "alphaproteo-binders-2024",
       "title": "AlphaProteo: High-Affinity De Novo Protein Binder Design",
       "shortTitle": "AlphaProteo Binders",
@@ -4990,6 +5378,69 @@
       ]
     },
     {
+      "id": "diii-d-fusion-tearing-rl-2024",
+      "title": "Deep Reinforcement Learning Proactively Prevents Disruptive Tearing Instabilities in the DIII-D Fusion Tokamak",
+      "shortTitle": "DIII-D Fusion Tearing RL (Nature)",
+      "date": "2024-02-21",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Nuclear Fusion",
+        "Plasma Physics",
+        "Deep Reinforcement Learning"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Princeton / PPPL Multimodal Deep Reinforcement Learning Plasma Controller",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Millisecond real-time control",
+      "isAnchor": false,
+      "whyItMatters": "Published in Nature, Princeton engineers deployed a real-time deep RL controller on the DIII-D tokamak that forecasted and proactively prevented plasma-terminating tearing instabilities 300 ms ahead of disruption.",
+      "summary": "Published in Nature on February 21, 2024, Jaemin Seo, Egemen Kolemen, and collaborators at Princeton University, Princeton Plasma Physics Laboratory (PPPL), and General Atomics demonstrated an autonomous deep reinforcement learning controller running live on the DIII-D National Fusion Facility tokamak. Unlike DeepMind’s 2022 TCV breakthrough focused on magnetic plasma shaping, the Princeton system paired a neural tearing-mode predictor with a DRL policy trained on historical plasma discharges to continuously steer neutral-beam heating and triangularity—keeping tearing probability below critical thresholds even under ITER-relevant high-performance plasma regimes.",
+      "technicalHighlights": [
+        "Predicted destructive magnetic tearing instabilities up to 300 milliseconds in advance from multimodal reactor sensor streams.",
+        "Autonomously adjusted neutral-beam power and plasma shape in real time on physical DIII-D discharges to avoid disruptions while maintaining high fusion gain.",
+        "Validated under low-torque, ITER-baseline-like operating conditions where passive tearing modes otherwise routinely terminate plasma confinement."
+      ],
+      "caveats": "Demonstrated on the DIII-D tokamak; transferring policies to burning-plasma reactors like ITER or commercial plants will require adapting to distinct wall materials, alpha-heating dynamics, and tighter actuator constraints.",
+      "contributors": [
+        "Jaemin Seo",
+        "SangKyeun Kim",
+        "Azarakhsh Jalalvand",
+        "Egemen Kolemen"
+      ],
+      "institutions": [
+        "Princeton University",
+        "Princeton Plasma Physics Laboratory (PPPL)",
+        "General Atomics (DIII-D)"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 90,
+        "verification": 94,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Solves one of the most dangerous operational obstacles to tokamak fusion energy—proactive avoidance of tearing-mode disruptions—via learned closed-loop control.",
+        "ripple": "Directly informs real-time AI control architectures for ITER, SPARC, and commercial fusion reactors.",
+        "verification": "Peer-reviewed in Nature (Vol. 626, pp. 746–751) with live experimental validation inside the largest US magnetic fusion facility.",
+        "velocity": "Executes complex multi-actuator plasma stabilization decisions on millisecond timescales faster than manual physics controllers."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PubMed / Nature (Feb 21, 2024) — Avoiding fusion plasma tearing instability with deep reinforcement learning",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38383624/",
+          "type": "paper"
+        },
+        {
+          "label": "US Department of Energy — AI Tackles Disruptive Tearing Instability in Fusion Plasma",
+          "url": "https://www.energy.gov/science/fes/articles/ai-tackles-disruptive-tearing-instability-fusion-plasma",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "alphageometry-imo-2024",
       "title": "AlphaGeometry Solves Olympiad Geometry at Near-Gold Level Without Human Proofs",
       "shortTitle": "AlphaGeometry (IMO Geometry)",
@@ -5055,6 +5506,68 @@
       ]
     },
     {
+      "id": "azure-quantum-battery-n2116-2024",
+      "title": "Microsoft Azure Quantum Elements & PNNL Screen 32 Million Candidates in 80 Hours to Synthesize Battery Electrolyte N2116",
+      "shortTitle": "Azure Quantum Battery N2116",
+      "date": "2024-01-09",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Solid-State Batteries",
+        "Materials Screening",
+        "High-Throughput AI + HPC"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Microsoft Azure Quantum Elements AI Screening Pipeline + DFT/MD",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "80 hours (32M to 18 candidates)",
+      "isAnchor": false,
+      "whyItMatters": "Microsoft and PNNL used AI property-prediction models plus cloud HPC to winnow 32.6 million inorganic candidates down to 18 in 80 hours, synthesizing novel solid-state electrolyte N2116 that cuts lithium use by up to 70%.",
+      "summary": "Announced on January 9, 2024, Microsoft Research and the U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) combined graph neural network materials screening with automated density functional theory (DFT) and molecular dynamics inside Azure Quantum Elements to search 32.6 million hypothetical inorganic crystal structures for low-lithium solid-state battery electrolytes. Within 80 hours, the AI pipeline narrowed the search to 500,000 stable candidates, 800 functional candidates, and 18 top leads; PNNL chemists synthesized one previously unknown lithium–sodium–yttrium chloride electrolyte (N2116) and demonstrated it powering a working prototype lightbulb.",
+      "technicalHighlights": [
+        "Screened 32.6 million inorganic crystal candidates down to 18 viable solid-state electrolyte leads in ~80 hours—an effort estimated to take >20 years conventionally.",
+        "Synthesized novel mixed lithium/sodium solid-state electrolyte N2116 at PNNL, reducing lithium content by up to 70% compared with conventional lithium electrolytes.",
+        "Demonstrated an end-to-end cloud AI + HPC + national-lab wet synthesis loop from virtual screening to a functioning battery cell in under 9 months."
+      ],
+      "caveats": "Commercial viability, long-term dendrite resistance, high-rate cycling stability, and full independent peer-reviewed electrochemical benchmarking remain ongoing; initial demo proved functional conductivity rather than drop-in EV readiness.",
+      "contributors": [
+        "Nathan Baker",
+        "Brian Abrahamson",
+        "Vijay Murugesan",
+        "Microsoft Quantum & PNNL Teams"
+      ],
+      "institutions": [
+        "Microsoft Research",
+        "Pacific Northwest National Laboratory (PNNL)"
+      ],
+      "scores": {
+        "foundational": 81,
+        "ripple": 86,
+        "verification": 74,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "Validates high-throughput neural-potential + DFT funneling to discover a genuinely novel synthesized solid-state ion conductor.",
+        "ripple": "High strategic relevance for battery supply chains and grid storage, showcasing practical AI-HPC integration with DOE national labs.",
+        "verification": "Physically synthesized and tested in a working cell at PNNL, though scored below Nature/Science journal benchmarks pending full long-cycle peer-reviewed validation.",
+        "velocity": "Compressed an estimated ~20-year materials screening pipeline into 80 hours of automated AI + HPC filtering."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Microsoft Azure Blog (Jan 9, 2024) — How Microsoft’s AI screened over 32 million candidates to find a better battery",
+          "url": "https://azure.microsoft.com/en-us/blog/quantum/2024/01/09/unlocking-a-new-era-for-scientific-discovery-with-ai-how-microsofts-ai-screened-over-32-million-candidates-to-find-a-better-battery/",
+          "type": "announcement"
+        },
+        {
+          "label": "Microsoft News — How AI and high-performance computing are speeding up scientific discovery",
+          "url": "https://news.microsoft.com/source/features/innovation/how-ai-and-hpc-are-speeding-up-scientific-discovery/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "coscientist-autonomous-chemistry-2023",
       "title": "Coscientist Uses GPT-4 to Autonomously Plan, Code & Execute Real Chemical Synthesis",
       "shortTitle": "Coscientist (CMU Wet-Lab LLM)",
@@ -5115,6 +5628,71 @@
         {
           "label": "CMU Engineering — AI Coscientist automates scientific discovery",
           "url": "https://engineering.cmu.edu/news-events/news/2023/12/20-ai-coscientist.html",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "explainable-gnn-mrsa-antibiotics-2023",
+      "title": "Explainable Graph Neural Networks Discover the First New Structural Class of MRSA Antibiotics in Over 60 Years",
+      "shortTitle": "Explainable GNN MRSA Antibiotics",
+      "date": "2023-12-20",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Antibiotic Discovery",
+        "Explainable AI",
+        "Graph Neural Networks"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "MIT Collins Lab Explainable Substructure GNN Ensemble (Chemprop + MCTS Rationales)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 60,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "Published in Nature, MIT’s explainable GNNs screened 12M compounds and extracted explicit chemical substructures to uncover a brand-new structural class of antibiotics active against MRSA and VRE in mouse models.",
+      "summary": "Published in Nature on December 20, 2023, Felix Wong, Erica J. Zheng, James J. Collins, and colleagues at MIT and the Broad Institute trained ensembles of graph neural networks on experimental antibiotic activity and human-cell cytotoxicity data for 39,312 compounds, then predicted activity and low toxicity across 12,076,365 molecules. Crucially, they applied Monte Carlo tree search explainability algorithms to open the neural \"black box\" and isolate the exact chemical substructures driving selective antibacterial potency. Testing 283 compounds empirically uncovered a novel structural class selective against methicillin-resistant Staphylococcus aureus (MRSA) and vancomycin-resistant enterococci (VRE) with minimal resistance development and confirmed efficacy in two mouse MRSA infection models.",
+      "technicalHighlights": [
+        "Screened >12 million compounds simultaneously for Staphylococcus aureus potency and low human-cell cytotoxicity.",
+        "Extracted explicit chemical substructure rationales from deep GNN ensembles to discover a first-in-60-years structural antibiotic class.",
+        "Reduced bacterial titers in both topical MRSA skin infection and systemic thigh infection mouse models while evading rapid resistance."
+      ],
+      "caveats": "Preclinical mouse validation only; clinical safety, formulation, and human efficacy trials remain ahead (advanced via nonprofit Phare Bio).",
+      "contributors": [
+        "Felix Wong",
+        "Erica J. Zheng",
+        "Jacqueline A. Valeri",
+        "James J. Collins"
+      ],
+      "institutions": [
+        "MIT",
+        "Broad Institute of MIT and Harvard",
+        "Harvard University"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 91,
+        "verification": 94,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated that explainable graph neural networks can uncover an entirely new structural class of antibiotics rather than merely surfacing isolated single-molecule hits.",
+        "ripple": "Directly bridged discriminative library screening (Halicin/Abaucin) to mechanistic substructure design and subsequent 2025 generative antibiotics.",
+        "verification": "Peer-reviewed in Nature (Vol. 626, pp. 177–185) with 283 empirical compound assays, cytotoxicity profiling, and two in vivo mouse infection models.",
+        "velocity": "Evaluated 12 million compounds computationally and distilled actionable medicinal-chemistry substructures in months."
+      },
+      "enables": [
+        "mit-generative-antibiotics-2025"
+      ],
+      "sources": [
+        {
+          "label": "PubMed / Nature (Dec 20, 2023) — Discovery of a structural class of antibiotics with explainable deep learning",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38123686/",
+          "type": "paper"
+        },
+        {
+          "label": "MIT News — Using AI, MIT researchers identify a new class of antibiotic candidates",
+          "url": "https://news.mit.edu/2023/using-ai-mit-researchers-identify-antibiotic-candidates-1220",
           "type": "announcement"
         }
       ]
@@ -5187,6 +5765,70 @@
       ]
     },
     {
+      "id": "a-lab-autonomous-materials-2023",
+      "title": "Berkeley A-Lab Pairs AI Planning & Robotics to Synthesize Inorganic Materials Autonomously",
+      "shortTitle": "Berkeley A-Lab Autonomous Synthesis",
+      "date": "2023-11-29",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Autonomous Laboratories",
+        "Solid-State Inorganic Chemistry",
+        "Active Learning"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "A-Lab (Literature-NLP + Thermodynamic Models + Active-Learning Robotics)",
+      "verificationStatus": "Contested / Partial",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "17 days (41 claimed compounds)",
+      "isAnchor": true,
+      "whyItMatters": "First closed-loop AI-driven robotic solid-state synthesis lab published in Nature alongside GNoME—claiming 41 novel inorganic compounds in 17 days, before sparking a landmark Nature debate over automated XRD phase verification.",
+      "summary": "Published in Nature alongside DeepMind’s GNoME in November 2023 by Nathan Szymanski, Bernardus Rendy, Yuxing Fei, Yan Zeng, and Gerbrand Ceder at Lawrence Berkeley National Laboratory, A-Lab integrated historical literature mining, ML stability predictions, robotic powder dosing/heating, and automated X-ray diffraction (XRD) analysis in a 24/7 closed loop—reporting synthesis of 41 out of 58 targeted novel inorganic compounds in 17 days. In early 2024, independent solid-state chemists (Leeman, Palgrave et al.) challenged the automated XRD phase identifications in a widely discussed critique, prompting refinements in how autonomous labs verify crystallographic novelty.",
+      "technicalHighlights": [
+        "Closed the loop between computational crystal prediction (Materials Project / GNoME) and physical synthesis using robotic arms, furnaces, and automated XRD characterization.",
+        "Used active learning to iteratively revise failed synthesis recipes across 355 experiments in 17 days of continuous operation.",
+        "Triggered an influential community audit (Leeman & Palgrave, 2024) highlighting why automated spectroscopic/diffraction verification remains the hardest bottleneck in self-driving labs."
+      ],
+      "caveats": "Tagged Contested / Partial because independent crystallographers (notably Robert Palgrave & Leslie Leeman) disputed the automated Rietveld/XRD phase assignments for many of the 41 claimed 'novel' compounds; the Berkeley team acknowledged misidentifications in specific cases while defending the broader autonomous-synthesis methodology.",
+      "contributors": [
+        "Nathan J. Szymanski",
+        "Yan Zeng",
+        "Kristin A. Persson",
+        "Gerbrand Ceder"
+      ],
+      "institutions": [
+        "Lawrence Berkeley National Laboratory",
+        "UC Berkeley"
+      ],
+      "scores": {
+        "foundational": 79,
+        "ripple": 85,
+        "verification": 62,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Pioneered closed-loop autonomous solid-state inorganic synthesis combining active learning with physical robotics.",
+        "ripple": "Inspired a worldwide wave of self-driving materials labs and forced crucial new standards for machine-verified analytical chemistry.",
+        "verification": "Published in Nature, but scored down under Contested / Partial due to substantive post-publication challenges to automated XRD phase-novelty assignments.",
+        "velocity": "Executed 355 physical solid-state synthesis experiments across 58 target compounds in 17 days."
+      },
+      "enables": [
+        "mattergen-materials-2025"
+      ],
+      "sources": [
+        {
+          "label": "Nature — An autonomous laboratory for the accelerated synthesis of novel materials (Nov 2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700133/",
+          "type": "paper"
+        },
+        {
+          "label": "Chemistry World — New analysis raises doubts over autonomous lab’s materials discoveries (Jan 2024)",
+          "url": "https://www.chemistryworld.com/news/new-analysis-raises-doubts-over-autonomous-labs-materials-discoveries/4018791.article",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "gnome-materials-2023",
       "title": "GNoME: Graph Networks Predict 2.2 Million New Inorganic Crystals",
       "shortTitle": "GNoME Materials (Anchor)",
@@ -5253,70 +5895,6 @@
       ]
     },
     {
-      "id": "a-lab-autonomous-materials-2023",
-      "title": "Berkeley A-Lab Pairs AI Planning & Robotics to Synthesize Inorganic Materials Autonomously",
-      "shortTitle": "Berkeley A-Lab Autonomous Synthesis",
-      "date": "2023-11-29",
-      "discipline": "Chemistry & Materials",
-      "subfields": [
-        "Autonomous Laboratories",
-        "Solid-State Inorganic Chemistry",
-        "Active Learning"
-      ],
-      "aiRole": "Autonomous AI",
-      "aiParadigm": "Neuro-Symbolic",
-      "aiSystem": "A-Lab (Literature-NLP + Thermodynamic Models + Active-Learning Robotics)",
-      "verificationStatus": "Contested / Partial",
-      "yearsUnsolved": null,
-      "aiTimeToSolve": "17 days (41 claimed compounds)",
-      "isAnchor": true,
-      "whyItMatters": "First closed-loop AI-driven robotic solid-state synthesis lab published in Nature alongside GNoME—claiming 41 novel inorganic compounds in 17 days, before sparking a landmark Nature debate over automated XRD phase verification.",
-      "summary": "Published in Nature alongside DeepMind’s GNoME in November 2023 by Nathan Szymanski, Bernardus Rendy, Yuxing Fei, Yan Zeng, and Gerbrand Ceder at Lawrence Berkeley National Laboratory, A-Lab integrated historical literature mining, ML stability predictions, robotic powder dosing/heating, and automated X-ray diffraction (XRD) analysis in a 24/7 closed loop—reporting synthesis of 41 out of 58 targeted novel inorganic compounds in 17 days. In early 2024, independent solid-state chemists (Leeman, Palgrave et al.) challenged the automated XRD phase identifications in a widely discussed critique, prompting refinements in how autonomous labs verify crystallographic novelty.",
-      "technicalHighlights": [
-        "Closed the loop between computational crystal prediction (Materials Project / GNoME) and physical synthesis using robotic arms, furnaces, and automated XRD characterization.",
-        "Used active learning to iteratively revise failed synthesis recipes across 355 experiments in 17 days of continuous operation.",
-        "Triggered an influential community audit (Leeman & Palgrave, 2024) highlighting why automated spectroscopic/diffraction verification remains the hardest bottleneck in self-driving labs."
-      ],
-      "caveats": "Tagged Contested / Partial because independent crystallographers (notably Robert Palgrave & Leslie Leeman) disputed the automated Rietveld/XRD phase assignments for many of the 41 claimed 'novel' compounds; the Berkeley team acknowledged misidentifications in specific cases while defending the broader autonomous-synthesis methodology.",
-      "contributors": [
-        "Nathan J. Szymanski",
-        "Yan Zeng",
-        "Kristin A. Persson",
-        "Gerbrand Ceder"
-      ],
-      "institutions": [
-        "Lawrence Berkeley National Laboratory",
-        "UC Berkeley"
-      ],
-      "scores": {
-        "foundational": 79,
-        "ripple": 85,
-        "verification": 62,
-        "velocity": 88
-      },
-      "scoreRationale": {
-        "foundational": "Pioneered closed-loop autonomous solid-state inorganic synthesis combining active learning with physical robotics.",
-        "ripple": "Inspired a worldwide wave of self-driving materials labs and forced crucial new standards for machine-verified analytical chemistry.",
-        "verification": "Published in Nature, but scored down under Contested / Partial due to substantive post-publication challenges to automated XRD phase-novelty assignments.",
-        "velocity": "Executed 355 physical solid-state synthesis experiments across 58 target compounds in 17 days."
-      },
-      "enables": [
-        "mattergen-materials-2025"
-      ],
-      "sources": [
-        {
-          "label": "Nature — An autonomous laboratory for the accelerated synthesis of novel materials (Nov 2023)",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700133/",
-          "type": "paper"
-        },
-        {
-          "label": "Chemistry World — New analysis raises doubts over autonomous lab’s materials discoveries (Jan 2024)",
-          "url": "https://www.chemistryworld.com/news/new-analysis-raises-doubts-over-autonomous-labs-materials-discoveries/4018791.article",
-          "type": "explainer"
-        }
-      ]
-    },
-    {
       "id": "graphcast-weather-2023",
       "title": "GraphCast (& GenCast) Surpass Physics-Based Global Weather Forecasting in Minutes",
       "shortTitle": "GraphCast & GenCast Weather AI",
@@ -5364,7 +5942,8 @@
         "velocity": "Compressed multi-hour supercomputer numerical weather runs into <1 minute on a single accelerator."
       },
       "enables": [
-        "unstable-singularities-pinns-2025"
+        "unstable-singularities-pinns-2025",
+        "aurora-earth-system-2025"
       ],
       "sources": [
         {
@@ -5630,6 +6209,132 @@
       ]
     },
     {
+      "id": "primo-m87-black-hole-2023",
+      "title": "PRIMO Dictionary-Learning ML Sharpens the First M87* Supermassive Black Hole Image to Nominal EHT Resolution",
+      "shortTitle": "PRIMO M87* Black Hole Imaging",
+      "date": "2023-04-13",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Astrophysics",
+        "Black Hole Imaging",
+        "Physics-Informed ML"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "PRIMO (Principal-Component Interferometric Modeling Dictionary-Learning ML)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "Published in The Astrophysical Journal Letters, PRIMO trained on 30,000 GRMHD black-hole simulations to fill sparse Event Horizon Telescope interferometry gaps, halving the ring width of M87* to the telescope’s full diffraction limit.",
+      "summary": "Published in The Astrophysical Journal Letters on April 13, 2023, Lia Medeiros (IAS), Dimitrios Psaltis, Tod R. Lauer (NOIRLab), and Feryal Özel introduced PRIMO (Principal-component Interferometric Modeling), a dictionary-learning machine learning algorithm trained on over 30,000 high-fidelity general-relativistic magnetohydrodynamic (GRMHD) simulations of accreting black holes. Applied to the original 2017 Event Horizon Telescope (EHT) observations of M87*, PRIMO reconstructed missing Earth-sized interferometer baselines without inventing unsupported structure—producing an image consistent with EHT data that narrowed the bright emission ring by roughly a factor of two and sharpened constraints on M87*’s mass and general relativity.",
+      "technicalHighlights": [
+        "Trained principal-component dictionary learning on >30,000 simulated black hole images spanning diverse accretion physics.",
+        "Reconstructed missing sparse VLBI Fourier-plane data to reach the Event Horizon Telescope’s full nominal angular resolution.",
+        "Revealed a ring roughly twice as thin as the 2019 reconstruction with a deeper central shadow, improving black-hole mass precision."
+      ],
+      "caveats": "Image reconstruction depends on the GRMHD simulation training prior (assuming general-relativistic accretion physics); it refines observational inference from existing 2017 EHT data rather than discovering a new astrophysical object.",
+      "contributors": [
+        "Lia Medeiros",
+        "Dimitrios Psaltis",
+        "Tod R. Lauer",
+        "Feryal Özel"
+      ],
+      "institutions": [
+        "Institute for Advanced Study (IAS)",
+        "NSF NOIRLab",
+        "Georgia Institute of Technology"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 84,
+        "verification": 92,
+        "velocity": 81
+      },
+      "scoreRationale": {
+        "foundational": "Pioneered simulation-trained machine-learning interferometric reconstruction at the physical diffraction limit of an Earth-scale radio telescope.",
+        "ripple": "Became an iconic demonstration of physics-informed ML in observational astrophysics and next-generation EHT / Sagittarius A* imaging.",
+        "verification": "Peer-reviewed in The Astrophysical Journal Letters (947:L7) with extensive synthetic-data fidelity and consistency checks against EHT visibilities.",
+        "velocity": "Extracted full-resolution physical structure from existing sparse observations years ahead of launching space-based VLBI antennas."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Institute for Advanced Study (Apr 13, 2023) — Sharper Look at M87 Black Hole (PRIMO, ApJL 947:L7)",
+          "url": "https://www.ias.edu/news/sharper-look-m87",
+          "type": "announcement"
+        },
+        {
+          "label": "NSF NOIRLab — A Sharper Look at the First Image of a Black Hole",
+          "url": "https://noirlab.edu/public/news/noirlab2310/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "esmfold-metagenomic-atlas-2023",
+      "title": "Meta FAIR ESMFold Maps 617 Million+ Metagenomic Protein Structures 60× Faster via 15B Language Model",
+      "shortTitle": "ESMFold 617M Protein Atlas",
+      "date": "2023-03-17",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Structural Biology",
+        "Protein Language Models",
+        "Metagenomics"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "ESMFold (15B-Parameter ESM-2 Protein Language Model, Meta FAIR)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "2 weeks (617M structures)",
+      "isAnchor": true,
+      "whyItMatters": "Published in Science, Meta’s 15B-parameter ESMFold proved protein language models predict atomic 3D structures directly from single sequences 60× faster—folding 617M+ (later 772M) dark-proteome proteins in two weeks.",
+      "summary": "Published in Science on March 17, 2023 (following a November 2022 atlas release), Zeming Lin, Alexander Rives, and the Meta FAIR Protein Team demonstrated that scaling masked protein language models (ESM-2) to 15 billion parameters causes atomic-resolution 3D structural information to emerge directly inside sequence representations. Pairing ESM-2 with an equivariant folding head created ESMFold, which predicts atomic protein structures directly from a single sequence without slow multiple-sequence alignments (MSAs)—achieving up to 60× faster inference than AlphaFold 2. In just two weeks on 2,000 GPUs, the team folded over 617 million (later expanded to 772 million) uncharacterized metagenomic proteins from soil, seawater, and the human gut, revealing hundreds of millions of previously unseen folds.",
+      "technicalHighlights": [
+        "Demonstrated emergent atomic-level 3D structure prediction directly from single protein sequences using a 15B-parameter language model (ESM-2).",
+        "Ran up to 60× faster than MSA-dependent pipelines, folding 617 million (expanded to 772M) metagenomic proteins in 2 weeks.",
+        "Released the open-access ESM Metagenomic Atlas, illuminating millions of \"dark proteome\" sequences with no known homologs."
+      ],
+      "caveats": "Slightly lower atomic accuracy than AlphaFold 2 on proteins where deep multiple-sequence alignments are available, though uniquely advantaged on orphan and metagenomic sequences.",
+      "contributors": [
+        "Zeming Lin",
+        "Halil Akin",
+        "Roshan Rao",
+        "Alexander Rives"
+      ],
+      "institutions": [
+        "Meta FAIR"
+      ],
+      "scores": {
+        "foundational": 90,
+        "ripple": 92,
+        "verification": 95,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Proved that scaling language modeling over biological sequences induces implicit 3D physical folding representations without explicit MSA pipelines.",
+        "ripple": "Opened the metagenomic dark proteome to biology, catalyzed ESM3 and Evo, and became a core open-source structural biology tool.",
+        "verification": "Peer-reviewed in Science (Vol. 379, pp. 1123–1130) with open-source weights, code, and the public ESM Metagenomic Atlas.",
+        "velocity": "Predicted 617 million protein structures in two weeks—an unprecedented throughput leap over both crystallography and MSA-based folding."
+      },
+      "enables": [
+        "esm3-esmgfp-protein-2024"
+      ],
+      "sources": [
+        {
+          "label": "ESM Metagenomic Atlas (Meta AI) — Science 379, 1123–1130 (2023)",
+          "url": "https://esmatlas.com/about",
+          "type": "announcement"
+        },
+        {
+          "label": "GitHub — facebookresearch/esm (ESM-2 & ESMFold Open-Source Code)",
+          "url": "https://github.com/facebookresearch/ESM",
+          "type": "code"
+        }
+      ]
+    },
+    {
       "id": "alphatensor-2022",
       "title": "AlphaTensor: Reinforcement Learning Discovers Faster Matrix Multiplication",
       "shortTitle": "AlphaTensor (Anchor)",
@@ -5745,7 +6450,9 @@
         "verification": "Peer-reviewed in Nature with live experimental validation on TCV reactor hardware.",
         "velocity": "Compressed months of bespoke control-engineering design per plasma shape into rapid automated policy synthesis."
       },
-      "enables": [],
+      "enables": [
+        "diii-d-fusion-tearing-rl-2024"
+      ],
       "sources": [
         {
           "label": "Degrave et al. — Magnetic control of tokamak plasmas through deep RL (Nature / PubMed)",
@@ -5817,6 +6524,69 @@
           "label": "Davies et al. — Advancing mathematics by guiding human intuition with AI (Nature 2021)",
           "url": "https://www.nature.com/articles/s41586-021-04086-x",
           "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "rosettafold-protein-structure-2021",
+      "title": "RoseTTAFold: Open-Source Three-Track Neural Network Predicts Atomic Protein Structures and Complexes",
+      "shortTitle": "RoseTTAFold (Baker Lab, Science)",
+      "date": "2021-07-15",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Structural Biology",
+        "Protein Complexes",
+        "Geometric Deep Learning"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "RoseTTAFold (Three-Track 1D/2D/3D SE(3)-Transformer Network, UW IPD)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "~10–30 min per complex on 1 GPU",
+      "isAnchor": true,
+      "whyItMatters": "Published in Science alongside AlphaFold 2’s paper, David Baker and Minkyung Baek’s open-source 3-track neural network solved hundreds of human structures and multi-protein complexes and became the backbone for RFdiffusion.",
+      "summary": "Published in Science on July 15, 2021 (the same day as AlphaFold 2’s Nature publication), Minkyung Baek, Frank DiMaio, David Baker, and colleagues at the University of Washington’s Institute for Protein Design introduced RoseTTAFold—a novel three-track neural network simultaneously exchanging representations across 1D amino-acid sequences, 2D residue-distance maps, and 3D atomic coordinates. Running in ~10–30 minutes on a single gaming GPU, RoseTTAFold approached AlphaFold 2’s accuracy, solved challenging X-ray crystallography and cryo-EM structures, pioneered direct multi-chain protein–protein complex prediction, and became the architectural foundation fine-tuned to create RFdiffusion (contributing to David Baker’s 2024 Nobel Prize in Chemistry).",
+      "technicalHighlights": [
+        "Introduced a novel 3-track (1D sequence / 2D distance / 3D SE(3) coordinate) attention architecture running on a single GPU.",
+        "First open-source deep-learning system demonstrated to predict multi-chain protein–protein complexes directly from sequence.",
+        "Directly spawned RoseTTAFold All-Atom and RFdiffusion, anchoring the open academic generative protein-design ecosystem."
+      ],
+      "caveats": "Slightly trailed AlphaFold 2 on monomeric CASP14 benchmarks, though its speed, open-source availability from day one, and multi-chain/generative extensibility drove massive community adoption.",
+      "contributors": [
+        "Minkyung Baek",
+        "Frank DiMaio",
+        "Ivan Anishchenko",
+        "David Baker"
+      ],
+      "institutions": [
+        "University of Washington (Institute for Protein Design)"
+      ],
+      "scores": {
+        "foundational": 90,
+        "ripple": 94,
+        "verification": 96,
+        "velocity": 89
+      },
+      "scoreRationale": {
+        "foundational": "Independently achieved atomic-scale protein and protein-complex prediction via a distinct three-track 1D/2D/3D architecture.",
+        "ripple": "Democratized atomic structural prediction and directly enabled RFdiffusion and modern open-source protein design (recognized in the 2024 Chemistry Nobel ecosystem).",
+        "verification": "Peer-reviewed in Science (Vol. 373, pp. 871–876) with immediate GitHub code release, public web server, and independent experimental structure validation.",
+        "velocity": "Generated accurate multi-protein complex models in ~10–30 minutes on a single consumer GPU."
+      },
+      "enables": [
+        "rfdiffusion-protein-design-2023"
+      ],
+      "sources": [
+        {
+          "label": "PMC / Science (Jul 15, 2021) — Accurate prediction of protein structures and interactions using a three-track neural network",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612213/",
+          "type": "paper"
+        },
+        {
+          "label": "UW Institute for Protein Design — RoseTTAFold: Accurate protein structure prediction accessible to all",
+          "url": "https://www.ipd.uw.edu/2021/07/rosettafold-accurate-protein-structure-prediction-accessible-to-all/",
+          "type": "announcement"
         }
       ]
     },
@@ -6089,6 +6859,128 @@
       ]
     },
     {
+      "id": "keller-conjecture-dim7-sat-2020",
+      "title": "Complete Resolution of Keller’s 1930 Cube-Tiling Conjecture in Dimension 7 via Machine-Verified SAT Proof",
+      "shortTitle": "Keller’s Conjecture (d = 7, SAT)",
+      "date": "2020-07-01",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Discrete Geometry",
+        "Combinatorics",
+        "SAT Solving & Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "CaDiCaL SAT Solver + Formally Verified DRAT / Symmetry-Breaking Proof",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 90,
+      "aiTimeToSolve": "CPU-hours on cluster (20 GB DRAT proof)",
+      "isAnchor": true,
+      "whyItMatters": "Completely settled Otto-Heinrich Keller’s 90-year-old geometry conjecture (1930) in its final open dimension (d = 7), proving via a formally certified SAT proof that every 7D unit-cube tiling contains a face-sharing pair.",
+      "summary": "In July 2020 (IJCAR 2020, later published in Journal of the ACM), Joshua Brakensiek, Marijn J. H. Heule, John Mackey, and David Narváez completely resolved Otto-Heinrich Keller’s 1930 conjecture on space-filling unit cube tilings. Prior mathematicians had proven the conjecture true for dimensions d ≤ 6 (Perron, 1940) and false for d ≥ 8 (Lagarias & Shor, 1992; Mackey, 2002), leaving dimension 7 as the sole open case for decades. Encoding the non-existence of a size-128 clique in the Keller graphs G_{7,3}, G_{7,4}, and G_{7,6} into propositional logic with automated symmetry breaking, the CaDiCaL SAT solver proved unsatisfiability and emitted an optimized ~20 GB clausal proof certified by formally verified DRAT proof checkers.",
+      "technicalHighlights": [
+        "Settled the last remaining open dimension (d = 7) of Keller’s 1930 conjecture, completing a 90-year classification across all dimensions.",
+        "Combined propositional symmetry breaking with CaDiCaL SAT solving to rule out size-128 cliques in the Keller graphs.",
+        "Produced a compact ~20 GB clausal unsatisfiability certificate validated by formally verified proof checkers (ACL2/Coq/Isabelle ecosystem)."
+      ],
+      "caveats": "The propositional encoding reduction relies on established graph-theoretic reductions by Corrádi–Szabó and Kisielewicz, while the exhaustive search and clausal symmetry breaking are machine-checked.",
+      "contributors": [
+        "Joshua Brakensiek",
+        "Marijn J. H. Heule",
+        "John Mackey",
+        "David Narváez"
+      ],
+      "institutions": [
+        "Carnegie Mellon University",
+        "Stanford University",
+        "Rochester Institute of Technology"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 81,
+        "verification": 98,
+        "velocity": 85
+      },
+      "scoreRationale": {
+        "foundational": "Completely closed a famous 90-year-old problem in discrete geometry generalizing Minkowski’s 1907 lattice-tiling theorem.",
+        "ripple": "Cemented automated SAT solving + verified clausal proofs as a mainstream instrument for settling intractable combinatorial geometry problems.",
+        "verification": "Formally certified via DRAT proof checking and peer-reviewed in IJCAR 2020 and Journal of the ACM.",
+        "velocity": "Resolved a search space far beyond human casework via automated symmetry breaking and parallel SAT solving."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PMC / IJCAR 2020 — The Resolution of Keller’s Conjecture (Brakensiek, Heule, Mackey, Narváez)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7324133/",
+          "type": "formal-verification"
+        },
+        {
+          "label": "SAT for Mathematics — Keller’s Conjecture & SAT Proof Archive",
+          "url": "https://sat4math.com/",
+          "type": "code"
+        }
+      ]
+    },
+    {
+      "id": "ai-feynman-symbolic-regression-2020",
+      "title": "AI Feynman: Physics-Inspired Neuro-Symbolic Regression Rediscovers All 100 Equations from the Feynman Lectures",
+      "shortTitle": "AI Feynman Symbolic Regression",
+      "date": "2020-04-15",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Symbolic Regression",
+        "Physics-Informed AI",
+        "Automated Law Discovery"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "AI Feynman (Neural Network + Recursive Physics-Symmetry Symbolic Regression, MIT)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Minutes per equation",
+      "isAnchor": true,
+      "whyItMatters": "Published in Science Advances, MIT’s neuro-symbolic AI Feynman paired neural fitting with dimensional analysis and symmetry detection to rediscover 100/100 equations from the Feynman Lectures on Physics from raw data.",
+      "summary": "Published in Science Advances on April 15, 2020, Silviu-Marian Udrescu and Max Tegmark at MIT introduced AI Feynman, a recursive neuro-symbolic regression system designed to discover exact, human-readable mathematical laws directly from empirical data. Rather than relying purely on black-box curve fitting or brute-force expression trees, AI Feynman trains neural networks to detect translational symmetry, scale invariance, separability, and compositionality, recursively simplifying NP-hard symbolic search alongside dimensional analysis. Tested on 100 equations from the Feynman Lectures on Physics, AI Feynman solved 100% (versus 71% for prior commercial software Eureqa) and boosted accuracy on harder physics mysteries from 15% to 90%.",
+      "technicalHighlights": [
+        "Paired neural-network symmetry/separability discovery with recursive symbolic search and dimensional analysis.",
+        "Rediscovered 100/100 equations from the Feynman Lectures on Physics from numerical tables alone (vs. 71% for Eureqa).",
+        "Improved symbolic recovery on a harder nonlinear physics benchmark from 15% to 90%, catalyzing modern symbolic regression benchmarks."
+      ],
+      "caveats": "Benchmark milestone focused on rediscovering known textbook physics equations from clean or mildly noisy synthetic data rather than discovering a previously unknown fundamental law of nature.",
+      "contributors": [
+        "Silviu-Marian Udrescu",
+        "Max Tegmark"
+      ],
+      "institutions": [
+        "MIT"
+      ],
+      "scores": {
+        "foundational": 81,
+        "ripple": 85,
+        "verification": 92,
+        "velocity": 82
+      },
+      "scoreRationale": {
+        "foundational": "Established a foundational neuro-symbolic architecture showing how neural representations can unlock tractable exact symbolic law discovery.",
+        "ripple": "Widely cited across AI-for-physics, creating the standard Feynman symbolic regression benchmark and inspiring subsequent scientific equation-discovery agents.",
+        "verification": "Peer-reviewed in Science Advances (6:eaay2631) with open-source code and reproducible 100-equation benchmark.",
+        "velocity": "Automated exact equation extraction in minutes on problems intractable for pure brute-force search."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PMC / Science Advances (Apr 15, 2020) — AI Feynman: A physics-inspired method for symbolic regression",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7159912/",
+          "type": "paper"
+        },
+        {
+          "label": "arXiv:1905.11481 — AI Feynman: a Physics-Inspired Method for Symbolic Regression",
+          "url": "https://arxiv.org/abs/1905.11481",
+          "type": "paper"
+        }
+      ]
+    },
+    {
       "id": "halicin-antibiotic-2020",
       "title": "Halicin: First Broad-Spectrum Antibiotic Discovered via Deep Learning",
       "shortTitle": "Halicin Antibiotic (Anchor)",
@@ -6142,7 +7034,8 @@
       "enables": [
         "boltz-2-binding-affinity-2025",
         "alphafold-3-2024",
-        "abaucin-antibiotic-2023"
+        "abaucin-antibiotic-2023",
+        "explainable-gnn-mrsa-antibiotics-2023"
       ],
       "sources": [
         {
@@ -6159,6 +7052,254 @@
           "label": "MIT News Announcement",
           "url": "https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220",
           "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "gentrl-ddr1-drug-design-2019",
+      "title": "Insilico Medicine GENTRL Designs, Synthesizes, and Mouse-Validates Potent DDR1 Kinase Inhibitors in 46 Days",
+      "shortTitle": "GENTRL De Novo DDR1 Drug (46d)",
+      "date": "2019-09-02",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Generative Drug Design",
+        "Reinforcement Learning",
+        "Medicinal Chemistry"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "GENTRL (Generative Tensorial Reinforcement Learning, Insilico Medicine)",
+      "verificationStatus": "Contested / Partial",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "21 days design (46 days to mouse PK)",
+      "isAnchor": true,
+      "whyItMatters": "Published in Nature Biotechnology, GENTRL was the landmark first demonstration of deep generative RL designing potent kinase inhibitors synthesized and validated in mice in 46 days—though debated over similarity to existing drug ponatinib.",
+      "summary": "Published in Nature Biotechnology on September 2, 2019, Alex Zhavoronkov, Yan A. Ivanenkov, and collaborators at Insilico Medicine and WuXi AppTec introduced GENTRL (Generative Tensorial Reinforcement Learning) to generatively design small-molecule inhibitors of the fibrosis-linked DDR1 kinase in 21 days. Six generated molecules were synthesized and tested, yielding four biochemically active leads, two cell-active inhibitors, and one lead demonstrating favorable pharmacokinetics in mice within 46 days end-to-end. While celebrated as a catalytic proof-of-concept for generative pharma AI, medicinal chemists (notably Derek Lowe and Pat Walters) promptly pointed out strong structural resemblance between the lead hit and the marketed kinase inhibitor ponatinib, making GENTRL an important calibrated early milestone.",
+      "technicalHighlights": [
+        "Combined variational autoencoders with tensorial reinforcement learning optimizing potency, synthetic feasibility, and novelty rewards.",
+        "Completed computational generation in 21 days and full synthesis, biochemical, cellular, and mouse pharmacokinetic validation in 46 days.",
+        "Catalyzed a global wave of generative chemistry investment and laid the groundwork for Insilico’s later Phase 2a drug rentosertib."
+      ],
+      "caveats": "Tagged Contested / Partial because independent medicinal chemists noted close structural similarity between the lead DDR1 hit and the known kinase inhibitor ponatinib, questioning true scaffold novelty and selectivity.",
+      "contributors": [
+        "Alex Zhavoronkov",
+        "Yan A. Ivanenkov",
+        "Alex Aliper",
+        "Alán Aspuru-Guzik"
+      ],
+      "institutions": [
+        "Insilico Medicine",
+        "University of Toronto",
+        "WuXi AppTec"
+      ],
+      "scores": {
+        "foundational": 77,
+        "ripple": 86,
+        "verification": 74,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Pioneered end-to-end generative deep RL small-molecule design coupled to wet-lab synthesis and in vivo pharmacokinetics, despite scaffold-novelty caveats.",
+        "ripple": "Became the defining early proof-of-concept that launched modern generative drug discovery across biotech and pharma.",
+        "verification": "Peer-reviewed in Nature Biotechnology (Vol. 37, pp. 1038–1040) with mouse PK data, discounted for contested scaffold novelty and selectivity.",
+        "velocity": "Compressed hit identification through synthesis and mouse PK validation into 46 days."
+      },
+      "enables": [
+        "rentosertib-phase2a-ipf-2025"
+      ],
+      "sources": [
+        {
+          "label": "PubMed / Nature Biotechnology (Sep 2, 2019) — Deep learning enables rapid identification of potent DDR1 kinase inhibitors",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31477924/",
+          "type": "paper"
+        },
+        {
+          "label": "Springer Nature Research Communities — GENTRL DDR1 Preclinical Validation Overview",
+          "url": "https://communities.springernature.com/posts/molecules-imagined-using-advanced-artificial-intelligence-show-promising-results-in-pre-clinical-experiments",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "segler-retrosynthesis-mcts-2018",
+      "title": "Segler, Preuss & Waller: Deep Neural Networks + Monte Carlo Tree Search Match Human Chemists in Organic Retrosynthesis",
+      "shortTitle": "3N-MCTS Chemical Retrosynthesis",
+      "date": "2018-03-28",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Organic Synthesis Planning",
+        "Neuro-Symbolic AI",
+        "Monte Carlo Tree Search"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "3N-MCTS (Three Neural Networks + Monte Carlo Tree Search, Segler et al.)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 60,
+      "aiTimeToSolve": "Seconds per synthesis route (30× faster)",
+      "isAnchor": true,
+      "whyItMatters": "Published in Nature, 3N-MCTS ended 60 years of brittle rule-based synthesis planning by pairing deep policy/filter networks with MCTS—solving 2× more organic molecules 30× faster and tying human chemists in double-blind tests.",
+      "summary": "Published in Nature on March 28, 2018, Marwin H. S. Segler, Mike Preuss, and Mark P. Waller at the University of Münster broke a 60-year bottleneck in computer-aided organic synthesis planning (dating back to E. J. Corey’s pioneering 1960s LHASA program). Trained on roughly 12 million published organic reactions, their 3N-MCTS neuro-symbolic system combined Monte Carlo Tree Search with three neural networks (an expansion policy, an in-scope reaction filter, and a rollout policy) to plan multi-step retrosynthetic routes autonomously. It solved nearly twice as many target molecules 30× faster than classical heuristic tools, and in a double-blind A/B evaluation, expert organic chemists judged its computer-generated routes equivalent in quality to published human literature syntheses.",
+      "technicalHighlights": [
+        "Trained three deep neural networks on ~12 million published organic reactions and coupled them to symbolic Monte Carlo Tree Search (3N-MCTS).",
+        "Solved ~2× more organic target molecules 30× faster than classical rule-based retrosynthesis engines.",
+        "First automated synthesis planner whose routes were indistinguishable from human literature routes in a double-blind chemist evaluation."
+      ],
+      "caveats": "Evaluated via double-blind route quality and benchmark solve rates rather than robotic wet-lab synthesis of every proposed route; stereochemistry and rare reaction conditions remained active follow-up challenges.",
+      "contributors": [
+        "Marwin H. S. Segler",
+        "Mike Preuss",
+        "Mark P. Waller"
+      ],
+      "institutions": [
+        "University of Münster"
+      ],
+      "scores": {
+        "foundational": 87,
+        "ripple": 90,
+        "verification": 93,
+        "velocity": 86
+      },
+      "scoreRationale": {
+        "foundational": "Landmark neuro-symbolic breakthrough in chemistry—translating AlphaGo-style MCTS + neural policies to solve a 60-year grand challenge in organic retrosynthesis.",
+        "ripple": "Became the foundational paradigm for modern automated synthesis planning (AiZynthFinder, ASKCOS, Coscientist, robotic synthesis labs).",
+        "verification": "Peer-reviewed in Nature (Vol. 555, pp. 604–610) with double-blind expert chemist evaluation.",
+        "velocity": "Delivered a 30× speedup over legacy computer-aided synthesis tools while doubling solvability."
+      },
+      "enables": [
+        "coscientist-autonomous-chemistry-2023"
+      ],
+      "sources": [
+        {
+          "label": "PubMed / Nature (Mar 28, 2018) — Planning chemical syntheses with deep neural networks and symbolic AI",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29595767/",
+          "type": "paper"
+        },
+        {
+          "label": "arXiv:1708.04202 — Learning to Plan Chemical Syntheses (Segler, Preuss, Waller)",
+          "url": "https://arxiv.org/abs/1708.04202",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "kepler-90i-exoplanet-2017",
+      "title": "Google Brain & NASA Deep Neural Network Discovers Exoplanet Kepler-90i, First Known 8-Planet Analog System",
+      "shortTitle": "Kepler-90i AI Exoplanet Discovery",
+      "date": "2017-12-14",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Exoplanet Astronomy",
+        "Astrophysics",
+        "Deep Convolutional Neural Networks"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "AstroNet (Deep Convolutional Neural Network, Google Brain / NASA)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Automated search of 670 stars",
+      "isAnchor": true,
+      "whyItMatters": "A deep CNN trained on 15,000 Kepler light curves discovered two missed exoplanets—including Kepler-90i, making Kepler-90 the first known star system tying our Solar System’s eight confirmed planets.",
+      "summary": "Announced by NASA on December 14, 2017 and published in The Astronomical Journal (2018), Google Brain engineer Christopher J. Shallue and NASA Sagan Fellow Andrew Vanderburg built AstroNet, a deep convolutional neural network trained on 15,000 labeled Kepler transit signals to distinguish true planetary transits from astrophysical false positives. Scanning 670 previously searched multi-planet stars, the neural network detected weak periodic transit signals missed by all prior human and classical automated pipelines—discovering Kepler-80g (completing a 5-planet resonant chain) and Kepler-90i, a rocky super-Earth that made Kepler-90 the first confirmed eight-planet exoplanet system matching our Solar System.",
+      "technicalHighlights": [
+        "Trained a deep CNN (AstroNet) on global and local folded Kepler photometric light curves with ~96% classification accuracy.",
+        "Discovered two confirmed exoplanets (Kepler-90i and Kepler-80g) hidden in faint transit signals overlooked by all previous pipelines.",
+        "Established Kepler-90 as the first confirmed 8-planet system outside our Solar System and open-sourced AstroNet for TESS/K2 surveys."
+      ],
+      "caveats": "Neural-network detections still required follow-up statistical validation by human astronomers to rule out background eclipsing binaries and instrumental artifacts.",
+      "contributors": [
+        "Christopher J. Shallue",
+        "Andrew M. Vanderburg"
+      ],
+      "institutions": [
+        "Google Brain",
+        "University of Texas at Austin",
+        "NASA"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 84,
+        "verification": 94,
+        "velocity": 82
+      },
+      "scoreRationale": {
+        "foundational": "First high-profile discovery of new confirmed worlds by a deep neural network mining archival telescope telemetry.",
+        "ripple": "Popularized deep-learning vetting pipelines across NASA’s Kepler, K2, and TESS exoplanet surveys and broader time-domain astronomy.",
+        "verification": "Peer-reviewed in The Astronomical Journal (doi:10.3847/1538-3881/aa9e09) and officially confirmed by NASA.",
+        "velocity": "Automatically uncovered faint multi-planet signals across hundreds of archival star systems missed over years of prior searches."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "NASA (Dec 14, 2017) — Artificial Intelligence, NASA Data Used to Discover Eighth Planet Circling Distant Star",
+          "url": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+          "type": "announcement"
+        },
+        {
+          "label": "The Astronomical Journal (2018) — Identifying Exoplanets with Deep Learning (DOI: 10.3847/1538-3881/aa9e09)",
+          "url": "https://doi.org/10.3847/1538-3881/aa9e09",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "schur-number-five-sat-2017",
+      "title": "Schur Number Five (S(5) = 160) Settled After 101 Years via Formally Certified 2-Petabyte SAT Proof",
+      "shortTitle": "Schur Number Five (SAT, 2 PB)",
+      "date": "2017-11-21",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Ramsey Theory",
+        "Combinatorics",
+        "SAT Solving & Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "Cube-and-Conquer SAT Solver (Massively Parallel SAT + Certified DRAT Checker)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 101,
+      "aiTimeToSolve": "Multi-CPU-yr cluster run (2 PB proof)",
+      "isAnchor": true,
+      "whyItMatters": "Marijn Heule settled Issai Schur’s 101-year-old Ramsey-theory problem (1916), proving S(5) = 160 via massively parallel SAT solving and certifying a record 2-petabyte proof with a formally verified checker.",
+      "summary": "Posted on November 21, 2017 (and published at AAAI-18), Marijn J. H. Heule at the University of Texas at Austin resolved the century-old Schur Number Five problem posed by Issai Schur in 1916: finding the largest integer n such that {1, …, n} can be 5-colored without a monochromatic solution to a + b = c. Encoding the problem into propositional logic and applying massively parallel Cube-and-Conquer SAT solving on the Stampede supercomputer, Heule proved S(5) = 160 and validated the resulting 2-petabyte unsatisfiability proof—ten times larger than the 2016 Pythagorean Triples proof—using a formally verified proof checker.",
+      "technicalHighlights": [
+        "Settled Issai Schur’s 1916 Ramsey-theory problem after 101 years, proving S(5) = 160.",
+        "Constructed and mechanically certified a 2-petabyte clausal proof—demonstrating formal verification scales to petabyte-class automated reasoning.",
+        "Advanced Cube-and-Conquer partitioning heuristics subsequently used to resolve Keller’s Conjecture in dimension 7."
+      ],
+      "caveats": "The 2-petabyte proof is purely machine-verifiable rather than human-readable, offering no short conceptual explanation for why 160 is the exact threshold.",
+      "contributors": [
+        "Marijn J. H. Heule"
+      ],
+      "institutions": [
+        "University of Texas at Austin"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 79,
+        "verification": 98,
+        "velocity": 82
+      },
+      "scoreRationale": {
+        "foundational": "Resolved a classical 101-year-old problem in Ramsey theory and additive combinatorics.",
+        "ripple": "Proved that formally verified SAT proof checkers can scale to petabyte-level automated mathematical proofs.",
+        "verification": "Certified end-to-end by a formally verified clausal proof checker and peer-reviewed at AAAI-18.",
+        "velocity": "Cracked a combinatorial coloring threshold that resisted a century of mathematical and computational attacks."
+      },
+      "enables": [
+        "keller-conjecture-dim7-sat-2020"
+      ],
+      "sources": [
+        {
+          "label": "arXiv:1711.08076 (Nov 21, 2017 / AAAI-18) — Schur Number Five (Marijn J. H. Heule)",
+          "url": "https://arxiv.org/abs/1711.08076",
+          "type": "formal-verification"
+        },
+        {
+          "label": "SAT for Mathematics — Schur Number Five Proof Archive",
+          "url": "https://sat4math.com/",
+          "type": "code"
         }
       ]
     },
@@ -6212,7 +7353,8 @@
       },
       "enables": [
         "alphaproof-imo-2024",
-        "deepmind-formal-proof-search-2026"
+        "deepmind-formal-proof-search-2026",
+        "schur-number-five-sat-2017"
       ],
       "sources": [
         {

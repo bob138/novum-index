@@ -189,7 +189,7 @@ function buildScatterSvgContent(items, opts = {}) {
   const modernW = innerW - pioneerZoneW - pioneerGap;
 
   const pioneerMinTime = toTimestamp('1973-01-01');
-  const pioneerMaxTime = toTimestamp('2019-06-01');
+  const pioneerMaxTime = toTimestamp('2019-12-31');
 
   let minTime;
   let maxTime;
@@ -215,7 +215,7 @@ function buildScatterSvgContent(items, opts = {}) {
       ? toTimestamp('2026-12-20')
       : hasEarlyAnchors
         ? toTimestamp('2024-03-01')
-        : toTimestamp('2019-06-01');
+        : toTimestamp('2019-12-31');
   }
 
   const visibleItems = items.filter((item) => {
@@ -838,7 +838,7 @@ export function renderTimelineScatter(items, opts = {}) {
           .join('')}
         <span class="viz-legend__item" style="margin-left: auto;">
           <span style="display:inline-block;width:8px;height:8px;background:var(--ink-muted);transform:rotate(45deg);margin-right:2px;"></span>
-          <span>Symbolic (&lt;2020)</span>
+          <span>Symbolic / Classical</span>
         </span>
         <span class="viz-legend__item">
           <span class="viz-legend__ring"></span>

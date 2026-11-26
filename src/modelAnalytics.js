@@ -2,10 +2,10 @@ import { DISCIPLINE_META } from './scoring.js';
 
 export const ARCHITECTURE_META = {
   'Neuro-Symbolic LLM + Verifier': {
-    shortLabel: 'Neuro-Symbolic LLM',
+    shortLabel: 'Neuro-Symbolic AI',
     colorVar: 'var(--accent-warm)',
     bgVar: 'var(--accent-warm-soft)',
-    description: 'Frontier reasoning LLMs paired with Lean 4, Coq, symbolic solvers, or automated lab tools.',
+    description: 'Neural models & reasoning LLMs paired with Lean 4, Coq, MCTS, symbolic regression, or lab tools.',
   },
   'Frontier Reasoning LLM': {
     shortLabel: 'Reasoning LLM',
@@ -743,12 +743,48 @@ export function classifyBreakthroughSystems(item) {
     ];
   }
 
-  // Bio / Chemistry / Materials Specialized Neural Nets
+  // Bio / Chemistry / Materials / Physics / Astronomy Specialized Neural Nets
+  if (s.includes('gpt-4b micro')) {
+    return [
+      {
+        familyId: 'openai-gpt',
+        familyName: 'OpenAI GPT Lineage',
+        modelId: 'gpt-4b-micro',
+        modelName: 'GPT-4b micro (Biology LLM)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'OpenAI',
+      },
+    ];
+  }
+  if (s.includes('mit collins lab generative')) {
+    return [
+      {
+        familyId: 'mit-collins-antibiotics-ai',
+        familyName: 'MIT Collins Antibiotics-AI & Chemprop',
+        modelId: 'mit-generative-antibiotics',
+        modelName: 'MIT Generative Fragment/Atom Antibiotic AI',
+        architecture: 'Domain Science Neural Net',
+        lab: 'MIT / Broad / McMaster',
+      },
+    ];
+  }
+  if (s.includes('explainable substructure gnn')) {
+    return [
+      {
+        familyId: 'mit-collins-antibiotics-ai',
+        familyName: 'MIT Collins Antibiotics-AI & Chemprop',
+        modelId: 'chemprop-explainable-gnn',
+        modelName: 'Chemprop Explainable Substructure GNN',
+        architecture: 'Domain Science Neural Net',
+        lab: 'MIT / Broad / McMaster',
+      },
+    ];
+  }
   if (s.includes('chemprop')) {
     return [
       {
-        familyId: 'chemprop-gnn',
-        familyName: 'Chemprop GNN (MIT / Broad)',
+        familyId: 'mit-collins-antibiotics-ai',
+        familyName: 'MIT Collins Antibiotics-AI & Chemprop',
         modelId: 'chemprop-gnn',
         modelName: 'Chemprop Directed MPNN',
         architecture: 'Domain Science Neural Net',
@@ -759,8 +795,8 @@ export function classifyBreakthroughSystems(item) {
   if (s.includes('rfdiffusion')) {
     return [
       {
-        familyId: 'rfdiffusion',
-        familyName: 'RFdiffusion (UW IPD)',
+        familyId: 'rosettafold-rfdiffusion',
+        familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
         modelId: 'rfdiffusion',
         modelName: 'RFdiffusion (SE(3) Diffusion)',
         architecture: 'Bio & Genomic Neural Net',
@@ -768,11 +804,35 @@ export function classifyBreakthroughSystems(item) {
       },
     ];
   }
+  if (s.includes('rosettafold')) {
+    return [
+      {
+        familyId: 'rosettafold-rfdiffusion',
+        familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+        modelId: 'rosettafold',
+        modelName: 'RoseTTAFold (3-Track SE(3) Network)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'University of Washington (IPD)',
+      },
+    ];
+  }
+  if (s.includes('esmfold')) {
+    return [
+      {
+        familyId: 'esm-suite',
+        familyName: 'ESM Protein Language Suite (Meta / EvoScale)',
+        modelId: 'esmfold',
+        modelName: 'ESMFold (15B ESM-2 PLM)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Meta FAIR',
+      },
+    ];
+  }
   if (s.includes('esm3')) {
     return [
       {
-        familyId: 'esm3',
-        familyName: 'ESM3 (EvolutionaryScale)',
+        familyId: 'esm-suite',
+        familyName: 'ESM Protein Language Suite (Meta / EvoScale)',
         modelId: 'esm3',
         modelName: 'ESM3 (98B Multimodal PLM)',
         architecture: 'Bio & Genomic Neural Net',
@@ -780,15 +840,147 @@ export function classifyBreakthroughSystems(item) {
       },
     ];
   }
+  if (s.includes('evo 1 & evo 2')) {
+    return [
+      {
+        familyId: 'evo-suite',
+        familyName: 'Evo Genome Suite (Arc Institute)',
+        modelId: 'evo-phage-generator',
+        modelName: 'Evo 1 & Evo 2 Phage Generator',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Arc Institute / Stanford / NVIDIA',
+      },
+    ];
+  }
   if (s.includes('evo 2')) {
     return [
       {
-        familyId: 'evo-2',
-        familyName: 'Evo 2 (Arc Institute)',
+        familyId: 'evo-suite',
+        familyName: 'Evo Genome Suite (Arc Institute)',
         modelId: 'evo-2',
         modelName: 'Evo 2 (StripedHyena 2)',
         architecture: 'Bio & Genomic Neural Net',
         lab: 'Arc Institute / Stanford / NVIDIA',
+      },
+    ];
+  }
+  if (s.includes('pharma.ai')) {
+    return [
+      {
+        familyId: 'insilico-pharma-ai',
+        familyName: 'Insilico Medicine Pharma.AI & GENTRL',
+        modelId: 'insilico-pharma-ai',
+        modelName: 'Pharma.AI (PandaOmics + Chemistry42)',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Insilico Medicine',
+      },
+    ];
+  }
+  if (s.includes('gentrl')) {
+    return [
+      {
+        familyId: 'insilico-pharma-ai',
+        familyName: 'Insilico Medicine Pharma.AI & GENTRL',
+        modelId: 'gentrl',
+        modelName: 'GENTRL (Generative Tensorial RL)',
+        architecture: 'Deep RL & Evolutionary Agent',
+        lab: 'Insilico Medicine',
+      },
+    ];
+  }
+  if (s.includes('flood-filling networks')) {
+    return [
+      {
+        familyId: 'google-flood-filling-nets',
+        familyName: 'Google Flood-Filling Networks (Connectomics)',
+        modelId: 'google-ffn',
+        modelName: 'Flood-Filling Networks (FFNs) + Synapse CNNs',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Google DeepMind & Research',
+      },
+    ];
+  }
+  if (s.includes('astronet')) {
+    return [
+      {
+        familyId: 'astronet-cnn',
+        familyName: 'AstroNet Exoplanet CNN (Google / NASA)',
+        modelId: 'astronet-cnn',
+        modelName: 'AstroNet Deep Transit CNN',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Google DeepMind & Research',
+      },
+    ];
+  }
+  if (s.includes('princeton / pppl')) {
+    return [
+      {
+        familyId: 'princeton-fusion-rl',
+        familyName: 'Princeton / PPPL Fusion Deep RL',
+        modelId: 'diii-d-tearing-rl',
+        modelName: 'DIII-D Tearing-Avoidance DRL',
+        architecture: 'Deep RL & Evolutionary Agent',
+        lab: 'Princeton / PPPL',
+      },
+    ];
+  }
+  if (s.includes('aurora')) {
+    return [
+      {
+        familyId: 'microsoft-aurora',
+        familyName: 'Aurora Earth System (Microsoft Research)',
+        modelId: 'microsoft-aurora',
+        modelName: 'Aurora (3D Swin Transformer)',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Microsoft Research',
+      },
+    ];
+  }
+  if (s.includes('azure quantum elements')) {
+    return [
+      {
+        familyId: 'azure-quantum-elements',
+        familyName: 'Azure Quantum Elements (Microsoft / PNNL)',
+        modelId: 'azure-quantum-elements',
+        modelName: 'Azure Quantum Elements AI + DFT',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Microsoft Research',
+      },
+    ];
+  }
+  if (s.includes('primo')) {
+    return [
+      {
+        familyId: 'primo-ml',
+        familyName: 'PRIMO Black-Hole ML (IAS / NOIRLab)',
+        modelId: 'primo-ml',
+        modelName: 'PRIMO Dictionary-Learning ML',
+        architecture: 'Domain Science Neural Net',
+        lab: 'IAS / NOIRLab',
+      },
+    ];
+  }
+  if (s.includes('ai feynman')) {
+    return [
+      {
+        familyId: 'ai-feynman',
+        familyName: 'AI Feynman (MIT Symbolic Regression)',
+        modelId: 'ai-feynman',
+        modelName: 'AI Feynman (Neural + Symmetry Search)',
+        architecture: 'Neuro-Symbolic LLM + Verifier',
+        lab: 'MIT',
+      },
+    ];
+  }
+  if (s.includes('3n-mcts')) {
+    return [
+      {
+        familyId: 'segler-3n-mcts',
+        familyName: '3N-MCTS Retrosynthesis (Segler et al.)',
+        modelId: 'segler-3n-mcts',
+        modelName: '3N-MCTS (3 Neural Nets + MCTS)',
+        architecture: 'Neuro-Symbolic LLM + Verifier',
+        lab: 'University of Münster',
       },
     ];
   }
@@ -861,6 +1053,21 @@ export function classifyBreakthroughSystems(item) {
         modelName: 'A-Lab NLP + Active-Learning Robotics',
         architecture: 'Neuro-Symbolic LLM + Verifier',
         lab: 'Lawrence Berkeley National Lab',
+      },
+    ];
+  }
+
+  // Automated SAT Solvers (Cube-and-Conquer / CaDiCaL — Heule Group)
+  if (s.includes('sat solver') || s.includes('cadical')) {
+    const isCadical = s.includes('cadical');
+    return [
+      {
+        familyId: 'automated-sat-solvers',
+        familyName: 'Automated SAT Solvers (Cube-and-Conquer / CaDiCaL)',
+        modelId: isCadical ? 'cadical-sat-solver' : 'cube-and-conquer-sat',
+        modelName: isCadical ? 'CaDiCaL SAT Solver (DRAT)' : 'Cube-and-Conquer SAT Solver (DRAT)',
+        architecture: 'Classical Symbolic & SAT AI',
+        lab: 'UT Austin / CMU (Heule Group)',
       },
     ];
   }
