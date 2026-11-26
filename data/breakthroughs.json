@@ -894,7 +894,8 @@
       "technicalHighlights": [
         "Proves all non-trivial zeros of the Riemann zeta function and Dirichlet L-functions lie on the critical line Re(s) = 1/2.",
         "Draws on deep machinery spanning modern number theory, the Langlands program, and arithmetic geometry.",
-        "Verified by Lean FRO and Mathlib Initiative on Nov 21, 2026; compressed 99.56% from 17.4M lines to a 76,000-line compact edition (and 300,000-line readable edition) by Nov 25, independently checked across six Lean kernels."
+        "Verified by Lean FRO and Mathlib Initiative on Nov 21, 2026; compressed 99.56% from 17.4M lines to a 76,000-line compact edition (and 300,000-line readable edition) by Nov 25, independently checked across six Lean kernels.",
+        "On Nov 26, 2026, independent runs by Michael Rubinstein (Waterloo) and Andrew Sutherland verified all 794 modules of the 76k-line compact edition across all six kernels (default, paranoid, nanoda, lean4lean, con-leche, con-ron) via lake comparator --paranoid, while Sahay, Sawin & Silberman launched a public Polymath project to extract a human-readable proof."
       ],
       "caveats": "No complete human-readable mathematical exposition exists yet. While the Lean kernel guarantees logical soundness relative to the stated definitions, mathematicians are actively auditing whether the formal definitions match classical conventions and extracting human intuition from the proof.",
       "contributors": [
@@ -3485,6 +3486,130 @@
       ]
     },
     {
+      "id": "elementsclaw-superconductors-2026",
+      "title": "ElementsClaw Fuses Large Atomic Models and LLMs to Guide Synthesis of 4 New Superconductors",
+      "shortTitle": "ElementsClaw 4 New Superconductors",
+      "date": "2026-04-26",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Superconductivity",
+        "Materials Discovery",
+        "Large Atomic Models"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "ElementsClaw (Large Atomic Model + LLM Agentic Orchestrator)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "28 GPU-hrs (2.4M crystals screened)",
+      "isAnchor": false,
+      "whyItMatters": "By orchestrating Large Atomic Models with LLM semantic reasoning, ElementsClaw screened 2.4M crystals in 28 GPU-hours and guided wet-lab synthesis of 4 newly confirmed superconductors (Zr3ScRe8, HfZrRe4, Zr4VRe7, Hf21Re25).",
+      "summary": "Posted on April 26, 2026 (arXiv:2604.23758), Mingze Li, Yu Rong, Songyou Li, and collaborators introduced ElementsClaw, an agentic materials-discovery framework coupling an LLM reasoning orchestrator with fine-tuned Large Atomic Models (Elements) for high-fidelity atomistic property computation. Scaling across 2.4 million stable crystal structures in just 28 GPU-hours, the system rediscovered 66 known superconductors absent from SuperCon3D, flagged 68,000 high-confidence candidates, and guided experimental laboratory synthesis of four previously unconfirmed superconductors: Zr3ScRe8 (Tc = 6.8 K), HfZrRe4 (6.7 K), Zr4VRe7 (5.1 K, correcting an erroneous orthorhombic phase assignment to hexagonal), and Hf21Re25 (3.0 K).",
+      "technicalHighlights": [
+        "Synergized LLM high-level scientific planning with fine-tuned Large Atomic Models (LAMs) for fast, physically grounded crystal screening.",
+        "Screened >2.4 million stable crystals in 28 GPU-hours and rediscovered 66 experimentally verified superconductors missing from SuperCon3D.",
+        "Guided wet-lab synthesis and confirmation of four novel superconducting compounds (Zr3ScRe8 at 6.8 K, HfZrRe4 at 6.7 K, Zr4VRe7 at 5.1 K, Hf21Re25 at 3.0 K)."
+      ],
+      "caveats": "Currently an arXiv preprint undergoing community audit; all four newly synthesized compounds are conventional low-Tc superconductors (3.0–6.8 K) rather than high-temperature or ambient-pressure breakthroughs.",
+      "contributors": [
+        "Mingze Li",
+        "Yu Rong",
+        "Songyou Li",
+        "ElementsClaw Team"
+      ],
+      "institutions": [
+        "ElementsClaw Research Collaboration"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 87,
+        "verification": 78,
+        "velocity": 93
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrates closed-loop agentic fusion of Large Atomic Models and LLMs moving from computational prediction to lab-synthesized superconductors.",
+        "ripple": "Provides an actionable blueprint for autonomous quantum-materials discovery across catalysts, thermoelectrics, and superconductors.",
+        "verification": "Includes experimental lab synthesis and Tc measurements for four new compounds, scored conservatively pending journal peer review and independent lab replication.",
+        "velocity": "Evaluated 2.4 million crystal structures in 28 GPU-hours before guiding targeted experimental synthesis."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "arXiv:2604.23758 (Apr 26, 2026) — Agentic Fusion of Large Atomic and Language Models to Accelerate Superconductor Discovery",
+          "url": "https://arxiv.org/abs/2604.23758",
+          "type": "paper"
+        },
+        {
+          "label": "alphaXiv — ElementsClaw Novel Superconductors Summary (arXiv:2604.23758)",
+          "url": "https://www.alphaxiv.org/abs/2604.23758",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "erdos-1196-gpt54-gauss-2026",
+      "title": "GPT-5.4 Pro & Math, Inc. Gauss Solve and Formalize 58-Year-Old Erdős Problem #1196 on Primitive Sets",
+      "shortTitle": "Erdős #1196 (\"From The Book\", Lean)",
+      "date": "2026-04-14",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Analytic Number Theory",
+        "Primitive Sets",
+        "Formal Verification (Lean 4)"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI GPT-5.4 Pro + Gauss Autoformalization Agent (Math, Inc., Lean 4)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 58,
+      "aiTimeToSolve": "~5 hrs Lean formalization (7.2K lines)",
+      "isAnchor": false,
+      "whyItMatters": "GPT-5.4 Pro solved the 1968 Erdős–Sárközy–Szemerédi primitive-sets conjecture using a novel von Mangoldt chain idea that leading expert Jared Duker Lichtman called \"from The Book,\" formalized in Lean 4 by Gauss in 5 hours.",
+      "summary": "In April 2026 (written up in arXiv:2605.00301 on May 1, 2026), Liam Price prompted OpenAI’s GPT-5.4 Pro on Erdős Problem #1196—a 58-year-old conjecture posed by Paul Erdős, András Sárközy, and Endre Szemerédi in 1968 concerning the asymptotic behavior of primitive sets of integers (sets where no element divides another). GPT-5.4 Pro discovered a clean, conceptual proof built around von Mangoldt divisibility chains; leading primitive-sets specialist Jared Duker Lichtman praised the argument as looking like it came \"from The Book,\" and mathematicians quickly used the new technique to resolve additional open problems. Within days, Math, Inc.’s Gauss agent autoformalized the full proof in ~7,200 lines of Lean 4 in roughly five hours.",
+      "technicalHighlights": [
+        "Resolved the 1968 Erdős–Sárközy–Szemerédi conjecture (Erdős Problem #1196) on primitive sets in analytic number theory.",
+        "Introduced an elegant von Mangoldt chain technique praised by domain experts as \"from The Book\" and rapidly generalized to settle related conjectures.",
+        "Fully machine-checked in Lean 4 (~7.2K lines) in ~5 hours by Math, Inc.’s Gauss autoformalization agent."
+      ],
+      "caveats": "Human mathematicians (including Liam Price and forum collaborators) prompted the model, verified the exposition, and extended the conceptual framework in the follow-up arXiv manuscript.",
+      "contributors": [
+        "Liam Price",
+        "Jared Duker Lichtman (Verification)",
+        "Math, Inc. Gauss Team",
+        "GPT-5.4 Pro"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Math, Inc.",
+        "Independent Research"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 88,
+        "verification": 98,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Solved a 58-year-old Erdős–Sárközy–Szemerédi conjecture with a genuinely new conceptual organizing idea rather than brute-force casework.",
+        "ripple": "Widely cited as a turning point that convinced skeptical research mathematicians that frontier LLMs can produce \"Book-quality\" novel proof techniques.",
+        "verification": "Both accepted by leading human number theorists and machine-checked end-to-end in Lean 4 by Gauss.",
+        "velocity": "Cracked a nearly six-decade open problem and produced a complete 7.2K-line Lean 4 formalization within hours."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "arXiv:2605.00301 (May 1, 2026) — Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond",
+          "url": "https://arxiv.org/abs/2605.00301",
+          "type": "paper"
+        },
+        {
+          "label": "Quanta Magazine (Aug 3, 2026) — Why the Legendary Erdős Problems Are Falling to AI",
+          "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "viazovska-sphere-packing-lean-2026",
       "title": "Gauss Agent Autoformalizes Viazovska’s 8D & 24D Sphere Packing Proofs in Lean 4",
       "shortTitle": "Sphere Packing 8D/24D (Lean)",
@@ -3546,6 +3671,129 @@
           "label": "Wikipedia — List of mathematical discoveries made with artificial intelligence",
           "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
           "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "alphaevolve-ramsey-numbers-2026",
+      "title": "Google DeepMind AlphaEvolve Raises Lower Bounds on Nine Classical Ramsey Numbers",
+      "shortTitle": "AlphaEvolve 9 Ramsey Lower Bounds",
+      "date": "2026-03-10",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Ramsey Theory",
+        "Extremal Combinatorics",
+        "Evolutionary Program Search"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "AlphaEvolve (Reinforced Combinatorial Program Search, Google DeepMind)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Google DeepMind researchers used AlphaEvolve to evolve explicit Ramsey graph constructors that broke decades-old lower bounds on nine classical Ramsey numbers including R(3,13), R(3,18), R(4,13), R(4,14), and R(4,15).",
+      "summary": "In a working paper posted March 10, 2026 (revised through April 21, 2026, arXiv:2603.09172), Ansh Nagda, Prabhakar Raghavan, and Abhradeep Thakurta at Google DeepMind applied AlphaEvolve to evolve combinatorial search algorithms and structured graph constructions for classical two-color Ramsey numbers R(r, s). Rather than searching raw adjacency matrices directly, AlphaEvolve discovered compact constructive programs that produced explicitly verified clique-free, independent-set-free witness graphs—establishing new record lower bounds for nine classical Ramsey numbers of the form R(3, s) and R(4, s) tracked in Radziszowski’s canonical Dynamic Survey.",
+      "technicalHighlights": [
+        "Improved lower bounds on nine classical two-color Ramsey numbers (initially five—R(3,13), R(3,18), R(4,13), R(4,14), R(4,15)—expanded to nine in v5).",
+        "Every new bound is backed by an explicit finite witness graph independently verifiable by exact clique-checking algorithms.",
+        "Demonstrated evolutionary program search outperforming decades of bespoke human algebraic and computational Ramsey constructions."
+      ],
+      "caveats": "Improves finite constructive lower bounds rather than asymptotic Ramsey growth exponents; witness graphs remain verified computationally while exact Ramsey values remain open.",
+      "contributors": [
+        "Ansh Nagda",
+        "Prabhakar Raghavan",
+        "Abhradeep Thakurta"
+      ],
+      "institutions": [
+        "Google DeepMind",
+        "UC Berkeley"
+      ],
+      "scores": {
+        "foundational": 85,
+        "ripple": 84,
+        "verification": 97,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Moving even a single classical Ramsey number lower bound in Radziszowski’s canonical table is a major result in extremal combinatorics; raising nine in one stroke is historic.",
+        "ripple": "Sparked a wave of 2026 AI-assisted Ramsey witness searches (e.g., R(6,8), R(8,10), R(3,33)) across combinatorics.",
+        "verification": "Backed by explicit, deterministically checkable finite graph witnesses verified against exact clique/independent-set checkers.",
+        "velocity": "Evolved high-performing graph-construction heuristics automatically across a super-exponential combinatorial search space."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "arXiv:2603.09172 (Mar 10, 2026) — Reinforced Generation of Combinatorial Structures: Ramsey Numbers",
+          "url": "https://arxiv.org/abs/2603.09172",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Wikipedia — List of Mathematical Discoveries Made with Artificial Intelligence (2026 Ramsey Bounds)",
+          "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "knuth-claudes-cycles-2026",
+      "title": "Donald Knuth’s “Claude’s Cycles”: Claude Opus 4.6 Solves Open 3D Directed Hamiltonian Cycle Decomposition",
+      "shortTitle": "Knuth: “Claude’s Cycles” (Opus 4.6)",
+      "date": "2026-02-28",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Graph Theory",
+        "Combinatorial Algorithms",
+        "Hamiltonian Decompositions"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Anthropic Claude Opus 4.6 (Lean 4 Verified)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "~1 hour exploration (31 runs)",
+      "isAnchor": false,
+      "whyItMatters": "Computer science legend Donald Knuth titled his paper “Claude’s Cycles” after Claude Opus 4.6 solved an open 3D Cayley-digraph Hamiltonian decomposition problem he had been working on for The Art of Computer Programming.",
+      "summary": "On February 28, 2026, Stanford professor emeritus Donald E. Knuth published a celebrated paper titled “Claude’s Cycles,” opening with shock after Anthropic’s Claude Opus 4.6 (coached by Filip Stappers) cracked an open graph-theory problem Knuth had been studying for weeks for a future volume of The Art of Computer Programming. Given the m×m×m directed 3D toroidal grid Cayley digraph where each vertex (i, j, k) has three outgoing arcs incrementing one coordinate mod m, the problem asked for a general rule decomposing all 3m³ arcs into three directed Hamiltonian cycles for every odd m > 1. Claude explored small cases systematically via code and discovered a remarkably simple closed-form “bumping” rule; Knuth proved its correctness for all odd m, and the Lean community (Kim Morrison) promptly machine-verified the theorem in Lean 4.",
+      "technicalHighlights": [
+        "Claude Opus 4.6 systematically explored small m cases with self-written programs to uncover a clean closed-form Hamiltonian-cycle decomposition rule for all odd m > 1.",
+        "Donald Knuth independently verified and proved the general construction, publishing the landmark paper “Claude’s Cycles” (Stanford CS, Feb 28, 2026).",
+        "Formally verified in Lean 4 shortly after release (github.com/kim-em/KnuthClaudeLean)."
+      ],
+      "caveats": "Claude discovered the constructive decomposition rule for all odd m while Donald Knuth supplied the full human proof of generality (and the even-m case remained separate).",
+      "contributors": [
+        "Donald E. Knuth",
+        "Filip Stappers",
+        "Claude Opus 4.6",
+        "Kim Morrison (Lean 4)"
+      ],
+      "institutions": [
+        "Stanford University",
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 91,
+        "verification": 98,
+        "velocity": 93
+      },
+      "scoreRationale": {
+        "foundational": "Solved a crisp open combinatorial decomposition problem directly slated for Knuth’s canonical Art of Computer Programming.",
+        "ripple": "Endorsement by Donald Knuth himself became one of the most influential cultural and scientific validation moments for AI-assisted mathematics and computer science.",
+        "verification": "Proved rigorously by Donald Knuth and independently machine-checked in Lean 4.",
+        "velocity": "Uncovered a general constructive rule in roughly one hour of interactive exploration after weeks of human effort."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Stanford CS (Feb 28, 2026) — Donald E. Knuth: “Claude’s Cycles” (PDF)",
+          "url": "https://cs.stanford.edu/~knuth/papers/claude-cycles.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "GitHub — kim-em/KnuthClaudeLean (Lean 4 Formalization of Claude’s Cycles)",
+          "url": "https://github.com/kim-em/KnuthClaudeLean/blob/master/claude-cycles.md",
+          "type": "formal-verification"
         }
       ]
     },
@@ -3672,6 +3920,72 @@
         },
         {
           "label": "Google DeepMind — Accelerating mathematical and scientific discovery with Gemini Deep Think",
+          "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "gemini-deep-think-woodruff-physics-cs-2026",
+      "title": "Gemini Deep Think Derives Exact Cosmic-String Gravitational Radiation Integrals and Settles Open TCS Conjectures",
+      "shortTitle": "Gemini Deep Think Physics & TCS",
+      "date": "2026-02-03",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Theoretical Physics",
+        "Cosmic Strings",
+        "Theoretical Computer Science"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Gemini Deep Think + Tree Search & Numerical Verification (Google DeepMind)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 10,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Collaborating with David Woodruff and physicists, Gemini Deep Think derived six exact analytical Gegenbauer-polynomial solutions for cosmic-string gravitational radiation and settled a decade-old online submodular optimization conjecture.",
+      "summary": "In companion February–March 2026 papers (arXiv:2602.03837 led by David P. Woodruff et al., and arXiv:2603.04735), Google DeepMind and academic collaborators documented a suite of original research breakthroughs produced with Gemini Deep Think across theoretical physics, computer science, information theory, and mechanism design. In theoretical physics, a neuro-symbolic Gemini Deep Think + tree-search agent derived six novel exact analytical evaluations—most elegantly via Gegenbauer polynomial expansions absorbing integrand singularities—for the gravitational-wave power spectrum integral I(N, α) of cosmic-string loops. In theoretical CS, Gemini broke deadlocks on Max-Cut and high-dimensional Steiner Tree bounds, settled a 10-year conjecture in online submodular optimization, and extended auction Revelation Principles from rational to real bids, with multiple results accepted at top venues including ICLR 2026.",
+      "technicalHighlights": [
+        "Derived six novel exact analytical methods (highlighting Gegenbauer polynomials) solving singular cosmic-string gravitational-wave radiation integrals for arbitrary loop geometries.",
+        "Settled a 10-year-old conjecture in online submodular optimization and broke deadlocks on classic Max-Cut and Steiner Tree problems.",
+        "Demonstrated cross-disciplinary human–AI collaboration spanning physics, cryptography, economics, and complexity theory, including peer-reviewed conference acceptances."
+      ],
+      "caveats": "Case studies were produced under expert human guidance and problem selection; several individual results are distributed across follow-up conference and journal submissions.",
+      "contributors": [
+        "David P. Woodruff",
+        "Google DeepMind Science Team",
+        "Academic Physics & TCS Collaborators"
+      ],
+      "institutions": [
+        "Google DeepMind",
+        "Carnegie Mellon University"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 87,
+        "verification": 89,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Produced multiple genuine analytical breakthroughs in both theoretical astrophysics (cosmic-string integrals) and theoretical computer science.",
+        "ripple": "Demonstrated that reasoning LLMs generalize well beyond pure math competitions into open-ended physics derivations and TCS proofs.",
+        "verification": "Verified analytically, numerically, and through peer-reviewed academic submissions including ICLR 2026.",
+        "velocity": "Synthesized cross-field mathematical techniques (e.g., Gegenbauer expansions connecting to QFT Feynman parameters) rapidly under guided tree search."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "arXiv:2602.03837 (Feb 3, 2026) — Accelerating Scientific Research with Gemini: Case Studies and Common Techniques",
+          "url": "https://arxiv.org/abs/2602.03837",
+          "type": "paper"
+        },
+        {
+          "label": "arXiv:2603.04735 (Mar 5, 2026) — Solving an Open Problem in Theoretical Physics (Cosmic Strings) using AI-Assisted Tree Search",
+          "url": "https://arxiv.org/abs/2603.04735",
+          "type": "paper"
+        },
+        {
+          "label": "Google DeepMind (Feb 11, 2026) — Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
           "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
           "type": "announcement"
         }
@@ -3861,6 +4175,131 @@
       ]
     },
     {
+      "id": "boltzgen-universal-binder-2025",
+      "title": "MIT BoltzGen: Open-Source All-Atom Generative Model Designs Nanomolar Binders Across Proteins, Peptides, and Small Molecules",
+      "shortTitle": "BoltzGen Universal Binder Design",
+      "date": "2025-11-24",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "All-Atom Binder Design",
+        "Generative Structural Biology",
+        "Open-Source Drug Discovery"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "BoltzGen (Unified All-Atom Diffusion & Structure Model, MIT Jameel Clinic)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Open-sourced by MIT’s Jameel Clinic, BoltzGen unified structure prediction and all-atom generative design in one model—achieving nanomolar wet-lab binders on 66% of nine novel therapeutic targets across proteins, nanobodies, and peptides.",
+      "summary": "Released by MIT CSAIL and the Abdul Latif Jameel Clinic in October–November 2025 (bioRxiv / PubMed PMID 41394589), Hannes Stärk, Regina Barzilay, Tommi Jaakkola, and collaborators introduced BoltzGen, an open-source all-atom generative model that unifies biomolecular structure prediction and de novo binder design inside a single diffusion architecture. Unlike earlier backbone-only protein generators, BoltzGen natively designs binders across modalities—proteins, nanobodies, cyclic peptides, and small-molecule interfaces—while jointly modeling full atomic side chains and covalent constraints. Across nine challenging novel targets with no prior structural binders, testing only ~15 designs per target yielded nanomolar-affinity wet-lab binders for 66% of targets.",
+      "technicalHighlights": [
+        "Unifies all-atom biomolecular structure prediction and multi-modal binder generation (proteins, nanobodies, peptides, small-molecule targets) in one open-source model.",
+        "Achieved nanomolar-level experimental binding affinity on 66% of nine novel, hard-to-drug targets with tiny wet-lab screening budgets (~15 designs each).",
+        "Released fully open-source under MIT’s Boltz ecosystem, catalyzing rapid 2026 follow-ons (BoltzProt-1, BoltzMol-1)."
+      ],
+      "caveats": "Validated experimentally across diverse academic and partner wet labs in the bioRxiv preprint (updated June 2026), pending final peer-reviewed journal publication.",
+      "contributors": [
+        "Hannes Stärk",
+        "Felix Faltings",
+        "Regina Barzilay",
+        "Tommi Jaakkola",
+        "MIT BoltzGen Team"
+      ],
+      "institutions": [
+        "MIT CSAIL / Jameel Clinic"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 90,
+        "verification": 82,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "First open-source all-atom model unifying folding and cross-modal binder generation at atomic resolution.",
+        "ripple": "Broadly adopted across academic and biotech drug-discovery pipelines as an open alternative to closed commercial binder platforms.",
+        "verification": "Strong wet-lab experimental validation across nine novel targets and open code/weights, scored as Preprint / Active Review pending journal print.",
+        "velocity": "Achieved 66% target hit rates testing ~15 AI-designed candidates per target instead of screening millions of library clones."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PubMed / bioRxiv (Nov 24, 2025) — BoltzGen: Toward Universal Binder Design (PMID: 41394589)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41394589/",
+          "type": "paper"
+        },
+        {
+          "label": "MIT News — MIT scientists debut BoltzGen generative AI model for hard-to-treat diseases",
+          "url": "https://news.mit.edu/2025/mit-scientists-debut-generative-ai-model-that-could-create-molecules-addressing-hard-to-treat-diseases-1125",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "rfantibody-de-novo-antibodies-2025",
+      "title": "Atomically Accurate De Novo Design of Therapeutic Antibodies with Fine-Tuned RFdiffusion (RFantibody)",
+      "shortTitle": "RFantibody De Novo Antibodies (Nature)",
+      "date": "2025-11-05",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "De Novo Antibody Design",
+        "Structural Immunology",
+        "SE(3) Diffusion"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "RFantibody (Fine-Tuned RFdiffusion + ProteinMPNN + RoseTTAFold2, UW IPD)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Published in Nature, David Baker’s lab cracked the long-standing challenge of designing hypervariable antibody CDR loops from scratch—producing cryo-EM-verified, atomically accurate de novo antibodies against disease epitopes.",
+      "summary": "Published online in Nature on November 5, 2025 (Vol. 649, Jan 2026, DOI: 10.1038/s41586-025-09721-5), Nathaniel R. Bennett, Joseph L. Watson, Robert J. Ragotte, David Baker, and colleagues at the University of Washington’s Institute for Protein Design demonstrated atomically accurate de novo design of antibodies targeting user-specified epitopes using a fine-tuned version of RFdiffusion (RFantibody). Designing antibodies had remained far harder than designing rigid helical mini-proteins because antigen recognition relies on flexible, unstructured complementarity-determining region (CDR) loops. Cryo-EM structures of the AI-designed single-domain and scFv antibodies bound to viral and bacterial targets—including influenza hemagglutinin and C. difficile toxin—matched computational predictions with sub-angstrom accuracy.",
+      "technicalHighlights": [
+        "Fine-tuned RFdiffusion on antibody–antigen complexes to generate CDR loops targeting exact user-chosen epitopes from scratch.",
+        "Cryo-EM structural determination confirmed atomic-level agreement between AI-designed antibody loops and physical antigen-bound complexes.",
+        "Validated against clinically relevant targets including influenza hemagglutinin, SARS-CoV-2, and Clostridioides difficile toxin B."
+      ],
+      "caveats": "Initial de novo hits often had modest affinities requiring affinity maturation or larger screens before matching clinical-grade monoclonal antibodies, paving the way for higher-hit-rate models like Chai-2.",
+      "contributors": [
+        "Nathaniel R. Bennett",
+        "Joseph L. Watson",
+        "Robert J. Ragotte",
+        "David Baker"
+      ],
+      "institutions": [
+        "University of Washington (Institute for Protein Design)"
+      ],
+      "scores": {
+        "foundational": 90,
+        "ripple": 92,
+        "verification": 96,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Solved the flexible-loop antibody design grand challenge with atomic cryo-EM precision—moving beyond rigid de novo scaffolds.",
+        "ripple": "Unlocks programmable, animal-free antibody discovery against previously undruggable epitopes across oncology and infectious disease.",
+        "verification": "Peer-reviewed in Nature (Vol. 649, pp. 183–193) with direct cryo-EM atomic structure confirmation and open-source code.",
+        "velocity": "Eliminates months of animal immunization and random library panning by generating epitope-specific antibodies directly in silico."
+      },
+      "enables": [
+        "chai-2-antibody-design-2025"
+      ],
+      "sources": [
+        {
+          "label": "PubMed / Nature (Nov 5, 2025) — Atomically accurate de novo design of antibodies with RFdiffusion (DOI: 10.1038/s41586-025-09721-5)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41193805/",
+          "type": "paper"
+        },
+        {
+          "label": "PMC Full Text — Bennett, Watson, Ragotte, Baker et al., Nature 2025/2026",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12727541/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
       "id": "alphaevolve-67-math-problems-2025",
       "title": "AlphaEvolve Scaled Across 67 Open Math Problems Improves Bounds & Generalizes Formulas",
       "shortTitle": "AlphaEvolve (67 Math Problems)",
@@ -3910,7 +4349,8 @@
         "velocity": "Compressed months of bespoke heuristic search across 67 open problems into parallelized agent runs."
       },
       "enables": [
-        "deepmind-formal-proof-search-2026"
+        "deepmind-formal-proof-search-2026",
+        "alphaevolve-ramsey-numbers-2026"
       ],
       "sources": [
         {
@@ -4110,6 +4550,67 @@
       ]
     },
     {
+      "id": "bindcraft-oneshot-binders-2025",
+      "title": "EPFL BindCraft: One-Shot Open-Source Design of Functional Protein Binders via AlphaFold2 Backpropagation",
+      "shortTitle": "BindCraft One-Shot Binders (Nature)",
+      "date": "2025-08-27",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Protein Binder Design",
+        "AlphaFold2 Backpropagation",
+        "Gene Therapy Vectors"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "BindCraft (AlphaFold2 Backpropagation + ProteinMPNN + PyRosetta, EPFL)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "One-shot (<100 designs tested)",
+      "isAnchor": false,
+      "whyItMatters": "Published in Nature, EPFL’s open-source BindCraft backpropagated directly through AlphaFold2 to achieve 10–100% wet-lab hit rates across 12 diverse targets (including CRISPR-Cas9 and allergens), democratizing one-shot protein design.",
+      "summary": "Published in Nature on August 27, 2025 (Vol. 646, pp. 483–492, DOI: 10.1038/s41586-025-09429-6), Martin Pacesa, Lennart Nickel, Bruno E. Correia, and collaborators at EPFL introduced BindCraft, an automated open-source pipeline that designs functional de novo protein binders in a single shot by backpropagating structural interface losses directly through AlphaFold2 weights, followed by ProteinMPNN sequence refinement and PyRosetta filtering. Across 12 diverse and challenging biological targets—including cell-surface receptors, allergens, de novo multi-domain proteins, and CRISPR-Cas9—BindCraft achieved 10% to 100% experimental success rates (averaging 46.3%) while testing only dozens of candidates per target, without requiring high-throughput screening facilities.",
+      "technicalHighlights": [
+        "Backpropagates directly through AlphaFold2 to hallucinate complementary binding interfaces and sequences in one unified open-source workflow.",
+        "Achieved 10–100% experimental success rates (46.3% average) across 12 diverse targets, including functional inhibition of CRISPR-Cas9 and allergen neutralization.",
+        "Enabled ordinary academic wet labs without robotic display facilities to design nanomolar binders on standard GPUs."
+      ],
+      "caveats": "Relies on AlphaFold2’s folded-protein structural priors, making highly disordered targets and small-molecule/covalent modalities harder without complementary all-atom tools.",
+      "contributors": [
+        "Martin Pacesa",
+        "Lennart Nickel",
+        "Christian Schellhaas",
+        "Bruno E. Correia"
+      ],
+      "institutions": [
+        "EPFL (École Polytechnique Fédérale de Lausanne)"
+      ],
+      "scores": {
+        "foundational": 88,
+        "ripple": 93,
+        "verification": 96,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "Showed that direct gradient backpropagation through AlphaFold2 achieves remarkably high zero-shot binder hit rates without training a new diffusion generator.",
+        "ripple": "Immediately became one of the most widely adopted open-source binder design tools worldwide, from gene-therapy AAV targeting to academic therapeutics.",
+        "verification": "Peer-reviewed in Nature (Vol. 646, pp. 483–492) with extensive wet-lab affinity, functional inhibition, and structural validation across 12 targets.",
+        "velocity": "Turned binder discovery from screening tens of thousands of yeast-display clones into testing a handful of one-shot designs."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PubMed / Nature (Aug 27, 2025) — One-shot design of functional protein binders with BindCraft (DOI: 10.1038/s41586-025-09429-6)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40866699/",
+          "type": "paper"
+        },
+        {
+          "label": "PMC Full Text — Pacesa, Nickel, Correia et al., Nature 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12507698/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
       "id": "gpt4b-micro-yamanaka-2025",
       "title": "OpenAI GPT-4b micro & Retro Biosciences Engineer Yamanaka Stem-Cell Factors with 50× Reprogramming Gains",
       "shortTitle": "GPT-4b micro Yamanaka Factors",
@@ -4228,6 +4729,72 @@
           "label": "MIT News — Using generative AI, researchers design compounds that can kill drug-resistant bacteria",
           "url": "https://news.mit.edu/2025/using-generative-ai-researchers-design-compounds-kill-drug-resistant-bacteria-0814",
           "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "dusty-plasma-new-physics-2025",
+      "title": "Physics-Tailored Neural Network Discovers Unexpected Non-Reciprocal Force Laws in Dusty Plasmas",
+      "shortTitle": "AI Discovers Dusty Plasma Physics (PNAS)",
+      "date": "2025-08-05",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Plasma Physics",
+        "Many-Body Dynamics",
+        "AI Physical Law Discovery"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Emory Physics-Tailored Symmetry-Constrained Neural Network",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Desktop GPU training on 3D tracks",
+      "isAnchor": false,
+      "whyItMatters": "In PNAS, Emory physicists trained a symmetry-constrained neural network on 3D dusty-plasma trajectories, discovering unexpected non-reciprocal force laws and overturning textbook particle-charge scaling.",
+      "summary": "Published in PNAS on August 5, 2025 (DOI: 10.1073/pnas.2505725122; widely covered in early 2026), Wentao Yu, Eslam Abdelaleem, Ilya Nemenman, and Justin C. Burton at Emory University built a physics-tailored neural network encoding physical symmetries and nonidentical particle dynamics to infer interaction laws directly from 3D laboratory laser-tracked trajectories in a dusty plasma (\"the fourth state of matter\"). Achieving R > 0.99 predictive fidelity, the network extracted precise mathematical approximations of asymmetric non-reciprocal forces (where leading particles attract trailing particles while trailing particles repel leading ones) and revealed major deviations from longstanding theoretical assumptions—showing that particle electric charge does not scale simply linearly with size and that exponential screening length depends directly on particle size, confirmed experimentally.",
+      "technicalHighlights": [
+        "Inferred previously unknown non-reciprocal many-body force laws directly from noisy 3D experimental plasma-particle trajectories with R > 0.99 accuracy.",
+        "Overturned two textbook dusty-plasma theoretical assumptions regarding charge–size linearity and size-independent screening length, validated by independent mass-inference experiments.",
+        "Runs on a standard desktop computer, offering a general law-discovery framework for collective motion from colloids to living systems."
+      ],
+      "caveats": "Discovered effective mesoscopic force laws within laboratory dusty plasmas rather than a new fundamental particle-physics interaction, requiring careful human physics encoding of symmetries.",
+      "contributors": [
+        "Wentao Yu",
+        "Eslam Abdelaleem",
+        "Ilya Nemenman",
+        "Justin C. Burton"
+      ],
+      "institutions": [
+        "Emory University"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 85,
+        "verification": 94,
+        "velocity": 85
+      },
+      "scoreRationale": {
+        "foundational": "Rare peer-reviewed case of a neural network discovering genuinely new, experimentally confirmed physical laws from raw laboratory data that overturn prior theoretical assumptions.",
+        "ripple": "Provides an interpretable, desktop-scale template for inferring unknown effective force laws across active matter, plasma physics, and biological collectives.",
+        "verification": "Peer-reviewed in PNAS (edited by Curtis Callan Jr.) with independent experimental confirmation of inferred particle masses and force scaling.",
+        "velocity": "Extracted high-precision non-reciprocal many-body interaction laws directly from 3D trajectories where decades of analytic approximations fell short."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PNAS (Aug 5, 2025) — Physics-tailored machine learning reveals unexpected physics in dusty plasmas (DOI: 10.1073/pnas.2505725122)",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.2505725122",
+          "type": "paper"
+        },
+        {
+          "label": "PubMed — Yu, Abdelaleem, Nemenman, Burton (PMID: 40743396)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40743396/",
+          "type": "paper"
+        },
+        {
+          "label": "ScienceDaily — AI just discovered new physics in the fourth state of matter",
+          "url": "https://www.sciencedaily.com/releases/2026/04/260422044635.htm",
+          "type": "explainer"
         }
       ]
     },
@@ -4420,6 +4987,69 @@
       ]
     },
     {
+      "id": "bioemu-protein-dynamics-2025",
+      "title": "Microsoft Research BioEmu: Generative Deep Learning Emulates Protein Equilibrium Ensembles and Cryptic Pockets",
+      "shortTitle": "BioEmu Protein Dynamics (Science)",
+      "date": "2025-07-10",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Protein Dynamics",
+        "Conformational Ensembles",
+        "Biomolecular Emulation"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "BioEmu-1 (Generative Protein Equilibrium Emulator, Microsoft Research AI for Science)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "1,000s of conformations/hr on 1 GPU",
+      "isAnchor": false,
+      "whyItMatters": "In Science, Microsoft’s BioEmu moves past static AlphaFold snapshots to emulate full protein conformational ensembles, cryptic pockets, and folding free energies (~1 kcal/mol) 10,000× faster than MD.",
+      "summary": "Published in Science in July 2025 (PubMed PMID 40638710), Sarah Lewis, Tim Hempel, Frank Noé, and colleagues at Microsoft Research AI for Science introduced BioEmu, a generative deep-learning system that emulates thermodynamic equilibrium ensembles of protein structures rather than single static folds. Trained jointly on static structures, over 200 milliseconds of molecular dynamics (MD) trajectories, and hundreds of thousands of experimental protein-stability measurements, BioEmu generates thousands of statistically independent conformations per hour on a single GPU. It accurately captures cryptic binding-pocket opening, local unfolding, and large domain rearrangements while predicting relative folding free energies within ~1 kcal/mol of experimental benchmarks—dramatically amortizing millisecond-scale MD.",
+      "technicalHighlights": [
+        "Moves structural biology from static 3D snapshots (AlphaFold) to full thermodynamic equilibrium ensembles and functional protein motions.",
+        "Captures cryptic druggable pockets, domain rearrangements, and local unfolding with ~1 kcal/mol relative free-energy accuracy.",
+        "Generates thousands of independent equilibrium conformations per hour on a single GPU—orders of magnitude faster than classical MD—with open-source weights."
+      ],
+      "caveats": "Currently focuses on monomeric protein backbones/conformations and requires side-chain packing or downstream docking for full ligand-bound holo complexes.",
+      "contributors": [
+        "Sarah Lewis",
+        "Tim Hempel",
+        "José Jiménez-Luna",
+        "Frank Noé",
+        "Microsoft Research AI for Science"
+      ],
+      "institutions": [
+        "Microsoft Research AI for Science",
+        "Freie Universität Berlin"
+      ],
+      "scores": {
+        "foundational": 90,
+        "ripple": 91,
+        "verification": 95,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Addresses the central post-AlphaFold frontier in structural biology: predicting the dynamic conformational ensembles that actually govern protein function and allostery.",
+        "ripple": "Unlocks scalable discovery of cryptic binding pockets for historically \"undruggable\" protein targets across pharmaceutical research.",
+        "verification": "Peer-reviewed in Science with quantitative benchmarks against >200 ms of MD trajectories, experimental ΔG stability datasets, and open-source release.",
+        "velocity": "Replaces weeks of GPU-cluster millisecond molecular dynamics with thousands of independent equilibrium samples per hour on one GPU."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "PubMed / Science (Jul 2025) — Scalable emulation of protein equilibrium ensembles with generative deep learning (PMID: 40638710)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40638710/",
+          "type": "paper"
+        },
+        {
+          "label": "Microsoft Research — BioEmu Publication & Open-Source Code",
+          "url": "https://www.microsoft.com/en-us/research/publication/scalable-emulation-of-protein-equilibrium-ensembles-with-generative-deep-learning/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "alphagenome-regulatory-dna-2025",
       "title": "AlphaGenome Decodes Non-Coding Regulatory DNA Across 1-Million-Base Windows",
       "shortTitle": "AlphaGenome (Regulatory DNA)",
@@ -4532,7 +5162,9 @@
         "verification": "Strong bioRxiv benchmarks and CASP16 affinity results, with ongoing independent pharmaceutical evaluations.",
         "velocity": "Compressed hours of cluster FEP physics simulations into ~18 seconds on a single GPU."
       },
-      "enables": [],
+      "enables": [
+        "boltzgen-universal-binder-2025"
+      ],
       "sources": [
         {
           "label": "MIT Jameel Clinic — Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction",
@@ -4921,7 +5553,9 @@
         "verification": "Peer-reviewed in Nature with open checkpoints, tempered by 2026 independent scrutiny over experimental novelty claims.",
         "velocity": "Replaced million-structure DFT screening funnels with direct property-conditioned generation."
       },
-      "enables": [],
+      "enables": [
+        "elementsclaw-superconductors-2026"
+      ],
       "sources": [
         {
           "label": "Nature (PubMed): A generative model for inorganic materials design",
@@ -6073,7 +6707,8 @@
         "alphaproteo-binders-2024",
         "esm3-esmgfp-protein-2024",
         "chai-2-antibody-design-2025",
-        "gpt6-intrinsic-protein-design-2026"
+        "gpt6-intrinsic-protein-design-2026",
+        "rfantibody-de-novo-antibodies-2025"
       ],
       "sources": [
         {
@@ -6779,7 +7414,9 @@
         "boltz-2-binding-affinity-2025",
         "evo-2-genome-design-2025",
         "rfdiffusion-protein-design-2023",
-        "alphamissense-variants-2023"
+        "alphamissense-variants-2023",
+        "bindcraft-oneshot-binders-2025",
+        "bioemu-protein-dynamics-2025"
       ],
       "sources": [
         {
@@ -6966,7 +7603,9 @@
         "verification": "Peer-reviewed in Science Advances (6:eaay2631) with open-source code and reproducible 100-equation benchmark.",
         "velocity": "Automated exact equation extraction in minutes on problems intractable for pure brute-force search."
       },
-      "enables": [],
+      "enables": [
+        "dusty-plasma-new-physics-2025"
+      ],
       "sources": [
         {
           "label": "PMC / Science Advances (Apr 15, 2020) — AI Feynman: A physics-inspired method for symbolic regression",

@@ -340,6 +340,36 @@ const EXPLICIT_ATTRIBUTIONS = {
       lab: 'Carnegie Mellon University',
     },
   ],
+  'erdos-1196-gpt54-gauss-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-5-4-pro',
+      modelName: 'GPT-5.4 Pro',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+      roleNote: 'Proof Discovery',
+    },
+    {
+      familyId: 'gauss-math-inc',
+      familyName: 'Gauss (Math, Inc.)',
+      modelId: 'gauss-math-inc',
+      modelName: 'Gauss Autoformalization Agent',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Math, Inc.',
+      roleNote: 'Lean 4 Formalization',
+    },
+  ],
+  'bindcraft-oneshot-binders-2025': [
+    {
+      familyId: 'bindcraft-epfl',
+      familyName: 'BindCraft (EPFL)',
+      modelId: 'bindcraft',
+      modelName: 'BindCraft (AF2 Backprop + ProteinMPNN)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'EPFL',
+    },
+  ],
 };
 
 /**
@@ -429,6 +459,18 @@ export function classifyBreakthroughSystems(item) {
         familyName: 'Anthropic Claude Lineage',
         modelId: 'claude-opus-5-5',
         modelName: 'Claude Opus 5.5',
+        architecture: llmArch,
+        lab: 'Anthropic',
+      },
+    ];
+  }
+  if (s.includes('claude opus 4.6')) {
+    return [
+      {
+        familyId: 'anthropic-claude',
+        familyName: 'Anthropic Claude Lineage',
+        modelId: 'claude-opus-4-6',
+        modelName: 'Claude Opus 4.6',
         architecture: llmArch,
         lab: 'Anthropic',
       },
@@ -792,6 +834,18 @@ export function classifyBreakthroughSystems(item) {
       },
     ];
   }
+  if (s.includes('rfantibody')) {
+    return [
+      {
+        familyId: 'rosettafold-rfdiffusion',
+        familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+        modelId: 'rfantibody',
+        modelName: 'RFantibody (Fine-Tuned RFdiffusion)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'University of Washington (IPD)',
+      },
+    ];
+  }
   if (s.includes('rfdiffusion')) {
     return [
       {
@@ -984,11 +1038,23 @@ export function classifyBreakthroughSystems(item) {
       },
     ];
   }
+  if (s.includes('boltzgen')) {
+    return [
+      {
+        familyId: 'boltz-suite',
+        familyName: 'Boltz Biomolecular Suite (MIT)',
+        modelId: 'boltzgen',
+        modelName: 'BoltzGen All-Atom Binder Model',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'MIT CSAIL / Jameel Clinic',
+      },
+    ];
+  }
   if (s.includes('boltz-2')) {
     return [
       {
-        familyId: 'boltz-2',
-        familyName: 'Boltz-2 (MIT / Recursion)',
+        familyId: 'boltz-suite',
+        familyName: 'Boltz Biomolecular Suite (MIT)',
         modelId: 'boltz-2',
         modelName: 'Boltz-2 Biomolecular Model',
         architecture: 'Bio & Genomic Neural Net',
@@ -1053,6 +1119,42 @@ export function classifyBreakthroughSystems(item) {
         modelName: 'A-Lab NLP + Active-Learning Robotics',
         architecture: 'Neuro-Symbolic LLM + Verifier',
         lab: 'Lawrence Berkeley National Lab',
+      },
+    ];
+  }
+  if (s.includes('bioemu')) {
+    return [
+      {
+        familyId: 'microsoft-bioemu',
+        familyName: 'BioEmu (Microsoft Research)',
+        modelId: 'bioemu-1',
+        modelName: 'BioEmu-1 Protein Equilibrium Emulator',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Microsoft Research',
+      },
+    ];
+  }
+  if (s.includes('elementsclaw')) {
+    return [
+      {
+        familyId: 'elementsclaw',
+        familyName: 'ElementsClaw (LAM + LLM)',
+        modelId: 'elementsclaw',
+        modelName: 'ElementsClaw (LAM + LLM Orchestrator)',
+        architecture: 'Neuro-Symbolic LLM + Verifier',
+        lab: 'ElementsClaw Research',
+      },
+    ];
+  }
+  if (s.includes('emory physics-tailored') || s.includes('dusty-plasma')) {
+    return [
+      {
+        familyId: 'emory-dusty-plasma-nn',
+        familyName: 'Emory Dusty-Plasma Neural Net',
+        modelId: 'emory-dusty-plasma-nn',
+        modelName: 'Symmetry-Constrained Dusty-Plasma NN',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Emory University',
       },
     ];
   }
