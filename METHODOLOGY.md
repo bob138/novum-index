@@ -1,0 +1,40 @@
+# Scoring & Verification Methodology
+
+Ranking scientific breakthroughs across pure mathematics, theoretical computer science, experimental physics, biology, and materials science is inherently imperfect. **The Frontier Index** makes those judgments explicit, auditable, and customizable rather than hiding them behind a black-box score.
+
+## 1. The Four Impact Dimensions (0–100 Each)
+
+Every breakthrough receives an integer score from `0` to `100` on four orthogonal dimensions, each accompanied by a written rationale in `data/breakthroughs.json`:
+
+| Dimension | Default Weight | Anchoring Criteria |
+| :--- | :---: | :--- |
+| **Foundational Depth** (`foundational`) | **35%** | `95–100`: Resolves a Millennium-tier or century-scale landmark problem, or establishes a new foundational paradigm.<br>`85–94`: Solves a major decades-old conjecture or breaks a core theoretical/experimental threshold.<br>`75–84`: Significant conceptual advance opening a new sub-area or method. |
+| **Cross-Field Ripple** (`ripple`) | **25%** | `90–100`: Immediately reshapes multiple disciplines, clinical medicine, global cryptography, or core computational tooling.<br>`80–89`: Strong downstream impact across adjacent subfields or industrial roadmaps.<br>`70–79`: Deep within its home specialty with targeted cross-field spillover. |
+| **Verification & Rigor** (`verification`) | **20%** | `95–100`: Machine-checked formal proof (e.g., Lean 4 / Mathlib) with accepted definitions, or peer-reviewed & independently replicated.<br>`85–94`: Formally verified pending human exposition, or high-trust peer-reviewed venue with strong experimental telemetry.<br>`65–84`: Replicated with caveats, or Lean-checked amid active scope/priority controversy.<br>`50–64`: Credible early preprint/formalization still awaiting independent community audit. |
+| **Discovery Velocity** (`velocity`) | **20%** | `90–100`: Compresses multi-decade or century-scale expected timelines into weeks/months via new AI, formal, or algorithmic methods.<br>`80–89`: Major unexpected acceleration over historical pace.<br>`70–79`: Culmination of steady, long-term human research craftsmanship. |
+
+### Composite Formula
+
+$$\text{Impact} = \frac{\sum_{i} w_i \cdot s_i}{\sum_{i} w_i}$$
+
+Readers can override the weights $w_i$ interactively via the **Tune Ranking Weights** panel and share custom-weighted leaderboards via URL parameters (`?w=35,25,20,20`).
+
+## 2. Verification Tiers
+
+To maintain epistemic clarity during the rapid 2025–2026 wave of AI-generated research, every entry carries one of four explicit tiers:
+
+1. **Formally Verified**: Backed by a machine-checked proof or formal artifact (e.g., Lean 4 kernel verified by independent maintainers, or exact algebraic/programmatic verification). *Note: Formal verification confirms logical validity relative to formal definitions; any remaining human-readability or definition-alignment caveats are always noted explicitly.*
+2. **Peer-Reviewed**: Published in a refereed scientific journal or top-tier conference (e.g., *Nature*, *Science*, *STOC*), officially graded by competition organizers (e.g., IMO), or independently replicated across labs.
+3. **Preprint / Active Review**: Credible announcement accompanied by a public manuscript or formalization currently undergoing independent expert refereeing.
+4. **Contested / Partial**: Notable discovery or formal result subject to active scholarly dispute over scope, priority, specification framing, or novelty claims.
+
+## 3. Provenance Taxonomy (`aiRole`)
+
+- **Human**: Primarily human-conceived and proved/executed without frontier AI synthesis.
+- **AI-Assisted**: Human researchers directing, collaborating with, or validating discoveries made using frontier AI models or specialized scientific AI architectures.
+- **Autonomous AI**: Results discovered primarily via autonomous AI search, multi-agent reasoning, or evolutionary coding loops with minimal step-by-step human guidance.
+
+## 4. Historical Calibration Anchors (2020–2023)
+
+To keep impact scores grounded rather than suffering from recency inflation during the rapid 2024–2026 wave, The Frontier Index includes six landmark 2020–2023 calibration anchors (tagged `isAnchor: true`): **AlphaFold 2** (2020), **AlphaTensor** (2022), **NIF Nuclear Fusion Ignition** (2022), the **Aperiodic Monotile** (2023), **GNoME** (2023), and **FunSearch** (2023). Users can toggle between the full calibrated view, the 2024–2026 wave alone, or anchors only via the timeframe selector.
+

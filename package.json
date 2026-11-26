@@ -1,0 +1,26 @@
+{
+  "name": "frontier-index",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "The Frontier Index — An open-source interactive tracker, visualization suite, and impact ranking of major breakthroughs across Mathematics, Computer Science, and the Sciences.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "node scripts/validate-data.mjs"
+  },
+  "keywords": [
+    "science",
+    "mathematics",
+    "computer-science",
+    "breakthroughs",
+    "ai-for-science",
+    "data-visualization",
+    "open-source"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

@@ -1,0 +1,66 @@
+name: Submit a Breakthrough
+description: Nominate a landmark scientific or mathematical breakthrough for The Frontier Index
+title: "[Nomination]: "
+labels: ["nomination", "data"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Breakthrough Title
+      placeholder: "e.g., Formal Lean Proof of ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: discipline
+    attributes:
+      label: Primary Discipline
+      options:
+        - Mathematics
+        - Computer Science & AI
+        - Physics & Quantum
+        - Biology & Medicine
+        - Chemistry & Materials
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date Announced / Published (YYYY-MM-DD)
+      placeholder: "2026-11-25"
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Current Verification Status
+      options:
+        - Formally Verified
+        - Peer-Reviewed
+        - Preprint / Active Review
+        - Contested / Partial
+    validations:
+      required: true
+  - type: dropdown
+    id: ai_role
+    attributes:
+      label: AI Provenance
+      options:
+        - Autonomous AI
+        - AI-Assisted
+        - Human
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary Source URLs (arXiv, DOI, Lean repo, official announcement)
+      placeholder: "https://arxiv.org/abs/..."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why It Matters & Proposed Score Rationale
+      description: Briefly summarize significance, caveats, and suggested scores across Foundational Depth, Cross-Field Ripple, Verification & Rigor, and Discovery Velocity.
+    validations:
+      required: true

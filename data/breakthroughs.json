@@ -1,0 +1,1541 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-11-25",
+    "defaultWeights": {
+      "foundational": 35,
+      "ripple": 25,
+      "verification": 20,
+      "velocity": 20
+    }
+  },
+  "breakthroughs": [
+    {
+      "id": "riemann-hypothesis-lean-2026",
+      "title": "Formal Lean Proof of the Riemann Hypothesis & Dirichlet GRH",
+      "shortTitle": "Riemann Hypothesis (Lean)",
+      "date": "2026-11-20",
+      "discipline": "Mathematics",
+      "subfields": ["Analytic Number Theory", "Formal Verification", "Langlands Program"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "Unreleased Claude Research Model (Anthropic)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 167,
+      "whyItMatters": "Resolves mathematics' most iconic Millennium Prize Problem—and Dirichlet GRH—with a machine-checked Lean 4 proof verified by the Lean FRO and Mathlib Initiative.",
+      "summary": "On November 20, 2026, Anthropic mathematician Levent Alpöge released a formal Lean 4 proof of both the classical Riemann Hypothesis and the Generalized Riemann Hypothesis for Dirichlet L-functions, developed over six weeks alongside an unreleased research model of Claude. Within 24 hours, the Lean FRO and Mathlib Initiative confirmed the formalization compiles cleanly against standard axioms. Initially spanning ~17 million lines of Lean code, the proof was refactored to ~300,000 lines by Luke Sernau five days later.",
+      "technicalHighlights": [
+        "Proves all non-trivial zeros of the Riemann zeta function and Dirichlet L-functions lie on the critical line Re(s) = 1/2.",
+        "Draws on deep machinery spanning modern number theory, the Langlands program, and arithmetic geometry.",
+        "Verified by Lean FRO and Mathlib Initiative on Nov 21, 2026; compressed 56× from 17M to 300k lines by Nov 25, 2026."
+      ],
+      "caveats": "No complete human-readable mathematical exposition exists yet. While the Lean kernel guarantees logical soundness relative to the stated definitions, mathematicians are actively auditing whether the formal definitions match classical conventions and extracting human intuition from the proof.",
+      "contributors": ["Levent Alpöge", "Luke Sernau"],
+      "institutions": ["Anthropic", "Lean FRO (verifier)", "Mathlib Initiative (verifier)"],
+      "scores": {
+        "foundational": 100,
+        "ripple": 92,
+        "verification": 91,
+        "velocity": 99
+      },
+      "scoreRationale": {
+        "foundational": "Resolves the foremost open problem in pure mathematics since Bernhard Riemann's 1859 paper, plus Dirichlet GRH.",
+        "ripple": "Converts hundreds of conditional theorems across prime distribution, analytic number theory, and primality algorithms into unconditional truths.",
+        "verification": "Machine-verified in Lean 4 by independent Lean FRO and Mathlib teams, docked slightly pending a full human-readable monograph.",
+        "velocity": "Compressed what many mathematicians considered a multi-decade or century-scale open problem into a six-week human–AI collaboration."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Lean FRO & Mathlib Initiative Joint Verification Statement",
+          "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Alpöge's proof of the Riemann hypothesis — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alp%C3%B6ge%27s_proof_of_the_Riemann_hypothesis",
+          "type": "explainer"
+        },
+        {
+          "label": "The Guardian: Two groups verify mathematician's claim that Claude helped prove Riemann Hypothesis",
+          "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "alphaproof-code-signal-2026",
+      "title": "AlphaProof Code: Machine-Code Formal Verification of Signal Protocol",
+      "shortTitle": "AlphaProof Code (Signal)",
+      "date": "2026-11-10",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Formal Software Verification", "Cryptography", "AI Agents"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "AlphaProof Code (Google DeepMind)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "whyItMatters": "First protocol-level mathematical security proofs for the unmodified compiled machine code of a globally deployed cryptographic protocol—completed in four weeks.",
+      "summary": "Google DeepMind unveiled AlphaProof Code, a multi-agent AI system that produced machine-checked Lean proofs establishing core security guarantees—including post-compromise security and post-quantum key exchange properties—directly on the compiled AArch64 Linux binary of Signal's unmodified libsignal (v0.105.4) and SPQR (v1.6.0) Rust crates. A five-person team completed the verification in four weeks.",
+      "technicalHighlights": [
+        "Operates directly on compiled AArch64 machine code rather than idealized abstract protocol models, eliminating compiler and implementation-gap vulnerabilities.",
+        "Proves post-compromise security and post-quantum key exchange guarantees in Lean.",
+        "Demonstrates an order-of-magnitude reduction in the human-effort cost of formal verification for production software."
+      ],
+      "caveats": "Proof guarantees hold relative to the formal security specification and trusted computing base (§5.3 of the technical paper); hardware side-channels and out-of-spec runtime assumptions remain outside the verified boundary.",
+      "contributors": ["Google DeepMind Formal Verification Team"],
+      "institutions": ["Google DeepMind"],
+      "scores": {
+        "foundational": 86,
+        "ripple": 96,
+        "verification": 98,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Breaks the decades-old scalability barrier separating formal methods from real-world compiled cryptographic software.",
+        "ripple": "Establishes a practical blueprint for mathematically verifying critical infrastructure: OS kernels, TLS stacks, browsers, and avionics.",
+        "verification": "Machine-checked Lean proofs with public specifications and verification artifacts released for independent inspection.",
+        "velocity": "Compressed what historically required tens of person-years of formal-methods labor into four weeks with five researchers."
+      },
+      "enables": ["deepmind-verified-quantum-algos-2026"],
+      "sources": [
+        {
+          "label": "AlphaProof Code: Verifying Signal's Security at the Machine-Code Level",
+          "url": "https://google-deepmind.github.io/code-verification/",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Google DeepMind Blog: Introducing AlphaProof Code",
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "geometric-langlands-2024",
+      "title": "Proof of the Geometric Langlands Conjecture",
+      "shortTitle": "Geometric Langlands Proof",
+      "date": "2024-05-06",
+      "discipline": "Mathematics",
+      "subfields": ["Algebraic Geometry", "Representation Theory", "Mathematical Physics"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 30,
+      "whyItMatters": "Completes a monumental 'grand unified theory' bridge in mathematics connecting categories of sheaves on algebraic curves with Galois-side spectral data.",
+      "summary": "Dennis Gaitsgory, Sam Raskin, and seven collaborators published a five-paper, ~1,000-page proof of the global, unramified categorical Geometric Langlands Conjecture in characteristic zero. Culminating three decades of research initiated by Beilinson and Drinfeld, the proof establishes an exact equivalence between automorphic D-modules on Bun_G and ind-coherent sheaves with nilpotent singular support on the stack of local systems for the Langlands dual group.",
+      "technicalHighlights": [
+        "Spans five coordinated arXiv papers (May–September 2024) constructing the Langlands functor, Kac–Moody localization, ambidexterity, and multiplicity one.",
+        "Realizes a central pillar of the broader Langlands Program linking geometry, representation theory, and S-duality in quantum field theory.",
+        "Pure human mathematical synthesis built atop derived algebraic geometry."
+      ],
+      "caveats": "Proves the unramified geometric conjecture in characteristic zero; the arithmetic Langlands program over number fields and ramified/positive-characteristic extensions remain active frontiers.",
+      "contributors": ["Dennis Gaitsgory", "Sam Raskin", "Dima Arinkin", "Dario Beraldo", "Justin Campbell", "Lin Chen", "Joakim Faergeman", "Kevin Lin", "Nick Rozenblyum"],
+      "institutions": ["Max Planck Institute for Mathematics", "Yale University", "University of Wisconsin–Madison", "MIT"],
+      "scores": {
+        "foundational": 97,
+        "ripple": 86,
+        "verification": 92,
+        "velocity": 72
+      },
+      "scoreRationale": {
+        "foundational": "Resolves one of the defining structural conjectures of modern pure mathematics and derived algebraic geometry.",
+        "ripple": "Deeply informs arithmetic Langlands research, 4D gauge theory (Kapustin–Witten), and representation theory.",
+        "verification": "Extensively revised, peer-vetted across workshops worldwide, and widely accepted by the algebraic geometry community.",
+        "velocity": "Represents the culmination of a 30-year collaborative human research program rather than a sudden methodology shock."
+      },
+      "enables": ["riemann-hypothesis-lean-2026"],
+      "sources": [
+        {
+          "label": "arXiv:2405.03599 — Proof of the geometric Langlands conjecture I",
+          "url": "https://arxiv.org/abs/2405.03599",
+          "type": "paper"
+        },
+        {
+          "label": "arXiv:2409.09856 — Proof of the geometric Langlands conjecture V",
+          "url": "https://arxiv.org/abs/2409.09856",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "williams-sqrt-space-2025",
+      "title": "Simulating Time t Computations in O(√(t log t)) Space",
+      "shortTitle": "Time in √(t log t) Space",
+      "date": "2025-02-25",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Computational Complexity", "Algorithms", "Automata Theory"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 50,
+      "whyItMatters": "Shatters a 50-year barrier in theoretical computer science by proving any time-t multitape computation can be simulated using roughly square-root memory.",
+      "summary": "MIT complexity theorist Ryan Williams proved that every deterministic multitape Turing machine running in time t can be simulated in only O(√(t log t)) space—the first asymptotic improvement since Hopcroft, Paul, and Valiant's 1975 O(t / log t) bound. By reducing time-bounded computation to implicitly defined Tree Evaluation instances solved via the Cook–Mertz catalytic-space procedure, the theorem immediately yields stronger circuit lower bounds and restructures our map of time–space tradeoffs.",
+      "technicalHighlights": [
+        "Improves the 1975 Hopcroft–Paul–Valiant bound TIME[t] ⊆ SPACE[t / log t] dramatically to TIME[t] ⊆ SPACE[√(t log t)].",
+        "Shows that memory is exponentially more reusable relative to time than previously proved.",
+        "Presented at STOC 2025 and immediately sparked follow-up improvements for circuit value and randomized/quantum space bounds."
+      ],
+      "caveats": "The simulation incurs a super-polynomial time overhead, so it is a structural complexity breakthrough rather than a drop-in RAM compression algorithm for practical software.",
+      "contributors": ["Ryan Williams"],
+      "institutions": ["MIT CSAIL"],
+      "scores": {
+        "foundational": 96,
+        "ripple": 84,
+        "verification": 96,
+        "velocity": 84
+      },
+      "scoreRationale": {
+        "foundational": "Overturns a half-century standstill on the fundamental relationship between time and memory in computation.",
+        "ripple": "Unlocks new lower bounds against P-uniform circuits and catalyzed a wave of 2025–2026 catalytic-space results.",
+        "verification": "Short, clean, peer-reviewed STOC 2025 proof verified immediately by the complexity theory community.",
+        "velocity": "An unexpected leap from t/log t directly to √(t log t) just months after Cook–Mertz's STOC 2024 breakthrough."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "arXiv:2502.17779 — Simulating Time With Square-Root Space",
+          "url": "https://arxiv.org/abs/2502.17779",
+          "type": "paper"
+        },
+        {
+          "label": "Scott Aaronson: Ryan Williams strikes again",
+          "url": "https://scottaaronson.blog/?p=8680",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "alphafold-3-2024",
+      "title": "AlphaFold 3: Unified Atomic Modeling of All Biomolecular Complexes",
+      "shortTitle": "AlphaFold 3",
+      "date": "2024-05-08",
+      "discipline": "Biology & Medicine",
+      "subfields": ["Structural Biology", "Computational Drug Discovery", "Diffusion Models"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "AlphaFold 3 (Google DeepMind / Isomorphic Labs)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Extends atomic-precision structure prediction beyond isolated proteins to joint complexes of proteins, DNA, RNA, small-molecule drugs, and ions.",
+      "summary": "Published in Nature by Google DeepMind and Isomorphic Labs, AlphaFold 3 replaced AlphaFold 2's Evoformer/structure module with a Pairformer and diffusion-based architecture capable of jointly predicting 3D structures of virtually all molecules of life. It achieved ~50% higher accuracy than prior physics-based docking tools on protein–ligand interactions and transformed everyday structural biology and drug design workflows.",
+      "technicalHighlights": [
+        "Unified diffusion architecture predicts joint atomic coordinates across proteins, nucleic acids, small-molecule ligands, ions, and post-translational modifications.",
+        "Substantially outperforms specialized docking tools and AlphaFold-Multimer on antibody–antigen and protein–ligand complexes.",
+        "Cited >17,000 times within two years and serves as the structural validation backbone for generative biology platforms like Evo 2."
+      ],
+      "caveats": "Can hallucinate plausible-looking structures in disordered regions and predicts static snapshots rather than full conformational dynamics; initial restricted code release drew community pushback before academic weights were opened.",
+      "contributors": ["Josh Abramson", "Jonas Adler", "John Jumper", "Demis Hassabis", "Pushmeet Kohli", "AlphaFold 3 Team"],
+      "institutions": ["Google DeepMind", "Isomorphic Labs"],
+      "scores": {
+        "foundational": 88,
+        "ripple": 98,
+        "verification": 97,
+        "velocity": 89
+      },
+      "scoreRationale": {
+        "foundational": "Generalizes deep learning structural prediction from single-chain folding to the full interactome of cellular chemistry.",
+        "ripple": "Adopted globally across academia and pharma; directly accelerates target discovery, binder design, and genome validation.",
+        "verification": "Published in Nature, independently benchmarked across thousands of crystal structures, and replicated by open models (Boltz, Chai, Protenix).",
+        "velocity": "Collapsed wet-lab structural co-crystallization cycles from months into minutes on standard hardware."
+      },
+      "enables": ["alphaproteo-binders-2024", "evo-2-genome-design-2025"],
+      "sources": [
+        {
+          "label": "Nature (PubMed): Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38718835/",
+          "type": "paper"
+        },
+        {
+          "label": "Google DeepMind AlphaFold Portal",
+          "url": "https://deepmind.google/science/alphafold/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "kakeya-3d-2025",
+      "title": "Proof of the 3-Dimensional Kakeya Conjecture",
+      "shortTitle": "3D Kakeya Conjecture",
+      "date": "2025-02-24",
+      "discipline": "Mathematics",
+      "subfields": ["Harmonic Analysis", "Geometric Measure Theory", "Additive Combinatorics"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 108,
+      "whyItMatters": "Solves a century-old pillar of geometric measure theory in 3D, proving any set containing a unit line segment in every direction has full Hausdorff dimension 3.",
+      "summary": "Hong Wang (NYU/IAS) and Joshua Zahl (UBC) posted a 127-page proof resolving the 3-dimensional Kakeya conjecture—a problem rooted in Sōichi Kakeya's 1917 needle-rotation question and central to Fourier restriction theory and wave equations. Introducing a delicate multi-scale 'graininess' and sticky-Kakeya induction, the proof earned wide acclaim and recognition including the 2026 Fields Medal.",
+      "technicalHighlights": [
+        "Proves every Besicovitch/Kakeya set in ℝ³ has Minkowski and Hausdorff dimension equal to 3.",
+        "Builds on Wang and Zahl's earlier 'sticky Kakeya' breakthrough via multi-scale tube-intersection estimates.",
+        "Catalyzed follow-up efforts—including AI-assisted attempts—to generalize the method to four and higher dimensions."
+      ],
+      "caveats": "Establishes the n = 3 case; higher dimensions (n ≥ 4) and the stronger Kakeya maximal function conjecture remain separate hurdles under active investigation.",
+      "contributors": ["Hong Wang", "Joshua Zahl"],
+      "institutions": ["New York University", "University of British Columbia", "Institute for Advanced Study"],
+      "scores": {
+        "foundational": 95,
+        "ripple": 82,
+        "verification": 95,
+        "velocity": 80
+      },
+      "scoreRationale": {
+        "foundational": "Resolves one of the crown jewels of harmonic analysis and geometric measure theory open for over a century.",
+        "ripple": "Directly advances Fourier restriction, dispersive PDEs, and incidence geometry.",
+        "verification": "Thoroughly vetted by harmonic analysis leaders including Terence Tao, with multiple expository surveys published in 2025–2026.",
+        "velocity": "Breakthrough synthesis overcoming a decades-long logjam beyond the 2D (1971) case."
+      },
+      "enables": ["kakeya-higher-dim-2026"],
+      "sources": [
+        {
+          "label": "arXiv:2505.07695 — Introduction to the proof of the Kakeya conjecture",
+          "url": "https://arxiv.org/abs/2505.07695",
+          "type": "paper"
+        },
+        {
+          "label": "Terence Tao: The three-dimensional Kakeya conjecture, after Wang and Zahl",
+          "url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "alphaevolve-matrix-2025",
+      "title": "AlphaEvolve: Evolutionary Coding Agent & 48-Multiplication 4×4 Matrix Algorithm",
+      "shortTitle": "AlphaEvolve & 4×4 Matrix",
+      "date": "2025-05-14",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Algorithm Discovery", "Evolutionary Computing", "Systems Optimization"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "AlphaEvolve (Gemini-powered agent, Google DeepMind)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 56,
+      "whyItMatters": "First AI coding agent to simultaneously break a 56-year mathematical record (Strassen's 1969 4×4 matrix bound) and optimize production data centers and chip circuits.",
+      "summary": "Google DeepMind introduced AlphaEvolve, an evolutionary coding agent pairing Gemini LLMs with automated evaluators to iteratively mutate and verify entire codebases. Across 50+ open math problems it matched or improved state-of-the-art constructions—most famously finding a 48-scalar-multiplication algorithm for 4×4 complex matrices (beating Strassen's 49 from 1969)—while also recovering 0.7% of Google's worldwide compute via scheduling heuristics and speeding up FlashAttention and TPU matrix circuits.",
+      "technicalHighlights": [
+        "Discovered a provably exact rank-48 algorithm for multiplying 4×4 complex-valued matrices, improving on Strassen's 1969 record over ℂ.",
+        "Improved best-known mathematical bounds on ~20% of 50+ open problems (including kissing numbers in 11D).",
+        "Deployed directly into production at Google for Borg scheduling, TPU Verilog optimization, and Gemini training kernels."
+      ],
+      "caveats": "Requires a fast, automated objective evaluator; excels on optimization, constructive math, and verifiable code rather than open-ended physical theory without formal metrics.",
+      "contributors": ["Alexander Novikov", "Ngân Vũ", "Marvin Eisenberger", "Matej Balog", "Pushmeet Kohli", "AlphaEvolve Team"],
+      "institutions": ["Google DeepMind"],
+      "scores": {
+        "foundational": 87,
+        "ripple": 95,
+        "verification": 98,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated general-purpose autonomous algorithm discovery spanning both pure mathematics and real-world systems engineering.",
+        "ripple": "Established the LLM + verifier evolutionary search paradigm now powering quantum circuit design, hardware synthesis, and scientific discovery.",
+        "verification": "The 48-multiplication factorization and evolved kernels are algebraically and programmatically verified, with independent GitHub verifications.",
+        "velocity": "Cracked a 56-year-old algebraic complexity record while shipping measurable global infrastructure speedups."
+      },
+      "enables": ["deepmind-verified-quantum-algos-2026", "sub-100k-qubit-qec-2026"],
+      "sources": [
+        {
+          "label": "arXiv:2506.13131 — AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+          "url": "https://arxiv.org/abs/2506.13131",
+          "type": "paper"
+        },
+        {
+          "label": "Google DeepMind Blog: AlphaEvolve",
+          "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "deepmind-verified-quantum-algos-2026",
+      "title": "Agentic Discovery & Lean Verification of Faster Quantum Simulation Algorithms",
+      "shortTitle": "Verified Quantum Algorithms",
+      "date": "2026-11-23",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Quantum Algorithms", "Formal Verification", "Multi-Agent AI"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "Gemini 4 Agent Teams (Google DeepMind / Quantum AI)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "whyItMatters": "Multi-agent AI teams cut fault-tolerant quantum simulation costs by up to 11.8× for fusion and chemistry—and proved every circuit correct in Lean.",
+      "summary": "Google DeepMind and Google Quantum AI demonstrated teams of Gemini 4 agents collaborating in structured 'virtual conferences' to redesign quantum algorithms too large to test on classical supercomputers or current quantum chips. Every algorithmic improvement was formally verified in Lean against mathematical specifications, yielding resource cuts of 11.8× for a fusion energy-loss problem, 8× for photochemistry, 2.5× for the drug-metabolizing enzyme Cytochrome P450, and 290× for an arcsin arithmetic subroutine.",
+      "technicalHighlights": [
+        "Reduces estimated fault-tolerant quantum gate costs by 11.8× (hydrogen fusion stopping power), 8× (photochemistry), and 2.5× (Cytochrome P450).",
+        "Every discovered quantum circuit is machine-verified in Lean, releasing an Apache 2.0 open-source Lean library of specifications and proofs.",
+        "Introduces periodic multi-agent 'conference' collaboration where independent agent teams exchange techniques."
+      ],
+      "caveats": "Formal verification proves equivalence to the mathematical specification, not that the physical model captures every experimental nuance; full-scale runs still require future fault-tolerant quantum hardware.",
+      "contributors": ["Shirobokov", "Max Jaderberg", "Ryan Babbush", "Google DeepMind & Quantum AI Teams"],
+      "institutions": ["Google DeepMind", "Google Quantum AI"],
+      "scores": {
+        "foundational": 84,
+        "ripple": 90,
+        "verification": 97,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Shows how formal verification unlocks AI optimization of programs that cannot be empirically executed or tested today.",
+        "ripple": "Directly brings forward practical timelines for quantum chemistry, fusion plasma simulation, and catalysis on early fault-tolerant machines.",
+        "verification": "Every circuit optimization is accompanied by an open-source Lean proof under Apache 2.0.",
+        "velocity": "Multi-agent scientific teams outperformed years of hand-crafted quantum compilation research in weeks."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Google DeepMind Blog: Finding faster quantum algorithms with agents and formal verification",
+          "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+          "type": "announcement"
+        },
+        {
+          "label": "Technical Breakdown: DeepMind's Gemini 4 Agents Find Faster Quantum Algorithms",
+          "url": "https://cellcog.ai/blog/deepmind-gemini-4-quantum-algorithms/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "willow-qec-threshold-2024",
+      "title": "Below-Threshold Surface Code Quantum Error Correction (Willow)",
+      "shortTitle": "Willow Below-Threshold QEC",
+      "date": "2024-12-09",
+      "discipline": "Physics & Quantum",
+      "subfields": ["Quantum Computing", "Quantum Error Correction", "Superconducting Qubits"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 29,
+      "whyItMatters": "Experimentally proved that adding more physical qubits exponentially suppresses quantum errors—crossing the 30-year fault-tolerance threshold.",
+      "summary": "Published in Nature, Google Quantum AI demonstrated below-threshold surface code quantum error correction on its 105-qubit superconducting Willow processor. Scaling from distance-3 to distance-5 and distance-7 codes halved logical error rates at each step (Λ ≈ 2.14) and produced a logical qubit whose lifetime exceeded the best constituent physical qubit by more than 2×, alongside real-time decoding.",
+      "technicalHighlights": [
+        "First convincing exponential error suppression as surface-code lattice size scales (d = 3 → 5 → 7).",
+        "Logical memory lifetime surpassed break-even against the best individual physical qubit on the chip.",
+        "Integrated real-time neural/algorithmic error decoding fast enough to keep pace with microsecond cycle times."
+      ],
+      "caveats": "Demonstrates fault-tolerant quantum memory rather than universal fault-tolerant logical gates at scale; hardware scaling to tens of thousands of physical qubits remains an engineering challenge.",
+      "contributors": ["Rajeev Acharya", "Hartmut Neven", "Google Quantum AI and Collaborators"],
+      "institutions": ["Google Quantum AI"],
+      "scores": {
+        "foundational": 93,
+        "ripple": 91,
+        "verification": 97,
+        "velocity": 82
+      },
+      "scoreRationale": {
+        "foundational": "Validates the central experimental prerequisite of fault-tolerant quantum computation proposed in the 1990s.",
+        "ripple": "Triggered accelerated hardware roadmaps and enterprise post-quantum cryptography migration timelines worldwide.",
+        "verification": "Published in Nature (Vol. 638, pp. 920–926) with complete experimental telemetry and open datasets.",
+        "velocity": "Decisively cleared a hardware barrier that stalled superconducting architectures for over two decades."
+      },
+      "enables": ["sub-100k-qubit-qec-2026", "deepmind-verified-quantum-algos-2026"],
+      "sources": [
+        {
+          "label": "arXiv:2408.13687 — Quantum error correction below the surface code threshold",
+          "url": "https://arxiv.org/abs/2408.13687",
+          "type": "paper"
+        },
+        {
+          "label": "Google Research: Making quantum error correction work",
+          "url": "https://research.google/blog/making-quantum-error-correction-work/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "yang-mills-existence-2026",
+      "title": "Lean-Verified Proof of 4D Yang–Mills Existence (Mass Gap Open)",
+      "shortTitle": "Yang–Mills Existence (Lean)",
+      "date": "2026-09-09",
+      "discipline": "Physics & Quantum",
+      "subfields": ["Mathematical Physics", "Quantum Field Theory", "Formal Verification"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "OpenAI Frontier Reasoning Models",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 26,
+      "whyItMatters": "Establishes a machine-checked mathematical construction of 4D Yang–Mills quantum field theory—resolving the 'existence' half of a Millennium Prize Problem.",
+      "summary": "Following a September 9, 2026 natural-language derivation and subsequent Lean formalization announced by OpenAI alongside academic physicists, a verification committee chaired by Nobel laureate David Gross confirmed on November 9–10, 2026 that the Lean proof of the existence portion of 4D Yang–Mills theory passes formal verification. The crucial mass-gap half of the Clay Millennium Problem—explaining why the strong nuclear force is short-ranged—remains open.",
+      "technicalHighlights": [
+        "Addresses the rigorous non-perturbative construction of 4-dimensional Yang–Mills quantum gauge theory satisfying Osterwalder–Schrader / Wightman axioms.",
+        "Gross-led academic verification committee confirmed Lean verification on Nov 9–10, 2026.",
+        "Sparked independent human-directed verifications and extensions across constructive QFT."
+      ],
+      "caveats": "Proves existence only—the Yang–Mills mass gap remains unproven, so the Millennium Prize Problem is only partially resolved, and physicists note the formal proof is not yet fully distilled into human-intuitive exposition.",
+      "contributors": ["OpenAI Science Team", "Academic QFT Collaborators", "Gross Verification Committee"],
+      "institutions": ["OpenAI", "Academic Physics Community"],
+      "scores": {
+        "foundational": 94,
+        "ripple": 86,
+        "verification": 85,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "Solves half of one of the deepest problems at the intersection of mathematics and fundamental physics.",
+        "ripple": "Provides rigorous constructive foundations for non-Abelian gauge theories underlying the Standard Model.",
+        "verification": "Confirmed Lean-verified by an eminent academic committee, though full human comprehension and axiom scrutiny continue.",
+        "velocity": "Achieved a constructive QFT milestone that eluded mathematical physicists for over half a century."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI: Working with academic communities to build scientific understanding",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "type": "announcement"
+        },
+        {
+          "label": "CASRAI: Gross Committee Confirms Lean Verification of Yang–Mills Existence Proof",
+          "url": "https://casrai.org/news/ai-rivals-physics-mathematical-challenge-2026",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-r1-2025",
+      "title": "DeepSeek-R1: Pure Reinforcement Learning for Emergent Reasoning",
+      "shortTitle": "DeepSeek-R1 (RL Reasoning)",
+      "date": "2025-01-22",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Machine Learning", "Reinforcement Learning", "Open-Weight AI"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Open-sourced the recipe showing that pure outcome-based RL spontaneously induces self-verification and deep chain-of-thought reasoning—catalyzing the 2025–2026 AI science boom.",
+      "summary": "DeepSeek-AI released DeepSeek-R1 and its open technical paper (arXiv:2501.12948), demonstrating with DeepSeek-R1-Zero that applying large-scale group relative policy optimization (GRPO) purely on verifiable rewards—without supervised reasoning traces or separate value models—spontaneously gives rise to backtracking, self-verification, and multi-step mathematical deduction. Releasing MIT-licensed weights and distilled models democratized frontier reasoning research globally.",
+      "technicalHighlights": [
+        "Proved verifiable outcome rewards alone trigger emergent 'aha moment' reflection and extended test-time reasoning.",
+        "Matched frontier proprietary reasoning models on AIME, MATH-500, and GPQA at dramatically lower training cost.",
+        "Open-weight MIT release accelerated academic formal theorem proving, code verification, and scientific agent research worldwide."
+      ],
+      "caveats": "Pure RL without cold-start supervised data suffered readability and language-mixing artifacts, requiring a multi-stage pipeline for production reliability.",
+      "contributors": ["Daya Guo", "Dejian Yang", "Haowei Zhang", "DeepSeek-AI Team"],
+      "institutions": ["DeepSeek-AI"],
+      "scores": {
+        "foundational": 88,
+        "ripple": 98,
+        "verification": 97,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "Established verifiable-reward reinforcement learning (RLVR) as a clean, scalable paradigm for machine reasoning.",
+        "ripple": "Directly catalyzed virtually every open and frontier mathematical, coding, and scientific reasoning system of 2025–2026.",
+        "verification": "Fully open weights, public technical report, and replicated across hundreds of independent academic and industry labs.",
+        "velocity": "Compressed the global diffusion of test-time reasoning capability from years to weeks."
+      },
+      "enables": ["imo-2025-gold-natural-language", "alphaevolve-matrix-2025", "riemann-hypothesis-lean-2026", "valiant-vp-vnp-2026"],
+      "sources": [
+        {
+          "label": "arXiv:2501.12948 — DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2501.12948",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "bridge-rna-2024",
+      "title": "Bridge RNAs: Programmable Bispecific RNA-Guided DNA Recombinases",
+      "shortTitle": "Bridge RNA Genome Editing",
+      "date": "2024-06-26",
+      "discipline": "Biology & Medicine",
+      "subfields": ["Genome Engineering", "Molecular Biology", "Synthetic Biology"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Discovers a natural 'word processor for DNA' beyond CRISPR—using a single programmable RNA bridge to cleanly insert, excise, or invert large DNA segments without double-strand breaks.",
+      "summary": "Patrick Hsu's laboratory at the Arc Institute, collaborating with UC Berkeley and the University of Tokyo, published twin Nature papers discovering that bacterial IS110 transposons encode a recombinase guided by a structured non-coding 'bridge RNA'. Unlike CRISPR—which cuts DNA and relies on error-prone cellular repair—bridge RNAs contain two independently programmable loops that specify both the target genomic site and the donor DNA sequence, enabling scarless single-step DNA insertion, excision, and inversion.",
+      "technicalHighlights": [
+        "First natural DNA recombinase directed by a bispecific RNA guide specifying both target and donor DNA.",
+        "Enables large-scale genomic rearrangements (insertions, inversions, excisions) without exposing double-strand DNA breaks.",
+        "Followed by 2026 breakthroughs overcoming natural insertion bias for high-efficiency programmable excision."
+      ],
+      "caveats": "Initial 2024 demonstration was in bacterial systems (IS621 in E. coli); achieving high-efficiency, safe delivery and activity in primary human cells remains an active translational frontier.",
+      "contributors": ["Matthew G. Durrant", "Nicholas T. Perry", "Masahiro Hiraizumi", "Hiroshi Nishimasu", "Patrick D. Hsu"],
+      "institutions": ["Arc Institute", "UC Berkeley", "University of Tokyo"],
+      "scores": {
+        "foundational": 91,
+        "ripple": 92,
+        "verification": 98,
+        "velocity": 81
+      },
+      "scoreRationale": {
+        "foundational": "Uncovered an entirely new fundamental mechanism of RNA-guided nucleic acid manipulation in nature.",
+        "ripple": "Opens the door to whole-gene insertion, chromosome-scale synthetic biology, and safer genetic therapies beyond CRISPR.",
+        "verification": "Twin back-to-back Nature papers with cryo-EM structural elucidation and independent replication.",
+        "velocity": "Rapidly progressed from discovery (2024) to engineered bias-overcoming variants by 2026."
+      },
+      "enables": ["evo-2-genome-design-2025"],
+      "sources": [
+        {
+          "label": "Nature (PubMed): Bridge RNAs direct programmable recombination of target and donor DNA",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38926615/",
+          "type": "paper"
+        },
+        {
+          "label": "Arc Institute: Next-Generation System for Programmable Genome Design",
+          "url": "https://arcinstitute.org/news/bridge",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "evo-2-genome-design-2025",
+      "title": "Evo 2: 40B Genomic Foundation Model & Viable AI-Designed Genomes",
+      "shortTitle": "Evo 2 & AI Genomes",
+      "date": "2025-02-19",
+      "discipline": "Biology & Medicine",
+      "subfields": ["Genomics", "Generative Biology", "Mechanistic Interpretability"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "Evo 2 (StripedHyena 2, Arc Institute)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Trained on 9.3 trillion nucleotides across all domains of life with a 1M base-pair context, enabling zero-shot pathogenic variant prediction and wet-lab-viable AI-designed viral genomes.",
+      "summary": "Arc Institute, Stanford, and NVIDIA released Evo 2, a 40-billion-parameter open-source genomic foundation model trained on 9.3 trillion base pairs from over 100,000 species across prokaryotes and eukaryotes. Handling 1-million-nucleotide contexts via the StripedHyena 2 architecture, Evo 2 predicts human BRCA1 pathogenicity without task-specific training, exposes interpretable biological features (α-helices, β-sheets, exon boundaries), and by 2026 guided the chemical synthesis of viable AI-designed bacteriophage genomes capable of lysing E. coli.",
+      "technicalHighlights": [
+        "1-million-base-pair context window spans entire microbial genomes and long-range eukaryotic regulatory loci.",
+        "Mechanistic interpretability (with Goodfire) revealed learned internal representations of 3D protein secondary structure straight from raw DNA.",
+        "Downstream 2026 wet-lab validation synthesized 285 Evo-designed ΦX174 phage genomes, with 16 actively inhibiting E. coli."
+      ],
+      "caveats": "Viability drops steeply as generated sequences diverge from natural evolutionary neighborhoods; eukaryotic whole-genome design raises biosecurity governance challenges (prompting exclusion of human-pathogenic viruses from training).",
+      "contributors": ["Garyk Brixi", "Matthew G. Durrant", "Brian L. Hie", "Patrick D. Hsu", "Evo 2 Team"],
+      "institutions": ["Arc Institute", "Stanford University", "NVIDIA", "UC Berkeley"],
+      "scores": {
+        "foundational": 87,
+        "ripple": 91,
+        "verification": 92,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrates that foundation-model scaling laws and interpretability transfer directly to raw genomic sequences across all domains of life.",
+        "ripple": "Powers clinical variant interpretation, programmable epigenomics, and de novo synthetic genome engineering.",
+        "verification": "Open weights/code, bioRxiv/peer-reviewed benchmarks, and wet-lab synthesis of functional phage genomes.",
+        "velocity": "Moved generative biology from single protein chains to whole functional viral genomes in under two years."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "bioRxiv: Genome modeling and design across all domains of life with Evo 2",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full",
+          "type": "paper"
+        },
+        {
+          "label": "CAS Insights: Genome-Scale Generative Design Wet-Lab Analysis (2026)",
+          "url": "https://www.cas.org/resources/cas-insights/genome-scale-generative-design",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "imo-2025-gold-natural-language",
+      "title": "End-to-End Natural-Language Gold Medal at IMO 2025",
+      "shortTitle": "IMO 2025 AI Gold Medal",
+      "date": "2025-07-21",
+      "discipline": "Mathematics",
+      "subfields": ["Automated Reasoning", "Mathematical Olympiad", "General-Purpose AI"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "Gemini Deep Think (Google DeepMind) & OpenAI Experimental Model",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Just one year after specialized formal systems earned IMO silver, general-purpose LLMs solved 5 of 6 IMO problems in plain English within the official 4.5-hour limit.",
+      "summary": "In July 2025, Google DeepMind's advanced Gemini with Deep Think officially achieved gold-medal standard (35/42 points, solving 5 of 6 problems perfectly) at the 2025 International Mathematical Olympiad—graded directly by official IMO coordinators. Operating end-to-end in natural language with zero human translation to Lean and within the strict 4.5-hour human time limit, alongside a concurrent gold-level claim by OpenAI, this marked the inflection point from narrow theorem provers to general mathematical reasoning.",
+      "technicalHighlights": [
+        "Official IMO graders certified 35/42 points—describing the proofs as clear, precise, and easy to follow.",
+        "Eliminated the human-in-the-loop Lean translation bottleneck and 2–3 day runtime required by AlphaProof at IMO 2024.",
+        "Foreshadowed the 2026 wave of frontier research-level mathematical proofs."
+      ],
+      "caveats": "Olympiad problems are self-contained puzzles with known solutions rather than open research conjectures; nonetheless, the leap in 12 months reset nearly every expert timeline.",
+      "contributors": ["Google DeepMind Gemini Deep Think Team", "OpenAI Reasoning Team"],
+      "institutions": ["Google DeepMind", "OpenAI"],
+      "scores": {
+        "foundational": 82,
+        "ripple": 90,
+        "verification": 95,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "Proved general-purpose natural-language reasoning models could perform creative, competition-grade mathematical proof synthesis.",
+        "ripple": "Directly paved the way for 2026 research-level AI mathematicians across Lean formalization and open problems.",
+        "verification": "Officially graded by IMO organizers using the exact human competition rules and time constraints.",
+        "velocity": "Jumped from specialized formal silver (2024) to general natural-language gold (2025) in exactly 12 months."
+      },
+      "enables": ["riemann-hypothesis-lean-2026", "valiant-vp-vnp-2026", "navier-stokes-forced-2026", "yang-mills-existence-2026"],
+      "sources": [
+        {
+          "label": "Google DeepMind: Advanced version of Gemini with Deep Think officially achieves IMO gold-medal standard",
+          "url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+          "type": "announcement"
+        },
+        {
+          "label": "ETH Zurich SRI Lab: Independent Analysis of IMO 2025 LLM Evaluations",
+          "url": "https://www.sri.inf.ethz.ch/blog/imo",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "valiant-vp-vnp-2026",
+      "title": "Same-Day AI Proofs of Valiant's Conjecture (VP ≠ VNP)",
+      "shortTitle": "Valiant's Conjecture (VP ≠ VNP)",
+      "date": "2026-11-23",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Algebraic Complexity Theory", "P vs NP", "Formal Verification"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "Internal Claude (Anthropic) & OpenAI Frontier Model",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 47,
+      "whyItMatters": "Anthropic and OpenAI posted independent Lean-formalized AI proofs of the 47-year-old algebraic analogue of P ≠ NP within five hours of each other.",
+      "summary": "On November 23–24, 2026, Anthropic published a Claude-authored Lean formalization claiming to prove Leslie Valiant's 1979 conjecture VP ≠ VNP—often called the algebraic version of P vs. NP, separating the complexity of the determinant from the permanent. Within five hours, OpenAI posted its own independently derived proof. Leading complexity theorists hailed the pace as unprecedented while stressing that independent verification of the formal statements and human mathematical digestion are still underway.",
+      "technicalHighlights": [
+        "Targets Valiant's 1979 conjecture separating polynomial-sized algebraic circuits (VP) from algebraic NP (VNP).",
+        "First major complexity-theory problem to see two rival AI labs publish independent formal proofs on the same day.",
+        "Backed by public Lean formalizations currently undergoing community axiom and definition audits."
+      ],
+      "caveats": "Neither proof has yet completed full independent human refereeing or Mathlib/Lean-community sign-off; even if confirmed, VP ≠ VNP does not immediately imply Boolean P ≠ NP.",
+      "contributors": ["Anthropic Research Team", "OpenAI Research Team"],
+      "institutions": ["Anthropic", "OpenAI"],
+      "scores": {
+        "foundational": 94,
+        "ripple": 88,
+        "verification": 64,
+        "velocity": 99
+      },
+      "scoreRationale": {
+        "foundational": "If verified, resolves the central open conjecture of algebraic complexity theory and the closest major stepping stone toward P vs. NP.",
+        "ripple": "Would reshape geometric complexity theory (GCT), lower-bound techniques, and permanent/determinant theory.",
+        "verification": "Lean formalizations are public, but independent verification of definitions and proof validity is still pending.",
+        "velocity": "Two independent AI solutions to a 47-year-old landmark conjecture posted within five hours of each other."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Notebookcheck: Anthropic and OpenAI claim breakthroughs on a 47-year-old fundamental math problem",
+          "url": "https://www.notebookcheck.net/Anthropic-and-OpenAI-claim-breakthroughs-on-a-47-year-old-fundamental-math-problem.1459160.0.html",
+          "type": "announcement"
+        },
+        {
+          "label": "DataCamp: Anthropic's Claude Claims Proof of Valiant's Conjecture (VP vs. VNP)",
+          "url": "https://www.datacamp.com/blog/claude-claims-proof-of-valiants-conjecture-vp-vs-vnp",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "cook-mertz-tree-eval-2024",
+      "title": "Tree Evaluation in O(log n · log log n) Space via Catalytic Computing",
+      "shortTitle": "Cook–Mertz Tree Evaluation",
+      "date": "2024-06-24",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Computational Complexity", "Space Complexity", "Catalytic Algorithms"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 14,
+      "whyItMatters": "Defied conventional wisdom by evaluating computation trees in nearly logarithmic space using 'borrowed' catalytic memory—directly unlocking Ryan Williams's √(t log t) theorem.",
+      "summary": "James Cook and Ian Mertz proved at STOC 2024 that the Tree Evaluation Problem—long proposed as a candidate to separate P from L (logarithmic space)—can actually be solved in O(log n · log log n) space. Their ingenious 'catalytic' technique temporarily overwrites full memory registers with reversible algebra and restores them afterward, shattering barriers in space complexity and directly serving as the core engine of Ryan Williams's 2025 time–space breakthrough.",
+      "technicalHighlights": [
+        "Solves TreeEval in O(log n · log log n) space, overturning its long-standing role as a P ≠ L separation candidate.",
+        "Transforms catalytic computing from a curiosity into one of the most powerful tools in complexity theory.",
+        "Directly enabled Williams's 2025 TIME[t] ⊆ SPACE[√(t log t)] simulation and 2026 poly-time almost-log-space refinements."
+      ],
+      "caveats": "The original STOC 2024 algorithm does not simultaneously run in polynomial time, though 2026 follow-up work achieved poly-time O(log^(1+ε) n) space.",
+      "contributors": ["James Cook", "Ian Mertz"],
+      "institutions": ["University of Warwick", "Charles University"],
+      "scores": {
+        "foundational": 90,
+        "ripple": 91,
+        "verification": 98,
+        "velocity": 78
+      },
+      "scoreRationale": {
+        "foundational": "Refuted the leading 14-year approach to separating L from P via an astonishingly clean algebraic reuse of memory.",
+        "ripple": "Directly catalyzed Ryan Williams's 50-year time–space breakthrough and a resurgence in catalytic complexity.",
+        "verification": "Best-paper-caliber STOC 2024 result, simplified and verified across multiple expositions including Oded Goldreich's notes.",
+        "velocity": "An unexpected conceptual breakthrough that reshaped space complexity within months."
+      },
+      "enables": ["williams-sqrt-space-2025"],
+      "sources": [
+        {
+          "label": "ECCC TR23-174 / STOC 2024 — Tree Evaluation is in Space O(log n · log log n)",
+          "url": "https://eccc.weizmann.ac.il/report/2023/174/",
+          "type": "paper"
+        },
+        {
+          "label": "SIAM Journal on Computing: Tree Evaluation is in Space O(log n · log log n)",
+          "url": "https://epubs.siam.org/doi/10.1137/24M1690126",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "alphaproof-imo-2024",
+      "title": "AlphaProof & AlphaGeometry 2 Achieve IMO Silver-Medal Formal Proving",
+      "shortTitle": "AlphaProof IMO Silver",
+      "date": "2024-07-25",
+      "discipline": "Mathematics",
+      "subfields": ["Formal Theorem Proving", "Lean 4", "Reinforcement Learning"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "AlphaProof & AlphaGeometry 2 (Google DeepMind)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "whyItMatters": "First AI system to achieve medal-level performance at the International Mathematical Olympiad with machine-verified Lean 4 proofs—igniting the RL + Lean formal math era.",
+      "summary": "Google DeepMind paired a Gemini-based reinforcement-learning formal prover (AlphaProof) with a neuro-symbolic geometry engine (AlphaGeometry 2) to solve four of six problems at IMO 2024 (28/42 points, one point shy of gold), including the competition's hardest problem (P6), solved by only 5 of 609 human contestants. Every AlphaProof solution was formally checked in Lean, establishing the blueprint for combining LLMs, RL, and interactive theorem provers.",
+      "technicalHighlights": [
+        "Solved IMO 2024 Problem 6—an ultra-hard number theory problem solved by <1% of top human olympians—with a Lean-checked proof.",
+        "Trained via AlphaZero-style test-time reinforcement learning over millions of auto-formalized mathematical statements.",
+        "Directly inspired the 2025–2026 wave of Lean-verified research math and software verification systems."
+      ],
+      "caveats": "Required human experts to manually formalize problem statements into Lean beforehand and used up to three days of compute on the hardest problem.",
+      "contributors": ["Thomas Hubert", "Rishabh Mehta", "Laurent Sartran", "Trieu Trinh", "Google DeepMind Math Team"],
+      "institutions": ["Google DeepMind"],
+      "scores": {
+        "foundational": 85,
+        "ripple": 94,
+        "verification": 99,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Proved reinforcement learning coupled with a formal proof verifier can discover non-trivial, creative multi-step proofs.",
+        "ripple": "Directly birthed the Lean + RL paradigm behind AlphaProof Code and the 2026 Millennium Problem formalizations.",
+        "verification": "Machine-verified in Lean 4 and graded by Fields Medalist Timothy Gowers and IMO coordinator Joseph Myers.",
+        "velocity": "Surpassed expectations for formal theorem proving years ahead of community forecasts."
+      },
+      "enables": ["imo-2025-gold-natural-language", "alphaproof-code-signal-2026", "riemann-hypothesis-lean-2026", "non-sofic-groups-2026"],
+      "sources": [
+        {
+          "label": "Google DeepMind: AI achieves silver-medal standard solving IMO problems",
+          "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "sub-100k-qubit-qec-2026",
+      "title": "Sub-100,000 Qubit Fault-Tolerant Error-Correction & Circuit Overhead Drop",
+      "shortTitle": "200× Qubit Overhead Drop",
+      "date": "2026-06-15",
+      "discipline": "Physics & Quantum",
+      "subfields": ["Quantum Error Correction", "Post-Quantum Cryptography", "Quantum LDPC Codes"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "AI-Assisted Circuit & Code Synthesis",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "New qLDPC error-correction codes and AI-optimized circuits slash the physical qubits needed for cryptographically relevant quantum computing from 20M (2019) to under 100,000.",
+      "summary": "A rapid succession of algorithmic and quantum error-correction advances between 2025 and 2026—combining high-rate quantum LDPC codes, magic-state cultivation, and AI-guided circuit synthesis—cut resource estimates for factoring RSA-2048 from ~20 million physical qubits in 2019 to under 1 million in 2025 and below 100,000 physical qubits in 2026. This 200× software/math compression accelerated global enterprise and government post-quantum migration targets to 2029.",
+      "technicalHighlights": [
+        "Achieves a ~200× reduction in physical qubit requirements in seven years primarily through mathematics, codes, and circuit compilation rather than raw hardware scale.",
+        "Combines magic-state distillation alternatives with low-overhead qLDPC architectures.",
+        "Prompted major cloud, financial, and infrastructure providers to pull post-quantum cryptography deadlines forward to 2029."
+      ],
+      "caveats": "Resource estimates assume physical gate error rates and non-local qubit connectivity that still pose formidable hardware engineering challenges at 100,000-qubit scale.",
+      "contributors": ["Quantum Error Correction & Compilation Research Community"],
+      "institutions": ["Google Quantum AI", "IBM Quantum", "Academic QEC Labs"],
+      "scores": {
+        "foundational": 82,
+        "ripple": 95,
+        "verification": 90,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Rewrites the asymptotic and constant-factor resource economics of fault-tolerant quantum computation.",
+        "ripple": "Directly reshapes global cybersecurity, post-quantum cryptography migration, and quantum hardware roadmaps.",
+        "verification": "Grounded in peer-reviewed QEC theory, open resource estimators, and verified circuit decompositions.",
+        "velocity": "Achieved a 200× theoretical hardware compression in seven years, accelerating sharply in 2025–2026."
+      },
+      "enables": ["deepmind-verified-quantum-algos-2026"],
+      "sources": [
+        {
+          "label": "PwC Technical Analysis: AI is accelerating arrival of Q-Day (200× Qubit Reduction)",
+          "url": "https://www.pwc.com/us/en/services/consulting/cybersecurity-data-tech-risk/library/ai-accelerating-q-day.html",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "non-sofic-groups-2026",
+      "title": "Formal Lean Proof of the Existence of Non-Sofic Groups",
+      "shortTitle": "Existence of Non-Sofic Groups",
+      "date": "2026-08-01",
+      "discipline": "Mathematics",
+      "subfields": ["Geometric Group Theory", "Formal Verification", "Combinatorics"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "Internal GPT-6 Astra (OpenAI)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 27,
+      "whyItMatters": "Resolves Mikhail Gromov's famous 1999 open question in group theory by constructing a non-sofic group—one that cannot be approximated by finite symmetric groups—with a Lean formalization.",
+      "summary": "In August 2026, OpenAI's internal Astra model produced a Lean-formalized proof settling the 27-year-old open question of whether every countable group is sofic. Introduced by Mikhail Gromov in 1999 and named by Benjamin Weiss, soficity generalizes amenable and residually finite groups and underpinned major results like Gottschalk's surjunctivity conjecture. Demonstrating that non-sofic groups exist closed one of geometric group theory's most stubborn foundational questions.",
+      "technicalHighlights": [
+        "Settles a landmark open problem posed by Mikhail Gromov in 1999 across geometric group theory and ergodic theory.",
+        "Accompanied by a machine-checked Lean formalization.",
+        "Part of the mid-2026 inflection when frontier reasoning models began resolving long-standing research-level conjectures."
+      ],
+      "caveats": "As with several 2026 AI-authored formal proofs, extracting streamlined human-readable expositions and testing the boundaries of related hyperlinear-group conjectures remain active follow-up work.",
+      "contributors": ["OpenAI Mathematics Team"],
+      "institutions": ["OpenAI"],
+      "scores": {
+        "foundational": 90,
+        "ripple": 78,
+        "verification": 87,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Answers a 27-year central structural question in geometric group theory and symbolic dynamics.",
+        "ripple": "Clarifies the exact boundaries of sofic entropy, Gottschalk surjunctivity, and Kaplansky's direct finiteness conjecture.",
+        "verification": "Backed by a Lean formalization, though human distillation and broader textbook integration are ongoing.",
+        "velocity": "An autonomous frontier model resolved a conjecture that resisted top group theorists for nearly three decades."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Wikipedia: Mathematics and artificial intelligence (2026 discoveries table)",
+          "url": "https://en.wikipedia.org/wiki/Mathematics_and_artificial_intelligence",
+          "type": "explainer"
+        },
+        {
+          "label": "Wikipedia: List of mathematical discoveries made with artificial intelligence",
+          "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "eth-refutation-claim-2026",
+      "title": "Claimed Refutation of the Exponential Time Hypothesis (ETH)",
+      "shortTitle": "ETH Refutation Claim",
+      "date": "2026-10-26",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Fine-Grained Complexity", "SAT Algorithms", "Formal Verification"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "OpenAI Frontier Reasoning Model",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 25,
+      "whyItMatters": "If confirmed, a subexponential algorithm for 3-SAT would overturn the foundational hardness assumption behind modern fine-grained complexity theory.",
+      "summary": "On October 26, 2026, OpenAI announced three major AI-assisted theoretical results—including a manuscript and public Lean formalization claiming a subexponential-time algorithm refuting the Exponential Time Hypothesis (ETH), formulated by Impagliazzo and Paturi in 2001. ETH conjectures that 3-SAT requires 2^Ω(n) time and serves as the bedrock for hundreds of conditional lower bounds across graph algorithms, dynamic programming, and parameterized complexity.",
+      "technicalHighlights": [
+        "Published alongside a public Lean formalization and algorithmic manuscript for community examination.",
+        "Even if valid, refuting ETH does not imply P = NP, as subexponential time (e.g., 2^o(n)) remains super-polynomial.",
+        "Triggered an intensive global audit by complexity theorists inspecting whether the Lean theorem statement matches classical 3-SAT complexity."
+      ],
+      "caveats": "Independent mathematical acceptance remains pending. Experts emphasize that even machine-checked proofs require human verification that the formal theorem matches the intended computational model without subtle specification loopholes.",
+      "contributors": ["Dan Roberts", "OpenAI Science Team"],
+      "institutions": ["OpenAI"],
+      "scores": {
+        "foundational": 93,
+        "ripple": 89,
+        "verification": 58,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "ETH is one of the most influential conjectures in theoretical computer science; refuting it would rewrite fine-grained complexity.",
+        "ripple": "Would topple or require revisiting hundreds of conditional lower bounds in parameterized and graph algorithms.",
+        "verification": "Marked down significantly because independent community audit of the Lean specification and algorithm is still active.",
+        "velocity": "An extraordinary surprise given that most complexity theorists strongly expected ETH to be true."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI: Working with academic communities to build scientific understanding",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "type": "announcement"
+        },
+        {
+          "label": "PopularAI Audit: OpenAI's ETH proof claim — What has actually been verified?",
+          "url": "https://www.popularai.org/p/openai-exponential-time-hypothesis-proof",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "navier-stokes-forced-2026",
+      "title": "Forced 3D Navier–Stokes Finite-Time Blowup Formal Proof",
+      "shortTitle": "Navier–Stokes (Forced) Proof",
+      "date": "2026-09-08",
+      "discipline": "Mathematics",
+      "subfields": ["Partial Differential Equations", "Fluid Dynamics", "Formal Verification"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "OpenAI Internal Frontier Model (10,000-agent search)",
+      "verificationStatus": "Contested / Partial",
+      "yearsUnsolved": 26,
+      "whyItMatters": "Lean-verified construction of finite-time blowup for smoothly forced 3D incompressible Navier–Stokes—sparking intense debate over scope, priority, and Clay prize criteria.",
+      "summary": "On September 8, 2026, OpenAI released a writeup and Lean-verified formal proof demonstrating that a smooth solution to the 3D incompressible Navier–Stokes equations starting from rest under a specific smooth external forcing term can develop a singularity in finite time. While the formal Lean proof checked out, PDE specialists (including Tristan Buckmaster and Terence Tao's broader community) sparked a fierce priority and scope controversy—noting that the forced formulation bypasses the core unforced (zero-force) Millennium Prize mystery.",
+      "technicalHighlights": [
+        "Constructed via massive multi-agent AI search and formalized in Lean 4.",
+        "Satisfies the literal wording of one branch of the official Clay Mathematics Institute forced-equation statement.",
+        "Became the defining case study of the 2026 'mathocalypse' debate over specification gaming vs. deep mathematical insight."
+      ],
+      "caveats": "Heavily contested on scientific scope and priority grounds: fluid-dynamics experts emphasize that constructing an artificial external force that drives blowup does not resolve the physically central unforced 3D Navier–Stokes regularity question.",
+      "contributors": ["OpenAI Mathematics Team"],
+      "institutions": ["OpenAI"],
+      "scores": {
+        "foundational": 78,
+        "ripple": 76,
+        "verification": 68,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Mathematically non-trivial PDE construction, but scored below unforced Millennium resolutions due to the external-forcing caveat.",
+        "ripple": "Sparked sweeping reforms in how math communities define formal specifications and evaluate AI-authored proofs.",
+        "verification": "Lean-checked for the forced statement, yet actively disputed on priority, provenance, and Millennium-scope grounds.",
+        "velocity": "Showcased 10,000-agent autonomous theorem discovery at industrial compute scale."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI: On the Navier–Stokes Millennium Prize Problem",
+          "url": "https://openai.com/index/navier-stokes-solution/",
+          "type": "announcement"
+        },
+        {
+          "label": "Wikipedia: Navier–Stokes priority controversy",
+          "url": "https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy",
+          "type": "explainer"
+        },
+        {
+          "label": "Terence Tao: A Severe Misalignment of AI in Mathematics",
+          "url": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "alphaproteo-binders-2024",
+      "title": "AlphaProteo: High-Affinity De Novo Protein Binder Design",
+      "shortTitle": "AlphaProteo Binders",
+      "date": "2024-09-05",
+      "discipline": "Chemistry & Materials",
+      "subfields": ["Protein Design", "Structural Biochemistry", "Therapeutics"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "AlphaProteo (Google DeepMind)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Designs custom disease-targeting protein binders in silico with up to 10× tighter wet-lab affinity and 88% hit rates—eliminating rounds of experimental evolution.",
+      "summary": "Google DeepMind unveiled AlphaProteo, an AI system capable of generating novel high-affinity protein binders for challenging biomedical targets including VEGF-A (cancer and diabetic retinopathy), SARS-CoV-2 spike, IL-7Rα, and TrkA. Wet-lab experiments demonstrated 3× to 300× stronger binding affinities than prior computational design methods and up to 88% experimental success on target BHRF1—without post-design lab optimization.",
+      "technicalHighlights": [
+        "First AI system to design a successful de novo binder for VEGF-A, a clinically vital angiogenesis target.",
+        "Achieved ~10× stronger average binding affinity than state-of-the-art computational protein design pipelines.",
+        "Validated directly in wet-lab biophysical assays across seven diverse disease-linked proteins."
+      ],
+      "caveats": "Did not succeed on all tested targets (e.g., TNFα proved refractory), and clinical translation still requires immunogenicity, stability, and delivery optimization.",
+      "contributors": ["Google DeepMind Protein Design & Wet Lab Teams"],
+      "institutions": ["Google DeepMind"],
+      "scores": {
+        "foundational": 81,
+        "ripple": 88,
+        "verification": 92,
+        "velocity": 86
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrates reliable zero-shot functional molecular design directly from target structure.",
+        "ripple": "Accelerates biologics, diagnostic biosensors, oncology therapeutics, and antiviral countermeasure development.",
+        "verification": "Backed by direct experimental wet-lab validation across multiple independent protein targets.",
+        "velocity": "Replaces months of iterative phage-display and affinity-maturation cycles with single-shot AI generation."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Google DeepMind: AlphaProteo generates novel proteins for biology and health research",
+          "url": "https://deepmind.google/blog/alphaproteo-generates-novel-proteins-for-biology-and-health-research/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "kakeya-higher-dim-2026",
+      "title": "Proposed Proof of the Higher-Dimensional Kakeya Conjecture (n ≥ 4)",
+      "shortTitle": "Kakeya Conjecture (n ≥ 4)",
+      "date": "2026-10-26",
+      "discipline": "Mathematics",
+      "subfields": ["Harmonic Analysis", "Geometric Measure Theory", "AI Theorem Proving"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "OpenAI Frontier Reasoning Model",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 109,
+      "whyItMatters": "Extends the landmark 2025 3D Kakeya breakthrough to all higher Euclidean dimensions n ≥ 4—currently under rigorous inspection by harmonic analysts.",
+      "summary": "Less than 20 months after Hong Wang and Joshua Zahl proved the 3-dimensional Kakeya conjecture, OpenAI announced on October 26, 2026 an AI-derived proof tackling the general higher-dimensional Kakeya conjecture (n ≥ 4) as part of its trio of math, CS, and physics discoveries. If validated, it completes the Hausdorff-dimension Kakeya conjecture across all Euclidean dimensions.",
+      "technicalHighlights": [
+        "Targets the full n ≥ 4 dimensional generalization of Besicovitch/Kakeya set Hausdorff dimension.",
+        "Builds directly in the intellectual wake of Wang and Zahl's February 2025 3D breakthrough.",
+        "Released to academic harmonic analysts for independent line-by-line refereeing."
+      ],
+      "caveats": "Not yet independently peer-reviewed or universally accepted; harmonic analysts are closely examining the high-dimensional induction steps for potential hidden gaps.",
+      "contributors": ["OpenAI Mathematics Team"],
+      "institutions": ["OpenAI"],
+      "scores": {
+        "foundational": 92,
+        "ripple": 80,
+        "verification": 56,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Completing the Kakeya dimension conjecture in all dimensions would resolve a century-old centerpiece of harmonic analysis.",
+        "ripple": "Strong implications for high-dimensional Fourier restriction, Bochner–Riesz, and oscillatory integral theory.",
+        "verification": "Held back pending independent expert verification and formalization checks.",
+        "velocity": "Proposed less than two years after the 3D breakthrough—an astonishing compression of expected timelines."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "OpenAI: Working with academic communities to build scientific understanding",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "type": "announcement"
+        },
+        {
+          "label": "Kakeya Conjecture Explained: The 3D Proof and 2026 Update",
+          "url": "https://www.effortlessmath.com/blog/kakeya-conjecture-explained/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "mattergen-materials-2025",
+      "title": "MatterGen: Property-Guided Generative Diffusion for Inorganic Crystals",
+      "shortTitle": "MatterGen Crystal Diffusion",
+      "date": "2025-01-16",
+      "discipline": "Chemistry & Materials",
+      "subfields": ["Materials Science", "Generative Diffusion", "Solid-State Chemistry"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "MatterGen (Microsoft Research AI for Science)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Shifts inorganic materials discovery from brute-force screening to inverse generative design—steering crystal structures directly toward target mechanical, magnetic, or electronic properties.",
+      "summary": "Published in Nature (Vol. 639) with open-source weights and code, Microsoft Research's MatterGen is a joint diffusion model over atomic species, coordinates, and unit-cell lattices across the periodic table. Fine-tuned adapter modules steer crystal generation toward specified band gaps, magnetic densities, or bulk moduli, doubling the rate of stable, unique, novel candidates compared to prior generative models.",
+      "technicalHighlights": [
+        "Jointly diffuses discrete atom types, fractional coordinates, and continuous lattice geometry.",
+        "Supports multi-property conditioning (e.g., high magnetic density + low supply-chain-risk elements).",
+        "Open-source release (MIT) catalyzed a wave of inverse-design crystal diffusion models."
+      ],
+      "caveats": "An April 2026 Materials Horizons audit challenged the novelty of the flagship experimentally synthesized example (TaCr₂O₆, reported in 1972 literature and training sets), underscoring the gap between benchmark generation and genuinely unprecedented industrial materials.",
+      "contributors": ["Claudio Zeni", "Robert Pinsler", "Daniel Zügner", "Andrew Fowler", "Tian Xie", "Ryota Tomioka"],
+      "institutions": ["Microsoft Research AI for Science"],
+      "scores": {
+        "foundational": 80,
+        "ripple": 84,
+        "verification": 84,
+        "velocity": 82
+      },
+      "scoreRationale": {
+        "foundational": "Established conditional crystal-diffusion as a clean paradigm for inverse inorganic materials design.",
+        "ripple": "Widely adopted as an open baseline across battery electrolytes, magnets, photovoltaics, and catalysis research.",
+        "verification": "Peer-reviewed in Nature with open checkpoints, tempered by 2026 independent scrutiny over experimental novelty claims.",
+        "velocity": "Replaced million-structure DFT screening funnels with direct property-conditioned generation."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Nature (PubMed): A generative model for inorganic materials design",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39821164/",
+          "type": "paper"
+        },
+        {
+          "label": "GitHub: microsoft/mattergen",
+          "url": "https://github.com/microsoft/mattergen",
+          "type": "code"
+        },
+        {
+          "label": "Materials Horizons (2026): Audit of MatterGen novelty claims",
+          "url": "https://pubs.rsc.org/mh/article/13/11/5672/1228702/Continued-challenges-in-high-throughput-materials",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "one-positron-cyclotron-2026",
+      "title": "First One-Positron Quantum Cyclotron for Antimatter Precision Tests",
+      "shortTitle": "One-Positron Quantum Cyclotron",
+      "date": "2026-10-21",
+      "discipline": "Physics & Quantum",
+      "subfields": ["Antimatter Physics", "Fundamental Symmetries", "Precision Measurement"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Traps a single antimatter positron for months and resolves its individual quantum states—enabling the sharpest-ever test of matter–antimatter (CPT) symmetry.",
+      "summary": "Physicists at Northwestern University demonstrated the first one-positron quantum cyclotron, isolating a single positron—the antimatter twin of the electron—for months inside a cryogenic Penning trap and resolving discrete quantum transitions between its cyclotron energy levels. Comparing the positron's magnetic moment against the electron's at part-per-trillion precision probes the deepest symmetry of the Standard Model (CPT invariance) and why the universe contains matter rather than equal antimatter.",
+      "technicalHighlights": [
+        "Achieves months-long confinement and quantum-state control of an individual antimatter lepton.",
+        "Unlocks orders-of-magnitude sharper measurements of the positron anomalous magnetic moment.",
+        "Provides one of the cleanest low-energy probes of physics beyond the Standard Model."
+      ],
+      "caveats": "Full ultra-precision comparison of electron vs. positron magnetic moments requires ongoing multi-year systematic error reduction.",
+      "contributors": ["Gerald Gabrielse", "Northwestern Center for Fundamental Physics Team"],
+      "institutions": ["Northwestern University"],
+      "scores": {
+        "foundational": 85,
+        "ripple": 74,
+        "verification": 95,
+        "velocity": 70
+      },
+      "scoreRationale": {
+        "foundational": "Direct experimental gateway to testing CPT symmetry and the cosmic matter–antimatter asymmetry.",
+        "ripple": "Advances single-particle quantum metrology and cryogenic antimatter trapping techniques.",
+        "verification": "Direct experimental demonstration with unambiguous single-quantum jump measurements.",
+        "velocity": "Culmination of painstaking decades-long tabletop experimental physics craft."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "2026 in Science — One-Positron Quantum Cyclotron (Oct 21, 2026)",
+          "url": "https://en.wikipedia.org/wiki/2026_in_science",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "mrna-cardiac-regeneration-2026",
+      "title": "Transient mRNA Therapy Regenerating Adult Heart Muscle Cells",
+      "shortTitle": "mRNA Heart Regeneration",
+      "date": "2026-11-09",
+      "discipline": "Biology & Medicine",
+      "subfields": ["Regenerative Medicine", "mRNA Therapeutics", "Cardiology"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "whyItMatters": "Demonstrates that a brief mRNA pulse can safely coax adult mammalian cardiomyocytes to divide again, restoring heart pumping capacity after a heart attack.",
+      "summary": "Researchers at the University of Cambridge reported on November 9, 2026 that an experimental messenger RNA therapy temporarily expressing two cell-cycle regulators—Myc and cyclin T1—stimulated adult heart muscle cells to divide and repair damaged myocardium following heart attacks in mice. Treated hearts pumped ~10% more blood per beat than controls, with functional gains persisting for at least 12 weeks without uncontrolled growth.",
+      "technicalHighlights": [
+        "Overcomes the notorious inability of adult mammalian heart muscle to regenerate after myocardial infarction.",
+        "Transient mRNA delivery avoids permanent genetic modification and limits oncogenic proliferation risk.",
+        "Sustained ~10% ejection-volume improvement persisted through the 12-week study window."
+      ],
+      "caveats": "Demonstrated in murine models; large-animal safety studies (especially arrhythmia and tumorigenesis monitoring) and human clinical trials are still ahead.",
+      "contributors": ["University of Cambridge Cardiac Regeneration Group"],
+      "institutions": ["University of Cambridge"],
+      "scores": {
+        "foundational": 82,
+        "ripple": 90,
+        "verification": 90,
+        "velocity": 78
+      },
+      "scoreRationale": {
+        "foundational": "Breaks a core biological constraint—adult cardiomyocyte quiescence—using programmable transient mRNA signaling.",
+        "ripple": "Heart failure affects >60 million people worldwide; safe cardiac regeneration would transform cardiovascular medicine.",
+        "verification": "Controlled in vivo preclinical experimental results with 12-week longitudinal cardiac imaging.",
+        "velocity": "Leverages the post-2020 mRNA delivery revolution to tackle regenerative organ repair."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "2026 in Science — Cambridge mRNA Heart Regeneration Therapy (Nov 9, 2026)",
+          "url": "https://en.wikipedia.org/wiki/2026_in_science",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "optical-cavity-solar-limit-2026",
+      "title": "Optical-Cavity Photon Restriction Path Past the Shockley–Queisser Limit",
+      "shortTitle": "Beyond Shockley–Queisser Solar",
+      "date": "2026-10-08",
+      "discipline": "Chemistry & Materials",
+      "subfields": ["Photovoltaics", "Nanophotonics", "Clean Energy"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 65,
+      "whyItMatters": "Uses an optical cavity to restrict photon re-emission angles in organic solar cells, opening a practical thermodynamic path from the ~33% Shockley–Queisser ceiling toward ~43%.",
+      "summary": "Researchers at the Institute of Photonic Sciences (ICFO) in Spain demonstrated in October 2026 an optical-cavity architecture that restricts the angular cone over which excited solar-cell absorbers radiatively re-emit photons. By curbing radiative entropy losses, the photon-confinement mechanism lifts the single-junction efficiency ceiling beyond the classic 1961 Shockley–Queisser limit (~33%), charting a pathway toward ~43% single-junction efficiency without complex multi-junction stacking.",
+      "technicalHighlights": [
+        "Targets radiative recombination entropy loss directly through angular photon confinement.",
+        "Demonstrated on organic photovoltaic architectures with broader relevance to thin-film and perovskite cells.",
+        "Theoretically lifts single-junction efficiency limits from ~33% toward ~43%."
+      ],
+      "caveats": "The 43% theoretical ceiling has not yet been achieved experimentally in a full commercial module; angular selectivity trades off against diffuse (cloudy-sky) sunlight capture.",
+      "contributors": ["ICFO Photovoltaics & Nanophotonics Group"],
+      "institutions": ["ICFO — Institute of Photonic Sciences (Spain)"],
+      "scores": {
+        "foundational": 81,
+        "ripple": 86,
+        "verification": 78,
+        "velocity": 76
+      },
+      "scoreRationale": {
+        "foundational": "Challenges a 65-year thermodynamic benchmark governing single-junction photovoltaics.",
+        "ripple": "Even a few percentage points of cheap single-junction efficiency gain compounds massively across global terawatt solar deployment.",
+        "verification": "Experimental optical-cavity demonstration with theoretical projection to 43% not yet realized in full cells.",
+        "velocity": "Clever nanophotonic engineering unlocking radiative-limit headroom long considered impractical."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "2026 in Science — ICFO Optical-Cavity Solar Efficiency Breakthrough (Oct 2026)",
+          "url": "https://en.wikipedia.org/wiki/2026_in_science",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "alphafold-2-2020",
+      "title": "AlphaFold 2: Atomic-Accuracy Protein Structure Prediction (CASP14)",
+      "shortTitle": "AlphaFold 2 (Anchor)",
+      "date": "2020-11-30",
+      "discipline": "Biology & Medicine",
+      "subfields": ["Structural Biology", "Protein Folding", "Deep Learning"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "AlphaFold 2 (DeepMind)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 50,
+      "isAnchor": true,
+      "whyItMatters": "Solved biology's 50-year protein structure prediction grand challenge at atomic accuracy—earning the 2024 Nobel Prize in Chemistry and establishing the modern AI-for-science benchmark.",
+      "summary": "Validated at the blind CASP14 competition in November 2020 and published in Nature (July 2021), DeepMind's AlphaFold 2 introduced the Evoformer and equivariant structure modules to predict 3D atomic coordinates of proteins directly from amino-acid sequences with accuracy rivaling X-ray crystallography and cryo-EM. Releasing open source code and >200 million predicted structures in the AlphaFold Protein Structure Database permanently transformed structural biology and served as the blueprint for the entire 2020s wave of scientific AI.",
+      "technicalHighlights": [
+        "Achieved ~0.96 Å median backbone RMSD on blind CASP14 targets, effectively solving single-chain static protein folding.",
+        "Awarded half of the 2024 Nobel Prize in Chemistry (Demis Hassabis and John Jumper).",
+        "Open-source release and EMBL-EBI database unlocked >200 million structures used by millions of researchers worldwide."
+      ],
+      "caveats": "Predicts static single-chain conformations rather than dynamic conformational ensembles, multi-ligand complexes, or folding pathways—gaps subsequently targeted by AlphaFold 3 and generative biology models.",
+      "contributors": ["John Jumper", "Richard Evans", "Alexander Pritzel", "Demis Hassabis", "Pushmeet Kohli", "AlphaFold Team"],
+      "institutions": ["DeepMind", "EMBL-EBI (Database Partner)"],
+      "scores": {
+        "foundational": 98,
+        "ripple": 100,
+        "verification": 100,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Resolved a 50-year grand challenge in molecular biology and proved deep learning can crack core scientific physics problems.",
+        "ripple": "One of the highest-impact scientific tools of the 21st century—directly catalyzing AlphaFold 3, AlphaProteo, Evo 2, and modern drug discovery.",
+        "verification": "Blind CASP14 benchmark victory, landmark Nature paper, tens of thousands of independent experimental confirmations, and the 2024 Nobel Prize.",
+        "velocity": "Compressed months-to-years of crystallography per protein into minutes of computation."
+      },
+      "enables": ["alphafold-3-2024", "alphaproteo-binders-2024", "evo-2-genome-design-2025"],
+      "sources": [
+        {
+          "label": "Nature (PubMed): Highly accurate protein structure prediction with AlphaFold",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34265844/",
+          "type": "paper"
+        },
+        {
+          "label": "PMC Open Access Full Text (Nature Vol. 596)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "alphatensor-2022",
+      "title": "AlphaTensor: Reinforcement Learning Discovers Faster Matrix Multiplication",
+      "shortTitle": "AlphaTensor (Anchor)",
+      "date": "2022-10-05",
+      "discipline": "Computer Science & AI",
+      "subfields": ["Algebraic Complexity", "Algorithm Discovery", "Reinforcement Learning"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "AlphaTensor (DeepMind)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 53,
+      "isAnchor": true,
+      "whyItMatters": "First AI system to surpass a 50-year human algorithmic record in core mathematics—finding a 47-multiplication 4×4 algorithm in mod 2 and 14,000+ novel factorizations.",
+      "summary": "Published in Nature (Vol. 610), DeepMind's AlphaTensor framed matrix multiplication as a single-player 3D tensor-decomposition game played by an AlphaZero-style reinforcement learning agent. It improved the best-known scalar multiplication count for over 70 matrix sizes—including beating Volker Strassen's iconic 1969 49-multiplication 4×4 algorithm with 47 multiplications in finite-field arithmetic (ℤ₂)—while also optimizing hardware-specific GPU/TPU kernels.",
+      "technicalHighlights": [
+        "Reduced 4×4 matrix multiplication in mod-2 arithmetic from Strassen's 49 multiplications (1969) to 47.",
+        "Discovered >14,000 non-equivalent rank-49 4×4 factorizations, revealing unexpected richness in algebraic complexity.",
+        "Pioneered the autonomous algorithm-discovery lineage culminating in FunSearch (2023) and AlphaEvolve (2025)."
+      ],
+      "caveats": "The 47-multiplication 4×4 breakthrough held in finite-field (characteristic 2) arithmetic rather than real/complex numbers—a gap later closed by AlphaEvolve's 48-multiplication complex algorithm in 2025.",
+      "contributors": ["Alhussein Fawzi", "Matej Balog", "Aja Huang", "Thomas Hubert", "Bernardino Romera-Paredes", "David Silver", "Pushmeet Kohli"],
+      "institutions": ["DeepMind"],
+      "scores": {
+        "foundational": 87,
+        "ripple": 91,
+        "verification": 100,
+        "velocity": 89
+      },
+      "scoreRationale": {
+        "foundational": "Proved deep RL can autonomously discover mathematically novel, provably exact fundamental algorithms beyond human intuition.",
+        "ripple": "Launched the AI-for-algorithm-discovery subfield directly leading to AlphaDev, FunSearch, and AlphaEvolve.",
+        "verification": "Every tensor factorization is algebraically exact, published in Nature, and openly released for deterministic checking.",
+        "velocity": "Broke a 53-year algorithmic standstill and accelerated automated search across discrete math."
+      },
+      "enables": ["funsearch-2023", "alphaevolve-matrix-2025"],
+      "sources": [
+        {
+          "label": "Nature (PubMed): Discovering faster matrix multiplication algorithms with reinforcement learning",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36198780/",
+          "type": "paper"
+        },
+        {
+          "label": "PMC Open Access Full Text (Nature Vol. 610)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9534758/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "nif-fusion-ignition-2022",
+      "title": "First Laboratory Nuclear Fusion Ignition (Target Gain Q = 1.5)",
+      "shortTitle": "NIF Fusion Ignition (Anchor)",
+      "date": "2022-12-05",
+      "discipline": "Physics & Quantum",
+      "subfields": ["Nuclear Fusion", "Plasma Physics", "Inertial Confinement"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 60,
+      "isAnchor": true,
+      "whyItMatters": "First controlled laboratory fusion experiment to produce more fusion energy (3.15 MJ) than the laser energy delivered to the fuel target (2.05 MJ)—proving ignition physics works.",
+      "summary": "On December 5, 2022 (published in Physical Review Letters in February 2024), scientists at Lawrence Livermore National Laboratory's National Ignition Facility achieved inertial confinement fusion ignition with a target gain of G = 1.5, generating 3.15 megajoules of fusion yield from 2.05 megajoules of ultraviolet laser energy. Culminating six decades of fusion physics research, NIF subsequently replicated and surpassed the milestone multiple times.",
+      "technicalHighlights": [
+        "First controlled experiment in history to exceed scientific breakeven (target gain > 1) and the Lawson ignition criterion.",
+        "Replicated multiple times at even higher yields in 2023–2025, confirming robust burning-plasma physics.",
+        "Provides an indispensable experimental anchor for calibrating 2024–2026 clean-energy and physics breakthroughs."
+      ],
+      "caveats": "Target gain compares fusion yield to laser energy hitting the hohlraum, not the ~300 MJ wall-plug electrical energy consumed by the 1970s-design flashlamp lasers; commercial fusion power requires orders-of-magnitude higher engineering gain and repetition rate.",
+      "contributors": ["H. Abu-Shawareb", "Omar Hurricane", "Annie Kritcher", "Indirect Drive ICF Collaboration"],
+      "institutions": ["Lawrence Livermore National Laboratory", "National Ignition Facility"],
+      "scores": {
+        "foundational": 94,
+        "ripple": 90,
+        "verification": 99,
+        "velocity": 76
+      },
+      "scoreRationale": {
+        "foundational": "Decisively proved controlled laboratory nuclear fusion ignition is physically achievable after six decades of effort.",
+        "ripple": "Catalyzed billions in public/private inertial and magnetic fusion engineering and burning-plasma research.",
+        "verification": "Peer-reviewed in Physical Review Letters (132, 065102) and experimentally repeated multiple times at NIF.",
+        "velocity": "Culmination of decades of incremental experimental plasma physics and laser-target engineering."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Physical Review Letters (132, 065102): Achievement of Target Gain Larger than Unity in an Inertial Fusion Experiment",
+          "url": "https://link.aps.org/doi/10.1103/PhysRevLett.132.065102",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "aperiodic-monotile-2023",
+      "title": "Discovery of the Aperiodic Monotile ('The Hat' / Einstein Tile)",
+      "shortTitle": "Aperiodic Monotile (Anchor)",
+      "date": "2023-03-20",
+      "discipline": "Mathematics",
+      "subfields": ["Discrete Geometry", "Tiling Theory", "Combinatorics"],
+      "aiRole": "Human",
+      "aiSystem": null,
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": 60,
+      "isAnchor": true,
+      "whyItMatters": "Solved the 60-year 'einstein' problem in geometry by discovering a single 13-sided polygon ('the hat') that tiles the infinite plane exclusively in non-repeating patterns.",
+      "summary": "Hobbyist mathematician David Smith together with Joseph Samuel Myers, Craig S. Kaplan, and Chaim Goodman-Strauss solved the decades-old aperiodic monotile problem by exhibiting 'the hat'—a simple 13-sided polykite—and a continuum of related shapes that tile the Euclidean plane without ever admitting a periodic tiling. Shortly afterward, the same team discovered 'the spectre', a strictly chiral aperiodic monotile requiring no mirror reflections.",
+      "technicalHighlights": [
+        "Settles a 60-year open geometry problem descending from Hao Wang (1961) and Roger Penrose's two-tile aperiodic tilings (1974).",
+        "Combines a clean human geometric incommensurability proof with a computer-assisted combinatorial verification.",
+        "Remains a celebrated calibration anchor for pure human mathematical creativity alongside 2024–2026 AI proofs."
+      ],
+      "caveats": "The original 'hat' tile used reflected copies; the authors quickly resolved that caveat in May 2023 with the reflection-free chiral 'spectre' monotile.",
+      "contributors": ["David Smith", "Joseph Samuel Myers", "Craig S. Kaplan", "Chaim Goodman-Strauss"],
+      "institutions": ["Independent (Yorkshire)", "University of Waterloo", "University of Arkansas"],
+      "scores": {
+        "foundational": 89,
+        "ripple": 78,
+        "verification": 98,
+        "velocity": 76
+      },
+      "scoreRationale": {
+        "foundational": "Resolved one of the most iconic, accessible open problems in discrete geometry since the 1960s.",
+        "ripple": "Sparked immediate work across quasicrystals, metamaterials, spectral geometry, and recreational mathematics.",
+        "verification": "Dual independent proofs (geometric + computer-assisted), peer-reviewed in Combinatorial Theory, and universally accepted.",
+        "velocity": "An extraordinary bolt-from-the-blue human discovery led by an amateur geometer."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "arXiv:2303.10798 — An aperiodic monotile",
+          "url": "https://arxiv.org/abs/2303.10798",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "gnome-materials-2023",
+      "title": "GNoME: Graph Networks Predict 2.2 Million New Inorganic Crystals",
+      "shortTitle": "GNoME Materials (Anchor)",
+      "date": "2023-11-29",
+      "discipline": "Chemistry & Materials",
+      "subfields": ["Materials Science", "Graph Neural Networks", "Solid-State Chemistry"],
+      "aiRole": "AI-Assisted",
+      "aiSystem": "GNoME (Google DeepMind)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "isAnchor": true,
+      "whyItMatters": "Expanded the catalog of computationally predicted thermodynamically stable inorganic crystals by an order of magnitude (~380,000 candidates), sparking modern AI materials discovery.",
+      "summary": "Published in Nature (Vol. 624), Google DeepMind's Graph Networks for Materials Exploration (GNoME) trained active-learning graph neural networks on density functional theory (DFT) calculations to predict 2.2 million crystal structures below the previously known convex hull—including ~380,000 stable candidates, of which 736 had already been independently synthesized in external labs. Alongside releasing learned interatomic potentials, GNoME catalyzed both inverse crystal generation (MatterGen) and critical community audits of computational vs. synthetic novelty.",
+      "technicalHighlights": [
+        "Expanded known computationally stable inorganic crystal structures nearly 10× over decades of Materials Project catalogs.",
+        "Released 380,000 stable candidate structures and interatomic potentials for solid-state electrolyte and layered-material research.",
+        "Demonstrated active-learning scaling laws for quantum-chemistry surrogate modeling."
+      ],
+      "caveats": "Subsequent peer-reviewed critiques (e.g., Cheetham & Seshadri, Chemistry of Materials 2024) noted that many predicted compounds are minor compositional substitutions or disordered variants difficult to synthesize experimentally, motivating property-guided inverse design.",
+      "contributors": ["Amil Merchant", "Simon Batzner", "Samuel S. Schoenholz", "Muratahan Aykol", "Gowoon Cheon", "Ekin Dogus Cubuk"],
+      "institutions": ["Google DeepMind"],
+      "scores": {
+        "foundational": 82,
+        "ripple": 88,
+        "verification": 86,
+        "velocity": 87
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrated massive-scale graph-network active learning for quantum-mechanical stability prediction.",
+        "ripple": "Directly catalyzed MatterGen, universal machine-learned interatomic potentials, and autonomous lab pipelines.",
+        "verification": "Published in Nature with 736 external lab realizations, tempered by 2024 crystallographer critiques on practical novelty.",
+        "velocity": "Compressed centuries of brute-force DFT crystal screening into months of active-learning compute."
+      },
+      "enables": ["mattergen-materials-2025"],
+      "sources": [
+        {
+          "label": "Nature (PubMed): Scaling deep learning for materials discovery",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38030720/",
+          "type": "paper"
+        },
+        {
+          "label": "PMC Critique (2024): Artificial Intelligence Driving Materials Discovery? Perspective on GNoME",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "funsearch-2023",
+      "title": "FunSearch: First Verifiable Open-Problem Discovery via LLM Program Search",
+      "shortTitle": "FunSearch (Anchor)",
+      "date": "2023-12-14",
+      "discipline": "Computer Science & AI",
+      "subfields": ["LLM Evolutionary Search", "Extremal Combinatorics", "Automated Discovery"],
+      "aiRole": "Autonomous AI",
+      "aiSystem": "FunSearch (Codey LLM + Evolutionary Evaluator, Google DeepMind)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 20,
+      "isAnchor": true,
+      "whyItMatters": "Proved for the first time that pairing a pretrained LLM with an automated evaluator can make genuinely new, verifiable discoveries on open math problems—directly birthing AlphaEvolve.",
+      "summary": "Published in Nature (Vol. 625), Google DeepMind's FunSearch bypassed LLM hallucination by searching in the space of executable Python programs scored by deterministic evaluators. Applied to the open cap set problem in extremal combinatorics, it discovered the largest cap sets ever constructed in 8 dimensions—beating 20-year human records—while also evolving superior online bin-packing heuristics. Its closed-loop 'LLM + verifier' architecture became the direct ancestor of 2025–2026 autonomous research agents.",
+      "technicalHighlights": [
+        "First system to use a pretrained LLM to produce a verifiable, genuinely novel mathematical discovery on an established open problem.",
+        "Beat 20-year best-known constructions on the cap set problem and improved classical online bin-packing baselines.",
+        "Discovered short, human-interpretable Python programs rather than opaque black-box solutions."
+      ],
+      "caveats": "Limited to small single-function Python routines (~10–20 lines) with fast CPU evaluators—constraints later lifted by AlphaEvolve (2025) and multi-agent Lean verifiers (2026).",
+      "contributors": ["Bernardino Romera-Paredes", "Mohammadamin Barekatain", "Alexander Novikov", "Matej Balog", "M. Pawan Kumar", "Alhussein Fawzi", "Pushmeet Kohli"],
+      "institutions": ["Google DeepMind"],
+      "scores": {
+        "foundational": 86,
+        "ripple": 94,
+        "verification": 99,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Solved the core 'hallucination' barrier to LLM scientific discovery by coupling generation with executable verification.",
+        "ripple": "Direct conceptual progenitor of AlphaEvolve, ThetaEvolve, and the entire 2025–2026 verifier-guided AI science ecosystem.",
+        "verification": "Published in Nature with deterministically verifiable combinatorial constructions and open code.",
+        "velocity": "Opened a brand-new paradigm for automated mathematical and algorithmic discovery overnight."
+      },
+      "enables": ["alphaevolve-matrix-2025", "alphaproof-imo-2024"],
+      "sources": [
+        {
+          "label": "Nature (PubMed): Mathematical discoveries from program search with large language models",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38096900/",
+          "type": "paper"
+        },
+        {
+          "label": "PMC Open Access Full Text (Nature Vol. 625)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10794145/",
+          "type": "paper"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+name: Challenge Score or Update Verification Status
+description: Propose a score adjustment, verification update, or caveat correction for an indexed breakthrough
+title: "[Review]: "
+labels: ["score-review", "data"]
+body:
+  - type: input
+    id: breakthrough_id
+    attributes:
+      label: Breakthrough Name or ID
+      placeholder: "e.g., riemann-hypothesis-lean-2026"
+    validations:
+      required: true
+  - type: dropdown
+    id: review_type
+    attributes:
+      label: Type of Update
+      options:
+        - Verification Status Update (e.g., Preprint → Formally Verified / Peer-Reviewed)
+        - Score Re-calibration (Depth / Ripple / Rigor / Velocity)
+        - Caveat, Priority, or Factual Correction
+        - Add Cross-Field Lineage Connection
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence & Primary Links
+      description: Link to peer reviews, formal verification audits, errata, or community consensus analyses.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Change
+      placeholder: "Describe the updated status, sub-scores, or wording."
+    validations:
+      required: true

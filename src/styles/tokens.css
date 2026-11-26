@@ -1,0 +1,126 @@
+/* ==========================================================================
+   The Frontier Index — Design Tokens
+   Editorial Scientific Journal Palette (Warm Archival Light + Obsidian Dark)
+   ========================================================================== */
+
+:root {
+  /* Fonts */
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Light Theme Surfaces (Warm Archival Rag Paper) */
+  --bg-canvas: #f7f4ee;
+  --bg-surface: #fcfbf8;
+  --bg-surface-alt: #efeae0;
+  --bg-surface-hover: #f2ede3;
+  --bg-inset: #ece6da;
+  --bg-backdrop: rgba(24, 21, 17, 0.56);
+
+  /* Ink Hierarchy */
+  --ink-primary: #1c1915;
+  --ink-secondary: #4e483f;
+  --ink-muted: #766e62;
+  --ink-faint: #9e9587;
+  --ink-inverse: #fcfbf8;
+
+  /* Borders & Rules */
+  --border-subtle: #e4ddd0;
+  --border-strong: #cfc6b5;
+  --border-focus: #1e4b8f;
+
+  /* Brand / Editorial Accents */
+  --accent-primary: #1e4b8f;
+  --accent-primary-soft: rgba(30, 75, 143, 0.09);
+  --accent-warm: #b45309;
+  --accent-warm-soft: rgba(180, 83, 9, 0.1);
+
+  /* Discipline Inks */
+  --disc-math: #1e4b8f;
+  --disc-math-bg: rgba(30, 75, 143, 0.09);
+  --disc-cs: #0f766e;
+  --disc-cs-bg: rgba(15, 118, 110, 0.1);
+  --disc-physics: #b45309;
+  --disc-physics-bg: rgba(180, 83, 9, 0.1);
+  --disc-bio: #2e6b47;
+  --disc-bio-bg: rgba(46, 107, 71, 0.1);
+  --disc-chem: #9a3b3b;
+  --disc-chem-bg: rgba(154, 59, 59, 0.1);
+
+  /* Verification Tier Tokens */
+  --status-verified: #156548;
+  --status-verified-bg: rgba(21, 101, 72, 0.11);
+  --status-reviewed: #1e4b8f;
+  --status-reviewed-bg: rgba(30, 75, 143, 0.1);
+  --status-preprint: #9a5b07;
+  --status-preprint-bg: rgba(180, 106, 9, 0.12);
+  --status-contested: #9a2f2f;
+  --status-contested-bg: rgba(154, 47, 47, 0.11);
+
+  /* Elevation & Shadows */
+  --shadow-xs: 0 1px 2px rgba(28, 25, 21, 0.04);
+  --shadow-sm: 0 2px 6px rgba(28, 25, 21, 0.05), 0 1px 2px rgba(28, 25, 21, 0.03);
+  --shadow-md: 0 10px 28px rgba(28, 25, 21, 0.07), 0 2px 6px rgba(28, 25, 21, 0.04);
+  --shadow-lg: 0 24px 60px rgba(20, 17, 13, 0.18), 0 6px 18px rgba(20, 17, 13, 0.08);
+
+  /* Radii & Spacing */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  --container-max: 1240px;
+  --transition-fast: 150ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-med: 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-theme='dark'] {
+  /* Obsidian Slate Theme (Zero Purple) */
+  --bg-canvas: #111316;
+  --bg-surface: #181b20;
+  --bg-surface-alt: #1f232a;
+  --bg-surface-hover: #242932;
+  --bg-inset: #13161a;
+  --bg-backdrop: rgba(6, 7, 9, 0.76);
+
+  --ink-primary: #f1ede6;
+  --ink-secondary: #b9b3a9;
+  --ink-muted: #8b857c;
+  --ink-faint: #635f58;
+  --ink-inverse: #111316;
+
+  --border-subtle: #282d36;
+  --border-strong: #39404d;
+  --border-focus: #6da1f2;
+
+  --accent-primary: #6da1f2;
+  --accent-primary-soft: rgba(109, 161, 242, 0.14);
+  --accent-warm: #e59c4a;
+  --accent-warm-soft: rgba(229, 156, 74, 0.14);
+
+  --disc-math: #6da1f2;
+  --disc-math-bg: rgba(109, 161, 242, 0.14);
+  --disc-cs: #38bfa8;
+  --disc-cs-bg: rgba(56, 191, 168, 0.14);
+  --disc-physics: #e59c4a;
+  --disc-physics-bg: rgba(229, 156, 74, 0.14);
+  --disc-bio: #5cc184;
+  --disc-bio-bg: rgba(92, 193, 132, 0.14);
+  --disc-chem: #e07b7b;
+  --disc-chem-bg: rgba(224, 123, 123, 0.14);
+
+  --status-verified: #4fd19b;
+  --status-verified-bg: rgba(79, 209, 155, 0.14);
+  --status-reviewed: #74a9f7;
+  --status-reviewed-bg: rgba(116, 169, 247, 0.14);
+  --status-preprint: #e9b14e;
+  --status-preprint-bg: rgba(233, 177, 78, 0.14);
+  --status-contested: #ea7b7b;
+  --status-contested-bg: rgba(234, 123, 123, 0.14);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 28px 68px rgba(0, 0, 0, 0.65);
+}
