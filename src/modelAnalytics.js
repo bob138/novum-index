@@ -370,6 +370,155 @@ const EXPLICIT_ATTRIBUTIONS = {
       lab: 'EPFL',
     },
   ],
+  'z-diophantine-in-q-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+      roleNote: 'Initial Proof & Quartic',
+    },
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-opus-5-5',
+      modelName: 'Claude Opus 5.5',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+      roleNote: 'Auditing & Reductions',
+    },
+    {
+      familyId: 'google-gemini',
+      familyName: 'Google Gemini & Gemma',
+      modelId: 'gemini-4-carbon',
+      modelName: 'Gemini 4 Carbon (Lean 4)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Google DeepMind & Research',
+      roleNote: '229-Var Detector',
+    },
+  ],
+  'bounded-prime-gaps-212-182-2026': [
+    {
+      familyId: 'axiomprover',
+      familyName: 'AxiomProver (Axiom Math)',
+      modelId: 'axiomprover',
+      modelName: 'AxiomProver Multi-Agent Swarm',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Axiom Math',
+      roleNote: '212 Lean Certificate',
+    },
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+      roleNote: '186 & 182 Conditional Lean',
+    },
+  ],
+  'qma2-qma-oracle-separation-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-5-6-sol',
+      modelName: 'GPT-5.6 Sol / Pro',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+      roleNote: 'Quantum Oracle & No-Disentanglers',
+    },
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+      roleNote: 'Classical Oracle',
+    },
+  ],
+  'mckean-boltzmann-entropy-disproof-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-5-6-sol',
+      modelName: 'GPT-5.6 Sol / Pro',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+      roleNote: 'Proof Discovery',
+    },
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-code-agents',
+      modelName: 'Claude Code Agents',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'Anthropic',
+      roleNote: 'Rewrite & Verification',
+    },
+  ],
+  'quantum-parallel-repetition-astra10-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+      roleNote: '10-Problem Lean Release',
+    },
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-fable-5',
+      modelName: 'Claude Fable 5 / 5.2',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+      roleNote: '5/10 24h Reproduction',
+    },
+  ],
+  'imo-2026-perfect-42-lean-2026': [
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-fable-5',
+      modelName: 'Claude Fable 5 / 5.2',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'Anthropic',
+      roleNote: '42/42 in 1.8h',
+    },
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-5-6-sol',
+      modelName: 'GPT-5.6 Sol / Pro',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+      roleNote: 'Full Lean 4 P1–P6',
+    },
+    {
+      familyId: 'moonshot-kimi',
+      familyName: 'Moonshot Kimi Lineage',
+      modelId: 'kimi-k3',
+      modelName: 'Kimi K3',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'Moonshot AI',
+      roleNote: '42/42 + P6 Proof',
+    },
+  ],
+  'zeta-5-irrationality-lean-2026': [
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-opus-5-5',
+      modelName: 'Claude Opus 5.5',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+      roleNote: '29.4K-Line Lean Formalization',
+    },
+  ],
 };
 
 /**
@@ -438,8 +587,44 @@ export function classifyBreakthroughSystems(item) {
       },
     ];
   }
+  if (s.includes('openai codex')) {
+    return [
+      {
+        familyId: 'openai-gpt',
+        familyName: 'OpenAI GPT Lineage',
+        modelId: 'openai-codex-agent',
+        modelName: 'OpenAI Codex Agent',
+        architecture: llmArch,
+        lab: 'OpenAI',
+      },
+    ];
+  }
+  if (s.includes('openai chatgpt')) {
+    return [
+      {
+        familyId: 'openai-gpt',
+        familyName: 'OpenAI GPT Lineage',
+        modelId: 'openai-chatgpt-reasoning',
+        modelName: 'OpenAI ChatGPT (Reasoning)',
+        architecture: llmArch,
+        lab: 'OpenAI',
+      },
+    ];
+  }
 
   // Anthropic Claude Lineage
+  if (s.includes('claude mythos')) {
+    return [
+      {
+        familyId: 'anthropic-claude',
+        familyName: 'Anthropic Claude Lineage',
+        modelId: 'claude-mythos-5',
+        modelName: 'Claude Mythos 5 + OpenEvolve',
+        architecture: 'Deep RL & Evolutionary Agent',
+        lab: 'Anthropic',
+      },
+    ];
+  }
   if (s.includes('claude fable')) {
     return [
       {
@@ -1155,6 +1340,42 @@ export function classifyBreakthroughSystems(item) {
         modelName: 'Symmetry-Constrained Dusty-Plasma NN',
         architecture: 'Domain Science Neural Net',
         lab: 'Emory University',
+      },
+    ];
+  }
+  if (s.includes('mathdiscoveries')) {
+    return [
+      {
+        familyId: 'mathdiscoveries-agents',
+        familyName: 'MathDiscoveries AI Agents',
+        modelId: 'mathdiscoveries-agents',
+        modelName: 'MathDiscoveries Research Agents (Lean 4)',
+        architecture: 'Neuro-Symbolic LLM + Verifier',
+        lab: 'MathDiscoveries (Independent)',
+      },
+    ];
+  }
+  if (s.includes('frontier reasoning llms')) {
+    return [
+      {
+        familyId: 'stanford-atomic-ai',
+        familyName: 'Frontier LLM Quantum Proofs (Stanford)',
+        modelId: 'stanford-atomic-ai',
+        modelName: 'Frontier Reasoning LLMs + Spectral Bounds',
+        architecture: 'Frontier Reasoning LLM',
+        lab: 'Stanford University',
+      },
+    ];
+  }
+  if (s.includes('vesuvius challenge')) {
+    return [
+      {
+        familyId: 'vesuvius-ink-models',
+        familyName: 'Vesuvius Challenge 3D Ink Models',
+        modelId: 'vesuvius-3d-unet-dino',
+        modelName: '3D U-Net & 3D DINO Ink-Detection Suite',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Vesuvius Challenge / Univ. of Kentucky',
       },
     ];
   }

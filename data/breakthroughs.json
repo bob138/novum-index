@@ -873,6 +873,65 @@
       ]
     },
     {
+      "id": "tuza-triangle-cover-81-29-2026",
+      "title": "Lean-Verified 81/29 Upper Bound for Tuza’s 1981 Triangle-Cover Conjecture",
+      "shortTitle": "Tuza Conjecture 81/29 Bound (Lean)",
+      "date": "2026-11-22",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Extremal Graph Theory",
+        "Combinatorics",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "MathDiscoveries Autonomous AI Research Agents (Lean 4)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 45,
+      "aiTimeToSolve": "Autonomous agent search + Lean 4",
+      "isAnchor": false,
+      "whyItMatters": "AI research agents proved and formally verified in Lean 4 that every graph satisfies τ(G) ≤ (81/29)ν(G), lowering the 45-year-old Tuza conjecture bound below Haxell (1999) and Wang (Sept 2026) with dual-kernel checks.",
+      "summary": "Registered on the Palomar Lean registry on November 22, 2026 (github.com/mathdiscoveries/tuza-triangle-cover), autonomous AI research agents built and directed by Tyler B. Hughes proved and formalized in Lean 4 that every finite simple graph G satisfies τ(G) ≤ (81/29)ν(G) ≈ 2.793 ν(G), where ν(G) is the maximum size of an edge-disjoint triangle packing and τ(G) is the minimum edge-cover of all triangles. Tuza conjectured τ(G) ≤ 2ν(G) in 1981 (Erdős Problem #167), and the general bound stood at Haxell’s 66/23 ≈ 2.870 for 27 years before falling to 63/22 (Aug 2026), Sichen Wang’s 165/59 ≈ 2.797 (Sept 2026), and now 81/29. Extending Wang’s MIT-licensed tuza-lean library with helper-arborescence coupling, unmerged coloured-family covers, and opposite-edge elimination, the 101-line Mathlib-only Challenge statement passed Palomar replay across two independent kernels (nanoda and con-ron) under Lean 4.35.0.",
+      "technicalHighlights": [
+        "Lowers the general upper bound on Tuza’s 1981 triangle-cover conjecture (Erdős #167) to 81/29 ≈ 2.793, beating Haxell (66/23) and Wang (165/59).",
+        "Compact 101-line Mathlib-only Challenge statement includes explicit K4 non-vacuity checks (ν(K4) = 1, τ(K4) = 2) and dual-kernel Palomar verification (nanoda + con-ron).",
+        "Introduces helper-arborescence coupling and opposite-edge elimination discovered by autonomous AI agents."
+      ],
+      "caveats": "No human mathematician has yet refereed the written exposition, and the specific underlying foundation models powering Hughes’s mathdiscoveries.org agent harness are undisclosed.",
+      "contributors": [
+        "Tyler B. Hughes",
+        "MathDiscoveries AI Research Agents"
+      ],
+      "institutions": [
+        "MathDiscoveries (Independent)"
+      ],
+      "scores": {
+        "foundational": 70,
+        "ripple": 62,
+        "verification": 93,
+        "velocity": 82
+      },
+      "scoreRationale": {
+        "foundational": "Advances a well-known 45-year-old extremal graph theory conjecture (Erdős #167), though the full τ ≤ 2ν bound remains open.",
+        "ripple": "Extends reusable Lean 4 extremal-combinatorics machinery and demonstrates independent researchers running autonomous discovery agents.",
+        "verification": "Dual-kernel Palomar verification (nanoda and con-ron) against a short, auditable Mathlib-only statement with non-vacuity checks.",
+        "velocity": "Pushed past a 27-year barrier and improved upon a September 2026 bound within two months."
+      },
+      "sources": [
+        {
+          "label": "GitHub: mathdiscoveries/tuza-triangle-cover",
+          "url": "https://github.com/mathdiscoveries/tuza-triangle-cover",
+          "type": "formal-verification"
+        },
+        {
+          "label": "WhatAIFound Registry Entry",
+          "url": "https://whataifound.org/",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
       "id": "riemann-hypothesis-lean-2026",
       "title": "Formal Lean Proof of the Riemann Hypothesis & Dirichlet GRH",
       "shortTitle": "Riemann Hypothesis (Lean)",
@@ -1172,6 +1231,129 @@
       ]
     },
     {
+      "id": "green-problem-64-lean-2026",
+      "title": "GPT-6 Astra Proves Ben Green’s Problem 64 (Odd Prime-Factor Parity of p − 2) in Lean 4",
+      "shortTitle": "Ben Green Problem 64 (GPT-6 Lean)",
+      "date": "2026-11-13",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Analytic Number Theory",
+        "Sieve Theory",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "GPT-6 Astra (OpenAI, Lean 4 / Palomar)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "AI-led proof + Lean 4 build",
+      "isAnchor": false,
+      "whyItMatters": "GPT-6 Astra produced an 83-page proof and dual-kernel Palomar-verified Lean 4 formalization showing infinitely many primes p have p − 2 with an odd number of prime factors—a weak parity cousin of Twin Primes.",
+      "summary": "Registered on the Palomar Lean registry on November 13, 2026 (PALOMAR-2026-11-13-000010), GPT-6 Astra operating in a repository run by Igor Inozemtsev produced an 83-page analytic proof and complete Mathlib-only Lean 4 formalization solving Problem 64 from Ben Green’s famous list of 100 Open Problems: proving that infinitely many primes p satisfy that Ω(p − 2) is odd, where Ω counts prime factors with multiplicity. As Green notes, the problem is a weak parity form of the Twin Prime Conjecture (which asks for Ω(p − 2) = 1 infinitely often). Drawing on an October 2026 manuscript by Jizhou Guo and adapting OpenAI’s analytic number theory infrastructure, the proof constructs a nonnegative weight supported on odd prime-factor parity and applies correlation estimates with a weighted sieve, passing Comparator and both independent kernels (nanoda and con-ron).",
+      "technicalHighlights": [
+        "Unconditional Mathlib-only Lean 4 proof of Problem 64 from Ben Green’s 100 Open Problems with zero extra hypotheses.",
+        "Constructs a nonnegative weight supported on odd prime-factor parity combined with correlation estimates and a weighted sieve over shifted primes u + 2.",
+        "Passed Palomar Comparator plus both independent kernels (nanoda and con-ron) against the exact FormalConjectures/GreensOpenProblems/64.lean statement."
+      ],
+      "caveats": "Builds on and adapts analytic number theory ideas from an October 2026 manuscript by Jizhou Guo and OpenAI’s Prime Predecessors library; human journal peer review is pending.",
+      "contributors": [
+        "Igor Inozemtsev",
+        "OpenAI GPT-6 Astra"
+      ],
+      "institutions": [
+        "Independent",
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 76,
+        "ripple": 68,
+        "verification": 95,
+        "velocity": 85
+      },
+      "scoreRationale": {
+        "foundational": "Settles a named open analytic number theory problem from Ben Green’s 100 Open Problems connected to the Twin Prime parity barrier.",
+        "ripple": "Demonstrates autonomous integration of recent preprints and Lean sieve libraries into fully kernel-checked number theory proofs.",
+        "verification": "Clean, zero-hypothesis Mathlib statement matching Formal Conjectures, verified by Lean, nanoda, and con-ron on Palomar.",
+        "velocity": "Synthesized and formalized an 83-page analytic number theory argument within weeks of prerequisite literature appearing."
+      },
+      "sources": [
+        {
+          "label": "Palomar Registry: PALOMAR-2026-11-13-000010",
+          "url": "https://palomar-registry.org/entry?id=PALOMAR-2026-11-13-000010&version=2",
+          "type": "formal-verification"
+        },
+        {
+          "label": "WhatAIFound Registry",
+          "url": "https://whataifound.org/",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
+      "id": "euler-1747-sums-codex-2026",
+      "title": "Proof of Euler’s 1747 Conjecture on Sums of Integers with Restricted Prime Factors",
+      "shortTitle": "Euler’s 1747 Conjecture (Codex)",
+      "date": "2026-11-12",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Additive Number Theory",
+        "Modular Forms",
+        "Hurwitz Quaternions"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Codex (Hurwitz Quaternions + Exact Sieve)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 279,
+      "aiTimeToSolve": "AI-drafted proof + exact sieve",
+      "isAnchor": false,
+      "whyItMatters": "Four Purdue researchers and OpenAI Codex posted a proof of Euler’s 279-year-old 1747 conjecture to Goldbach that every n ≡ 2 (mod 4) sums two numbers whose prime factors are all ≡ 1 (mod 4).",
+      "summary": "Posted to Hexagon on November 12, 2026 (hexagon:2611.00370v1), Purdue University researchers Will Howe, Grant Huffman, Jensen Kohlmeyer, and Liam Kruer—disclosing that OpenAI Codex generated the mathematical argument, performed the exact calculations, and drafted the manuscript under their direction—claimed a full proof of Leonhard Euler’s May 6, 1747 conjecture to Christian Goldbach: every positive integer n ≡ 2 (mod 4) can be written as a + b where every prime factor of a and b is ≡ 1 (mod 4) (allowing 1). While Dietmann and Elsholtz (2019) proved the result for sufficiently large n without an explicit threshold, Codex’s proof averages Hurwitz-quaternion four-square representations over a nonsplit torus normalizer, invoking the weight-two Ramanujan–Petersson bound via Jacquet–Langlands and Deligne to obtain an explicit threshold n ≥ 64⁴ = 16,777,216, paired with an exact arithmetic sieve covering all 4,194,304 cases below (independently reproduced by whataifound.org).",
+      "technicalHighlights": [
+        "Resolves the explicit threshold gap left by Dietmann–Elsholtz (2019) on a 279-year-old conjecture posed by Euler to Goldbach in 1747.",
+        "Combines Hurwitz quaternion norms, nonsplit torus averaging, and explicit Jacquet–Langlands / Deligne Hecke bounds to drop the analytic threshold to 64⁴ = 16,777,216.",
+        "Finite arithmetic sieve covering all 4,194,304 integers n ≡ 2 (mod 4) below 64⁴ was independently recomputed and confirmed."
+      ],
+      "caveats": "No Lean formalization yet; while the finite sieve certificate up to 16.77M has been independently reproduced, the explicit constants in the analytic Hecke/Jacquet–Langlands estimate above 64⁴ still await specialist peer review.",
+      "contributors": [
+        "Will Howe",
+        "Grant Huffman",
+        "Jensen Kohlmeyer",
+        "Liam Kruer",
+        "OpenAI Codex"
+      ],
+      "institutions": [
+        "Purdue University",
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 74,
+        "ripple": 60,
+        "verification": 64,
+        "velocity": 84
+      },
+      "scoreRationale": {
+        "foundational": "Completes a classic 279-year-old additive number theory conjecture from Euler’s correspondence with Goldbach by making the asymptotic bound effective.",
+        "ripple": "Illustrates effective explicitization of automorphic Hecke bounds combined with exact computational certificates by AI coding agents.",
+        "verification": "Finite computational certificate independently verified, but the analytic estimate above 64⁴ is unrefereed and not formalized in Lean.",
+        "velocity": "OpenAI Codex generated both the analytic quaternion/Hecke strategy and the exact finite verification sieve."
+      },
+      "sources": [
+        {
+          "label": "Hexagon Preprint 2611.00370v1 (PDF)",
+          "url": "https://hexagonmath.org/pdf/2611.00370v1",
+          "type": "paper"
+        },
+        {
+          "label": "WhatAIFound Registry & Independent Sieve Check",
+          "url": "https://whataifound.org/finding/2026-11-12-euler-1747-sums",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
       "id": "alphagenome-2-single-cell-2026",
       "title": "AlphaGenome 2 Brings Single-Cell Precision to Human Regulatory Genomics",
       "shortTitle": "AlphaGenome 2 (Single-Cell DNA)",
@@ -1223,6 +1405,66 @@
           "type": "announcement"
         }
       ]
+    },
+    {
+      "id": "helium-lithium-ionization-bounds-2026",
+      "title": "Sharp Quantum Ionization Bounds for Helium and Lithium via AI-Generated Proofs",
+      "shortTitle": "Helium & Lithium Ionization Bounds",
+      "date": "2026-11-11",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Mathematical Physics",
+        "Quantum Mechanics",
+        "Atomic Ionization"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Frontier Reasoning LLMs + Computer-Assisted Spectral Bounds",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Collaborative AI proof + numerics",
+      "isAnchor": false,
+      "whyItMatters": "Stanford researchers with AI-generated proofs established sharp atomic ionization bounds proving neutral helium cannot bind a third electron (He⁻ has no ground state) and lithium binds at most four.",
+      "summary": "Posted to Hexagon on November 11, 2026 (hexagon:2611.00325v1), Alec Shelley, Yang, and Daniel Tartakovsky (Stanford) used mostly AI-generated mathematical proofs combined with rigorous computer-assisted spectral bounds to solve the maximum ionization problem for helium (Z = 2) and lithium (Z = 3), rigorously proving that helium binds at most two electrons (establishing the absence of a bound ground state for the helium anion He⁻) and lithium binds at most four. Independently corroborated days later by a separate arXiv preprint (arXiv:2611.19370) and appearing alongside an OpenAI AI-generated manuscript claiming the general uniform atomic excess-charge bound N ≤ Z + C, the work marks a milestone in rigorous many-body quantum mechanics.",
+      "technicalHighlights": [
+        "Establishes sharp rigorous bounds on maximum electron binding for real few-electron Coulomb Hamiltonians: N_max(He) = 2 and N_max(Li) ≤ 4.",
+        "Combines AI-generated variational/spectral inequality proofs with rigorous computer-assisted energy bounds.",
+        "Corroborated by independent mathematical-physics work (arXiv:2611.19370) proving absence of binding for the helium anion."
+      ],
+      "caveats": "Hexagon preprint carries a human-understanding caveat (\"some parts\") and awaits formal journal refereeing and Lean verification.",
+      "contributors": [
+        "Alec Shelley",
+        "Daniel Tartakovsky",
+        "Yang"
+      ],
+      "institutions": [
+        "Stanford University"
+      ],
+      "scores": {
+        "foundational": 75,
+        "ripple": 66,
+        "verification": 65,
+        "velocity": 78
+      },
+      "scoreRationale": {
+        "foundational": "Addresses the classic mathematical-physics ionization conjecture for real multi-electron Schrödinger Hamiltonians (He and Li).",
+        "ripple": "Demonstrates frontier LLMs assisting with rigorous spectral analysis and computer-assisted proofs in quantum physics.",
+        "verification": "Unrefereed Hexagon preprint, bolstered by an independent November 20, 2026 arXiv proof of the helium anion result.",
+        "velocity": "AI-generated analytical estimates paired with computer-assisted bounds accelerated rigorous few-body quantum proofs."
+      },
+      "sources": [
+        {
+          "label": "Hexagon Preprint 2611.00325v1",
+          "url": "https://hexagonmath.org/2611.00325v1",
+          "type": "paper"
+        },
+        {
+          "label": "Independent Helium Anion Preprint (arXiv:2611.19370)",
+          "url": "https://arxiv.org/html/2611.19370v2",
+          "type": "paper"
+        }
+      ],
+      "enables": []
     },
     {
       "id": "alphaproof-code-signal-2026",
@@ -1285,6 +1527,66 @@
       ]
     },
     {
+      "id": "theta-valley-delta-conjecture-2026",
+      "title": "AI-Assisted Proof & 6-Kernel Lean 4 Formalization of the Theta and Valley Delta Conjectures",
+      "shortTitle": "Theta & Valley Delta Conjectures",
+      "date": "2026-11-09",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Algebraic Combinatorics",
+        "Macdonald Polynomials",
+        "Formal Verification"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI ChatGPT + Lean 4 (Six-Kernel Verified)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Human-AI proof + 6-kernel Lean 4",
+      "isAnchor": false,
+      "whyItMatters": "Nankai University combinatorialists working with ChatGPT proved the touch-refined Theta conjecture—implying the open valley Delta conjecture of Haglund, Remmel & Wilson—with a 6-kernel-checked Lean 4 library.",
+      "summary": "Released on GitHub in November 2026 (github.com/qiudun123/theta-conjecture), five combinatorialists at the Center for Combinatorics, Nankai University (including Dun Qiu) credited ChatGPT with assisting proof development of the touch-refined Theta conjecture of D’Adderio, Iraci, and Vanden Wyngaerd, which connects symmetric-function Macdonald/Theta operators to parking functions with decorated rises and contractible valleys. As immediate corollaries, the theorem settles the long-open valley version of the Haglund–Remmel–Wilson Delta conjecture and the generalized valley Delta conjecture of Qiu and Wilson. The core touching and summed Theta identities were formalized in Lean 4.35.0 / Mathlib (849 files, zero sorry, zero warnings) and passed full build, axiom audit, and six-kernel replay.",
+      "technicalHighlights": [
+        "Proves the touch-refined Theta conjecture in algebraic combinatorics, implying the open valley Delta conjecture and its generalized version.",
+        "Formalized in Lean 4.35.0 with Mathlib (zero sorry, warningAsError) and verified via full six-kernel replay.",
+        "Cited in Wolfram MathWorld’s Macdonald Polynomial entry as an AI-assisted resolution with formal Lean verification."
+      ],
+      "caveats": "The Lean formalization certifies the touching and summed Theta identities directly; the Delta-operator translation corollaries (1.5(2)–(3)) are proved in the manuscript rather than formalized in Lean.",
+      "contributors": [
+        "Dun Qiu",
+        "Nankai Center for Combinatorics"
+      ],
+      "institutions": [
+        "Nankai University",
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 77,
+        "ripple": 70,
+        "verification": 92,
+        "velocity": 80
+      },
+      "scoreRationale": {
+        "foundational": "Resolves central open conjectures in Macdonald polynomial and parking-function combinatorics (Theta and valley Delta conjectures).",
+        "ripple": "Shows working domain mathematicians pairing ChatGPT with multi-kernel Lean 4 verification for intricate algebraic combinatorics.",
+        "verification": "Main Theta identities passed full Lean 4.35.0 build, axiom audits, and six-kernel replay.",
+        "velocity": "Compressed both intricate q,t-combinatorial proof discovery and 849-file formal verification into a unified release."
+      },
+      "sources": [
+        {
+          "label": "GitHub: qiudun123/theta-conjecture (Lean 4)",
+          "url": "https://github.com/qiudun123/theta-conjecture",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Wolfram MathWorld: Macdonald Polynomial Update",
+          "url": "https://mathworld.wolfram.com/MacdonaldPolynomial.html",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
       "id": "aaronson-ambainis-conjecture-lean-2026",
       "title": "Lean-Verified Proof of the 2009 Aaronson–Ambainis Quantum Query Conjecture",
       "shortTitle": "Aaronson–Ambainis Conjecture (Lean)",
@@ -1341,6 +1643,72 @@
           "type": "explainer"
         }
       ]
+    },
+    {
+      "id": "z-diophantine-in-q-2026",
+      "title": "ℤ Is Diophantine in ℚ: Collaborative AI Proof & Explicit 229-Variable Quartic (Mazur / Hilbert 10th)",
+      "shortTitle": "ℤ Is Diophantine in ℚ (229-Var)",
+      "date": "2026-11-05",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Number Theory",
+        "Diophantine Geometry",
+        "Mathematical Logic"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "GPT-6 Astra / 6.1 Sol + Claude Opus 5.5 / Fable 5.2 + Gemini 4 Carbon",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 56,
+      "aiTimeToSolve": "Multi-model GitHub sprint (v1–v21)",
+      "isAnchor": false,
+      "whyItMatters": "Building on OpenAI’s Oct 6 preprint, Elliot Glazer and collaborators used GPT-6, Claude 5.5/Fable, and Gemini 4 Carbon on GitHub to prove ℤ is Diophantine in ℚ—refuting Mazur’s conjecture—with an explicit 229-variable quartic.",
+      "summary": "Maintained as a rapidly iterating public GitHub research project (github.com/elliotglazer/diophantine-z-q, Versions 1–21 in November 2026), Elliot Glazer, Sohail Farhangi, José Brox, Gabriel Conant, Jennifer Park, Caroline Terry, and collaborators—working jointly with GPT-6 Astra, GPT-6.1 Sol, Claude Opus 5.5, Claude Fable 5.1/5.2, and Gemini 4 Carbon—developed a claimed proof that the integers ℤ are Diophantine over the rational numbers ℚ, building on OpenAI’s October 6 preprint on Hilbert’s Tenth Problem over ℚ. If verified, this both gives a negative answer to Hilbert’s Tenth Problem for ℚ (56 years after Matiyasevich’s 1970 theorem for ℤ) and refutes Barry Mazur’s widely believed topology conjecture on rational points. Across 21 revisions, human–AI collaboration shrank the explicit defining polynomial from 292.89 billion variables down to an explicit 229-variable, 3,312-monomial quartic (74 KB in plain decimal) using Gemini 4 Carbon’s three-detector construction.",
+      "technicalHighlights": [
+        "Claims an explicit single Diophantine quartic P(q, w) = 0 over ℚ defining q ∈ ℤ, settling Hilbert’s Tenth Problem over ℚ negatively and refuting Mazur’s conjecture.",
+        "Multi-lab AI collaboration (GPT-6 Astra/Sol, Claude Opus 5.5/Fable 5.2, Gemini 4 Carbon) compressed the construction from 292.89 billion variables to 229 explicit variables (degree 4, 3,312 monomials).",
+        "Includes open SHA-256-pinned finite verification scripts, 48 accepted Lean 4 helper modules, and public GitHub issue audits."
+      ],
+      "caveats": "Lean formalization is currently incomplete (48 helper modules compiled, main bounded-polynomial theorem still has sorry); the full arithmetic proof remains under active community audit and is not yet peer-reviewed.",
+      "contributors": [
+        "Elliot Glazer",
+        "Sohail Farhangi",
+        "José Brox",
+        "Gabriel Conant",
+        "Jennifer Park",
+        "Caroline Terry"
+      ],
+      "institutions": [
+        "Independent / Academic Consortium",
+        "OpenAI",
+        "Anthropic",
+        "Google DeepMind"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 86,
+        "verification": 58,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "A positive proof that ℤ is Diophantine in ℚ would settle Hilbert’s Tenth Problem over ℚ and overturn Barry Mazur’s landmark conjecture.",
+        "ripple": "Pioneered open, multi-model, multi-lab GitHub mathematical collaboration (21 rapid revisions compressing variables by 9 orders of magnitude).",
+        "verification": "Finite algebraic checks and 48 Lean helper modules pass, but the main arithmetic theorem still has sorry and awaits independent human verification.",
+        "velocity": "Shrank a 292-billion-variable theoretical construction to a 74 KB explicit 229-variable quartic in under three weeks."
+      },
+      "sources": [
+        {
+          "label": "GitHub: elliotglazer/diophantine-z-q (v21)",
+          "url": "https://github.com/elliotglazer/diophantine-z-q",
+          "type": "code"
+        },
+        {
+          "label": "AI & Mathematics Research Watch (Nov 6, 2026)",
+          "url": "https://djalil.chafai.net/aim/archives/20261106T081501Z-8c28a311.html",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
     },
     {
       "id": "claude-prokaryotic-vault-2026",
@@ -1518,6 +1886,71 @@
           "type": "code"
         }
       ]
+    },
+    {
+      "id": "claude-preclinical-drug-programs-2026",
+      "title": "Anthropic Claude in Real Drug Programs: 70% Shorter CAR-T Domains & Anti-Allergy IgE Disruptors",
+      "shortTitle": "Claude Preclinical Drug Programs",
+      "date": "2026-10-27",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "CAR-T Immunotherapy",
+        "Antibody Engineering",
+        "Therapeutic Discovery"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Claude Biology Research Agents & Claude Code (Anthropic)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Weeks–months across wet-lab loops",
+      "isAnchor": false,
+      "whyItMatters": "Across six pharma partnerships, Claude agents engineered CAR-T domains 70% shorter with 10× receptor expression, 35,000 anti-IgE allergy antibodies beating Xolair in vitro, and >10× tighter cancer leads.",
+      "summary": "On October 27, 2026, Anthropic released technical reports with six life-sciences partners detailing wet-lab preclinical drug-discovery gains driven by Claude agents. At Generate:Biomedicines, six scientists directed Claude Code agents to refactor intrinsically disordered CAR-T signaling domains, producing a candidate 70% shorter than clinical standards that yielded ~10× higher T-cell surface receptor density and superior tumor-cell killing in vitro. At Divergence Labs, Claude largely autonomously designed ~35,000 dual-arm food-allergy antibodies in one month, yielding 20 IgE-disrupting hits—three dislodging cell-bound IgE more effectively than FDA-approved Xolair. At BigHat Biosciences, Claude integrated with an automated lab across 1,010 antibody variants in 10 weeks, achieving >10× tighter binding, +18 °C higher thermal stability, and >100× slower aggregation, while Enveda cut GMP review time 89% and flagged 7 missed manufacturing issues.",
+      "technicalHighlights": [
+        "Generate:Biomedicines: Claude agents designed a 70% shorter CAR-T signaling domain producing ~10× higher receptor expression and stronger tumor killing in human T-cells.",
+        "Divergence Labs: ~35,000 largely autonomous Claude antibody designs yielded 3 IgE disruptors outperforming FDA-approved Xolair at dislodging cell-bound IgE in vitro.",
+        "BigHat Biosciences: closed-loop Claude + automated wet lab tested 1,010 variants in 10 weeks, achieving >10× affinity, +18 °C stability, and >100× slower aggregation."
+      ],
+      "caveats": "Preclinical in-vitro and mouse-model results reported in company technical reports rather than peer-reviewed journals; none of the candidates have entered human clinical trials yet.",
+      "contributors": [
+        "Anthropic Life Sciences Team",
+        "Generate:Biomedicines",
+        "Divergence Labs",
+        "BigHat Biosciences",
+        "Enveda"
+      ],
+      "institutions": [
+        "Anthropic",
+        "Generate:Biomedicines",
+        "Divergence Labs",
+        "BigHat Biosciences"
+      ],
+      "scores": {
+        "foundational": 74,
+        "ripple": 85,
+        "verification": 68,
+        "velocity": 89
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrates frontier reasoning agents engineering intrinsically disordered immune domains and multi-objective antibodies directly inside wet-lab pipelines.",
+        "ripple": "Establishes a replicable agentic biotech blueprint spanning modality engineering, hit generation, lead optimization, and regulatory filings.",
+        "verification": "Backed by physical wet-lab assays across multiple independent biotech partners, though published as technical reports prior to peer review.",
+        "velocity": "Compressed multi-month antibody discovery and CAR-T design cycles into weeks across 1,000+ physical lab variants."
+      },
+      "sources": [
+        {
+          "label": "Anthropic Research: Early Progress on Accelerating Drug Development",
+          "url": "https://www.anthropic.com/research/early-progress-drug-development",
+          "type": "announcement"
+        },
+        {
+          "label": "BigHat Biosciences: Agents at the Bench",
+          "url": "https://www.bighatbio.com/news/agents-at-the-bench-anthropic-and-bighat-collaborate-on-rapid-agentic-driven-therapeutic-antibody-optimization",
+          "type": "announcement"
+        }
+      ],
+      "enables": []
     },
     {
       "id": "cfsg-enormous-theorem-lean-2026",
@@ -1814,6 +2247,136 @@
       ]
     },
     {
+      "id": "harvard-anthropic-quera-quantum-circuits-2026",
+      "title": "Harvard–Anthropic–QuEra: Claude Mythos 5 Discovers 4×–39× Leaner Fault-Tolerant Quantum Circuits",
+      "shortTitle": "Claude Fault-Tolerant Quantum Circuits",
+      "date": "2026-10-16",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Quantum Computing",
+        "Fault-Tolerant Circuits",
+        "Evolutionary Program Synthesis"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Claude Mythos 5 + OpenEvolve Evaluator (Anthropic / Harvard / QuEra)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Up to 53 hrs closed-loop search",
+      "isAnchor": false,
+      "whyItMatters": "In a Harvard–Anthropic–QuEra study, Claude Mythos 5 in a closed evolutionary loop beat hand-crafted quantum circuits on 7 of 8 tasks—cutting Toffoli×qubit cost up to 39× (12× on DQI decoding, 17× on elliptic curves).",
+      "summary": "Released on October 16, 2026 (highlighted by QuEra and Harvard on November 10, 2026), researchers from Harvard University (Mikhail Lukin, Susanne Yelin), Anthropic, and QuEra Computing paired Claude Mythos 5 with the open-source evolutionary framework OpenEvolve and an independent classical circuit verifier to discover state-of-the-art fault-tolerant quantum circuits with zero human intervention between rounds. Across seven of eight core computational primitives, Claude reduced both Toffoli-gate counts and logical qubit footprints relative to best published human designs: cutting the DQI Reed–Solomon decoder from 5.1M to ~440K Toffoli gates (12×), reducing the quantum-chemistry Coulomb potential space-time metric 9.9×, discovering a reversible modular-inversion circuit for elliptic-curve addition with 17× fewer gates in a 53-hour run, and achieving a 39× space-time cost reduction on a fixed-point Gaussian (alongside a separate Oct 13 IBM Research AI agent finding a 204× faster QEC decoder for $299 of inference).",
+      "technicalHighlights": [
+        "Beats best published human-crafted fault-tolerant quantum circuits on 7 of 8 benchmark primitives using closed-loop LLM evolutionary search (Claude Mythos 5 + OpenEvolve).",
+        "Cuts DQI Reed–Solomon optimization decoder Toffoli gates 12× (5.1M → 440K), chemistry Coulomb potential cost 9.9×, elliptic-curve modular inversion gates 17×, and Gaussian space-time cost 39×.",
+        "Every circuit was deterministically verified for exact functional equivalence and exact Toffoli/qubit counts by an independent classical evaluator."
+      ],
+      "caveats": "Resource reductions are verified classical circuit designs for core algorithmic building blocks rather than executions on physical fault-tolerant quantum hardware; peer review is pending.",
+      "contributors": [
+        "Mikhail Lukin",
+        "Susanne Yelin",
+        "Harvard Quantum Initiative",
+        "Anthropic",
+        "QuEra Computing"
+      ],
+      "institutions": [
+        "Harvard University",
+        "Anthropic",
+        "QuEra Computing"
+      ],
+      "scores": {
+        "foundational": 81,
+        "ripple": 86,
+        "verification": 84,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Discovers genuinely novel reversible quantum algorithms and circuit architectures beating decades of hand-optimized fault-tolerant primitives.",
+        "ripple": "Directly pulls forward the practical horizon of fault-tolerant quantum computing for chemistry, optimization, and cryptography.",
+        "verification": "All circuits are deterministically checked by an independent classical evaluator for functional correctness and exact gate/qubit budgets.",
+        "velocity": "Autonomous closed-loop runs (up to 53 hours) outperformed decades of specialist human circuit engineering across 7 of 8 tasks."
+      },
+      "sources": [
+        {
+          "label": "QuEra Press Release: Harvard, Anthropic & QuEra Quantum Circuits",
+          "url": "https://www.quera.com/press-releases/harvard-anthropic-and-quera-breakthrough-research-uniquely-shows-ai-can-reduce-the-resources-quantum-applications-need-significantly-accelerating-the-era-of-useful-quantum-computing",
+          "type": "announcement"
+        },
+        {
+          "label": "Quantum Computing Report Technical Breakdown",
+          "url": "https://quantumcomputingreport.com/harvard-anthropic-and-quera-use-llms-to-discover-quantum-circuits-with-up-to-9100x-lower-resource-costs/",
+          "type": "explainer"
+        }
+      ],
+      "enables": [
+        "deepmind-verified-quantum-algos-2026"
+      ]
+    },
+    {
+      "id": "ostmann-inverse-goldbach-lean-2026",
+      "title": "Formal Lean 4 Proof of Ostmann’s 1956 Inverse Goldbach Conjecture (Erdős #431)",
+      "shortTitle": "Ostmann Inverse Goldbach (Lean)",
+      "date": "2026-10-11",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Additive Number Theory",
+        "Prime Numbers",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Frontier Math Model (Lean 4)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 70,
+      "aiTimeToSolve": "Autonomous proof + Lean 4",
+      "isAnchor": false,
+      "whyItMatters": "Independently audited from OpenAI’s GitHub release and merged into DeepMind’s Formal Conjectures, this Lean 4 proof settles Ostmann’s 70-year-old Inverse Goldbach Conjecture (Erdős #431): primes are additively indecomposable.",
+      "summary": "Originally released as Result 013 in github.com/openai/math and independently audited and merged into Google DeepMind’s formal-conjectures repository (431.lean) as research-solved on October 11, 2026, OpenAI’s internal frontier math model proved Hans-Heinrich Ostmann’s 1956 Inverse Goldbach Conjecture (Erdős Problem #431): no set of natural numbers differing from the primes by only finitely many elements can be expressed as a sumset A + B of two sets A, B ⊆ ℕ each having at least two elements (including the infinite-summands form). Independent third-party verification rebuilt the three core declarations under Lean 4.34.1, audited statement fidelity against Mathlib’s primes, confirmed zero sorry and only Lean’s three standard axioms (propext, Classical.choice, Quot.sound), and matched Comparator fingerprints.",
+      "technicalHighlights": [
+        "Settles Ostmann’s 70-year-old 1956 Inverse Goldbach Conjecture (Erdős #431) in both the general ≥2-element and infinite-summands forms.",
+        "Independently rebuilt under Lean 4.34.1 with verified statement fidelity against Mathlib’s primes and only the three standard logical axioms.",
+        "Accepted and marked research-solved (answer(False)) in Google DeepMind’s Formal Conjectures catalog (431.lean) on October 11, 2026."
+      ],
+      "caveats": "Part of OpenAI’s unrefereed October 2026 GitHub math corpus; while the formal Lean proof and statement match have been independently audited, traditional journal peer review of the 80-page prose manuscript is still ongoing.",
+      "contributors": [
+        "OpenAI Frontier Math Team",
+        "Independent Lean Auditors (Plasma AI / Formal Conjectures)"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 72,
+        "verification": 96,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Resolves a famous 70-year-old additive number theory problem (Ostmann’s Inverse Goldbach Conjecture / Erdős #431) on the additive structure of the primes.",
+        "ripple": "Demonstrates that standout theorems from bulk AI math releases can be cleanly extracted, statement-audited, and merged into Formal Conjectures.",
+        "verification": "Independently rebuilt under Lean 4.34.1, statement-audited against Mathlib primes, Comparator-matched, and merged into Formal Conjectures.",
+        "velocity": "Resolved a 70-year-old open problem autonomously and passed independent external Lean verification within days."
+      },
+      "sources": [
+        {
+          "label": "GitHub: openai/math Result 013 (Lean Docs)",
+          "url": "https://github.com/openai/math/blob/main/lean/docs/013.md",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Independent Lean 4.34.1 Verification Audit (Plasma AI)",
+          "url": "https://github.com/plasma-ai/erdos/blob/main/wiki/problems/primes/E0431/claims/2026_09_24_openai.md",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Emergent Mind: OpenAI Math Result 013",
+          "url": "https://www.emergentmind.com/openai-math-explorer/results/013",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
       "id": "hodge-cm-abelian-varieties-2026",
       "title": "Lean-Formalized Proof of the Rational Hodge Conjecture for CM Abelian Varieties",
       "shortTitle": "Hodge Conjecture (CM Abelian)",
@@ -1987,7 +2550,10 @@
         "verification": "Marked down candidly: 235 families have Lean entries, but bulk external audits are ongoing and 3 papers were retracted.",
         "velocity": "Generated 372 open-problem result families in a single automated sweep at ~3 hours of compute per family."
       },
-      "enables": [],
+      "enables": [
+        "ostmann-inverse-goldbach-lean-2026",
+        "z-diophantine-in-q-2026"
+      ],
       "sources": [
         {
           "label": "OpenAI — github.com/openai/math (722 Manuscripts & Lean Challenge Repository)",
@@ -2111,7 +2677,9 @@
         "verification": "Computational genomic discovery published as a preprint; wet-lab functional characterization is still ongoing.",
         "velocity": "Compressed months of comparative-genomics database mining into a 21-hour autonomous multi-agent run."
       },
-      "enables": [],
+      "enables": [
+        "claude-preclinical-drug-programs-2026"
+      ],
       "sources": [
         {
           "label": "Anthropic Research — Claude discovers a novel enzyme system with CRISPR-like repeats",
@@ -2179,6 +2747,76 @@
           "type": "explainer"
         }
       ]
+    },
+    {
+      "id": "zeta-5-irrationality-lean-2026",
+      "title": "Irrationality of ζ(5) — Multi-Assistant Lean 4 & Isabelle/HOL Formal Verification",
+      "shortTitle": "Irrationality of ζ(5) (Lean & AFP)",
+      "date": "2026-09-17",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Analytic Number Theory",
+        "Special Zeta Values",
+        "Formal Verification"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Claude Opus 5 / 5.5 Multi-Agent Lean Provers + AI-Assisted Preprint",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 48,
+      "aiTimeToSolve": "1–2 wks for dual Lean 4 proofs",
+      "isAnchor": false,
+      "whyItMatters": "Forty-eight years after Apéry’s proof for ζ(3), Aabir Fauzan’s proof that ζ(5) is irrational was rapidly verified in Lean 4 by Claude Opus 5/5.5 agents, checked axiom-free in Formal Conjectures, and ported to Isabelle.",
+      "summary": "On September 17, 2026, Aabir Fauzan (Aalto University) posted a Zenodo preprint (DOI: 10.5281/zenodo.22826418, disclosing generative AI assistance for checks and editing) proving that ζ(5) = ∑ 1/n⁵ is irrational via rationally normalized Hankel determinants—settling the most famous odd-zeta irrationality problem since Roger Apéry’s 1978 proof for ζ(3). Within days, two independent Lean 4 formalizations verified the result: Moritz Firsching (Google DeepMind, mo271/Zeta5, Sept 23) completed a zero-sorry, standard-axioms-only Lean proof matched via Comparator to Formal Conjectures (merged Sept 29), while Dan Romik directed Claude Opus 5 and Claude Opus 5.5 multi-agent workflows in Claude Code (danromik/zeta5-irrationality, Sept 25) to formalize Fauzan’s preprint section-by-section in 29,400 lines (conditional only on PNT) while catching and fixing a missing inequality on p. 10. On October 26, 2026, the proof was independently ported to Isabelle/HOL’s Archive of Formal Proofs.",
+      "technicalHighlights": [
+        "Settles the 48-year-old problem of the irrationality of ζ(5) (first individual odd zeta value proved irrational since Apéry’s ζ(3) in 1978).",
+        "Claude Opus 5 / 5.5 multi-agent workflows directed by Dan Romik formalized 29,400 lines of Lean 4 following the paper section-by-section and repaired an unproved inequality.",
+        "Independently verified axiom-free against DeepMind’s Formal Conjectures (mo271/Zeta5, PR #6517) and cross-verified in Isabelle/HOL’s Archive of Formal Proofs."
+      ],
+      "caveats": "Fauzan’s original mathematical idea came from a human author using AI in a supporting role; AI’s decisive verifiable breakthrough here was the rapid multi-agent Lean 4 formalization, auditing, and gap-repair workflow that confirmed the result within days.",
+      "contributors": [
+        "Aabir Fauzan",
+        "Dan Romik",
+        "Moritz Firsching",
+        "Alex Raymond Hyman",
+        "Claude Opus 5 / 5.5"
+      ],
+      "institutions": [
+        "Aalto University",
+        "UC Davis",
+        "Google DeepMind",
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 91,
+        "ripple": 82,
+        "verification": 98,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Establishes the irrationality of ζ(5), a landmark special-value problem open for 48 years since Apéry’s celebrated 1978 theorem for ζ(3).",
+        "ripple": "Showcased how AI Lean formalization agents can audit, repair, and cross-certify shocking outsider preprints in days rather than years.",
+        "verification": "Independently certified axiom-free in Lean 4 (Formal Conjectures + Comparator), cross-formalized by Claude agents, and ported to Isabelle/HOL AFP.",
+        "velocity": "Moved from an unknown author’s Zenodo preprint to multi-assistant formal certification (Lean 4 + Isabelle) in under six weeks."
+      },
+      "sources": [
+        {
+          "label": "GitHub: danromik/zeta5-irrationality (Claude Opus 5/5.5 Lean 4)",
+          "url": "https://github.com/danromik/zeta5-irrationality",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Isabelle Archive of Formal Proofs: Zeta_5_Irrational",
+          "url": "https://isa-afp.org/entries/Zeta_5_Irrational.html",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Verification Tracker: ζ(5) Checked in Lean",
+          "url": "https://ademb10.com/claims/zeta-5",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
     },
     {
       "id": "yang-mills-existence-2026",
@@ -2361,6 +2999,146 @@
       ]
     },
     {
+      "id": "bounded-prime-gaps-212-182-2026",
+      "title": "AI Pushes Bounded Prime Gaps Below 246 to 212 (AxiomProver) and 186 / 182 (GPT-6 Astra)",
+      "shortTitle": "Bounded Prime Gaps: 212 & 186/182",
+      "date": "2026-09-03",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Analytic Number Theory",
+        "Prime Gaps",
+        "Sieve Methods"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "AxiomProver (Axiom Math) & GPT-6 Astra (OpenAI)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 177,
+      "aiTimeToSolve": "Days after Stadlmann’s 240",
+      "isAnchor": false,
+      "whyItMatters": "Days after Julia Stadlmann broke Polymath8b’s 12-year record of 246 with 240, AxiomProver certified a sieve deduction to 212 while GPT-6 Astra pushed conditional Lean bounds to 186 and 182.",
+      "summary": "In early September 2026—immediately after Julia Stadlmann’s August 31 breakthrough (arXiv:2608.31126) lowered Polymath8b’s 12-year bounded prime gaps record from 246 to 240—two competing AI-powered analytic number theory efforts drove the bound sharply lower. On September 3, Axiom Math’s team (Ken Ono, François Charton, Ashvin Swaminathan, Jesse Thorner, et al.) optimized Stadlmann’s sieve to H₁ ≤ 212 and used AxiomProver to generate a Lean 4 certificate of the deduction (github.com/AxiomMath/BGP212). Concurrently, OpenAI’s GPT-6 Astra released a conditional Lean 4 development claiming H₁ ≤ 186 (github.com/openai/PrimeGaps186, Sept 2), followed two days later by UCLA number theorist Romyar Sharifi prompting GPT-6 Astra to reach H₁ ≤ 182 across 918 audited Lean modules (github.com/romyar1/prime-gaps-lean, Sept 4).",
+      "technicalHighlights": [
+        "Axiom Math (9 authors + AxiomProver) pushed bounded prime gaps from Stadlmann’s 240 to 212 with a Lean 4 deduction certificate (BGP212).",
+        "OpenAI GPT-6 Astra (PrimeGaps186) and Romyar Sharifi + GPT-6 Astra (prime-gaps-lean) pushed conditional Lean sieve bounds further to 186 and 182.",
+        "All developments check the intricate sieve/analytic deduction in Lean 4 while explicitly displaying external analytic/numerical hypotheses."
+      ],
+      "caveats": "None of the 212, 186, or 182 Lean repositories is an unconditional end-to-end proof from first principles: each retains stated analytic equidistribution theorems and numerical integral inequalities as explicit Lean axioms/hypotheses, and peer review is ongoing.",
+      "contributors": [
+        "Ken Ono",
+        "François Charton",
+        "Ashvin A. Swaminathan",
+        "Jesse Thorner",
+        "Romyar Sharifi",
+        "Axiom Math",
+        "OpenAI"
+      ],
+      "institutions": [
+        "Axiom Math",
+        "OpenAI",
+        "UCLA"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 76,
+        "verification": 72,
+        "velocity": 93
+      },
+      "scoreRationale": {
+        "foundational": "Substantially sharpens the famous Zhang–Maynard–Polymath8b bounded prime gaps frontier (246 → 212 → 186 → 182) toward Twin Primes.",
+        "ripple": "Triggered intense community debate over AI-accelerated follow-ups to junior researchers’ breakthroughs and conditional Lean certificates.",
+        "verification": "Deduction steps are machine-checked in Lean 4, but all three bounds remain conditional on external analytic/numerical inputs and unrefereed.",
+        "velocity": "Multiple competing AI teams broke the 240 barrier within 72 hours of Stadlmann’s preprint appearing."
+      },
+      "sources": [
+        {
+          "label": "GitHub: romyar1/prime-gaps-lean (182 Bound)",
+          "url": "https://github.com/romyar1/prime-gaps-lean",
+          "type": "formal-verification"
+        },
+        {
+          "label": "WhatAIFound: AxiomProver 212 Bound",
+          "url": "https://whataifound.org/finding/2026-09-03-prime-gaps-212",
+          "type": "explainer"
+        },
+        {
+          "label": "WhatAIFound: OpenAI GPT-6 Astra 186 Bound",
+          "url": "https://whataifound.org/finding/2026-09-02-prime-gaps-186",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
+      "id": "erdos-sos-conjecture-lean-2026",
+      "title": "Autonomous Lean 4 Proof of the 1962 Erdős–Sós Conjecture (Erdős #548)",
+      "shortTitle": "Erdős–Sós Conjecture (GPT-6 Lean)",
+      "date": "2026-09-03",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Extremal Graph Theory",
+        "Tree Embeddings",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Pre-Release GPT-6 Astra (OpenAI / Epoch AI LeanOpenProblems)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 64,
+      "aiTimeToSolve": "1 autonomous run (<$300 budget)",
+      "isAnchor": false,
+      "whyItMatters": "With zero human steering, pre-release GPT-6 Astra proved the 64-year-old Erdős–Sós Conjecture in Lean 4 via a surprising elementary counting argument—independently verified and simplified by Oxford’s Riordan & Scott.",
+      "summary": "In Epoch AI’s FrontierMath Erdős evaluation (September 3, 2026; github.com/tadamcz/erdos548, arXiv:2609.25050), a pre-release version of OpenAI’s GPT-6 Astra autonomously discovered and formally proved in Lean 4 + Mathlib the 1962 Erdős–Sós Conjecture (Erdős Problem #548): every graph on n vertices with average degree greater than k − 2 contains every tree on k vertices as a subgraph. Avoiding both Szemerédi’s regularity lemma and probabilistic machinery, GPT-6 Astra invented a remarkably short, elementary permutation-word counting proof (its internal lemma proves the exact sharp classical bound, while the benchmark Comparator target uses |E| ≥ (k−1)n/2 + 1). Within weeks, Oxford combinatorialists Oliver Riordan and Alex Scott (arXiv:2609.15893), Thomas Bloom (erdosproblems.com), and Santos–Stein–Williams independently verified, simplified, and published human expositions of what Riordan & Scott called \"a very ingenious and surprising argument.\"",
+      "technicalHighlights": [
+        "Autonomously solved a 64-year-old flagship conjecture of Paul Erdős and Vera Sós (1962) with zero human steering under a $300 compute budget.",
+        "Discovered a completely elementary permutation-word counting argument bypassing regularity-lemma machinery altogether.",
+        "Verified in Lean 4 via Comparator (standard axioms only) and independently confirmed & simplified in human papers by Riordan & Scott (Oxford) and Thomas Bloom."
+      ],
+      "caveats": "In one odd-parity case, the benchmark’s formal Comparator statement assumes half an edge more than the strict classical inequality, though the Lean file’s internal counting lemma and Riordan–Scott’s human exposition confirm the full sharp classical conjecture.",
+      "contributors": [
+        "OpenAI GPT-6 Astra",
+        "Tom Adamczewski",
+        "Thomas F. Bloom",
+        "Oliver Riordan",
+        "Alex Scott"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Epoch AI",
+        "University of Oxford"
+      ],
+      "scores": {
+        "foundational": 89,
+        "ripple": 88,
+        "verification": 98,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Settles one of extremal graph theory’s most iconic 64-year-old conjectures (Erdős–Sós, 1962) with an elementary, textbook-worthy proof.",
+        "ripple": "Immediately triggered multiple human follow-up papers (Riordan–Scott, Santos–Stein–Williams) extending the AI’s counting method to Eulerian digraphs and related conjectures.",
+        "verification": "Gold-standard dual verification: Comparator-checked Lean 4 proof plus independent human verification and published simplifications by leading combinatorialists.",
+        "velocity": "Discovered and formalized autonomously in a single unsteered benchmark run under a $300 API budget."
+      },
+      "sources": [
+        {
+          "label": "GitHub: tadamcz/erdos548 (Lean 4 Proof)",
+          "url": "https://github.com/tadamcz/erdos548",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Riordan & Scott (Oxford): A Short Proof of the Erdős–Sós Conjecture",
+          "url": "https://arxiv.org/html/2609.15893",
+          "type": "paper"
+        },
+        {
+          "label": "Epoch AI: FrontierMath Erdős (arXiv:2609.25050)",
+          "url": "https://arxiv.org/html/2609.25050v1",
+          "type": "paper"
+        }
+      ],
+      "enables": []
+    },
+    {
       "id": "kothe-conjecture-disproof-2026",
       "title": "GPT-6 Astra Autonomously Disproves the 1930 Köthe Conjecture in Lean 4",
       "shortTitle": "Köthe Conjecture Disproof (Lean)",
@@ -2429,6 +3207,253 @@
           "type": "paper"
         }
       ]
+    },
+    {
+      "id": "smale-mean-value-disproof-2026",
+      "title": "Autonomous Lean 4 Disproof of Smale’s 1981 Mean Value Conjecture (K = 1)",
+      "shortTitle": "Smale Mean Value Disproof (Lean)",
+      "date": "2026-09-03",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Complex Analysis",
+        "Polynomial Dynamics",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Pre-Release GPT-6 Astra (OpenAI / Epoch AI LeanOpenProblems)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 45,
+      "aiTimeToSolve": "1 autonomous run (<$1k budget)",
+      "isAnchor": false,
+      "whyItMatters": "In Epoch AI’s autonomous evaluation over Formal Conjectures’ Wikipedia open problems, pre-release GPT-6 Astra disproved Steve Smale’s 1981 Mean Value Conjecture (K = 1) in Lean 4 with zero human guidance.",
+      "summary": "In the same September 3, 2026 Epoch AI LeanOpenProblems evaluation that disproved the Köthe conjecture (github.com/tadamcz/mean-value-problem), a pre-release version of OpenAI’s GPT-6 Astra autonomously disproved the K = 1 form of Fields Medalist Steve Smale’s 1981 Mean Value Conjecture—a classic 45-year-old problem in complex analysis motivated by the complexity of Newton’s root-finding method. With zero human steering, GPT-6 Astra constructed a complex polynomial p with p(0) = 0, p′(0) = 1, and |p(c)/c| > 1 at every critical point c, formalizing the exact negation of DeepMind’s Formal Conjectures statement in Lean 4 + Mathlib with Comparator verification. The breakthrough spurred rapid follow-up work on Hexagon in November 2026, lowering the rigorously certified counterexample degree down to 2,799.",
+      "technicalHighlights": [
+        "Autonomously disproved Steve Smale’s 1981 Mean Value Conjecture (K = 1) in Lean 4 + Mathlib with zero human intervention.",
+        "Exact negation of Formal Conjectures’ MeanValueProblem statement verified in an isolated Comparator container under standard axioms only.",
+        "Catalyzed November 2026 follow-up machine-certified counterexamples reducing polynomial degree down to 7,299 and 2,799."
+      ],
+      "caveats": "Disproves the classic K = 1 bound in Smale’s conjecture; subsequent November 2026 Hexagon preprints examine the exact sharp constant (proposed as 4) and await peer review.",
+      "contributors": [
+        "OpenAI GPT-6 Astra",
+        "Tom Adamczewski",
+        "Epoch AI"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Epoch AI"
+      ],
+      "scores": {
+        "foundational": 85,
+        "ripple": 78,
+        "verification": 96,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "Overturns a famous 45-year-old conjecture posed by Fields Medalist Steve Smale in complex polynomial analysis.",
+        "ripple": "Directly sparked follow-up human–AI optimizations driving counterexample degrees down to 2,799 within two months.",
+        "verification": "Machine-checked in Lean 4 against DeepMind’s verbatim Formal Conjectures statement via isolated Comparator container.",
+        "velocity": "Resolved autonomously in a single unsteered Epoch AI evaluation run under a $1,000 budget."
+      },
+      "sources": [
+        {
+          "label": "GitHub: tadamcz/mean-value-problem (Lean 4 Disproof)",
+          "url": "https://github.com/tadamcz/mean-value-problem",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Hexagon Follow-Up: Degree-2799 Certified Counterexample",
+          "url": "https://hexagonmath.org/2611.01056v1",
+          "type": "paper"
+        }
+      ],
+      "enables": []
+    },
+    {
+      "id": "qma2-qma-oracle-separation-2026",
+      "title": "AI-Assisted Quantum & Classical Oracle Separation of QMA(2) ≠ QMA and No-Disentanglers Theorem",
+      "shortTitle": "QMA(2) ≠ QMA & No-Disentanglers",
+      "date": "2026-09-02",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Quantum Complexity Theory",
+        "Quantum Information",
+        "Oracle Separations"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "GPT-5.6 Sol & GPT-6 Astra (OpenAI)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 18,
+      "aiTimeToSolve": "Iterative prompting (~10 rounds)",
+      "isAnchor": false,
+      "whyItMatters": "Quantum complexity theorists disclosed GPT-5.6 Sol generated the key proof idea separating QMA(2) from QMA via a quantum oracle and proving Watrous’s No-Disentanglers Conjecture—soon strengthened to a classical oracle via GPT-6 Astra.",
+      "summary": "In two back-to-back landmark quantum complexity preprints, researchers explicitly credited OpenAI reasoning models with generating the central proof constructions. On September 2, 2026 (arXiv:2609.02865; Simons Institute lecture Oct 1), John Bostanci, Sabee Grewal, Jonas Haferkamp, and collaborators constructed a quantum oracle separating QMA(2) (two unentangled quantum proofs) from QMA and proved Watrous’s unrelativized geometric No-Disentanglers Conjecture (showing any approximate disentangler needs exponentially many input qubits)—explicitly disclosing that ChatGPT 5.6 Sol proposed the \"miraculous\" symmetric/antisymmetric subspace projector construction combining She–Yuen’s unitary polynomial method. On October 5, 2026 (arXiv:2610.06760), Grewal, Mutreja, and Tomer strengthened this to a classical oracle separation (QMA^A ≠ QMA(2)^A), disclosing the original proof came from ~10 rounds with ChatGPT 6 Astra before human verification and rewriting.",
+      "technicalHighlights": [
+        "Resolves Watrous’s unrelativized geometric No-Disentanglers Conjecture at constant error ε + δ < 1 and separates QMA(2) from QMA relative to a quantum oracle (arXiv:2609.02865).",
+        "Strengthened one month later to a classical oracle separation QMA^A ≠ QMA(2)^A via a signed-graph separable-Hamiltonian problem (arXiv:2610.06760).",
+        "Authors published transparent AI tool disclosures noting GPT-5.6 Sol and GPT-6 Astra generated the core proof ideas, which human quantum theorists fully checked and rewrote."
+      ],
+      "caveats": "Class separations are relativized (quantum and classical oracles) rather than an unrelativized proof of QMA(2) ≠ QMA; preprints are under active review.",
+      "contributors": [
+        "John Bostanci",
+        "Sabee Grewal",
+        "Jonas Haferkamp",
+        "Mutreja",
+        "Tomer"
+      ],
+      "institutions": [
+        "Columbia University",
+        "UT Austin",
+        "Harvard University",
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 82,
+        "verification": 78,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Settles the long-standing Watrous No-Disentanglers Conjecture (unrelativized) and achieves both quantum and classical oracle separations of QMA(2) vs QMA.",
+        "ripple": "Set the gold standard for transparent AI-assistance disclosure in theoretical computer science and quantum complexity papers.",
+        "verification": "Human quantum-complexity leaders checked, reorganized, and presented the proofs (including at the Simons Institute), though formal journal peer review is pending.",
+        "velocity": "Core constructions emerged in roughly 10 rounds of prompting and moved from quantum to classical oracle separation in 33 days."
+      },
+      "sources": [
+        {
+          "label": "arXiv:2609.02865 (Quantum Oracle + No-Disentanglers)",
+          "url": "https://arxiv.org/pdf/2609.02865",
+          "type": "paper"
+        },
+        {
+          "label": "arXiv:2610.06760 (Classical Oracle Separation)",
+          "url": "https://arxiv.org/pdf/2610.06760",
+          "type": "paper"
+        },
+        {
+          "label": "Wolfram MathWorld: No-Disentanglers Conjecture",
+          "url": "https://mathworld.wolfram.com/No-DisentanglersConjecture.html",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
+      "id": "trautman-conjecture-disproof-2026",
+      "title": "AI-Assisted Smooth Counterexample to the Trautman Conjecture in CR Geometry & General Relativity",
+      "shortTitle": "Trautman Conjecture Disproof",
+      "date": "2026-09-02",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "General Relativity",
+        "Cauchy–Riemann Geometry",
+        "Differential Geometry"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI ChatGPT (Differential Geometry Assistant)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 35,
+      "aiTimeToSolve": "Human-AI geometric construction",
+      "isAnchor": false,
+      "whyItMatters": "Working with ChatGPT, geometer Sean N. Curry constructed a smooth strongly pseudoconvex counterexample refuting Andrzej Trautman’s CR-geometry conjecture tied to 4D null electromagnetic spacetimes.",
+      "summary": "Posted to arXiv on September 2, 2026 (arXiv:2609.03198), mathematician Sean N. Curry—crediting ChatGPT with helping construct the argument—disproved Andrzej Trautman’s conjecture from general relativity and Cauchy–Riemann (CR) geometry. Trautman had conjectured that any smooth 3-dimensional CR manifold admitting a nowhere-zero closed section of its canonical bundle (equivalently a unimodular CR structure arising from null geodesic congruences in 4D Lorentzian spacetimes with null electromagnetic fields) must be locally embeddable in ℂ². Curry modified a nonembeddable strongly pseudoconvex CR structure via divergence-free vector fields so that the closed canonical form is preserved, proving that even arbitrarily small C¹ perturbations of S³ yield nonembeddable pseudo-Einstein CR structures and revealing a far richer family of 4D spacetime constructions than expected.",
+      "technicalHighlights": [
+        "Refutes Trautman’s conjecture even in the strongly pseudoconvex (pseudo-Einstein) case and arbitrarily close in C¹ norm to the standard 3-sphere S³.",
+        "Shows Bryant’s geometric flow on unimodular CR 3-manifolds cannot always admit smooth two-sided local solutions.",
+        "Expands the known class of 3D CR manifolds generating 4D Lorentzian spacetimes with null electromagnetic fields."
+      ],
+      "caveats": "Preliminary arXiv preprint awaiting independent journal refereeing; no formal Lean verification has been published.",
+      "contributors": [
+        "Sean N. Curry"
+      ],
+      "institutions": [
+        "Independent / Academic",
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 72,
+        "ripple": 62,
+        "verification": 66,
+        "velocity": 78
+      },
+      "scoreRationale": {
+        "foundational": "Overturns a decades-old conjecture at the intersection of Cauchy–Riemann geometry and general relativity (Trautman’s null-field program).",
+        "ripple": "Demonstrates LLMs contributing subtle smooth-perturbation counterexamples in differential geometry and mathematical relativity.",
+        "verification": "Author-checked arXiv preprint indexed by Wolfram MathWorld, pending independent refereeing.",
+        "velocity": "ChatGPT helped identify the divergence-free modification preserving the closed canonical bundle section."
+      },
+      "sources": [
+        {
+          "label": "arXiv:2609.03198 (A Smooth Counterexample to the Trautman Conjecture)",
+          "url": "https://arxiv.org/abs/2609.03198",
+          "type": "paper"
+        },
+        {
+          "label": "Wolfram MathWorld: Trautman Conjecture",
+          "url": "https://mathworld.wolfram.com/TrautmanConjecture.html",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
+      "id": "mckean-boltzmann-entropy-disproof-2026",
+      "title": "Disproof of McKean’s 1966 Boltzmann Entropy-Production Monotonicity Conjecture",
+      "shortTitle": "McKean Boltzmann Entropy Disproof",
+      "date": "2026-09-01",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Kinetic Theory",
+        "Statistical Mechanics",
+        "Partial Differential Equations"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "GPT-5.6 Sol (Codex Ultra) + Claude Code",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 60,
+      "aiTimeToSolve": "Codex Ultra discovery + rewrite",
+      "isAnchor": false,
+      "whyItMatters": "PDE leader Luis Silvestre disclosed GPT-5.6 Sol (Codex Ultra) found explicit Maxwellian mixtures disproving McKean’s 60-year-old conjecture that Boltzmann entropy production decreases monotonically.",
+      "summary": "Posted on September 1, 2026, renowned University of Chicago PDE mathematician Luis Silvestre resolved a 60-year-old open question posed by Henry McKean in 1966: whether the entropy production functional of the spatially homogeneous Boltzmann equation must decrease monotonically in time (a higher-order cousin of Boltzmann’s H-theorem). Silvestre’s paper constructs explicit radially symmetric mixtures of Maxwellian distributions showing entropy production is not always monotone decreasing for constant angular cross-sections across kinetic parameters γ ∈ [0, 1], covering both physically canonical regimes—hard spheres and Maxwell molecules. In his AI disclosure, Silvestre explicitly credited ChatGPT 5.6 Sol running in Codex Ultra mode with obtaining the first proof, which was then rewritten via Claude Code and restructured and verified by Silvestre.",
+      "technicalHighlights": [
+        "Disproves McKean’s 1966 conjecture across the physically standard Boltzmann models (both hard spheres and Maxwell molecules, γ ∈ [0, 1]).",
+        "Uses explicit radially symmetric mixtures of Maxwellian distributions rather than pathological edge cases.",
+        "First proof discovered by GPT-5.6 Sol in Codex Ultra mode, rewritten with Claude Code, and rigorously verified by a leading PDE specialist (Luis Silvestre)."
+      ],
+      "caveats": "Author-verified preprint awaiting formal journal peer review; the analogous question for the Landau kinetic equation remains open.",
+      "contributors": [
+        "Luis Silvestre",
+        "OpenAI GPT-5.6 Sol",
+        "Anthropic Claude Code"
+      ],
+      "institutions": [
+        "University of Chicago",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 82,
+        "ripple": 74,
+        "verification": 78,
+        "velocity": 88
+      },
+      "scoreRationale": {
+        "foundational": "Settles a 60-year-old foundational question in statistical mechanics and kinetic theory (McKean 1966) for both hard spheres and Maxwell molecules.",
+        "ripple": "High-credibility real-world case study of a top PDE researcher validating an AI-discovered counterexample in classical mathematical physics.",
+        "verification": "Author-verified by one of the world’s leading Boltzmann/PDE experts (Luis Silvestre), pending journal publication.",
+        "velocity": "GPT-5.6 Sol in Codex Ultra discovered the counterexample directly from Silvestre’s notes and prior paper."
+      },
+      "sources": [
+        {
+          "label": "WhatAIFound Registry: McKean Entropy-Production Disproof",
+          "url": "https://whataifound.org/finding/2026-09-01-mckean-entropy-production",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
     },
     {
       "id": "dying-percolation-conjecture-2026",
@@ -2984,7 +4009,8 @@
       },
       "enables": [
         "kothe-conjecture-disproof-2026",
-        "openai-math-bulk-ugc-2026"
+        "openai-math-bulk-ugc-2026",
+        "quantum-parallel-repetition-astra10-2026"
       ],
       "sources": [
         {
@@ -2997,6 +4023,71 @@
           "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
           "type": "explainer"
         }
+      ]
+    },
+    {
+      "id": "quantum-parallel-repetition-astra10-2026",
+      "title": "OpenAI Astra 10-Problem Lean Release: Exponential Quantum Parallel Repetition, CVP Hardness & Connes Rigidity",
+      "shortTitle": "Astra 10-Problem Drop (QPR, CVP)",
+      "date": "2026-08-01",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Quantum Information",
+        "Lattice Cryptography",
+        "Operator Algebras"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Internal GPT-6 Astra (OpenAI) & Claude Fable 5 Reproductions",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 10,
+      "aiTimeToSolve": "~$2,000 total compute (10 proofs)",
+      "isAnchor": false,
+      "whyItMatters": "For ~$2,000 in inference, OpenAI’s internal Astra delivered Lean-verified solutions to 10 decade-old problems—including Exponential Quantum Parallel Repetition, CVP lattice hardness, Connes rigidity, and Cohn–Elkies sphere packing.",
+      "summary": "On August 1, 2026, OpenAI shocked the mathematics and theoretical computer science communities by releasing a 249-page manuscript and GitHub Lean 4 proof certificates generated by an internal version of GPT-6 Astra for ~$2,000 in total compute, resolving ten longstanding open problems (alongside Non-Sofic Groups). Standout results included an Exponential Quantum Parallel Repetition theorem for general two-player quantum games (solving Henry Yuen’s decade-old open problem via a novel resolvent purification and Uhlmann dilation), polynomial-factor hardness of approximation for the Closest Vector Problem (foundational to post-quantum lattice cryptography), a disproof of Connes’s rigidity conjecture in von Neumann algebras, 48-year-stuck high-dimensional sphere-packing bounds down to the Cohn–Elkies threshold, Ehrhart’s volume conjecture, n⁴/log n arithmetic-formula permanent lower bounds, and Erdős problems #146, #180, and #183. Within 24 hours, Levent Alpöge independently reproduced 5 of the 10 problems autonomously using Claude Fable 5.",
+      "technicalHighlights": [
+        "Proved Exponential Quantum Parallel Repetition for general two-player quantum games—a decade-old flagship problem in quantum information theory.",
+        "Established polynomial-factor hardness of approximation for the Closest Vector Problem (CVP) without Unique Games, disproved Connes’s rigidity conjecture, and broke 48-year-old sphere-packing bounds.",
+        "Delivered all 10 solutions with Lean 4 certificates for ~$2,000 total inference cost; Claude Fable 5 independently reproduced 5 of the 10 within 24 hours."
+      ],
+      "caveats": "While all ten shipped with Lean 4 certificates, specialist reviewers flagged missing prior-work attribution in a few manuscripts and noted that statement-fidelity and peer-review audits are still ongoing.",
+      "contributors": [
+        "OpenAI Frontier Math Team",
+        "Noam Brown",
+        "Lijie Chen",
+        "Levent Alpöge (Fable 5 Reproduction)"
+      ],
+      "institutions": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 91,
+        "ripple": 92,
+        "verification": 88,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "Simultaneously broke through decade-old barriers in quantum complexity (QPR), lattice cryptography (CVP), operator algebras (Connes), and sphere packing.",
+        "ripple": "Widely recognized on LessWrong and across TCS/math as the inflection point proving frontier LLMs had crossed into superhuman multi-domain theorem proving.",
+        "verification": "All ten results shipped with Lean 4 certificates and 5 were independently reproduced within 24 hours by Claude Fable 5, though full human peer review continues.",
+        "velocity": "Resolved ten major multi-decade open problems for ~$2,000 in total compute."
+      },
+      "sources": [
+        {
+          "label": "LessWrong Analysis: OpenAI Astra Solves 10 Major Open Problems",
+          "url": "https://www.lesswrong.com/posts/pQYEPitFqztcRvBsS/openai-s-unreleased-model-astra-solves-ten-major-open",
+          "type": "explainer"
+        },
+        {
+          "label": "The Quantum Insider: QPR & CVP Breakthroughs",
+          "url": "https://thequantuminsider.com/2026/08/04/openai-says-next-generation-model-solved-10-major-open-problems-in-quantum-complexity-mathematics/",
+          "type": "explainer"
+        }
+      ],
+      "enables": [
+        "openai-math-bulk-ugc-2026",
+        "qma2-qma-oracle-separation-2026"
       ]
     },
     {
@@ -3120,6 +4211,71 @@
           "type": "explainer"
         }
       ]
+    },
+    {
+      "id": "imo-2026-perfect-42-lean-2026",
+      "title": "IMO 2026 Autonomous Perfect 42/42 Scores & Full Lean 4 Formalization of All Six Problems",
+      "shortTitle": "IMO 2026 Perfect 42/42 & Lean 4",
+      "date": "2026-07-22",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Olympiad Mathematics",
+        "Automated Theorem Proving",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Claude Fable 5, GPT-5.6 Sol (LeanFlow) & Kimi K3",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "1.8 hrs (Fable 5 single-shot 42/42)",
+      "isAnchor": false,
+      "whyItMatters": "One year after the first 35/42 IMO Gold medal, Claude Fable 5 scored a perfect 42/42 autonomously in 1.8 hours, Kimi K3 hit 42/42, and GPT-5.6 Sol formally proved all six IMO 2026 problems end-to-end in Lean 4.",
+      "summary": "Marking the complete saturation of the world’s hardest high-school mathematics competition just 12 months after IMO 2025’s first AI gold medals (35/42), open GitHub benchmarks on the official IMO 2026 problems demonstrated autonomous perfect 42/42 performance and full formalization across multiple frontier model families. In github.com/deedy/imo-2026 (using a minimal three-tool, network-blocked single-context agent harness), Anthropic’s Claude Fable 5 achieved a verified single-shot 42/42 in just 1.8 hours—including the only fully synthetic P2 geometry proof—while GPT-5.6 Sol and Moonshot AI’s Kimi K3 also reached verified 42/42 (Kimi K3 inventing an original compactness theorem for P6). Independently, EPFL’s LARA lab (github.com/epfl-lara/AutoformalizedProjects) used GPT-5.6 Sol with LeanFlow to produce complete, machine-checked Lean 4 formalizations of all six IMO 2026 problems verified together as one Lake project.",
+      "technicalHighlights": [
+        "Claude Fable 5 scored an autonomous, single-shot 42/42 on IMO 2026 in 1.8 hours with no reviewer, orchestration, or internet access.",
+        "EPFL LARA’s AutoformalizedProjects verified proof-complete Lean 4 formalizations of all 6 IMO 2026 problems produced autonomously by GPT-5.6 Sol.",
+        "Kimi K3 became an open-ecosystem frontier model to reach 42/42 (with review feedback), inventing an original P6 compactness argument."
+      ],
+      "caveats": "The deedy/imo-2026 natural-language scores were graded by automated verifier agents rather than official IMO jury coordinators, whereas EPFL’s GPT-5.6 Sol Lean 4 formalizations of Problems 1–6 are deterministically kernel-checked in Lean.",
+      "contributors": [
+        "Deedy Das",
+        "EPFL LARA Lab",
+        "Anthropic",
+        "OpenAI",
+        "Moonshot AI"
+      ],
+      "institutions": [
+        "EPFL",
+        "Anthropic",
+        "OpenAI",
+        "Moonshot AI"
+      ],
+      "scores": {
+        "foundational": 76,
+        "ripple": 82,
+        "verification": 94,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Marks complete saturation (perfect 42/42 and full Lean 4 proof-completeness) of the International Mathematical Olympiad.",
+        "ripple": "Demonstrated that gold-plus olympiad reasoning diffused from closed lab harnesses in 2025 to general API models across three labs by mid-2026.",
+        "verification": "All six IMO 2026 problems formally verified as one compiled Lean 4 project in EPFL’s public AutoformalizedProjects repository.",
+        "velocity": "Jumped from 35/42 (IMO 2025) to single-shot 42/42 in 1.8 hours and full 6/6 Lean formalization within 12 months."
+      },
+      "sources": [
+        {
+          "label": "GitHub: epfl-lara/AutoformalizedProjects (IMO 2026 Lean 4)",
+          "url": "https://github.com/epfl-lara/AutoformalizedProjects",
+          "type": "formal-verification"
+        },
+        {
+          "label": "GitHub: deedy/imo-2026 (Autonomous 42/42 Benchmark)",
+          "url": "https://github.com/deedy/imo-2026",
+          "type": "code"
+        }
+      ],
+      "enables": []
     },
     {
       "id": "jacobian-conjecture-disproof-2026",
@@ -3247,6 +4403,75 @@
       ]
     },
     {
+      "id": "vesuvius-challenge-herculaneum-2026",
+      "title": "Vesuvius Challenge: First Complete Herculaneum Scroll (PHerc. 1667) Virtually Unwrapped & Read End-to-End",
+      "shortTitle": "Vesuvius: Full Herculaneum Scroll",
+      "date": "2026-06-25",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "3D Computer Vision",
+        "Virtual Unwrapping",
+        "Computational Archaeology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Vesuvius Challenge 3D U-Net & Self-Supervised 3D DINO Ink Models",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Open-source 3D CT deep learning",
+      "isAnchor": false,
+      "whyItMatters": "Sealed since Mount Vesuvius erupted in 79 AD, the entire surviving Herculaneum scroll PHerc. 1667 was non-destructively unrolled and read end-to-end using 3D CT deep learning—recovering a lost Stoic ethics treatise.",
+      "summary": "On June 25, 2026, the open-source Vesuvius Challenge (led by Brent Seales, Nat Friedman, Daniel Gross, ESRF, and global ML contributors) achieved a historic milestone in computational archaeology: virtually unwrapping and reading the entire surviving portion of carbonized Herculaneum scroll PHerc. 1667 end-to-end without physically opening it—the first complete ancient bookroll recovered since the 79 AD eruption of Mount Vesuvius. Using synchrotron X-ray micro-CT scans paired with open-source 3D segmentation and ink-detection neural networks (3D U-Nets and self-supervised 3D DINO transfer models), papyrologists identified PHerc. 1667 as a previously unknown 2nd-century BC Stoic ethics treatise naming Aristocreon, while parallel scans recovered Philodemus’s On Gods Book 8 (PHerc. 139) and broke open first Greek letters in PHerc. 306B and PHerc. 211 in November 2026.",
+      "technicalHighlights": [
+        "First complete non-destructive virtual unwrapping and end-to-end reading of a carbonized Herculaneum papyrus scroll (PHerc. 1667) buried since 79 AD.",
+        "Recovered previously unknown classical antiquity texts including a 2nd-century BC Stoic ethics treatise naming Aristocreon and Philodemus’s On Gods, Book 8 (PHerc. 139).",
+        "Open-source 3D U-Net + self-supervised 3D DINO transfer pipelines generalized zero-shot to unlock additional unread scrolls (PHerc. 306B and PHerc. 211) in November 2026."
+      ],
+      "caveats": "Individual faint letter readings rely on learned ink-probability reconstructions verified by the Vesuvius papyrology team; formal critical editions of the full recovered texts are in preparation.",
+      "contributors": [
+        "Brent Seales",
+        "Vesuvius Challenge Community",
+        "Federica Nicolardi",
+        "Priyank Aranke",
+        "ESRF Beamline Team"
+      ],
+      "institutions": [
+        "University of Kentucky",
+        "Vesuvius Challenge",
+        "ESRF (Grenoble)"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 86,
+        "verification": 88,
+        "velocity": 85
+      },
+      "scoreRationale": {
+        "foundational": "Solves a 2,000-year-old physical barrier by recovering complete lost works of ancient Greek philosophy from carbonized scrolls without destroying them.",
+        "ripple": "Unlocks hundreds of remaining unread Herculaneum scrolls and establishes a general 3D CT + deep-learning paradigm for damaged historical artifacts.",
+        "verification": "Independently corroborated by synchrotron imaging, open-source reproducible ML weights/code, and classical papyrology teams.",
+        "velocity": "Progressed from first isolated letters in late 2023 to reading an entire scroll end-to-end and scaling across multiple new scrolls by 2026."
+      },
+      "sources": [
+        {
+          "label": "ESRF Announcement: The Day the Herculaneum Scrolls Began Speaking Again",
+          "url": "https://www.esrf.fr/home/news/general/content-news/general/the-day-the-herculaneum-scrolls-began-speaking-again.html",
+          "type": "announcement"
+        },
+        {
+          "label": "Vesuvius Challenge Press & Open Data",
+          "url": "https://scrollprize.org/press",
+          "type": "announcement"
+        },
+        {
+          "label": "University of Kentucky Herculaneum Project",
+          "url": "https://engr.uky.edu/herculaneum",
+          "type": "explainer"
+        }
+      ],
+      "enables": []
+    },
+    {
       "id": "sub-100k-qubit-qec-2026",
       "title": "Sub-100,000 Qubit Fault-Tolerant Error-Correction & Circuit Overhead Drop",
       "shortTitle": "200× Qubit Overhead Drop",
@@ -3292,7 +4517,8 @@
         "velocity": "Achieved a 200× theoretical hardware compression in seven years, accelerating sharply in 2025–2026."
       },
       "enables": [
-        "deepmind-verified-quantum-algos-2026"
+        "deepmind-verified-quantum-algos-2026",
+        "harvard-anthropic-quera-quantum-circuits-2026"
       ],
       "sources": [
         {
@@ -4971,7 +6197,8 @@
         "erdos-unit-distance-disproof-2026",
         "jacobian-conjecture-disproof-2026",
         "fermat-last-theorem-lean-2026",
-        "riemann-hypothesis-lean-2026"
+        "riemann-hypothesis-lean-2026",
+        "imo-2026-perfect-42-lean-2026"
       ],
       "sources": [
         {
