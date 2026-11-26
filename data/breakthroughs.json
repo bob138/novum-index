@@ -11,6 +11,68 @@
   },
   "breakthroughs": [
     {
+      "id": "deepmind-mass-spec-skills-2026",
+      "title": "DeepMind Mass Spec Skills Elucidates Molecular Structures from Tandem Mass Spectra",
+      "shortTitle": "Mass Spec Skills (Antigravity)",
+      "date": "2026-11-25",
+      "discipline": "Chemistry & Materials",
+      "subfields": [
+        "Analytical Chemistry",
+        "Mass Spectrometry",
+        "Tool-Augmented Scientific Agents"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Gemini + Mass Spec Skills (Google Antigravity / SIRIUS / MetFrag / RDKit)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Hours (vs. days–months)",
+      "isAnchor": false,
+      "whyItMatters": "Pairs Gemini reasoning with deterministic cheminformatics tools to solve tandem mass spectra at >90% accuracy—a direct 50-year successor to Stanford’s Meta-DENDRAL (1976).",
+      "summary": "Google DeepMind released Mass Spec Skills for Google Antigravity, combining Gemini’s chemical reasoning with deterministic mass-spectrometry tools (matchms, SIRIUS, MAGMa, MetFrag, RDKit) and spectral databases (GNPS, MoNA, PubChem) to tackle the 'dark matter' of metabolomics (~95% unannotated tandem mass spectra). In end-to-end evaluations, the agentic workflow raised molecular structure elucidation accuracy from <4% for raw LLMs to over 90% (~97% on known-molecule benchmarks), compressing analytical workflows that take human chemists days or months into hours.",
+      "technicalHighlights": [
+        "Integrates Gemini chemical reasoning with deterministic spectral-analysis tools (SIRIUS, MetFrag, MAGMa, matchms, RDKit) inside an inspectable skill workflow.",
+        "Boosts end-to-end MS/MS structure elucidation from <4% (unassisted LLM baseline) to >90% (~97% on known-molecule benchmarks).",
+        "Closes a 50-year arc in AI-for-chemistry directly linking Stanford’s 1976 Meta-DENDRAL symbolic rule learner to modern neuro-symbolic scientific agents."
+      ],
+      "caveats": "Released as a Google DeepMind technical blog post and open skill suite rather than a peer-reviewed analytical chemistry paper; generalization to truly novel natural products outside spectral/chemical databases requires independent wet-lab validation.",
+      "contributors": [
+        "Robert Brunck",
+        "Stefan Ganscha",
+        "Swaroop Guntupalli",
+        "Dariusz Lasecki",
+        "Gabriella Marfani",
+        "Jack Mason",
+        "Hussain Masoom",
+        "Rose Mirshafian",
+        "Eliseo Papa",
+        "Zoi Tsangalidou"
+      ],
+      "institutions": [
+        "Google DeepMind"
+      ],
+      "scores": {
+        "foundational": 78,
+        "ripple": 86,
+        "verification": 80,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Demonstrates how neuro-symbolic tool orchestration unlocks a 50-year bottleneck in analytical chemistry (tandem mass-spectrum elucidation).",
+        "ripple": "Directly applicable across metabolomics, natural-product discovery, forensics, and pharmaceutical characterization where ~95% of spectra go unannotated.",
+        "verification": "Backed by public open-source skills and reproducible benchmark evaluations, though formal journal peer review and blind novel-compound studies remain pending.",
+        "velocity": "Compresses manual multi-day or multi-month MS/MS structure elucidation campaigns into hours with >90% accuracy."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Google DeepMind — Interpreting mass spectra with Google Antigravity (Nov 25, 2026)",
+          "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
       "id": "hadwiger-covering-3d-2026",
       "title": "Gemini 4 Carbon & Lean 4 Prove Hadwiger’s 3D Covering Conjecture",
       "shortTitle": "Hadwiger 3D Covering (Gemini 4)",
@@ -633,11 +695,11 @@
       "yearsUnsolved": 167,
       "aiTimeToSolve": "6 weeks",
       "whyItMatters": "Resolves mathematics' most iconic Millennium Prize Problem—and Dirichlet GRH—with a machine-checked Lean 4 proof verified by the Lean FRO and Mathlib Initiative.",
-      "summary": "On November 20, 2026, Anthropic mathematician Levent Alpöge released a formal Lean 4 proof of both the classical Riemann Hypothesis and the Generalized Riemann Hypothesis for Dirichlet L-functions, developed over six weeks alongside an unreleased research model of Claude. Within 24 hours, the Lean FRO and Mathlib Initiative confirmed the formalization compiles cleanly against standard axioms. Initially spanning ~17 million lines of Lean code, the proof was refactored to ~300,000 lines by Luke Sernau five days later.",
+      "summary": "On November 20, 2026, Anthropic mathematician Levent Alpöge released a formal Lean 4 proof of both the classical Riemann Hypothesis and the Generalized Riemann Hypothesis for Dirichlet L-functions, developed over six weeks alongside an unreleased research model of Claude. Within 24 hours, the Lean FRO and Mathlib Initiative confirmed the ~17.4-million-line formalization compiles cleanly against standard axioms. Five days later (Nov 25), Anthropic researcher Luke Sernau, colleagues, and Claude released grh-lean—compressing the exact same five theorems by 99.56% into a 76,000-line compact edition alongside a 300,000-line readable edition adopted by Terence Tao’s GRH Polymath project.",
       "technicalHighlights": [
         "Proves all non-trivial zeros of the Riemann zeta function and Dirichlet L-functions lie on the critical line Re(s) = 1/2.",
         "Draws on deep machinery spanning modern number theory, the Langlands program, and arithmetic geometry.",
-        "Verified by Lean FRO and Mathlib Initiative on Nov 21, 2026; compressed 56× from 17M to 300k lines by Nov 25, 2026."
+        "Verified by Lean FRO and Mathlib Initiative on Nov 21, 2026; compressed 99.56% from 17.4M lines to a 76,000-line compact edition (and 300,000-line readable edition) by Nov 25, independently checked across six Lean kernels."
       ],
       "caveats": "No complete human-readable mathematical exposition exists yet. While the Lean kernel guarantees logical soundness relative to the stated definitions, mathematicians are actively auditing whether the formal definitions match classical conventions and extracting human intuition from the proof.",
       "contributors": [
@@ -677,6 +739,11 @@
           "label": "The Guardian: Two groups verify mathematician's claim that Claude helped prove Riemann Hypothesis",
           "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
           "type": "announcement"
+        },
+        {
+          "label": "Michael Rubinstein (Waterloo) — Independent 6-Kernel Verification of the 17.4M & 76k-Line GRH Lean Proofs",
+          "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/",
+          "type": "formal-verification"
         }
       ]
     },
@@ -738,6 +805,60 @@
           "label": "DataStudios — Technical Breakdown of the Unforced Navier–Stokes Claim",
           "url": "https://www.datastudios.org/post/claude-navier-stokes-proof-blow-up-without-external-force-alpoge-buckmaster",
           "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "sharp-topological-overlap-gpt6-2026",
+      "title": "GPT-6 Astra Proves Sharp Topological Overlap & Bukh–Matoušek–Nivasch Conjecture in Every Dimension",
+      "shortTitle": "Bukh–Matoušek–Nivasch (GPT-6)",
+      "date": "2026-11-19",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Combinatorial Topology",
+        "Discrete Geometry",
+        "Algebraic Topology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI GPT-6 Astra (with Claude Opus 5.5 assistance)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 15,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Settles the 2011 Bukh–Matoušek–Nivasch conjecture by proving the exact topological overlap constant c_d = (d+1)!/(d+1)^(d+1) for every dimension d—discovered by GPT-6 Astra under Sergey Norin’s direction.",
+      "summary": "McGill mathematician Sergey Norin posted a self-contained proof establishing that the topological and affine overlap constants of simplices coincide and equal exactly (d+1)!/(d+1)^(d+1) in every dimension d, confirming the 2011 Bukh–Matoušek–Nivasch conjecture and sharply improving Gromov’s celebrated 2010 topological overlap bounds. In his transparent AI disclosure, Norin explains that after directing GPT-6 Astra to abandon numerical optimization and unify his bramble lemma with Gromov’s method, Astra discovered a conceptual Morse-theoretic and homological proof in 3D that generalized immediately to all dimensions.",
+      "technicalHighlights": [
+        "Proves c_d^top = c_d^aff = (d+1)! / (d+1)^(d+1) for every positive integer dimension d, matching the 2011 Bukh–Matoušek–Nivasch upper bound.",
+        "Combines descending chain fillings, relative-homology vanishing, Morse theory, and a novel Hessian eigenvalue lower bound on multilinear cocycle densities.",
+        "Exemplifies transparent human–AI mathematical collaboration: GPT-6 Astra found the core conceptual proof under Norin’s guidance, while Norin digested, verified, and restructured the full manuscript."
+      ],
+      "caveats": "Unrefereed v1 arXiv preprint without a machine-checked Lean formalization; while Norin personally checked and rewrote every step over several weeks, formal peer review is pending.",
+      "contributors": [
+        "Sergey Norin",
+        "GPT-6 Astra"
+      ],
+      "institutions": [
+        "McGill University"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 74,
+        "verification": 82,
+        "velocity": 93
+      },
+      "scoreRationale": {
+        "foundational": "Determines the exact optimal constant in Gromov’s topological overlap theorem across every dimension, resolving a 15-year-old conjecture.",
+        "ripple": "Advances discrete geometry and combinatorial topology, and serves as a landmark case study of an LLM producing a genuinely conceptual, non-brute-force proof.",
+        "verification": "Clean, human-vetted manuscript by a leading combinatorialist (Sergey Norin), though unrefereed and not formally verified in Lean.",
+        "velocity": "Solved in all dimensions after human efforts had stalled at suboptimal 3D bounds matching Gromov’s 2010 estimates."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Sergey Norin — Sharp topological overlap in every dimension (arXiv:2611.26229)",
+          "url": "https://arxiv.org/abs/2611.26229",
+          "type": "paper"
         }
       ]
     },
@@ -907,6 +1028,64 @@
       ]
     },
     {
+      "id": "aaronson-ambainis-conjecture-lean-2026",
+      "title": "Lean-Verified Proof of the 2009 Aaronson–Ambainis Quantum Query Conjecture",
+      "shortTitle": "Aaronson–Ambainis Conjecture (Lean)",
+      "date": "2026-11-06",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Quantum Query Complexity",
+        "Boolean Function Analysis",
+        "Formal Verification"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Unreleased Anthropic Model (PSI Harness + Lean 4)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 17,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Settles the 17-year-old Aaronson–Ambainis conjecture on low-degree bounded Boolean polynomials, pinning down fundamental limits on black-box quantum speedups with a complete Lean 4 proof.",
+      "summary": "David Turturean at Physical Superintelligence (PSI), using an unreleased Anthropic model inside a Lean-coupled verification harness, published a proof and complete Lean 4 formalization of the 2009 Aaronson–Ambainis conjecture: every low-degree bounded polynomial on the Boolean hypercube admits an influential variable, implying any black-box quantum algorithm can be simulated classically on almost all inputs with at most a polynomial query blowup. Scott Aaronson publicly acknowledged the breakthrough, and three days later (Nov 9) Huffstutler, Miloschewsky, and Podder released a shorter independent proof.",
+      "technicalHighlights": [
+        "Proves every bounded degree-d polynomial on {-1, 1}^n with non-trivial variance has a coordinate of influence at least poly(Var(f)/d).",
+        "Establishes that super-polynomial black-box quantum speedups require strong global structure (such as periodicity in Shor’s algorithm) and cannot arise from generic unstructured functions.",
+        "Released with a complete Lean 4 formalization (physical-superintelligence/aaronson-ambainis) and corroborated three days later by an independent shorter proof."
+      ],
+      "caveats": "Initial preprint (arXiv:2611.09773) is not yet journal peer-reviewed; while the Lean formalization checks the formal statement against standard axioms, full community audit of the exposition and comparison with the independent Nov 9 proof are ongoing.",
+      "contributors": [
+        "David Turturean"
+      ],
+      "institutions": [
+        "Physical Superintelligence (PSI)"
+      ],
+      "scores": {
+        "foundational": 88,
+        "ripple": 85,
+        "verification": 94,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Resolves one of the foremost open conjectures in quantum query complexity and analysis of Boolean functions since 2009.",
+        "ripple": "Clarifies the exact boundary between classical and quantum query power, informing quantum algorithm design and complexity theory.",
+        "verification": "Complete public Lean 4 formalization acknowledged by Scott Aaronson and swiftly reinforced by a shorter independent proof.",
+        "velocity": "Cracked a 17-year-old quantum complexity conjecture—with full Lean formalization—via an AI-driven theorem-proving harness."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "David Turturean — Proof of the Aaronson–Ambainis Conjecture (arXiv:2611.09773)",
+          "url": "https://arxiv.org/abs/2611.09773",
+          "type": "paper"
+        },
+        {
+          "label": "Scott Aaronson (Shtetl-Optimized) — Aaronson–Ambainis Conjecture Proved",
+          "url": "https://scottaaronson.blog/?p=10295",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "claude-prokaryotic-vault-2026",
       "title": "Claude Helps Solve First 3D Structure of a Prokaryotic Vault Particle",
       "shortTitle": "Prokaryotic Vault 3D Structure",
@@ -1025,6 +1204,61 @@
       ]
     },
     {
+      "id": "cfsg-enormous-theorem-lean-2026",
+      "title": "Axiom Math Completes Full 43.1M-Line Lean 4 Formalization of the Classification of Finite Simple Groups",
+      "shortTitle": "Finite Simple Groups (CFSG, Lean)",
+      "date": "2026-10-26",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Finite Group Theory",
+        "Formal Verification",
+        "Automated Autoformalization"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "AxiomProver Multi-Agent Swarm (Lean 4)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "24 days",
+      "isAnchor": false,
+      "whyItMatters": "Formalized mathematics’ largest proof (~15,000 pages across 500+ papers) into 43.1M lines of Lean 4 in just 24 days—exposing 34 literature errors and proving a new group-theory theorem to close a gap.",
+      "summary": "Between October 1 and October 25, 2026, Axiom Math’s AxiomProver multi-agent swarm—working with consulting group theorists Richard Lyons and Ronald Solomon—completed the first end-to-end machine-checked Lean 4 formalization of the Classification of Finite Simple Groups ('the enormous theorem'). Spanning 108 milestones and ~43.1 million lines of Lean 4, the campaign not only verified the 20th century’s most sprawling collaborative proof, but surfaced 34 noteworthy deviations and errors in the published literature (including counterexamples in Aschbacher–Smith’s quasithin volumes and Walter’s 1986 Unbalanced Group Theorem) and proved a new group-theory result to seal the gap.",
+      "technicalHighlights": [
+        "Machine-checks the full Classification of Finite Simple Groups—originally ~15,000 pages across 500+ articles by ~100 mathematicians—in ~43.1 million lines of Lean 4 across 108 milestones.",
+        "Completed in 24 calendar days by a coordinated multi-agent AxiomProver swarm consulting GLS project leaders Richard Lyons and Ronald Solomon.",
+        "Uncovered 34 substantive deviations/errors in the published CFSG literature and supplied a novel group-theoretic proof to repair an exposed gap."
+      ],
+      "caveats": "Formalizes an already-proven landmark theorem rather than solving an open conjecture (hence yearsUnsolved is null), and auditing the 43.1M-line codebase’s top-level definitions and integrating it into Mathlib remains an ongoing community undertaking.",
+      "contributors": [
+        "Axiom Math Team",
+        "Richard Lyons (consultant)",
+        "Ronald Solomon (consultant)"
+      ],
+      "institutions": [
+        "Axiom Math"
+      ],
+      "scores": {
+        "foundational": 88,
+        "ripple": 91,
+        "verification": 96,
+        "velocity": 98
+      },
+      "scoreRationale": {
+        "foundational": "Places the largest, most intricate theorem in the history of algebra—previously impossible for any single human to verify in full—on a machine-checked foundation, while catching real gaps.",
+        "ripple": "Demonstrates that multi-agent autoformalization can audit and repair entire encyclopedic bodies of mathematics within weeks.",
+        "verification": "Compiled end-to-end in Lean 4 with expert guidance from CFSG architects Richard Lyons and Ronald Solomon; independent audits of top-level specifications continue.",
+        "velocity": "Compressed a multi-decade formalization dream (equivalent to thousands of human-years of manual Lean work) into 24 days."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Axiom Math — The Enormous Theorem, Formalized (Oct 26, 2026)",
+          "url": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
+          "type": "formal-verification"
+        }
+      ]
+    },
+    {
       "id": "kakeya-higher-dim-2026",
       "title": "Proposed Proof of the Higher-Dimensional Kakeya Conjecture (n ≥ 4)",
       "shortTitle": "Kakeya Conjecture (n ≥ 4)",
@@ -1082,6 +1316,66 @@
       ]
     },
     {
+      "id": "local-smoothing-conjecture-2026",
+      "title": "Claimed Proof & Lean Formalization of Sogge’s 1991 Local Smoothing Conjecture",
+      "shortTitle": "Local Smoothing Conjecture (Lean)",
+      "date": "2026-10-25",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Harmonic Analysis",
+        "Partial Differential Equations",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI Internal Reasoning Model + Lean 4",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 35,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Claims a complete resolution of Sogge’s 1991 Local Smoothing Conjecture in all dimensions n ≥ 2—the apex conjecture implying Bochner–Riesz, Fourier Restriction, and Kakeya.",
+      "summary": "Released in the openai/math repository on October 25, 2026 alongside OpenAI’s ETH refutation, a 59-page AI-generated preprint and accompanying Lean 4 formalization claim a full proof of Christopher Sogge’s 1991 Local Smoothing Conjecture for the Euclidean wave equation in every spatial dimension n ≥ 2 via a novel auxiliary PDE construction. Because Local Smoothing sits at the top of harmonic analysis’s classical implication hierarchy—implying the Bochner–Riesz, Fourier Restriction, and Kakeya conjectures—harmonic analyst Alex Iosevich described it as a potential 'historic development' pending full expert refereeing.",
+      "technicalHighlights": [
+        "Claims optimal L^p local smoothing estimates for the Euclidean wave equation across all spatial dimensions n ≥ 2 (open since Sogge 1991).",
+        "Introduces an AI-devised auxiliary PDE argument designed to bypass decades of decoupling and Kakeya bottlenecks.",
+        "Published openly in openai/math with both a 59-page LaTeX paper and accompanying Lean 4 formalization files for community audit."
+      ],
+      "caveats": "Remains an unrefereed preprint under active specialist review. As with other late-2026 self-published Lean dumps from openai/math, independent harmonic analysts must confirm that the Lean statements match the exact classical L^p space-time estimates without hidden hypotheses or scope gaps.",
+      "contributors": [
+        "OpenAI Science Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 94,
+        "ripple": 90,
+        "verification": 64,
+        "velocity": 97
+      },
+      "scoreRationale": {
+        "foundational": "If confirmed, resolves the crowning open conjecture of Euclidean harmonic analysis since 1991, simultaneously implying Bochner–Riesz, Restriction, and Kakeya.",
+        "ripple": "Would reshape modern Fourier analysis, dispersive PDEs, and geometric measure theory overnight.",
+        "verification": "Scored conservatively because despite accompanying Lean files, independent specialist audit and journal refereeing have not yet certified the claim.",
+        "velocity": "Autonomous AI discovery of a claimed all-dimension proof via a new auxiliary PDE technique."
+      },
+      "enables": [
+        "kakeya-higher-dim-2026"
+      ],
+      "sources": [
+        {
+          "label": "OpenAI Math — Local smoothing for the Euclidean wave equation (GitHub PDF, Oct 25, 2026)",
+          "url": "https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+          "type": "paper"
+        },
+        {
+          "label": "Local smoothing conjecture — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Local_smoothing_conjecture",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "eth-refutation-claim-2026",
       "title": "Claimed Refutation of the Exponential Time Hypothesis (ETH)",
       "shortTitle": "ETH Refutation Claim",
@@ -1099,13 +1393,13 @@
       "yearsUnsolved": 25,
       "aiTimeToSolve": null,
       "whyItMatters": "If confirmed, a subexponential algorithm for 3-SAT would overturn the foundational hardness assumption behind modern fine-grained complexity theory.",
-      "summary": "On October 25–26, 2026, OpenAI released a preprint and >100,000-line Lean formalization claiming a deterministic subexponential-time, polynomial-space algorithm that counts satisfying assignments of fixed-width CNF formulas—refuting the Exponential Time Hypothesis (ETH, Impagliazzo & Paturi 2001). Hours later, Anthropic posted an independent Claude proof of the same claim. An independent working group led by Russell Impagliazzo, Ramamohan Paturi, and MIT’s Ryan Williams is auditing the proofs and Lean specifications.",
+      "summary": "On October 25–26, 2026, OpenAI released a preprint and >100,000-line Lean 4 formalization claiming a deterministic subexponential-time, polynomial-space algorithm that counts satisfying assignments of fixed-width CNF formulas—refuting the Exponential Time Hypothesis (ETH, Impagliazzo & Paturi 1999/2001). Hours later, Anthropic posted an independent Claude proof (14M output tokens) of the same claim; remarkably, both labs reported their internal models independently discovered the core refutation on October 16. An independent working group led by ETH co-authors Russell Impagliazzo and Ramamohan Paturi alongside MIT’s Ryan Williams is auditing the algorithms and Lean specifications.",
       "technicalHighlights": [
         "Exhibits a claimed deterministic subexponential-time, polynomial-space exact counting algorithm for fixed-width CNF formulas (3-SAT case refutes ETH).",
-        "Independently targeted on the same day by both OpenAI’s internal model and Anthropic’s Claude, each paired with large-scale Lean 4 formalizations.",
-        "Independent specialist working group led by Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams convened to examine the algorithm and Lean statements."
+        "Independently discovered on October 16, 2026 by both OpenAI’s internal model and Anthropic’s Claude (14M output tokens), each released Oct 25–26 with large-scale Lean 4 formalizations.",
+        "Independent specialist working group led by Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams convened to examine the algorithm, computational model, and Lean statements."
       ],
-      "caveats": "Explicitly remains an uncertified claim under active specialist audit. Impagliazzo, Paturi, and Williams emphasized that their involvement is not yet certification; checking >100k lines of Lean requires verifying that the formal definitions match classical 3-SAT complexity without specification loopholes.",
+      "caveats": "Explicitly remains an uncertified claim under active specialist audit. Impagliazzo, Paturi, and Williams emphasized that their involvement is not certification; OpenAI’s scope note also distinguishes the Lean-formalized subexponential bound (involving (log log n)²) from the sharper single-(log log n) bound in the Oct 25 manuscript, and auditors must confirm the formal model matches classical 3-SAT without specification loopholes.",
       "contributors": [
         "OpenAI Science Team",
         "Anthropic Research (Independent Claim)",
@@ -1394,6 +1688,65 @@
       ]
     },
     {
+      "id": "subquadratic-3sum-subcubic-apsp-2026",
+      "title": "Claude Discovers Truly Subquadratic 3SUM & Subcubic APSP Algorithms (Lean 4)",
+      "shortTitle": "Subquadratic 3SUM & Subcubic APSP",
+      "date": "2026-10-05",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Fine-Grained Complexity",
+        "Graph Algorithms",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Internal Anthropic Claude Model (16M-token autonomous search + Lean 4)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 31,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Autonomously refutes two foundational pillars of fine-grained complexity—discovering deterministic O(n^1.9992) 3SUM and O(n^2.9995) APSP algorithms certified in Lean 4 and vetted by Alman & Vassilevska Williams.",
+      "summary": "In a landmark arXiv paper co-authored with Columbia’s Josh Alman and MIT’s Virginia Vassilevska Williams, Anthropic’s internal research model of Claude autonomously discovered—during a 16-million-token search—deterministic truly subquadratic O(n^1.9992) algorithms for 3SUM and truly subcubic O(n^2.9995) algorithms for All-Pairs Shortest Paths (APSP) on polynomial-weight integer graphs via triangles in sparse lopsided graphs. The result simultaneously refutes the 1995 3SUM hypothesis (31 years open), the 1962 Floyd–Warshall cubic APSP barrier (~64 years), Exact Triangle, and Zero-Weight k-Clique, with the core proof certified in Lean 4 with Mathlib and independently checked, simplified, and extended by Alman and Vassilevska Williams.",
+      "technicalHighlights": [
+        "Achieves deterministic O(n^1.9992) time for 3SUM and O(n^2.9995) time for integer-weighted APSP, breaking both the quadratic 3SUM and cubic APSP barriers simultaneously.",
+        "Also refutes the Exact Triangle and Zero-Weight k-Clique hypotheses via a new reduction through sparse lopsided triangle detection.",
+        "Discovered autonomously by Claude in a 16M-token session, machine-certified in Lean 4 with Mathlib, and verified, simplified, and extended by leading fine-grained complexity theorists Josh Alman and Virginia Vassilevska Williams."
+      ],
+      "caveats": "Unrefereed arXiv preprint (v1) whose asymptotic exponents (1.9992 and 2.9995) carry large constant factors and apply to polynomial-weight integer inputs rather than arbitrary real-RAM weights; conference/journal peer review is ongoing.",
+      "contributors": [
+        "Josh Alman",
+        "Virginia Vassilevska Williams",
+        "Anthropic"
+      ],
+      "institutions": [
+        "Columbia University",
+        "MIT",
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 94,
+        "ripple": 92,
+        "verification": 95,
+        "velocity": 97
+      },
+      "scoreRationale": {
+        "foundational": "Refutes two of the three central hardness pillars of fine-grained complexity theory (3SUM since 1995 and APSP since 1962) in one stroke.",
+        "ripple": "Forces a sweeping reassessment of hundreds of conditional lower bounds across computational geometry, stringology, dynamic graphs, and data structures.",
+        "verification": "Both machine-certified in Lean 4 with Mathlib and thoroughly vetted, simplified, and co-authored by two of fine-grained complexity’s foremost authorities.",
+        "velocity": "Autonomously uncovered by Claude in a single 16M-token search after decades of human attempts yielded only polylogarithmic improvements."
+      },
+      "enables": [
+        "eth-refutation-claim-2026"
+      ],
+      "sources": [
+        {
+          "label": "Alman, Vassilevska Williams & Anthropic — Truly Subquadratic 3SUM and Truly Subcubic APSP (arXiv:2610.06783)",
+          "url": "https://arxiv.org/abs/2610.06783",
+          "type": "paper"
+        }
+      ]
+    },
+    {
       "id": "claude-art-enzyme-system-2026",
       "title": "950 Claude Agents Autonomously Discover CRISPR-Like Bacteriophage Enzyme System (ART)",
       "shortTitle": "Claude Discovers ART Enzymes",
@@ -1616,7 +1969,8 @@
         "velocity": "Compressed a multi-year global human formalization roadmap into an 11-day autonomous agent run."
       },
       "enables": [
-        "riemann-hypothesis-lean-2026"
+        "riemann-hypothesis-lean-2026",
+        "cfsg-enormous-theorem-lean-2026"
       ],
       "sources": [
         {
@@ -1693,6 +2047,256 @@
           "label": "Greenfeld, King & Vendramin — The Köthe conjecture via point modules (arXiv:2609.15080)",
           "url": "https://arxiv.org/abs/2609.15080",
           "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "dying-percolation-conjecture-2026",
+      "title": "Anthropic AI & Lean 4 Prove the Critical Dying Percolation Conjecture (θ(p_c) = 0)",
+      "shortTitle": "Dying Percolation Conjecture",
+      "date": "2026-08-26",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Probability Theory",
+        "Statistical Physics",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Anthropic Internal Claude Model + Lean 4",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 66,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Settles probability theory’s 66-year-old 'holy grail'—proving no infinite cluster survives at the critical percolation threshold θ(p_c) = 0 in every dimension d ≥ 3, verified in Lean 4 and streamlined by human experts.",
+      "summary": "On August 26, 2026, a dangling commit (795efb8) by Justin Leder in Anthropic’s formal-math GitHub repository surfaced a Lean 4 proof of Kozma and Nitzan’s (2024) correlation inequality—immediately settling the 66-year-old dying percolation conjecture (θ(p_c) = 0 on ℤ^d in all dimensions, including the physically central 3D case). Discovered by mathematicians on X just days before Fields Medalist Hugo Duminil-Copin predicted AI would crack it first, the proof was rapidly checked, explained by Ahmed Bou-Rabee (extending it to site percolation), condensed to 9 human-readable pages by Arthur Blanc-Renaudie, and generalized to FK-percolation (arXiv:2610.26419).",
+      "technicalHighlights": [
+        "Resolves θ(p_c) = 0 on ℤ^d for all intermediate dimensions d ≥ 3 (including d = 3), closing the main long-standing open problem in percolation theory since Harris (1960).",
+        "Proves Kozma–Nitzan’s (2024) general finite weighted-graph correlation inequality in Lean 4—a conjecture many specialists had suspected might have a counterexample.",
+        "Independently verified, streamlined into a 9-page human proof by Arthur Blanc-Renaudie, and generalized to site percolation and random-cluster (FK) models (arXiv:2610.26419)."
+      ],
+      "caveats": "Originally surfaced via an unannounced GitHub commit rather than a traditional paper; journal publication of the streamlined human expositions and FK-percolation generalizations is still working through peer review.",
+      "contributors": [
+        "Justin Leder",
+        "Anthropic",
+        "Ahmed Bou-Rabee",
+        "Arthur Blanc-Renaudie"
+      ],
+      "institutions": [
+        "Anthropic",
+        "University of Pennsylvania"
+      ],
+      "scores": {
+        "foundational": 93,
+        "ripple": 86,
+        "verification": 97,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "Solves what Fields Medalist Hugo Duminil-Copin and Gil Kalai called the most famous open conjecture in percolation theory (open since 1960).",
+        "ripple": "Directly impacts statistical mechanics, phase-transition theory, and random-cluster (FK) models, immediately sparking new generalizations.",
+        "verification": "Gold-standard dual verification: complete Lean 4 formalization plus concise 9-page human proofs and independent arXiv extensions.",
+        "velocity": "Cracked a 66-year-old 'holy grail' of probability theory autonomously and proved an inequality experts thought might be false."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Dying percolation conjecture — Wikipedia (Anthropic Lean commit 795efb8 & generalizations)",
+          "url": "https://en.wikipedia.org/wiki/Dying_percolation_conjecture",
+          "type": "explainer"
+        },
+        {
+          "label": "Gil Kalai — The θ(p_c) = 0 conjecture is solved in all dimensions (Sep 3, 2026)",
+          "url": "https://gilkalai.wordpress.com/2026/09/03/amazing-there-is-no-percolation-at-the-critical-probability-in-all-dimensions-solved-by-ai-via-a-conjecture-of-gady-kozma-and-shahaf-nitzan/",
+          "type": "explainer"
+        },
+        {
+          "label": "A Connection Inequality for the Random-Cluster Model (arXiv:2610.26419)",
+          "url": "https://arxiv.org/abs/2610.26419",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "erdos-rankin-prime-gaps-2026",
+      "title": "GPT-5.6 Sol & Lean 4 Introduce the Tilted Sieve for Large Prime Gaps (Erdős–Rankin)",
+      "shortTitle": "Erdős–Rankin Tilted Sieve (Lean)",
+      "date": "2026-08-25",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Analytic Number Theory",
+        "Sieve Theory",
+        "Formal Verification"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "OpenAI GPT-5.6 Sol + Lean 4",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Discovered a surprisingly elementary 'tilted sieve' surpassing the 1938 Erdős–Rankin sieve framework for large prime gaps—praised by Ben Green and formally verified in Lean 4.",
+      "summary": "Working with OpenAI’s GPT-5.6 Sol, Alexander Wang obtained a genuinely new construction for large gaps between consecutive primes (Erdős Problem #4 / Erdős–Rankin), formalized in Lean 4 by Boris Alexeev. Instead of relying on modern Maynard sieve weights or hypergraph covering theorems, GPT-5.6 Sol invented an elementary 'tilted sieve' that biases residue classes toward zero during the preliminary sieving stage—an idea analytic number theorist Ben Green praised as elementary enough to have been found in the 1960s, subsequently given a standalone human exposition in arXiv:2609.28253.",
+      "technicalHighlights": [
+        "Introduces the 'tilted sieve', modifying the preliminary sieving stage of the classical 1938 Erdős–Rankin construction rather than only the final covering stage.",
+        "Surpasses the classical Erdős–Rankin bound using only the prime number theorem, Mertens’ formula, and elementary probability—without Maynard weights.",
+        "Formally verified in Lean 4 by Boris Alexeev (OpenAI) and independently exposited in arXiv:2609.28253 ('A tyro’s approach to the tilted sieve')."
+      ],
+      "caveats": "Improves and reimagines the classical Erdős–Rankin framework rather than settling an unsolved prize conjecture (Ford–Green–Konyagin–Maynard–Tao settled Erdős’s original $10,000 problem in 2014, hence yearsUnsolved is null); formal journal publication is pending.",
+      "contributors": [
+        "Alexander Wang",
+        "Boris Alexeev"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 76,
+        "verification": 93,
+        "velocity": 91
+      },
+      "scoreRationale": {
+        "foundational": "Contributes a genuinely novel, elementary sieve idea ('tilted sieve') to one of classical analytic number theory’s most studied problems.",
+        "ripple": "Demonstrates that frontier LLMs can uncover overlooked elementary techniques that specialists immediately adopt and exposit.",
+        "verification": "Machine-verified in Lean 4 by Boris Alexeev and independently reconstructed in a self-contained arXiv exposition (arXiv:2609.28253).",
+        "velocity": "Uncovered an elementary sieving idea missed for nearly nine decades of human study of the Erdős–Rankin construction."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "A tyro’s approach to the tilted sieve: beyond the Erdős–Rankin bound (arXiv:2609.28253)",
+          "url": "https://arxiv.org/abs/2609.28253",
+          "type": "paper"
+        },
+        {
+          "label": "WhatAIFound Registry — Improved lower bound for large gaps between consecutive primes (Aug 25, 2026)",
+          "url": "https://whataifound.org/finding/2026-08-25-erdos-4-prime-gaps",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "elliptic-curve-rank-31-claude-2026",
+      "title": "Claude Assists Discovery of World-Record Elliptic Curves of Rank ≥ 30 & ≥ 31",
+      "shortTitle": "Elliptic Curve Rank ≥ 31",
+      "date": "2026-08-23",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Diophantine Geometry",
+        "Elliptic Curves",
+        "Computational Number Theory"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Unreleased Anthropic Claude Model",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Constructed explicit elliptic curves over ℚ with 30 and 31 verified independent rational points—shattering Elkies’s rank ≥ 29 world record and igniting a rapid cascade to rank ≥ 32.",
+      "summary": "Anthropic mathematician Levent Alpöge and cryptographer Ava Howell used an internal research version of Claude to construct explicit elliptic curves over the rationals of Mordell–Weil rank at least 30 (ICARM Curve #273, Aug 20) and at least 31 (ICARM Curve #302, Aug 23), breaking Noam Elkies’s previous world record of rank ≥ 29. Each curve is certified unconditionally by its explicitly listed linearly independent rational basis points of infinite order, and the breakthrough immediately triggered follow-on discoveries including smaller-conductor rank-31 curves and a rank ≥ 32 curve (arXiv:2610.31925).",
+      "technicalHighlights": [
+        "Unconditionally establishes rank ≥ 30 (Curve #273) and rank ≥ 31 (Curve #302) over ℚ by exhibiting explicit linearly independent rational witness points.",
+        "Surpassed Noam Elkies’s world record of rank ≥ 29 in computational Diophantine geometry.",
+        "Sparked an immediate wave of record improvements by computational number theorists, culminating in rank ≥ 32 constructions documented in arXiv:2610.31925."
+      ],
+      "caveats": "Sets a computational world record rather than settling whether rational elliptic curve ranks are unbounded (hence yearsUnsolved is null); exact rank equality (as opposed to lower bound ≥ 31) depends on standard conjectures or further descent.",
+      "contributors": [
+        "Levent Alpöge",
+        "Ava Howell"
+      ],
+      "institutions": [
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 79,
+        "ripple": 78,
+        "verification": 98,
+        "velocity": 92
+      },
+      "scoreRationale": {
+        "foundational": "Advances the longstanding computational frontier on Mordell–Weil ranks of elliptic curves over ℚ, central to the Birch and Swinnerton-Dyer landscape.",
+        "ripple": "Catalyzed rapid community progress in high-rank curve construction (quickly reaching rank ≥ 32) and demonstrated AI-guided search in arithmetic geometry.",
+        "verification": "Unconditionally and mechanically verified via explicit height-matrix independence of 31 rational points on the ICARM Elliptic Curve Rank Leaderboard.",
+        "velocity": "Broke two successive world records (rank 30 and rank 31) within three days using an internal Claude variant."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "ICARM Elliptic Curve Rank Leaderboard — Curve #302 (Rank ≥ 31)",
+          "url": "https://elliptic-rank.icarm.cloud/curve/302",
+          "type": "formal-verification"
+        },
+        {
+          "label": "Costa & Lozano-Robledo — Elliptic curve rank growth in multi-quadratic extensions (arXiv:2610.31925)",
+          "url": "https://arxiv.org/abs/2610.31925",
+          "type": "paper"
+        },
+        {
+          "label": "WhatAIFound Registry — Elliptic curves of rank ≥ 30 and ≥ 31",
+          "url": "https://whataifound.org/finding/2026-08-23-elliptic-rank-31",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "hadamard-matrix-668-claude-2026",
+      "title": "Claude Assists Construction of Hadamard Matrix of Order 668 & All 12 Open Orders Below 2,000",
+      "shortTitle": "Hadamard Matrix Order 668",
+      "date": "2026-08-12",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Combinatorial Designs",
+        "Orthogonal Matrices",
+        "Experimental Mathematics"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Unreleased Anthropic Claude Model",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 21,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Constructed explicit Hadamard matrices for all 12 missing orders below 2,000—resolving order 668, the smallest open case of the 1893 Hadamard Conjecture since 2005.",
+      "summary": "Anthropic researchers Levent Alpöge, Philippe Voinov, and Saul Reynolds-Haertle used an unreleased Claude model to discover explicit ±1 orthogonal Hadamard matrices for all 12 previously open orders below 2,000 (668, 716, 892, 1132, 1244, 1388, 1436, 1676, 1772, 1916, 1948, and 1964). In particular, settling order 668 resolved the smallest remaining open case of the 1893 Hadamard Conjecture—a benchmark target that had resisted combinatorial search for 21 years since order 428 was discovered in 2005—with the constructions independently verified and analyzed in arXiv:2610.27175.",
+      "technicalHighlights": [
+        "Explicitly constructs orthogonal ±1 matrices satisfying H H^T = n I for all 12 previously missing multiples of 4 below 2,000, leaving zero gaps up to 2,000.",
+        "Resolves order 668, which stood for 21 years (2005–2026) as the smallest open case of the 1893 Hadamard Conjecture.",
+        "Trivially and exactly computer-verified via direct matrix multiplication (H H^T = n I) and independently analyzed in arXiv:2610.27175."
+      ],
+      "caveats": "Settles all finite cases below 2,000 (and the iconic 21-year order-668 barrier) rather than proving the general 1893 Hadamard Conjecture for every multiple of 4.",
+      "contributors": [
+        "Levent Alpöge",
+        "Philippe Voinov",
+        "Saul Reynolds-Haertle"
+      ],
+      "institutions": [
+        "Anthropic"
+      ],
+      "scores": {
+        "foundational": 83,
+        "ripple": 77,
+        "verification": 99,
+        "velocity": 93
+      },
+      "scoreRationale": {
+        "foundational": "Clears every remaining open case below 2,000 of a celebrated 1893 combinatorial conjecture, including the famous 21-year-old order-668 bottleneck.",
+        "ripple": "Directly impacts combinatorial design theory, error-correcting codes, and signal processing, while proving AI can synthesize structured algebraic search ansatzes.",
+        "verification": "Exact finite ±1 matrix certificates verified trivially via H H^T = n I and independently analyzed in arXiv:2610.27175.",
+        "velocity": "Swept all 12 missing orders below 2,000 at once after two decades of incremental human progress on order 668."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Independent Verification & Analysis of Hadamard Matrices for All Open Orders < 2000 (arXiv:2610.27175)",
+          "url": "https://arxiv.org/abs/2610.27175",
+          "type": "paper"
+        },
+        {
+          "label": "List of mathematical discoveries made with artificial intelligence — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+          "type": "explainer"
         }
       ]
     },
@@ -1941,6 +2545,64 @@
           "label": "Lorist & Schwenninger — A solution to Crouzeix’s conjecture (arXiv:2608.03841)",
           "url": "https://arxiv.org/abs/2608.03841",
           "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "dinitz-garg-goemans-disproof-2026",
+      "title": "GPT-5.6 Pro Finds Explicit Counterexample Disproving the Dinitz–Garg–Goemans Conjecture",
+      "shortTitle": "Dinitz–Garg–Goemans Disproof",
+      "date": "2026-07-22",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Combinatorial Optimization",
+        "Network Flows",
+        "Approximation Algorithms"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI GPT-5.6 Pro",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 27,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "From a single public ChatGPT prompt, GPT-5.6 Pro constructed a finite network counterexample refuting the 27-year-old Dinitz–Garg–Goemans unsplittable-flow conjecture.",
+      "summary": "Independent researcher Dmitry Rybin posted a public ChatGPT session on X showing OpenAI’s GPT-5.6 Pro disproving the 1999 Dinitz–Garg–Goemans conjecture in combinatorial optimization. The model constructed an explicit small directed network admitting a fractional flow of cost 58 while every unsplittable flow respecting the conjectured capacity-violation bound (≤ 15) has cost at least 60—demonstrating that an off-the-shelf frontier reasoning model could refute a 27-year-old network-flow conjecture on demand.",
+      "technicalHighlights": [
+        "Exhibits an explicit finite directed network where a fractional routing achieves cost 58, yet no unsplittable flow within the Dinitz–Garg–Goemans capacity violation bound (≤ 15) achieves cost below 60.",
+        "Refutes a 27-year-old (1999) open conjecture on the cost–congestion trade-off of single-source unsplittable flows.",
+        "Produced transparently in a publicly shared ChatGPT session link, making both the AI provenance and the finite counterexample immediately reproducible."
+      ],
+      "caveats": "Released directly via X and a public ChatGPT share link (covered in science press) rather than a refereed journal paper or formal Lean artifact; while the finite graph counterexample is directly verifiable by elementary flow arithmetic, formal archival publication is pending.",
+      "contributors": [
+        "Dmitry Rybin"
+      ],
+      "institutions": [
+        "Independent Researcher"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 74,
+        "verification": 90,
+        "velocity": 95
+      },
+      "scoreRationale": {
+        "foundational": "Cleanly refutes a 27-year-old open conjecture in combinatorial optimization and network routing theory.",
+        "ripple": "Striking public proof-of-concept that consumer-accessible reasoning models can refute decades-old research conjectures from a single prompt.",
+        "verification": "Finite graph counterexample is directly checkable by exact linear/integer programming arithmetic, though unrefereed and posted on X rather than a journal.",
+        "velocity": "Generated an explicit counterexample to a 1999 conjecture in a single interactive ChatGPT session."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Public GPT-5.6 Pro Session — Dinitz–Garg–Goemans Counterexample (ChatGPT Share)",
+          "url": "https://chatgpt.com/share/6a60b2eb-0b64-83ee-9c76-7931ca1de063",
+          "type": "social-post"
+        },
+        {
+          "label": "List of mathematical discoveries made with artificial intelligence — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+          "type": "explainer"
         }
       ]
     },
@@ -3687,7 +4349,8 @@
         "velocity": "Surpassed decades of manual micro-optimization in standard library sorting primitives."
       },
       "enables": [
-        "alphaevolve-matrix-2025"
+        "alphaevolve-matrix-2025",
+        "subquadratic-3sum-subcubic-apsp-2026"
       ],
       "sources": [
         {
@@ -4333,7 +4996,8 @@
       },
       "enables": [
         "robot-scientist-adam-2009",
-        "gnome-materials-2023"
+        "gnome-materials-2023",
+        "deepmind-mass-spec-skills-2026"
       ],
       "sources": [
         {
