@@ -15,8 +15,14 @@ import { renderFilterBar } from './components/FilterBar.js';
 import { renderRubricTuner } from './components/RubricTuner.js';
 import { renderLeaderboard } from './components/Leaderboard.js';
 import { renderDossierModal } from './components/DossierModal.js';
-import { renderTimelineScatter } from './visualizations/TimelineScatter.js';
-import { renderVelocityChart } from './visualizations/VelocityChart.js';
+import {
+  renderTimelineScatter,
+  bindScatterInteractions,
+} from './visualizations/TimelineScatter.js';
+import {
+  renderVelocityChart,
+  bindVelocityInteractions,
+} from './visualizations/VelocityChart.js';
 import {
   renderLineageGraph,
   bindLineageInteractions,
@@ -28,7 +34,6 @@ const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
 const state = {
   theme: loadInitialTheme(),
   view: 'leaderboard',
-  velocityGroup: 'paradigm',
   tunerOpen: false,
   discipline: 'all',
   paradigm: 'all',
@@ -39,6 +44,23 @@ const state = {
   search: '',
   weights: { ...DEFAULT_WEIGHTS },
   activeDossierId: null,
+  scatter: {
+    preset: 'all',
+    timeScale: 'split',
+    yMode: 'auto',
+    yMetric: 'composite',
+    interactionMode: 'zoom',
+    customZoom: null,
+  },
+  velocity: {
+    groupBy: 'paradigm',
+    granularity: 'default',
+    yScale: 'linear',
+    curveMetric: 'count',
+  },
+  lineage: {
+    chainDepth: 'full',
+  },
 };
 
 let toastTimer = null;
@@ -320,44 +342,67 @@ function hideTooltip() {
   if (tip) tip.classList.remove('viz-tooltip--visible');
 }
 
-function bindScatterTooltips(rankedMap) {
-  const svg = document.getElementById('timeline-scatter-svg');
-  if (!svg) return;
+function showTooltip(ev, html) {
   const tip = ensureTooltip();
+  tip.innerHTML = html;
+  tip.classList.add('viz-tooltip--visible');
+  const tipW = tip.offsetWidth || 290;
+  const tipH = tip.offsetHeight || 110;
+  const x =
+    ev.clientX + 14 + tipW > window.innerWidth - 12
+      ? Math.max(12, ev.clientX - tipW - 14)
+      : Math.max(12, ev.clientX + 14);
+  const y =
+    ev.clientY - 12 + tipH > window.innerHeight - 12
+      ? Math.max(12, window.innerHeight - tipH - 12)
+      : Math.max(12, ev.clientY - 12);
+  tip.style.left = `${x}px`;
+  tip.style.top = `${y}px`;
+}
 
-  svg.querySelectorAll('[data-tooltip-id]').forEach((node) => {
-    const show = (ev) => {
-      const item = rankedMap.get(node.dataset.tooltipId);
-      if (!item) return;
-      tip.innerHTML = `
-        <div class="viz-tooltip__title">${escapeHtml(item.title)}</div>
-        <div class="viz-tooltip__meta">${escapeHtml(item.discipline)} · ${formatDate(item.date)} · ${escapeHtml(item.verificationStatus)}</div>
-        <div>
-          <span class="viz-tooltip__score">Impact ${item.compositeScore.toFixed(1)}/100</span>
-          · ${escapeHtml(item.aiParadigm)} · ${escapeHtml(item.aiRole)}${item.aiSystem ? ` (${escapeHtml(item.aiSystem)})` : ''}
-        </div>
-      `;
-      const x = Math.min(window.innerWidth - 320, Math.max(12, ev.clientX + 14));
-      const y = Math.min(window.innerHeight - 130, Math.max(12, ev.clientY - 12));
-      tip.style.left = `${x}px`;
-      tip.style.top = `${y}px`;
-      tip.classList.add('viz-tooltip--visible');
-    };
-
-    node.addEventListener('mouseenter', show);
-    node.addEventListener('mousemove', show);
-    node.addEventListener('mouseleave', hideTooltip);
-  });
+function bindActiveViewInteractions(filtered, rankedMap) {
+  if (state.view === 'timeline') {
+    bindScatterInteractions(
+      document.getElementById('timeline-scatter-svg'),
+      rankedMap,
+      state.scatter,
+      {
+        showTooltip,
+        hideTooltip,
+        onZoomChange: (zoomBox) => {
+          state.scatter.customZoom = zoomBox;
+          renderResultsOnly();
+        },
+        onReset: () => {
+          state.scatter.customZoom = null;
+          state.scatter.preset = 'all';
+          renderResultsOnly();
+        },
+      }
+    );
+  } else if (state.view === 'velocity') {
+    bindVelocityInteractions(
+      document.getElementById('velocity-chart-svg'),
+      filtered,
+      state.velocity,
+      { showTooltip, hideTooltip }
+    );
+  } else if (state.view === 'lineage') {
+    bindLineageInteractions(document.getElementById('lineage-graph-svg'), rankedMap, {
+      showTooltip,
+      hideTooltip,
+    });
+  }
 }
 
 function renderActiveView(filtered, allRanked) {
   switch (state.view) {
     case 'timeline':
-      return renderTimelineScatter(filtered);
+      return renderTimelineScatter(filtered, state.scatter);
     case 'velocity':
-      return renderVelocityChart(filtered, state.velocityGroup);
+      return renderVelocityChart(filtered, state.velocity);
     case 'lineage':
-      return renderLineageGraph(filtered, allRanked);
+      return renderLineageGraph(filtered, allRanked, state.lineage);
     case 'leaderboard':
     default:
       return renderLeaderboard(filtered, allRanked.length, state.sortBy);
@@ -399,11 +444,7 @@ function renderApp({ preserveSearchFocus = false } = {}) {
   `;
 
   // Bind dynamic SVG interactions
-  if (state.view === 'timeline') {
-    bindScatterTooltips(rankedMap);
-  } else if (state.view === 'lineage') {
-    bindLineageInteractions(document.getElementById('lineage-graph-svg'));
-  }
+  bindActiveViewInteractions(filtered, rankedMap);
 
   // Restore search focus smoothly during typing
   if (preserveSearchFocus) {
@@ -430,11 +471,7 @@ function renderResultsOnly() {
   const stage = document.getElementById('view-stage');
   if (stage) {
     stage.innerHTML = renderActiveView(filtered, allRanked);
-    if (state.view === 'timeline') {
-      bindScatterTooltips(rankedMap);
-    } else if (state.view === 'lineage') {
-      bindLineageInteractions(document.getElementById('lineage-graph-svg'));
-    }
+    bindActiveViewInteractions(filtered, rankedMap);
   }
 }
 
@@ -480,6 +517,8 @@ function attachGlobalListeners() {
       state.year = 'all';
       state.sortBy = 'impact';
       state.search = '';
+      state.scatter.customZoom = null;
+      state.scatter.preset = 'all';
       renderApp();
       return;
     }
@@ -505,9 +544,120 @@ function attachGlobalListeners() {
       return;
     }
 
+    // Impact × Time Scatter controls
+    const scatterPresetBtn = e.target.closest('[data-scatter-preset]');
+    if (scatterPresetBtn) {
+      state.scatter.preset = scatterPresetBtn.dataset.scatterPreset;
+      state.scatter.customZoom = null;
+      renderResultsOnly();
+      return;
+    }
+
+    const scatterScaleBtn = e.target.closest('[data-scatter-timescale]');
+    if (scatterScaleBtn) {
+      state.scatter.timeScale = scatterScaleBtn.dataset.scatterTimescale;
+      state.scatter.preset = 'all';
+      state.scatter.customZoom = null;
+      renderResultsOnly();
+      return;
+    }
+
+    const scatterYModeBtn = e.target.closest('[data-scatter-ymode]');
+    if (scatterYModeBtn) {
+      state.scatter.yMode = scatterYModeBtn.dataset.scatterYmode;
+      if (state.scatter.customZoom) {
+        state.scatter.customZoom = {
+          tMin: state.scatter.customZoom.tMin,
+          tMax: state.scatter.customZoom.tMax,
+          yMin: state.scatter.yMode === 'full' ? 0 : undefined,
+          yMax: state.scatter.yMode === 'full' ? 100 : undefined,
+        };
+      }
+      renderResultsOnly();
+      return;
+    }
+
+    const scatterModeBtn = e.target.closest('[data-scatter-mode]');
+    if (scatterModeBtn) {
+      state.scatter.interactionMode = scatterModeBtn.dataset.scatterMode;
+      renderResultsOnly();
+      return;
+    }
+
+    const scatterZoomBtn = e.target.closest('[data-scatter-zoom]');
+    if (scatterZoomBtn) {
+      const action = scatterZoomBtn.dataset.scatterZoom;
+      if (action === 'reset') {
+        state.scatter.customZoom = null;
+        state.scatter.preset = 'all';
+        renderResultsOnly();
+        return;
+      }
+      const svg = document.getElementById('timeline-scatter-svg');
+      if (svg) {
+        const curTMin = Number(svg.dataset.tMin);
+        const curTMax = Number(svg.dataset.tMax);
+        const curYMin = Number(svg.dataset.yMin);
+        const curYMax = Number(svg.dataset.yMax);
+        const factor = action === 'in' ? 1 / 1.55 : 1.55;
+        const midT = (curTMin + curTMax) / 2;
+        const midY = (curYMin + curYMax) / 2;
+        const newHalfT = Math.max(86400000 * 5, ((curTMax - curTMin) * factor) / 2);
+        const newHalfY = Math.max(3, Math.min(50, ((curYMax - curYMin) * factor) / 2));
+
+        const minBound = Date.parse('1994-01-01T00:00:00Z');
+        const maxBound = Date.parse('2027-02-01T00:00:00Z');
+        const fullModernSpan = Date.parse('2026-12-20T00:00:00Z') - Date.parse('2019-11-01T00:00:00Z');
+
+        if (action === 'out' && newHalfT * 2 >= fullModernSpan * 0.96 && newHalfY * 2 >= 26) {
+          state.scatter.customZoom = null;
+          state.scatter.preset = 'all';
+        } else {
+          state.scatter.customZoom = {
+            tMin: Math.max(minBound, midT - newHalfT),
+            tMax: Math.min(maxBound, midT + newHalfT),
+            yMin: Math.max(0, Math.floor(midY - newHalfY)),
+            yMax: Math.min(100, Math.ceil(midY + newHalfY)),
+          };
+        }
+        renderResultsOnly();
+      }
+      return;
+    }
+
+    // Acceleration Curve controls
     const velBtn = e.target.closest('[data-velocity-group]');
     if (velBtn) {
-      state.velocityGroup = velBtn.dataset.velocityGroup;
+      state.velocity.groupBy = velBtn.dataset.velocityGroup;
+      renderResultsOnly();
+      return;
+    }
+
+    const velGranBtn = e.target.closest('[data-velocity-granularity]');
+    if (velGranBtn) {
+      state.velocity.granularity = velGranBtn.dataset.velocityGranularity;
+      renderResultsOnly();
+      return;
+    }
+
+    const velScaleBtn = e.target.closest('[data-velocity-scale]');
+    if (velScaleBtn) {
+      state.velocity.yScale = velScaleBtn.dataset.velocityScale;
+      renderResultsOnly();
+      return;
+    }
+
+    const velCurveBtn = e.target.closest('[data-velocity-curve]');
+    if (velCurveBtn) {
+      state.velocity.curveMetric = velCurveBtn.dataset.velocityCurve;
+      renderResultsOnly();
+      return;
+    }
+
+    // Lineage Graph controls
+    const lineageDepthBtn = e.target.closest('[data-lineage-depth]');
+    if (lineageDepthBtn) {
+      state.lineage.chainDepth = lineageDepthBtn.dataset.lineageDepth;
       renderResultsOnly();
       return;
     }
@@ -533,6 +683,10 @@ function attachGlobalListeners() {
 
     const openTrigger = e.target.closest('[data-open-dossier]');
     if (openTrigger) {
+      const parentSvg = openTrigger.closest('svg');
+      if (parentSvg && parentSvg.dataset.justDragged === '1') {
+        return;
+      }
       state.activeDossierId = openTrigger.dataset.openDossier;
       renderApp();
     }
@@ -554,6 +708,15 @@ function attachGlobalListeners() {
     } else if (e.target.id === 'sort-by') {
       state.sortBy = e.target.value;
       renderApp();
+    } else if (e.target.id === 'scatter-y-metric') {
+      state.scatter.yMetric = e.target.value;
+      if (state.scatter.customZoom) {
+        state.scatter.customZoom = {
+          tMin: state.scatter.customZoom.tMin,
+          tMax: state.scatter.customZoom.tMax,
+        };
+      }
+      renderResultsOnly();
     }
   });
 

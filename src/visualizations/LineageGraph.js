@@ -1,6 +1,7 @@
-import { DISCIPLINE_META, escapeHtml } from '../scoring.js';
+import { DISCIPLINE_META, escapeHtml, formatDate } from '../scoring.js';
 
-export function renderLineageGraph(filteredItems, allRankedItems) {
+export function renderLineageGraph(filteredItems, allRankedItems, opts = {}) {
+  const chainDepth = opts.chainDepth === 'direct' ? 'direct' : 'full';
   const byId = new Map(allRankedItems.map((b) => [b.id, b]));
   const filteredSet = new Set(filteredItems.map((b) => b.id));
 
@@ -29,7 +30,7 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
       <div class="viz-card">
         <div class="empty-state">
           <h3>No lineage edges in current filter</h3>
-          <p>Reset filters to explore the cross-disciplinary influence graph connecting 2020–2023 anchors to 2024–2026 breakthroughs.</p>
+          <p>Reset filters to explore the cross-disciplinary influence graph connecting pre-2020 pioneers and 2020–2023 anchors to 2024–2026 breakthroughs.</p>
         </div>
       </div>
     `;
@@ -127,8 +128,22 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
         <div>
           <h2 class="viz-card__title">AI-for-Science Catalyst &amp; Influence Network</h2>
           <p class="viz-card__desc">
-            Traces how pre-2020 symbolic pioneers (Robbins, Adam, Pythagorean Triples), 2020–2023 neural anchors (Halicin, AlphaFold 2, AlphaTensor, FunSearch), and 2024–2025 architectures catalyzed the 2026 surge. Hover any node to trace its upstream &amp; downstream chain; click to open its dossier.
+            Traces how pre-2020 symbolic pioneers (Robbins, Adam, Pythagorean Triples), 2020–2023 neural anchors (Halicin, AlphaFold 2, AlphaTensor, FunSearch), and 2024–2025 architectures catalyzed the 2026 surge. Hover to trace chains; drag to pan or zoom; click any node for its dossier.
           </p>
+        </div>
+
+        <div class="viz-toolbar" aria-label="Influence graph controls">
+          <div class="segmented-ctrl segmented-ctrl--sm" role="group" aria-label="Lineage highlight depth">
+            <button type="button" data-lineage-depth="full" aria-pressed="${chainDepth === 'full' ? 'true' : 'false'}" title="Trace all transitive upstream ancestors and downstream descendants">Full Chain</button>
+            <button type="button" data-lineage-depth="direct" aria-pressed="${chainDepth === 'direct' ? 'true' : 'false'}" title="Highlight immediate 1-hop connections only">1-Hop</button>
+          </div>
+          <div class="viz-zoom-controls" role="group" aria-label="Graph zoom controls">
+            <button type="button" class="viz-icon-btn" id="lineage-zoom-in" aria-label="Zoom in" title="Zoom in (+)">+</button>
+            <button type="button" class="viz-icon-btn" id="lineage-zoom-out" aria-label="Zoom out" title="Zoom out (−)">−</button>
+            <button type="button" class="viz-icon-btn viz-icon-btn--text" id="lineage-zoom-reset" title="Reset pan and zoom (or double-click)">
+              <span id="lineage-zoom-label">100%</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -136,22 +151,28 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
         ${Object.entries(DISCIPLINE_META)
           .map(
             ([name, meta]) => `
-          <span class="viz-legend__item">
+          <span class="viz-legend__item viz-legend__item--interactive" data-lineage-legend-disc="${escapeHtml(name)}" title="Hover to highlight ${escapeHtml(name)}">
             <span class="viz-legend__dot" style="background: ${meta.colorVar};"></span>
             <span>${escapeHtml(name)}</span>
           </span>
         `
           )
           .join('')}
+        <span class="viz-legend__item" style="margin-left: auto; color: var(--ink-muted);">
+          <span>${nodes.length} nodes · ${relevantEdges.length} links</span>
+        </span>
       </div>
 
-      <div class="viz-stage">
+      <div class="viz-stage viz-stage--interactive viz-stage--pan">
         <svg
           class="viz-svg"
           id="lineage-graph-svg"
           viewBox="0 0 ${width} ${height}"
+          data-base-w="${width}"
+          data-base-h="${height}"
+          data-chain-depth="${chainDepth}"
           role="img"
-          aria-label="Directed influence graph connecting enabling scientific breakthroughs from 2020 anchors through 2026"
+          aria-label="Directed influence graph connecting enabling scientific breakthroughs from pre-2020 pioneers through 2026"
         >
           <defs>
             <marker id="lineage-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -161,6 +182,9 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
               <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--accent-primary)" />
             </marker>
           </defs>
+
+          <!-- Full-canvas pan hit target -->
+          <rect x="0" y="0" width="${width}" height="${height}" fill="transparent" />
 
           <!-- Column Headers -->
           ${columns
@@ -172,6 +196,7 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
               text-anchor="middle"
               class="viz-axis-label"
               style="font-weight: 600; letter-spacing: 0.08em;"
+              pointer-events="none"
             >${col.title}</text>
             <line
               x1="${colX[idx].toFixed(1)}"
@@ -180,6 +205,7 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
               y2="36"
               class="viz-axis-line"
               opacity="0.55"
+              pointer-events="none"
             />
           `
             )
@@ -240,6 +266,7 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
                   tabindex="0"
                   role="button"
                   data-lineage-node="${escapeHtml(item.id)}"
+                  data-discipline-name="${escapeHtml(item.discipline)}"
                   data-open-dossier="${escapeHtml(item.id)}"
                   aria-label="${escapeHtml(item.title)} (Impact ${item.compositeScore.toFixed(1)})"
                 >
@@ -276,23 +303,66 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
           </g>
         </svg>
       </div>
+
+      <div class="viz-hint-bar">
+        <span>Mode: <strong>${chainDepth === 'full' ? 'Full transitive chain' : '1-hop neighbors'}</strong></span>
+        <span>Drag to pan · + / − or Ctrl/⌘ + scroll to zoom · Double-click to reset</span>
+      </div>
     </div>
   `;
 }
 
-export function bindLineageInteractions(svg) {
+export function bindLineageInteractions(svg, rankedMap, callbacks = {}) {
   if (!svg) return;
+  const { showTooltip, hideTooltip } = callbacks;
   const nodeEls = Array.from(svg.querySelectorAll('[data-lineage-node]'));
   const edgeEls = Array.from(svg.querySelectorAll('[data-edge-from]'));
+  const chainDepth = svg.dataset.chainDepth || 'full';
 
-  const adjacency = new Map();
+  const outgoing = new Map();
+  const incoming = new Map();
   for (const e of edgeEls) {
     const from = e.dataset.edgeFrom;
     const to = e.dataset.edgeTo;
-    if (!adjacency.has(from)) adjacency.set(from, new Set());
-    if (!adjacency.has(to)) adjacency.set(to, new Set());
-    adjacency.get(from).add(to);
-    adjacency.get(to).add(from);
+    if (!outgoing.has(from)) outgoing.set(from, new Set());
+    if (!incoming.has(to)) incoming.set(to, new Set());
+    outgoing.get(from).add(to);
+    incoming.get(to).add(from);
+  }
+
+  function collectChain(startId) {
+    const ancestors = new Set();
+    const descendants = new Set();
+
+    if (chainDepth === 'direct') {
+      for (const p of incoming.get(startId) || []) ancestors.add(p);
+      for (const c of outgoing.get(startId) || []) descendants.add(c);
+      return { ancestors, descendants };
+    }
+
+    const upQueue = [startId];
+    while (upQueue.length) {
+      const cur = upQueue.shift();
+      for (const p of incoming.get(cur) || []) {
+        if (!ancestors.has(p)) {
+          ancestors.add(p);
+          upQueue.push(p);
+        }
+      }
+    }
+
+    const downQueue = [startId];
+    while (downQueue.length) {
+      const cur = downQueue.shift();
+      for (const c of outgoing.get(cur) || []) {
+        if (!descendants.has(c)) {
+          descendants.add(c);
+          downQueue.push(c);
+        }
+      }
+    }
+
+    return { ancestors, descendants };
   }
 
   function highlight(activeId) {
@@ -305,16 +375,26 @@ export function bindLineageInteractions(svg) {
       return;
     }
 
-    const neighbors = adjacency.get(activeId) || new Set();
+    const { ancestors, descendants } = collectChain(activeId);
+    const inChain = new Set([activeId, ...ancestors, ...descendants]);
+
     nodeEls.forEach((n) => {
       const id = n.dataset.lineageNode;
-      const isRel = id === activeId || neighbors.has(id);
+      const isRel = inChain.has(id);
       n.classList.toggle('lineage-node--active', id === activeId);
       n.classList.toggle('lineage-node--dim', !isRel);
     });
 
     edgeEls.forEach((e) => {
-      const isRel = e.dataset.edgeFrom === activeId || e.dataset.edgeTo === activeId;
+      const from = e.dataset.edgeFrom;
+      const to = e.dataset.edgeTo;
+      const isRel =
+        chainDepth === 'direct'
+          ? from === activeId || to === activeId
+          : (inChain.has(from) && inChain.has(to)) &&
+            ((ancestors.has(from) && (ancestors.has(to) || to === activeId)) ||
+              ((descendants.has(from) || from === activeId) && descendants.has(to)));
+
       e.classList.toggle('lineage-edge--active', isRel);
       e.classList.toggle('lineage-edge--dim', !isRel);
       e.setAttribute(
@@ -325,9 +405,173 @@ export function bindLineageInteractions(svg) {
   }
 
   for (const node of nodeEls) {
-    node.addEventListener('mouseenter', () => highlight(node.dataset.lineageNode));
-    node.addEventListener('focus', () => highlight(node.dataset.lineageNode));
-    node.addEventListener('mouseleave', () => highlight(null));
-    node.addEventListener('blur', () => highlight(null));
+    const id = node.dataset.lineageNode;
+    const showNodeTip = (ev) => {
+      if (!showTooltip || !rankedMap) return;
+      const item = rankedMap.get(id);
+      if (!item) return;
+      const upCount = (incoming.get(id) || new Set()).size;
+      const downCount = (outgoing.get(id) || new Set()).size;
+      showTooltip(
+        ev,
+        `
+          <div class="viz-tooltip__title">${escapeHtml(item.title)}</div>
+          <div class="viz-tooltip__meta">${escapeHtml(item.discipline)} · ${formatDate(item.date)} · ${escapeHtml(item.aiParadigm)}</div>
+          <div>
+            <span class="viz-tooltip__score">Impact ${item.compositeScore.toFixed(1)}/100</span>
+            · ${upCount} upstream · ${downCount} downstream
+          </div>
+        `
+      );
+    };
+
+    node.addEventListener('mouseenter', (ev) => {
+      highlight(id);
+      showNodeTip(ev);
+    });
+    node.addEventListener('mousemove', showNodeTip);
+    node.addEventListener('focus', () => highlight(id));
+    node.addEventListener('mouseleave', () => {
+      highlight(null);
+      if (hideTooltip) hideTooltip();
+    });
+    node.addEventListener('blur', () => {
+      highlight(null);
+      if (hideTooltip) hideTooltip();
+    });
   }
+
+  // Legend discipline highlight
+  const card = svg.closest('.viz-card');
+  if (card) {
+    card.querySelectorAll('[data-lineage-legend-disc]').forEach((el) => {
+      const disc = el.dataset.lineageLegendDisc;
+      el.addEventListener('mouseenter', () => {
+        nodeEls.forEach((n) => {
+          n.classList.toggle('lineage-node--dim', n.dataset.disciplineName !== disc);
+        });
+      });
+      el.addEventListener('mouseleave', () => {
+        nodeEls.forEach((n) => n.classList.remove('lineage-node--dim'));
+      });
+    });
+  }
+
+  // Smooth SVG viewBox Pan & Zoom
+  const baseW = Number(svg.dataset.baseW) || 1240;
+  const baseH = Number(svg.dataset.baseH) || 600;
+  let vb = { x: 0, y: 0, w: baseW, h: baseH };
+
+  const zoomLabelEl = document.getElementById('lineage-zoom-label');
+  const zoomInBtn = document.getElementById('lineage-zoom-in');
+  const zoomOutBtn = document.getElementById('lineage-zoom-out');
+  const zoomResetBtn = document.getElementById('lineage-zoom-reset');
+
+  function applyViewBox() {
+    vb.w = Math.max(baseW / 3.2, Math.min(baseW, vb.w));
+    vb.h = vb.w * (baseH / baseW);
+    vb.x = Math.max(-baseW * 0.05, Math.min(baseW - vb.w + baseW * 0.05, vb.x));
+    vb.y = Math.max(-baseH * 0.05, Math.min(baseH - vb.h + baseH * 0.05, vb.y));
+    svg.setAttribute(
+      'viewBox',
+      `${vb.x.toFixed(1)} ${vb.y.toFixed(1)} ${vb.w.toFixed(1)} ${vb.h.toFixed(1)}`
+    );
+    const pct = Math.round((baseW / vb.w) * 100);
+    if (zoomLabelEl) zoomLabelEl.textContent = `${pct}%`;
+    if (zoomOutBtn) zoomOutBtn.disabled = pct <= 101;
+  }
+
+  function zoomBy(factor, focusFracX = 0.5, focusFracY = 0.5) {
+    const oldW = vb.w;
+    const oldH = vb.h;
+    const newW = Math.max(baseW / 3.2, Math.min(baseW, oldW * factor));
+    const newH = newW * (baseH / baseW);
+    vb.x += (oldW - newW) * focusFracX;
+    vb.y += (oldH - newH) * focusFracY;
+    vb.w = newW;
+    vb.h = newH;
+    applyViewBox();
+  }
+
+  function resetView() {
+    vb = { x: 0, y: 0, w: baseW, h: baseH };
+    applyViewBox();
+  }
+
+  if (zoomInBtn) zoomInBtn.addEventListener('click', () => zoomBy(1 / 1.3));
+  if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => zoomBy(1.3));
+  if (zoomResetBtn) zoomResetBtn.addEventListener('click', resetView);
+  applyViewBox();
+
+  // Drag to pan
+  let panState = null;
+  svg.addEventListener('pointerdown', (ev) => {
+    if (ev.button !== 0) return;
+    panState = {
+      startClientX: ev.clientX,
+      startClientY: ev.clientY,
+      startVbX: vb.x,
+      startVbY: vb.y,
+      active: false,
+      pointerId: ev.pointerId,
+    };
+  });
+
+  svg.addEventListener('pointermove', (ev) => {
+    if (!panState) return;
+    const dx = ev.clientX - panState.startClientX;
+    const dy = ev.clientY - panState.startClientY;
+    if (!panState.active && Math.hypot(dx, dy) > 6) {
+      panState.active = true;
+      if (hideTooltip) hideTooltip();
+      try {
+        svg.setPointerCapture(panState.pointerId);
+      } catch {
+        // ignore
+      }
+    }
+    if (!panState.active) return;
+
+    const rect = svg.getBoundingClientRect();
+    const scaleX = vb.w / Math.max(1, rect.width);
+    const scaleY = vb.h / Math.max(1, rect.height);
+    vb.x = panState.startVbX - dx * scaleX;
+    vb.y = panState.startVbY - dy * scaleY;
+    applyViewBox();
+  });
+
+  const endPan = () => {
+    if (!panState) return;
+    const wasDragging = panState.active;
+    panState = null;
+    if (wasDragging) {
+      svg.dataset.justDragged = '1';
+      setTimeout(() => {
+        delete svg.dataset.justDragged;
+      }, 60);
+    }
+  };
+
+  svg.addEventListener('pointerup', endPan);
+  svg.addEventListener('pointercancel', endPan);
+
+  // Double-click resets pan/zoom
+  svg.addEventListener('dblclick', (ev) => {
+    if (ev.target.closest('[data-lineage-node]')) return;
+    resetView();
+  });
+
+  // Ctrl/Cmd + Scroll zooms smoothly around cursor
+  svg.addEventListener(
+    'wheel',
+    (ev) => {
+      if (!ev.ctrlKey && !ev.metaKey) return;
+      ev.preventDefault();
+      const rect = svg.getBoundingClientRect();
+      const fx = Math.max(0, Math.min(1, (ev.clientX - rect.left) / Math.max(1, rect.width)));
+      const fy = Math.max(0, Math.min(1, (ev.clientY - rect.top) / Math.max(1, rect.height)));
+      zoomBy(ev.deltaY > 0 ? 1.25 : 1 / 1.25, fx, fy);
+    },
+    { passive: false }
+  );
 }
