@@ -42,22 +42,41 @@ const state = {
 
 let toastTimer = null;
 
-function loadInitialTheme() {
+const THEME_STORAGE_KEY = 'frontier-index-theme-pref';
+
+function getSystemTheme() {
   try {
-    const saved = localStorage.getItem('frontier-index-theme');
-    if (saved === 'dark' || saved === 'light') return saved;
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
   } catch {
-    // ignore storage errors
+    // ignore
   }
   return 'light';
 }
 
-function applyTheme(theme) {
-  document.documentElement.setAttribute('data-theme', theme);
+function getSavedThemePreference() {
   try {
-    localStorage.setItem('frontier-index-theme', theme);
+    const saved = localStorage.getItem(THEME_STORAGE_KEY);
+    if (saved === 'dark' || saved === 'light') return saved;
   } catch {
-    // ignore
+    // ignore storage errors
+  }
+  return null;
+}
+
+function loadInitialTheme() {
+  return getSavedThemePreference() || getSystemTheme();
+}
+
+function applyTheme(theme, { persist = false } = {}) {
+  document.documentElement.setAttribute('data-theme', theme);
+  if (persist) {
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, theme);
+    } catch {
+      // ignore
+    }
   }
 }
 
@@ -420,6 +439,7 @@ function attachGlobalListeners() {
     const themeBtn = e.target.closest('#theme-toggle-btn');
     if (themeBtn) {
       state.theme = state.theme === 'dark' ? 'light' : 'dark';
+      applyTheme(state.theme, { persist: true });
       renderApp();
       return;
     }
@@ -597,6 +617,20 @@ function attachGlobalListeners() {
       renderApp();
     }
   });
+
+  if (window.matchMedia) {
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    const onSystemThemeChange = (ev) => {
+      if (getSavedThemePreference()) return;
+      state.theme = ev.matches ? 'dark' : 'light';
+      renderApp();
+    };
+    if (typeof media.addEventListener === 'function') {
+      media.addEventListener('change', onSystemThemeChange);
+    } else if (typeof media.addListener === 'function') {
+      media.addListener(onSystemThemeChange);
+    }
+  }
 }
 
 hydrateStateFromUrl();
