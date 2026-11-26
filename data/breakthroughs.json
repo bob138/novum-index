@@ -11,6 +11,70 @@
   },
   "breakthroughs": [
     {
+      "id": "google-cogentic-factoring-2026",
+      "title": "Google Cogentic Autonomously Produces 6 Math Papers Led by Claimed Unconditional L[1/3] Integer Factoring Bound",
+      "shortTitle": "Cogentic L[1/3] Factoring & 6 Papers",
+      "date": "2026-11-25",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Algorithmic Number Theory",
+        "Integer Factorization",
+        "Multi-Agent Theorem Proving"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Google Cogentic Multi-Agent Harness (Gemini 3.1 Pro / Gemini 4 Argon)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 34,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Google Research’s Cogentic agent autonomously wrote 6 theory papers in one drop—led by a claimed unconditional L[1/3] worst-case integer factoring bound improving Lenstra & Pomerance’s 1992 rigorous L[1/2] record.",
+      "summary": "On November 25, 2026, Google Research committed six autonomously written mathematics and theoretical computer science papers to GitHub under Apache 2.0, produced end-to-end by Cogentic (arXiv:2609.40324)—a multi-agent orchestrator pairing competing Gemini prover agents with adversarial verifier agents and a persistent verified ledger. The flagship 54-page paper claims a classical zero-error Las Vegas integer factorization algorithm running in unconditional worst-case expected time L_N[1/3, 10^5] (certifying prime factors via AKS), matching the heuristic General Number Field Sieve exponent without unproven hypotheses and breaking Lenstra & Pomerance’s 34-year-old rigorous L_N[1/2, 1] barrier from 1992. The same drop includes claimed advances on deterministic subexponential factoring, finite-field discrete logarithms, 2-player Nash equilibrium approximation, the 2014 square-root Log-Rank barrier, and the 1964 Edge Reconstruction Conjecture.",
+      "technicalHighlights": [
+        "Flagship manuscript claims an unconditional zero-error Las Vegas factoring algorithm in expected time L_N[1/3, 10^5] and workspace L_N[1/3, 40], improving the 1992 Lenstra–Pomerance rigorous L_N[1/2, 1] bound.",
+        "Accompanying 5 autonomous papers claim progress on deterministic subexponential factoring, finite-field discrete logs, Nash equilibrium approximation, the Log-Rank conjecture, and the 1964 Edge Reconstruction Conjecture.",
+        "Built by Cogentic’s orchestrator–prover–adversarial-verifier pipeline without human intervention after the initial prompt, though practical RSA security is unaffected by the 10^5 constant."
+      ],
+      "caveats": "Freshly posted unrefereed GitHub manuscripts without Lean formalization or independent number-theorist sign-off; the explicit 10^5 constant means practical RSA cryptography is unaffected even if the asymptotic proof holds up under expert scrutiny.",
+      "contributors": [
+        "Google Research Cogentic Team"
+      ],
+      "institutions": [
+        "Google Research",
+        "Google DeepMind"
+      ],
+      "scores": {
+        "foundational": 91,
+        "ripple": 89,
+        "verification": 58,
+        "velocity": 98
+      },
+      "scoreRationale": {
+        "foundational": "If validated, removing unproven heuristics to prove an L[1/3] integer factoring bound breaks a 34-year cornerstone barrier in algorithmic number theory, alongside five other classical open problems.",
+        "ripple": "Demonstrates Google’s autonomous multi-agent proof-discovery architecture (Cogentic) competing head-to-head with OpenAI and Anthropic on flagship TCS and number-theory problems.",
+        "verification": "Marked down heavily because the six GitHub manuscripts are day-old unrefereed claims lacking Lean formalizations or independent expert review.",
+        "velocity": "Produced six full-length theory manuscripts autonomously from single prompts in a coordinated multi-agent batch."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Google Research — Cogentic Research Papers (GitHub Activity, Nov 25, 2026)",
+          "url": "https://github.com/google-research/google-research/activity",
+          "type": "code"
+        },
+        {
+          "label": "explainx.ai — Google Cogentic Factoring Claim: L[1/3] Proof, Claimed vs. Verified",
+          "url": "https://explainx.ai/blog/google-cogentic-six-math-papers-factoring-l-1-3-gemini-4-claimed-vs-verified-2026",
+          "type": "explainer"
+        },
+        {
+          "label": "Scott Aaronson (Shtetl-Optimized) — Reaction to Cogentic & Late-Nov AI Math Drops",
+          "url": "https://scottaaronson.blog/?p=10379",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "null-cone-quantum-gravity-gpt6-2026",
       "title": "GPT-6 Astra Assists Algebraic Quantization of 4D Vacuum Gravity from the Null Cone",
       "shortTitle": "Null-Cone Quantum Gravity (GPT-6)",
@@ -622,6 +686,68 @@
       ]
     },
     {
+      "id": "linear-time-mst-gpt62-2026",
+      "title": "GPT-6.2 Astra Discovers Deterministic Linear-Time Minimum Spanning Tree Algorithm",
+      "shortTitle": "Deterministic Linear-Time MST",
+      "date": "2026-11-23",
+      "discipline": "Computer Science & AI",
+      "subfields": [
+        "Graph Algorithms",
+        "Comparison Complexity",
+        "Combinatorial Optimization"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI GPT-6.2 Astra (Ultra & Max effort)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 31,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Settles the classic deterministic linear-time Minimum Spanning Tree problem—the first improvement since Chazelle (JACM 2000)—with the core algorithmic ideas generated by GPT-6.2 Astra and verified by NYU & Harvard theorists.",
+      "summary": "Sanjeev Khanna (NYU Courant), Aaron Putterman (Harvard SEAS), and Junkai Song (NYU Courant) posted arXiv:2611.31187 / ECCC TR26-339 establishing a deterministic O(m)-time comparison-based algorithm for the Minimum Spanning Tree (MST) problem, breaking Bernard Chazelle’s 26-year-old O(m α(m, n)) record (JACM 2000) and matching Karger–Klein–Tarjan’s 1995 randomized linear-time bound deterministically. By proving that the deterministic comparison complexity of MST is O(m) via a novel recursive edge-filtering certificate procedure and schedule-counting argument, Pettie and Ramachandran’s 2002 reduction immediately yields a deterministic linear-time pointer-machine algorithm. In Section 1.4 ('AI Acknowledgments'), the authors transparently credit OpenAI’s GPT-6.2 Astra with generating the paper’s main ideas with minimal human intellectual intervention before the authors verified, checked, and simplified the full proof.",
+      "technicalHighlights": [
+        "Proves deterministic comparison complexity T*(m, n) = O(m) for Minimum Spanning Forest, yielding a deterministic linear-time MST algorithm via Pettie–Ramachandran (JACM 2002).",
+        "Provides the first deterministic asymptotic breakthrough since Chazelle’s soft-heap O(m α(m, n)) bound in 2000 and derandomizes the 1995 Karger–Klein–Tarjan linear-time milestone.",
+        "Section 1.4 explicitly credits GPT-6.2 Astra (Ultra/Max effort) with generating the core algorithmic ideas with minimal human intellectual intervention, subsequently verified and simplified by Khanna, Putterman, and Song."
+      ],
+      "caveats": "Unrefereed v1 preprint posted Nov 23, 2026 without a formal Lean proof; because the Pettie–Ramachandran reduction relies on brute-force precomputation of small optimal comparison trees, the result is a foundational theoretical breakthrough rather than a drop-in practical replacement for Kruskal/Prim.",
+      "contributors": [
+        "Sanjeev Khanna",
+        "Aaron Putterman",
+        "Junkai Song",
+        "GPT-6.2 Astra"
+      ],
+      "institutions": [
+        "New York University (Courant Institute)",
+        "Harvard University (SEAS)"
+      ],
+      "scores": {
+        "foundational": 91,
+        "ripple": 87,
+        "verification": 83,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "Settles one of the most iconic open problems in classical graph algorithms—whether deterministic MST can run in strictly linear O(m) comparison time.",
+        "ripple": "Reshapes foundational algorithms curricula and demonstrates that frontier reasoning models can invent genuinely new deterministic combinatorial algorithms.",
+        "verification": "Carefully verified, simplified, and co-authored by leading TCS researchers (Khanna, Putterman, Song), though v1 has not yet completed conference/journal peer review.",
+        "velocity": "Cracked a decades-old algorithmic barrier (open since KKT 1995 / Chazelle 2000) with core ideas generated by GPT-6.2 Astra."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Khanna, Putterman & Song — A Deterministic Linear Time Algorithm for Minimum Spanning Tree (arXiv:2611.31187)",
+          "url": "https://arxiv.org/abs/2611.31187",
+          "type": "paper"
+        },
+        {
+          "label": "ECCC Report TR26-339 — A Deterministic Linear Time Algorithm for Minimum Spanning Tree",
+          "url": "https://eccc.weizmann.ac.il/report/2026/339/",
+          "type": "paper"
+        }
+      ]
+    },
+    {
       "id": "deepmind-verified-quantum-algos-2026",
       "title": "Agentic Discovery & Lean Verification of Faster Quantum Simulation Algorithms",
       "shortTitle": "Verified Quantum Algorithms",
@@ -694,17 +820,17 @@
         "Formal Verification"
       ],
       "aiRole": "Autonomous AI",
-      "aiParadigm": "Neural / Deep Learning",
-      "aiSystem": "Internal Claude (Anthropic) & OpenAI Frontier Model",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Internal Claude + Lean 4 (Anthropic) & OpenAI Frontier Model + Lean 4",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 47,
       "aiTimeToSolve": "Same day",
       "whyItMatters": "Anthropic and OpenAI posted independent Lean-formalized AI proofs of the 47-year-old algebraic analogue of P ≠ NP within five hours of each other.",
-      "summary": "On November 23–24, 2026, Anthropic published a Claude-authored Lean formalization claiming to prove Leslie Valiant's 1979 conjecture VP ≠ VNP—often called the algebraic version of P vs. NP, separating the complexity of the determinant from the permanent. Within five hours, OpenAI posted its own independently derived proof. Leading complexity theorists hailed the pace as unprecedented while stressing that independent verification of the formal statements and human mathematical digestion are still underway.",
+      "summary": "On November 23, 2026, Anthropic published a 70-page Claude-authored paper and Lean 4 formalization claiming to prove Leslie Valiant's 1979 conjecture VP ≠ VNP—the algebraic analogue of P vs. NP separating the determinant from the permanent. Hours later, OpenAI added its own independent Lean-backed proof ('VP and VNP are different') to openai/math, noting its internal model had obtained the result on November 6. Complexity theorists hailed the simultaneous dual-lab Lean releases as unprecedented while emphasizing that independent specification audits and human mathematical digestion are still underway.",
       "technicalHighlights": [
         "Targets Valiant's 1979 conjecture separating polynomial-sized algebraic circuits (VP) from algebraic NP (VNP).",
-        "First major complexity-theory problem to see two rival AI labs publish independent formal proofs on the same day.",
-        "Backed by public Lean formalizations currently undergoing community axiom and definition audits."
+        "Two rival labs released independent Lean 4 proofs hours apart on November 23, 2026 (with OpenAI's internal proof dated November 6).",
+        "Backed by public Lean 4 formalizations currently undergoing independent community axiom, definition, and exposition audits."
       ],
       "caveats": "Neither proof has yet completed full independent human refereeing or Mathlib/Lean-community sign-off; even if confirmed, VP ≠ VNP does not immediately imply Boolean P ≠ NP.",
       "contributors": [
@@ -737,6 +863,11 @@
         {
           "label": "DataCamp: Anthropic's Claude Claims Proof of Valiant's Conjecture (VP vs. VNP)",
           "url": "https://www.datacamp.com/blog/claude-claims-proof-of-valiants-conjecture-vp-vs-vnp",
+          "type": "explainer"
+        },
+        {
+          "label": "explainx.ai — OpenAI VP ≠ VNP Proof in Lean (Nov 23, 2026)",
+          "url": "https://explainx.ai/blog/openai-vp-vnp-different-lean-proof-november-2026",
           "type": "explainer"
         }
       ]
@@ -980,6 +1111,66 @@
       ]
     },
     {
+      "id": "claude-godel-notebooks-2026",
+      "title": "Claude Deciphers Kurt Gödel’s 1,009-Page Shorthand Notebooks, Unearthing 663 Theorems (~400 Coq-Verified)",
+      "shortTitle": "Gödel’s Shorthand Notebooks (Claude)",
+      "date": "2026-11-13",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Mathematical Logic",
+        "Formal Verification",
+        "Archival Theorem Recovery"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
+      "aiSystem": "Anthropic Claude + Coq Proof Assistant",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Days",
+      "isAnchor": false,
+      "whyItMatters": "Digested 1,009 pages of Kurt Gödel’s enigmatic 1940s Gabelsberger German shorthand in days—extracting 663 mathematical claims (~400 formally verified in Coq), including a lost 1966 near-proof.",
+      "summary": "Working with University of Helsinki logician Jan von Plato’s team, Anthropic’s Claude processed 1,009 pages of Kurt Gödel’s handwritten 1940s Gabelsberger German shorthand notebooks in a matter of days—a scholarly bottleneck that had taken human paleographers and logicians decades to transcribe piecemeal. Claude identified 663 proved, sketched, or conjectured theorems across logic and foundations of mathematics, including a previously unverified 1966 near-proof; when translated into the Coq proof assistant, roughly 400 of the extracted statements compiled and verified directly as stated.",
+      "technicalHighlights": [
+        "Transcribed and mathematically parsed 1,009 pages of Gödel’s dense Gabelsberger German shorthand notebooks in days.",
+        "Extracted 663 distinct mathematical claims and proto-theorems, including previously unstudied arguments from Gödel’s unpublished 1966 notes.",
+        "Paired LLM archival extraction with Coq formalization, verifying approximately 400 of Gödel’s recovered claims directly in the proof assistant."
+      ],
+      "caveats": "Represents AI-assisted historical/archival theorem recovery and formalization of Gödel’s unpublished work rather than originating brand-new mathematical breakthroughs; full scholarly edition and peer-reviewed verification of all 663 extracted claims remain ongoing.",
+      "contributors": [
+        "Jan von Plato",
+        "University of Helsinki Gödel Research Team",
+        "Claude (Anthropic)"
+      ],
+      "institutions": [
+        "University of Helsinki"
+      ],
+      "scores": {
+        "foundational": 74,
+        "ripple": 84,
+        "verification": 86,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Recovers and formalizes hundreds of unpublished theorems from one of the 20th century’s greatest logicians, though it recovers historical mathematics rather than proving a new open conjecture.",
+        "ripple": "Opens an entire new genre of AI-for-science: neuro-symbolic archival recovery and formal verification of legacy notebooks across mathematics and physics.",
+        "verification": "Roughly 400 of the 663 extracted claims were formally verified in Coq, with the remainder undergoing ongoing scholarly review.",
+        "velocity": "Compressed decades of specialized shorthand transcription and logical checking into days."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "The Guardian — ‘Ahead of his time’: AI helps unlock discoveries hidden in Kurt Gödel’s notebooks (Nov 13, 2026)",
+          "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+          "type": "announcement"
+        },
+        {
+          "label": "explainx.ai — Claude and Gödel’s Notebooks: 663 Theorems Checked in Coq",
+          "url": "https://explainx.ai/blog/claude-godel-notebooks-von-plato-663-theorems-coq-what-is-verified-2026",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
       "id": "alphagenome-2-single-cell-2026",
       "title": "AlphaGenome 2 Brings Single-Cell Precision to Human Regulatory Genomics",
       "shortTitle": "AlphaGenome 2 (Single-Cell DNA)",
@@ -1076,7 +1267,8 @@
         "velocity": "Compressed what historically required tens of person-years of formal-methods labor into four weeks with five researchers."
       },
       "enables": [
-        "deepmind-verified-quantum-algos-2026"
+        "deepmind-verified-quantum-algos-2026",
+        "google-cogentic-factoring-2026"
       ],
       "sources": [
         {
@@ -1200,6 +1392,65 @@
           "label": "Anthropic Research — Investigating vault particles with Claude",
           "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
           "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "witten-chiral-fermions-claude-2026",
+      "title": "Edward Witten Credits Claude Opus 5.5 in Lattice Chiral Fermion Gauge Theory Construction",
+      "shortTitle": "Witten Lattice Chiral Fermions (Claude)",
+      "date": "2026-11-03",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Lattice Gauge Theory",
+        "Quantum Field Theory",
+        "Standard Model Foundations"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Anthropic Claude Opus 5.5",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Fields Medalist Edward Witten credits Claude Opus 5.5 three times in a 33-page IAS preprint on lattice chiral fermions—including proposing a key continuum-interpolation construction for the partition function.",
+      "summary": "Institute for Advanced Study physicist and Fields Medalist Edward Witten posted arXiv:2611.05051 ('A Note On Lattice Definition of Gauge Theories With Chiral Fermions'), advancing the decades-old problem of placing anomaly-free chiral gauge theories—such as the Standard Model—rigorously on a spacetime lattice. Witten explicitly credits Anthropic’s Claude Opus 5.5 in three places across the 33-page note, including an in-body attribution for proposing a continuum-interpolation construction at the core of the nonperturbative partition function, as well as assistance on numerous technical details.",
+      "technicalHighlights": [
+        "Constructs a nonperturbative lattice partition function for chiral gauge theories incorporating an AI-suggested continuum-interpolation scheme.",
+        "Marks a watershed moment in fundamental physics: one of the world’s foremost theoretical physicists crediting a frontier LLM for a substantive mathematical construction inside a solo IAS preprint.",
+        "Complements Nathaniel Craig’s GPT-6 Astra lattice Standard Model preprint (Oct 6) and Venkatesa Chandrasekaran’s GPT-6 Astra null-cone quantum gravity paper (Nov 25)."
+      ],
+      "caveats": "Unrefereed v1 arXiv preprint focused on lattice QFT formalism (not a full continuum existence proof or Millennium Prize claim); Witten retains full physics judgment and authorship while crediting Claude Opus 5.5 for the suggested variant and technical details.",
+      "contributors": [
+        "Edward Witten",
+        "Claude Opus 5.5"
+      ],
+      "institutions": [
+        "Institute for Advanced Study (IAS)"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 86,
+        "verification": 78,
+        "velocity": 89
+      },
+      "scoreRationale": {
+        "foundational": "Advances one of the deepest open foundational challenges in quantum field theory—nonperturbative lattice regularization of chiral gauge theories.",
+        "ripple": "Edward Witten publicly crediting Claude Opus 5.5 for a core mathematical construction normalized AI co-derivation across the theoretical physics community overnight.",
+        "verification": "Authored and personally vetted by Edward Witten at IAS, though still an unrefereed v1 preprint without formal proof-assistant verification.",
+        "velocity": "Demonstrates high-leverage human–AI collaboration on subtle topological and lattice-QFT constructions."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Edward Witten — A Note On Lattice Definition of Gauge Theories With Chiral Fermions (arXiv:2611.05051)",
+          "url": "https://arxiv.org/abs/2611.05051",
+          "type": "paper"
+        },
+        {
+          "label": "explainx.ai — Edward Witten Names Claude Opus 5.5 in arXiv Physics Paper",
+          "url": "https://explainx.ai/blog/edward-witten-claude-opus-5-5-lattice-chiral-fermions-arxiv-2026",
+          "type": "explainer"
         }
       ]
     },
@@ -1733,7 +1984,8 @@
         "velocity": "Turned an unproved human strategy into a detailed Lean-formalized candidate construction and triggered four major arXiv papers in 35 days."
       },
       "enables": [
-        "null-cone-quantum-gravity-gpt6-2026"
+        "null-cone-quantum-gravity-gpt6-2026",
+        "witten-chiral-fermions-claude-2026"
       ],
       "sources": [
         {
@@ -1802,13 +2054,74 @@
         "velocity": "Autonomously uncovered by Claude in a single 16M-token search after decades of human attempts yielded only polylogarithmic improvements."
       },
       "enables": [
-        "eth-refutation-claim-2026"
+        "eth-refutation-claim-2026",
+        "linear-time-mst-gpt62-2026"
       ],
       "sources": [
         {
           "label": "Alman, Vassilevska Williams & Anthropic — Truly Subquadratic 3SUM and Truly Subcubic APSP (arXiv:2610.06783)",
           "url": "https://arxiv.org/abs/2610.06783",
           "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "seymour-second-neighborhood-2026",
+      "title": "OpenAI Proves Seymour’s 1990 Second-Neighborhood Conjecture, Corroborated by Specialist Reproof",
+      "shortTitle": "Seymour Second-Neighborhood Conjecture",
+      "date": "2026-09-23",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Graph Theory",
+        "Directed Graphs",
+        "Extremal Combinatorics"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "OpenAI Internal Reasoning Model (openai/math #173)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 36,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Resolves Paul Seymour’s 36-year-old Second-Neighborhood Conjecture for all finite oriented graphs—one of the flagship OpenAI math proofs to earn an independent specialist human reproof (Nov 24, 2026).",
+      "summary": "Released as entry #173 of OpenAI’s openai/math collection (dated September 23, 2026), an internal OpenAI reasoning model produced a complete proof of Paul Seymour’s 1990 Second-Neighborhood Conjecture: every finite oriented graph contains a vertex whose second out-neighborhood is at least as large as its first. Assuming a hypothetical counterexample exists, the AI proof amplifies the violation into strict subset inequalities that force a counting objective past its maximum. On November 24, 2026, independent graph-theory specialists posted a short alternative reproof combining OpenAI’s reduction with a streamlined out-neighborhood growth argument—elevating the result from the bulk catalog into independently corroborated territory.",
+      "technicalHighlights": [
+        "Resolves Paul Seymour’s 1990 conjecture (|N^{++}(v)| ≥ |N^+(v)| for some vertex v) across all finite oriented graphs without degree or tournament restrictions.",
+        "Avoids prior minimum-degree and median-order bottlenecks by amplifying a putative counterexample into a contradiction on a global subset counting objective.",
+        "Supported on November 24, 2026 by an independent short specialist reproof validating and streamlining OpenAI’s core reduction."
+      ],
+      "caveats": "Both OpenAI’s September 23 manuscript and the November 24 specialist reproof are unrefereed preprints awaiting formal journal peer review and full Lean certification.",
+      "contributors": [
+        "OpenAI Science Team"
+      ],
+      "institutions": [
+        "OpenAI"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 77,
+        "verification": 84,
+        "velocity": 94
+      },
+      "scoreRationale": {
+        "foundational": "Settles one of the best-known open conjectures in directed graph theory since Paul Seymour posed it in 1990.",
+        "ripple": "Proves that genuine, human-verifiable breakthroughs emerged from OpenAI’s autonomous mathematics pipeline and could be rapidly digested and shortened by specialists.",
+        "verification": "Substantially stronger than an unreviewed bulk dump thanks to the independent November 24 specialist reproof, though journal refereeing is still pending.",
+        "velocity": "Solved a stubborn 36-year-old extremal graph theory conjecture autonomously."
+      },
+      "enables": [
+        "openai-math-bulk-ugc-2026"
+      ],
+      "sources": [
+        {
+          "label": "Binary Verse AI — Seymour Second Neighborhood Conjecture: OpenAI Proof Explained",
+          "url": "https://binaryverseai.com/seymour-second-neighborhood-conjecture-proof/",
+          "type": "explainer"
+        },
+        {
+          "label": "Kingy AI Breakthrough Tracker — Specialist Reproof Supports Seymour’s Second-Neighborhood Claim (Nov 24, 2026)",
+          "url": "https://kingy.ai/mathematics-science-breakthrough-tracker/",
+          "type": "explainer"
         }
       ]
     },
@@ -2239,6 +2552,74 @@
           "label": "WhatAIFound Registry — Improved lower bound for large gaps between consecutive primes (Aug 25, 2026)",
           "url": "https://whataifound.org/finding/2026-08-25-erdos-4-prime-gaps",
           "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "complex-structure-s6-claude-2026",
+      "title": "Claude & Levent Alpöge Construct Complex Structures on the 6-Sphere (Hopf’s 1948 Problem)",
+      "shortTitle": "Complex Structure on 6-Sphere (S⁶)",
+      "date": "2026-08-23",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Complex Geometry",
+        "Differential Topology",
+        "Algebraic Geometry"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Anthropic Claude (Unreleased Research Model)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": 78,
+      "aiTimeToSolve": null,
+      "isAnchor": false,
+      "whyItMatters": "Resolves Heinz Hopf’s iconic 78-year-old problem by constructing a complex structure on S⁶—triggering a wave of independent arXiv proofs and infinite families by human complex geometers.",
+      "summary": "On August 23, 2026, Levent Alpöge circulated a 108-page manuscript produced with Anthropic’s Claude (alpo.ge/s6.pdf) claiming an affirmative answer to Heinz Hopf’s celebrated 1948 problem: whether the six-dimensional sphere S⁶ admits an integrable complex structure. Constructing a 1-parameter family of compact complex threefolds diffeomorphic to S⁶ by completing the (3, 4, ∞) modular family of 2-tori, the Alpöge–Claude breakthrough triggered an extraordinary response from human complex geometers—with Philip Engel (arXiv:2609.38442), Jeff Viaclovsky (arXiv:2609.33785, arXiv:2610.10451), and Wenfei Liu & Sönke Rollenske (arXiv:2609.33826) rapidly digesting, simplifying, and generalizing the construction into two-parameter and infinitely many biholomorphically inequivalent complex structures on S⁶.",
+      "technicalHighlights": [
+        "Answers Heinz Hopf’s 1948 question in the affirmative by building a 1-parameter family of compact complex threefolds diffeomorphic to the standard 6-sphere S⁶.",
+        "Completes the (3, 4, ∞) modular family of 2-tori at its three special points via logarithmic transformations.",
+        "Rapidly corroborated and generalized by multiple independent human complex geometers (Engel, Viaclovsky, Liu–Rollenske) into multi-parameter and infinite families of inequivalent complex structures on S⁶."
+      ],
+      "caveats": "Originally circulated as a self-hosted 108-page PDF without a Lean formalization; while multiple independent specialist arXiv preprints build directly on and extend the Alpöge–Claude construction, formal journal peer review of the original manuscript and its extensions is still completing.",
+      "contributors": [
+        "Levent Alpöge",
+        "Claude (Anthropic)",
+        "Philip Engel (independent exposition)",
+        "Jeff Viaclovsky (extensions)",
+        "Wenfei Liu & Sönke Rollenske (extensions)"
+      ],
+      "institutions": [
+        "Anthropic",
+        "Harvard University"
+      ],
+      "scores": {
+        "foundational": 94,
+        "ripple": 87,
+        "verification": 88,
+        "velocity": 96
+      },
+      "scoreRationale": {
+        "foundational": "Settles one of the most famous, longest-standing open problems in differential and complex geometry (Hopf 1948, 78 years open)—a problem that had tripped up decades of top geometers.",
+        "ripple": "Immediately launched a vibrant subfield of new arXiv papers constructing two-parameter families, arbitrary Kuranishi dimensions, and non-Gauduchon Hodge theory on complex S⁶.",
+        "verification": "No Lean formalization or completed journal refereeing yet, but unusually high independent confidence given multiple specialist arXiv papers confirming and extending the construction.",
+        "velocity": "Cracked a 78-year-old geometry monument in an AI-assisted breakthrough that human geometers immediately ran with."
+      },
+      "enables": [],
+      "sources": [
+        {
+          "label": "Philip Engel — Complex structures on S⁶ (Independent Exposition, arXiv:2609.38442)",
+          "url": "https://arxiv.org/abs/2609.38442",
+          "type": "paper"
+        },
+        {
+          "label": "Jeff Viaclovsky — A two-parameter family of complex structures on S⁶ (arXiv:2609.33785)",
+          "url": "https://arxiv.org/abs/2609.33785",
+          "type": "paper"
+        },
+        {
+          "label": "Wenfei Liu & Sönke Rollenske — Yet another family of complex structures on S⁶ (arXiv:2609.33826)",
+          "url": "https://arxiv.org/abs/2609.33826",
+          "type": "paper"
         }
       ]
     },
@@ -3290,6 +3671,69 @@
         {
           "label": "Quanta Magazine — Why the Legendary Erdős Problems Are Falling to AI",
           "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/",
+          "type": "explainer"
+        }
+      ]
+    },
+    {
+      "id": "vibe-physics-qcd-claude-2026",
+      "title": "Matthew Schwartz’s ‘Vibe Physics’: First End-to-End AI-Executed QCD Resummation Paper",
+      "shortTitle": "Vibe Physics: QCD Resummation (Claude)",
+      "date": "2026-01-05",
+      "discipline": "Physics & Quantum",
+      "subfields": [
+        "Quantum Chromodynamics",
+        "Effective Field Theory",
+        "AI-Assisted Research Methodology"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Anthropic Claude Opus 4.5 + Claude Code (36M tokens)",
+      "verificationStatus": "Preprint / Active Review",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "2 weeks",
+      "isAnchor": false,
+      "whyItMatters": "Harvard QFT textbook author Matthew Schwartz guided Claude Opus 4.5 to compute, analyze, and write a complete QCD effective-field-theory paper in two weeks without manually editing files—sparking the ‘Vibe Physics’ shift.",
+      "summary": "In January 2026 (followed by his landmark March 23 Anthropic guest essay 'Vibe Physics: The AI Grad Student'), Harvard theoretical physicist Matthew Schwartz posted arXiv:2601.02484 ('Resummation of the C-Parameter Sudakov Shoulder Using Effective Field Theory'), whose abstract declares that all calculations, numerical analysis, and manuscript preparation were performed by Claude under physicist supervision. Across two weeks, 270 sessions, 110 drafts, 36 million tokens, and 40+ CPU hours, Schwartz directed Claude Opus 4.5 and Claude Code through a complete Soft-Collinear Effective Theory (SCET) derivation without editing files himself—demonstrating PhD-level execution in theoretical physics and catalyzing the 2026 wave of AI-assisted physics papers.",
+      "technicalHighlights": [
+        "Completed a full Soft-Collinear Effective Theory (SCET) factorization and Sudakov-shoulder resummation calculation for the C-parameter event shape in QCD.",
+        "Executed across 270 sessions, 110 drafts, and 36 million tokens in two weeks with Claude Opus 4.5 + Claude Code performing all analytic derivations, numerical checks, and LaTeX drafting under expert supervision.",
+        "Coined 'Vibe Physics' and framed the 'G2 vs. G3+ taste' benchmark for AI in theoretical science, directly foreshadowing late-2026 physics collaborations by Craig, Witten, and Chandrasekaran."
+      ],
+      "caveats": "Schwartz candidly emphasized that the physics result itself was a well-defined, graduate-student-level methodological extension rather than a paradigm-shifting discovery, and required continuous expert oversight to catch subtle errors and spurious citations.",
+      "contributors": [
+        "Matthew D. Schwartz",
+        "Claude Opus 4.5"
+      ],
+      "institutions": [
+        "Harvard University"
+      ],
+      "scores": {
+        "foundational": 70,
+        "ripple": 85,
+        "verification": 82,
+        "velocity": 90
+      },
+      "scoreRationale": {
+        "foundational": "Solid but incremental graduate-level QCD effective-field-theory calculation; its historic weight is methodological rather than a new physical law.",
+        "ripple": "Widely credited as the cultural and methodological inflection point ('Vibe Physics') that convinced theoretical physicists to deploy coding/reasoning agents directly inside QFT derivations.",
+        "verification": "Every physics step was supervised and cross-checked by a leading QFT textbook author (Matthew Schwartz), though early drafts surfaced citation flaws and formal journal review is separate.",
+        "velocity": "Compressed a multi-month graduate theoretical physics project into two weeks of agentic iteration."
+      },
+      "enables": [
+        "claude-black-hole-physics-2026",
+        "witten-chiral-fermions-claude-2026",
+        "null-cone-quantum-gravity-gpt6-2026"
+      ],
+      "sources": [
+        {
+          "label": "Matthew Schwartz — Resummation of the C-Parameter Sudakov Shoulder Using Effective Field Theory (arXiv:2601.02484)",
+          "url": "https://arxiv.org/abs/2601.02484",
+          "type": "paper"
+        },
+        {
+          "label": "Anthropic Research — Vibe physics: The AI grad student (Guest Essay by Matthew Schwartz, Mar 23, 2026)",
+          "url": "https://www.anthropic.com/research/vibe-physics",
           "type": "explainer"
         }
       ]
