@@ -35,9 +35,16 @@ This project is open source and designed for community curation:
 - **No coding required**: Open a [Submit a Breakthrough](../../issues/new?template=submit-breakthrough.yml) or [Challenge a Score / Verification Status](../../issues/new?template=challenge-score.yml) issue.
 - **Pull requests**: Edit [`data/breakthroughs.json`](./data/breakthroughs.json), run `npm run validate`, and open a PR. See [CONTRIBUTING.md](./CONTRIBUTING.md) and [METHODOLOGY.md](./METHODOLOGY.md) for full guidelines.
 
-## Deploying to GitHub Pages
+## Deploying to Cloudflare Workers
 
-This repository includes `.github/workflows/deploy.yml`. Once pushed to GitHub, enable **Settings → Pages → Source: GitHub Actions**, and every push to `main` automatically validates the dataset and publishes the live site.
+Live site: **[novumindex.org](https://novumindex.org/)**
+
+This repository is deployed via **Cloudflare Workers Static Assets** configured in [`wrangler.jsonc`](./wrangler.jsonc) (`assets.directory: "./dist"`, custom domains `novumindex.org` and `www.novumindex.org`). GitHub Actions (`.github/workflows/ci.yml`) validates `data/breakthroughs.json` and verifies the Vite build on every push and pull request.
+
+```bash
+npm run validate && npm run build
+npx wrangler deploy
+```
 
 ## License
 
