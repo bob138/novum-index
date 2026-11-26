@@ -38,7 +38,7 @@ export function renderLineageGraph(filteredItems, allRankedItems) {
   const allColumns = [
     {
       id: 'anchors',
-      title: '2020–23 · ANCHORS',
+      title: '≤ 2023 · PIONEERS',
       match: (n) => n.date < '2024-01-01',
       items: [],
     },

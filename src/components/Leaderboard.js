@@ -96,8 +96,19 @@ export function renderLeaderboard(items, totalCount, sortBy = 'impact') {
                   <span class="disc-tag__dot" style="background: ${disc.colorVar};"></span>
                   ${escapeHtml(item.discipline)}
                 </span>
-                ${item.isAnchor ? '<span class="anchor-tag" title="2020–2023 historical calibration benchmark">Calibration Anchor</span>' : ''}
+                ${
+                  item.aiParadigm === 'Symbolic / Classical'
+                    ? '<span class="anchor-tag" title="Pre-2020 classical / symbolic AI pioneer">Symbolic Pioneer</span>'
+                    : item.isAnchor
+                      ? '<span class="anchor-tag" title="2020–2023 early neural calibration benchmark">2020–23 Anchor</span>'
+                      : ''
+                }
                 <span class="ai-tag">${escapeHtml(item.aiRole)}</span>
+                ${
+                  item.aiParadigm !== 'Symbolic / Classical'
+                    ? `<span class="ai-tag" title="AI architectural paradigm">${item.aiParadigm === 'Neuro-Symbolic' ? 'Neuro-Symbolic' : 'Neural'}</span>`
+                    : ''
+                }
                 ${
                   item.yearsUnsolved && item.aiTimeToSolve
                     ? `<span class="time-tag" title="${item.yearsUnsolved} human years unsolved vs. ${escapeHtml(item.aiTimeToSolve)} with AI">${item.yearsUnsolved}y → ${escapeHtml(item.aiTimeToSolve)}</span>`

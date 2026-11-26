@@ -31,6 +31,7 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
 
   const hasFilters =
     state.discipline !== 'all' ||
+    state.paradigm !== 'all' ||
     state.aiRole !== 'all' ||
     state.status !== 'all' ||
     state.year !== 'all' ||
@@ -117,6 +118,14 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
           <span class="search-box__kbd" aria-hidden="true">/</span>
         </div>
 
+        <select id="filter-paradigm" class="filter-select" aria-label="Filter by AI paradigm">
+          <option value="all" ${state.paradigm === 'all' ? 'selected' : ''}>All AI Paradigms</option>
+          <option value="modern" ${state.paradigm === 'modern' ? 'selected' : ''}>Modern Neural &amp; Hybrid (2020+)</option>
+          <option value="Neural / Deep Learning" ${state.paradigm === 'Neural / Deep Learning' ? 'selected' : ''}>Neural / Deep Learning</option>
+          <option value="Neuro-Symbolic" ${state.paradigm === 'Neuro-Symbolic' ? 'selected' : ''}>Neuro-Symbolic</option>
+          <option value="Symbolic / Classical" ${state.paradigm === 'Symbolic / Classical' ? 'selected' : ''}>Symbolic / Classical (&lt;2020)</option>
+        </select>
+
         <select id="filter-ai-role" class="filter-select" aria-label="Filter by AI role">
           <option value="all" ${state.aiRole === 'all' ? 'selected' : ''}>All AI Roles</option>
           <option value="Autonomous AI" ${state.aiRole === 'Autonomous AI' ? 'selected' : ''}>Autonomous AI</option>
@@ -132,9 +141,10 @@ export function renderFilterBar(state, allItems, isCustomWeights) {
         </select>
 
         <select id="filter-year" class="filter-select" aria-label="Filter by timeframe">
-          <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (2020 – 2026)</option>
+          <option value="all" ${state.year === 'all' ? 'selected' : ''}>All (1996 – 2026)</option>
           <option value="2024-2026" ${state.year === '2024-2026' ? 'selected' : ''}>2024 – 2026 Wave Only</option>
-          <option value="anchors" ${state.year === 'anchors' ? 'selected' : ''}>2020 – 2023 Anchors</option>
+          <option value="anchors" ${state.year === 'anchors' ? 'selected' : ''}>2020 – 2023 Early Neural</option>
+          <option value="pre-2020" ${state.year === 'pre-2020' ? 'selected' : ''}>Pre-2020 Symbolic Pioneers</option>
           <option value="2026" ${state.year === '2026' ? 'selected' : ''}>2026 Only</option>
           <option value="2025" ${state.year === '2025' ? 'selected' : ''}>2025 Only</option>
           <option value="2024" ${state.year === '2024' ? 'selected' : ''}>2024 Only</option>

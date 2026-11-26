@@ -15,6 +15,11 @@ const DISCIPLINES = new Set([
 ]);
 
 const AI_ROLES = new Set(['Autonomous AI', 'AI-Assisted']);
+const AI_PARADIGMS = new Set([
+  'Neural / Deep Learning',
+  'Neuro-Symbolic',
+  'Symbolic / Classical',
+]);
 
 const VERIFICATION_STATUSES = new Set([
   'Formally Verified',
@@ -100,6 +105,9 @@ function validate() {
       if (!DATE_RE.test(item.date || '')) errors.push(`${ctx}: date must be YYYY-MM-DD`);
       if (!DISCIPLINES.has(item.discipline)) errors.push(`${ctx}: invalid discipline "${item.discipline}"`);
       if (!AI_ROLES.has(item.aiRole)) errors.push(`${ctx}: invalid aiRole "${item.aiRole}" (must be Autonomous AI or AI-Assisted)`);
+      if (!AI_PARADIGMS.has(item.aiParadigm)) {
+        errors.push(`${ctx}: invalid aiParadigm "${item.aiParadigm}"`);
+      }
       if (typeof item.aiSystem !== 'string' || item.aiSystem.trim().length < 2) {
         errors.push(`${ctx}: aiSystem must be a non-empty string identifying the AI model or architecture`);
       }

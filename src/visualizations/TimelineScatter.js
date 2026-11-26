@@ -22,11 +22,30 @@ export function renderTimelineScatter(items) {
   const innerW = width - margin.left - margin.right;
   const innerH = height - margin.top - margin.bottom;
 
-  const hasAnchors = items.some((i) => i.date < '2024-01-01');
+  const hasPioneers = items.some((i) => i.date < '2020-01-01');
+  const hasEarlyAnchors = items.some((i) => i.date >= '2020-01-01' && i.date < '2024-01-01');
   const hasWave = items.some((i) => i.date >= '2024-01-01');
+  const hasModern = hasEarlyAnchors || hasWave;
+  const splitPioneerZone = hasPioneers && hasModern;
 
-  const minTime = hasAnchors ? toTimestamp('2020-08-01') : toTimestamp('2024-04-01');
-  const maxTime = hasWave ? toTimestamp('2026-12-20') : toTimestamp('2024-03-01');
+  const pioneerZoneW = splitPioneerZone ? Math.round(innerW * 0.14) : 0;
+  const pioneerGap = splitPioneerZone ? 16 : 0;
+  const modernStartX = margin.left + pioneerZoneW + pioneerGap;
+  const modernW = innerW - pioneerZoneW - pioneerGap;
+
+  const pioneerMinTime = toTimestamp('1994-01-01');
+  const pioneerMaxTime = toTimestamp('2019-06-01');
+
+  const minTime = hasEarlyAnchors || splitPioneerZone
+    ? toTimestamp('2019-11-01')
+    : hasWave
+      ? toTimestamp('2024-04-01')
+      : toTimestamp('1994-01-01');
+  const maxTime = hasWave
+    ? toTimestamp('2026-12-20')
+    : hasEarlyAnchors
+      ? toTimestamp('2024-03-01')
+      : toTimestamp('2019-06-01');
 
   const rawMinY = Math.min(...items.map((i) => i.compositeScore));
   const rawMaxY = Math.max(...items.map((i) => i.compositeScore));
@@ -36,6 +55,13 @@ export function renderTimelineScatter(items) {
 
   const scaleX = (iso) => {
     const t = toTimestamp(iso);
+    if (splitPioneerZone) {
+      if (iso < '2020-01-01') {
+        const clamped = Math.max(pioneerMinTime, Math.min(pioneerMaxTime, t));
+        return margin.left + ((clamped - pioneerMinTime) / (pioneerMaxTime - pioneerMinTime)) * pioneerZoneW;
+      }
+      return modernStartX + ((t - minTime) / (maxTime - minTime)) * modernW;
+    }
     return margin.left + ((t - minTime) / (maxTime - minTime)) * innerW;
   };
 
@@ -43,35 +69,52 @@ export function renderTimelineScatter(items) {
     return margin.top + innerH - ((score - minY) / spanY) * innerH;
   };
 
-  const xTicks = hasAnchors
-    ? hasWave
-      ? [
-          { iso: '2021-01-01', label: '2021', major: true },
-          { iso: '2022-01-01', label: '2022', major: true },
-          { iso: '2023-01-01', label: '2023', major: true },
-          { iso: '2024-01-01', label: '2024', major: true },
-          { iso: '2025-01-01', label: '2025', major: true },
-          { iso: '2026-01-01', label: '2026', major: true },
-          { iso: '2026-11-25', label: 'Nov 26', major: false },
-        ]
+  const xTicks = !hasModern
+    ? [
+        { iso: '1996-10-10', label: '1996', major: true },
+        { iso: '2005-01-01', label: '2005', major: false },
+        { iso: '2009-04-03', label: '2009', major: true },
+        { iso: '2016-05-03', label: '2016', major: true },
+      ]
+    : hasEarlyAnchors || splitPioneerZone
+      ? hasWave
+        ? [
+            ...(splitPioneerZone
+              ? [
+                  { iso: '1996-10-10', label: '’96', major: false },
+                  { iso: '2016-05-03', label: '’16', major: false },
+                ]
+              : []),
+            { iso: '2020-01-01', label: '2020', major: true },
+            { iso: '2021-01-01', label: '2021', major: true },
+            { iso: '2022-01-01', label: '2022', major: true },
+            { iso: '2023-01-01', label: '2023', major: true },
+            { iso: '2024-01-01', label: '2024', major: true },
+            { iso: '2025-01-01', label: '2025', major: true },
+            { iso: '2026-01-01', label: '2026', major: true },
+            { iso: '2026-11-25', label: 'Nov 26', major: false },
+          ]
+        : [
+            ...(splitPioneerZone
+              ? [{ iso: '2009-01-01', label: '1996–2016', major: false }]
+              : []),
+            { iso: '2020-01-01', label: '2020', major: true },
+            { iso: '2021-01-01', label: '2021', major: true },
+            { iso: '2022-01-01', label: '2022', major: true },
+            { iso: '2023-01-01', label: '2023', major: true },
+            { iso: '2024-01-01', label: '2024', major: true },
+          ]
       : [
-          { iso: '2020-11-01', label: 'Nov 2020', major: false },
-          { iso: '2021-07-01', label: 'Jul 2021', major: false },
-          { iso: '2022-01-01', label: '2022', major: true },
-          { iso: '2023-01-01', label: '2023', major: true },
-          { iso: '2024-01-01', label: '2024', major: true },
-        ]
-    : [
-        { iso: '2024-05-01', label: 'May 2024', major: false },
-        { iso: '2024-09-01', label: 'Sep 2024', major: false },
-        { iso: '2025-01-01', label: 'Jan 2025', major: true },
-        { iso: '2025-05-01', label: 'May 2025', major: false },
-        { iso: '2025-09-01', label: 'Sep 2025', major: false },
-        { iso: '2026-01-01', label: 'Jan 2026', major: true },
-        { iso: '2026-05-01', label: 'May 2026', major: false },
-        { iso: '2026-09-01', label: 'Sep 2026', major: false },
-        { iso: '2026-12-01', label: 'Dec 2026', major: false },
-      ];
+          { iso: '2024-05-01', label: 'May 2024', major: false },
+          { iso: '2024-09-01', label: 'Sep 2024', major: false },
+          { iso: '2025-01-01', label: 'Jan 2025', major: true },
+          { iso: '2025-05-01', label: 'May 2025', major: false },
+          { iso: '2025-09-01', label: 'Sep 2025', major: false },
+          { iso: '2026-01-01', label: 'Jan 2026', major: true },
+          { iso: '2026-05-01', label: 'May 2026', major: false },
+          { iso: '2026-09-01', label: 'Sep 2026', major: false },
+          { iso: '2026-12-01', label: 'Dec 2026', major: false },
+        ];
 
   const yTicks = [];
   for (let y = minY; y <= maxY; y += 5) {
@@ -80,7 +123,8 @@ export function renderTimelineScatter(items) {
 
   const floodX1 = hasWave ? scaleX('2026-08-01') : null;
   const floodX2 = hasWave ? scaleX('2026-12-05') : null;
-  const anchorDividerX = hasAnchors && hasWave ? scaleX('2024-02-01') : null;
+  const pioneerDividerX = splitPioneerZone ? margin.left + pioneerZoneW + pioneerGap / 2 : null;
+  const anchorDividerX = (hasEarlyAnchors || splitPioneerZone) && hasWave ? scaleX('2024-01-15') : null;
 
   // Compute node positions + light deterministic jitter for tightly clustered items
   const seenCoords = new Map();
@@ -180,7 +224,7 @@ export function renderTimelineScatter(items) {
         <div>
           <h2 class="viz-card__title">AI Impact × Time Landscape</h2>
           <p class="viz-card__desc">
-            Every AI-assisted and AI-led breakthrough plotted by announcement date and live composite Impact Index—showing the compression from isolated 2020–2023 landmarks into the dense 2026 wave. Circle size reflects cross-field ripple &amp; problem age; outer rings mark formally verified results.
+            Every breakthrough plotted by announcement date and live composite Impact Index—contrasting rare pre-2020 symbolic AI pioneers (◆) with the 2020–2023 deep learning inflection and dense 2024–2026 neural &amp; neuro-symbolic wave (●). Outer rings mark formally verified results.
           </p>
         </div>
       </div>
@@ -197,6 +241,10 @@ export function renderTimelineScatter(items) {
           )
           .join('')}
         <span class="viz-legend__item" style="margin-left: auto;">
+          <span style="display:inline-block;width:8px;height:8px;background:var(--ink-muted);transform:rotate(45deg);margin-right:2px;"></span>
+          <span>◆ Symbolic (&lt;2020)</span>
+        </span>
+        <span class="viz-legend__item">
           <span class="viz-legend__ring"></span>
           <span>Outer ring = Formally Verified</span>
         </span>
@@ -208,19 +256,50 @@ export function renderTimelineScatter(items) {
           id="timeline-scatter-svg"
           viewBox="0 0 ${width} ${height}"
           role="img"
-          aria-label="Scatter plot of scientific breakthroughs by date and composite impact score"
+          aria-label="Scatter plot of AI scientific breakthroughs by date and composite impact score"
         >
-          <!-- Subtle Divider between 2020-2023 Anchors and 2024-2026 Wave -->
+          <!-- Pre-2020 Symbolic Pioneers Compressed Band -->
           ${
-            anchorDividerX !== null
+            pioneerDividerX !== null
               ? `
             <rect
               x="${margin.left}"
               y="${margin.top}"
-              width="${(anchorDividerX - margin.left).toFixed(1)}"
+              width="${(pioneerDividerX - margin.left).toFixed(1)}"
               height="${innerH}"
               fill="var(--bg-surface-alt)"
-              opacity="0.45"
+              opacity="0.72"
+            />
+            <line
+              x1="${pioneerDividerX.toFixed(1)}"
+              y1="${margin.top}"
+              x2="${pioneerDividerX.toFixed(1)}"
+              y2="${margin.top + innerH}"
+              stroke="var(--border-strong)"
+              stroke-width="1.3"
+              stroke-dasharray="3 3"
+            />
+            <text
+              x="${(margin.left + (pioneerDividerX - margin.left) / 2).toFixed(1)}"
+              y="${margin.top - 11}"
+              text-anchor="middle"
+              class="viz-annotation"
+            >1996–2019 · Symbolic</text>
+          `
+              : ''
+          }
+
+          <!-- Subtle Divider between 2020-2023 Early Neural Anchors and 2024-2026 Wave -->
+          ${
+            anchorDividerX !== null
+              ? `
+            <rect
+              x="${(pioneerDividerX ?? margin.left).toFixed(1)}"
+              y="${margin.top}"
+              width="${(anchorDividerX - (pioneerDividerX ?? margin.left)).toFixed(1)}"
+              height="${innerH}"
+              fill="var(--bg-surface-alt)"
+              opacity="0.38"
             />
             <line
               x1="${anchorDividerX.toFixed(1)}"
@@ -232,17 +311,17 @@ export function renderTimelineScatter(items) {
               stroke-dasharray="4 4"
             />
             <text
-              x="${(margin.left + (anchorDividerX - margin.left) / 2).toFixed(1)}"
+              x="${((pioneerDividerX ?? margin.left) + (anchorDividerX - (pioneerDividerX ?? margin.left)) / 2).toFixed(1)}"
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
-            >2020–2023 Calibration Anchors</text>
+            >2020–23 · Early Neural</text>
             <text
               x="${(anchorDividerX + (width - margin.right - anchorDividerX) / 2).toFixed(1)}"
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
-            >2024–2026 Acceleration Wave</text>
+            >2024–2026 Neural &amp; Neuro-Symbolic Wave</text>
           `
               : ''
           }
@@ -318,10 +397,12 @@ export function renderTimelineScatter(items) {
             .map(({ item, cx, cy, r }) => {
               const disc = DISCIPLINE_META[item.discipline];
               const isFormal = item.verificationStatus === 'Formally Verified';
+              const isSymbolic = item.aiParadigm === 'Symbolic / Classical';
               const isDisputed =
                 item.verificationStatus === 'Contested / Partial' ||
                 item.verificationStatus === 'Preprint / Active Review';
               const lbl = labelMap.get(item.id);
+              const dSize = r * 1.45;
 
               return `
               <g
@@ -334,20 +415,38 @@ export function renderTimelineScatter(items) {
               >
                 ${
                   isFormal
-                    ? `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(r + 3.8).toFixed(1)}" fill="none" stroke="${disc.colorVar}" stroke-width="1.5" opacity="0.85" />`
+                    ? isSymbolic
+                      ? `<rect x="${(cx - (dSize + 4.5) / 2).toFixed(1)}" y="${(cy - (dSize + 4.5) / 2).toFixed(1)}" width="${(dSize + 4.5).toFixed(1)}" height="${(dSize + 4.5).toFixed(1)}" rx="1.5" transform="rotate(45 ${cx.toFixed(1)} ${cy.toFixed(1)})" fill="none" stroke="${disc.colorVar}" stroke-width="1.5" opacity="0.85" />`
+                      : `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(r + 3.8).toFixed(1)}" fill="none" stroke="${disc.colorVar}" stroke-width="1.5" opacity="0.85" />`
                     : ''
                 }
-                <circle
-                  class="scatter-node__circle"
-                  cx="${cx.toFixed(1)}"
-                  cy="${cy.toFixed(1)}"
-                  r="${r.toFixed(1)}"
-                  fill="${disc.colorVar}"
-                  fill-opacity="${isDisputed ? '0.62' : '0.88'}"
-                  stroke="var(--bg-surface)"
-                  stroke-width="1.5"
-                  ${isDisputed ? 'stroke-dasharray="2.5 2"' : ''}
-                />
+                ${
+                  isSymbolic
+                    ? `<rect
+                        class="scatter-node__circle"
+                        x="${(cx - dSize / 2).toFixed(1)}"
+                        y="${(cy - dSize / 2).toFixed(1)}"
+                        width="${dSize.toFixed(1)}"
+                        height="${dSize.toFixed(1)}"
+                        rx="1.5"
+                        transform="rotate(45 ${cx.toFixed(1)} ${cy.toFixed(1)})"
+                        fill="${disc.colorVar}"
+                        fill-opacity="0.88"
+                        stroke="var(--bg-surface)"
+                        stroke-width="1.5"
+                      />`
+                    : `<circle
+                        class="scatter-node__circle"
+                        cx="${cx.toFixed(1)}"
+                        cy="${cy.toFixed(1)}"
+                        r="${r.toFixed(1)}"
+                        fill="${disc.colorVar}"
+                        fill-opacity="${isDisputed ? '0.62' : '0.88'}"
+                        stroke="var(--bg-surface)"
+                        stroke-width="1.5"
+                        ${isDisputed ? 'stroke-dasharray="2.5 2"' : ''}
+                      />`
+                }
                 ${
                   lbl
                     ? `<text x="${lbl.lx.toFixed(1)}" y="${lbl.ly.toFixed(1)}" text-anchor="${lbl.anchor}" class="scatter-node__label">${escapeHtml(lbl.text)}</text>`

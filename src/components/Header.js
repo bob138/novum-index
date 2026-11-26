@@ -4,8 +4,9 @@ const REPO_URL = 'https://github.com/bob138/frontier-index';
 
 export function renderHeader(meta, allItems, theme) {
   const totalCount = allItems.length;
-  const anchorCount = allItems.filter((b) => b.isAnchor).length;
-  const waveCount = totalCount - anchorCount;
+  const pioneerCount = allItems.filter((b) => b.date < '2020-01-01').length;
+  const earlyNeuralCount = allItems.filter((b) => b.date >= '2020-01-01' && b.date < '2024-01-01').length;
+  const waveCount = allItems.filter((b) => b.date >= '2024-01-01').length;
   const formallyVerifiedCount = allItems.filter(
     (b) => b.verificationStatus === 'Formally Verified'
   ).length;
@@ -60,12 +61,12 @@ export function renderHeader(meta, allItems, theme) {
       <div class="container">
         <div class="hero__grid">
           <div>
-            <p class="hero__kicker">Open-Source AI-for-Science Ledger · 2020–2026 Acceleration Tracker</p>
+            <p class="hero__kicker">Open-Source AI-for-Science Ledger · 1996–2026 Paradigm &amp; Acceleration Tracker</p>
             <h1 class="hero__title">
               Tracking the <em>exponential</em> rise of AI in scientific discovery.
             </h1>
             <p class="hero__lead">
-              From early milestones like AlphaFold 2 and AlphaTensor to autonomous multi-agent proofs and rapid discoveries posted directly to GitHub, arXiv, and X, AI is accelerating scientific output at an unprecedented rate. The Frontier Index curates exclusively AI-assisted and AI-led breakthroughs—verifying provenance, tracking unpublished claims alongside formally verified theorems, and visualizing the curve over time.
+              From rare pre-2020 symbolic pioneers to the deep-learning breakout (Halicin, AlphaFold 2) and today’s surge of autonomous neural and neuro-symbolic discoveries posted directly to GitHub, arXiv, and X, The Frontier Index tracks exclusively AI-assisted and AI-led breakthroughs—separating paradigms cleanly while visualizing the curve over time.
             </p>
           </div>
           <figure class="hero__artwork">
@@ -85,7 +86,7 @@ export function renderHeader(meta, allItems, theme) {
           <div class="pulse-stat">
             <div class="pulse-stat__value">${totalCount}</div>
             <div class="pulse-stat__label">AI Breakthroughs</div>
-            <div class="pulse-stat__note">${waveCount} in 2024–26 · ${anchorCount} in 2020–23</div>
+            <div class="pulse-stat__note">${waveCount} in 2024–26 · ${earlyNeuralCount} in 2020–23 · ${pioneerCount} pre-2020</div>
           </div>
           <div class="pulse-stat">
             <div class="pulse-stat__value">${totalOpenYears.toLocaleString('en-US')}+ yrs</div>

@@ -36,6 +36,7 @@
           "discipline",
           "subfields",
           "aiRole",
+          "aiParadigm",
           "aiSystem",
           "verificationStatus",
           "whyItMatters",
@@ -71,6 +72,10 @@
           "aiRole": {
             "type": "string",
             "enum": ["Autonomous AI", "AI-Assisted"]
+          },
+          "aiParadigm": {
+            "type": "string",
+            "enum": ["Neural / Deep Learning", "Neuro-Symbolic", "Symbolic / Classical"]
           },
           "aiSystem": { "type": "string", "minLength": 2 },
           "verificationStatus": {

@@ -63,9 +63,16 @@ export function renderDossierModal(item, allRanked, weights) {
                 <span class="disc-tag__dot" style="background: ${disc.colorVar};"></span>
                 ${escapeHtml(item.discipline)}
               </span>
-              ${item.isAnchor ? '<span class="anchor-tag">2020–2023 Calibration Anchor</span>' : ''}
+              ${
+                item.aiParadigm === 'Symbolic / Classical'
+                  ? '<span class="anchor-tag">Pre-2020 Symbolic Pioneer</span>'
+                  : item.isAnchor
+                    ? '<span class="anchor-tag">2020–2023 Calibration Anchor</span>'
+                    : ''
+              }
               ${renderStatusBadge(item.verificationStatus)}
               <span class="ai-tag">${escapeHtml(item.aiRole)}</span>
+              <span class="ai-tag">${escapeHtml(item.aiParadigm)}</span>
               ${
                 item.yearsUnsolved && item.aiTimeToSolve
                   ? `<span class="time-tag">${item.yearsUnsolved}y open → ${escapeHtml(item.aiTimeToSolve)} AI</span>`
@@ -86,8 +93,8 @@ export function renderDossierModal(item, allRanked, weights) {
               <dd class="dossier__meta-value mono" style="margin: 0;">${formatDate(item.date)}</dd>
             </div>
             <div>
-              <dt class="dossier__meta-label">AI System / Provenance</dt>
-              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.aiSystem || item.aiRole)}</dd>
+              <dt class="dossier__meta-label">AI System &amp; Paradigm</dt>
+              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.aiSystem || item.aiRole)} <span style="color: var(--ink-muted);">(${escapeHtml(item.aiParadigm)})</span></dd>
             </div>
             ${
               item.yearsUnsolved || item.aiTimeToSolve

@@ -8,7 +8,7 @@
 
 ## Features
 
-- **AI-Only Impact & Chronological Tracker**: Curates 54 AI-assisted and autonomous AI breakthroughs across 5 core disciplines—47 from the 2024–2026 wave calibrated against 7 landmark 2020–2023 AI anchors (AlphaFold 2, DeepMind Knot Theory, Tokamak RL Plasma Control, AlphaTensor, AlphaDev, GNoME, and FunSearch)—sortable by composite Impact Index or most-recent date.
+- **AI-Only Impact, Paradigm & Chronological Tracker**: Curates 58 AI-assisted and autonomous AI breakthroughs across 5 core disciplines—contrasting 3 pre-2020 symbolic AI pioneers (Robbins Conjecture 1996, Robot Scientist Adam 2009, Boolean Pythagorean Triples 2016) and 8 early neural anchors (2020–2023, starting with Halicin and AlphaFold 2) against 47 breakthroughs from the 2024–2026 neural and neuro-symbolic wave.
 - **Interactive Rubric Weight Tuner**: Adjust the four scoring weights live (or try presets like *Strict Formalists*, *Real-World Ripple*, or *AI Inflection*) and copy a shareable URL encoding your exact custom ranking.
 - **Explicit Verification Tiers & Early Open-Internet Tracking**: Every milestone is labeled `Formally Verified`, `Peer-Reviewed`, `Preprint / Active Review`, or `Contested / Partial` alongside candid caveats—capturing both *Nature* landmarks and newly posted X/GitHub/Lean discoveries (such as the Lean-verified disproof of the Caiolo–Ferroni–Hoster conjecture).
 - **Interactive Data Visualizations**:

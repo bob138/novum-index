@@ -1,6 +1,7 @@
 import { DISCIPLINE_META, escapeHtml } from '../scoring.js';
 
 const ANCHOR_PERIODS = [
+  { id: 'pre-2020', label: '< 2020*', start: '1990-01-01', end: '2019-12-31', isAnchorBucket: true, isPioneerBucket: true },
   { id: '2020', label: '2020', start: '2020-01-01', end: '2020-12-31', isAnchorBucket: true },
   { id: '2021', label: '2021', start: '2021-01-01', end: '2021-12-31', isAnchorBucket: true },
   { id: '2022', label: '2022', start: '2022-01-01', end: '2022-12-31', isAnchorBucket: true },
@@ -22,25 +23,39 @@ const WAVE_QUARTERS = [
   { id: '2026-Q4', label: 'Q4 26*', start: '2026-10-01', end: '2026-12-31', isAnchorBucket: false },
 ];
 
+const PARADIGM_SERIES = [
+  { key: 'Symbolic / Classical', label: 'Symbolic / Classical (Pre-2020)', colorVar: 'var(--ink-muted)' },
+  { key: 'Neural / Deep Learning', label: 'Neural / Deep Learning', colorVar: 'var(--disc-cs)' },
+  { key: 'Neuro-Symbolic', label: 'Neuro-Symbolic (Neural + Formal)', colorVar: 'var(--disc-math)' },
+];
+
 const AI_SERIES = [
   { key: 'AI-Assisted', label: 'AI-Assisted', colorVar: 'var(--disc-cs)' },
   { key: 'Autonomous AI', label: 'Autonomous AI', colorVar: 'var(--disc-physics)' },
 ];
 
-export function renderVelocityChart(items, groupBy = 'aiRole') {
+export function renderVelocityChart(items, groupBy = 'paradigm') {
   const width = 1060;
   const height = 440;
   const margin = { top: 38, right: 64, bottom: 52, left: 54 };
   const innerW = width - margin.left - margin.right;
   const innerH = height - margin.top - margin.bottom;
 
-  const hasAnchors = items.some((b) => b.date < '2024-01-01');
+  const hasPioneers = items.some((b) => b.date < '2020-01-01');
+  const hasEarlyNeural = items.some((b) => b.date >= '2020-01-01' && b.date < '2024-01-01');
   const hasWave = items.some((b) => b.date >= '2024-01-01');
-  const periods = hasAnchors
-    ? hasWave
-      ? [...ANCHOR_PERIODS, ...WAVE_QUARTERS]
-      : ANCHOR_PERIODS
-    : WAVE_QUARTERS;
+
+  const activeAnchorPeriods = ANCHOR_PERIODS.filter((p) => {
+    if (p.isPioneerBucket) return hasPioneers;
+    return hasEarlyNeural || (hasPioneers && hasWave);
+  });
+
+  const periods =
+    activeAnchorPeriods.length > 0
+      ? hasWave
+        ? [...activeAnchorPeriods, ...WAVE_QUARTERS]
+        : activeAnchorPeriods
+      : WAVE_QUARTERS;
 
   const series =
     groupBy === 'discipline'
@@ -49,7 +64,9 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
           label: meta.short,
           colorVar: meta.colorVar,
         }))
-      : AI_SERIES;
+      : groupBy === 'aiRole'
+        ? AI_SERIES
+        : PARADIGM_SERIES;
 
   let cumulativeCount = 0;
   let cumulativeImpact = 0;
@@ -58,7 +75,12 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
     const counts = {};
     for (const s of series) counts[s.key] = 0;
     for (const b of inP) {
-      const k = groupBy === 'discipline' ? b.discipline : b.aiRole;
+      const k =
+        groupBy === 'discipline'
+          ? b.discipline
+          : groupBy === 'aiRole'
+            ? b.aiRole
+            : b.aiParadigm;
       counts[k] = (counts[k] || 0) + 1;
       cumulativeCount += 1;
       cumulativeImpact += b.compositeScore;
@@ -78,7 +100,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
   const maxCum = Math.max(5, buckets[buckets.length - 1]?.cumulativeCount || 5);
 
   const slotW = innerW / buckets.length;
-  const barW = Math.min(38, slotW * 0.58);
+  const barW = Math.min(36, slotW * 0.58);
 
   const yBar = (val) => margin.top + innerH - (val / maxBar) * innerH;
   const yCum = (val) => margin.top + innerH - (val / maxCum) * innerH;
@@ -95,7 +117,10 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
     .map((pt, i) => `${i === 0 ? 'M' : 'L'} ${pt.x.toFixed(1)} ${pt.y.toFixed(1)}`)
     .join(' ');
 
-  const dividerX = hasAnchors && hasWave ? margin.left + ANCHOR_PERIODS.length * slotW : null;
+  const dividerX =
+    activeAnchorPeriods.length > 0 && hasWave
+      ? margin.left + activeAnchorPeriods.length * slotW
+      : null;
 
   const count2024 = items.filter((b) => b.date.startsWith('2024')).length;
   const count2026 = items.filter((b) => b.date.startsWith('2026')).length;
@@ -113,13 +138,19 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
     <div class="viz-card">
       <div class="viz-card__header">
         <div>
-          <h2 class="viz-card__title">AI Scientific Acceleration &amp; Cumulative Growth Curve</h2>
+          <h2 class="viz-card__title">AI Scientific Acceleration &amp; Paradigm Shift Curve</h2>
           <p class="viz-card__desc">
-            Annual 2020–2023 AI anchors alongside quarterly 2024–2026 breakthrough cadence (bars) and cumulative AI discoveries (line), tracking the exponential H2 2026 inflection.
+            Tracks the transition from rare pre-2020 symbolic AI pioneers (1996–2019) to 2020–2023 deep learning anchors and the exponential 2024–2026 neural &amp; neuro-symbolic surge (bars + cumulative growth curve).
           </p>
         </div>
 
         <div class="segmented-ctrl" role="group" aria-label="Group acceleration bars by">
+          <button
+            type="button"
+            id="vel-group-paradigm"
+            data-velocity-group="paradigm"
+            aria-pressed="${groupBy === 'paradigm' ? 'true' : 'false'}"
+          >By Paradigm</button>
           <button
             type="button"
             id="vel-group-ai"
@@ -185,7 +216,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
               y="${margin.top - 11}"
               text-anchor="middle"
               class="viz-annotation"
-            >Annual Anchors (2020–23)</text>
+            >${hasPioneers ? 'Pre-2020 Pioneers & 2020–23' : 'Annual Anchors (2020–23)'}</text>
             <text
               x="${(dividerX + (width - margin.right - dividerX) / 2).toFixed(1)}"
               y="${margin.top - 11}"
@@ -285,7 +316,7 @@ export function renderVelocityChart(items, groupBy = 'aiRole') {
           <line x1="${margin.left}" y1="${margin.top + innerH}" x2="${width - margin.right}" y2="${margin.top + innerH}" class="viz-axis-line" />
           <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">AI BREAKTHROUGHS / PERIOD</text>
           <text x="${width - 14}" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(90 ${width - 14} ${margin.top + innerH / 2})" class="viz-axis-label" style="fill: var(--accent-primary);">CUMULATIVE BREAKTHROUGHS</text>
-          <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">*Q4 2026 reflects partial quarter through Nov 25, 2026</text>
+          <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">${hasPioneers ? '*< 2020 spans 24 yrs (1996–2019) · ' : '*'}Q4 2026 reflects partial quarter through Nov 25, 2026</text>
         </svg>
       </div>
 

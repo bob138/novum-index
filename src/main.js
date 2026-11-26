@@ -28,9 +28,10 @@ const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
 const state = {
   theme: loadInitialTheme(),
   view: 'leaderboard',
-  velocityGroup: 'aiRole',
+  velocityGroup: 'paradigm',
   tunerOpen: false,
   discipline: 'all',
+  paradigm: 'all',
   aiRole: 'all',
   status: 'all',
   year: 'all',
@@ -112,6 +113,15 @@ function hydrateStateFromUrl() {
   const discParam = params.get('discipline');
   if (discParam) state.discipline = discParam;
 
+  const paradigmParam = params.get('paradigm');
+  if (
+    ['modern', 'Neural / Deep Learning', 'Neuro-Symbolic', 'Symbolic / Classical'].includes(
+      paradigmParam
+    )
+  ) {
+    state.paradigm = paradigmParam;
+  }
+
   const sortParam = params.get('sort');
   if (['impact', 'newest', 'oldest'].includes(sortParam)) {
     state.sortBy = sortParam;
@@ -149,6 +159,12 @@ function syncUrl() {
     url.searchParams.delete('discipline');
   }
 
+  if (state.paradigm !== 'all') {
+    url.searchParams.set('paradigm', state.paradigm);
+  } else {
+    url.searchParams.delete('paradigm');
+  }
+
   if (state.sortBy !== 'impact') {
     url.searchParams.set('sort', state.sortBy);
   } else {
@@ -172,12 +188,24 @@ function filterBreakthroughs(ranked) {
   const q = state.search.trim().toLowerCase();
   const filtered = ranked.filter((item) => {
     if (state.discipline !== 'all' && item.discipline !== state.discipline) return false;
+    if (state.paradigm === 'modern' && item.aiParadigm === 'Symbolic / Classical') return false;
+    if (
+      state.paradigm !== 'all' &&
+      state.paradigm !== 'modern' &&
+      item.aiParadigm !== state.paradigm
+    ) {
+      return false;
+    }
     if (state.aiRole !== 'all' && item.aiRole !== state.aiRole) return false;
     if (state.status !== 'all' && item.verificationStatus !== state.status) return false;
-    if (state.year === 'anchors' && !item.isAnchor) return false;
-    if (state.year === '2024-2026' && item.isAnchor) return false;
+    if (state.year === 'pre-2020' && item.date >= '2020-01-01') return false;
+    if (state.year === 'anchors' && (item.date < '2020-01-01' || item.date >= '2024-01-01')) {
+      return false;
+    }
+    if (state.year === '2024-2026' && item.date < '2024-01-01') return false;
     if (
       state.year !== 'all' &&
+      state.year !== 'pre-2020' &&
       state.year !== 'anchors' &&
       state.year !== '2024-2026' &&
       !item.date.startsWith(state.year)
@@ -193,6 +221,7 @@ function filterBreakthroughs(ranked) {
         item.whyItMatters,
         item.summary,
         item.aiRole,
+        item.aiParadigm || '',
         item.aiSystem || '',
         ...item.subfields,
         ...item.contributors,
@@ -328,7 +357,7 @@ function bindScatterTooltips(rankedMap) {
         <div class="viz-tooltip__meta">${escapeHtml(item.discipline)} · ${formatDate(item.date)} · ${escapeHtml(item.verificationStatus)}</div>
         <div>
           <span class="viz-tooltip__score">Impact ${item.compositeScore.toFixed(1)}/100</span>
-          · ${escapeHtml(item.aiRole)}${item.aiSystem ? ` (${escapeHtml(item.aiSystem)})` : ''}
+          · ${escapeHtml(item.aiParadigm)} · ${escapeHtml(item.aiRole)}${item.aiSystem ? ` (${escapeHtml(item.aiSystem)})` : ''}
         </div>
       `;
       const x = Math.min(window.innerWidth - 320, Math.max(12, ev.clientX + 14));
@@ -468,6 +497,7 @@ function attachGlobalListeners() {
     const clearBtn = e.target.closest('#clear-filters-btn');
     if (clearBtn) {
       state.discipline = 'all';
+      state.paradigm = 'all';
       state.aiRole = 'all';
       state.status = 'all';
       state.year = 'all';
@@ -532,7 +562,10 @@ function attachGlobalListeners() {
   });
 
   app.addEventListener('change', (e) => {
-    if (e.target.id === 'filter-ai-role') {
+    if (e.target.id === 'filter-paradigm') {
+      state.paradigm = e.target.value;
+      renderApp();
+    } else if (e.target.id === 'filter-ai-role') {
       state.aiRole = e.target.value;
       renderApp();
     } else if (e.target.id === 'filter-status') {

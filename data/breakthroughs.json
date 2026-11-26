@@ -22,6 +22,7 @@
         "Combinatorial Geometry"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Google Gemini 4 Carbon Experimental Harness (Lean 4)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 69,
@@ -83,6 +84,7 @@
         "Real-Rooted Polynomials"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "GPT-6.2 Astra & Claude Opus 5.5 + Lean 4.35",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 1,
@@ -148,6 +150,7 @@
         "Multi-Agent AI"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Gemini 4 Agent Teams (Google DeepMind / Quantum AI)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -208,6 +211,7 @@
         "Formal Verification"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Internal Claude (Anthropic) & OpenAI Frontier Model",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 47,
@@ -266,6 +270,7 @@
         "Langlands Program"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Unreleased Claude Research Model (Anthropic)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 167,
@@ -330,6 +335,7 @@
         "Millennium Prize Problem"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Anthropic Claude + Lean 4 (600K Lines)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 180,
@@ -390,6 +396,7 @@
         "Conformal Bootstrap"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Claude Fable 5.2 Autonomous Agent Fleet (Lean 4 Verified)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 23,
@@ -442,6 +449,7 @@
         "Precision Medicine"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AlphaGenome 2 (Google DeepMind)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": null,
@@ -494,6 +502,7 @@
         "AI Agents"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "AlphaProof Code (Google DeepMind)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -552,6 +561,7 @@
         "Microbiology"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Anthropic Claude (Biology Research Lab)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 40,
@@ -605,6 +615,7 @@
         "Formal Verification"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Anthropic Clique Evaluator + Multi-Agent Lean Proofs (Big O Speedrun)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -668,6 +679,7 @@
         "Formal Verification"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "OpenAI Frontier Reasoning Model",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 25,
@@ -727,6 +739,7 @@
         "AI Theorem Proving"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "OpenAI Frontier Reasoning Model",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 109,
@@ -783,6 +796,7 @@
         "Human–AI Discovery Loop"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Gemini 4 Argon (Google DeepMind)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 93,
@@ -836,6 +850,7 @@
         "Bulk Autonomous Discovery"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "OpenAI Internal Frontier Math Model",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 24,
@@ -898,6 +913,7 @@
         "Enzyme Discovery"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Anthropic Claude Biology Agent Fleet (~950 Agents)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": null,
@@ -951,6 +967,7 @@
         "Formal Verification"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "OpenAI Frontier Reasoning Models",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 26,
@@ -1010,6 +1027,7 @@
         "Formal Verification"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "OpenAI Internal Frontier Model (10,000-agent search)",
       "verificationStatus": "Contested / Partial",
       "yearsUnsolved": 26,
@@ -1071,6 +1089,7 @@
         "Large-Scale Autoformalization"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Anthropic Claude Multi-Agent Fleet",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -1127,6 +1146,7 @@
         "Formal Verification"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "OpenAI GPT-6 Astra (Epoch AI LeanOpenProblems Harness)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 96,
@@ -1196,6 +1216,7 @@
         "Formal Verification"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Unreleased Claude Research Model (Anthropic)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -1254,6 +1275,7 @@
         "Formal Verification"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "GPT-5.6 Pro + ProofAtlas Lean Pipeline",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 67,
@@ -1318,6 +1340,7 @@
         "Combinatorics"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Internal GPT-6 Astra (OpenAI)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 27,
@@ -1377,6 +1400,7 @@
         "Numerical Linear Algebra"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "OpenAI GPT-5.6 Sol",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": 22,
@@ -1440,6 +1464,7 @@
         "Polynomial Maps"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Claude Fable 5 (Anthropic)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": 87,
@@ -1502,6 +1527,7 @@
         "Multi-Agent Reasoning"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "OpenAI GPT-5.6 Sol Ultra (64-Subagent Harness)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": 53,
@@ -1563,6 +1589,7 @@
         "Quantum LDPC Codes"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AI-Assisted Circuit & Code Synthesis",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -1618,6 +1645,7 @@
         "OEIS Conjectures"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Google DeepMind Formal Proof Search Agent (Lean 4)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -1673,6 +1701,7 @@
         "Combinatorics"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "OpenAI Internal Reasoning Model",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": 80,
@@ -1740,6 +1769,7 @@
         "Autoformalization"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Gauss Autoformalization Agent (Math Inc.)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -1804,6 +1834,7 @@
         "Quantum Field Theory"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "GPT-5.2 (Scaffolded Reasoning Model)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": 40,
@@ -1870,6 +1901,7 @@
         "Autonomous Math Agents"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Aletheia (Gemini Deep Think Math Agent)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": null,
@@ -1930,6 +1962,7 @@
         "Erdős Problems"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "GPT-5.2 Pro + Harmonic Aristotle (Lean 4)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 30,
@@ -1994,6 +2027,7 @@
         "Automated Mathematical Discovery"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "AlphaEvolve + Deep Think + AlphaProof",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2058,6 +2092,7 @@
         "Physics-Informed Neural Networks"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "High-Precision PINNs + Gauss–Newton Optimizer",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": null,
@@ -2120,6 +2155,7 @@
         "General-Purpose AI"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Gemini Deep Think (Google DeepMind) & OpenAI Experimental Model",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2183,6 +2219,7 @@
         "Variant Interpretation"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AlphaGenome (DeepMind Sequence-to-Function Model)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2245,6 +2282,7 @@
         "Biomolecular Structure"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Boltz-2 (Open-Source Biomolecular Foundation Model)",
       "verificationStatus": "Preprint / Active Review",
       "yearsUnsolved": null,
@@ -2307,6 +2345,7 @@
         "Systems Optimization"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "AlphaEvolve (Gemini-powered agent, Google DeepMind)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 56,
@@ -2372,6 +2411,7 @@
         "Mechanistic Interpretability"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Evo 2 (StripedHyena 2, Arc Institute)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2435,6 +2475,7 @@
         "Multi-Agent Scientific AI"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "Google AI Co-Scientist (Gemini 2.0 Multi-Agent)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2501,6 +2542,7 @@
         "Solid-State Chemistry"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "MatterGen (Microsoft Research AI for Science)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2567,6 +2609,7 @@
         "Symbolic AI"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "Meta AI Symbolic Seq2Seq Transformers",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": 132,
@@ -2622,6 +2665,7 @@
         "Therapeutics"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AlphaProteo (Google DeepMind)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2673,6 +2717,7 @@
         "Reinforcement Learning"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "AlphaProof & AlphaGeometry 2 (Google DeepMind)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -2733,6 +2778,7 @@
         "Diffusion Models"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AlphaFold 3 (Google DeepMind / Isomorphic Labs)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2798,6 +2844,7 @@
         "Synthetic Data"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "AlphaGeometry (Neuro-Symbolic Transformer + DD+AR)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -2862,6 +2909,7 @@
         "Automated Discovery"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neuro-Symbolic",
       "aiSystem": "FunSearch (Codey LLM + Evolutionary Evaluator, Google DeepMind)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 20,
@@ -2928,6 +2976,7 @@
         "Solid-State Chemistry"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "GNoME (Google DeepMind)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -2992,6 +3041,7 @@
         "Reinforcement Learning"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AlphaDev (AlphaZero AssemblyGame)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": null,
@@ -3050,6 +3100,7 @@
         "Reinforcement Learning"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AlphaTensor (DeepMind)",
       "verificationStatus": "Formally Verified",
       "yearsUnsolved": 53,
@@ -3117,6 +3168,7 @@
         "Reinforcement Learning Control"
       ],
       "aiRole": "Autonomous AI",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "DeepMind Deep RL Magnetic Controller",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": null,
@@ -3178,6 +3230,7 @@
         "AI-Guided Conjecturing"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "DeepMind Attribution Neural Networks",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": 40,
@@ -3238,6 +3291,7 @@
         "Deep Learning"
       ],
       "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
       "aiSystem": "AlphaFold 2 (DeepMind)",
       "verificationStatus": "Peer-Reviewed",
       "yearsUnsolved": 50,
@@ -3291,6 +3345,268 @@
           "label": "PMC Open Access Full Text (Nature Vol. 596)",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/",
           "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "halicin-antibiotic-2020",
+      "title": "Halicin: First Broad-Spectrum Antibiotic Discovered via Deep Learning",
+      "shortTitle": "Halicin Antibiotic (Anchor)",
+      "date": "2020-02-20",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Drug Discovery",
+        "Antimicrobial Resistance",
+        "Graph Neural Networks"
+      ],
+      "aiRole": "AI-Assisted",
+      "aiParadigm": "Neural / Deep Learning",
+      "aiSystem": "Chemprop (Directed Message-Passing GNN)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": "Days (107M molecules)",
+      "isAnchor": true,
+      "whyItMatters": "Nine months before AlphaFold 2, a deep graph neural network screened >107 million molecules and discovered a structurally novel antibiotic effective against pan-resistant pathogens.",
+      "summary": "MIT and Broad Institute researchers trained a directed message-passing graph neural network (Chemprop) on bacterial growth-inhibition assays and screened the Drug Repurposing Hub and over 107 million compounds from ZINC15. The model surfaced halicin—a molecule structurally divergent from conventional antibiotics that disrupts bacterial membrane proton motive force and cleared multidrug-resistant Acinetobacter baumannii and C. difficile infections in mouse models.",
+      "technicalHighlights": [
+        "Trained Chemprop message-passing GNN on 2,335 molecules, then virtually screened >107 million structures in days.",
+        "Identified halicin, structurally distinct from all known antibiotic classes, showing potent activity against Mycobacterium tuberculosis and carbapenem-resistant Enterobacteriaceae.",
+        "Demonstrated zero detectable resistance emergence in E. coli over a 30-day serial passage assay and launched the MIT Antibiotics-AI Project."
+      ],
+      "caveats": "Halicin itself faced systemic toxicity hurdles during follow-up preclinical translation, motivating subsequent narrow-spectrum AI antibiotics such as abaucin (2023) and explainable structural-class screens.",
+      "contributors": [
+        "Jonathan M. Stokes",
+        "Kevin Yang",
+        "Kyle Swanson",
+        "Wengong Jin",
+        "Regina Barzilay",
+        "Tommi Jaakkola",
+        "James J. Collins"
+      ],
+      "institutions": [
+        "MIT",
+        "Broad Institute of MIT and Harvard"
+      ],
+      "scores": {
+        "foundational": 84,
+        "ripple": 90,
+        "verification": 95,
+        "velocity": 84
+      },
+      "scoreRationale": {
+        "foundational": "Established deep graph neural networks as a practical wet-lab drug discovery engine capable of finding structurally novel antimicrobial mechanisms.",
+        "ripple": "Catalyzed an entire wave of AI-guided antimicrobial and small-molecule discovery pipelines across academia and pharma.",
+        "verification": "Published in Cell with extensive in vitro assays, resistance-evolution testing, and in vivo mouse infection clearance models.",
+        "velocity": "Virtually screened >107 million candidate molecules in days, compressing early-stage antimicrobial hit identification by orders of magnitude."
+      },
+      "enables": [
+        "boltz-2-binding-affinity-2025",
+        "alphafold-3-2024"
+      ],
+      "sources": [
+        {
+          "label": "Cell — A Deep Learning Approach to Antibiotic Discovery (2020)",
+          "url": "https://doi.org/10.1016/j.cell.2020.01.021",
+          "type": "paper"
+        },
+        {
+          "label": "PubMed Record (PMID 32084340)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32084340/",
+          "type": "paper"
+        },
+        {
+          "label": "MIT News Announcement",
+          "url": "https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220",
+          "type": "announcement"
+        }
+      ]
+    },
+    {
+      "id": "boolean-pythagorean-triples-2016",
+      "title": "Boolean Pythagorean Triples Problem Solved via Cube-and-Conquer SAT",
+      "shortTitle": "Pythagorean Triples (SAT)",
+      "date": "2016-05-03",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Ramsey Theory",
+        "SAT Solving",
+        "Formal Verification"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "Cube-and-Conquer SAT Solver (Glucose / DRAT)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 30,
+      "aiTimeToSolve": "2 days (800 cores)",
+      "isAnchor": true,
+      "whyItMatters": "Pioneering pre-neural symbolic AI milestone: resolved a 30-year Ramsey theory problem via a 200-terabyte machine-verified SAT proof.",
+      "summary": "Marijn Heule, Oliver Kullmann, and Victor Marek encoded Ronald Graham’s longstanding Boolean Pythagorean Triples problem—whether the positive integers can be 2-colored with no monochromatic solution to a² + b² = c²—into propositional logic and solved it via Cube-and-Conquer SAT search. The solver proved 1..7,824 is 2-colorable while 1..7,825 is impossible, producing a 200 TB DRAT proof certificate later formally verified in Coq.",
+      "technicalHighlights": [
+        "Partitioned the search space into one million sub-problems (“cubes”) solved in two days across 800 cores on the Stampede supercomputer.",
+        "Established the exact threshold at n = 7,825—the largest mathematical proof certificate generated up to that time (200 TB uncompressed, 68 GB compressed).",
+        "Independently verified by formal checkers extracted from Coq, proving symbolic search could settle open combinatorial problems beyond human casework."
+      ],
+      "caveats": "A pure classical SAT/symbolic search milestone rather than deep learning; while 100% machine-verified, the 200 TB proof offers little human-readable structural intuition and required bespoke symmetry breaking.",
+      "contributors": [
+        "Marijn J. H. Heule",
+        "Oliver Kullmann",
+        "Victor W. Marek"
+      ],
+      "institutions": [
+        "UT Austin",
+        "Swansea University",
+        "University of Kentucky"
+      ],
+      "scores": {
+        "foundational": 80,
+        "ripple": 82,
+        "verification": 98,
+        "velocity": 74
+      },
+      "scoreRationale": {
+        "foundational": "Settled a famous open Ramsey theory conjecture posed by Ronald Graham and established the exact critical coloring threshold.",
+        "ripple": "Demonstrated scalable machine-checked proof certificates (DRAT) and directly foreshadowed hybrid formal-verification pipelines.",
+        "verification": "Machine-checked via DRAT certificates and independently verified in Coq—gold-standard formal certainty.",
+        "velocity": "Solved a 30-year open problem in two days of parallel symbolic search, yet remained restricted to finite combinatorial encodings."
+      },
+      "enables": [
+        "alphaproof-imo-2024",
+        "deepmind-formal-proof-search-2026"
+      ],
+      "sources": [
+        {
+          "label": "arXiv:1605.00723 — Solving and Verifying the Boolean Pythagorean Triples Problem",
+          "url": "https://arxiv.org/abs/1605.00723",
+          "type": "paper"
+        },
+        {
+          "label": "SAT 2016 Proceedings (LNCS 9710)",
+          "url": "https://doi.org/10.1007/978-3-319-40970-2_15",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "robot-scientist-adam-2009",
+      "title": "Robot Scientist “Adam” Autonomously Discovers New Yeast Gene Functions",
+      "shortTitle": "Robot Scientist Adam (2009)",
+      "date": "2009-04-03",
+      "discipline": "Biology & Medicine",
+      "subfields": [
+        "Functional Genomics",
+        "Automated Science",
+        "Abductive Logic AI"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "Robot Scientist Adam (Abductive Logic + Lab Robotics)",
+      "verificationStatus": "Peer-Reviewed",
+      "yearsUnsolved": null,
+      "aiTimeToSolve": null,
+      "isAnchor": true,
+      "whyItMatters": "Historic pre-neural benchmark: the first closed-loop autonomous AI system to formulate hypotheses, run physical lab experiments, and publish new biological knowledge.",
+      "summary": "Developed by Ross King and colleagues at Aberystwyth and Cambridge, Robot Scientist “Adam” combined symbolic abductive logic programming, formal biological ontologies, and automated wet-lab robotics to investigate orphan enzymes in Saccharomyces cerevisiae. Without human intervention in the loop, Adam formulated 20 hypotheses identifying genes encoding orphan enzymes, designed and executed growth assays, confirmed 12 hypotheses, and had its key discoveries independently validated by manual human biochemistry.",
+      "technicalHighlights": [
+        "First physical machine to execute the full scientific method autonomously—hypothesis generation, experiment design, wet-lab execution, and result interpretation.",
+        "Identified three previously unannotated yeast genes encoding the orphan enzyme 2-aminoadipate transaminase (confirmed manually via wet-lab enzyme assays).",
+        "Demonstrated end-to-end formalization of experimental metadata and reasoning decades before LLM-based AI Co-Scientists."
+      ],
+      "caveats": "Relied on rigid symbolic logic rules and domain-specific yeast ontologies; it could not generalize outside narrowly encoded metabolic models—highlighting why modern neural foundation models triggered a phase transition.",
+      "contributors": [
+        "Ross D. King",
+        "Jem Rowland",
+        "Stephen G. Oliver",
+        "Michael Young",
+        "Wayne Aubrey",
+        "Emma Byrne"
+      ],
+      "institutions": [
+        "Aberystwyth University",
+        "University of Cambridge"
+      ],
+      "scores": {
+        "foundational": 82,
+        "ripple": 85,
+        "verification": 94,
+        "velocity": 68
+      },
+      "scoreRationale": {
+        "foundational": "Proved in principle that an autonomous AI system can independently discover genuine new empirical scientific knowledge.",
+        "ripple": "Inspired the entire self-driving laboratory and autonomous AI scientist movement, culminating in systems like Google AI Co-Scientist.",
+        "verification": "Published in Science with human wet-lab biochemical verification of Adam’s newly discovered gene–enzyme mappings.",
+        "velocity": "Pioneered automated experimental cycles, though narrow symbolic engineering kept throughput modest compared to 2025–2026 foundation models."
+      },
+      "enables": [
+        "google-ai-coscientist-2025"
+      ],
+      "sources": [
+        {
+          "label": "Science — The Automation of Science (Apr 3, 2009)",
+          "url": "https://doi.org/10.1126/science.1165620",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "robbins-conjecture-eqp-1996",
+      "title": "Automated Theorem Prover EQP Solves the 63-Year-Old Robbins Conjecture",
+      "shortTitle": "Robbins Conjecture (EQP, 1996)",
+      "date": "1996-10-10",
+      "discipline": "Mathematics",
+      "subfields": [
+        "Universal Algebra",
+        "Boolean Algebra",
+        "Automated Theorem Proving"
+      ],
+      "aiRole": "Autonomous AI",
+      "aiParadigm": "Symbolic / Classical",
+      "aiSystem": "EQP (Equational Theorem Prover)",
+      "verificationStatus": "Formally Verified",
+      "yearsUnsolved": 63,
+      "aiTimeToSolve": "8 days",
+      "isAnchor": true,
+      "whyItMatters": "The foundational pre-neural milestone in autonomous AI mathematics: solved a 63-year-old algebra conjecture that defeated Alfred Tarski.",
+      "summary": "Posed by Herbert Robbins in 1933 and studied unsuccessfully by Alfred Tarski and generations of algebraists, the Robbins Conjecture asked whether every Robbins algebra is a Boolean algebra. On October 10, 1996, William McCune’s specialized symbolic equational prover EQP at Argonne National Laboratory autonomously discovered a complete proof in eight days on a workstation, outputting a machine-checked proof object later simplified and formalized in Isabelle/HOL.",
+      "technicalHighlights": [
+        "Used associative-commutative (AC) unification and paramodulation strategies in EQP to prove Winker’s sufficient condition automatically.",
+        "First widely celebrated resolution of a longstanding open mathematical conjecture by a fully autonomous computer reasoning program.",
+        "Produced a complete machine-verifiable proof object checked independently, later streamlined by Dahn (1998) and formalized in the Archive of Formal Proofs."
+      ],
+      "caveats": "Required extensive human algebraic reductions (Winker’s lemmas) and hand-crafted equational search heuristics; pure symbolic provers remained largely isolated to narrow algebraic/logic niches for the next two decades until neural networks arrived.",
+      "contributors": [
+        "William McCune",
+        "Larry Wos",
+        "Steve Winker"
+      ],
+      "institutions": [
+        "Argonne National Laboratory"
+      ],
+      "scores": {
+        "foundational": 86,
+        "ripple": 84,
+        "verification": 98,
+        "velocity": 78
+      },
+      "scoreRationale": {
+        "foundational": "Resolved a famous 63-year-old foundational algebra problem that resisted Alfred Tarski and decades of human mathematicians.",
+        "ripple": "Became the canonical proof-of-concept for automated mathematical discovery, directly motivating generations of ATP and formal verification research.",
+        "verification": "Produced a machine-checked formal proof object verified by independent checkers and published in the Journal of Automated Reasoning.",
+        "velocity": "Closed a 63-year open problem in 8 days of workstation search—though symbolic provers only achieved a handful of such wins across the next 24 years."
+      },
+      "enables": [
+        "boolean-pythagorean-triples-2016",
+        "alphaproof-imo-2024"
+      ],
+      "sources": [
+        {
+          "label": "Journal of Automated Reasoning — Solution of the Robbins Problem (1997)",
+          "url": "https://doi.org/10.1023/A:1005843212881",
+          "type": "paper"
+        },
+        {
+          "label": "William McCune — Official EQP Proof Archive (Oct 10, 1996)",
+          "url": "https://www.cs.unm.edu/~mccune/papers/robbins/",
+          "type": "announcement"
         }
       ]
     }
