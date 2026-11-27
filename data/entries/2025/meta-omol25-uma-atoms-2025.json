@@ -1,0 +1,68 @@
+{
+  "id": "meta-omol25-uma-atoms-2025",
+  "title": "Meta FAIR Releases OMol25 (>100M DFT Runs) & Universal Model for Atoms (UMA)",
+  "shortTitle": "Meta FAIR OMol25 & UMA",
+  "date": "2025-05-13",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Machine Learning Interatomic Potentials",
+    "Quantum Chemistry",
+    "Molecular Simulation"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "UMA (Universal Model for Atoms — Meta FAIR)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Trained an open-source universal interatomic neural potential on over 100 million high-accuracy DFT calculations spanning 83 elements—replacing slow quantum chemistry across molecules, catalysts, and materials.",
+  "summary": "Unveiled in May 2025 and published at NeurIPS 2025 by Daniel S. Levine, Brandon M. Wood, Misko Dzamba, Zachary Ulissi, Samuel Blau, and collaborators at Meta FAIR and Lawrence Berkeley National Laboratory, Open Molecules 2025 (OMol25) and the Universal Model for Atoms (UMA) unified atomic-scale simulation across chemistry and materials science. Backed by over 100 million density functional theory (DFT) calculations at the hybrid ωB97M-V/def2-TZVPD level (representing billions of CPU core-hours across ~83M systems up to 350 atoms), UMA combines OMol25 with Open Materials, Open Catalyst, and Open DAC datasets into a single mixture-of-linear-experts equivariant potential delivering near-DFT accuracy at orders-of-magnitude lower cost.",
+  "technicalHighlights": [
+    "OMol25 encompasses >100M high-accuracy hybrid-DFT calculations spanning 83 elements, explicit solvation, variable charge/spin states, reactive transition geometries, biomolecules, metal complexes, and electrolytes.",
+    "UMA (NeurIPS 2025) unifies molecules, inorganic crystals, metal-organic frameworks, and heterogeneous catalysts in one open-weight atomic foundation model.",
+    "Accelerates quantum-accurate molecular dynamics and reaction-barrier screening by 1,000×–10,000× over direct DFT, becoming a standard community backbone for computational chemistry."
+  ],
+  "caveats": "Surrogate interatomic potentials can still drift on extreme out-of-distribution electronic states (such as multi-reference excited states) where explicit post-Hartree-Fock methods remain necessary.",
+  "contributors": [
+    "Daniel S. Levine",
+    "Brandon M. Wood",
+    "Zachary W. Ulissi",
+    "Samuel M. Blau",
+    "C. Lawrence Zitnick"
+  ],
+  "institutions": [
+    "Meta FAIR",
+    "Lawrence Berkeley National Laboratory"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 93,
+    "verification": 92,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Created the largest high-accuracy open quantum-chemistry dataset and unified atomic potential spanning molecular, biological, catalytic, and solid-state chemistry.",
+    "ripple": "Adopted rapidly across catalysis, battery electrolytes, polymer chemistry (including 2026 LLNL collaborations), and drug-discovery pipelines.",
+    "verification": "Peer-reviewed at NeurIPS 2025 with fully open datasets, weights, and community benchmarks across five atomic domains.",
+    "velocity": "Amortized billions of CPU core-hours of hybrid DFT into millisecond-scale neural force-field inference."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv — The Open Molecules 2025 (OMol25) Dataset, Evaluations, and Models (arXiv:2505.08762)",
+      "url": "https://arxiv.org/abs/2505.08762",
+      "type": "paper"
+    },
+    {
+      "label": "NeurIPS 2025 — UMA: A Family of Universal Models for Atoms (arXiv:2506.23971)",
+      "url": "https://arxiv.org/abs/2506.23971",
+      "type": "paper"
+    },
+    {
+      "label": "NeurIPS 2025 Proceedings PDF — UMA: A Family of Universal Models for Atoms",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/file/bbf23e81b0ad7637fe9a731d0b676ca6-Paper-Conference.pdf",
+      "type": "paper"
+    }
+  ]
+}

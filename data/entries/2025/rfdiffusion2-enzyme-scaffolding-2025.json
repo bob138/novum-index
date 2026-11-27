@@ -1,0 +1,71 @@
+{
+  "id": "rfdiffusion2-enzyme-scaffolding-2025",
+  "title": "RFdiffusion2 Solves 41/41 Atom-Level Enzyme Active-Site Benchmarks & Designs Metallohydrolases",
+  "shortTitle": "RFdiffusion2 Enzyme Scaffolding",
+  "date": "2025-12-03",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Biocatalysis",
+    "Metalloenzyme Design",
+    "All-Atom Generative Modeling"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFdiffusion2 (Atom-Level Flow Matching — UW IPD / MIT)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Solved all 41/41 enzyme active-site scaffolding benchmarks (vs. 16/41 previously) without specifying residue sequence positions—and designed de novo zinc metallohydrolases matching natural bond-cleavage catalysis.",
+  "summary": "Published in Nature Methods in December 2025 alongside a companion Nature study on de novo metallohydrolases by Woody Ahern, Jason Yim, Donghyo Kim, Samuel Woodbury, Doug Tischer, Regina Barzilay, Tommi Jaakkola, Donald Hilvert, and David Baker (UW IPD, MIT, and ETH Zurich), RFdiffusion2 introduced flow-matching generative design directly conditioned on arbitrary side-chain catalytic atoms and reaction transition-state geometries—eliminating the requirement to pre-specify backbone indices or rotamers. On a diverse 41-enzyme active-site scaffolding benchmark where prior methods solved only 16, RFdiffusion2 succeeded on 41 out of 41, and experimentally generated novel zinc-coordinating metallohydrolases catalyzing ester and amide hydrolysis.",
+  "technicalHighlights": [
+    "Solved 41/41 benchmark enzyme active-site scaffolding challenges (vs. 16/41 for RFdiffusion1) by conditioning directly on catalytic atom coordinates without fixed sequence indices.",
+    "Companion Nature paper (Kim et al., doi:10.1038/s41586-025-09746-w) experimentally validated de novo zinc metallohydrolases built around idealized transition states.",
+    "Bridged backbone-only protein diffusion (2023) to full all-atom biomolecular generation (RFdiffusion3, 2026)."
+  ],
+  "caveats": "Generation remained computationally heavier than successor RFdiffusion3, and top catalytic turnover rates still required focused experimental variant screening.",
+  "contributors": [
+    "Woody Ahern",
+    "Jason Yim",
+    "Donghyo Kim",
+    "Doug Tischer",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (Institute for Protein Design)",
+    "MIT",
+    "ETH Zurich"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 88,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Removed the major geometric bottleneck in de novo biocatalysis by scaffolding catalytic atoms directly from transition-state chemistry.",
+    "ripple": "Directly enabled unified all-atom biomolecular design (RFdiffusion3) and accelerated industrial metalloenzyme engineering.",
+    "verification": "Peer-reviewed in Nature Methods (Dec 2025) and companion Nature paper with crystallographic and kinetic validation.",
+    "velocity": "Jumped enzyme active-site benchmark solvability from 39% (16/41) to 100% (41/41) in a single generative leap."
+  },
+  "enables": [
+    "rfdiffusion3-all-atom-design-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature Methods — Atom-level enzyme active site scaffolding using RFdiffusion2 (Dec 2025)",
+      "url": "https://doi.org/10.1038/s41592-025-02975-x",
+      "type": "paper"
+    },
+    {
+      "label": "Nature — Computational design of metallohydrolases (companion paper)",
+      "url": "https://doi.org/10.1038/s41586-025-09746-w",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Full Text — RFdiffusion2 (PMC12791007)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12791007/",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,33 +1,33 @@
 {
   "id": "graphcast-weather-2023",
-  "title": "GraphCast (& GenCast) Surpass Physics-Based Global Weather Forecasting in Minutes",
-  "shortTitle": "GraphCast & GenCast Weather AI",
+  "title": "GraphCast Multi-Mesh GNN Surpasses Physics-Based Global Weather Forecasting in Under a Minute",
+  "shortTitle": "GraphCast Weather AI",
   "date": "2023-11-14",
   "discipline": "Physics & Quantum",
   "subfields": [
     "Atmospheric Physics",
     "Graph Neural Networks",
-    "Probabilistic Forecasting"
+    "Numerical Weather Prediction"
   ],
   "aiRole": "AI-Assisted",
   "aiParadigm": "Neural / Deep Learning",
-  "aiSystem": "GraphCast (Multi-Mesh GNN) & GenCast (Diffusion Ensemble)",
+  "aiSystem": "GraphCast (Multi-Mesh Graph Neural Network — Google DeepMind)",
   "verificationStatus": "Peer-Reviewed",
   "yearsUnsolved": null,
   "aiTimeToSolve": "Under 1 min (vs. hours on supercomputers)",
   "isAnchor": true,
-  "whyItMatters": "Beat ECMWF’s gold-standard physics weather simulator on 90% of targets in under a minute on one TPU—ushering in operational AI meteorology (extended to ensembles by GenCast in Nature 2024).",
-  "summary": "Published in Science in November 2023 by Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, and the Google DeepMind team, GraphCast trained a multi-mesh graph neural network on 39 years of ERA5 atmospheric reanalysis to produce 10-day global 0.25° weather forecasts in under one minute on a single TPU—outperforming ECMWF’s operational HRES numerical solver on 90% of 1,380 verification targets and improving tropical cyclone track prediction. In December 2024 (Nature), DeepMind’s probabilistic diffusion successor GenCast surpassed ECMWF’s flagship ENS ensemble on 97.2% of targets, permanently transforming operational meteorology worldwide.",
+  "whyItMatters": "Beat ECMWF’s gold-standard physics weather simulator (HRES) on 90% of targets in under a minute on one TPU—ushering in operational AI meteorology worldwide.",
+  "summary": "Published in Science in November 2023 by Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, and the Google DeepMind team, GraphCast trained a multi-mesh graph neural network on 39 years of ERA5 atmospheric reanalysis to produce 10-day global 0.25° weather forecasts in under one minute on a single TPU—outperforming ECMWF’s operational HRES numerical solver on 90% of 1,380 verification targets and improving tropical cyclone track prediction. Its deterministic breakthrough directly enabled probabilistic diffusion successors such as GenCast (Nature, Dec 2024) and global operational AI weather suites.",
   "technicalHighlights": [
-    "GraphCast (Science, Nov 2023) outperformed ECMWF’s gold-standard HRES physical solver on 90% of 1,380 atmospheric targets while running ~1,000× faster and more energy-efficiently.",
+    "Outperformed ECMWF’s gold-standard HRES physical solver on 90% of 1,380 atmospheric verification targets while running ~1,000× faster and more energy-efficiently.",
     "Improved tracking of extreme weather including tropical cyclones, atmospheric rivers, and extreme temperature anomalies without explicit PDE solvers.",
-    "Extended to full 15-day probabilistic ensemble forecasting by GenCast (Nature, Dec 2024), beating ECMWF ENS on 97.2% of targets and deployed operationally via WeatherNext."
+    "Open-sourced weights and code, catalyzing operational ML weather adoption across ECMWF (AIFS), NOAA, and WeatherNext."
   ],
-  "caveats": "Trained on historical physics-based ERA5 reanalysis data (making it dependent on traditional data-assimilation pipelines) and can face out-of-distribution tail risks under unprecedented climate regimes.",
+  "caveats": "Produces deterministic point forecasts that blur fine-scale uncertainty at long lead times (later addressed by GenCast’s probabilistic diffusion ensemble) and relies on historical physics-based ERA5 reanalysis data.",
   "contributors": [
     "Remi Lam",
     "Alvaro Sanchez-Gonzalez",
-    "Ilan Price",
+    "Matthew Willson",
     "Peter Battaglia"
   ],
   "institutions": [
@@ -41,24 +41,25 @@
   },
   "scoreRationale": {
     "foundational": "Demonstrated that learned neural simulators can surpass decades of hand-crafted atmospheric PDE solvers on complex chaotic global fluid dynamics.",
-    "ripple": "Reshaped global weather agencies (ECMWF AIFS, NOAA, WeatherNext), renewable-energy forecasting, and disaster preparedness within two years.",
-    "verification": "Dual landmark peer-reviewed publications (Science 2023 & Nature 2024), open-sourced code/weights, and live operational verification by national meteorological agencies.",
+    "ripple": "Reshaped global weather agencies (ECMWF AIFS, NOAA, WeatherNext) and directly spawned probabilistic diffusion weather forecasting (GenCast).",
+    "verification": "Peer-reviewed in Science (Nov 2023) with open-sourced code/weights and live operational verification by national meteorological agencies.",
     "velocity": "Compressed multi-hour supercomputer numerical weather runs into <1 minute on a single accelerator."
   },
   "enables": [
+    "gencast-probabilistic-weather-2024",
     "unstable-singularities-pinns-2025",
     "aurora-earth-system-2025"
   ],
   "sources": [
     {
-      "label": "Science — Learning skillful medium-range global weather forecasting (GraphCast, Nov 2023)",
-      "url": "https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/",
+      "label": "Science — Learning skillful medium-range global weather forecasting (Nov 2023)",
+      "url": "https://doi.org/10.1126/science.adi2336",
       "type": "paper"
     },
     {
-      "label": "Nature — Probabilistic weather forecasting with machine learning (GenCast, Dec 2024)",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666454/",
-      "type": "paper"
+      "label": "Google DeepMind — GraphCast: AI model for faster and more accurate global weather forecasting",
+      "url": "https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/",
+      "type": "announcement"
     }
   ]
 }

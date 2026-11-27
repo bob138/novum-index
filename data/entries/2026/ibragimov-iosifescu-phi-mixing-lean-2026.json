@@ -1,0 +1,64 @@
+{
+  "id": "ibragimov-iosifescu-phi-mixing-lean-2026",
+  "title": "GPT-6 Astra Constructs Candidate Lean 4 Counterexample to the 1971 Ibragimov–Iosifescu Conjecture",
+  "shortTitle": "Ibragimov–Iosifescu Disproof Claim",
+  "date": "2026-09-05",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Probability Theory",
+    "Stochastic Processes",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6 Astra (OpenAI) + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 55,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Autonomously constructed and Lean-verified a candidate counterexample to a 55-year-old Central Limit Theorem conjecture for stationary φ-mixing sequences—pending expert audit of its AI-written formal statement.",
+  "summary": "Released on September 5, 2026 by Epoch AI researcher Tom Adamczewski (github.com/tadamcz/phi-mixing-clt), OpenAI’s GPT-6 Astra autonomously constructed a candidate counterexample and Lean 4 disproof of the 1971 Ibragimov–Iosifescu conjecture for φ-mixing stochastic processes—which asked whether every strictly stationary, finite-variance, uniformly mixing (φ-mixing) sequence with diverging partial-sum variance must obey a Central Limit Theorem (and by Iosifescu’s stronger version, a weak invariance principle). Astra’s constructed stationary process satisfies finite second moments, φ-mixing, and divergent variance via rare large fluctuations while normalized partial sums concentrate near zero along a subsequence. Lean’s default kernel verified the proof using only standard axioms, though the work is explicitly tracked as an unaudited candidate disproof pending expert verification that the AI-generated formal statement matches classical probability definitions.",
+  "technicalHighlights": [
+    "Autonomously designed a strictly stationary φ-mixing stochastic process where rare large fluctuations maintain divergent variance while normalized partial sums converge to zero in probability along a subsequence.",
+    "Verified cleanly by Lean 4’s default kernel using only standard classical axioms (propext, Classical.choice, Quot.sound), with all code and novelty/misformalization audits published openly on GitHub.",
+    "Cataloged on Wikipedia and Wolfram MathWorld as a landmark test case of autonomous AI counterexample generation in classical probability theory."
+  ],
+  "caveats": "Tagged Preprint / Active Review because the Lean formalization of the conjecture itself was AI-generated and has not yet received an independent probabilist’s statement-fidelity audit confirming zero subtle definition mismatches.",
+  "contributors": [
+    "Tom Adamczewski"
+  ],
+  "institutions": [
+    "Epoch AI",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 76,
+    "verification": 74,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "If statement fidelity holds under expert audit, settles a 55-year-old foundational boundary question in dependent Central Limit Theorem theory (Ibragimov 1971 / Iosifescu 1974).",
+    "ripple": "Highlights both the promise of autonomous AI counterexample construction in analysis/probability and the urgent need for human statement-fidelity auditing.",
+    "verification": "Kernel-verified in Lean 4 with standard axioms, but scored conservatively pending independent probabilist audit of the AI-formalized problem statement.",
+    "velocity": "Autonomously generated a delicate stochastic counterexample and complete Lean 4 proof script for a conjecture open since 1971."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "GitHub — tadamcz/phi-mixing-clt (GPT-6 Astra Lean 4 Candidate Disproof, Sep 2026)",
+      "url": "https://github.com/tadamcz/phi-mixing-clt",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Wolfram MathWorld — Ibragimov–Iosifescu Conjecture",
+      "url": "https://mathworld.wolfram.com/Ibragimov-IosifescuConjecture.html",
+      "type": "explainer"
+    },
+    {
+      "label": "Wikipedia — Ibragimov–Iosifescu conjecture for φ-mixing sequences",
+      "url": "https://en.wikipedia.org/wiki/Ibragimov%E2%80%93Iosifescu_conjecture_for_%CF%86-mixing_sequences",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "courtade-kumar-conjecture-lean-2026",
+  "title": "Proof & 50M-Line Lean 4 Formalization of the Courtade–Kumar Conjecture",
+  "shortTitle": "Courtade–Kumar Conjecture (Lean)",
+  "date": "2026-09-21",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Information Theory",
+    "Boolean Function Analysis",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Gemini 4 Argon & Antigravity /teamwork (Stellar Colosseum + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 13,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Resolved information theory’s flagship 2013 Most Informative Boolean Function Conjecture in full generality—confirming dictator functions maximize mutual information over noisy channels—with a 50-million-line Lean 4 proof.",
+  "summary": "Announced in September 2026 (arXiv:2609.24184) and detailed in Google Research’s November 13, 2026 Antigravity /teamwork report, researchers from Google Research, CUHK, USC, and CMU resolved Thomas Courtade and Gowtham Kumar’s 2013 Most Informative Boolean Function Conjecture in full generality—proving that when a uniformly random bit string passes through a binary symmetric noisy channel, no 1-bit Boolean function preserves more mutual information than a dictator function copying a single coordinate. After Gemini first found counterexamples to an earlier generalized candidate from CUHK, human theorists reduced the problem to a 14-variable optimization and analytical lower bound; Gemini 4 Argon and /teamwork’s Long Proof (Stellar Colosseum) harness then partitioned the parameter space, derived most new analytical bounds and interval-arithmetic certificates, autonomously extended the proof from balanced to unbalanced Boolean functions, and formalized the complete proof in ~50 million lines of Lean 4.",
+  "technicalHighlights": [
+    "Settled information theory’s 2013 Courtade–Kumar Conjecture across all noise levels and both balanced and unbalanced Boolean functions.",
+    "Gemini first falsified an earlier generalized conjecture, then Gemini 4 Argon + /teamwork derived analytical bounds, interval-arithmetic certificates, and the autonomous extension to unbalanced functions.",
+    "Published both the arXiv manuscript (arXiv:2609.24184) and a public Lean 4 formalization repository (dpwoodru/general-courtade-kumar-lean) spanning ~50 million lines of machine-checked code."
+  ],
+  "caveats": "Because the machine-checked formalization relies on extensive interval-arithmetic case partitions totaling ~50 million lines of Lean 4, independent mathematicians are working on extracting shorter, fully human-readable analytical simplifications.",
+  "contributors": [
+    "David P. Woodruff",
+    "Chandra Nair",
+    "Amin Gohari",
+    "Zijie Chen",
+    "Vahab Mirrokni"
+  ],
+  "institutions": [
+    "Google Research",
+    "Chinese University of Hong Kong (CUHK)",
+    "Carnegie Mellon University",
+    "University of Southern California"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 86,
+    "verification": 95,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Resolves one of the best-known open conjectures in modern information theory and Boolean Fourier analysis since 2013.",
+    "ripple": "Demonstrates scalable human–multi-agent mathematical collaboration (Antigravity /teamwork + Lean 4) handling high-dimensional analytical optimization proofs.",
+    "verification": "Machine-checked in Lean 4 with public GitHub repository, arXiv manuscript, and active academic review alongside concurrent independent human work.",
+    "velocity": "Compressed a 14-variable analytical partition and unbalanced-function extension that had resisted a decade of manual attacks."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv — Dictators are most informative (arXiv:2609.24184, Sep 2026)",
+      "url": "https://arxiv.org/abs/2609.24184",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — dpwoodru/general-courtade-kumar-lean (Lean 4 Formal Proof)",
+      "url": "https://github.com/dpwoodru/general-courtade-kumar-lean",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Google Research — Advancing science & engineering with Antigravity’s /teamwork (Nov 2026)",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "type": "announcement"
+    }
+  ]
+}

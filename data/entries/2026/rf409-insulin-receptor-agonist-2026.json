@@ -1,0 +1,68 @@
+{
+  "id": "rf409-insulin-receptor-agonist-2026",
+  "title": "AlphaFold-Designed De Novo Protein RF-409 Bypasses Defective Insulin Receptors In Vivo",
+  "shortTitle": "RF-409 De Novo Insulin Agonist",
+  "date": "2026-11-25",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Protein Design",
+    "Metabolic Therapeutics",
+    "Receptor Pharmacology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaFold 2.0 & Structure-Guided De Novo Protein Design",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "An AI-designed single-chain protein sharing zero homology with insulin activated mutant insulin receptors in vivo, restoring glucose homeostasis in a mouse model of severe genetic insulin resistance.",
+  "summary": "Published in Science Translational Medicine on November 25, 2026 by Albert Hung, Xinru Wang, Michael Gao, Domenico Accili, David Baker, and Eunhee Choi (Columbia University & University of Washington Institute for Protein Design), researchers engineered RF-409—a single-chain de novo polypeptide designed using AlphaFold 2.0 and computational protein engineering with no sequence or structural homology to human insulin. Two RF-409 molecules rigidly engage the insulin receptor extracellular domain at noncanonical sites to stabilize an active T-shaped dimer, bypassing pathogenic insulin-binding mutations (such as IR D707A seen in Donohue and Rabson-Mendenhall syndromes). In severe insulin-resistance mice where standard insulin fails completely, RF-409 restored glucose regulation, extended circulation half-life via albumin binding, and prevented pancreatic atrophy.",
+  "technicalHighlights": [
+    "RF-409 shares zero sequence or structural homology with native two-chain insulin, instead using two rigidly α-helix-linked de novo domains to lock the receptor in its active conformation.",
+    "Activated patient-derived insulin-binding-deficient IR D707A mutant receptors in vivo—reversing hyperglycemia, hyperinsulinemia, lipoatrophy, and pancreatic atrophy where Humulin failed.",
+    "Exhibited markedly prolonged systemic circulation (via enhanced human serum albumin affinity) with broadly insulin-like phosphoproteomic signaling and no observed hepatic toxicity."
+  ],
+  "caveats": "Validated in preclinical mouse models of severe insulin resistance; human immunogenicity, tissue-penetration kinetics, and long-term clinical safety remain to be evaluated in clinical trials.",
+  "contributors": [
+    "Albert Hung",
+    "Xinru Wang",
+    "Michael Gao",
+    "David Baker",
+    "Eunhee Choi"
+  ],
+  "institutions": [
+    "Columbia University",
+    "University of Washington (Institute for Protein Design)"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 86,
+    "verification": 94,
+    "velocity": 83
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates that AI-designed noncanonical agonists can bypass genetic loss-of-function receptor mutations untreatable by natural hormones.",
+    "ripple": "Establishes a generalizable blueprint for engineering receptor-selective mimetics for severe receptoropathies, diabetes, and metabolic liver disease.",
+    "verification": "Peer-reviewed in Science Translational Medicine with structural, phosphoproteomic, and in vivo preclinical efficacy data.",
+    "velocity": "Compressed de novo hormone-mimetic engineering from decades of peptide analog screening into targeted AI-guided structural design."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Science Translational Medicine — Reprogramming insulin receptor activation with a de novo agonist (Nov 2026)",
+      "url": "https://doi.org/10.1126/scitranslmed.aei0487",
+      "type": "paper"
+    },
+    {
+      "label": "AAAS EurekAlert — AlphaFold-designed compound bypasses defective insulin signaling (Nov 2026)",
+      "url": "https://www.eurekalert.org/news-releases/1152999",
+      "type": "announcement"
+    },
+    {
+      "label": "PMC Preprint Full Text (PMC13174351)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13174351/",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "gencast-probabilistic-weather-2024",
+  "title": "GenCast Diffusion Weather Model Surpasses ECMWF Ensemble Forecasting on 97.2% of Targets",
+  "shortTitle": "GenCast Probabilistic Weather",
+  "date": "2024-12-04",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Atmospheric Physics",
+    "Probabilistic Diffusion Models",
+    "Earth System Forecasting"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GenCast (Spherical Diffusion Ensemble Model — Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "8 min per 15-day global ensemble",
+  "isAnchor": false,
+  "whyItMatters": "Solved deterministic AI weather models’ blurring and uncertainty blind spots—generating calibrated 15-day global probabilistic ensembles in 8 minutes that beat ECMWF’s top operational ENS on 97.2% of 1,320 targets.",
+  "summary": "Published in Nature on December 4, 2024 by Ilan Price, Alvaro Sanchez-Gonzalez, Ferran Alet, Remi Lam, Matthew Willson, and collaborators at Google DeepMind, GenCast introduced a spherical-mesh conditional diffusion model trained on 40 years of ERA5 reanalysis data to generate sharp, physically coherent stochastic ensembles of 15-day global weather trajectories at 0.25° resolution across more than 80 atmospheric and surface variables. Generating an ensemble member in 8 minutes on a single TPU (versus hours on supercomputers), GenCast outperformed the European Centre for Medium-Range Weather Forecasts’ flagship operational ensemble (ECMWF ENS) on 97.2% of 1,320 evaluated metrics—with standout gains on extreme heat/cold, tropical cyclone tracks, and wind-power forecasting.",
+  "technicalHighlights": [
+    "Replaced deterministic regression with spherical conditional diffusion, preserving fine-scale atmospheric sharpness and well-calibrated uncertainty across 15-day horizons.",
+    "Outperformed ECMWF’s operational physics ensemble (ENS) on 97.2% of 1,320 verification targets and 99.8% at lead times beyond 36 hours.",
+    "Open-sourced model code and weights, directly powering Google’s operational WeatherNext forecasting suite."
+  ],
+  "caveats": "Trained on historical ERA5 physics-reanalysis archives at 0.25° (~25 km) grid resolution, meaning local mesoscale phenomena and unprecedented climate extremes still require downscaling or physics-coupled assimilation.",
+  "contributors": [
+    "Ilan Price",
+    "Alvaro Sanchez-Gonzalez",
+    "Ferran Alet",
+    "Remi Lam",
+    "Matthew Willson"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 93,
+    "verification": 98,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Established generative diffusion ensembles as superior to traditional supercomputer PDE ensembles for probabilistic chaotic fluid dynamics.",
+    "ripple": "Transformed operational meteorological forecasting, disaster-risk early warning, and renewable-grid prediction worldwide.",
+    "verification": "Peer-reviewed in Nature (Dec 2024) with open weights/code and live operational benchmark validation against ECMWF ENS.",
+    "velocity": "Produces full 15-day global stochastic weather trajectories in 8 minutes on a single TPU instead of hours on HPC clusters."
+  },
+  "enables": [
+    "aurora-earth-system-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Probabilistic weather forecasting with machine learning (Dec 2024)",
+      "url": "https://doi.org/10.1038/s41586-024-08252-9",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Full Text — GenCast (PMC11666454)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666454/",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — Google DeepMind WeatherNext / GenCast Code",
+      "url": "https://github.com/google-deepmind/weathernext",
+      "type": "code"
+    }
+  ]
+}

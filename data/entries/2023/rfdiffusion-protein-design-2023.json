@@ -50,7 +50,11 @@
     "esm3-esmgfp-protein-2024",
     "chai-2-antibody-design-2025",
     "gpt6-intrinsic-protein-design-2026",
-    "rfantibody-de-novo-antibodies-2025"
+    "rfantibody-de-novo-antibodies-2025",
+    "baker-serine-hydrolases-2025",
+    "baker-calcium-ion-channels-2025",
+    "rfdiffusion2-enzyme-scaffolding-2025",
+    "rfdiffusion3-all-atom-design-2026"
   ],
   "sources": [
     {

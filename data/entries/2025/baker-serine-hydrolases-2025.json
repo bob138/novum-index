@@ -1,0 +1,65 @@
+{
+  "id": "baker-serine-hydrolases-2025",
+  "title": "RFdiffusion + PLACER Design First De Novo Multi-Step Serine Hydrolase Enzymes",
+  "shortTitle": "De Novo Serine Hydrolase Enzymes",
+  "date": "2025-02-13",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Enzyme Design",
+    "Structural Biology",
+    "Biocatalysis"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFdiffusion + PLACER (Baker Lab)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Solved a decades-long grand challenge in biochemistry: designing brand-new enzymes from scratch that execute complex multi-step covalent catalysis (ester hydrolysis) with sub-angstrom structural fidelity.",
+  "summary": "Published in Science in February 2025 by Anna Lauko, Samuel J. Pellock, Ivan Anishchenko, Kiera H. Sumida, David Juergens, and David Baker at the University of Washington Institute for Protein Design, researchers paired RFdiffusion with PLACER—a new deep-learning network that models dynamic active-site conformational ensembles across reaction intermediates—to build functional serine hydrolases completely from scratch. Unlike earlier artificial enzymes that catalyzed only single-step model reactions, these de novo designs incorporated full Ser-His-Asp/Glu catalytic triads and oxyanion holes capable of multi-step acylation and deacylation turnover, with crystal structures matching AI designs within 1 Å.",
+  "technicalHighlights": [
+    "Introduced PLACER, an atomic-scale neural ensemble predictor that evaluates pre-organization of catalytic side chains and substrates across every step of a multi-step reaction cycle.",
+    "Created entirely novel protein folds executing complete multi-step ester hydrolysis (nucleophilic attack, tetrahedral intermediate stabilization, acyl-enzyme hydrolysis) with catalytic efficiencies up to kcat/Km ~ 10³–10⁴ M⁻¹s⁻¹.",
+    "X-ray crystal structures confirmed sub-angstrom (<1 Å RMSD) agreement between the AI-generated active sites and synthesized enzymes."
+  ],
+  "caveats": "Initial catalytic efficiencies remain several orders of magnitude below evolutionarily perfected natural hydrolases, and experimental screening of designed variants is still required.",
+  "contributors": [
+    "Anna Lauko",
+    "Samuel J. Pellock",
+    "Ivan Anishchenko",
+    "David Juergens",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (Institute for Protein Design)"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 89,
+    "verification": 97,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Broke the long-standing multi-step catalysis barrier in de novo enzyme design by modeling transition-state ensembles with deep learning.",
+    "ripple": "Directly enabled general-purpose catalytic-site generators (RFdiffusion2, RFdiffusion3) and opens pathways to custom plastic-degrading and green-chemistry biocatalysts.",
+    "verification": "Peer-reviewed in Science (388: eadu2454) with kinetics, mutagenesis, and sub-angstrom X-ray crystallography validation.",
+    "velocity": "Replaced years of blind directed evolution from weak templates with rational multi-state AI ensemble filtering."
+  },
+  "enables": [
+    "rfdiffusion2-enzyme-scaffolding-2025",
+    "rfdiffusion3-all-atom-design-2026"
+  ],
+  "sources": [
+    {
+      "label": "Science — Computational design of serine hydrolases (Feb 2025)",
+      "url": "https://doi.org/10.1126/science.adu2454",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Full Text — Computational design of serine hydrolases (PMC12288761)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12288761/",
+      "type": "paper"
+    }
+  ]
+}

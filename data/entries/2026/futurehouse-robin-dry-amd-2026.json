@@ -1,0 +1,65 @@
+{
+  "id": "futurehouse-robin-dry-amd-2026",
+  "title": "FutureHouse Robin Multi-Agent AI Scientist Discovers & Validates Ripasudil for Dry AMD",
+  "shortTitle": "FutureHouse Robin (Dry AMD)",
+  "date": "2026-05-19",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Multi-Agent Scientific AI",
+    "Drug Repurposing",
+    "Ophthalmology"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Robin (Crow, Falcon & Finch Multi-Agent System — FutureHouse)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "30 min (551 papers synthesized)",
+  "isAnchor": false,
+  "whyItMatters": "First open-source multi-agent AI scientist published in Nature to autonomously generate hypotheses, design wet-lab assays, analyze experimental data, and validate a novel therapeutic candidate (ripasudil) for dry AMD.",
+  "summary": "Published in Nature in May 2026 (following a May 2025 preprint) by Ali Essam Ghareeb, Benjamin Chang, Ludovico Mitchener, Andrew D. White, and Samuel G. Rodriques at FutureHouse and the University of Oxford, Robin orchestrates specialized literature-search (Crow, Falcon) and data-analysis (Finch) agents in an iterative discovery loop. Tasked with finding treatments for dry age-related macular degeneration (dAMD)—a leading cause of blindness—Robin synthesized 551 papers in 30 minutes, hypothesized enhancing retinal pigment epithelium (RPE) phagocytosis, proposed and iterated wet-lab experiments with human biologists, analyzed RNA-seq and flow-cytometry readouts, and identified the glaucoma ROCK inhibitor ripasudil as a validated therapeutic candidate.",
+  "technicalHighlights": [
+    "Autonomously integrated literature synthesis (Crow & Falcon) with executable bioinformatics/assay data analysis (Finch) across multiple iterative experimental cycles.",
+    "Proposed increasing RPE phagocytosis as a novel dAMD therapeutic strategy, selected ripasudil (never previously proposed for dAMD), and interpreted follow-up RNA-seq data linking the effect to ABCA1 upregulation.",
+    "Released fully open-source under Apache-2.0 and published in Nature (655: 497–505) alongside Google’s AI Co-Scientist, demonstrating ~200× literature-synthesis speedup."
+  ],
+  "caveats": "Physical pipetting, cell-culture assays, and experimental execution were performed by human laboratory scientists following Robin’s protocols; ripasudil still requires human clinical trials for dry AMD efficacy and safety.",
+  "contributors": [
+    "Ali Essam Ghareeb",
+    "Benjamin Chang",
+    "Ludovico Mitchener",
+    "Andrew D. White",
+    "Samuel G. Rodriques"
+  ],
+  "institutions": [
+    "FutureHouse",
+    "University of Oxford"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Established an open-source, end-to-end closed-loop multi-agent AI scientist blueprint spanning literature review, experimental design, and wet-lab data interpretation.",
+    "ripple": "Apache-2.0 release catalyzed widespread academic adoption of autonomous literature-and-data agents and directly spawned Edison Scientific’s Kosmos platform.",
+    "verification": "Peer-reviewed in Nature (May 2026) with multi-cycle wet-lab experimental validation across RPE cell assays and transcriptomic profiling.",
+    "velocity": "Synthesized 551 papers in 30 minutes (~200× researcher speedup) and compressed early-stage therapeutic repurposing discovery into weeks."
+  },
+  "enables": [
+    "edison-kosmos-ai-scientist-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Robin: a multi-agent system for automating scientific discovery (May 2026)",
+      "url": "https://doi.org/10.1038/s41586-026-10652-y",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — Robin: a multi-agent system for automating scientific discovery (PMID 42156546)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42156546/",
+      "type": "paper"
+    }
+  ]
+}

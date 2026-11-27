@@ -1,0 +1,68 @@
+{
+  "id": "google-amie-clinical-diagnosis-2025",
+  "title": "Google AMIE Diagnostic AI Outperforms Clinicians on Complex Medical Cases",
+  "shortTitle": "Google AMIE Clinical Diagnosis",
+  "date": "2025-04-09",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical Diagnostic AI",
+    "Medical Reasoning",
+    "Human-AI Collaboration"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AMIE (Articulate Medical Intelligence Explorer — Google Research)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "In back-to-back Nature studies, Google’s self-play diagnostic LLM outperformed unassisted physicians on 302 complex NEJM cases (59.1% vs. 33.6%) and significantly boosted clinician diagnostic accuracy.",
+  "summary": "Published across twin landmark Nature papers in April 2025 by Tao Tu, Mike Schaekermann, Daniel McDuff, Alan Karthikesalingam, and Vivek Natarajan at Google Research and Google DeepMind, AMIE (Articulate Medical Intelligence Explorer) was trained via a simulated clinical self-play environment spanning thousands of medical conditions and specialties. In a blinded randomized evaluation on 302 challenging New England Journal of Medicine clinicopathological conferences, standalone AMIE achieved 59.1% top-10 diagnostic accuracy versus 33.6% for unassisted clinicians, and clinicians assisted by AMIE outperformed those using standard search tools (51.7% vs. 44.4%). A companion randomized OSCE trial with 159 simulated patient consultations showed AMIE matched or exceeded board-certified primary-care physicians on both diagnostic accuracy and communication empathy.",
+  "technicalHighlights": [
+    "Self-play simulated patient-clinician training loop scaled diagnostic reasoning across rare and complex multi-system diseases.",
+    "Achieved 59.1% top-10 accuracy on 302 complex NEJM diagnostic challenges vs. 33.6% for unassisted clinicians (P = 0.04) and elevated clinician-assisted accuracy to 51.7% vs. 44.4% with search (P = 0.03).",
+    "In blinded 159-case simulated primary-care text consultations, outperformed physicians on 28 of 32 specialist-rated clinical axes and 24 of 26 patient-actor empathy axes."
+  ],
+  "caveats": "Evaluations used text-based simulated consultations and retrospective NEJM case reports rather than live hospital patient care with physical exams and longitudinal EHR workflows.",
+  "contributors": [
+    "Tao Tu",
+    "Daniel McDuff",
+    "Mike Schaekermann",
+    "Alan Karthikesalingam",
+    "Vivek Natarajan"
+  ],
+  "institutions": [
+    "Google Research",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated in rigorous randomized Nature evaluations that self-play diagnostic LLMs can surpass physicians on differential diagnosis of rare complex diseases.",
+    "ripple": "Set the clinical evaluation standard for conversational medical AI and reshaped how health systems study human–AI diagnostic teaming.",
+    "verification": "Published in back-to-back peer-reviewed Nature articles (Vol. 642, Apr 2025) with blinded randomized clinician comparisons.",
+    "velocity": "Compressed multi-specialty differential reasoning across 302 complex NEJM cases into seconds per consultation."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — Towards accurate differential diagnosis with large language models (Apr 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-08869-4",
+      "type": "paper"
+    },
+    {
+      "label": "Nature — Towards conversational diagnostic artificial intelligence (Apr 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-08866-7",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — Towards accurate differential diagnosis with LLMs (PMID 40205049)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40205049/",
+      "type": "paper"
+    }
+  ]
+}

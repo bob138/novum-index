@@ -1,0 +1,65 @@
+{
+  "id": "chemcrow-autonomous-chemistry-agent-2024",
+  "title": "ChemCrow Tool-Augmented LLM Agent Plans Organic Syntheses & Discovers a Novel Chromophore",
+  "shortTitle": "ChemCrow Chemistry Agent",
+  "date": "2024-05-08",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Autonomous Chemistry",
+    "Retrosynthesis",
+    "Tool-Augmented LLM Agents"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "ChemCrow (GPT-4 + 18 Expert Chemistry Tools)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Pioneered tool-augmented LLM chemistry agents—autonomously planning and guiding physical synthesis of an insect repellent, three organocatalysts, and a newly discovered chromophore.",
+  "summary": "Published in Nature Machine Intelligence in May 2024 by Andres M. Bran, Sam Cox, Oliver Schilter, Carlo Baldassari, Andrew D. White, and Philippe Schwaller (EPFL and University of Rochester), ChemCrow augmented GPT-4 with 18 expert-designed chemistry tools covering literature search, molecular property calculation, safety/explosive checks, retrosynthesis, and robotic cloud-lab execution (IBM RoboRXN). Operating autonomously from high-level chemical goals, ChemCrow planned and executed the wet-lab syntheses of DEET insect repellent and three organocatalysts, and guided the discovery and experimental synthesis of a novel light-absorbing chromophore matching a target wavelength.",
+  "technicalHighlights": [
+    "Integrated 18 domain-specific chemistry tools (RDKit, PubChem, retrosynthesis, safety checks, RoboRXN) into an autonomous ReAct reasoning loop, dramatically reducing LLM chemical hallucinations.",
+    "Autonomously planned and guided physical synthesis of an insect repellent, three organocatalysts, and a newly discovered target-wavelength chromophore.",
+    "Established the open-source template for tool-using scientific AI agents across chemistry and biosecurity safety evaluation."
+  ],
+  "caveats": "Relied on external cloud-lab robotics and human chemists for purification and spectroscopic confirmation; highlighted dual-use chemical safety risks requiring automated guardrails.",
+  "contributors": [
+    "Andres M. Bran",
+    "Sam Cox",
+    "Oliver Schilter",
+    "Andrew D. White",
+    "Philippe Schwaller"
+  ],
+  "institutions": [
+    "EPFL",
+    "University of Rochester"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 88,
+    "verification": 94,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that pairing general LLMs with symbolic chemistry tools enables autonomous end-to-end synthesis planning and molecular discovery.",
+    "ripple": "Directly inspired FutureHouse Robin, Edison Kosmos, and the modern ecosystem of tool-augmented scientific agents.",
+    "verification": "Peer-reviewed in Nature Machine Intelligence (6: 525–535) with experimental synthesis of five target compounds including a novel chromophore.",
+    "velocity": "Compressed multi-step retrosynthesis planning, safety screening, and robotic execution scripting into autonomous minutes-long agent sessions."
+  },
+  "enables": [
+    "futurehouse-robin-dry-amd-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature Machine Intelligence — Augmenting large language models with chemistry tools (May 2024)",
+      "url": "https://doi.org/10.1038/s42256-024-00832-8",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Full Text — ChemCrow (PMC11116106)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11116106/",
+      "type": "paper"
+    }
+  ]
+}

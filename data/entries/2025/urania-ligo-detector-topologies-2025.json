@@ -1,0 +1,61 @@
+{
+  "id": "urania-ligo-detector-topologies-2025",
+  "title": "Urania AI Discovers 50 Superhuman Gravitational-Wave Detector Topologies Outperforming LIGO Voyager",
+  "shortTitle": "Urania LIGO Detector Designs",
+  "date": "2025-04-11",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Gravitational-Wave Physics",
+    "Quantum Optics",
+    "AI Experimental Design"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Urania (Continuous Differentiable Optical Discovery AI — MPL / Caltech)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Autonomously invented 50 unconventional laser interferometer topologies beating next-generation human LIGO Voyager designs—expanding observable cosmic volume up to 50× for binary neutron-star postmergers.",
+  "summary": "Published in Physical Review X in April 2025 by Mario Krenn (Max Planck Institute for the Science of Light), Yehonathan Drori, and Rana X. Adhikari (Caltech LIGO), Urania reformulated the intractable discrete search over laser interferometer architectures into a continuous differentiable optimization problem over universal optical networks (UIFO). Running autonomously across quantum-noise and thermal-noise physics simulators, Urania rediscovered known advanced optical tricks and uncovered 50 entirely new detector topologies that surpass human-designed next-generation LIGO Voyager concepts—including a counterintuitive 3 km light-circulating ring that boosts sensitivity by 10–15% broadband, 1.6× for supernovae, and up to 4.1× for binary neutron-star postmergers (corresponding to ~50× greater observable cosmic volume).",
+  "technicalHighlights": [
+    "Reformulated discrete optical-component graph search into continuous gradient-based physics optimization (Urania / UIFO), exploring millions of interferometer configurations beyond human intuition.",
+    "Discovered 50 novel topologies outperforming LIGO Voyager benchmarks across broadband, supernova, and postmerger neutron-star frequency bands—yielding up to 50× higher observable cosmic event volume.",
+    "Published a full public 'Detector Zoo' of machine-discovered quantum-optical architectures, including counterintuitive multi-kilometer ring cavities now being studied by LIGO physicists."
+  ],
+  "caveats": "Evaluated via high-fidelity interferometer quantum/thermal noise simulation (Finesse); engineering tolerances, mirror-coating limits, and multi-kilometer vacuum construction costs must still be tested before physical LIGO upgrades.",
+  "contributors": [
+    "Mario Krenn",
+    "Yehonathan Drori",
+    "Rana X. Adhikari"
+  ],
+  "institutions": [
+    "Max Planck Institute for the Science of Light",
+    "Caltech (LIGO Laboratory)"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 84,
+    "verification": 95,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated AI can invent counterintuitive macroscopic physics-instrument architectures outperforming decades of human quantum-optics design.",
+    "ripple": "Opened an AI-driven experimental-hardware design paradigm across gravitational-wave observatories, quantum metrology, and photonics.",
+    "verification": "Peer-reviewed in Physical Review X (15: 021012) with open-source physics-simulator verification across all 50 topologies.",
+    "velocity": "Systematically explored interferometer design spaces that took human LIGO collaborations decades to map incrementally."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Physical Review X — Digital Discovery of Interferometric Gravitational Wave Detectors (Apr 2025)",
+      "url": "https://doi.org/10.1103/PhysRevX.15.021012",
+      "type": "paper"
+    },
+    {
+      "label": "Quanta Magazine — AI Designs Better Gravitational-Wave Detectors Than Humans (Jul 2025)",
+      "url": "https://www.quantamagazine.org/ai-designs-better-gravitational-wave-detectors-than-humans-20250721/",
+      "type": "explainer"
+    }
+  ]
+}

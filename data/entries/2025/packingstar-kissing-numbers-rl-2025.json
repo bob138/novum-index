@@ -1,0 +1,59 @@
+{
+  "id": "packingstar-kissing-numbers-rl-2025",
+  "title": "PackingStar Game-Theoretic RL Breaks High-Dimensional Kissing Number Records (Dims 25–31 & 13D)",
+  "shortTitle": "PackingStar Kissing Numbers RL",
+  "date": "2025-11-17",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Discrete Geometry",
+    "Sphere Packing",
+    "Game-Theoretic Reinforcement Learning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "PackingStar (Two-Player Game-Theoretic RL)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 54,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Formulated high-dimensional sphere kissing as a two-player matrix-completion game—surpassing all human-known lower-bound records across dimensions 25–31, breaking a 1971 13D rational record, and uncovering 6,000+ new structures.",
+  "summary": "Introduced in November 2025 (and expanded through v5 in September 2026) by Chengdong Ma, Théo Tao Zhaowei, and collaborators (arXiv:2511.13391), PackingStar cast the centuries-old Kissing Number Problem—how many non-overlapping unit spheres can simultaneously touch a central unit sphere in n dimensions—as a cooperative two-player reinforcement learning game over pairwise-cosine Gram matrices, where one player adds entries and a second player corrects suboptimal entries. PackingStar reproduced known records and surpassed all human-known kissing-number lower bounds from dimensions 25 through 31, broke the 54-year-old 1971 rational-configuration record in dimension 13 (raising Kr(13) from 1,130 to 1,146 spheres with exact rational Gram verification), set new generalized multi-sphere kissing records, and revealed over 6,000 novel geometric structures—several non-antipodal and linked to finite simple groups.",
+  "technicalHighlights": [
+    "Surpassed human-known kissing-number lower bounds across dimensions 25–31 (beating 2011/2016 meta-constructions) and set new records for generalized double- and triple-sphere kissing numbers.",
+    "Broke the 1971 rational-structure record in 13 dimensions (1,130 → 1,146 spheres) with exact rational pairwise cosines verifiable without floating-point approximation.",
+    "Discovered over 6,000 new geometric configurations—including non-antipodal arrangements and algebraic links to finite simple groups—inspiring follow-up human-and-AI improvements in 2026 (arXiv:2609.21591)."
+  ],
+  "caveats": "Establishes exact verifiable constructive lower bounds rather than proving upper-bound optimality, and the manuscript remains an arXiv preprint under active mathematical study.",
+  "contributors": [
+    "Chengdong Ma",
+    "Théo Tao Zhaowei"
+  ],
+  "institutions": [
+    "Peking University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 84,
+    "verification": 90,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Pushed back long-standing high-dimensional kissing-number records across 7 consecutive dimensions (25–31) plus a 54-year-old 13D rational record.",
+    "ripple": "Directly inspired multiple 2026 follow-up discrete-geometry papers refining the PackingStar constructions and extending RL to extremal geometry.",
+    "verification": "Explicit Gram-matrix constructions (including exact rational matrices in 13D) are directly checkable and independently reproduced by subsequent 2026 preprints.",
+    "velocity": "Explored high-dimensional spherical-code configuration spaces far beyond human geometric intuition via cooperative RL."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv — Finding Kissing Numbers with Game-theoretic Reinforcement Learning (arXiv:2511.13391)",
+      "url": "https://arxiv.org/abs/2511.13391",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv — Independent Follow-Up: New lower bounds for kissing numbers in dimensions 25–31 (arXiv:2609.21591)",
+      "url": "https://arxiv.org/abs/2609.21591",
+      "type": "paper"
+    }
+  ]
+}

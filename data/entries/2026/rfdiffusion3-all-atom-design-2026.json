@@ -1,0 +1,65 @@
+{
+  "id": "rfdiffusion3-all-atom-design-2026",
+  "title": "RFdiffusion3 Unifies All-Atom Biomolecular Diffusion for DNA Binders & Multi-Turnover Enzymes",
+  "shortTitle": "RFdiffusion3 All-Atom Design",
+  "date": "2026-10-15",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Protein Design",
+    "All-Atom Generative Diffusion",
+    "Enzyme Engineering"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFdiffusion3 (All-Atom Biomolecular Diffusion — Baker Lab)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Unifies protein design at full atomic resolution—running ~10× faster than RFdiffusion2 to generate sequence-specific DNA binders and 35 experimentally validated multi-turnover cysteine hydrolases.",
+  "summary": "Published in Science on October 15, 2026 by Jasper Butcher, Rohith Krishna, and David Baker’s team at the University of Washington Institute for Protein Design, RFdiffusion3 (RFD3) replaces coarse residue-frame representations with a unified all-atom diffusion architecture modeling up to 14 atoms per residue alongside arbitrary nucleic acids, small molecules, and metal cofactors. Running roughly 10× faster than RFdiffusion2 while generalizing across protein-DNA, protein-ligand, and catalytic active-site scaffolding, RFD3 designed sequence-specific DNA-binding proteins (EC50 = 5.89 μM) and 35 functional multi-turnover cysteine hydrolase enzymes reaching kcat/Km = 3,557 M⁻¹s⁻¹.",
+  "technicalHighlights": [
+    "Models full all-atom biomolecular coordinates (backbone + side chains + DNA/small-molecule/cofactor atoms) in a single diffusion architecture, running ~10× faster than RFdiffusion2.",
+    "Experimentally generated de novo sequence-specific DNA-binding proteins and 35 distinct multi-turnover cysteine hydrolase enzymes (up to kcat/Km = 3,557 M⁻¹s⁻¹).",
+    "Released open-source via the Baker Lab RosettaCommons / Foundry ecosystem, making atomic-precision biomolecular design accessible across academic labs."
+  ],
+  "caveats": "Still requires downstream sequence design (LigandMPNN / ProteinMPNN) and in-silico filtering before wet-lab synthesis; catalytic efficiencies of de novo enzymes remain below the fastest natural enzymes.",
+  "contributors": [
+    "Jasper Butcher",
+    "Rohith Krishna",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (Institute for Protein Design)"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 93,
+    "verification": 96,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Completes the transition of generative protein diffusion from backbone-only scaffolds to unified all-atom biomolecular interaction design.",
+    "ripple": "Open-source all-atom generator applicable across gene regulation (DNA binders), small-molecule biosensing, and industrial biocatalysis.",
+    "verification": "Peer-reviewed in Science (Oct 2026) with experimental biochemical validation of DNA binders and 35 active multi-turnover enzymes.",
+    "velocity": "Delivers ~10× generation speedup over RFdiffusion2 while solving complex multi-component atomic scaffolding tasks directly."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Science — Atomic functional site scaffolding in biopolymers with RFdiffusion3 (Oct 2026)",
+      "url": "https://doi.org/10.1126/science.aeh2982",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — Atomic functional site scaffolding in biopolymers with RFdiffusion3 (PMID 42879533)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42879533/",
+      "type": "paper"
+    },
+    {
+      "label": "AAAS EurekAlert — Introducing RFdiffusion3 (Oct 2026)",
+      "url": "https://www.eurekalert.org/news-releases/1147251",
+      "type": "announcement"
+    }
+  ]
+}

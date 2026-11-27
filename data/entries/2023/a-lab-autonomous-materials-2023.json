@@ -21,9 +21,9 @@
   "technicalHighlights": [
     "Closed the loop between computational crystal prediction (Materials Project / GNoME) and physical synthesis using robotic arms, furnaces, and automated XRD characterization.",
     "Used active learning to iteratively revise failed synthesis recipes across 355 experiments in 17 days of continuous operation.",
-    "Triggered an influential community audit (Leeman & Palgrave, 2024) highlighting why automated spectroscopic/diffraction verification remains the hardest bottleneck in self-driving labs."
+    "Triggered an influential community audit (Leeman & Palgrave, 2024) and a January 2026 Nature author correction refining 'novel' to 'new to the platform', underscoring automated spectroscopic/diffraction verification as the key bottleneck in self-driving labs."
   ],
-  "caveats": "Tagged Contested / Partial because independent crystallographers (notably Robert Palgrave & Leslie Leeman) disputed the automated Rietveld/XRD phase assignments for many of the 41 claimed 'novel' compounds; the Berkeley team acknowledged misidentifications in specific cases while defending the broader autonomous-synthesis methodology.",
+  "caveats": "Tagged Contested / Partial because independent crystallographers (notably Robert Palgrave & Leslie Leeman) disputed the automated Rietveld/XRD phase assignments for many of the 41 claimed 'novel' compounds; a January 2026 Nature author correction formally clarified the novelty framing as 'new to the platform' rather than necessarily new to science while retaining the broader autonomous-synthesis methodology.",
   "contributors": [
     "Nathan J. Szymanski",
     "Yan Zeng",

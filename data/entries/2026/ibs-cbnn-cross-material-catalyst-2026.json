@@ -1,0 +1,63 @@
+{
+  "id": "ibs-cbnn-cross-material-catalyst-2026",
+  "title": "Crossbreeding Neural Network Bridges Material Families to Discover Champion Green-Hydrogen Catalyst",
+  "shortTitle": "IBS Cross-Material Catalyst AI",
+  "date": "2026-05-28",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Electrocatalysis",
+    "Green Hydrogen",
+    "Cross-Domain Materials AI"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Crossbreeding Neural Network (CBNN — IBS / SNU)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Instead of interpolating inside one known material family, a deep learning model bridged two separate catalyst classes to predict—and experimentally validate—a brand-new class of green-hydrogen catalysts.",
+  "summary": "Published in Nature Materials in May 2026 by Junseok Moon, Seungwoo Yoo, Jaehyuk Shim, Yung-Eun Sung, and Taeghwan Hyeon at Korea’s Institute for Basic Science (IBS) and Seoul National University, the Crossbreeding Neural Network (CBNN) integrated two previously siloed experimental datasets: carbon-supported single-atom catalysts (encoded as surface images) and bulk perovskite oxides (encoded as crystal graphs) using NLP-assisted shared chemical co-descriptors. Without ever seeing the hybrid class during training, CBNN accurately ranked 12 newly synthesized single-atom-on-perovskite catalysts and screened 8,008 multimetallic candidates to discover a W-Mo-Ru-Rh single-atom perovskite (Ca0.8Pr0.2Co0.8Fe0.2O3−δ) that outperformed every tested perovskite, carbon SAC, and monometallic benchmark for alkaline oxygen evolution.",
+  "technicalHighlights": [
+    "Fused heterogeneous experimental datasets across distinct material families using automated statistical + NLP co-descriptor selection (oxidation state, ionic radius, valence d-electrons, coordination).",
+    "Zero-shot generalized into an untrained hybrid catalyst family (single-atom catalysts anchored on perovskite oxides), correctly predicting the experimental activity ranking of all 12 synthesized test catalysts.",
+    "Screened 8,008 multimetallic candidates to discover a champion W-Mo-Ru-Rh-on-CPCF electrocatalyst, while explainable AI revealed synergistic neighbor-atom design rules."
+  ],
+  "caveats": "Validated for alkaline oxygen evolution reaction (OER) electrocatalysis at laboratory scale; long-term industrial electrolyzer durability and noble-metal cost optimization (Ru/Rh) remain engineering next steps.",
+  "contributors": [
+    "Junseok Moon",
+    "Seungwoo Yoo",
+    "Jaehyuk Shim",
+    "Yung-Eun Sung",
+    "Taeghwan Hyeon"
+  ],
+  "institutions": [
+    "Institute for Basic Science (IBS)",
+    "Seoul National University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 96,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Overcame materials AI’s chronic interpolation limit by transferring physical knowledge across distinct catalyst families to discover a novel hybrid material class.",
+    "ripple": "Provides a general cross-family blueprint transferable to batteries, solid electrolytes, and heterogeneous catalysts where experimental datasets are fragmented.",
+    "verification": "Peer-reviewed in Nature Materials (May 2026) with experimental synthesis, electrochemical OER testing, and ranking validation across 12+ new catalysts.",
+    "velocity": "Computationally screened 8,008 multimetallic cross-family candidates beyond human-predefined design spaces."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature Materials — Cross-material catalyst discovery via deep learning (May 2026)",
+      "url": "https://doi.org/10.1038/s41563-026-02622-6",
+      "type": "paper"
+    },
+    {
+      "label": "EurekAlert — Researchers use AI to discover new catalyst beyond material boundaries (May 2026)",
+      "url": "https://www.eurekalert.org/news-releases/1129930",
+      "type": "announcement"
+    }
+  ]
+}

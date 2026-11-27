@@ -519,6 +519,66 @@ const EXPLICIT_ATTRIBUTIONS = {
       roleNote: '29.4K-Line Lean Formalization',
     },
   ],
+  'imo-2025-formal-gold-aristotle-seed-2025': [
+    {
+      familyId: 'harmonic-aristotle',
+      familyName: 'Harmonic Aristotle',
+      modelId: 'harmonic-aristotle',
+      modelName: 'Harmonic Aristotle (Lean 4)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Harmonic',
+      roleNote: 'Formal IMO Gold',
+    },
+    {
+      familyId: 'bytedance-seed-prover',
+      familyName: 'ByteDance Seed-Prover',
+      modelId: 'bytedance-seed-prover',
+      modelName: 'ByteDance Seed-Prover (Lean 4)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'ByteDance Seed',
+      roleNote: 'Formal IMO Gold (5/6)',
+    },
+  ],
+  'chemcrow-autonomous-chemistry-agent-2024': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'chemcrow-gpt4',
+      modelName: 'ChemCrow (GPT-4 + 18 Chemistry Tools)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'EPFL / University of Rochester',
+    },
+  ],
+  'baker-calcium-ion-channels-2025': [
+    {
+      familyId: 'rosettafold-rfdiffusion',
+      familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+      modelId: 'rfdiffusion',
+      modelName: 'RFdiffusion (SE(3) Diffusion)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'University of Washington (IPD)',
+    },
+  ],
+  'courtade-kumar-conjecture-lean-2026': [
+    {
+      familyId: 'google-gemini',
+      familyName: 'Google Gemini & Gemma',
+      modelId: 'gemini-4-argon-teamwork',
+      modelName: 'Gemini 4 Argon (Antigravity /teamwork)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'weil-conjectures-lean-teamwork-2026': [
+    {
+      familyId: 'google-gemini',
+      familyName: 'Google Gemini & Gemma',
+      modelId: 'gemini-4-argon-teamwork',
+      modelName: 'Gemini 4 Argon (Antigravity /teamwork)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
 };
 
 /**
@@ -879,13 +939,14 @@ export function classifyBreakthroughSystems(item) {
     s.includes('alphatensor') ||
     s.includes('alphadev') ||
     s.includes('alphachip') ||
+    s.includes('discorl') ||
     s.includes('deep rl magnetic')
   ) {
     const label = item.aiSystem.split('(')[0].trim();
     return [
       {
         familyId: 'deepmind-deep-rl',
-        familyName: 'DeepMind Deep RL (AlphaZero Lineage)',
+        familyName: 'DeepMind Deep RL (AlphaZero & DiscoRL)',
         modelId: label.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
         modelName: label,
         architecture: 'Deep RL & Evolutionary Agent',
@@ -894,7 +955,19 @@ export function classifyBreakthroughSystems(item) {
     ];
   }
 
-  // Standalone Google DeepMind Domain Science Neural Nets
+  // Standalone Google DeepMind Domain Science Neural Nets & Clinical AI
+  if (s.includes('amie (')) {
+    return [
+      {
+        familyId: 'google-amie',
+        familyName: 'Google AMIE Clinical AI',
+        modelId: 'google-amie',
+        modelName: 'AMIE (Diagnostic Clinical LLM)',
+        architecture: 'Frontier Reasoning LLM',
+        lab: 'Google DeepMind & Research',
+      },
+    ];
+  }
   if (s.includes('gnome')) {
     return [
       {
@@ -907,13 +980,14 @@ export function classifyBreakthroughSystems(item) {
       },
     ];
   }
-  if (s.includes('graphcast')) {
+  if (s.includes('graphcast') || s.includes('gencast')) {
+    const isGenCast = s.includes('gencast') && !s.includes('graphcast');
     return [
       {
         familyId: 'graphcast-gencast',
         familyName: 'GraphCast & GenCast',
-        modelId: 'graphcast-gencast',
-        modelName: 'GraphCast (GNN) & GenCast (Diffusion)',
+        modelId: isGenCast ? 'gencast' : 'graphcast',
+        modelName: isGenCast ? 'GenCast (Diffusion Ensemble)' : 'GraphCast (Multi-Mesh GNN)',
         architecture: 'Domain Science Neural Net',
         lab: 'Google DeepMind & Research',
       },
@@ -1043,6 +1117,42 @@ export function classifyBreakthroughSystems(item) {
       },
     ];
   }
+  if (s.includes('rfdiffusion3')) {
+    return [
+      {
+        familyId: 'rosettafold-rfdiffusion',
+        familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+        modelId: 'rfdiffusion3',
+        modelName: 'RFdiffusion3 (All-Atom Diffusion)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'University of Washington (IPD)',
+      },
+    ];
+  }
+  if (s.includes('rfdiffusion2')) {
+    return [
+      {
+        familyId: 'rosettafold-rfdiffusion',
+        familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+        modelId: 'rfdiffusion2',
+        modelName: 'RFdiffusion2 (Atom-Level Flow Matching)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'University of Washington (IPD)',
+      },
+    ];
+  }
+  if (s.includes('rfdiffusion + placer')) {
+    return [
+      {
+        familyId: 'rosettafold-rfdiffusion',
+        familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+        modelId: 'rfdiffusion-placer',
+        modelName: 'RFdiffusion + PLACER (Enzyme Design)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'University of Washington (IPD)',
+      },
+    ];
+  }
   if (s.includes('rfdiffusion')) {
     return [
       {
@@ -1052,6 +1162,79 @@ export function classifyBreakthroughSystems(item) {
         modelName: 'RFdiffusion (SE(3) Diffusion)',
         architecture: 'Bio & Genomic Neural Net',
         lab: 'University of Washington (IPD)',
+      },
+    ];
+  }
+  if (s.includes('robin (crow') || s.includes('kosmos (world-model')) {
+    const isKosmos = s.includes('kosmos');
+    return [
+      {
+        familyId: 'futurehouse-edison',
+        familyName: 'FutureHouse / Edison AI Scientists (Robin & Kosmos)',
+        modelId: isKosmos ? 'edison-kosmos' : 'futurehouse-robin',
+        modelName: isKosmos ? 'Kosmos (World-Model AI Scientist)' : 'Robin (Crow, Falcon & Finch)',
+        architecture: 'Neuro-Symbolic LLM + Verifier',
+        lab: 'FutureHouse / Edison Scientific',
+      },
+    ];
+  }
+  if (s.includes('progen (')) {
+    return [
+      {
+        familyId: 'progen-plm',
+        familyName: 'ProGen Protein LM (Salesforce / Profluent)',
+        modelId: 'progen-1-2b',
+        modelName: 'ProGen (1.2B Protein LM)',
+        architecture: 'Bio & Genomic Neural Net',
+        lab: 'Salesforce Research / Profluent Bio',
+      },
+    ];
+  }
+  if (s.includes('crossbreeding neural network')) {
+    return [
+      {
+        familyId: 'ibs-cbnn',
+        familyName: 'Crossbreeding Neural Network (IBS / SNU)',
+        modelId: 'ibs-cbnn',
+        modelName: 'CBNN Cross-Material Catalyst AI',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Institute for Basic Science / SNU',
+      },
+    ];
+  }
+  if (s.includes('universal model for atoms')) {
+    return [
+      {
+        familyId: 'meta-fair-uma',
+        familyName: 'Meta FAIR UMA / OMol25',
+        modelId: 'meta-fair-uma',
+        modelName: 'UMA (Universal Model for Atoms)',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Meta FAIR',
+      },
+    ];
+  }
+  if (s.includes('urania (')) {
+    return [
+      {
+        familyId: 'urania-ligo-ai',
+        familyName: 'Urania Optical Discovery AI (MPL / Caltech)',
+        modelId: 'urania-uifo',
+        modelName: 'Urania (Differentiable Interferometer AI)',
+        architecture: 'Domain Science Neural Net',
+        lab: 'Max Planck Institute / Caltech LIGO',
+      },
+    ];
+  }
+  if (s.includes('packingstar')) {
+    return [
+      {
+        familyId: 'packingstar-rl',
+        familyName: 'PackingStar Game-Theoretic RL',
+        modelId: 'packingstar-rl',
+        modelName: 'PackingStar (Two-Player Kissing RL)',
+        architecture: 'Deep RL & Evolutionary Agent',
+        lab: 'Peking University',
       },
     ];
   }

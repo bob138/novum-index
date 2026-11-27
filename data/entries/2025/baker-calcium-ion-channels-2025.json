@@ -1,0 +1,66 @@
+{
+  "id": "baker-calcium-ion-channels-2025",
+  "title": "Bottom-Up AI Design of Selective Calcium Ion Channels From Scratch",
+  "shortTitle": "De Novo Ca²⁺ Ion Channels",
+  "date": "2025-10-22",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Membrane Proteins",
+    "Ion Channels",
+    "Synthetic Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFdiffusion + ProteinMPNN + AlphaFold 2 (Baker Lab)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First bottom-up AI design of selective transmembrane calcium ion channels built from scratch—opening programmable control over electrical signaling in living cells.",
+  "summary": "Published in Nature in October 2025 by Yulai Liu, Connor Weidle, Ljubica Mihaljević, and David Baker at the University of Washington Institute for Protein Design, researchers used deep-learning protein design (RFdiffusion, ProteinMPNN, and AlphaFold) to build transmembrane calcium-selective ion channels from defined selectivity-filter geometries completely from scratch. Patch-clamp electrophysiology and cryo-EM confirmed that the AI-designed nanopores assemble inside lipid membranes, match atomic models accurately, and selectively conduct Ca²⁺ ions over competing monovalent ions such as Na⁺.",
+  "technicalHighlights": [
+    "Designed transmembrane pore architectures directly around idealized ion-coordinating selectivity filters rather than modifying natural channel scaffolds.",
+    "Single-channel electrophysiology confirmed robust conductance and selective Ca²⁺ permeation over monovalent ions, matching cryo-EM structural reconstructions.",
+    "Demonstrated bottom-up synthetic control over membrane proteins central to cardiac, neural, and intracellular electrical signaling."
+  ],
+  "caveats": "First-generation de novo channels lack the complex voltage-sensing and ligand-gating regulatory domains of natural mammalian calcium channels.",
+  "contributors": [
+    "Yulai Liu",
+    "Connor Weidle",
+    "Ljubica Mihaljević",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (Institute for Protein Design)"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 85,
+    "verification": 96,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Extended generative protein design into one of structural biology’s hardest frontiers: ion-selective transmembrane channels.",
+    "ripple": "Opens synthetic electrophysiology, biosensing nanopores, and programmable cellular signaling therapeutics.",
+    "verification": "Peer-reviewed in Nature (648: 468–476) with cryo-EM structures and functional patch-clamp electrophysiology.",
+    "velocity": "Achieved selective ion-channel synthesis bottom-up without relying on natural membrane-protein templates."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — Bottom-up design of Ca2+ channels from defined selectivity filter geometry (Oct 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-09646-z",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — Bottom-up design of Ca2+ channels (PMID 41125887)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41125887/",
+      "type": "paper"
+    },
+    {
+      "label": "EurekAlert — Proteins critical to cell electrical signaling built from scratch (Oct 2025)",
+      "url": "https://www.eurekalert.org/news-releases/1103771",
+      "type": "announcement"
+    }
+  ]
+}

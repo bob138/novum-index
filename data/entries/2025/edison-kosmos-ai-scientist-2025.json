@@ -1,0 +1,63 @@
+{
+  "id": "edison-kosmos-ai-scientist-2025",
+  "title": "Edison Scientific Kosmos World-Model AI Scientist Generates Seven Cross-Domain Discoveries",
+  "shortTitle": "Edison Kosmos AI Scientist",
+  "date": "2025-11-04",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Autonomous AI Scientists",
+    "World Models",
+    "Automated Data Analysis"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Kosmos (World-Model Multi-Agent Scientist — Edison Scientific / FutureHouse)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "12 hours (~6 months human equivalent)",
+  "isAnchor": false,
+  "whyItMatters": "Introduced a structured shared world model coordinating parallel coding and literature agents across 200 rollouts (~42k lines of code & 1,500 papers per run), yielding 7 discoveries across four scientific fields.",
+  "summary": "Released in November 2025 by Ludovico Mitchener, Angela Yiu, Benjamin Chang, Samuel G. Rodriques, Andrew D. White, and collaborators at Edison Scientific (FutureHouse’s commercial spinout), Kosmos solves long-horizon context drift in autonomous research agents by coordinating parallel data-analysis and literature-search agents through a persistent structured world model. Across 12-hour runs (~200 agent rollouts, executing ~42,000 lines of analysis code and synthesizing ~1,500 papers with line-level provenance citations), Kosmos produced seven highlighted discoveries spanning metabolomics, perovskite solar-cell materials science, neuroscience (flippase downregulation in vulnerable entorhinal neurons in Alzheimer’s), and statistical genetics (type 2 diabetes causal targets)—independently reproducing three unpublished/preprinted human studies while contributing four novel scientific findings.",
+  "technicalHighlights": [
+    "Shared structured world model maintained coherent research trajectories over ~200 rollouts (averaging 42,000 lines of executed code and 1,500 papers per 12-hour session).",
+    "Independent domain scientists verified 79.4% of sampled report statements as accurate and rated a single 20-cycle Kosmos run equivalent to ~6 months of expert research time.",
+    "Reported 7 cross-domain discoveries spanning metabolomics, materials science, neurodegeneration, and statistical genetics—3 independent reproductions of hidden unpublished studies plus 4 novel hypotheses."
+  ],
+  "caveats": "Preprint evaluation focuses on seven selected successful runs rather than an unselected universal success rate; independent evaluators noted ~20% statement error rates (especially in interpretive leaps) and external audits stressed the ongoing need for wet-lab validation and null controls.",
+  "contributors": [
+    "Ludovico Mitchener",
+    "Angela Yiu",
+    "Benjamin Chang",
+    "Andrew D. White",
+    "Samuel G. Rodriques"
+  ],
+  "institutions": [
+    "Edison Scientific",
+    "FutureHouse"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 86,
+    "verification": 74,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that coupling parallel literature and code-execution agents via an explicit world model unlocks coherent multi-hour autonomous scientific investigation.",
+    "ripple": "Influenced autonomous research-agent architectures across academic and commercial labs, proving discovery yield scales linearly with compute cycles.",
+    "verification": "Preprint with 79.4% independent statement accuracy and 3 blind reproductions of unpublished manuscripts, scored conservatively pending peer review and full wet-lab follow-up on novel claims.",
+    "velocity": "Compressed roughly 6 months of human cross-disciplinary data analysis and literature synthesis into a 12-hour overnight run."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv — Kosmos: An AI Scientist for Autonomous Discovery (arXiv:2511.02824)",
+      "url": "https://arxiv.org/abs/2511.02824",
+      "type": "paper"
+    },
+    {
+      "label": "Alzforum — Introducing Kosmos: 'AI Scientist' That Makes Discoveries Overnight (Nov 2025)",
+      "url": "https://www.alzforum.org/news/research-news/introducing-kosmos-ai-scientist-makes-discoveries-overnight",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "imo-2025-formal-gold-aristotle-seed-2025",
+  "title": "Harmonic Aristotle & ByteDance Seed-Prover Achieve First Formally Verified IMO Gold Medals",
+  "shortTitle": "IMO 2025 Formal Gold (Lean 4)",
+  "date": "2025-07-31",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Automated Theorem Proving",
+    "Formal Verification",
+    "Mathematical Olympiad"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Harmonic Aristotle & ByteDance Seed-Prover (Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Achieved the first machine-checked Lean 4 gold-medal performances at the International Mathematical Olympiad (5 of 6 problems), jumping from AlphaProof’s 2024 formal silver medal to verified gold in one year.",
+  "summary": "Following IMO 2025 in July–October 2025, ByteDance Seed AI4Math’s Seed-Prover (arXiv:2507.23726) and Harmonic’s Aristotle (arXiv:2510.01346) independently delivered the first formally verified Lean 4 gold-medal-equivalent performances at the International Mathematical Olympiad, solving 5 of 6 competition problems with zero logical gaps. By pairing lemma-level neural reasoning, Monte Carlo tree search, and automated formal verification in Lean 4, Aristotle and Seed-Prover closed the gap between AlphaProof’s 2024 silver medal and fully machine-checked Olympiad gold—and Aristotle soon transitioned directly to open research problems, autonomously formalizing variants of Erdős Problem #124 and co-resolving Erdős Problem #728.",
+  "technicalHighlights": [
+    "ByteDance Seed-Prover + Seed-Geometry formally proved 5 of 6 IMO 2025 problems in Lean 4 and solved 78.1% of formalized historical IMO problems.",
+    "Harmonic Aristotle achieved officially acknowledged IMO 2025 gold-medal-equivalent performance entirely in Lean 4 and later proved an open variant of Erdős Problem #124 autonomously.",
+    "Marked the maturation of neuro-symbolic Lean 4 provers from benchmark curiosity to general-purpose mathematical verification engines."
+  ],
+  "caveats": "Olympiad problems are closed competition benchmarks rather than open conjectures, and Seed-Prover / Aristotle required formalized Lean problem statements and extended multi-hour search budgets compared to human exam rules.",
+  "contributors": [
+    "ByteDance Seed AI4Math Team",
+    "Harmonic Aristotle Team (Tudor Achim et al.)"
+  ],
+  "institutions": [
+    "Harmonic",
+    "ByteDance Seed"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 88,
+    "verification": 98,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Established the first formally kernel-verified gold-medal Olympiad proofs in Lean 4, proving neuro-symbolic provers could scale past AlphaProof’s 2024 silver.",
+    "ripple": "Aristotle directly powered 2026 open-problem formalizations (including Erdős #728), while Seed-Prover 1.5 went on to solve 11/12 Putnam 2025 problems.",
+    "verification": "Every competition solution is 100% machine-checked by the Lean 4 kernel with zero unproved gaps.",
+    "velocity": "Advanced formal theorem proving from IMO silver (4/6 in 2024) to IMO gold (5/6 in 2025) in 12 months."
+  },
+  "enables": [
+    "erdos-728-gpt52-aristotle-2026",
+    "imo-2026-perfect-42-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "arXiv — Seed-Prover: Deep and Broad Reasoning for Automated Theorem Proving (arXiv:2507.23726)",
+      "url": "https://arxiv.org/abs/2507.23726",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv — Aristotle: IMO-level Automated Theorem Proving (arXiv:2510.01346)",
+      "url": "https://arxiv.org/abs/2510.01346",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — ByteDance Seed-Prover Formal IMO 2025 Proofs",
+      "url": "https://github.com/ByteDance-Seed/Seed-Prover",
+      "type": "formal-verification"
+    }
+  ]
+}

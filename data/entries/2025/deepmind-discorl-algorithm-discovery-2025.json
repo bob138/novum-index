@@ -1,0 +1,67 @@
+{
+  "id": "deepmind-discorl-algorithm-discovery-2025",
+  "title": "DeepMind DiscoRL Autonomously Meta-Learns Reinforcement Learning Rules Surpassing Human Algorithms",
+  "shortTitle": "DeepMind DiscoRL Algorithm Discovery",
+  "date": "2025-10-22",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Meta-Reinforcement Learning",
+    "Automated Algorithm Discovery",
+    "Self-Improving AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DiscoRL / Disco103 (Meta-Learned RL Rule — Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First AI-discovered reinforcement learning algorithm to surpass all human-crafted RL algorithms (including MuZero and PPO) on Atari and generalize zero-shot to completely unseen complex domains.",
+  "summary": "Published in Nature in October 2025 by Junhyuk Oh, Gregory Farquhar, Iurii Kemaev, Dan A. Calian, Matteo Hessel, Luisa Zintgraf, Satinder Singh, Hado van Hasselt, and David Silver at Google DeepMind, DiscoRL demonstrated that machines can autonomously discover general-purpose reinforcement learning algorithms directly from agent experience. By meta-learning policy and prediction update rules across a population of agents spanning 103 diverse environments (Atari57, ProcGen, and DMLab-30), the discovered rule (Disco103) invented novel internal predictive semantics—tracking medium-horizon policy entropies and future reward surges—surpassing every human-designed RL algorithm on Atari and generalizing zero-shot to unseen environments (Crafter, NetHack, Sokoban) with radically different action spaces and larger networks.",
+  "technicalHighlights": [
+    "Autonomously meta-learned an end-to-end reinforcement learning update rule (Disco103) from agent experience without relying on handcrafted value/TD-learning equations.",
+    "Surpassed all existing human-crafted RL algorithms (including PPO, IMPALA, and MuZero) on the Atari57 benchmark and generalized zero-shot to unseen benchmarks (Crafter, NetHack, Sokoban).",
+    "Demonstrated clear scaling laws for algorithm discovery—performance improved systematically with compute and environmental diversity—and released open-source Apache-2.0 code and Disco103 meta-parameters."
+  ],
+  "caveats": "Meta-training the learning rule itself requires massive multi-environment compute, and the discovered neural update rule is less analytically transparent than classic closed-form equations like Q-learning or PPO.",
+  "contributors": [
+    "Junhyuk Oh",
+    "Gregory Farquhar",
+    "Iurii Kemaev",
+    "Hado van Hasselt",
+    "David Silver"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 91,
+    "verification": 98,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Crossed a decades-old milestone in AI research: replacing human-engineered learning algorithms with superior machine-discovered learning rules.",
+    "ripple": "Demonstrates scalable automated discovery of core AI learning algorithms, reinforcing the shift toward self-improving training architectures.",
+    "verification": "Peer-reviewed in Nature (648: 283–285 / s41586-025-09761-x) with Apache-2.0 open-source code and reproducible zero-shot benchmarks.",
+    "velocity": "Compresses decades of manual RL algorithm iteration (TD, DQN, PPO, MuZero) into scalable automated meta-optimization."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — Discovering state-of-the-art reinforcement learning algorithms (Oct 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-09761-x",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Full Text — DiscoRL (PMC12695655)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12695655/",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — Google DeepMind DiscoRL Code & Disco103 Weights",
+      "url": "https://github.com/google-deepmind/disco_rl",
+      "type": "code"
+    }
+  ]
+}

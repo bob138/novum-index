@@ -55,6 +55,11 @@
   ],
   "sources": [
     {
+      "label": "Nature — Accelerating scientific discovery with Co-Scientist (May 2026)",
+      "url": "https://doi.org/10.1038/s41586-026-10644-y",
+      "type": "paper"
+    },
+    {
       "label": "Google Research — Accelerating scientific breakthroughs with an AI co-scientist",
       "url": "https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/",
       "type": "announcement"

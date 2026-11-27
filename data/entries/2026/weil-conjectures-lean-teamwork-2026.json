@@ -1,0 +1,62 @@
+{
+  "id": "weil-conjectures-lean-teamwork-2026",
+  "title": "Google /teamwork-LEAP Autonomously Formalizes the Weil Conjectures in 1.8M Lines of Lean 4",
+  "shortTitle": "Weil Conjectures (1.8M-Line Lean)",
+  "date": "2026-11-13",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Algebraic Geometry",
+    "Arithmetic Geometry",
+    "Automated Formalization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Google /teamwork-LEAP (Gemini 4 Argon + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "28,800 subagent invocations",
+  "isAnchor": false,
+  "whyItMatters": "First end-to-end machine-checked formalization of Pierre Deligne’s landmark 1974 Weil Conjectures—autonomously synthesized in 1.8M lines of Lean 4 alongside Hilbert’s 10th over rings, Birkhoff (1927), and 3D Bochner–Riesz.",
+  "summary": "Unveiled by Google Research and Google Cloud AI on November 13, 2026, the multi-agent autoformalization system /teamwork-LEAP powered by Gemini 4 Argon fully autonomously produced an end-to-end machine-checked Lean 4 formalization of the Weil Conjectures—the foundational arithmetic-geometry theorems on zeta functions of algebraic varieties over finite fields proved by Pierre Deligne in 1974 (precursors to the Riemann Hypothesis). Spanning ~1.8 million lines of Lean generated across 28,800 subagent invocations, the same campaign also autonomously formalized a recent proof of Hilbert’s tenth problem over general rings of integers (919,000 lines), the 1927 Birkhoff Conjecture, and the 3D Bochner–Riesz Conjecture—catching and repairing a gap in an informal proof along the way.",
+  "technicalHighlights": [
+    "Autonomously synthesized ~1.8 million lines of Lean 4 across 28,800 subagent invocations to formally verify the Weil Conjectures end-to-end.",
+    "Simultaneously delivered the first machine-checked formalizations of Hilbert’s 10th Problem over general rings of integers (919k lines), the 1927 Birkhoff Conjecture, and the 3D Bochner–Riesz Conjecture (fixing a gap in the informal proof).",
+    "Demonstrated context-partitioned multi-agent orchestration (Antigravity /teamwork + LEAP) capable of building massive modern algebraic-geometry formal libraries from informal literature."
+  ],
+  "caveats": "Formalizes already-established landmark theorems (Deligne 1974) rather than solving an open conjecture, and independent algebraic geometers must still audit statement-level definitions across the 1.8M-line library to confirm full classical generality.",
+  "contributors": [
+    "Vahab Mirrokni",
+    "Google Research /teamwork-LEAP Team",
+    "Google Cloud AI"
+  ],
+  "institutions": [
+    "Google Research",
+    "Google Cloud AI",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 89,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Achieved autonomous machine verification of one of 20th-century mathematics’ deepest étale-cohomology and arithmetic-geometry edifices.",
+    "ripple": "Establishes reusable formal-verification infrastructure for arithmetic geometry and shows multi-agent formalizers can actively patch gaps in frontier informal papers.",
+    "verification": "Kernel-checked in Lean 4, scored slightly below human-audited Mathlib landmarks pending full external statement-fidelity review of the 1.8M-line codebase.",
+    "velocity": "Compressed what human formalization teams estimated as a multi-decade Mathlib effort into weeks across 28,800 autonomous subagent runs."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Google Research — Advancing science & engineering with Antigravity’s /teamwork (Nov 2026)",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "type": "announcement"
+    },
+    {
+      "label": "explainx.ai — Google Antigravity /teamwork: Open Math and Engineering Results (Nov 2026)",
+      "url": "https://explainx.ai/blog/google-antigravity-teamwork-open-math-cs-engineering-results-november-2026",
+      "type": "explainer"
+    }
+  ]
+}

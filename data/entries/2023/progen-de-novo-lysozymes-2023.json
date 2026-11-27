@@ -1,0 +1,61 @@
+{
+  "id": "progen-de-novo-lysozymes-2023",
+  "title": "ProGen Language Model Generates Functional De Novo Lysozyme Enzymes",
+  "shortTitle": "ProGen De Novo Enzymes",
+  "date": "2023-01-26",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Protein Language Models",
+    "De Novo Enzyme Design",
+    "Generative Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "ProGen (1.2B Conditional Protein Language Model)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First proof that an autoregressive protein language model can generate artificial enzymes with natural-level catalytic activity despite sharing as little as 31.4% sequence identity with any natural protein.",
+  "summary": "Published in Nature Biotechnology in January 2023 by Ali Madani, Ben Krause, Eric R. Greene, Subu Subramanian, and James S. Fraser (Salesforce Research, Profluent Bio, and UCSF), ProGen trained a 1.2-billion-parameter conditional transformer on 280 million protein sequences tagged with functional annotations. Prompted to generate novel antibacterial lysozymes across five distinct protein families, ProGen produced artificial enzymes that expressed cleanly, folded into expected active-site geometries confirmed by X-ray crystallography, and matched natural hen egg-white lysozyme catalytic efficiency—even for designs with only 31.4% sequence identity to any known protein in nature.",
+  "technicalHighlights": [
+    "Trained a 1.2B-parameter autoregressive Transformer conditioned on evolutionary and functional control tags across 280 million protein sequences.",
+    "73% of top-ranked AI-generated sequences across five lysozyme families exhibited measurable antibacterial catalytic activity in wet-lab assays, matching natural enzymes.",
+    "X-ray crystallography confirmed an artificial enzyme with ~31.4% sequence identity retained the exact catalytic cleft geometry needed for cell-wall cleavage."
+  ],
+  "caveats": "Evaluated primarily on lysozyme families with abundant evolutionary training data; designing totally new catalytic chemistries absent from natural sequence databases required later structure-guided diffusion models.",
+  "contributors": [
+    "Ali Madani",
+    "Ben Krause",
+    "Eric R. Greene",
+    "James S. Fraser"
+  ],
+  "institutions": [
+    "Salesforce Research",
+    "Profluent Bio",
+    "UCSF"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 90,
+    "verification": 97,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Proved generative language models trained purely on evolutionary sequences can write functional, crystallographically verified de novo enzymes.",
+    "ripple": "Catalyzed the protein language model design wave directly leading to OpenCRISPR-1, ESM3, and generative gene-editor engineering.",
+    "verification": "Peer-reviewed in Nature Biotechnology (41: 1099–1106) with kinetic assays and X-ray crystallography of synthesized AI enzymes.",
+    "velocity": "Replaced iterative random mutagenesis with direct conditional sampling of active sequences far outside natural sequence neighborhoods."
+  },
+  "enables": [
+    "esm3-esmgfp-protein-2024",
+    "opencrispr-1-gene-editor-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature Biotechnology — Large language models generate functional protein sequences across diverse families (Jan 2023)",
+      "url": "https://doi.org/10.1038/s41587-022-01618-2",
+      "type": "paper"
+    }
+  ]
+}
