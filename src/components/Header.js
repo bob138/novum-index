@@ -1,5 +1,6 @@
 import { escapeHtml } from '../scoring.js';
 import { renderNavbar } from './Navbar.js';
+import { PLATE_I_SVG } from './plateSvg.js';
 
 export function renderHeader(meta, allItems, theme) {
   const totalCount = allItems.length;
@@ -35,13 +36,11 @@ export function renderHeader(meta, allItems, theme) {
             </p>
           </div>
           <figure class="hero__artwork">
-            <img
-              src="./og-card.jpg"
-              alt="Cartographic geometric illustration representing mathematical curves, lattices, and scientific discovery arcs"
-              loading="eager"
-            />
+            <div class="hero__artwork-frame">
+              ${PLATE_I_SVG}
+            </div>
             <figcaption class="hero__artwork-caption">
-              <span>PLATE I · NOVUM INDEX</span>
+              <a class="hero__artwork-link" href="./plate-i.svg" target="_blank" rel="noopener noreferrer" title="Open full-resolution vector SVG">PLATE I · NOVUM INDEX (SVG ↗)</a>
               <span>MIT LICENSE</span>
             </figcaption>
           </figure>

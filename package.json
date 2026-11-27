@@ -9,7 +9,8 @@
     "dev": "node scripts/build-data.mjs && vite",
     "build": "node scripts/build-data.mjs && vite build",
     "preview": "vite preview",
-    "validate": "node scripts/validate-data.mjs"
+    "validate": "node scripts/validate-data.mjs",
+    "plate": "node scripts/generate-plate.mjs"
   },
   "keywords": [
     "science",
