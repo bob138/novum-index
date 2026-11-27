@@ -1,0 +1,61 @@
+{
+  "id": "alphastar-starcraft2-marl-2019",
+  "title": "AlphaStar Achieves Grandmaster Level in StarCraft II via Multi-Agent RL",
+  "shortTitle": "AlphaStar (StarCraft II Grandmaster)",
+  "date": "2019-10-30",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Multi-Agent Reinforcement Learning",
+    "Game Theory",
+    "Real-Time Strategy"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaStar (League-Based Multi-Agent RL, Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "44 days league training",
+  "isAnchor": true,
+  "whyItMatters": "First AI to reach Grandmaster level (top 0.15% of human players) across all three races in StarCraft II—mastering real-time combinatorial planning under imperfect information and non-transitive strategy.",
+  "summary": "Oriol Vinyals, Igor Babuschkin, Wojciech Czarnecki, David Silver, and the Google DeepMind team published AlphaStar in Nature (2019), conquering real-time strategy game StarCraft II—a benchmark far beyond board games due to partial observability (\"fog of war\"), real-time continuous-discrete action spaces (~10²⁶ actions per frame), and rock-paper-scissors strategic cycles. Bootstrapped from human replays and refined via a novel population-based league of main agents and adversarial exploiters, AlphaStar played anonymously on Europe’s live Battle.net ladder under human camera and APM constraints, reaching Grandmaster (above 99.8% of ranked human players) for Protoss, Terran, and Zerg.",
+  "technicalHighlights": [
+    "Introduced league-based multi-agent reinforcement learning (Main Agents, Main Exploiters, League Exploiters) to overcome non-transitive strategic cycles.",
+    "Achieved official Grandmaster status (top 0.15% of ~90,000 European Battle.net players) across all three asymmetric races under human-comparable APM and camera constraints.",
+    "Combined Transformer entity encoders, deep LSTMs, and autoregressive pointer networks over combinatorial real-time action spaces."
+  ],
+  "caveats": "Required large-scale imitation pretraining on ~971,000 human replays before RL self-play and struggled against unseen cheese strategies outside its training map pool.",
+  "contributors": [
+    "Oriol Vinyals",
+    "Igor Babuschkin",
+    "Wojciech M. Czarnecki",
+    "Michaël Mathieu",
+    "Andrew Dudzik",
+    "David Silver"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 87,
+    "verification": 97,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Solved real-time, imperfect-information, combinatorial multi-agent planning with league-based RL.",
+    "ripple": "Directly influenced game-theoretic RL (DeepNash, Cicero), open-ended multi-agent training, and real-time decision systems.",
+    "verification": "Peer-reviewed in Nature and verified blindly against human players on official Battle.net Grandmaster ladders.",
+    "velocity": "Synthesized centuries of equivalent StarCraft II match experience in 44 days of TPU league training."
+  },
+  "enables": [
+    "deepnash-stratego-gt-rl-2022",
+    "cicero-diplomacy-strategic-lm-2022"
+  ],
+  "sources": [
+    {
+      "label": "Nature (2019): Grandmaster level in StarCraft II using multi-agent reinforcement learning",
+      "url": "https://doi.org/10.1038/s41586-019-1724-z",
+      "type": "paper"
+    }
+  ]
+}

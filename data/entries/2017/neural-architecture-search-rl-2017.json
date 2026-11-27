@@ -1,0 +1,57 @@
+{
+  "id": "neural-architecture-search-rl-2017",
+  "title": "Neural Architecture Search (NAS) Discovers Competitive Deep Networks via RL",
+  "shortTitle": "Neural Architecture Search (NAS)",
+  "date": "2017-04-24",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "AutoML",
+    "Reinforcement Learning",
+    "Algorithm Discovery"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "NAS (REINFORCE Controller RNN, Google Brain)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First demonstration that reinforcement learning can autonomously design competitive convolutional and recurrent neural architectures from scratch, launching modern AutoML and AI-designing-AI research.",
+  "summary": "Barret Zoph and Quoc V. Le (Google Brain) presented Neural Architecture Search (NAS) at ICLR 2017 (arXiv:1611.01578), training a recurrent controller network with reinforcement learning (REINFORCE) to generate architectural descriptions of child neural networks and optimize them directly for validation accuracy. NAS autonomously discovered a novel convolutional architecture achieving 3.65% test error on CIFAR-10 and a previously unknown recurrent cell outperforming standard LSTMs on Penn Treebank language modeling—sparking the entire AutoML and recursive AI-designing-AI movement (NASNet, EfficientNet, Evolved Transformer, Lion, AlphaEvolve).",
+  "technicalHighlights": [
+    "Formulated neural network design as sequential reinforcement learning over architectural hypergraphs evaluated by child-network validation accuracy.",
+    "Autonomously discovered a novel CNN matching state-of-the-art CIFAR-10 accuracy (3.65% test error) and a novel RNN cell surpassing LSTM and GRU baselines on Penn Treebank.",
+    "Founded modern Neural Architecture Search and AutoML, directly inspiring NASNet, DARTS, EfficientNet, and AI-discovered optimizers."
+  ],
+  "caveats": "Original NAS required ~800 GPUs over several weeks to evaluate >12,800 candidate networks, prompting subsequent weight-sharing and differentiable search methods (ENAS, DARTS) to cut compute by orders of magnitude.",
+  "contributors": [
+    "Barret Zoph",
+    "Quoc V. Le"
+  ],
+  "institutions": [
+    "Google Brain"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 91,
+    "verification": 96,
+    "velocity": 83
+  },
+  "scoreRationale": {
+    "foundational": "Proved that AI agents can autonomously invent novel deep-learning building blocks rivaling years of human architectural engineering.",
+    "ripple": "Launched the AutoML/NAS discipline and led directly to EfficientNet, Lion optimizer discovery, and AlphaEvolve.",
+    "verification": "Peer-reviewed at ICLR 2017 and replicated across thousands of subsequent AutoML papers.",
+    "velocity": "Automated architecture invention across tens of thousands of candidate designs, albeit at high initial GPU cost."
+  },
+  "enables": [
+    "lion-optimizer-program-search-2023",
+    "alphaevolve-matrix-2025"
+  ],
+  "sources": [
+    {
+      "label": "ICLR 2017 / arXiv:1611.01578: Neural Architecture Search with Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1611.01578",
+      "type": "paper"
+    }
+  ]
+}

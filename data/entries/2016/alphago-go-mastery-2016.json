@@ -48,7 +48,8 @@
   },
   "enables": [
     "segler-retrosynthesis-mcts-2018",
-    "alphazero-general-selfplay-2018"
+    "alphazero-general-selfplay-2018",
+    "alphastar-starcraft2-marl-2019"
   ],
   "sources": [
     {

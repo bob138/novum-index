@@ -1,0 +1,62 @@
+{
+  "id": "deeplabcut-markerless-pose-2018",
+  "title": "DeepLabCut: Markerless Deep-Learning Pose Estimation for Neuroscience & Ethology",
+  "shortTitle": "DeepLabCut (Markerless Pose AI)",
+  "date": "2018-08-20",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Systems Neuroscience",
+    "Quantitative Ethology",
+    "Bioimaging"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepLabCut (Transfer-Learned ResNet Pose Estimator)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Enabled human-level markerless 3D behavioral tracking of arbitrary animal body parts from just ~200 labeled video frames, revolutionizing experimental neuroscience and behavioral biology.",
+  "summary": "Alexander Mathis, Mackenzie Weygandt Mathis, Matthias Bethge, and colleagues introduced DeepLabCut in Nature Neuroscience (2018), demonstrating that deep feature detectors pretrained on ImageNet (DeeperCut/ResNet) could be transfer-learned to track fine animal kinematics—mouse whiskers, digits, fruit-fly legs, and freely moving primates—without physical markers using only ~200 annotated frames. By eliminating intrusive physical tags and manual video scoring, DeepLabCut became foundational experimental infrastructure cited over 7,000 times across neuroscience, ecology, and biomechanics.",
+  "technicalHighlights": [
+    "Achieved human-labeling accuracy (within ~3–5 pixels) on mouse reaching, odor-trail tracking, and Drosophila egg-laying using as few as 50–200 training frames.",
+    "Eliminated reflective physical markers that disrupt natural animal behavior and cannot be attached to small or delicate body parts.",
+    "Open-source ecosystem expanded to real-time closed-loop feedback, multi-animal social tracking, and 3D kinematics across thousands of biology labs."
+  ],
+  "caveats": "Accuracy can degrade under severe occlusion, rapid out-of-distribution lighting shifts, or multi-animal identity swaps without careful training-frame curation and temporal refinement.",
+  "contributors": [
+    "Alexander Mathis",
+    "Pranav Mamidanna",
+    "Kevin M. Cury",
+    "Taiga Abe",
+    "Venkatesh N. Murthy",
+    "Mackenzie Weygandt Mathis",
+    "Matthias Bethge"
+  ],
+  "institutions": [
+    "Harvard University",
+    "University of Tübingen",
+    "Columbia University",
+    "EPFL"
+  ],
+  "scores": {
+    "foundational": 76,
+    "ripple": 90,
+    "verification": 97,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Solved the long-standing quantitative behavior bottleneck in experimental neuroscience via sample-efficient transfer learning.",
+    "ripple": "Adopted by thousands of neuroscience, ethology, and biomechanics laboratories worldwide (>7,000 citations).",
+    "verification": "Published in Nature Neuroscience with open-source code and independent validation across dozens of species.",
+    "velocity": "Cut behavioral annotation pipelines from weeks of manual frame-by-frame scoring to hours of automated tracking."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature Neuroscience (2018): DeepLabCut: markerless pose estimation of user-defined body parts with deep learning",
+      "url": "https://doi.org/10.1038/s41593-018-0209-y",
+      "type": "paper"
+    }
+  ]
+}

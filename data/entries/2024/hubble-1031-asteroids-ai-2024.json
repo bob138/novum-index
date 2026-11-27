@@ -1,0 +1,66 @@
+{
+  "id": "hubble-1031-asteroids-ai-2024",
+  "title": "Hubble Asteroid Hunter AI Discovers 1,031 Uncatalogued Asteroids in Archival Data",
+  "shortTitle": "Hubble AI (1,031 New Asteroids)",
+  "date": "2024-01-05",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Planetary Science",
+    "Astrophysics",
+    "Astronomical Data Mining"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Google Cloud AutoML Object-Detection CNN + Citizen-Science Training",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Deep learning trained on citizen-scientist labels mined 19 years of archival Hubble Space Telescope images to discover 1,031 previously uncatalogued asteroids, probing sub-kilometer main-belt populations.",
+  "summary": "Pablo García-Martín, Sandor Kruk, Marcel Popescu, Bruno Merín, and collaborators (ESA, Zooniverse, and Google Cloud) combined citizen-science classifications from >11,000 volunteers with a deep object-detection neural network to scan 37,000 archival Hubble Space Telescope images spanning 19 years (2002–2021). Published across Astronomy & Astrophysics (2022–2024, vol. 683 A122), the pipeline uncovered 1,701 curved asteroid trails—including 1,031 previously uncatalogued objects—and used Hubble’s orbital parallax curvature to characterize 454 unknown main-belt asteroids mostly under 1 km in size, extending the known main-belt magnitude distribution two magnitudes fainter.",
+  "technicalHighlights": [
+    "Deep object-detection network trained on Zooniverse citizen-science labels systematically scanned 37,000 archival Hubble ACS/WFC and WFC3/UVIS exposures.",
+    "Identified 1,031 previously uncatalogued Solar System object trails (~61% of all detections) invisible to ground-based asteroid surveys.",
+    "Orbital parallax fitting characterized 454 newly discovered sub-kilometer main-belt asteroids, extending main-belt size–frequency constraints down to absolute magnitude H ≈ 20."
+  ],
+  "caveats": "Because detections come from single-epoch archival exposures spanning two decades, individual newly found asteroids generally cannot be orbit-recovered for targeted follow-up.",
+  "contributors": [
+    "Pablo García-Martín",
+    "Sandor Kruk",
+    "Marcel Popescu",
+    "Bruno Merín",
+    "Benoit Carry",
+    "Ross Thomson"
+  ],
+  "institutions": [
+    "European Space Agency (ESA)",
+    "Autonomous University of Madrid",
+    "Zooniverse",
+    "Google Cloud"
+  ],
+  "scores": {
+    "foundational": 74,
+    "ripple": 80,
+    "verification": 95,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that deep archival vision turns pointed space-telescope archives into serendipitous small-body Solar System surveys.",
+    "ripple": "Provides a template for automated archival asteroid, lens, and transient mining across Euclid, JWST, and Roman archives.",
+    "verification": "Peer-reviewed in Astronomy & Astrophysics with parallax-derived physical catalogs submitted to the IAU Minor Planet Center.",
+    "velocity": "Extracted >1,000 new asteroids from 19 years of existing data at zero additional space-telescope observing cost."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2401.02605 / Astronomy & Astrophysics 683 A122 (2024): Hubble Asteroid Hunter III. Physical properties of newly found asteroids",
+      "url": "https://arxiv.org/abs/2401.02605",
+      "type": "paper"
+    },
+    {
+      "label": "ESA Science Portal: Hubble Asteroid Hunter III",
+      "url": "https://www.cosmos.esa.int/web/ssw/-/hubble-asteroid-hunter-iii.-physical-properties-of-newly-found-asteroids",
+      "type": "explainer"
+    }
+  ]
+}

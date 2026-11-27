@@ -51,7 +51,8 @@
   "enables": [
     "pangu-weather-3d-ai-2023",
     "graphcast-weather-2023",
-    "neuralgcm-hybrid-climate-2024"
+    "neuralgcm-hybrid-climate-2024",
+    "fourcastnet-global-weather-ai-2022"
   ],
   "sources": [
     {

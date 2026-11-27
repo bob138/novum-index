@@ -1,0 +1,66 @@
+{
+  "id": "ucsf-speech-avatar-bci-2023",
+  "title": "Multimodal ECoG Speech Neuroprosthesis With Voice Synthesis & Facial Avatar",
+  "shortTitle": "UCSF Multimodal Speech Avatar BCI",
+  "date": "2023-08-23",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Neurotechnology",
+    "Brain-Computer Interfaces",
+    "Speech Neuroscience"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Multimodal RNN + CTC + HuBERT Speech & Avatar Decoder",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First brain–computer interface to simultaneously decode text at 78 words per minute, synthesize a personalized voice, and animate a real-time expressive facial avatar from brain surface signals.",
+  "summary": "Sean Metzger, Kaylo Littlejohn, Gopala Anumanchipalli, Edward Chang, and colleagues (UCSF & UC Berkeley) demonstrated in Nature (August 2023, published alongside Stanford’s intracortical speech BCI) a high-density 253-channel surface electrocorticography (ECoG) neuroprosthesis in a woman with severe paralysis from brainstem stroke. Using deep recurrent neural networks paired with CTC phoneme decoding, self-supervised speech-unit synthesis (HuBERT), and facial-blendshape regression, the system decoded 1,024-word vocabulary sentences at a median 78 words per minute (4.9% WER on 50-phrase sets, 25.5% on 1,024 words) while driving both a voice cloned from her pre-injury wedding video and a real-time digital avatar displaying speech articulation and emotional expressions.",
+  "technicalHighlights": [
+    "Decoded continuous attempted speech at 78 words per minute (approaching conversational speed) from non-penetrating 253-channel surface ECoG electrodes.",
+    "First BCI to unify three communication modalities—real-time text, personalized acoustic speech synthesis, and expressive facial-avatar animation.",
+    "Phoneme-level deep decoding generalized to a 39,000+ word vocabulary and rapidly decoded non-speech facial expressions (happy, sad, surprised)."
+  ],
+  "caveats": "Demonstrated in a single clinical trial participant using a wired transcutaneous pedestal; wireless fully implantable hardware and lower open-vocabulary error rates remain active engineering goals.",
+  "contributors": [
+    "Sean L. Metzger",
+    "Kaylo T. Littlejohn",
+    "Alexander B. Silva",
+    "David A. Moses",
+    "Gopala K. Anumanchipalli",
+    "Edward F. Chang"
+  ],
+  "institutions": [
+    "University of California, San Francisco (UCSF)",
+    "University of California, Berkeley"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 95,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered multimodal neural decoding unifying phonemes, personalized voice synthesis, and embodied facial articulation from ECoG.",
+    "ripple": "Set the clinical benchmark for expressive, human-centered speech neuroprosthetics restoring voice identity and nonverbal cues.",
+    "verification": "Peer-reviewed in Nature (Aug 2023) with full open clinical benchmarks in a brainstem-stroke participant.",
+    "velocity": "Pushed surface-ECoG speech decoding from ~15 WPM to 78 WPM with simultaneous avatar animation."
+  },
+  "enables": [
+    "ucdavis-speech-bci-nejm-2024"
+  ],
+  "sources": [
+    {
+      "label": "Nature (2023): A high-performance neuroprosthesis for speech decoding and avatar control",
+      "url": "https://doi.org/10.1038/s41586-023-06443-4",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC10826467)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10826467/",
+      "type": "paper"
+    }
+  ]
+}

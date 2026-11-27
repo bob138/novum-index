@@ -1,0 +1,61 @@
+{
+  "id": "isodde-drug-design-engine-2026",
+  "title": "IsoDDE: Unified AI Drug Design Engine Surpassing AlphaFold 3 on Novel Pockets & Affinity",
+  "shortTitle": "IsoDDE (Isomorphic Drug Engine)",
+  "date": "2026-02-10",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "AI Drug Discovery",
+    "Structural Biology",
+    "Binding Affinity"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "IsoDDE (Isomorphic Labs Drug Design Engine)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "More than doubled AlphaFold 3’s accuracy on hard out-of-distribution protein–ligand generalization, beat AF3 by 2.3× on antibody–antigen interfaces, predicted binding affinities, and uncovered a cryptic pocket in cereblon.",
+  "summary": "In February 2026, Isomorphic Labs (the Alphabet/DeepMind drug-discovery spinout) published its technical report on the Isomorphic Labs Drug Design Engine (IsoDDE), moving beyond AlphaFold 3’s biomolecular structure prediction into unified small-molecule and biologic drug design. On the hardest out-of-distribution protein–ligand benchmarks—testing pockets and chemical scaffolds furthest from training data—IsoDDE more than doubled AlphaFold 3’s success rate, beat AlphaFold 3 by 2.3× on high-accuracy antibody–antigen interface predictions, delivered physics-grade binding-affinity predictions without experimental co-crystal structures, and predicted a novel experimentally confirmed allosteric cryptic binding site on cereblon.",
+  "technicalHighlights": [
+    "More than doubled AlphaFold 3’s accuracy on the hardest out-of-distribution protein–ligand generalization benchmarks (~50% vs ~25%).",
+    "Achieved 2.3× higher success rate than AlphaFold 3 on high-accuracy antibody–antigen interface prediction.",
+    "Unified structure prediction with binding-affinity estimation and de novo cryptic-pocket identification, identifying a novel allosteric binding site in cereblon."
+  ],
+  "caveats": "IsoDDE is proprietary and closed-weights; benchmark claims come from Isomorphic Labs’ technical report prior to independent academic peer review, and IsoDDE-designed therapeutics have not yet completed human clinical efficacy trials.",
+  "contributors": [
+    "Isomorphic Labs Research Team",
+    "Max Jaderberg",
+    "Demis Hassabis"
+  ],
+  "institutions": [
+    "Isomorphic Labs",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 74,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Bridged the long-standing gap between out-of-distribution biomolecular folding, cryptic-pocket discovery, and quantitative binding affinity.",
+    "ripple": "Signals the transition of AlphaFold-lineage AI from structural biology benchmarks to industrial small-molecule and antibody pipelines.",
+    "verification": "Backed by a detailed technical report and internal experimental case studies (e.g., cereblon), but proprietary and not yet independently peer-reviewed.",
+    "velocity": "Compresses months of physics-based FEP simulations and structural pocket hunting into unified neural inference."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Isomorphic Labs Technical Report (Feb 2026): Accurate Predictions of Novel Biomolecular Interactions with IsoDDE",
+      "url": "https://storage.googleapis.com/isomorphiclabs-website-public-artifacts/isodde_technical_report.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "Isomorphic Labs Announcement: The Isomorphic Labs Drug Design Engine unlocks a new frontier",
+      "url": "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier",
+      "type": "announcement"
+    }
+  ]
+}

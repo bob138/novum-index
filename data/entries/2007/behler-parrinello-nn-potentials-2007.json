@@ -48,7 +48,8 @@
     "gnome-materials-2023",
     "mattergen-materials-2025",
     "elementsclaw-superconductors-2026",
-    "nequip-equivariant-potentials-2022"
+    "nequip-equivariant-potentials-2022",
+    "deepmd-quantum-molecular-dynamics-2018"
   ],
   "sources": [
     {

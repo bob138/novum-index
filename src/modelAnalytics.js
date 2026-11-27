@@ -323,7 +323,7 @@ const EXPLICIT_ATTRIBUTIONS = {
   'unstable-singularities-pinns-2025': [
     {
       familyId: 'high-precision-pinns',
-      familyName: 'High-Precision PINNs',
+      familyName: 'Physics-Informed Neural Networks (PINNs)',
       modelId: 'high-precision-pinns',
       modelName: 'High-Precision PINNs + Gauss–Newton',
       architecture: 'Domain Science Neural Net',
@@ -1235,6 +1235,296 @@ const EXPLICIT_ATTRIBUTIONS = {
       architecture: 'Neuro-Symbolic LLM + Verifier',
       lab: 'Google DeepMind & Research',
       roleNote: 'Evaluated Suite',
+    },
+  ],
+  'am-automated-mathematician-1977': [
+    {
+      familyId: 'lenat-am',
+      familyName: 'Automated Mathematician (AM)',
+      modelId: 'lenat-am',
+      modelName: 'AM (Lisp Heuristic Concept Discovery)',
+      architecture: 'Classical Symbolic & SAT AI',
+      lab: 'Stanford University',
+    },
+  ],
+  'deeplabcut-markerless-pose-2018': [
+    {
+      familyId: 'deeplabcut',
+      familyName: 'DeepLabCut (Harvard / EPFL)',
+      modelId: 'deeplabcut',
+      modelName: 'DeepLabCut (Transfer-Learned Pose CNN)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Harvard / EPFL / Tübingen',
+    },
+  ],
+  'deepmind-aki-prediction-2019': [
+    {
+      familyId: 'google-clinical-vision',
+      familyName: 'Google Clinical Imaging Deep Learning',
+      modelId: 'deepmind-aki-rnn',
+      modelName: 'DeepMind EHR Acute Kidney Injury RNN',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'cellpose-generalist-segmentation-2020': [
+    {
+      familyId: 'cellpose-janelia',
+      familyName: 'Cellpose (HHMI Janelia)',
+      modelId: 'cellpose',
+      modelName: 'Cellpose (Spatial Gradient-Flow U-Net)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'HHMI Janelia Research Campus',
+    },
+  ],
+  'sybil-lung-cancer-risk-2023': [
+    {
+      familyId: 'mit-sybil',
+      familyName: 'Sybil Oncology AI (MIT / MGH)',
+      modelId: 'sybil-3d-cnn',
+      modelName: 'Sybil (3D LDCT Risk CNN)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'MIT / MGH',
+    },
+  ],
+  'epfl-brain-spine-interface-2023': [
+    {
+      familyId: 'epfl-brain-spine',
+      familyName: 'EPFL Brain–Spine Interface AI',
+      modelId: 'epfl-bsi-decoder',
+      modelName: 'Adaptive ECoG-to-EES Neural Decoder',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'EPFL / CHUV / CEA-Leti',
+    },
+  ],
+  'ucsf-speech-avatar-bci-2023': [
+    {
+      familyId: 'braingate-speech-bci',
+      familyName: 'Deep-Learning Speech Neuroprostheses (BrainGate)',
+      modelId: 'ucsf-speech-avatar-bci',
+      modelName: 'UCSF Multimodal ECoG Speech & Avatar BCI',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'UCSF / UC Berkeley',
+    },
+  ],
+  'retfound-retinal-foundation-2023': [
+    {
+      familyId: 'retfound-ucl',
+      familyName: 'RETFound (UCL / Moorfields)',
+      modelId: 'retfound-mae',
+      modelName: 'RETFound (Self-Supervised Retinal ViT)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'UCL / Moorfields Eye Hospital',
+    },
+  ],
+  'h01-human-cortex-connectome-2024': [
+    {
+      familyId: 'google-flood-filling-nets',
+      familyName: 'Google Flood-Filling Networks (Connectomics)',
+      modelId: 'google-ffn-h01',
+      modelName: 'Google Flood-Filling Networks (H01 Human Cortex)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Google Research / Harvard',
+    },
+  ],
+  'isodde-drug-design-engine-2026': [
+    {
+      familyId: 'alphafold',
+      familyName: 'AlphaFold Structural Suite',
+      modelId: 'isodde-isomorphic',
+      modelName: 'IsoDDE (Isomorphic Labs Drug Design Engine)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Isomorphic Labs / Google DeepMind',
+    },
+  ],
+  'deepmd-quantum-molecular-dynamics-2018': [
+    {
+      familyId: 'deepmd-princeton',
+      familyName: 'DeePMD (Princeton / Peking)',
+      modelId: 'deepmd',
+      modelName: 'Deep Potential Molecular Dynamics (DeePMD)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Princeton / Peking University',
+    },
+  ],
+  'mit-ai-robotic-flow-synthesis-2019': [
+    {
+      familyId: 'mit-askcos-synthesis',
+      familyName: 'MIT ASKCOS & Robotic Flow Synthesis',
+      modelId: 'mit-askcos-flow',
+      modelName: 'ASKCOS Neural Retrosynthesis + Robotic Flow',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'MIT',
+    },
+  ],
+  'molecular-transformer-reaction-ai-2019': [
+    {
+      familyId: 'ibm-molecular-transformer',
+      familyName: 'Molecular Transformer (IBM RXN)',
+      modelId: 'molecular-transformer',
+      modelName: 'Molecular Transformer (IBM RXN)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'IBM Research Zurich / Univ. of Bern',
+    },
+  ],
+  'closed-loop-battery-fast-charging-2020': [
+    {
+      familyId: 'stanford-tri-battery-ai',
+      familyName: 'Closed-Loop Battery AI (Stanford / MIT / TRI)',
+      modelId: 'closed-loop-battery-bo',
+      modelName: 'Early-Cycle ML + Closed-Loop Bayesian Optimization',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Stanford / MIT / TRI',
+    },
+  ],
+  'chgnet-charge-informed-mlip-2023': [
+    {
+      familyId: 'equivariant-mlip',
+      familyName: 'Equivariant ML Interatomic Potentials (NequIP / MACE)',
+      modelId: 'chgnet',
+      modelName: 'CHGNet (Charge-Informed Universal GNN)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'UC Berkeley / LBNL',
+    },
+  ],
+  'mattersim-mt-materials-foundation-2026': [
+    {
+      familyId: 'mattergen',
+      familyName: 'MatterGen (Microsoft Research)',
+      modelId: 'mattersim-mt',
+      modelName: 'MatterSim-MT (Multi-Task Materials Foundation)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Microsoft Research',
+    },
+  ],
+  'frb-121102-cnn-discovery-2018': [
+    {
+      familyId: 'breakthrough-listen-cnn',
+      familyName: 'Breakthrough Listen Radio-Transient CNN',
+      modelId: 'frb-121102-cnn',
+      modelName: 'Breakthrough Listen Deep CNN (FRB 121102)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'UC Berkeley / Breakthrough Listen',
+    },
+  ],
+  'eqtransformer-earthquake-ai-2020': [
+    {
+      familyId: 'eqtransformer-stanford',
+      familyName: 'EQTransformer (Stanford Seismology)',
+      modelId: 'eqtransformer',
+      modelName: 'EQTransformer (Hierarchical Seismic Attention)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Stanford University',
+    },
+  ],
+  'fourcastnet-global-weather-ai-2022': [
+    {
+      familyId: 'neural-operators-fno',
+      familyName: 'Fourier Neural Operator (Caltech)',
+      modelId: 'fourcastnet-afno',
+      modelName: 'FourCastNet (Adaptive Fourier Neural Operator)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'NVIDIA / LBNL / Caltech',
+    },
+  ],
+  'hubble-1031-asteroids-ai-2024': [
+    {
+      familyId: 'esa-hubble-asteroid-ai',
+      familyName: 'Hubble Asteroid Hunter AI (ESA / Google)',
+      modelId: 'hubble-asteroid-cnn',
+      modelName: 'Google Cloud AutoML Asteroid-Trail Detector',
+      architecture: 'Domain Science Neural Net',
+      lab: 'ESA / Zooniverse / Google Cloud',
+    },
+  ],
+  'minsr-deep-neural-quantum-states-2024': [
+    {
+      familyId: 'carleo-troyer-nqs',
+      familyName: 'Neural-Network Quantum States (NQS)',
+      modelId: 'minsr-deep-nqs',
+      modelName: 'MinSR Deep Neural Quantum States (Augsburg)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'University of Augsburg',
+    },
+  ],
+  'rl-qec-willow-2026': [
+    {
+      familyId: 'alphaqubit',
+      familyName: 'AlphaQubit',
+      modelId: 'willow-rl-qec',
+      modelName: 'Willow RL Quantum Error Correction Controller',
+      architecture: 'Deep RL & Evolutionary Agent',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'exact-quantum-composed-functions-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+    },
+  ],
+  'qma-qcma-hierarchy-separation-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+    },
+  ],
+  'neural-architecture-search-rl-2017': [
+    {
+      familyId: 'google-brain-nas',
+      familyName: 'Neural Architecture Search (Google Brain)',
+      modelId: 'nas-rl-controller',
+      modelName: 'NAS (REINFORCE Architecture Controller)',
+      architecture: 'Deep RL & Evolutionary Agent',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'alphastar-starcraft2-marl-2019': [
+    {
+      familyId: 'deepmind-deep-rl',
+      familyName: 'DeepMind Deep RL (AlphaZero & DiscoRL)',
+      modelId: 'alphastar',
+      modelName: 'AlphaStar (League Multi-Agent RL)',
+      architecture: 'Deep RL & Evolutionary Agent',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'gt-sophy-racing-rl-2022': [
+    {
+      familyId: 'sony-gt-sophy',
+      familyName: 'GT Sophy (Sony AI)',
+      modelId: 'gt-sophy-qrsac',
+      modelName: 'GT Sophy (QR-SAC Deep RL)',
+      architecture: 'Deep RL & Evolutionary Agent',
+      lab: 'Sony AI / Polyphony Digital',
+    },
+  ],
+  'alphacode-competitive-programming-2022': [
+    {
+      familyId: 'alphaevolve-funsearch',
+      familyName: 'AlphaEvolve & FunSearch',
+      modelId: 'alphacode',
+      modelName: 'AlphaCode (41B Code Transformer + Execution Filter)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'swift-champion-drone-racing-2023': [
+    {
+      familyId: 'uzh-swift-drone',
+      familyName: 'Swift Drone Racing RL (UZH / Intel)',
+      modelId: 'swift-drone-rl',
+      modelName: 'Swift (Onboard Vision + Residual-Physics Deep RL)',
+      architecture: 'Deep RL & Evolutionary Agent',
+      lab: 'University of Zurich / Intel',
     },
   ],
 };

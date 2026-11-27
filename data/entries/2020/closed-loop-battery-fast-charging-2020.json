@@ -1,0 +1,63 @@
+{
+  "id": "closed-loop-battery-fast-charging-2020",
+  "title": "Closed-Loop AI Slashes Fast-Charging Battery Discovery From 500+ Days to 16 Days",
+  "shortTitle": "Closed-Loop AI Fast-Charging",
+  "date": "2020-02-19",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Battery Science",
+    "Electrochemistry",
+    "Closed-Loop Optimization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Closed-Loop Bayesian Optimization + Early-Cycle ML Predictor",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "16 days (~30× speedup)",
+  "isAnchor": true,
+  "whyItMatters": "Cut the experimental search for 10-minute lithium-ion fast-charging protocols from over 500 days to just 16 days (~30× speedup), discovering counterintuitive high-current protocols that extended battery cycle life.",
+  "summary": "Peter Attia, Aditya Grover, Norman Jin, Stefano Ermon, Richard Braatz, William Chueh, and collaborators (Stanford University, MIT, and Toyota Research Institute) demonstrated in Nature (2020) a landmark closed-loop machine-learning system for energy-storage optimization. Combining an early-cycle ML model that predicts full battery lifetime from just the first 100 charge–discharge cycles with Bayesian optimization over 224 candidate 10-minute fast-charging protocols, the closed-loop system autonomously selected experiments and discovered optimal non-intuitive charging profiles in 16 days instead of >500 days of exhaustive cycling—dramatically outperforming industry heuristics.",
+  "technicalHighlights": [
+    "Combined early-cycle ML lifetime prediction (from the first 100 cycles) with Bayesian optimization to explore a 224-protocol six-step fast-charging parameter space.",
+    "Reduced total experimental validation time from >500 days (exhaustive search) to 16 days—a >30× physical laboratory acceleration.",
+    "Autonomously discovered counterintuitive charging protocols that minimized lithium plating and thermal degradation, verified across independent cell batches."
+  ],
+  "caveats": "Validated on commercial lithium-iron-phosphate (LFP/graphite) cylindrical cells; transferring optimal protocols across NMC chemistries or varying ambient temperatures requires fresh calibration.",
+  "contributors": [
+    "Peter M. Attia",
+    "Aditya Grover",
+    "Norman Jin",
+    "Kristen A. Severson",
+    "Stefano Ermon",
+    "Richard D. Braatz",
+    "William C. Chueh"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Massachusetts Institute of Technology (MIT)",
+    "Toyota Research Institute"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 89,
+    "verification": 97,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Canonical blueprint for coupling predictive ML surrogates with Bayesian optimization to accelerate slow physical experiments.",
+    "ripple": "Widely adopted across EV battery R&D, electrolyte formulation, and closed-loop materials engineering.",
+    "verification": "Published in Nature with rigorous physical cycling validation across independent commercial cell batches.",
+    "velocity": "Delivered a >30× real-world wet-lab speedup (500+ days down to 16 days) in battery protocol discovery."
+  },
+  "enables": [
+    "azure-quantum-battery-n2116-2024"
+  ],
+  "sources": [
+    {
+      "label": "Nature (2020): Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+      "url": "https://doi.org/10.1038/s41586-020-1994-5",
+      "type": "paper"
+    }
+  ]
+}

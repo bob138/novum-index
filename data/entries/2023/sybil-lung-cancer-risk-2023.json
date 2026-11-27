@@ -1,0 +1,67 @@
+{
+  "id": "sybil-lung-cancer-risk-2023",
+  "title": "Sybil: Deep Learning Predicts 1–6 Year Lung Cancer Risk From a Single Chest CT",
+  "shortTitle": "Sybil (6-Year Lung Cancer AI)",
+  "date": "2023-01-12",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Oncology",
+    "Medical Imaging",
+    "Preventive Medicine"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Sybil (3D Convolutional Neural Network)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Forecasts an individual’s risk of developing lung cancer up to 6 years in advance from a single low-dose chest CT scan—with no clinical metadata—achieving 0.86–0.94 1-year AUC across US and Taiwanese cohorts.",
+  "summary": "Developed by Peter Mikhael, Jeremy Wohlwend, Lecia Sequist, Regina Barzilay, and colleagues at MIT and Massachusetts General Hospital, Sybil (Journal of Clinical Oncology, 2023) is an open-source 3D deep learning model that analyzes raw low-dose computed tomography (LDCT) lung volumes alone—without radiologist annotations or smoking history—to predict future lung cancer incidence over 1 to 6 years. Across three independent validation sets (NLST, MGH, and Chang Gung Memorial Hospital in Taiwan, including never-smokers), Sybil achieved 1-year AUCs of 0.86–0.94 and 6-year AUCs of 0.75–0.81, identifying subtle pre-diagnostic imaging signatures invisible to the human eye.",
+  "technicalHighlights": [
+    "Achieved 1-year ROC-AUC of 0.92 on NLST, 0.86 on MGH, and 0.94 on Chang Gung Memorial Hospital (Taiwan), maintaining 0.75–0.81 AUC six years out.",
+    "Requires only a single raw LDCT volume with zero clinical variables, demographic inputs, or radiologist bounding boxes at inference.",
+    "Generalized across an external Taiwanese cohort containing a high proportion of never-smokers ineligible under traditional US screening guidelines."
+  ],
+  "caveats": "Retrospective validation cohorts under-represented Black and Hispanic populations, and prospective clinical trials are ongoing to determine optimal follow-up screening intervals without causing overdiagnosis.",
+  "contributors": [
+    "Peter G. Mikhael",
+    "Jeremy Wohlwend",
+    "Adam Yala",
+    "Ludvig Karstens",
+    "Florian J. Fintelmann",
+    "Regina Barzilay",
+    "Lecia V. Sequist"
+  ],
+  "institutions": [
+    "MIT (Jameel Clinic / CSAIL)",
+    "Massachusetts General Hospital",
+    "Harvard Medical School",
+    "Chang Gung Memorial Hospital"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 87,
+    "verification": 94,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that deep 3D vision models can detect sub-clinical oncogenic risk signals years before visible tumors form.",
+    "ripple": "Opened personalized risk-adapted cancer screening for both smokers and high-risk never-smokers worldwide.",
+    "verification": "Peer-reviewed in the Journal of Clinical Oncology with multi-continent external validation and open-source weights.",
+    "velocity": "Compresses 6-year longitudinal risk stratification into real-time inference from one standard screening CT."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Journal of Clinical Oncology (2023): Sybil: A Validated Deep Learning Model to Predict Future Lung Cancer Risk From a Single Low-Dose Chest Computed Tomography",
+      "url": "https://doi.org/10.1200/JCO.22.01345",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC10419602)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10419602/",
+      "type": "paper"
+    }
+  ]
+}

@@ -48,6 +48,16 @@
   },
   "sources": [
     {
+      "label": "OpenAI Anthology PDF: Ten Advances in Mathematics and Theoretical Computer Science",
+      "url": "https://cdn.openai.com/pdf/ten-proofs-oai.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub (openai/ten-proofs): Lean 4 Certificates for Ten Advances",
+      "url": "https://github.com/openai/ten-proofs",
+      "type": "formal-verification"
+    },
+    {
       "label": "LessWrong Analysis: OpenAI Astra Solves 10 Major Open Problems",
       "url": "https://www.lesswrong.com/posts/pQYEPitFqztcRvBsS/openai-s-unreleased-model-astra-solves-ten-major-open",
       "type": "explainer"

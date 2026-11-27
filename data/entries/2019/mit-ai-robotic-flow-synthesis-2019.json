@@ -1,0 +1,63 @@
+{
+  "id": "mit-ai-robotic-flow-synthesis-2019",
+  "title": "MIT AI-Planned Robotic Flow Platform Autonomously Synthesizes 15 Medicines",
+  "shortTitle": "MIT AI Robotic Drug Synthesis",
+  "date": "2019-08-09",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Organic Synthesis",
+    "Autonomous Labs",
+    "Retrosynthesis AI"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "ASKCOS Neural Retrosynthesis + Robotic Modular Flow Synthesizer",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First closed integration of deep-learning retrosynthesis planning with a robotically reconfigurable modular flow-chemistry synthesizer, autonomously producing 15 clinically relevant small-molecule drugs.",
+  "summary": "Connor Coley, Dale Thomas III, Justin Lummiss, Klavs Jensen, and colleagues at MIT demonstrated in Science (2019) a unified AI-to-hardware pipeline for small-molecule organic synthesis. Trained on millions of published chemical reactions, the ASKCOS neural retrosynthesis and reaction-condition planner proposed multi-step synthetic routes and selected catalysts, solvents, and temperatures; after brief expert chemical-recipe refinement, a six-axis robotic arm autonomously reconfigured modular continuous-flow reactors and separators to synthesize 15 medicinal compounds—including aspirin, lidocaine, diazepam, fluoxetine, and a five-step ACE inhibitor cascade.",
+  "technicalHighlights": [
+    "Combined neural retrosynthesis tree search and reaction-condition recommendation (ASKCOS) with an automatically reconfigurable robotic flow-chemistry platform.",
+    "Autonomously executed multi-step continuous-flow syntheses for 15 diverse medicinal compounds with isolated yields matching literature standards.",
+    "Established the software-plus-robotics architecture connecting AI synthesis planning directly to physical organic chemistry execution."
+  ],
+  "caveats": "Human chemists remained in the loop to validate solubility, precipitation risks, and finalize executable flow-recipe parameters before robotic execution.",
+  "contributors": [
+    "Connor W. Coley",
+    "Dale A. Thomas III",
+    "Justin A. M. Lummiss",
+    "Jonathan N. Jaworski",
+    "Christopher P. Breen",
+    "Timothy F. Jamison",
+    "Klavs F. Jensen"
+  ],
+  "institutions": [
+    "Massachusetts Institute of Technology (MIT)"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 88,
+    "verification": 96,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "First end-to-end demonstration linking data-driven AI retrosynthesis directly to a reconfigurable robotic organic synthesis platform.",
+    "ripple": "Directly catalyzed modern self-driving chemistry labs, ChemCrow, Coscientist, and automated pharmaceutical flow synthesis.",
+    "verification": "Peer-reviewed in Science with physical wet-lab synthesis and analytical characterization of 15 drugs.",
+    "velocity": "Compressed multi-step route design and hardware reconfiguration from weeks of manual benchtop setup to hours."
+  },
+  "enables": [
+    "mobile-robotic-chemist-2020",
+    "coscientist-autonomous-chemistry-2023",
+    "chemcrow-autonomous-chemistry-agent-2024"
+  ],
+  "sources": [
+    {
+      "label": "Science (2019): A robotic platform for flow synthesis of organic compounds informed by AI planning",
+      "url": "https://doi.org/10.1126/science.aax1566",
+      "type": "paper"
+    }
+  ]
+}

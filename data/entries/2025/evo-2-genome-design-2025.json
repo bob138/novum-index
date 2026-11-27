@@ -53,6 +53,11 @@
   ],
   "sources": [
     {
+      "label": "Nature (Mar 2026): Genome modelling and design across all domains of life with Evo 2",
+      "url": "https://doi.org/10.1038/s41586-026-10176-5",
+      "type": "paper"
+    },
+    {
       "label": "bioRxiv: Genome modeling and design across all domains of life with Evo 2",
       "url": "https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full",
       "type": "paper"

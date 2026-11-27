@@ -1,0 +1,67 @@
+{
+  "id": "h01-human-cortex-connectome-2024",
+  "title": "H01 Petavoxel AI Reconstruction of Human Cerebral Cortex Connectome",
+  "shortTitle": "H01 Human Cortex Connectome",
+  "date": "2024-05-10",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Connectomics",
+    "Human Neuroscience",
+    "3D Electron Microscopy"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Flood-Filling Networks (Google Research) & Automated Synapse Classifiers",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First petavoxel-scale (1.4 PB) AI nanoscale 3D reconstruction of human cerebral cortex—mapping ~57,000 cells and 150 million synapses—uncovering previously unknown mirror-symmetric neurons and ultra-strong >50-synapse connections.",
+  "summary": "Alexander Shapson-Coe, Jeff Lichtman (Harvard), Viren Jain (Google Research), and collaborators published in Science (May 2024) the highest-resolution 3D nanoscale connectome ever constructed of human brain tissue: a 1-cubic-millimeter surgical biopsy of human temporal cortex spanning all six cortical layers across 1.4 petabytes of multibeam electron microscopy. Google’s Flood-Filling Networks (FFNs) and neural synapse/cell-type classifiers reconstructed ~57,000 cells, 230 millimeters of blood vessels, and ~150 million synapses—revealing completely unexpected human neuroanatomy including mirror-symmetric deep-layer pyramidal neuron pairs, axonal whorls, and rare axon–dendrite pairs connected by more than 50 synapses.",
+  "technicalHighlights": [
+    "AI Flood-Filling Networks segmented a 1.4-petabyte, 5,000-slice human cortical electron microscopy volume containing ~57,000 cells and ~150 million synapses.",
+    "Discovered previously unrecognized mirror-symmetric layer-6 triangular pyramidal neurons, giant multi-synaptic (>50-synapse) excitatory bridges, and mysterious axonal whorls.",
+    "Released publicly as the open H01 Neuroglancer atlas, demonstrating petascale AI pipelines required for future whole-mammalian-brain connectomics."
+  ],
+  "caveats": "The tissue sample came from a single patient undergoing epilepsy surgery (though judged histologically healthy), and large-scale automated segmentation still required extensive human proofreading for error-free circuit tracing.",
+  "contributors": [
+    "Alexander Shapson-Coe",
+    "Michał Januszewski",
+    "Daniel R. Berger",
+    "Art Pope",
+    "Viren Jain",
+    "Jeff W. Lichtman"
+  ],
+  "institutions": [
+    "Harvard University",
+    "Google Research",
+    "Massachusetts General Hospital"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 89,
+    "verification": 96,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "First petavoxel AI reconstruction of human cerebral cortex, uncovering novel synaptic and cellular architectures.",
+    "ripple": "Directly enabled the MICrONS mouse visual cortex connectome and roadmap toward whole-mouse-brain nanoscale mapping.",
+    "verification": "Peer-reviewed in Science with an openly browsable 1.4 PB dataset and proofread ground-truth benchmarks.",
+    "velocity": "Compressed what would take centuries of manual human tracing across 1.4 petabytes into scalable automated neural segmentation."
+  },
+  "enables": [
+    "microns-mouse-cortex-connectome-2025"
+  ],
+  "sources": [
+    {
+      "label": "Science (2024): A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution",
+      "url": "https://doi.org/10.1126/science.adk4858",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC11718559)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11718559/",
+      "type": "paper"
+    }
+  ]
+}

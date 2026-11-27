@@ -1,0 +1,67 @@
+{
+  "id": "rl-qec-willow-2026",
+  "title": "Reinforcement Learning Control of Quantum Error Correction on Willow Processor",
+  "shortTitle": "Willow RL Quantum Error Control",
+  "date": "2026-07-08",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Error Correction",
+    "Quantum Control",
+    "Reinforcement Learning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Google Quantum AI & DeepMind RL QEC Controller (Willow)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Unified quantum calibration with live computation by turning QEC error detections into an RL learning signal on Willow—boosting drift stability 3.5× and achieving record-low <10⁻³ surface-code logical error rates.",
+  "summary": "Google Quantum AI and Google DeepMind (Volodymyr Sivak, Paul Klimov, and collaborators) published in Nature (July 2026) a paradigm shift in fault-tolerant quantum computing: repurposing quantum error-correction (QEC) syndrome detections—normally used only to decode errors—as a real-time reward signal for a reinforcement learning agent that continuously steers thousands of analog qubit control parameters without pausing computation. Validated on Google’s Willow superconducting processor, RL steering improved surface-code logical stability 3.5-fold against drift, suppressed logical errors by an additional 20% beyond exhaustive human-expert calibration, and achieved record-low logical error rates of 7.72 × 10⁻⁴ per cycle (surface code) and 8.19 × 10⁻³ (color code), with simulations proving size-independent scaling.",
+  "technicalHighlights": [
+    "Repurposed QEC error-detection events as an online RL learning signal, allowing a quantum processor to calibrate itself continuously while executing logical memory.",
+    "Improved surface-code logical stability 3.5-fold under drift on the Willow superconducting chip and cut logical error rates by 20% past exhaustive expert human calibration.",
+    "Achieved record-low average logical error per cycle of 7.72(9) × 10⁻⁴ (surface code) and 8.19(14) × 10⁻³ (color code), with system-size-independent RL convergence in simulations."
+  ],
+  "caveats": "Hardware communication latency between the classical RL controller and cryogenic control electronics still limits closed-loop bandwidth, requiring tighter FPGA/cryogenic integration for multi-day fault-tolerant algorithms.",
+  "contributors": [
+    "Volodymyr Sivak",
+    "Paul Klimov",
+    "Google Quantum AI Team",
+    "Google DeepMind"
+  ],
+  "institutions": [
+    "Google Quantum AI",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 92,
+    "verification": 97,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Solved the fundamental decoupling between analog qubit recalibration and continuous fault-tolerant quantum computation.",
+    "ripple": "Establishes self-calibrating RL-stabilized hardware as a core pillar of utility-scale superconducting and neutral-atom quantum computers.",
+    "verification": "Peer-reviewed in Nature (July 2026) with experimental demonstration on Willow hardware and public Zenodo dataset.",
+    "velocity": "Outperformed exhaustive human-in-the-loop expert calibration by 20% while adapting continuously to hardware drift."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature (2026): Reinforcement learning control of quantum error correction",
+      "url": "https://doi.org/10.1038/s41586-026-10759-2",
+      "type": "paper"
+    },
+    {
+      "label": "Google Research Blog (Jul 2026): Towards a quantum computer that learns from its errors",
+      "url": "https://research.google/blog/towards-a-quantum-computer-that-learns-from-its-errors/",
+      "type": "announcement"
+    },
+    {
+      "label": "arXiv:2511.08493 Preprint",
+      "url": "https://arxiv.org/abs/2511.08493",
+      "type": "paper"
+    }
+  ]
+}

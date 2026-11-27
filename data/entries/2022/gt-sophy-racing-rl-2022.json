@@ -1,0 +1,64 @@
+{
+  "id": "gt-sophy-racing-rl-2022",
+  "title": "Gran Turismo Sophy: Deep RL Outraces World-Champion Drivers With Sportsmanship",
+  "shortTitle": "GT Sophy (Champion Racing RL)",
+  "date": "2022-02-09",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Continuous Control",
+    "Reinforcement Learning",
+    "Autonomous Driving"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GT Sophy (Quantile-Regression SAC Deep RL, Sony AI)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First deep reinforcement learning agent to defeat world-champion esports racing drivers head-to-head in high-speed, multi-car nonlinear physical control while obeying imprecise racing etiquette.",
+  "summary": "Peter Wurman, Samuel Barrett, Kenta Kawamoto, Peter Stone, Hiroaki Kitano, and collaborators (Sony AI & Polyphony Digital) demonstrated Gran Turismo Sophy in Nature (2022). Using an off-policy, quantile-regression soft actor-critic (QR-SAC) algorithm trained asynchronously across PlayStation clusters, GT Sophy mastered tire-grip limits, slipstream overtaking, and imprecise real-world racing sportsmanship—outscoring four of the world’s top Gran Turismo FIA champions in both time trials and 4-vs-4 head-to-head multi-car races across three circuits and car classes.",
+  "technicalHighlights": [
+    "Mastered high-speed nonlinear vehicle dynamics at the friction limit alongside tactical multi-car slipstreaming, passing, and defensive blocking.",
+    "Encoded nuanced, hard-to-specify racing etiquette (avoiding collisions and track-cutting) via shaped off-policy RL rewards without sacrificing speed.",
+    "Defeated four FIA-certified Gran Turismo world champions 104–52 in head-to-head team races across diverse tracks and car classes."
+  ],
+  "caveats": "Evaluated inside a high-fidelity racing simulator with privileged state telemetry rather than noisy physical camera/LiDAR perception on real asphalt.",
+  "contributors": [
+    "Peter R. Wurman",
+    "Samuel Barrett",
+    "Kenta Kawamoto",
+    "James MacGlashan",
+    "Kaushik Subramanian",
+    "Peter Stone",
+    "Hiroaki Kitano"
+  ],
+  "institutions": [
+    "Sony AI",
+    "Polyphony Digital",
+    "Sony Interactive Entertainment",
+    "University of Texas at Austin"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 84,
+    "verification": 96,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated superhuman continuous physical control combined with multi-agent tactical sportsmanship in real-time racing.",
+    "ripple": "Informed real-time robotic control, autonomous-vehicle racing benchmarks, and deployed commercial AI racing agents.",
+    "verification": "Peer-reviewed in Nature with live head-to-head matches against reigning FIA esports world champions.",
+    "velocity": "Learned superhuman multi-car racing lines and racecraft across tracks in days of distributed simulation."
+  },
+  "enables": [
+    "swift-champion-drone-racing-2023"
+  ],
+  "sources": [
+    {
+      "label": "Nature (2022): Outracing champion Gran Turismo drivers with deep reinforcement learning",
+      "url": "https://doi.org/10.1038/s41586-021-04357-7",
+      "type": "paper"
+    }
+  ]
+}

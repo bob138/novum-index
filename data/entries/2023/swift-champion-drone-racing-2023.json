@@ -1,0 +1,64 @@
+{
+  "id": "swift-champion-drone-racing-2023",
+  "title": "Swift: Autonomous Deep-RL Drone Defeats Human World Champions in Physical Racing",
+  "shortTitle": "Swift (Champion AI Drone Racing)",
+  "date": "2023-08-30",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Embodied Robotics",
+    "Deep Reinforcement Learning",
+    "Real-Time Control"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Swift (Onboard Vision + Residual-Physics Deep RL)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First autonomous physical robot to defeat human world champions in a head-to-head real-world sport, winning 15 of 25 FPV drone races at >80 km/h and 5g accelerations using only onboard camera and IMU sensing.",
+  "summary": "Elia Kaufmann, Leonard Bauersfeld, Antonio Loquercio, Matthias Müller, Vladlen Koltun, and Davide Scaramuzza (University of Zurich & Intel) published Swift in Nature (2023), achieving a historic milestone for embodied physical AI. Combining real-time onboard visual-inertial gate perception with deep reinforcement learning trained in a simulation augmented by empirical real-world aerodynamic residuals, Swift raced head-to-head against three reigning world-champion first-person-view (FPV) drone pilots—winning 15 out of 25 physical races, setting the fastest lap by half a second, and executing agile >80 km/h, 5g maneuvers entirely on onboard compute.",
+  "technicalHighlights": [
+    "Won 15 of 25 head-to-head physical FPV races against three reigning human world champions (Alex Vanover, Thomas Bitmatta, Marvin Schaepper) and recorded the fastest overall lap.",
+    "Operated purely from onboard monocular camera and IMU sensors at 100 Hz control frequency—no external motion-capture system during races.",
+    "Closed the sim-to-real aerodynamic gap at >80 km/h and 5g accelerations by augmenting physics simulation with data-driven residual perception and dynamics models."
+  ],
+  "caveats": "Trained for a fixed known race track layout and struggled when sudden lighting shifts degraded onboard gate-detection accuracy compared to human pilots.",
+  "contributors": [
+    "Elia Kaufmann",
+    "Leonard Bauersfeld",
+    "Antonio Loquercio",
+    "Matthias Müller",
+    "Vladlen Koltun",
+    "Davide Scaramuzza"
+  ],
+  "institutions": [
+    "University of Zurich",
+    "Intel"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 88,
+    "verification": 97,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "First autonomous physical robot to beat human world champions head-to-head in a high-speed real-world perceptual-motor sport.",
+    "ripple": "Set the sim-to-real benchmark for agile embodied robotics, autonomous flight, and onboard vision-based control.",
+    "verification": "Peer-reviewed in Nature with 25 physical head-to-head races against three world-champion human pilots.",
+    "velocity": "Achieved 50-millisecond reaction times and faster-than-human optimal racing trajectories from onboard sensors."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature (2023): Champion-level drone racing using deep reinforcement learning",
+      "url": "https://doi.org/10.1038/s41586-023-06419-4",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC10468397)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10468397/",
+      "type": "paper"
+    }
+  ]
+}

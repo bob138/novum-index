@@ -1,0 +1,62 @@
+{
+  "id": "eqtransformer-earthquake-ai-2020",
+  "title": "EQTransformer: Attention-Based Deep Learning Doubles Seismic Earthquake Detection",
+  "shortTitle": "EQTransformer (Seismic AI)",
+  "date": "2020-08-07",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Seismology",
+    "Geophysics",
+    "Time-Series AI"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "EQTransformer (Hierarchical Global-Local Attention Network)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Hierarchical attention neural network detected over twice as many earthquakes in Japan’s Tottori aftershock sequence as official catalogs using a fraction of the stations, transforming global seismology.",
+  "summary": "S. Mostafa Mousavi, William Ellsworth, Weiqiang Zhu, Lindsay Chuang, and Gregory Beroza (Stanford University) introduced EQTransformer in Nature Communications (2020), combining global and local self-attention layers to simultaneously detect earthquake signals and pick P- and S-wave arrivals from raw three-component seismograms. Trained on over 1.2 million global waveforms (STEAD), EQTransformer detected more than twice as many aftershocks during Japan’s 2000 M6.6 Tottori sequence as the Japan Meteorological Agency catalog—while using less than one-third of the seismic stations—and became a cornerstone of modern AI fault-zone imaging.",
+  "technicalHighlights": [
+    "Unified full-waveform event detection and P/S phase picking via hierarchical global-plus-local attention over continuous seismic streams.",
+    "Detected >2× as many earthquakes in Japan’s Tottori aftershock sequence as official agency catalogs while needing under one-third of the stations.",
+    "Generalized zero-shot across tectonic regimes globally, revealing hidden microseismicity and fine-scale subsurface fault structures."
+  ],
+  "caveats": "Extremely dense overlapping foreshock/aftershock swarms or unusual volcanic tremors can still degrade single-station picking without multi-station phase association.",
+  "contributors": [
+    "S. Mostafa Mousavi",
+    "William L. Ellsworth",
+    "Weiqiang Zhu",
+    "Lindsay Y. Chuang",
+    "Gregory C. Beroza"
+  ],
+  "institutions": [
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 88,
+    "verification": 96,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Established attention-based deep learning as the gold standard for simultaneous seismic detection and phase picking.",
+    "ripple": "Adopted by geophysical observatories worldwide to build high-resolution fault catalogs and probe earthquake nucleation physics.",
+    "verification": "Peer-reviewed in Nature Communications with open weights, STEAD benchmark dataset, and global geophysical replication.",
+    "velocity": "Processes continuous multi-year seismic archives in hours while doubling catalog completeness."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature Communications (2020): Earthquake transformer—an attentive deep-learning model for simultaneous earthquake detection and phase picking",
+      "url": "https://doi.org/10.1038/s41467-020-17591-w",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC7415159)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7415159/",
+      "type": "paper"
+    }
+  ]
+}

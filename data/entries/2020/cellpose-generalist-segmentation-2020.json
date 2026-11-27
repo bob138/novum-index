@@ -1,0 +1,56 @@
+{
+  "id": "cellpose-generalist-segmentation-2020",
+  "title": "Cellpose: Generalist Deep-Learning Cellular Segmentation Across Microscopy",
+  "shortTitle": "Cellpose (Generalist Cell AI)",
+  "date": "2020-12-14",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Computational Microscopy",
+    "Cell Biology",
+    "Bioimage Analysis"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Cellpose (Spatial Gradient-Flow U-Net)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Solved universal 2D and 3D cell segmentation across wildly diverse microscopy modalities and irregular cell shapes without retraining, becoming core infrastructure for spatial omics and cell biology.",
+  "summary": "Carsen Stringer, Tim Wang, Michalis Michaelos, and Marius Pachitariu (HHMI Janelia) introduced Cellpose in Nature Methods (online Dec 2020; print Jan 2021), solving a decades-old bottleneck in quantitative bioimaging. Instead of predicting brittle cell masks directly, Cellpose predicts reversible topological vector fields (simulated heat-diffusion gradients toward each cell’s center) learned from a manually curated dataset of over 70,000 segmented objects spanning diverse microscopy modalities—outperforming Mask R-CNN and StarDist out of the box and extending cleanly to 3D volumes without 3D-labeled training data.",
+  "technicalHighlights": [
+    "Replaced bounding-box and star-convex assumptions with neural spatial gradient flows that faithfully segment non-convex neurons, branched cells, and tightly packed tissues.",
+    "Trained on a highly diverse 70,000-object corpus spanning fluorescence, brightfield, phase-contrast, and non-biological textures for zero-shot generalization.",
+    "Extended directly to 3D cellular volumes by combining 2D gradient predictions along orthogonal XY, XZ, and YZ planes."
+  ],
+  "caveats": "Extremely crowded, low-SNR, or highly elongated filamentous structures can still require human-in-the-loop fine-tuning (addressed in subsequent Cellpose 2.0/3.0 releases).",
+  "contributors": [
+    "Carsen Stringer",
+    "Tim Wang",
+    "Michalis Michaelos",
+    "Marius Pachitariu"
+  ],
+  "institutions": [
+    "HHMI Janelia Research Campus"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 91,
+    "verification": 97,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Introduced neural topological gradient flows as a universal mathematical representation for arbitrary cell morphology segmentation.",
+    "ripple": "Became the default segmentation engine across spatial transcriptomics, organoid imaging, and high-content screening (>6,000 citations).",
+    "verification": "Peer-reviewed in Nature Methods with open weights, public datasets, and massive independent adoption across biology.",
+    "velocity": "Eliminated months of lab-specific segmentation retraining per microscope or tissue type."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature Methods (2021 / epub Dec 2020): Cellpose: a generalist algorithm for cellular segmentation",
+      "url": "https://doi.org/10.1038/s41592-020-01018-x",
+      "type": "paper"
+    }
+  ]
+}

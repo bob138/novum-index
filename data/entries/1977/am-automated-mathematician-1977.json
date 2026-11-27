@@ -1,0 +1,62 @@
+{
+  "id": "am-automated-mathematician-1977",
+  "title": "Automated Mathematician (AM): Heuristic Discovery of Mathematical Concepts",
+  "shortTitle": "Automated Mathematician (AM)",
+  "date": "1977-08-22",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Automated Conjecturing",
+    "Number Theory",
+    "Heuristic Search"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "AM (Automated Mathematician, Lisp Heuristic Search)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "1 CPU hour (PDP-10)",
+  "isAnchor": true,
+  "whyItMatters": "Demonstrated for the first time that an AI system guided by mathematical \"interestingness\" heuristics could autonomously invent concepts, rediscover primes and Goldbach’s conjecture, and propose novel number-theoretic classes.",
+  "summary": "Created by Douglas Lenat at Stanford University (1976 PhD thesis; 1977 IJCAI Computers & Thought Award Lecture), the Automated Mathematician (AM) began with 115 elementary set-theoretic primitives and 242 Lisp heuristics encoding mathematical taste and exploration strategies. Without hard-coded arithmetic, AM autonomously defined natural numbers, addition, multiplication, divisors, and prime numbers, conjectured the Fundamental Theorem of Arithmetic and Goldbach’s conjecture, and discovered maximally divisible numbers (later recognized as Ramanujan’s highly composite numbers)—founding the field of automated mathematical discovery.",
+  "technicalHighlights": [
+    "Used an agenda-driven best-first search prioritized by 242 symbolic heuristics evaluating mathematical \"interestingness\" and empirical examples.",
+    "Autonomously traversed from naive set theory to elementary number theory, rediscovering primes, unique factorization, and Goldbach’s conjecture.",
+    "Conjectured \"maximally divisible\" numbers and earned Douglas Lenat the 1977 IJCAI Computers & Thought Award."
+  ],
+  "caveats": "Subsequent methodological analyses (Ritchie & Hanna 1984; Lenat & Brown 1984) showed that AM’s discoveries relied heavily on the structural bias of Lisp syntax and human interpretation of generated concepts, and that AM stalled once it exhausted its fixed heuristic repertoire.",
+  "contributors": [
+    "Douglas B. Lenat"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Carnegie Mellon University"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 82,
+    "verification": 88,
+    "velocity": 72
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered automated mathematical concept formation and conjecture generation decades before neural theorem provers.",
+    "ripple": "Directly inspired Eurisko, Fajtlowicz’s Graffiti, Colton’s HR, and modern AI mathematical discovery systems.",
+    "verification": "Documented in Stanford SAIL AIM-286, IJCAI 1977, and landmark peer-reviewed retrospective analyses in Artificial Intelligence (1984).",
+    "velocity": "Traversed from basic set theory to number-theoretic conjectures in roughly one CPU hour on a DEC PDP-10."
+  },
+  "enables": [
+    "graffiti-graph-conjectures-1986",
+    "ramanujan-machine-2021"
+  ],
+  "sources": [
+    {
+      "label": "IJCAI 1977 Computers & Thought Lecture: The Ubiquity of Discovery (Lenat)",
+      "url": "https://ijcai.org/proceedings/1977/0238.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "Artificial Intelligence (1984): Why AM and Eurisko Appear to Work (Lenat & Brown)",
+      "url": "https://doi.org/10.1016/0004-3702(84)90016-X",
+      "type": "paper"
+    }
+  ]
+}

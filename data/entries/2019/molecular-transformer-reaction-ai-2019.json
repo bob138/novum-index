@@ -1,0 +1,68 @@
+{
+  "id": "molecular-transformer-reaction-ai-2019",
+  "title": "Molecular Transformer: Template-Free Deep Learning for Organic Reaction Prediction",
+  "shortTitle": "Molecular Transformer (IBM RXN)",
+  "date": "2019-08-30",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Organic Chemistry",
+    "Reaction Prediction",
+    "Cheminformatics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Molecular Transformer (IBM RXN Sequence-to-Sequence)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First template-free Transformer to surpass 90% top-1 accuracy on organic reaction outcome prediction directly from SMILES strings, beating human organic chemists while quantifying its own uncertainty.",
+  "summary": "Philippe Schwaller, Teodoro Laino, Théophile Gaudin, Jean-Louis Reymond, and colleagues (IBM Research Zurich & University of Bern) published the Molecular Transformer in ACS Central Science (2019), formulating organic reaction prediction as machine translation between reactant and product SMILES strings. Eliminating hand-coded reaction templates and atom-mapping heuristics entirely, the multi-head attention model surpassed 90% top-1 accuracy on the USPTO-MIT benchmark—outperforming both graph-based models and expert human chemists—while accurately predicting subtle regio-, chemo-, and stereoselectivity and powering the widely used IBM RXN for Chemistry cloud platform.",
+  "technicalHighlights": [
+    "Achieved >90% top-1 accuracy on the standard USPTO-MIT organic reaction benchmark without hand-crafted reaction templates or explicit atom mapping.",
+    "Provided calibrated prediction uncertainty (0.89 ROC-AUC for separating correct from erroneous predictions) and outperformed human chemists in head-to-head tests.",
+    "Generalized to complex multi-step natural-product and pharmaceutical reactions including stereoselective and carbohydrate transformations."
+  ],
+  "caveats": "Relies on patent-derived training corpora (USPTO) that under-represent negative/failed reactions, organometallic mechanisms, and exact experimental yields.",
+  "contributors": [
+    "Philippe Schwaller",
+    "Teodoro Laino",
+    "Théophile Gaudin",
+    "Peter Bolgar",
+    "Christopher A. Hunter",
+    "Costas Bekas",
+    "Jean-Louis Reymond"
+  ],
+  "institutions": [
+    "IBM Research – Zurich",
+    "University of Bern",
+    "University of Cambridge"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 89,
+    "verification": 96,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that template-free Transformer attention learns chemical reactivity, selectivity, and stoichiometry directly from text representations.",
+    "ripple": "Became the canonical paradigm for neural reaction prediction, retrosynthesis, and automated IBM RXN RoboRXN synthesis.",
+    "verification": "Peer-reviewed in ACS Central Science with open-source code, public benchmarks, and global adoption across chemistry labs.",
+    "velocity": "Enabled millisecond in-silico screening of thousands of candidate organic reactions prior to wet-lab trials."
+  },
+  "enables": [
+    "chemcrow-autonomous-chemistry-agent-2024"
+  ],
+  "sources": [
+    {
+      "label": "ACS Central Science (2019): Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction",
+      "url": "https://doi.org/10.1021/acscentsci.9b00576",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC6764164)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6764164/",
+      "type": "paper"
+    }
+  ]
+}

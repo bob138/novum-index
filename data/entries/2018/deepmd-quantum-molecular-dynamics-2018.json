@@ -1,0 +1,62 @@
+{
+  "id": "deepmd-quantum-molecular-dynamics-2018",
+  "title": "DeePMD: Symmetry-Preserving Neural Potentials Scaling Quantum MD to 100M+ Atoms",
+  "shortTitle": "DeePMD (Quantum Molecular Dynamics)",
+  "date": "2018-04-04",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Molecular Dynamics",
+    "Machine-Learning Potentials",
+    "Computational Physics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Deep Potential Molecular Dynamics (DeePMD)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Bridged the accuracy-vs-scale chasm in atomistic simulation, delivering ab initio DFT accuracy at linear cost and eventually scaling quantum-accurate molecular dynamics to over 100 million atoms (2020 ACM Gordon Bell Prize).",
+  "summary": "Linfeng Zhang, Jiequn Han, Han Wang, Roberto Car, and Weinan E (Princeton University & Peking University) introduced Deep Potential Molecular Dynamics (DeePMD) in Physical Review Letters (2018). By encoding translational, rotational, and permutational symmetries directly into local atomic-environment neural descriptors without hand-crafted symmetry functions, DeePMD reproduced ab initio density functional theory (DFT) energies and forces across organic molecules, liquid water, and alloys with linear O(N) scaling—subsequently winning the 2020 ACM Gordon Bell Prize by simulating 100+ million atoms with quantum accuracy on the Summit supercomputer.",
+  "technicalHighlights": [
+    "Eliminated manual Behler–Parrinello symmetry-function engineering by learning smooth, symmetry-preserving local atomic descriptors end to end.",
+    "Reproduced ab initio DFT radial distribution functions and forces for complex condensed phases at orders-of-magnitude lower computational cost.",
+    "Scaled in 2020 (DeePMD-kit) to simulate >100 million atoms with ab initio accuracy for >1 nanosecond/day, winning the ACM Gordon Bell Prize."
+  ],
+  "caveats": "Short-range local cutoffs omit explicit long-range electrostatic and dispersion interactions unless augmented with specialized charge-equilibration or long-range modules.",
+  "contributors": [
+    "Linfeng Zhang",
+    "Jiequn Han",
+    "Han Wang",
+    "Roberto Car",
+    "Weinan E"
+  ],
+  "institutions": [
+    "Princeton University",
+    "Peking University",
+    "Beijing Institute of Applied Physics and Computational Mathematics"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 92,
+    "verification": 97,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Solved the classical accuracy-versus-size barrier in ab initio molecular dynamics via end-to-end symmetry-preserving neural potentials.",
+    "ripple": "Became one of the foundational pillars of modern AI4Science across catalysis, phase diagrams, water physics, and battery electrolytes.",
+    "verification": "Peer-reviewed in Physical Review Letters, validated by the 2020 ACM Gordon Bell Prize, and used in thousands of independent studies.",
+    "velocity": "Accelerated quantum-accurate atomistic simulations by 4–6 orders of magnitude while scaling to 100M+ atoms."
+  },
+  "enables": [
+    "nequip-equivariant-potentials-2022",
+    "mace-mp0-materials-foundation-2023"
+  ],
+  "sources": [
+    {
+      "label": "Physical Review Letters (2018): Deep Potential Molecular Dynamics: A Scalable Model with the Accuracy of Quantum Mechanics",
+      "url": "https://doi.org/10.1103/PhysRevLett.120.143001",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "retfound-retinal-foundation-2023",
+  "title": "RETFound: Self-Supervised Retinal Foundation Model for Ocular & Systemic Disease",
+  "shortTitle": "RETFound (Retinal Foundation AI)",
+  "date": "2023-09-13",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Medical Foundation Models",
+    "Ophthalmology",
+    "Oculomics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RETFound (Masked Autoencoder Vision Transformer)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First open-source self-supervised foundation model in medical imaging—pretrained on 1.6 million unlabeled retinal scans—accurately diagnosing sight-threatening eye diseases and forecasting heart failure, stroke, and Parkinson’s disease.",
+  "summary": "Yukun Zhou, Mark Chia, Siegfried Wagner, Pearse Keane, and colleagues (UCL & Moorfields Eye Hospital) introduced RETFound in Nature (2023), demonstrating how masked-autoencoder self-supervised pretraining on 1.6 million unlabeled clinical retinal photographs and OCT scans overcomes medical AI’s chronic label bottleneck. When fine-tuned on small labeled cohorts, RETFound outperformed supervised baselines across diabetic retinopathy, glaucoma, and macular degeneration while predicting 3-year systemic incidence of heart failure, myocardial infarction, ischaemic stroke, and Parkinson’s disease from noninvasive eye scans alone.",
+  "technicalHighlights": [
+    "Self-supervised ViT-Large masked autoencoder pretrained on 904,170 color fundus photographs and 736,442 OCT scans from Moorfields Eye Hospital.",
+    "Required up to 10× fewer expert clinical labels than supervised models while generalizing robustly across external international and multi-ethnic cohorts.",
+    "Launched \"oculomics\" foundation modeling by predicting systemic cardiovascular and neurodegenerative diseases (including Parkinson’s) directly from retinal imagery."
+  ],
+  "caveats": "Systemic-disease AUCs (0.67–0.79) serve as risk-enrichment biomarkers rather than standalone diagnostic tests, and clinical deployment requires prospective validation and demographic fairness auditing.",
+  "contributors": [
+    "Yukun Zhou",
+    "Mark A. Chia",
+    "Siegfried K. Wagner",
+    "Murat S. Ayhan",
+    "Dominic J. Williamson",
+    "Daniel C. Alexander",
+    "Pearse A. Keane"
+  ],
+  "institutions": [
+    "University College London (UCL)",
+    "Moorfields Eye Hospital NHS Foundation Trust"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 87,
+    "verification": 95,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Proved that self-supervised foundation pretraining unlocks label-efficient generalist medical imaging across ocular and systemic biology.",
+    "ripple": "Open weights sparked hundreds of clinical medical foundation models across pathology, radiology, and oculomics.",
+    "verification": "Published in Nature with multi-cohort international external validation and open-source model weights.",
+    "velocity": "Reduced specialist clinical annotation requirements by an order of magnitude for rare and systemic disease tasks."
+  },
+  "enables": [
+    "chief-pathology-foundation-2024"
+  ],
+  "sources": [
+    {
+      "label": "Nature (2023): A foundation model for generalizable disease detection from retinal images",
+      "url": "https://doi.org/10.1038/s41586-023-06555-x",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC10550819)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10550819/",
+      "type": "paper"
+    }
+  ]
+}

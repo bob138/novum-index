@@ -1,0 +1,69 @@
+{
+  "id": "frb-121102-cnn-discovery-2018",
+  "title": "Deep CNN Discovers 72 Missed Fast Radio Bursts From Repeating Source FRB 121102",
+  "shortTitle": "FRB 121102 (72 AI Radio Bursts)",
+  "date": "2018-09-09",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Radio Astronomy",
+    "Astrophysics",
+    "Transient Detection"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Breakthrough Listen Deep Convolutional Neural Network (ResNet)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Uncovered 72 previously missed extragalactic fast radio bursts in archival Green Bank Telescope observations of FRB 121102—more than quadrupling the single-observation yield—and constrained burst periodicity.",
+  "summary": "Yunfan Gerry Zhang, Vishal Gajjar, Griffin Foster, Andrew Siemion, and the Breakthrough Listen team (UC Berkeley) applied a deep convolutional neural network to 400 TB of archival C-band Green Bank Telescope data from repeating fast radio burst source FRB 121102 (located 3 billion light-years away). Published in The Astrophysical Journal (2018), the CNN discovered 72 faint bursts missed by standard brute-force dedispersion pipelines—raising the 5-hour total from 21 to 93 bursts—and enabled a Rayleigh periodicity analysis ruling out constant arrival periods above 10 milliseconds at 99% confidence.",
+  "technicalHighlights": [
+    "CNN trained on simulated and real dynamic spectra outperformed classical brute-force dedispersion in sensitivity, false-positive rate, and speed.",
+    "Discovered 72 new pulses from FRB 121102 in a single 5-hour Green Bank observation (bringing total detections from 21 to 93, including 45 in the first 30 minutes).",
+    "Used the expanded burst catalog to rule out constant arrival-time periodicity >10 ms with 99% confidence, sharpening magnetar and compact-object models."
+  ],
+  "caveats": "CNN sensitivity depends on training-set coverage of dispersion-measure and frequency-drift morphologies, and candidate detections still underwent physical dedispersion verification.",
+  "contributors": [
+    "Yunfan Gerry Zhang",
+    "Vishal Gajjar",
+    "Griffin Foster",
+    "Andrew Siemion",
+    "James Cordes",
+    "Casey Law",
+    "Yu Wang"
+  ],
+  "institutions": [
+    "University of California, Berkeley",
+    "Breakthrough Listen",
+    "SETI Institute",
+    "Cornell University"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 82,
+    "verification": 95,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Landmark proof that deep vision models extract faint astrophysical transients invisible to classical radio-astronomy search pipelines.",
+    "ripple": "Catalyzed real-time deep-learning FRB and pulsar transient triggers across CHIME, FAST, MeerKAT, and SKA pathfinders.",
+    "verification": "Peer-reviewed in The Astrophysical Journal with every neural candidate physically confirmed via dedispersion.",
+    "velocity": "Re-mined 400 TB of archival telescope data to quadruple burst yield without a single extra hour of telescope time."
+  },
+  "enables": [
+    "btsbot-autonomous-supernova-2023"
+  ],
+  "sources": [
+    {
+      "label": "The Astrophysical Journal (2018): Fast Radio Burst 121102 Pulse Detection and Periodicity: A Machine Learning Approach",
+      "url": "https://doi.org/10.3847/1538-4357/aadf31",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:1809.03043 Preprint",
+      "url": "https://arxiv.org/abs/1809.03043",
+      "type": "paper"
+    }
+  ]
+}

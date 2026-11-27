@@ -47,7 +47,8 @@
     "velocity": "Rapidly surpassed decades of hand-crafted surface-code decoding heuristics by learning real device noise directly."
   },
   "enables": [
-    "sub-100k-qubit-qec-2026"
+    "sub-100k-qubit-qec-2026",
+    "rl-qec-willow-2026"
   ],
   "sources": [
     {

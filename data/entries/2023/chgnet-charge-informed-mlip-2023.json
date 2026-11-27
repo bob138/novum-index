@@ -1,0 +1,64 @@
+{
+  "id": "chgnet-charge-informed-mlip-2023",
+  "title": "CHGNet: Charge-Informed Universal Neural Potential for Solid-State Materials",
+  "shortTitle": "CHGNet (Charge-Informed MLIP)",
+  "date": "2023-09-14",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Materials Science",
+    "Universal Interatomic Potentials",
+    "Battery Chemistry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "CHGNet (Pretrained Graph Neural Network Potential)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First pretrained universal neural network potential explicitly modeling atomic magnetic moments and valence charge states across 1.5M Materials Project structures, unlocking atomistic simulation of battery redox and phase transitions.",
+  "summary": "Bowen Deng, Peichen Zhong, KyuJung Jun, Janosh Riebesell, Gerbrand Ceder, and colleagues (UC Berkeley & Lawrence Berkeley National Laboratory) published CHGNet in Nature Machine Intelligence (2023). Pretrained on over 1.5 million inorganic crystal relaxation trajectories from the Materials Project (MPtrj), CHGNet was the first universal machine-learning interatomic potential to explicitly incorporate atomic magnetic moments as proxies for electronic valence and charge states—enabling nanosecond-scale ab initio-accurate molecular dynamics of charge-transfer processes, Li-ion diffusion, and electronic-ionic coupling in complex battery cathodes.",
+  "technicalHighlights": [
+    "Pretrained on the 1.58M-structure MPtrj dataset across the periodic table, jointly predicting energies, forces, stresses, and atomic magnetic moments.",
+    "Explicitly resolved transition-metal valence states and charge ordering (e.g., Fe²⁺/Fe³⁺ in LiₓFePO₄ and Mn/Ni/Co redox) inaccessible to charge-agnostic potentials.",
+    "Open-sourced both the model and MPtrj training corpus, directly powering subsequent universal potentials including MACE-MP-0 and Matbench Discovery."
+  ],
+  "caveats": "Like other DFT-PBE(+U)-trained universal potentials, CHGNet exhibits systematic softening of potential energy surfaces on far-from-equilibrium configurations and inherits underlying DFT functional biases.",
+  "contributors": [
+    "Bowen Deng",
+    "Peichen Zhong",
+    "KyuJung Jun",
+    "Janosh Riebesell",
+    "Kevin Han",
+    "Christopher J. Bartel",
+    "Gerbrand Ceder"
+  ],
+  "institutions": [
+    "University of California, Berkeley",
+    "Lawrence Berkeley National Laboratory"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Introduced electronic charge/magnetic-moment awareness into universal periodic-table neural interatomic potentials.",
+    "ripple": "MPtrj dataset and CHGNet catalyzed the universal MLIP explosion (MACE-MP-0, MatterSim, UMA) across materials science.",
+    "verification": "Peer-reviewed in Nature Machine Intelligence with open weights, open MPtrj dataset, and Matbench validation.",
+    "velocity": "Replaced months of spin-polarized DFT trajectories with milliseconds-per-step charge-informed molecular dynamics."
+  },
+  "enables": [
+    "mace-mp0-materials-foundation-2023",
+    "mattersim-mt-materials-foundation-2026",
+    "meta-omol25-uma-atoms-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature Machine Intelligence (2023): CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+      "url": "https://doi.org/10.1038/s42256-023-00716-3",
+      "type": "paper"
+    }
+  ]
+}

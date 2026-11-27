@@ -1,0 +1,67 @@
+{
+  "id": "fourcastnet-global-weather-ai-2022",
+  "title": "FourCastNet: First High-Resolution (0.25°) Global AI Weather Forecasting Model",
+  "shortTitle": "FourCastNet (Global Weather AI)",
+  "date": "2022-02-22",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Atmospheric Physics",
+    "Weather Forecasting",
+    "Neural Operators"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "FourCastNet (Adaptive Fourier Neural Operator)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First data-driven global weather model at operational 0.25° resolution, delivering 1-week forecasts 45,000× faster than ECMWF IFS and sparking the Pangu-Weather, GraphCast, and GenCast revolution.",
+  "summary": "Jaideep Pathak, Shashank Subramanian, Peter Harrington, Karthik Kashinath, Anima Anandkumar, and colleagues (NVIDIA, Lawrence Berkeley National Laboratory, and Caltech) introduced FourCastNet in February 2022 (arXiv:2202.11214; subsequently published in Geoscientific Model Development / Earth2Studio). Built on Adaptive Fourier Neural Operators (AFNO) trained on four decades of ERA5 reanalysis, FourCastNet was the first deep-learning model to match operational 0.25° (~25 km) global weather grid resolution—generating a week-long global forecast in under two seconds (~45,000× faster than the physics-based IFS) and enabling thousand-member extreme-event ensembles for hurricanes and atmospheric rivers.",
+  "technicalHighlights": [
+    "First neural weather model to operate at operational 0.25° global latitude-longitude resolution across 20 key atmospheric variables.",
+    "Generated 7-day global forecasts in <2 seconds—roughly 45,000× faster and ~12,000× more energy-efficient than ECMWF’s numerical IFS.",
+    "Demonstrated sharp tracking of tropical cyclones and atmospheric rivers, proving neural operators could scale to global geophysical fluid dynamics."
+  ],
+  "caveats": "FourCastNet 1 trailed ECMWF IFS in medium-range skill beyond ~3–5 days and exhibited gradual autoregressive smoothing—limitations rapidly surpassed by Pangu-Weather, GraphCast, and GenCast.",
+  "contributors": [
+    "Jaideep Pathak",
+    "Shashank Subramanian",
+    "Peter Harrington",
+    "Sanjeev Raja",
+    "Ashesh Chattopadhyay",
+    "Karthik Kashinath",
+    "Anima Anandkumar"
+  ],
+  "institutions": [
+    "NVIDIA",
+    "Lawrence Berkeley National Laboratory",
+    "Caltech",
+    "Rice University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 93,
+    "verification": 92,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Broke the resolution barrier in data-driven global meteorology via Adaptive Fourier Neural Operators on 0.25° ERA5 grids.",
+    "ripple": "Directly triggered the global AI weather revolution (Pangu-Weather, GraphCast, NeuralGCM, GenCast, Aurora).",
+    "verification": "Open-source code and weights verified independently against ERA5 and ECMWF IFS across global forecasting benchmarks.",
+    "velocity": "Delivered a 45,000× runtime speedup over numerical weather prediction, unlocking massive real-time ensembles."
+  },
+  "enables": [
+    "pangu-weather-3d-ai-2023",
+    "graphcast-weather-2023",
+    "gencast-probabilistic-weather-2024",
+    "aurora-earth-system-2025"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2202.11214 (2022): FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators",
+      "url": "https://arxiv.org/abs/2202.11214",
+      "type": "paper"
+    }
+  ]
+}

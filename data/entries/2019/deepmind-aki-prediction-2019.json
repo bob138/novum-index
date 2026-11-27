@@ -1,0 +1,68 @@
+{
+  "id": "deepmind-aki-prediction-2019",
+  "title": "Continuous Deep-Learning Prediction of Acute Kidney Injury 48 Hours Early",
+  "shortTitle": "DeepMind AKI 48h Clinical AI",
+  "date": "2019-07-31",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical AI",
+    "Nephrology",
+    "Electronic Health Records"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepMind EHR Recurrent Neural Network",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Continuously predicted 55.8% of all inpatient acute kidney injury episodes and 90.2% of dialysis-requiring cases up to 48 hours before standard clinical detection across 703,782 patients.",
+  "summary": "Researchers at DeepMind and the U.S. Department of Veterans Affairs trained a deep recurrent neural network on longitudinal electronic health records from 703,782 adult patients across 172 inpatient and 1,062 outpatient sites. Published in Nature (2019), the model continuously forecasted inpatient acute kidney injury (AKI)—a life-threatening deterioration affecting roughly 1 in 5 hospitalized adults—up to 48 hours ahead of standard creatinine-based diagnosis, catching 90.2% of the most severe cases subsequently requiring dialysis while generating interpretable future lab-value trajectories.",
+  "technicalHighlights": [
+    "Trained on 703,782 patients spanning 6 billion clinical entries and 620,000+ EHR feature dimensions across 172 Veterans Affairs hospitals.",
+    "Predicted 55.8% of all inpatient AKI episodes and 90.2% of severe episodes requiring dialysis within a 48-hour lead window at a 2:1 false-to-true alert ratio.",
+    "Simultaneously predicted future biochemical trajectories (e.g., serum creatinine, potassium, urea) to give clinicians actionable physiological context."
+  ],
+  "caveats": "The retrospective VA cohort was 93.6% male, limiting direct generalizability without external retraining, and prospective randomized clinical trials are required to prove mortality reduction from early alerts.",
+  "contributors": [
+    "Nenad Tomašev",
+    "Xavier Glorot",
+    "Jack W. Rae",
+    "Michal Zielinski",
+    "Shakir Mohamed",
+    "Dominic King",
+    "Christopher Kelly"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "U.S. Department of Veterans Affairs",
+    "University College London"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 84,
+    "verification": 93,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Established continuous deep sequence modeling over messy longitudinal hospital EHRs for early organ-failure forecasting.",
+    "ripple": "Catalyzed hospital-wide clinical early-warning foundation models across sepsis, cardiac arrest, and critical care.",
+    "verification": "Peer-reviewed in Nature across 172 clinical sites and >700,000 patients, though retrospective and male-skewed.",
+    "velocity": "Opened a clinically actionable 48-hour preventive intervention window before irreversible kidney injury manifests."
+  },
+  "enables": [
+    "google-amie-clinical-diagnosis-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature (2019): A clinically applicable approach to continuous prediction of future acute kidney injury",
+      "url": "https://doi.org/10.1038/s41586-019-1390-1",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC6722431)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6722431/",
+      "type": "paper"
+    }
+  ]
+}

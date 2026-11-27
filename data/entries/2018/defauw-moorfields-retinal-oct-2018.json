@@ -78,7 +78,8 @@
     "velocity": "Triages complex 3D retinal OCT volumes in seconds, eliminating weeks-long specialist referral backlogs."
   },
   "enables": [
-    "google-health-mammography-ai-2020"
+    "google-health-mammography-ai-2020",
+    "retfound-retinal-foundation-2023"
   ],
   "sources": [
     {

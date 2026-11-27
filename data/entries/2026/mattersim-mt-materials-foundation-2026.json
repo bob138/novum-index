@@ -1,0 +1,59 @@
+{
+  "id": "mattersim-mt-materials-foundation-2026",
+  "title": "MatterSim-MT: Multi-Task Materials Foundation Model Up to 5,000 K & 1,000 GPa",
+  "shortTitle": "MatterSim-MT (Materials Foundation)",
+  "date": "2026-05-08",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Materials Science",
+    "Foundation Models",
+    "Condensed Matter Simulation"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MatterSim-MT (Microsoft Research Multi-Task Atomistic Foundation Model)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Pretrained on >35M first-principles structures across 89 elements up to 5,000 K and 1,000 GPa, unifying atomistic dynamics with phonons, dielectric tensors, ferroelectric hysteresis, and battery cathode redox in one model.",
+  "summary": "Microsoft Research AI for Science introduced MatterSim-MT (May 2026, building on MatterSim 2024), a multi-task atomistic foundation model pretrained on over 35 million actively sampled first-principles structures spanning 89 elements, temperatures up to 5,000 K, and pressures up to 1,000 GPa. Moving beyond scalar potential-energy surfaces alone, MatterSim-MT jointly predicts energies, forces, Bader charges, magnetic moments, Born effective charges, and dielectric matrices—reproducing pressure-dependent LO–TO phonon splitting in SiC (~1 THz max phonon error), ferroelectric hysteresis in BaTiO₃, and cationic-to-anionic redox transitions in Li-rich battery cathodes.",
+  "technicalHighlights": [
+    "Trained via active-learning MD + DFT across >35M structures spanning 89 elements, 0–5,000 K, and 0–1,000 GPa—far beyond ambient-condition datasets.",
+    "Multi-task heads jointly predict Born effective charges, dielectric matrices, Bader charges, and magnetic moments alongside interatomic forces.",
+    "Reproduced experimental LO–TO phonon splitting in SiC, electric hysteresis in ferroelectric BaTiO₃, and anionic redox during Li-rich cathode delithiation."
+  ],
+  "caveats": "Released as an arXiv preprint undergoing active community evaluation; extreme-condition predictions outside DFT training regimes still benefit from uncertainty-guided active-learning fine-tuning.",
+  "contributors": [
+    "Han Yang",
+    "MatterSim Team (Microsoft Research AI for Science)"
+  ],
+  "institutions": [
+    "Microsoft Research AI for Science"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 87,
+    "verification": 81,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Unifies extreme-temperature/pressure interatomic potentials with electronic, dielectric, and magnetic property tensors in one foundation model.",
+    "ripple": "Enables end-to-end in-silico characterization of ferroelectrics, extreme-pressure phases, and next-gen battery cathodes.",
+    "verification": "Extensive first-principles and experimental benchmarks in arXiv:2605.07927, though still preprint pending journal peer review.",
+    "velocity": "Replaces disparate DFT/DFPT calculations for phonons, Born charges, and phase diagrams with unified multi-task inference."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2605.07927 (May 2026): MatterSim-MT: A multi-task foundation model for in silico materials characterization",
+      "url": "https://arxiv.org/abs/2605.07927",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2405.04967 (2024): MatterSim: A Deep Learning Atomistic Model Across Elements, Temperatures and Pressures",
+      "url": "https://arxiv.org/abs/2405.04967",
+      "type": "paper"
+    }
+  ]
+}

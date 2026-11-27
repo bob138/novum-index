@@ -45,7 +45,8 @@
     "velocity": "Dramatically expanded tractable 2D quantum many-body ground-state and dynamical simulations."
   },
   "enables": [
-    "ferminet-quantum-chemistry-2020"
+    "ferminet-quantum-chemistry-2020",
+    "minsr-deep-neural-quantum-states-2024"
   ],
   "sources": [
     {

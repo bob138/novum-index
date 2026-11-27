@@ -1,0 +1,59 @@
+{
+  "id": "minsr-deep-neural-quantum-states-2024",
+  "title": "MinSR Scales Deep Neural Quantum States Past Tensor-Network DMRG on 2D Magnets",
+  "shortTitle": "MinSR (Deep Neural Quantum States)",
+  "date": "2024-07-01",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Many-Body Physics",
+    "Neural Quantum States",
+    "Condensed Matter"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MinSR (Minimum-Step Stochastic Reconfiguration + Deep ResNet NQS)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Broke the optimization ceiling of neural quantum states—scaling past 100,000 parameters—and outperformed tensor-network DMRG on benchmark 2D frustrated quantum magnets and spin liquids.",
+  "summary": "Ao Chen and Markus Heyl (University of Augsburg) solved a seven-year bottleneck in neural quantum states (since Carleo & Troyer 2017) in Nature Physics (2024). Standard Stochastic Reconfiguration required inverting an N_p × N_p Fisher matrix, capping neural wavefunctions to ~10⁴ parameters; Chen & Heyl’s Minimum-Step Stochastic Reconfiguration (MinSR) reformulated the update into sample space (scaling with Monte Carlo samples rather than parameter count), unlocking >100,000-parameter deep ResNet wavefunctions that surpassed state-of-the-art tensor-network DMRG and variational Monte Carlo on the frustrated 2D J₁–J₂ Heisenberg model and uncovered clear signatures of a quantum spin liquid.",
+  "technicalHighlights": [
+    "Eliminated the O(N_p³) Fisher-matrix inversion bottleneck, scaling deep neural quantum state optimization smoothly to >10⁵–10⁶ parameters.",
+    "Surpassed leading tensor-network (DMRG) and variational Monte Carlo ground-state energies on the notoriously hard 2D frustrated J₁–J₂ Heisenberg magnet.",
+    "Provided high-accuracy evidence supporting a quantum spin-liquid phase in the maximally frustrated regime around J₂/J₁ = 0.5."
+  ],
+  "caveats": "Variational Monte Carlo sampling noise and sign-structure learning remain challenging for very large lattices (>16×16) and fermionic Hubbard models at arbitrary doping.",
+  "contributors": [
+    "Ao Chen",
+    "Markus Heyl"
+  ],
+  "institutions": [
+    "University of Augsburg"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 87,
+    "verification": 96,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Unlocked deep-learning scaling laws for variational quantum many-body wavefunctions, surpassing classical DMRG in 2D frustrated magnets.",
+    "ripple": "Adopted rapidly across quantum condensed matter, Rydberg simulators, and neural fermionic wavefunction research.",
+    "verification": "Peer-reviewed in Nature Physics with strict variational energy upper-bound benchmarks beating DMRG and open code.",
+    "velocity": "Collapsed the cubic parameter-scaling wall that had limited neural quantum states since 2017."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature Physics (2024): Empowering deep neural quantum states through efficient optimization",
+      "url": "https://doi.org/10.1038/s41567-024-02566-1",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC11392813)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11392813/",
+      "type": "paper"
+    }
+  ]
+}

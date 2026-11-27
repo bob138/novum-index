@@ -1,0 +1,67 @@
+{
+  "id": "epfl-brain-spine-interface-2023",
+  "title": "Wireless AI Brain–Spine Interface Restores Natural Walking After Paralysis",
+  "shortTitle": "EPFL AI Brain–Spine Interface",
+  "date": "2023-05-24",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Neurotechnology",
+    "Brain-Computer Interfaces",
+    "Spinal Cord Injury"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Adaptive Real-Time ECoG-to-EES Neural Decoder (BSI)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Built a wireless digital bridge between brain and spinal cord using real-time AI motor decoding, enabling a chronically paralyzed man to stand, walk naturally, and climb stairs by thought alone.",
+  "summary": "Henri Lorach, Andrea Galvez, Jocelyne Bloch, Grégoire Courtine, and colleagues (EPFL, CHUV, CEA-Leti) reported in Nature (2023) the first wireless Brain–Spine Interface (BSI) restoring voluntary, natural gait after chronic spinal cord injury. Two implanted 64-channel WIMAGINE epidural cortical arrays record sensorimotor ECoG signals that an adaptive real-time machine-learning decoder translates into proportional stimulation commands sent to a 16-electrode lumbar spinal implant. Calibrated in minutes and stable for over a year at home, the BSI enabled a participant paralyzed for 12 years to stand, walk over uneven terrain, climb stairs, and regain partial neurological recovery even when the device was switched off.",
+  "technicalHighlights": [
+    "Wireless digital bridge decoded real-time hip, knee, and ankle movement intentions from bilateral cortical ECoG to modulate epidural spinal stimulation.",
+    "Required only a few minutes of AI decoder calibration and remained stable across >40 neurorehabilitation sessions and independent home use over 1+ year.",
+    "Induced lasting neurorehabilitation gains: the participant regained ability to walk with crutches over ground even with the BSI turned off."
+  ],
+  "caveats": "Demonstrated in a single clinical feasibility participant (n = 1) with an incomplete C5/C6 spinal cord injury; broader pivotal trials are required to evaluate safety and efficacy across complete injuries.",
+  "contributors": [
+    "Henri Lorach",
+    "Andrea Galvez",
+    "Valeria Spagnolo",
+    "Felix Martel",
+    "Guillaume Charvet",
+    "Jocelyne Bloch",
+    "Grégoire Courtine"
+  ],
+  "institutions": [
+    "EPFL",
+    "CHUV (Lausanne University Hospital)",
+    "CEA-Leti / Clinatec",
+    "ONWARD Medical"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 89,
+    "verification": 95,
+    "velocity": 83
+  },
+  "scoreRationale": {
+    "foundational": "First closed-loop wireless cortical-to-spinal digital bridge translating neural intent directly into natural multi-joint locomotion.",
+    "ripple": "Established the clinical neuroprosthetic blueprint for restoring mobility and upper-limb control after spinal cord injury and stroke.",
+    "verification": "Published in Nature with over a year of longitudinal home clinical data, though currently an n = 1 feasibility study.",
+    "velocity": "Reduced neural decoder calibration to minutes while triggering measurable biological neuro-recovery within months."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature (2023): Walking naturally after spinal cord injury using a brain–spine interface",
+      "url": "https://doi.org/10.1038/s41586-023-06094-5",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC10232367)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10232367/",
+      "type": "paper"
+    }
+  ]
+}

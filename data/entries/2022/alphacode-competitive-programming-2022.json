@@ -1,0 +1,61 @@
+{
+  "id": "alphacode-competitive-programming-2022",
+  "title": "AlphaCode Solves Unseen Competitive Programming Problems at Human-Competitor Level",
+  "shortTitle": "AlphaCode (Competitive Coding AI)",
+  "date": "2022-12-09",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Program Synthesis",
+    "Algorithmic Reasoning",
+    "Code Generation"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaCode (41B Transformer + Test-Time Execution Filtering)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First AI system to synthesize novel algorithmic programs on unseen competitive programming contests, ranking within the top 54.3% of >5,000 human Codeforces competitors via massive test-time sampling and execution clustering.",
+  "summary": "Yujia Li, David Choi, Junyoung Chung, Oriol Vinyals, and colleagues (Google DeepMind) published AlphaCode in Science (December 2022), demonstrating that code-trained Transformers combined with massive test-time search and execution-based clustering can solve unseen algorithmic competition problems requiring multi-step reasoning, data structures, and dynamic programming. Evaluated live across 10 recent Codeforces contests with >5,000 human participants, AlphaCode achieved an estimated top-54.3% ranking—pioneering test-time compute scaling and verifier-guided program search that later evolved into FunSearch, AlphaEvolve, and frontier reasoning models.",
+  "technicalHighlights": [
+    "Generated up to millions of candidate C++/Python solutions per problem, filtered them against example tests, and clustered survivors by behavioral execution outputs.",
+    "Achieved an estimated rank within the top 54.3% of >5,000 human competitors across 10 unseen Codeforces contests without copying memorized solutions.",
+    "Pioneered the test-time compute scaling + execution-verifier paradigm underpinning modern coding and mathematical discovery agents."
+  ],
+  "caveats": "Relied on brute-force sampling of up to 1 million candidates per problem (~100×–1000× more compute than later reasoning LLMs) and still trailed top human grandmasters.",
+  "contributors": [
+    "Yujia Li",
+    "David Choi",
+    "Junyoung Chung",
+    "Nate Kushman",
+    "Julian Schrittwieser",
+    "Oriol Vinyals"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "First AI to reach human-competitor algorithmic synthesis on unseen competitive programming tasks via execution-filtered test-time scaling.",
+    "ripple": "Directly seeded test-time search and verifier-guided synthesis across FunSearch, AlphaEvolve, and modern coding agents.",
+    "verification": "Peer-reviewed in Science and evaluated blindly on live, unseen Codeforces competitions.",
+    "velocity": "Synthesized and verified novel algorithmic programs in minutes where earlier models scored near zero."
+  },
+  "enables": [
+    "funsearch-2023",
+    "alphaevolve-matrix-2025"
+  ],
+  "sources": [
+    {
+      "label": "Science (2022): Competition-level code generation with AlphaCode",
+      "url": "https://doi.org/10.1126/science.abq1158",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "qma-qcma-hierarchy-separation-2026",
+  "title": "Classical Oracle Separating QMA From the QCMA Hierarchy via Polynomial Switching Lemma",
+  "shortTitle": "QMA vs QCMA Hierarchy Separation",
+  "date": "2026-11-18",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Complexity Theory",
+    "Oracle Separations",
+    "Boolean Analysis"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6 Astra (OpenAI)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Constructed a classical oracle separating QMA from the entire QCMA hierarchy—resolving a question posed by Aaronson, Ingram & Kretschmer—via a variable-independent bounded-polynomial switching lemma developed with GPT-6 Astra.",
+  "summary": "Yiming Wang (arXiv:2611.23693, Nov 2026) constructed a classical oracle relative to which QMA (quantum proofs) is not contained in the entire QCMA hierarchy (alternating classical proofs with quantum verifiers), resolving a central open question of Aaronson, Ingram, and Kretschmer alongside finer collapses (QCMA = P ≠ QMA and QMA = P ≠ PP). The author’s explicit AI usage disclosure documents that GPT-6 Astra produced an initial proof of a weaker separation, contributed core proof techniques for the variable-independent bounded-polynomial switching lemma, and audited the final proof.",
+  "technicalHighlights": [
+    "Proved a variable-independent switching lemma for bounded polynomials, conceptually unifying sampler-based arguments separating quantum from classical witnesses.",
+    "Constructed a classical oracle separating QMA from the full QCMA hierarchy (QCMAH), plus finely controlled collapse oracles for QCMA and QMA.",
+    "Explicitly credited GPT-6 Astra with producing the initial weaker separation, proof-technique exploration, and final mathematical audit."
+  ],
+  "caveats": "Posted as a November 2026 arXiv preprint awaiting formal peer review (appearing concurrently with independent work by Cakan using different techniques), and applies relative to a classical oracle rather than unrelativized complexity classes.",
+  "contributors": [
+    "Yiming Wang"
+  ],
+  "institutions": [
+    "Independent / Academic Quantum Complexity Research"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 81,
+    "verification": 77,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Introduces a variable-independent polynomial switching lemma resolving the classical-oracle separation of QMA from the QCMA hierarchy.",
+    "ripple": "Provides a clean conceptual tool for quantum witness complexity, switching lemmas, and connections to Aaronson–Ambainis.",
+    "verification": "Author-verified arXiv preprint with detailed proofs and concurrent confirmation of the separation, pending peer review.",
+    "velocity": "GPT-6 Astra accelerated the initial separation proof and full argument audit in days."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.23693 (Nov 2026): Separating QMA from the QCMA Hierarchy via a Switching Lemma for Bounded Polynomials",
+      "url": "https://arxiv.org/abs/2611.23693",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center AI Claims Tracker (Nov 2026)",
+      "url": "https://quantumresearch.center/news/ai-claims/index.html",
+      "type": "explainer"
+    }
+  ]
+}
