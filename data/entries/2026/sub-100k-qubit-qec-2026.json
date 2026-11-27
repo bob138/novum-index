@@ -1,0 +1,57 @@
+{
+  "id": "sub-100k-qubit-qec-2026",
+  "title": "Sub-100,000 Qubit Fault-Tolerant Error-Correction & Circuit Overhead Drop",
+  "shortTitle": "200× Qubit Overhead Drop",
+  "date": "2026-06-15",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Error Correction",
+    "Post-Quantum Cryptography",
+    "Quantum LDPC Codes"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AI-Assisted Circuit & Code Synthesis",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "whyItMatters": "New qLDPC error-correction codes and AI-optimized circuits slash the physical qubits needed for cryptographically relevant quantum computing from 20M (2019) to under 100,000.",
+  "summary": "A rapid succession of algorithmic and quantum error-correction advances between 2025 and 2026—combining high-rate quantum LDPC codes, magic-state cultivation, and AI-guided circuit synthesis—cut resource estimates for factoring RSA-2048 from ~20 million physical qubits in 2019 to under 1 million in 2025 and below 100,000 physical qubits in 2026. This 200× software/math compression accelerated global enterprise and government post-quantum migration targets to 2029.",
+  "technicalHighlights": [
+    "Achieves a ~200× reduction in physical qubit requirements in seven years primarily through mathematics, codes, and circuit compilation rather than raw hardware scale.",
+    "Combines magic-state distillation alternatives with low-overhead qLDPC architectures.",
+    "Prompted major cloud, financial, and infrastructure providers to pull post-quantum cryptography deadlines forward to 2029."
+  ],
+  "caveats": "Resource estimates assume physical gate error rates and non-local qubit connectivity that still pose formidable hardware engineering challenges at 100,000-qubit scale.",
+  "contributors": [
+    "Quantum Error Correction & Compilation Research Community"
+  ],
+  "institutions": [
+    "Google Quantum AI",
+    "IBM Quantum",
+    "Academic QEC Labs"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 95,
+    "verification": 90,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Rewrites the asymptotic and constant-factor resource economics of fault-tolerant quantum computation.",
+    "ripple": "Directly reshapes global cybersecurity, post-quantum cryptography migration, and quantum hardware roadmaps.",
+    "verification": "Grounded in peer-reviewed QEC theory, open resource estimators, and verified circuit decompositions.",
+    "velocity": "Achieved a 200× theoretical hardware compression in seven years, accelerating sharply in 2025–2026."
+  },
+  "enables": [
+    "deepmind-verified-quantum-algos-2026",
+    "harvard-anthropic-quera-quantum-circuits-2026"
+  ],
+  "sources": [
+    {
+      "label": "PwC Technical Analysis: AI is accelerating arrival of Q-Day (200× Qubit Reduction)",
+      "url": "https://www.pwc.com/us/en/services/consulting/cybersecurity-data-tech-risk/library/ai-accelerating-q-day.html",
+      "type": "explainer"
+    }
+  ]
+}

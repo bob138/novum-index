@@ -1,0 +1,61 @@
+{
+  "id": "deepmind-verified-quantum-algos-2026",
+  "title": "Agentic Discovery & Lean Verification of Faster Quantum Simulation Algorithms",
+  "shortTitle": "Verified Quantum Algorithms",
+  "date": "2026-11-23",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Quantum Algorithms",
+    "Formal Verification",
+    "Multi-Agent AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Gemini 4 Agent Teams (Google DeepMind / Quantum AI)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Weeks",
+  "whyItMatters": "Multi-agent AI teams cut fault-tolerant quantum simulation costs by up to 11.8× for fusion and chemistry—and proved every circuit correct in Lean.",
+  "summary": "Google DeepMind and Google Quantum AI demonstrated teams of Gemini 4 agents collaborating in structured 'virtual conferences' to redesign quantum algorithms too large to test on classical supercomputers or current quantum chips. Every algorithmic improvement was formally verified in Lean against mathematical specifications, yielding resource cuts of 11.8× for a fusion energy-loss problem, 8× for photochemistry, 2.5× for the drug-metabolizing enzyme Cytochrome P450, and 290× for an arcsin arithmetic subroutine.",
+  "technicalHighlights": [
+    "Reduces estimated fault-tolerant quantum gate costs by 11.8× (hydrogen fusion stopping power), 8× (photochemistry), and 2.5× (Cytochrome P450).",
+    "Every discovered quantum circuit is machine-verified in Lean, releasing an Apache 2.0 open-source Lean library of specifications and proofs.",
+    "Introduces periodic multi-agent 'conference' collaboration where independent agent teams exchange techniques."
+  ],
+  "caveats": "Formal verification proves equivalence to the mathematical specification, not that the physical model captures every experimental nuance; full-scale runs still require future fault-tolerant quantum hardware.",
+  "contributors": [
+    "Shirobokov",
+    "Max Jaderberg",
+    "Ryan Babbush",
+    "Google DeepMind & Quantum AI Teams"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Google Quantum AI"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 90,
+    "verification": 97,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Shows how formal verification unlocks AI optimization of programs that cannot be empirically executed or tested today.",
+    "ripple": "Directly brings forward practical timelines for quantum chemistry, fusion plasma simulation, and catalysis on early fault-tolerant machines.",
+    "verification": "Every circuit optimization is accompanied by an open-source Lean proof under Apache 2.0.",
+    "velocity": "Multi-agent scientific teams outperformed years of hand-crafted quantum compilation research in weeks."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Google DeepMind Blog: Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "type": "announcement"
+    },
+    {
+      "label": "Technical Breakdown: DeepMind's Gemini 4 Agents Find Faster Quantum Algorithms",
+      "url": "https://cellcog.ai/blog/deepmind-gemini-4-quantum-algorithms/",
+      "type": "explainer"
+    }
+  ]
+}

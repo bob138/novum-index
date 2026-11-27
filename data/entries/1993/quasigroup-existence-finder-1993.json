@@ -1,0 +1,60 @@
+{
+  "id": "quasigroup-existence-finder-1993",
+  "title": "FINDER and MGTP Automated Constraint & Model Generators Settle Open Quasigroup Existence Problems QG3–QG7",
+  "shortTitle": "Quasigroup Problems QG3–QG7 (1993)",
+  "date": "1993-08-29",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Automated Reasoning",
+    "Combinatorial Design Theory",
+    "Finite Algebra"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "FINDER & MGTP (Model-Generation Theorem Provers)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Automated constraint search (hours–days)",
+  "isAnchor": true,
+  "whyItMatters": "Automated model generators FINDER and MGTP solved multiple long-open finite-algebra and combinatorial design existence problems (quasigroups QG3–QG7), proving AI search engines could resolve frontier mathematical open questions.",
+  "summary": "Presented at IJCAI 1993, Masayuki Fujita, John Slaney, and Frank Bennett applied automated finite-model generators and theorem provers (FINDER and MGTP) to open existence problems in idempotent quasigroups and Latin square designs (QG3 through QG7). By translating algebraic identities into constraint-satisfaction and clause-based search problems with automated symmetry breaking, the systems autonomously constructed new quasigroups and proved non-existence for several previously open orders (such as QG5(12) and QG6(9)), earning landmark status in automated reasoning three years before EQP solved the Robbins Conjecture.",
+  "technicalHighlights": [
+    "Autonomously resolved multiple open orders of finite quasigroup existence problems (QG3–QG7) in combinatorial design theory.",
+    "Combined clause-based automated theorem proving (MGTP) with constraint-driven finite model generation (FINDER).",
+    "Established finite model generation as a core pillar of AI-assisted mathematical discovery alongside equational proving and SAT."
+  ],
+  "caveats": "Solved specific finite orders of open quasigroup problems rather than general infinite-family classification theorems.",
+  "contributors": [
+    "Masayuki Fujita",
+    "John Slaney",
+    "Frank E. Bennett"
+  ],
+  "institutions": [
+    "ICOT (Institute for New Generation Computer Technology)",
+    "Australian National University",
+    "Mount Saint Vincent University"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 80,
+    "verification": 97,
+    "velocity": 75
+  },
+  "scoreRationale": {
+    "foundational": "Multiple genuine open finite-algebra and design-theory problems resolved directly by automated AI model generators.",
+    "ripple": "Pioneered finite-model-finding and symmetry-breaking techniques foundational to modern SAT/SMT mathematical proving.",
+    "verification": "Peer-reviewed in IJCAI 1993 with explicitly checkable finite algebraic models and exhaustive non-existence proofs.",
+    "velocity": "Resolved open algebraic orders in hours to days of automated search."
+  },
+  "enables": [
+    "robbins-conjecture-eqp-1996",
+    "erdos-discrepancy-sat-2014"
+  ],
+  "sources": [
+    {
+      "label": "IJCAI 1993 Proceedings — Automatic Generation of Some Results in Finite Algebra",
+      "url": "https://www.ijcai.org/Proceedings/93-1/Papers/008.pdf",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "hodge-cm-abelian-varieties-2026",
+  "title": "Lean-Formalized Proof of the Rational Hodge Conjecture for CM Abelian Varieties",
+  "shortTitle": "Hodge Conjecture (CM Abelian)",
+  "date": "2026-10-06",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Algebraic Geometry",
+    "Hodge Theory",
+    "Arithmetic Geometry",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Math Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 76,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Claims a Lean-formalized resolution of the Millennium-tier Rational Hodge Conjecture across all complex abelian varieties of CM type, implying the Tate conjecture for abelian varieties over finite fields.",
+  "summary": "One of the flagship results highlighted from OpenAI’s October 2026 mathematical release (revised Oct 6, with a Lean 4 formalization added Oct 26 and Comparator namespace fixes Oct 29), this manuscript claims to prove the rational Hodge conjecture for every complex projective abelian variety of CM type in every dimension and codimension. By classic theorems of James Milne, this also implies the Tate conjecture for all abelian varieties over finite fields and the Hodge standard conjecture for abelian varieties in arbitrary characteristic.",
+  "technicalHighlights": [
+    "Targets the entire CM locus of complex abelian varieties—a major longstanding partial case of the 1950 Hodge Conjecture Millennium Problem.",
+    "Accompanied by a Lean 4 formalization quantifying over polarized lattice models and Deligne’s Clay formulation of algebraic cycle classes.",
+    "Notably, companion K3-surface papers from the same family were withdrawn on Oct 7 after a sign error was caught, while the core CM abelian variety theorem was retained and formalized in Lean."
+  ],
+  "caveats": "Remains an unrefereed preprint undergoing intense specialist scrutiny (including commentary by Terence Tao and algebraic geometers). Companion K3 papers had to be withdrawn due to a sign error, underscoring the need for full human audit of the Lean statement.",
+  "contributors": [
+    "OpenAI Math Research Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 92,
+    "ripple": 84,
+    "verification": 64,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Settles the Hodge Conjecture across the entire CM abelian locus and carries deep arithmetic-geometry consequences via Milne’s theorems.",
+    "ripple": "Links complex algebraic geometry, Hodge theory, and the Tate conjecture over finite fields.",
+    "verification": "Backed by a Lean 4 formalization added Oct 26, but remains unreviewed and surrounded by earlier withdrawals in companion K3 manuscripts.",
+    "velocity": "Generated autonomously by an internal reasoning model and formalized in Lean within weeks."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI Math Preprint — The rational Hodge conjecture for CM abelian varieties (Oct 6, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "Terence Tao — The status of the Hodge conjecture (Blog)",
+      "url": "https://terrytao.wordpress.com/2026/09/12/the-status-of-the-hodge-conjecture/",
+      "type": "explainer"
+    }
+  ]
+}

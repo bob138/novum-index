@@ -1,0 +1,63 @@
+{
+  "id": "keller-conjecture-dim7-sat-2020",
+  "title": "Complete Resolution of Keller’s 1930 Cube-Tiling Conjecture in Dimension 7 via Machine-Verified SAT Proof",
+  "shortTitle": "Keller’s Conjecture (d = 7, SAT)",
+  "date": "2020-07-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Discrete Geometry",
+    "Combinatorics",
+    "SAT Solving & Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "CaDiCaL SAT Solver + Formally Verified DRAT / Symmetry-Breaking Proof",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 90,
+  "aiTimeToSolve": "CPU-hours on cluster (20 GB DRAT proof)",
+  "isAnchor": true,
+  "whyItMatters": "Completely settled Otto-Heinrich Keller’s 90-year-old geometry conjecture (1930) in its final open dimension (d = 7), proving via a formally certified SAT proof that every 7D unit-cube tiling contains a face-sharing pair.",
+  "summary": "In July 2020 (IJCAR 2020, later published in Journal of the ACM), Joshua Brakensiek, Marijn J. H. Heule, John Mackey, and David Narváez completely resolved Otto-Heinrich Keller’s 1930 conjecture on space-filling unit cube tilings. Prior mathematicians had proven the conjecture true for dimensions d ≤ 6 (Perron, 1940) and false for d ≥ 8 (Lagarias & Shor, 1992; Mackey, 2002), leaving dimension 7 as the sole open case for decades. Encoding the non-existence of a size-128 clique in the Keller graphs G_{7,3}, G_{7,4}, and G_{7,6} into propositional logic with automated symmetry breaking, the CaDiCaL SAT solver proved unsatisfiability and emitted an optimized ~20 GB clausal proof certified by formally verified DRAT proof checkers.",
+  "technicalHighlights": [
+    "Settled the last remaining open dimension (d = 7) of Keller’s 1930 conjecture, completing a 90-year classification across all dimensions.",
+    "Combined propositional symmetry breaking with CaDiCaL SAT solving to rule out size-128 cliques in the Keller graphs.",
+    "Produced a compact ~20 GB clausal unsatisfiability certificate validated by formally verified proof checkers (ACL2/Coq/Isabelle ecosystem)."
+  ],
+  "caveats": "The propositional encoding reduction relies on established graph-theoretic reductions by Corrádi–Szabó and Kisielewicz, while the exhaustive search and clausal symmetry breaking are machine-checked.",
+  "contributors": [
+    "Joshua Brakensiek",
+    "Marijn J. H. Heule",
+    "John Mackey",
+    "David Narváez"
+  ],
+  "institutions": [
+    "Carnegie Mellon University",
+    "Stanford University",
+    "Rochester Institute of Technology"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 81,
+    "verification": 98,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Completely closed a famous 90-year-old problem in discrete geometry generalizing Minkowski’s 1907 lattice-tiling theorem.",
+    "ripple": "Cemented automated SAT solving + verified clausal proofs as a mainstream instrument for settling intractable combinatorial geometry problems.",
+    "verification": "Formally certified via DRAT proof checking and peer-reviewed in IJCAR 2020 and Journal of the ACM.",
+    "velocity": "Resolved a search space far beyond human casework via automated symmetry breaking and parallel SAT solving."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PMC / IJCAR 2020 — The Resolution of Keller’s Conjecture (Brakensiek, Heule, Mackey, Narváez)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7324133/",
+      "type": "formal-verification"
+    },
+    {
+      "label": "SAT for Mathematics — Keller’s Conjecture & SAT Proof Archive",
+      "url": "https://sat4math.com/",
+      "type": "code"
+    }
+  ]
+}

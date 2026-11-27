@@ -1,0 +1,62 @@
+{
+  "id": "knuth-claudes-cycles-2026",
+  "title": "Donald Knuth’s “Claude’s Cycles”: Claude Opus 4.6 Solves Open 3D Directed Hamiltonian Cycle Decomposition",
+  "shortTitle": "Knuth: “Claude’s Cycles” (Opus 4.6)",
+  "date": "2026-02-28",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Graph Theory",
+    "Combinatorial Algorithms",
+    "Hamiltonian Decompositions"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Anthropic Claude Opus 4.6 (Lean 4 Verified)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~1 hour exploration (31 runs)",
+  "isAnchor": false,
+  "whyItMatters": "Computer science legend Donald Knuth titled his paper “Claude’s Cycles” after Claude Opus 4.6 solved an open 3D Cayley-digraph Hamiltonian decomposition problem he had been working on for The Art of Computer Programming.",
+  "summary": "On February 28, 2026, Stanford professor emeritus Donald E. Knuth published a celebrated paper titled “Claude’s Cycles,” opening with shock after Anthropic’s Claude Opus 4.6 (coached by Filip Stappers) cracked an open graph-theory problem Knuth had been studying for weeks for a future volume of The Art of Computer Programming. Given the m×m×m directed 3D toroidal grid Cayley digraph where each vertex (i, j, k) has three outgoing arcs incrementing one coordinate mod m, the problem asked for a general rule decomposing all 3m³ arcs into three directed Hamiltonian cycles for every odd m > 1. Claude explored small cases systematically via code and discovered a remarkably simple closed-form “bumping” rule; Knuth proved its correctness for all odd m, and the Lean community (Kim Morrison) promptly machine-verified the theorem in Lean 4.",
+  "technicalHighlights": [
+    "Claude Opus 4.6 systematically explored small m cases with self-written programs to uncover a clean closed-form Hamiltonian-cycle decomposition rule for all odd m > 1.",
+    "Donald Knuth independently verified and proved the general construction, publishing the landmark paper “Claude’s Cycles” (Stanford CS, Feb 28, 2026).",
+    "Formally verified in Lean 4 shortly after release (github.com/kim-em/KnuthClaudeLean)."
+  ],
+  "caveats": "Claude discovered the constructive decomposition rule for all odd m while Donald Knuth supplied the full human proof of generality (and the even-m case remained separate).",
+  "contributors": [
+    "Donald E. Knuth",
+    "Filip Stappers",
+    "Claude Opus 4.6",
+    "Kim Morrison (Lean 4)"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 91,
+    "verification": 98,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Solved a crisp open combinatorial decomposition problem directly slated for Knuth’s canonical Art of Computer Programming.",
+    "ripple": "Endorsement by Donald Knuth himself became one of the most influential cultural and scientific validation moments for AI-assisted mathematics and computer science.",
+    "verification": "Proved rigorously by Donald Knuth and independently machine-checked in Lean 4.",
+    "velocity": "Uncovered a general constructive rule in roughly one hour of interactive exploration after weeks of human effort."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Stanford CS (Feb 28, 2026) — Donald E. Knuth: “Claude’s Cycles” (PDF)",
+      "url": "https://cs.stanford.edu/~knuth/papers/claude-cycles.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — kim-em/KnuthClaudeLean (Lean 4 Formalization of Claude’s Cycles)",
+      "url": "https://github.com/kim-em/KnuthClaudeLean/blob/master/claude-cycles.md",
+      "type": "formal-verification"
+    }
+  ]
+}

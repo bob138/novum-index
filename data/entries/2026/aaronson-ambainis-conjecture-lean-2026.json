@@ -1,0 +1,58 @@
+{
+  "id": "aaronson-ambainis-conjecture-lean-2026",
+  "title": "Lean-Verified Proof of the 2009 Aaronson–Ambainis Quantum Query Conjecture",
+  "shortTitle": "Aaronson–Ambainis Conjecture (Lean)",
+  "date": "2026-11-06",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Query Complexity",
+    "Boolean Function Analysis",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Unreleased Anthropic Model (PSI Harness + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 17,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Settles the 17-year-old Aaronson–Ambainis conjecture on low-degree bounded Boolean polynomials, pinning down fundamental limits on black-box quantum speedups with a complete Lean 4 proof.",
+  "summary": "David Turturean at Physical Superintelligence (PSI), using an unreleased Anthropic model inside a Lean-coupled verification harness, published a proof and complete Lean 4 formalization of the 2009 Aaronson–Ambainis conjecture: every low-degree bounded polynomial on the Boolean hypercube admits an influential variable, implying any black-box quantum algorithm can be simulated classically on almost all inputs with at most a polynomial query blowup. Scott Aaronson publicly acknowledged the breakthrough, and three days later (Nov 9) Huffstutler, Miloschewsky, and Podder released a shorter independent proof.",
+  "technicalHighlights": [
+    "Proves every bounded degree-d polynomial on {-1, 1}^n with non-trivial variance has a coordinate of influence at least poly(Var(f)/d).",
+    "Establishes that super-polynomial black-box quantum speedups require strong global structure (such as periodicity in Shor’s algorithm) and cannot arise from generic unstructured functions.",
+    "Released with a complete Lean 4 formalization (physical-superintelligence/aaronson-ambainis) and corroborated three days later by an independent shorter proof."
+  ],
+  "caveats": "Initial preprint (arXiv:2611.09773) is not yet journal peer-reviewed; while the Lean formalization checks the formal statement against standard axioms, full community audit of the exposition and comparison with the independent Nov 9 proof are ongoing.",
+  "contributors": [
+    "David Turturean"
+  ],
+  "institutions": [
+    "Physical Superintelligence (PSI)"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 85,
+    "verification": 94,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Resolves one of the foremost open conjectures in quantum query complexity and analysis of Boolean functions since 2009.",
+    "ripple": "Clarifies the exact boundary between classical and quantum query power, informing quantum algorithm design and complexity theory.",
+    "verification": "Complete public Lean 4 formalization acknowledged by Scott Aaronson and swiftly reinforced by a shorter independent proof.",
+    "velocity": "Cracked a 17-year-old quantum complexity conjecture—with full Lean formalization—via an AI-driven theorem-proving harness."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "David Turturean — Proof of the Aaronson–Ambainis Conjecture (arXiv:2611.09773)",
+      "url": "https://arxiv.org/abs/2611.09773",
+      "type": "paper"
+    },
+    {
+      "label": "Scott Aaronson (Shtetl-Optimized) — Aaronson–Ambainis Conjecture Proved",
+      "url": "https://scottaaronson.blog/?p=10295",
+      "type": "explainer"
+    }
+  ]
+}

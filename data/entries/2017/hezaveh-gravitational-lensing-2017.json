@@ -1,0 +1,61 @@
+{
+  "id": "hezaveh-gravitational-lensing-2017",
+  "title": "Deep Convolutional Neural Networks Estimate Strong Gravitational Lensing Parameters 10 Million Times Faster Than MCMC",
+  "shortTitle": "Gravitational Lensing CNN (Nature, 2017)",
+  "date": "2017-08-30",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Astrophysics",
+    "Dark Matter",
+    "Gravitational Lensing"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Strong-Lensing Deep CNN Ensemble (Stanford KIPAC)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Milliseconds vs. weeks of MCMC",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature, Hezaveh et al. demonstrated CNNs inferring dark-matter gravitational lens parameters from real Hubble Space Telescope images 10⁷× faster than traditional likelihood MCMC—unlocking next-generation sky surveys.",
+  "summary": "Published in Nature on August 30, 2017, Yashar D. Hezaveh, Laurence Perreault Levasseur, and Philip J. Marshall at Stanford’s Kavli Institute for Particle Astrophysics and Cosmology (KIPAC) trained deep convolutional neural networks on half a million simulated strong gravitational lenses and tested them on real Hubble Space Telescope observations. The CNNs inferred Einstein radius, complex ellipticity, and mass-center coordinates with accuracy matching painstaking likelihood-based MCMC modeling—while running roughly ten million times faster (fractions of a second vs. weeks per lens), making dark-matter analysis of hundreds of thousands of upcoming Euclid and Rubin Observatory lenses feasible.",
+  "technicalHighlights": [
+    "Inferred physical dark-matter lens parameters directly from raw real Hubble Space Telescope images with accuracy comparable to maximum-likelihood MCMC.",
+    "Achieved a ~10⁷× wall-clock speedup (milliseconds vs. weeks per gravitational lens system).",
+    "Pioneered simulation-based deep inference in observational cosmology ahead of the Euclid and Vera C. Rubin survey eras."
+  ],
+  "caveats": "Point-estimate inference required follow-up Bayesian neural network calibration (Perreault Levasseur et al., 2017) for rigorous posterior uncertainty quantification.",
+  "contributors": [
+    "Yashar D. Hezaveh",
+    "Laurence Perreault Levasseur",
+    "Philip J. Marshall"
+  ],
+  "institutions": [
+    "Stanford University (KIPAC)",
+    "SLAC National Accelerator Laboratory"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 87,
+    "verification": 95,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "First Nature-level proof that deep neural networks can perform precision physical parameter inference directly on real space-telescope images.",
+    "ripple": "Launched simulation-based deep learning across cosmology, gravitational waves, and sky-survey astrophysics.",
+    "verification": "Peer-reviewed in Nature (Vol. 548, pp. 555–557) and validated against real Hubble Space Telescope lens reconstructions.",
+    "velocity": "10-million-fold inference speedup turning weeks of expert MCMC modeling into milliseconds."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature Vol. 548, pp. 555–557 (Aug 30, 2017) — Fast automated analysis of strong gravitational lenses with convolutional neural networks",
+      "url": "https://www.nature.com/articles/nature23463",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:1708.08842 — Fast Automated Analysis of Strong Gravitational Lenses with Convolutional Neural Networks",
+      "url": "https://arxiv.org/abs/1708.08842",
+      "type": "paper"
+    }
+  ]
+}

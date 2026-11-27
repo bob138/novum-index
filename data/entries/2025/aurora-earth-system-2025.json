@@ -1,0 +1,64 @@
+{
+  "id": "aurora-earth-system-2025",
+  "title": "Microsoft Research Aurora: First Multi-Domain Foundation Model for the Earth System",
+  "shortTitle": "Aurora Earth System AI (Nature)",
+  "date": "2025-05-21",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Earth System Science",
+    "Atmospheric Physics",
+    "Foundation Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Aurora (3D Swin Transformer Earth System Foundation Model, Microsoft Research)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, Microsoft’s Aurora pretrained on >1M hours of geophysical data to outperform operational numerical physics simulators across air quality, ocean waves, tropical cyclones, and high-resolution weather.",
+  "summary": "Published in Nature on May 21, 2025, Cristian Bodnar, Paris Perdikaris, Richard E. Turner, and colleagues at Microsoft Research AI for Science introduced Aurora, a 1.3-billion-parameter 3D Swin Transformer foundation model pretrained on over one million hours of heterogeneous geophysical simulation and observation data. Unlike single-purpose weather neural nets, Aurora fine-tunes rapidly across distinct Earth-system domains: it outperformed operational atmospheric chemistry models (CAMS) on 74% of global air-pollution targets, beat numerical wave models on 86% of ocean-wave targets, surpassed 7 operational agencies on 100% of 5-day tropical cyclone track benchmarks, and ran ~5,000×–100,000× faster than numerical PDE solvers.",
+  "technicalHighlights": [
+    "First unified Earth-system foundation model spanning global air pollution, ocean waves, tropical cyclone tracks, and 0.1° high-resolution weather.",
+    "Outperformed all 7 operational forecasting centers on 100% of 5-day tropical cyclone track forecasts (including Typhoon Doksuri) and 92% of 10-day high-res weather targets.",
+    "Open-sourced weights and code (later extended to Aurora 1.5 in 2026) at orders-of-magnitude lower computational cost than classical PDE integration."
+  ],
+  "caveats": "Depends on historical reanalysis and numerical-model outputs for pretraining and initial conditions; extreme out-of-distribution climate regimes still require careful physical calibration.",
+  "contributors": [
+    "Cristian Bodnar",
+    "Wessel P. Bruinsma",
+    "Ana Lucic",
+    "Richard E. Turner",
+    "Paris Perdikaris"
+  ],
+  "institutions": [
+    "Microsoft Research AI for Science",
+    "University of Pennsylvania",
+    "University of Cambridge"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 92,
+    "verification": 94,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates that a single pretrained foundation model can generalize across coupled geophysical PDE systems (atmosphere, chemistry, ocean waves).",
+    "ripple": "Democratizes high-resolution air-quality, cyclone, and climate forecasting for agencies and researchers without national supercomputers.",
+    "verification": "Peer-reviewed in Nature (Vol. 641, pp. 1180–1187) with open-source code, model weights, and rigorous operational benchmarks.",
+    "velocity": "Delivers forecasts up to 100,000× faster than operational atmospheric chemistry and numerical weather models."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PubMed / Nature (May 21, 2025) — A foundation model for the Earth system (DOI: 10.1038/s41586-025-09005-y)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40399684/",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — microsoft/aurora Open-Source Model & Documentation",
+      "url": "https://github.com/microsoft/aurora",
+      "type": "code"
+    }
+  ]
+}

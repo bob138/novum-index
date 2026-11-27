@@ -1,0 +1,60 @@
+{
+  "id": "opencrispr-1-gene-editor-2025",
+  "title": "OpenCRISPR-1 Becomes the First Fully AI-Designed Gene Editor Validated in Human Cells",
+  "shortTitle": "OpenCRISPR-1 AI Gene Editor",
+  "date": "2025-07-30",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Genome Editing",
+    "Protein Language Models",
+    "Synthetic Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Profluent Large-Scale CRISPR Protein Language Model",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, Profluent’s OpenCRISPR-1 is the first CRISPR-Cas genome editor generated entirely from scratch by AI—over 400 mutations from SpCas9—editing human DNA with lower off-target cuts.",
+  "summary": "First open-sourced by Profluent in April 2024 and published in Nature in July 2025 (Ruffolo et al., Nature 645: 518–525), OpenCRISPR-1 demonstrated that protein language models trained on millions of natural CRISPR operons can design functional gene-editing enzymes entirely from scratch. Sitting >400 amino-acid mutations away from canonical SpCas9 (and ~200 mutations away from any known natural Cas protein), OpenCRISPR-1 matched SpCas9 editing efficiency in human cells while cutting off-target activity by up to 95%, and was released openly for broad research and therapeutic exploration.",
+  "technicalHighlights": [
+    "Generated a complete, functional Cas9-like genome editor and guide RNA from scratch—more than 400 mutations away from SpCas9 and ~200 from any known natural protein.",
+    "Matched canonical SpCas9 on-target human-genome editing efficiency in wet-lab experiments while sharply reducing off-target cleavage.",
+    "Publicly released alongside the largest open CRISPR-Cas atlas to accelerate license-free AI-engineered gene and base editors."
+  ],
+  "caveats": "Demonstrated in human cell lines (including base-editing fusions) rather than clinical human trials; long-term in vivo immunogenicity and delivery remain under study.",
+  "contributors": [
+    "Jeffrey A. Ruffolo",
+    "Stephen Nayfach",
+    "Ali Madani"
+  ],
+  "institutions": [
+    "Profluent Bio"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Crossed a historic threshold in synthetic biology: moving gene editing from mining bacterial nature to generating wholly synthetic CRISPR enzymes with AI.",
+    "ripple": "Opens patent-unencumbered, customizable gene editors engineered for specificity and lower immunogenicity across therapeutics.",
+    "verification": "Peer-reviewed in Nature (645: 518–525) with extensive human-cell editing, off-target profiling, and open-source sequence release.",
+    "velocity": "Designed a highly divergent functional CRISPR nuclease in silico without decades of microbial bioprospecting or directed evolution."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Profluent / Nature (645: 518–525, Jul 2025) — Design of highly functional genome editors by modeling the universe of CRISPR-Cas sequences",
+      "url": "https://github.com/Profluent-AI/OpenCRISPR",
+      "type": "code"
+    },
+    {
+      "label": "Profluent — Editing the Human Genome with AI (OpenCRISPR-1 Release)",
+      "url": "https://www.profluent.bio/media/editing-the-human-genome-with-ai",
+      "type": "announcement"
+    }
+  ]
+}

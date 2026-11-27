@@ -1,0 +1,64 @@
+{
+  "id": "ostmann-inverse-goldbach-lean-2026",
+  "title": "Formal Lean 4 Proof of Ostmann’s 1956 Inverse Goldbach Conjecture (Erdős #431)",
+  "shortTitle": "Ostmann Inverse Goldbach (Lean)",
+  "date": "2026-10-11",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Additive Number Theory",
+    "Prime Numbers",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Math Model (Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 70,
+  "aiTimeToSolve": "Autonomous proof + Lean 4",
+  "isAnchor": false,
+  "whyItMatters": "Independently audited from OpenAI’s GitHub release and merged into DeepMind’s Formal Conjectures, this Lean 4 proof settles Ostmann’s 70-year-old Inverse Goldbach Conjecture (Erdős #431): primes are additively indecomposable.",
+  "summary": "Originally released as Result 013 in github.com/openai/math and independently audited and merged into Google DeepMind’s formal-conjectures repository (431.lean) as research-solved on October 11, 2026, OpenAI’s internal frontier math model proved Hans-Heinrich Ostmann’s 1956 Inverse Goldbach Conjecture (Erdős Problem #431): no set of natural numbers differing from the primes by only finitely many elements can be expressed as a sumset A + B of two sets A, B ⊆ ℕ each having at least two elements (including the infinite-summands form). Independent third-party verification rebuilt the three core declarations under Lean 4.34.1, audited statement fidelity against Mathlib’s primes, confirmed zero sorry and only Lean’s three standard axioms (propext, Classical.choice, Quot.sound), and matched Comparator fingerprints.",
+  "technicalHighlights": [
+    "Settles Ostmann’s 70-year-old 1956 Inverse Goldbach Conjecture (Erdős #431) in both the general ≥2-element and infinite-summands forms.",
+    "Independently rebuilt under Lean 4.34.1 with verified statement fidelity against Mathlib’s primes and only the three standard logical axioms.",
+    "Accepted and marked research-solved (answer(False)) in Google DeepMind’s Formal Conjectures catalog (431.lean) on October 11, 2026."
+  ],
+  "caveats": "Part of OpenAI’s unrefereed October 2026 GitHub math corpus; while the formal Lean proof and statement match have been independently audited, traditional journal peer review of the 80-page prose manuscript is still ongoing.",
+  "contributors": [
+    "OpenAI Frontier Math Team",
+    "Independent Lean Auditors (Plasma AI / Formal Conjectures)"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 72,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Resolves a famous 70-year-old additive number theory problem (Ostmann’s Inverse Goldbach Conjecture / Erdős #431) on the additive structure of the primes.",
+    "ripple": "Demonstrates that standout theorems from bulk AI math releases can be cleanly extracted, statement-audited, and merged into Formal Conjectures.",
+    "verification": "Independently rebuilt under Lean 4.34.1, statement-audited against Mathlib primes, Comparator-matched, and merged into Formal Conjectures.",
+    "velocity": "Resolved a 70-year-old open problem autonomously and passed independent external Lean verification within days."
+  },
+  "sources": [
+    {
+      "label": "GitHub: openai/math Result 013 (Lean Docs)",
+      "url": "https://github.com/openai/math/blob/main/lean/docs/013.md",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Independent Lean 4.34.1 Verification Audit (Plasma AI)",
+      "url": "https://github.com/plasma-ai/erdos/blob/main/wiki/problems/primes/E0431/claims/2026_09_24_openai.md",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Emergent Mind: OpenAI Math Result 013",
+      "url": "https://www.emergentmind.com/openai-math-explorer/results/013",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

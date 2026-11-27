@@ -1,0 +1,62 @@
+{
+  "id": "boltzgen-universal-binder-2025",
+  "title": "MIT BoltzGen: Open-Source All-Atom Generative Model Designs Nanomolar Binders Across Proteins, Peptides, and Small Molecules",
+  "shortTitle": "BoltzGen Universal Binder Design",
+  "date": "2025-11-24",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "All-Atom Binder Design",
+    "Generative Structural Biology",
+    "Open-Source Drug Discovery"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "BoltzGen (Unified All-Atom Diffusion & Structure Model, MIT Jameel Clinic)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Open-sourced by MIT’s Jameel Clinic, BoltzGen unified structure prediction and all-atom generative design in one model—achieving nanomolar wet-lab binders on 66% of nine novel therapeutic targets across proteins, nanobodies, and peptides.",
+  "summary": "Released by MIT CSAIL and the Abdul Latif Jameel Clinic in October–November 2025 (bioRxiv / PubMed PMID 41394589), Hannes Stärk, Regina Barzilay, Tommi Jaakkola, and collaborators introduced BoltzGen, an open-source all-atom generative model that unifies biomolecular structure prediction and de novo binder design inside a single diffusion architecture. Unlike earlier backbone-only protein generators, BoltzGen natively designs binders across modalities—proteins, nanobodies, cyclic peptides, and small-molecule interfaces—while jointly modeling full atomic side chains and covalent constraints. Across nine challenging novel targets with no prior structural binders, testing only ~15 designs per target yielded nanomolar-affinity wet-lab binders for 66% of targets.",
+  "technicalHighlights": [
+    "Unifies all-atom biomolecular structure prediction and multi-modal binder generation (proteins, nanobodies, peptides, small-molecule targets) in one open-source model.",
+    "Achieved nanomolar-level experimental binding affinity on 66% of nine novel, hard-to-drug targets with tiny wet-lab screening budgets (~15 designs each).",
+    "Released fully open-source under MIT’s Boltz ecosystem, catalyzing rapid 2026 follow-ons (BoltzProt-1, BoltzMol-1)."
+  ],
+  "caveats": "Validated experimentally across diverse academic and partner wet labs in the bioRxiv preprint (updated June 2026), pending final peer-reviewed journal publication.",
+  "contributors": [
+    "Hannes Stärk",
+    "Felix Faltings",
+    "Regina Barzilay",
+    "Tommi Jaakkola",
+    "MIT BoltzGen Team"
+  ],
+  "institutions": [
+    "MIT CSAIL / Jameel Clinic"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 82,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "First open-source all-atom model unifying folding and cross-modal binder generation at atomic resolution.",
+    "ripple": "Broadly adopted across academic and biotech drug-discovery pipelines as an open alternative to closed commercial binder platforms.",
+    "verification": "Strong wet-lab experimental validation across nine novel targets and open code/weights, scored as Preprint / Active Review pending journal print.",
+    "velocity": "Achieved 66% target hit rates testing ~15 AI-designed candidates per target instead of screening millions of library clones."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PubMed / bioRxiv (Nov 24, 2025) — BoltzGen: Toward Universal Binder Design (PMID: 41394589)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41394589/",
+      "type": "paper"
+    },
+    {
+      "label": "MIT News — MIT scientists debut BoltzGen generative AI model for hard-to-treat diseases",
+      "url": "https://news.mit.edu/2025/mit-scientists-debut-generative-ai-model-that-could-create-molecules-addressing-hard-to-treat-diseases-1125",
+      "type": "announcement"
+    }
+  ]
+}

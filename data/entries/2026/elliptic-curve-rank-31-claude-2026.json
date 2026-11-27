@@ -1,0 +1,64 @@
+{
+  "id": "elliptic-curve-rank-31-claude-2026",
+  "title": "Claude Assists Discovery of World-Record Elliptic Curves of Rank ≥ 30 & ≥ 31",
+  "shortTitle": "Elliptic Curve Rank ≥ 31",
+  "date": "2026-08-23",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Diophantine Geometry",
+    "Elliptic Curves",
+    "Computational Number Theory"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Unreleased Anthropic Claude Model",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Constructed explicit elliptic curves over ℚ with 30 and 31 verified independent rational points—shattering Elkies’s rank ≥ 29 world record and igniting a rapid cascade to rank ≥ 32.",
+  "summary": "Anthropic mathematician Levent Alpöge and cryptographer Ava Howell used an internal research version of Claude to construct explicit elliptic curves over the rationals of Mordell–Weil rank at least 30 (ICARM Curve #273, Aug 20) and at least 31 (ICARM Curve #302, Aug 23), breaking Noam Elkies’s previous world record of rank ≥ 29. Each curve is certified unconditionally by its explicitly listed linearly independent rational basis points of infinite order, and the breakthrough immediately triggered follow-on discoveries including smaller-conductor rank-31 curves and a rank ≥ 32 curve (arXiv:2610.31925).",
+  "technicalHighlights": [
+    "Unconditionally establishes rank ≥ 30 (Curve #273) and rank ≥ 31 (Curve #302) over ℚ by exhibiting explicit linearly independent rational witness points.",
+    "Surpassed Noam Elkies’s world record of rank ≥ 29 in computational Diophantine geometry.",
+    "Sparked an immediate wave of record improvements by computational number theorists, culminating in rank ≥ 32 constructions documented in arXiv:2610.31925."
+  ],
+  "caveats": "Sets a computational world record rather than settling whether rational elliptic curve ranks are unbounded (hence yearsUnsolved is null); exact rank equality (as opposed to lower bound ≥ 31) depends on standard conjectures or further descent.",
+  "contributors": [
+    "Levent Alpöge",
+    "Ava Howell"
+  ],
+  "institutions": [
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 78,
+    "verification": 98,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Advances the longstanding computational frontier on Mordell–Weil ranks of elliptic curves over ℚ, central to the Birch and Swinnerton-Dyer landscape.",
+    "ripple": "Catalyzed rapid community progress in high-rank curve construction (quickly reaching rank ≥ 32) and demonstrated AI-guided search in arithmetic geometry.",
+    "verification": "Unconditionally and mechanically verified via explicit height-matrix independence of 31 rational points on the ICARM Elliptic Curve Rank Leaderboard.",
+    "velocity": "Broke two successive world records (rank 30 and rank 31) within three days using an internal Claude variant."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "ICARM Elliptic Curve Rank Leaderboard — Curve #302 (Rank ≥ 31)",
+      "url": "https://elliptic-rank.icarm.cloud/curve/302",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Costa & Lozano-Robledo — Elliptic curve rank growth in multi-quadratic extensions (arXiv:2610.31925)",
+      "url": "https://arxiv.org/abs/2610.31925",
+      "type": "paper"
+    },
+    {
+      "label": "WhatAIFound Registry — Elliptic curves of rank ≥ 30 and ≥ 31",
+      "url": "https://whataifound.org/finding/2026-08-23-elliptic-rank-31",
+      "type": "explainer"
+    }
+  ]
+}

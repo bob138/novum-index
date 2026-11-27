@@ -1,0 +1,63 @@
+{
+  "id": "bioemu-protein-dynamics-2025",
+  "title": "Microsoft Research BioEmu: Generative Deep Learning Emulates Protein Equilibrium Ensembles and Cryptic Pockets",
+  "shortTitle": "BioEmu Protein Dynamics (Science)",
+  "date": "2025-07-10",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Protein Dynamics",
+    "Conformational Ensembles",
+    "Biomolecular Emulation"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "BioEmu-1 (Generative Protein Equilibrium Emulator, Microsoft Research AI for Science)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "1,000s of conformations/hr on 1 GPU",
+  "isAnchor": false,
+  "whyItMatters": "In Science, Microsoft’s BioEmu moves past static AlphaFold snapshots to emulate full protein conformational ensembles, cryptic pockets, and folding free energies (~1 kcal/mol) 10,000× faster than MD.",
+  "summary": "Published in Science in July 2025 (PubMed PMID 40638710), Sarah Lewis, Tim Hempel, Frank Noé, and colleagues at Microsoft Research AI for Science introduced BioEmu, a generative deep-learning system that emulates thermodynamic equilibrium ensembles of protein structures rather than single static folds. Trained jointly on static structures, over 200 milliseconds of molecular dynamics (MD) trajectories, and hundreds of thousands of experimental protein-stability measurements, BioEmu generates thousands of statistically independent conformations per hour on a single GPU. It accurately captures cryptic binding-pocket opening, local unfolding, and large domain rearrangements while predicting relative folding free energies within ~1 kcal/mol of experimental benchmarks—dramatically amortizing millisecond-scale MD.",
+  "technicalHighlights": [
+    "Moves structural biology from static 3D snapshots (AlphaFold) to full thermodynamic equilibrium ensembles and functional protein motions.",
+    "Captures cryptic druggable pockets, domain rearrangements, and local unfolding with ~1 kcal/mol relative free-energy accuracy.",
+    "Generates thousands of independent equilibrium conformations per hour on a single GPU—orders of magnitude faster than classical MD—with open-source weights."
+  ],
+  "caveats": "Currently focuses on monomeric protein backbones/conformations and requires side-chain packing or downstream docking for full ligand-bound holo complexes.",
+  "contributors": [
+    "Sarah Lewis",
+    "Tim Hempel",
+    "José Jiménez-Luna",
+    "Frank Noé",
+    "Microsoft Research AI for Science"
+  ],
+  "institutions": [
+    "Microsoft Research AI for Science",
+    "Freie Universität Berlin"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 91,
+    "verification": 95,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Addresses the central post-AlphaFold frontier in structural biology: predicting the dynamic conformational ensembles that actually govern protein function and allostery.",
+    "ripple": "Unlocks scalable discovery of cryptic binding pockets for historically \"undruggable\" protein targets across pharmaceutical research.",
+    "verification": "Peer-reviewed in Science with quantitative benchmarks against >200 ms of MD trajectories, experimental ΔG stability datasets, and open-source release.",
+    "velocity": "Replaces weeks of GPU-cluster millisecond molecular dynamics with thousands of independent equilibrium samples per hour on one GPU."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PubMed / Science (Jul 2025) — Scalable emulation of protein equilibrium ensembles with generative deep learning (PMID: 40638710)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40638710/",
+      "type": "paper"
+    },
+    {
+      "label": "Microsoft Research — BioEmu Publication & Open-Source Code",
+      "url": "https://www.microsoft.com/en-us/research/publication/scalable-emulation-of-protein-equilibrium-ensembles-with-generative-deep-learning/",
+      "type": "announcement"
+    }
+  ]
+}

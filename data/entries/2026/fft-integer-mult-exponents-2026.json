@@ -1,0 +1,59 @@
+{
+  "id": "fft-integer-mult-exponents-2026",
+  "title": "Optimal N(log N)^(1/2+o(1)) Exponents for Finite Fourier Transforms & Integer Multiplication",
+  "shortTitle": "Sub-n log n FFT & Integer Mult.",
+  "date": "2026-11-24",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algorithms",
+    "Fast Fourier Transform",
+    "Computational Complexity",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Math Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 53,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Breaks the half-century O(n log n) barrier for both finite Fourier transforms and multitape integer multiplication, proving N(log N)^(1/2+o(1)) bounds with Lean 4 formalizations.",
+  "summary": "Since Cooley–Tukey (1965), Schönhage–Strassen (1971), and Morgenstern’s 1973 lower-bound conjecture, computer scientists widely believed O(n log n) was optimal for both the Fast Fourier Transform and integer multiplication (achieved in 2019 by Harvey and van der Hoeven). Twin November 24 OpenAI preprints prove matching N(log N)^(1/2+o(1)) linear-circuit complexity for finite abelian Fourier transforms and deterministic multitape integer multiplication—beating O(n log n) by a full √(log n) factor—with matching conditional lower bounds under Weak ETH and Lean 4 formalizations.",
+  "technicalHighlights": [
+    "Establishes N(log N)^(1/2+o(1)) binary linear gate complexity for finite abelian Fourier transforms and formal polynomial multiplication over every field.",
+    "Constructs a deterministic multitape Turing machine multiplying two n-bit integers in n(1+log n)^(1/2+o(1)) time and O(n) space, with matching Ω(n√log n) lower bound under Weak ETH.",
+    "Both upper and lower bounds are accompanied by Lean 4 formalizations in openai/math (FiniteFourier and NearSquareRoot modules)."
+  ],
+  "caveats": "Unrefereed November 24 preprints. Because beating O(n log n) for FFT and integer multiplication overturns 50+ years of textbook consensus, rigorous independent checking of the gate/Turing models and hidden constants is essential.",
+  "contributors": [
+    "OpenAI Math Research Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 88,
+    "verification": 65,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Overturns the 50-year textbook O(n log n) optimality assumption for two of computer science’s most fundamental primitives.",
+    "ripple": "Directly impacts signal processing theory, computer algebra, cryptography, and fine-grained complexity.",
+    "verification": "Formalized in Lean 4 for both single/batched FFT and multitape multiplication, pending independent community audit.",
+    "velocity": "Generated as part of an autonomous tensor-geometry synthesis sweep across seven foundational CS problems."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI Math Preprint — The logarithmic exponent of finite Fourier transforms (Nov 24, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-logarithmic-exponent-of-finite-Fourier-transforms-November-24-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "OpenAI Math Preprint — The logarithmic exponent of integer multiplication on tapes (Nov 24, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-logarithmic-exponent-of-integer-multiplication-on-tapes-November-24-2026/paper.pdf",
+      "type": "paper"
+    }
+  ]
+}

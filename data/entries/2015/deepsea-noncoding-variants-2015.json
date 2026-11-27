@@ -1,0 +1,58 @@
+{
+  "id": "deepsea-noncoding-variants-2015",
+  "title": "DeepSEA Multi-Task Deep CNN Predicts Chromatin and Functional Impacts of Noncoding Human Genome Variants",
+  "shortTitle": "DeepSEA Noncoding Variants (2015)",
+  "date": "2015-08-24",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Functional Genomics",
+    "Noncoding DNA",
+    "Deep Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepSEA (Multi-Task Genomic CNN, Princeton)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Single-nucleotide sequence inference",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature Methods, DeepSEA predicted 919 chromatin and transcription-factor profiles directly from 1-kb DNA windows—prioritizing pathogenic noncoding mutations across the 98% non-protein-coding human genome.",
+  "summary": "Published in Nature Methods on August 24, 2015, Jian Zhou and Olga G. Troyanskaya at Princeton University created DeepSEA, a deep multi-task convolutional neural network trained jointly on 919 ENCODE and Roadmap Epigenomics functional profiles (DNase hypersensitivity, histone marks, and transcription-factor binding) across 1,000-bp genomic windows. Predicting chromatin effects purely from raw DNA sequence at single-nucleotide resolution, DeepSEA prioritized eQTLs and disease-associated noncoding variants far more accurately than evolutionary conservation alone—establishing the direct architectural lineage leading to Enformer and AlphaGenome.",
+  "technicalHighlights": [
+    "Jointly predicted 919 cell-type-specific chromatin, histone, and transcription-factor profiles directly from 1-kb DNA sequences.",
+    "Unlocked single-nucleotide variant-effect prioritization across the 98% noncoding human genome without prior functional annotations.",
+    "Direct conceptual and architectural ancestor of ExPecto, Enformer, and DeepMind’s AlphaGenome."
+  ],
+  "caveats": "Receptive field was limited to 1-kb local sequence context, missing distal enhancers tens to hundreds of kilobases away.",
+  "contributors": [
+    "Jian Zhou",
+    "Olga G. Troyanskaya"
+  ],
+  "institutions": [
+    "Princeton University",
+    "Simons Center for Data Analysis"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 92,
+    "verification": 95,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "First deep multi-task chromatin-profile sequence model enabling de novo functional interpretation of noncoding human mutations.",
+    "ripple": "Directly shaped the next decade of regulatory-genomics AI culminating in Enformer and AlphaGenome.",
+    "verification": "Peer-reviewed in Nature Methods (Vol. 12, pp. 931–934) and validated on eQTL and HGMD disease-mutation cohorts.",
+    "velocity": "Evaluated functional impacts of millions of candidate noncoding variants in seconds."
+  },
+  "enables": [
+    "spliceai-cryptic-splicing-2019",
+    "alphagenome-regulatory-dna-2025"
+  ],
+  "sources": [
+    {
+      "label": "PMC / Nature Methods (Aug 24, 2015) — Predicting effects of noncoding variants with deep learning-based sequence model",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4768299/",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "virtual-lab-nanobodies-2025",
+  "title": "Stanford’s Virtual Lab of AI Scientist Agents Designs Validated SARS-CoV-2 Nanobodies",
+  "shortTitle": "The Virtual Lab (AI Nanobodies)",
+  "date": "2025-07-29",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Multi-Agent Scientific Research",
+    "Antibody & Nanobody Design",
+    "Virology"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "The Virtual Lab (Multi-Agent LLM Team + ESM / AlphaFold-Multimer / Rosetta)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Days (in silico design)",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, an interdisciplinary team of specialized LLM agents—led by an AI Principal Investigator—autonomously planned and ran computational workflows designing 92 novel SARS-CoV-2 nanobodies, with wet-lab confirmed binders.",
+  "summary": "Published in Nature in July 2025 by Kyle Swanson, Wesley Wu, Nash Bulaong, John Pak (CZ Biohub SF), and James Zou (Stanford University), The Virtual Lab modeled an academic research group as a team of LLM agents—an AI Principal Investigator, immunologist, computational biologist, machine learning specialist, and scientific critic—holding structured lab meetings with <1% human input. Orchestrating protein tools (ESM, AlphaFold-Multimer, Rosetta), the agent team autonomously designed 92 novel nanobody candidates targeting emerging SARS-CoV-2 variants; wet-lab validation at CZ Biohub confirmed >90% expression and identified two novel nanobodies with improved binding to recent Omicron subvariants.",
+  "technicalHighlights": [
+    "Organized specialized LLM agents into PI-led team meetings and individual tool-execution sessions with minimal (<1%) human intervention.",
+    "Autonomously selected tools, wrote analysis pipelines, and designed 92 mutated nanobody binders targeting recent SARS-CoV-2 spike variants.",
+    "Experimentally validated at Chan Zuckerberg Biohub: two newly designed nanobodies exhibited improved binding affinity to KP.3 / JN.1 variants while retaining ancestral binding."
+  ],
+  "caveats": "Optimized existing nanobody scaffolds rather than inventing wholly de novo folds from scratch, and still required human scientists to perform all physical wet-lab synthesis and binding assays.",
+  "contributors": [
+    "Kyle Swanson",
+    "Wesley Wu",
+    "John E. Pak",
+    "James Zou"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Chan Zuckerberg Biohub San Francisco"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 88,
+    "verification": 95,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "First Nature-published end-to-end wet-lab validation of a multi-agent LLM 'virtual research group' executing an open-ended biomedical design campaign.",
+    "ripple": "Directly popularized the multi-agent 'AI PI + specialist agents' paradigm across academia and biotech.",
+    "verification": "Peer-reviewed in Nature (646: 716–723) with full physical expression and binding-affinity measurements on 92 designed nanobodies.",
+    "velocity": "Completed full computational design, critique, and candidate selection in days with <1% human guidance."
+  },
+  "enables": [
+    "claude-art-enzyme-system-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature — The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies (Jul 2025, PMID 40730228)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40730228/",
+      "type": "paper"
+    },
+    {
+      "label": "Stanford Medicine — Researchers create ‘virtual scientists’ to solve complex biological problems",
+      "url": "https://med.stanford.edu/news/all-news/2025/07/virtual-scientist.html",
+      "type": "announcement"
+    }
+  ]
+}

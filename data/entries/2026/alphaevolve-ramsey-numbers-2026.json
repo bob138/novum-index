@@ -1,0 +1,61 @@
+{
+  "id": "alphaevolve-ramsey-numbers-2026",
+  "title": "Google DeepMind AlphaEvolve Raises Lower Bounds on Nine Classical Ramsey Numbers",
+  "shortTitle": "AlphaEvolve 9 Ramsey Lower Bounds",
+  "date": "2026-03-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Ramsey Theory",
+    "Extremal Combinatorics",
+    "Evolutionary Program Search"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaEvolve (Reinforced Combinatorial Program Search, Google DeepMind)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Google DeepMind researchers used AlphaEvolve to evolve explicit Ramsey graph constructors that broke decades-old lower bounds on nine classical Ramsey numbers including R(3,13), R(3,18), R(4,13), R(4,14), and R(4,15).",
+  "summary": "In a working paper posted March 10, 2026 (revised through April 21, 2026, arXiv:2603.09172), Ansh Nagda, Prabhakar Raghavan, and Abhradeep Thakurta at Google DeepMind applied AlphaEvolve to evolve combinatorial search algorithms and structured graph constructions for classical two-color Ramsey numbers R(r, s). Rather than searching raw adjacency matrices directly, AlphaEvolve discovered compact constructive programs that produced explicitly verified clique-free, independent-set-free witness graphs—establishing new record lower bounds for nine classical Ramsey numbers of the form R(3, s) and R(4, s) tracked in Radziszowski’s canonical Dynamic Survey.",
+  "technicalHighlights": [
+    "Improved lower bounds on nine classical two-color Ramsey numbers (initially five—R(3,13), R(3,18), R(4,13), R(4,14), R(4,15)—expanded to nine in v5).",
+    "Every new bound is backed by an explicit finite witness graph independently verifiable by exact clique-checking algorithms.",
+    "Demonstrated evolutionary program search outperforming decades of bespoke human algebraic and computational Ramsey constructions."
+  ],
+  "caveats": "Improves finite constructive lower bounds rather than asymptotic Ramsey growth exponents; witness graphs remain verified computationally while exact Ramsey values remain open.",
+  "contributors": [
+    "Ansh Nagda",
+    "Prabhakar Raghavan",
+    "Abhradeep Thakurta"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "UC Berkeley"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 84,
+    "verification": 97,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Moving even a single classical Ramsey number lower bound in Radziszowski’s canonical table is a major result in extremal combinatorics; raising nine in one stroke is historic.",
+    "ripple": "Sparked a wave of 2026 AI-assisted Ramsey witness searches (e.g., R(6,8), R(8,10), R(3,33)) across combinatorics.",
+    "verification": "Backed by explicit, deterministically checkable finite graph witnesses verified against exact clique/independent-set checkers.",
+    "velocity": "Evolved high-performing graph-construction heuristics automatically across a super-exponential combinatorial search space."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2603.09172 (Mar 10, 2026) — Reinforced Generation of Combinatorial Structures: Ramsey Numbers",
+      "url": "https://arxiv.org/abs/2603.09172",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Wikipedia — List of Mathematical Discoveries Made with Artificial Intelligence (2026 Ramsey Bounds)",
+      "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+      "type": "explainer"
+    }
+  ]
+}

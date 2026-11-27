@@ -1,0 +1,62 @@
+{
+  "id": "phd-protein-structure-nn-1993",
+  "title": "Rost & Sander PHD Neural Network Combines Evolutionary Multiple Sequence Alignments to Surpass 70% Protein Structure Accuracy",
+  "shortTitle": "PHD Evolutionary Protein NN (1993)",
+  "date": "1993-07-20",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Evolutionary Profiles",
+    "Early Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "PHD (Profile-Fed Multi-Level Neural Network, EMBL)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Automated PredictProtein server",
+  "isAnchor": true,
+  "whyItMatters": "Feeding evolutionary multiple sequence alignments (MSAs) into a neural jury, Rost & Sander broke the 65% protein-structure ceiling to reach 71.4%—inventing the MSA+NN paradigm later used by AlphaFold.",
+  "summary": "Published in the Journal of Molecular Biology in July 1993 (and deployed via the pioneering PredictProtein/PHD automated server in Bioinformatics, 1994), Burkhard Rost and Chris Sander at EMBL Heidelberg introduced the critical conceptual breakthrough of feeding evolutionary profiles from multiple sequence alignments (MSAs)—rather than single amino-acid sequences—into a multi-level jury of neural networks. Accuracy leaped more than six percentage points to 71.4% on non-homologous protein chains, breaking a ceiling widely thought insurmountable and establishing the MSA-plus-neural-network paradigm that dominated structural biology through AlphaFold 2.",
+  "technicalHighlights": [
+    "Pioneered feeding evolutionary multiple sequence alignment (MSA) profiles into neural networks—capturing long-range evolutionary structural constraints.",
+    "Jumped non-homologous three-state secondary-structure accuracy from ~64% to 71.4% using a two-level sequence-to-structure / structure-to-structure neural jury.",
+    "Launched PredictProtein, one of the world’s first automated internet AI-for-science prediction servers."
+  ],
+  "caveats": "Predicted 1D secondary structure and solvent accessibility rather than full 3D atomic coordinates.",
+  "contributors": [
+    "Burkhard Rost",
+    "Chris Sander",
+    "Reinhard Schneider"
+  ],
+  "institutions": [
+    "EMBL Heidelberg"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 92,
+    "verification": 95,
+    "velocity": 76
+  },
+  "scoreRationale": {
+    "foundational": "Invented the evolutionary-profile (MSA) neural network paradigm that broke the 70% barrier in protein structure prediction.",
+    "ripple": "Directly shaped every major structural-biology neural system for the next three decades, including PSIPRED, RaptorX, and AlphaFold.",
+    "verification": "Peer-reviewed in J. Mol. Biol. (1993) and Bioinformatics (1994), validated on 126 unique chains and blind CASP evaluations.",
+    "velocity": "Delivered automated sequence-structure predictions over email/web to thousands of biologists worldwide."
+  },
+  "enables": [
+    "raptorx-contact-resnet-2017"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / J. Mol. Biol. (Jul 20, 1993) — Prediction of protein secondary structure at better than 70% accuracy",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8345525/",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed / Bioinformatics (1994) — PHD: an automatic mail server for protein secondary structure prediction",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8193956/",
+      "type": "paper"
+    }
+  ]
+}

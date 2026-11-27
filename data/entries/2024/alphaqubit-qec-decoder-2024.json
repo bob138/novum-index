@@ -1,0 +1,64 @@
+{
+  "id": "alphaqubit-qec-decoder-2024",
+  "title": "AlphaQubit Outperforms Human Decoders on Real Superconducting Quantum Error Correction",
+  "shortTitle": "AlphaQubit Quantum Error Decoder",
+  "date": "2024-11-20",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Error Correction",
+    "Fault-Tolerant Quantum Computing",
+    "Recurrent Transformers"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaQubit (Recurrent-Transformer Neural QEC Decoder)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Google DeepMind and Google Quantum AI’s transformer-based decoder achieved state-of-the-art error suppression on real Sycamore superconducting surface-code qubits, beating human-crafted tensor-network and matching decoders.",
+  "summary": "Published in Nature in November 2024 by Johannes Bausch, Andrew Senior, Francisco Heras, Thomas Edlich, Pushmeet Kohli, and the Google DeepMind / Google Quantum AI teams, AlphaQubit introduced a recurrent-transformer neural decoder trained on simulated and real Sycamore quantum-processor syndrome measurements. By directly ingesting analog readout soft information and learning hardware-specific crosstalk and leakage noise, AlphaQubit reduced logical error rates by 6% over tensor-network decoders and 30% over correlated matching on distance-3 and distance-5 Sycamore surface codes—and maintained its accuracy advantage in simulations up to distance 11.",
+  "technicalHighlights": [
+    "Uses a recurrent-transformer architecture capable of consuming raw analog qubit measurement data rather than hard-thresholded binary syndromes.",
+    "Reduced logical error rates on real Google Sycamore superconducting processors by 6% vs. slow tensor-network decoders and 30% vs. standard correlated matching.",
+    "Established learned neural decoders as a core pillar of fault-tolerant quantum computing, paving the way for 2026’s AI-designed low-overhead QEC breakthroughs."
+  ],
+  "caveats": "While accurate, the original Nature AlphaQubit model was too slow for microsecond real-time superconducting decoding cycles, motivating later distilled real-time neural decoders.",
+  "contributors": [
+    "Johannes Bausch",
+    "Andrew W. Senior",
+    "Francisco J. H. Heras",
+    "Pushmeet Kohli"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Google Quantum AI"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 88,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Proved that learned neural decoders can beat the best human-engineered analytical decoders on real, noisy superconducting quantum hardware.",
+    "ripple": "Accelerated industry-wide adoption of AI decoders across superconducting, trapped-ion, and neutral-atom quantum error correction roadmaps.",
+    "verification": "Peer-reviewed in Nature and validated directly on physical Google Sycamore quantum processor experiments.",
+    "velocity": "Rapidly surpassed decades of hand-crafted surface-code decoding heuristics by learning real device noise directly."
+  },
+  "enables": [
+    "sub-100k-qubit-qec-2026"
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind — AlphaQubit tackles one of quantum computing’s biggest challenges (Nature, Nov 2024)",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphaqubit-quantum-error-correction/",
+      "type": "announcement"
+    },
+    {
+      "label": "Nature — Learning high-accuracy error decoding for quantum processors (Nov 2024)",
+      "url": "https://www.researchgate.net/publication/385981393_Learning_high-accuracy_error_decoding_for_quantum_processors",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "nasa-st5-evolved-antenna-2006",
+  "title": "NASA Genetic Programming Evolves Non-Intuitive X-Band Spacecraft Antenna Flown on Space Technology 5 Mission",
+  "shortTitle": "NASA ST5 Evolved Antenna (2006)",
+  "date": "2006-03-22",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Evolutionary Computation",
+    "Genetic Programming",
+    "Aerospace Engineering"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "NASA Ames Evolutionary Design / Genetic Programming",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "4 weeks evolutionary design + fabrication",
+  "isAnchor": true,
+  "whyItMatters": "World’s first artificially evolved physical hardware launched into Earth orbit: genetic programming autonomously invented a bizarre, bent-wire X-band antenna outperforming human-designed NASA mission antennas.",
+  "summary": "Launched into Earth orbit aboard NASA’s Space Technology 5 (ST5) three-microsatellite constellation on March 22, 2006, the ST5 evolved X-band antenna was designed autonomously by an evolutionary genetic programming system built by Jason Lohn, Gregory Hornby, and Derek Linden at NASA Ames Research Center. When mission orbit specifications changed late in development, the evolutionary algorithm generated a non-intuitive, asymmetric bent-wire geometry in four weeks that met strict gain, bandwidth, and low-power requirements better than conventional human-engineered quadrifilar helix designs, operating flawlessly in space.",
+  "technicalHighlights": [
+    "Used branching genetic programming coupled to an electromagnetic NEC-4 simulator to evolve 3D wire geometries from scratch.",
+    "Autonomously produced a non-intuitive asymmetric antenna design that beat human mission benchmarks on power consumption and fabrication simplicity.",
+    "Flight-qualified and operated successfully in Earth orbit on NASA’s ST5 satellites—first AI-evolved physical object in space."
+  ],
+  "caveats": "Relied on an accurate human-written electromagnetic physics simulator (NEC-4) to evaluate candidate fitness across evolutionary generations.",
+  "contributors": [
+    "Jason D. Lohn",
+    "Gregory S. Hornby",
+    "Derek S. Linden"
+  ],
+  "institutions": [
+    "NASA Ames Research Center",
+    "JEM Engineering"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 84,
+    "verification": 97,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "First AI-evolved physical engineering invention to surpass human designs and operate in spaceflight.",
+    "ripple": "Proved evolutionary search can discover non-intuitive physical designs, presaging modern evolutionary discovery engines like FunSearch and AlphaEvolve.",
+    "verification": "Physically fabricated, chamber-tested, peer-reviewed, and flight-proven aboard NASA’s ST5 orbital mission.",
+    "velocity": "Re-evolved a mission-ready spacecraft antenna in ~4 weeks after late orbital requirement changes."
+  },
+  "enables": [
+    "funsearch-2023",
+    "alphaevolve-matrix-2025"
+  ],
+  "sources": [
+    {
+      "label": "NASA NTRS (2006) — Automated Antenna Design with Evolutionary Algorithms (ST5 Mission)",
+      "url": "https://ntrs.nasa.gov/citations/20060024675",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "erdos-discrepancy-sat-2014",
+  "title": "SAT Solver Settles Erdős Discrepancy Problem for C = 2 (n = 1,161) via 13 GB Machine-Checked Proof",
+  "shortTitle": "Erdős Discrepancy C = 2 (SAT, 2014)",
+  "date": "2014-02-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "SAT Solving",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Glucose & Plingeling SAT Solvers (DRUP Certified)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 82,
+  "aiTimeToSolve": "Automated SAT search (hours)",
+  "isAnchor": true,
+  "whyItMatters": "Cracked the 82-year-old C = 2 case of the Erdős Discrepancy Problem with an exact bound (n = 1,161) and a 13 GB DRUP proof—the largest mathematical proof of its era and direct catalyst for Boolean Pythagorean Triples.",
+  "summary": "Posted to arXiv on February 10, 2014 (published at SAT 2014), Boris Konev and Alexei Lisitsa at the University of Liverpool encoded the C = 2 case of Paul Erdős’s 1932 Discrepancy Problem into Boolean satisfiability. Using the Glucose and Plingeling SAT solvers, they proved that while a ±1 sequence of length 1,160 with homogeneous arithmetic-progression discrepancy at most 2 exists, no such sequence exists for length 1,161. The resulting 13-gigabyte DRUP proof certificate—larger than all of Wikipedia at the time—was independently verified by formal proof checkers, preceding Terence Tao’s 2015 general analytic proof and inaugurating the era of gigabyte-to-petabyte SAT mathematics.",
+  "technicalHighlights": [
+    "Established the exact threshold n = 1,161 for discrepancy C = 2, settling an 82-year-old open case of Erdős’s Discrepancy Problem.",
+    "Produced a 13 GB machine-checkable DRUP proof certificate—the largest verified mathematical proof at publication.",
+    "Demonstrated CDCL SAT solvers as first-class mathematical discovery engines, directly inspiring Boolean Pythagorean Triples (2016) and Schur Number Five (2017)."
+  ],
+  "caveats": "Resolved the specific finite case C = 2 (n = 1,161); the general theorem for all C was proved analytically by Terence Tao in September 2015.",
+  "contributors": [
+    "Boris Konev",
+    "Alexei Lisitsa"
+  ],
+  "institutions": [
+    "University of Liverpool"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 86,
+    "verification": 99,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "Solved an 82-year-old Erdős open case with exact tight threshold n = 1,161 via automated SAT reasoning.",
+    "ripple": "Directly triggered the Cube-and-Conquer SAT math wave (Boolean Pythagorean Triples, Schur Number Five, Keller’s Conjecture).",
+    "verification": "13 GB DRUP unsatisfiability certificate independently verified by formal checkers and published at SAT 2014.",
+    "velocity": "Solved in hours of CDCL solver runtime after resisting decades of human and Polymath5 attacks."
+  },
+  "enables": [
+    "boolean-pythagorean-triples-2016",
+    "schur-number-five-sat-2017"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:1402.2184 (Feb 10, 2014) — A SAT Attack on the Erdős Discrepancy Conjecture",
+      "url": "https://arxiv.org/abs/1402.2184",
+      "type": "formal-verification"
+    }
+  ]
+}

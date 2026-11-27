@@ -1,0 +1,63 @@
+{
+  "id": "esmfold-metagenomic-atlas-2023",
+  "title": "Meta FAIR ESMFold Maps 617 Million+ Metagenomic Protein Structures 60× Faster via 15B Language Model",
+  "shortTitle": "ESMFold 617M Protein Atlas",
+  "date": "2023-03-17",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Protein Language Models",
+    "Metagenomics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "ESMFold (15B-Parameter ESM-2 Protein Language Model, Meta FAIR)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "2 weeks (617M structures)",
+  "isAnchor": true,
+  "whyItMatters": "Published in Science, Meta’s 15B-parameter ESMFold proved protein language models predict atomic 3D structures directly from single sequences 60× faster—folding 617M+ (later 772M) dark-proteome proteins in two weeks.",
+  "summary": "Published in Science on March 17, 2023 (following a November 2022 atlas release), Zeming Lin, Alexander Rives, and the Meta FAIR Protein Team demonstrated that scaling masked protein language models (ESM-2) to 15 billion parameters causes atomic-resolution 3D structural information to emerge directly inside sequence representations. Pairing ESM-2 with an equivariant folding head created ESMFold, which predicts atomic protein structures directly from a single sequence without slow multiple-sequence alignments (MSAs)—achieving up to 60× faster inference than AlphaFold 2. In just two weeks on 2,000 GPUs, the team folded over 617 million (later expanded to 772 million) uncharacterized metagenomic proteins from soil, seawater, and the human gut, revealing hundreds of millions of previously unseen folds.",
+  "technicalHighlights": [
+    "Demonstrated emergent atomic-level 3D structure prediction directly from single protein sequences using a 15B-parameter language model (ESM-2).",
+    "Ran up to 60× faster than MSA-dependent pipelines, folding 617 million (expanded to 772M) metagenomic proteins in 2 weeks.",
+    "Released the open-access ESM Metagenomic Atlas, illuminating millions of \"dark proteome\" sequences with no known homologs."
+  ],
+  "caveats": "Slightly lower atomic accuracy than AlphaFold 2 on proteins where deep multiple-sequence alignments are available, though uniquely advantaged on orphan and metagenomic sequences.",
+  "contributors": [
+    "Zeming Lin",
+    "Halil Akin",
+    "Roshan Rao",
+    "Alexander Rives"
+  ],
+  "institutions": [
+    "Meta FAIR"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 92,
+    "verification": 95,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Proved that scaling language modeling over biological sequences induces implicit 3D physical folding representations without explicit MSA pipelines.",
+    "ripple": "Opened the metagenomic dark proteome to biology, catalyzed ESM3 and Evo, and became a core open-source structural biology tool.",
+    "verification": "Peer-reviewed in Science (Vol. 379, pp. 1123–1130) with open-source weights, code, and the public ESM Metagenomic Atlas.",
+    "velocity": "Predicted 617 million protein structures in two weeks—an unprecedented throughput leap over both crystallography and MSA-based folding."
+  },
+  "enables": [
+    "esm3-esmgfp-protein-2024"
+  ],
+  "sources": [
+    {
+      "label": "ESM Metagenomic Atlas (Meta AI) — Science 379, 1123–1130 (2023)",
+      "url": "https://esmatlas.com/about",
+      "type": "announcement"
+    },
+    {
+      "label": "GitHub — facebookresearch/esm (ESM-2 & ESMFold Open-Source Code)",
+      "url": "https://github.com/facebookresearch/ESM",
+      "type": "code"
+    }
+  ]
+}

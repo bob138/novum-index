@@ -1,0 +1,55 @@
+{
+  "id": "chai-2-antibody-design-2025",
+  "title": "Chai-2 Achieves Double-Digit Zero-Shot De Novo Design of Full-Length Therapeutic Antibodies & GPCR Agonists",
+  "shortTitle": "Chai-2 Zero-Shot Antibodies",
+  "date": "2025-12-03",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Antibody Design",
+    "Biologics & GPCR Engineering",
+    "All-Atom Generative Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Chai-2 (All-Atom Generative Antibody Design Model)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First model with double-digit zero-shot hit rates designing full-length IgG antibodies, functional GPCR agonists, and mutation-specific cancer binders from <50 designs instead of million-clone libraries.",
+  "summary": "Following its June 2025 launch, Chai Discovery published a December 2025 bioRxiv study (10.1101/2025.11.29.691346v2) demonstrating Chai-2’s atomic-precision zero-shot design of full-length monoclonal antibodies (IgGs) against notoriously hard target classes. Evaluating fewer than 50 in silico designs per target without wet-lab library screening, Chai-2 achieved a 100% target hit rate across tested GPCRs (median 24% per-target hit rate), produced the first in silico-designed functional GPCR agonist antibodies, generated low-nanomolar IgGs discriminating single amino-acid cancer mutations on peptide–MHC complexes, and yielded >86% therapeutic-grade developability profiles.",
+  "technicalHighlights": [
+    "Designed full-length IgG antibodies with >86% therapeutic-grade developability and experimental crystal structures matching in silico predictions to atomic accuracy.",
+    "Generated validated binders for all tested GPCRs (median 24% hit rate from <50 designs) including the first functional GPCR agonist antibodies designed purely in silico.",
+    "Produced low-nanomolar peptide–MHC antibodies selectively distinguishing single-residue tumor neoepitope mutations from wild-type peptides."
+  ],
+  "caveats": "Posted as a company-authored bioRxiv preprint with proprietary model weights; designed antibodies are proof-of-concept preclinical binders rather than clinical drug candidates.",
+  "contributors": [
+    "Chai Discovery Research Team"
+  ],
+  "institutions": [
+    "Chai Discovery"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 86,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Cracked zero-shot de novo design of complex, loop-heavy full-length monoclonal antibodies and functional GPCR agonists without library screening.",
+    "ripple": "Signals a structural shift in biologics drug discovery from million-clone empirical screening toward programmable, double-digit-design antibody engineering.",
+    "verification": "Backed by extensive wet-lab binding, functional agonist, developability, and experimental structural validation, though proprietary and not yet journal peer-reviewed.",
+    "velocity": "Compressed multi-month million-variant phage/yeast-display campaigns into <50 zero-shot in silico designs."
+  },
+  "enables": [
+    "gpt6-intrinsic-protein-design-2026"
+  ],
+  "sources": [
+    {
+      "label": "bioRxiv — Drug-like antibody design against challenging targets with atomic precision (Chai-2, Dec 2025)",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.11.29.691346v2.full-text",
+      "type": "paper"
+    }
+  ]
+}

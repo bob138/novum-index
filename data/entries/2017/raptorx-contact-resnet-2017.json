@@ -1,0 +1,59 @@
+{
+  "id": "raptorx-contact-resnet-2017",
+  "title": "RaptorX-Contact Introduces Ultra-Deep 2D Residual Networks for De Novo Protein Contact Prediction",
+  "shortTitle": "RaptorX-Contact 2D ResNet (2017)",
+  "date": "2017-01-05",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Protein Folding",
+    "Deep Residual Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RaptorX-Contact (1D+2D Deep ResNet, Jinbo Xu Lab)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Minutes per protein chain",
+  "isAnchor": true,
+  "whyItMatters": "Jinbo Xu’s RaptorX-Contact pioneered 2D deep residual CNNs over co-evolutionary couplings—treating protein contact maps as images and creating the core architectural leap that enabled AlphaFold 1 & 2.",
+  "summary": "Published in PLOS Computational Biology on January 5, 2017 (arXiv September 2016), Sheng Wang, Siqi Sun, Zhen Li, Renyu Zhang, and Jinbo Xu at the Toyota Technological Institute at Chicago introduced RaptorX-Contact, combining a 1D residual network over sequence profiles with an ultra-deep 2D residual convolutional network over pairwise evolutionary couplings. By treating residue-residue contact maps as 2D images to capture global higher-order contact correlations, RaptorX-Contact dramatically outperformed prior direct-coupling analysis methods—especially on proteins with few sequence homologs and membrane proteins—directly laying the architectural foundation adopted by DeepMind’s AlphaFold 1 at CASP13.",
+  "technicalHighlights": [
+    "Pioneered cascading 1D sequential ResNets with ultra-deep 2D pairwise ResNets over co-evolutionary couplings to model global 3D protein contact patterns.",
+    "Doubled long-range contact prediction accuracy on hard free-modeling CASP targets and accurately folded previously unsolved membrane proteins.",
+    "Provided the core 2D-ResNet-over-MSA architectural breakthrough that directly enabled AlphaFold 1 (2018) and the CASP13/14 revolution."
+  ],
+  "caveats": "Predicted binary contact maps (later extended to distance distributions in RaptorX-Distance and AlphaFold 1) requiring a separate 3D folding stage.",
+  "contributors": [
+    "Sheng Wang",
+    "Siqi Sun",
+    "Zhen Li",
+    "Renyu Zhang",
+    "Jinbo Xu"
+  ],
+  "institutions": [
+    "Toyota Technological Institute at Chicago"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 94,
+    "verification": 96,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Invented the ultra-deep 2D ResNet pairwise-representation paradigm that cracked de novo protein contact prediction.",
+    "ripple": "Directly triggered the modern deep-learning protein-folding revolution, serving as the immediate blueprint for AlphaFold 1 and trRosetta.",
+    "verification": "Peer-reviewed in PLOS Computational Biology (13:e1005324) and blind-validated at CASP12/CAMEO.",
+    "velocity": "Predicted de novo protein contact maps in minutes, enabling accurate template-free 3D folding."
+  },
+  "enables": [
+    "alphafold-1-casp13-2018"
+  ],
+  "sources": [
+    {
+      "label": "PMC / PLOS Comp. Biol. (Jan 5, 2017) — Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5249242/",
+      "type": "paper"
+    }
+  ]
+}

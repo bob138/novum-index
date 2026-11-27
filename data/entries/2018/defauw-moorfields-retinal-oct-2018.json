@@ -1,0 +1,88 @@
+{
+  "id": "defauw-moorfields-retinal-oct-2018",
+  "title": "DeepMind & Moorfields 3D Deep Learning Architecture Matches World-Leading Specialists Across 50+ Retinal Diseases",
+  "shortTitle": "DeepMind Moorfields Retinal OCT (2018)",
+  "date": "2018-08-13",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical AI",
+    "3D Medical Imaging",
+    "Ophthalmology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepMind 3D U-Net + Classification Ensemble",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Seconds per 3D OCT volume",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature Medicine, DeepMind and Moorfields built an interpretable two-stage 3D OCT system achieving 5.5% error across 50+ eye diseases—matching eight senior specialists with zero missed urgent cases.",
+  "summary": "Published in Nature Medicine on August 13, 2018, Jeffrey De Fauw, Joseph R. Ledsam, Bernardino Romera-Paredes, Pearse A. Keane, Olaf Ronneberger, and collaborators at DeepMind, Moorfields Eye Hospital, and UCL introduced a decoupled two-stage 3D deep learning architecture for optical coherence tomography (OCT) retinal scans. A 3D U-Net segmentation ensemble first produced an anatomically interpretable tissue map, which a second classification network used to recommend clinical referrals across >50 retinal pathologies. On 997 clinical patients, the system achieved a 5.5% error rate—matching or outperforming eight expert ophthalmologists and optometrists without missing a single urgent sight-threatening case—and transferred seamlessly to a second scanner vendor without retraining the classifier.",
+  "technicalHighlights": [
+    "Decoupled 3D anatomical segmentation from clinical triage classification, delivering clinician-auditable tissue maps and device-agnostic transfer across OCT hardware vendors.",
+    "Matched or outperformed eight Moorfields ophthalmologists and optometrists (5.5% error rate, 99.2% urgent-referral AUC) with zero missed urgent sight-threatening referrals.",
+    "Demonstrated clinically safe, interpretable 3D volumetric medical AI in real NHS hospital workflows."
+  ],
+  "caveats": "Evaluated on retrospective clinical cohorts from Moorfields Eye Hospital; prospective multi-center deployment required subsequent regulatory validation.",
+  "contributors": [
+    "Jeffrey De Fauw",
+    "Joseph R. Ledsam",
+    "Bernardino Romera-Paredes",
+    "Stanislav Nikolov",
+    "Nenad Tomasev",
+    "Sam Blackwell",
+    "Harry Askham",
+    "Xavier Glorot",
+    "Brendan O’Donoghue",
+    "Daniel Visentin",
+    "George van den Driessche",
+    "Balaji Lakshminarayanan",
+    "Clemens Meyer",
+    "Faith Mackinder",
+    "Simon Bouton",
+    "Kareem Ayoub",
+    "Reena Chopra",
+    "Dominic King",
+    "Alan Karthikesalingam",
+    "Cían O. Hughes",
+    "Rosalind Raine",
+    "Julian Hughes",
+    "Dawn A. Sim",
+    "Catherine Egan",
+    "Adnan Tufail",
+    "Hugh Montgomery",
+    "Demis Hassabis",
+    "Geraint Rees",
+    "Trevor Back",
+    "Peng T. Khaw",
+    "Mustafa Suleyman",
+    "Julien Cornebise",
+    "Pearse A. Keane",
+    "Olaf Ronneberger"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Moorfields Eye Hospital",
+    "University College London"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 89,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered interpretable two-stage 3D volumetric clinical AI that generalized across distinct hospital imaging devices.",
+    "ripple": "Set the gold standard for explainable clinical triage AI and directly led to RETFound and global ophthalmology foundation models.",
+    "verification": "Peer-reviewed in Nature Medicine (Vol. 24, pp. 1342–1350) with head-to-head comparison against 8 clinical specialists.",
+    "velocity": "Triages complex 3D retinal OCT volumes in seconds, eliminating weeks-long specialist referral backlogs."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature Medicine Vol. 24, pp. 1342–1350 (Aug 13, 2018) — Clinically applicable deep learning for diagnosis and referral in retinal disease",
+      "url": "https://www.nature.com/articles/s41591-018-0107-6",
+      "type": "paper"
+    }
+  ]
+}

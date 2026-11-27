@@ -1,0 +1,57 @@
+{
+  "id": "gauss-strong-pnt-lean-2025",
+  "title": "Gauss Autoformalization Agent Formally Proves the Strong Prime Number Theorem in Lean",
+  "shortTitle": "Gauss: Strong PNT (Lean 4)",
+  "date": "2025-09-18",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Autoformalization",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Gauss Autoformalization Agent (Math, Inc.)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "3 weeks",
+  "isAnchor": false,
+  "whyItMatters": "Autonomously completed Alex Kontorovich and Terence Tao’s PrimeNumberTheoremAnd Lean challenge—generating ~25,000 lines of verified Lean 4 code and >1,000 theorems in three weeks.",
+  "summary": "In September 2025, Math, Inc. unveiled Gauss, an autonomous autoformalization agent that completed the Strong Prime Number Theorem formalization challenge launched by Terence Tao and Alex Kontorovich in 2024. Operating largely autonomously over three weeks, Gauss wrote roughly 25,000 lines of Lean 4 code and formally proved over 1,000 lemmas and theorems, demonstrating for the first time that AI agents could sustain multi-week, library-scale formal mathematics engineering.",
+  "technicalHighlights": [
+    "Produced ~25,000 lines of kernel-checked Lean 4 code and >1,000 formal theorems completing the Strong Prime Number Theorem project.",
+    "Directly paved the way for Math, Inc.’s 200,000-line Lean formalization of Viazovska’s 8D/24D sphere packing (March 2026) and the 11-day Fermat’s Last Theorem formalization (Sept 2026).",
+    "Marked the shift from single-problem Olympiad provers (2024) to repository-scale autonomous formalization agents (2025–2026)."
+  ],
+  "caveats": "Formalized an already-known landmark theorem in analytic number theory rather than discovering a new theorem, though it proved out the core autonomous Lean infrastructure behind 2026’s breakthroughs.",
+  "contributors": [
+    "Math, Inc. Engineering Team",
+    "Alex Kontorovich & Terence Tao (Challenge Architects)"
+  ],
+  "institutions": [
+    "Math, Inc."
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 89,
+    "verification": 98,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Proved that autonomous AI agents can execute complex, multi-thousand-line analytic number theory formalizations end-to-end.",
+    "ripple": "Directly enabled the 2026 wave of 200k-line Lean formalizations (Sphere Packing, Fermat’s Last Theorem, and research-level proof checking).",
+    "verification": "100% kernel-checked in Lean 4 against public Mathlib challenge specifications.",
+    "velocity": "Completed a multi-month community formalization roadmap in three weeks of autonomous agent execution."
+  },
+  "enables": [
+    "viazovska-sphere-packing-lean-2026",
+    "fermat-last-theorem-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Math, Inc. — Introducing Gauss, an agent for autoformalization (Sept 2025)",
+      "url": "https://www.math.inc/gauss",
+      "type": "announcement"
+    }
+  ]
+}

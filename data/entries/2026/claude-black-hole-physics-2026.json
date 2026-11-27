@@ -1,0 +1,53 @@
+{
+  "id": "claude-black-hole-physics-2026",
+  "title": "Claude Fable 5.2 Solves Two Open Problems in Black-Hole Physics & 3D Quantum Gravity",
+  "shortTitle": "Black-Hole Physics (Claude Lean)",
+  "date": "2026-11-17",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Gravity",
+    "Black-Hole Thermodynamics",
+    "Conformal Bootstrap"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Fable 5.2 Autonomous Agent Fleet (Lean 4 Verified)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 23,
+  "aiTimeToSolve": "6 weeks",
+  "isAnchor": false,
+  "whyItMatters": "Autonomously finished a 23-year-old Hawking–Page black-hole phase-transition calculation and proved the exact optimal 3D modular-bootstrap mass ceiling c/Λ—both verified in Lean.",
+  "summary": "Anthropic deployed autonomous Claude Fable 5.2 agents across 22 self-proposed theoretical physics problems over six weeks. Two open problems in black-hole quantum gravity were solved and formally verified in Lean: (1) completing a 2003 calculation proving the Hawking–Page black-hole phase transition stays abrupt in weakly coupled N=4 super Yang–Mills, and (2) discovering a spectral-curve method proving the exact optimal ceiling c/Λ (Λ ≈ 9.1266) on the lightest black hole in 3D quantum gravity.",
+  "technicalHighlights": [
+    "Settled a 23-year-old perturbative calculation in N=4 super Yang–Mills theory showing abrupt Hawking–Page phase transition at weak coupling.",
+    "Spotted a numerical pattern missed by physicists since 2009 and borrowed spectral-curve methods to prove the exact optimal 3D modular-bootstrap bound c/Λ (Λ ≈ 9.1266).",
+    "Both main results were formally verified in Lean 4 and checked by a human theoretical physicist before preprint release."
+  ],
+  "caveats": "Preprints are unrefereed and describe idealized theoretical quantum-gravity models (AdS/CFT and 3D gravity) without direct experimental predictions for our universe.",
+  "contributors": [
+    "Anthropic Theoretical Physics & Claude Fable 5.2 Team"
+  ],
+  "institutions": [
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 82,
+    "verification": 92,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Solved two longstanding open problems in AdS/CFT black-hole thermodynamics and 3D quantum gravity bootstrap.",
+    "ripple": "Proved autonomous AI agents can both finish intractable multi-decade physics calculations and import cross-field mathematical methods.",
+    "verification": "Formally verified in Lean 4 and checked by a human physicist; journal peer review still pending.",
+    "velocity": "Autonomous agents proposed the problems, solved both over six weeks, formalized them in Lean, and drafted the papers."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Anthropic Research — Claude solves two open problems in the physics of black holes",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "type": "announcement"
+    }
+  ]
+}

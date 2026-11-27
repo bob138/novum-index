@@ -1,0 +1,66 @@
+{
+  "id": "gnome-materials-2023",
+  "title": "GNoME: Graph Networks Predict 2.2 Million New Inorganic Crystals",
+  "shortTitle": "GNoME Materials (Anchor)",
+  "date": "2023-11-29",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Materials Science",
+    "Graph Neural Networks",
+    "Solid-State Chemistry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GNoME (Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Expanded the catalog of computationally predicted thermodynamically stable inorganic crystals by an order of magnitude (~380,000 candidates), sparking modern AI materials discovery.",
+  "summary": "Published in Nature (Vol. 624), Google DeepMind's Graph Networks for Materials Exploration (GNoME) trained active-learning graph neural networks on density functional theory (DFT) calculations to predict 2.2 million crystal structures below the previously known convex hull—including ~380,000 stable candidates, of which 736 had already been independently synthesized in external labs. Alongside releasing learned interatomic potentials, GNoME catalyzed both inverse crystal generation (MatterGen) and critical community audits of computational vs. synthetic novelty.",
+  "technicalHighlights": [
+    "Expanded known computationally stable inorganic crystal structures nearly 10× over decades of Materials Project catalogs.",
+    "Released 380,000 stable candidate structures and interatomic potentials for solid-state electrolyte and layered-material research.",
+    "Demonstrated active-learning scaling laws for quantum-chemistry surrogate modeling."
+  ],
+  "caveats": "Subsequent peer-reviewed critiques (e.g., Cheetham & Seshadri, Chemistry of Materials 2024) noted that many predicted compounds are minor compositional substitutions or disordered variants difficult to synthesize experimentally, motivating property-guided inverse design.",
+  "contributors": [
+    "Amil Merchant",
+    "Simon Batzner",
+    "Samuel S. Schoenholz",
+    "Muratahan Aykol",
+    "Gowoon Cheon",
+    "Ekin Dogus Cubuk"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 88,
+    "verification": 86,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated massive-scale graph-network active learning for quantum-mechanical stability prediction.",
+    "ripple": "Directly catalyzed MatterGen, universal machine-learned interatomic potentials, and autonomous lab pipelines.",
+    "verification": "Published in Nature with 736 external lab realizations, tempered by 2024 crystallographer critiques on practical novelty.",
+    "velocity": "Compressed centuries of brute-force DFT crystal screening into months of active-learning compute."
+  },
+  "enables": [
+    "mattergen-materials-2025",
+    "a-lab-autonomous-materials-2023"
+  ],
+  "sources": [
+    {
+      "label": "Nature (PubMed): Scaling deep learning for materials discovery",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38030720/",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Critique (2024): Artificial Intelligence Driving Materials Discovery? Perspective on GNoME",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265/",
+      "type": "explainer"
+    }
+  ]
+}

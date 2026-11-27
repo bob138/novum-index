@@ -1,0 +1,74 @@
+{
+  "id": "robot-scientist-eve-malaria-2015",
+  "title": "Robot Scientist Eve Autonomously Discovers Triclosan Selectively Inhibits Malaria-Causing Plasmodium DHFR",
+  "shortTitle": "Robot Scientist Eve Malaria Drug (2015)",
+  "date": "2015-02-04",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Self-Driving Labs",
+    "Active Machine Learning",
+    "Tropical Medicine"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Robot Scientist Eve (Econometric Active-Learning + QSAR Lab)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Automated closed-loop screening",
+  "isAnchor": true,
+  "whyItMatters": "Closed-loop AI robotic laboratory Eve autonomously designed assays, ran active-learning QSAR cycles, and discovered that triclosan selectively inhibits wild-type and pyrimethamine-resistant malaria DHFR enzymes.",
+  "summary": "Published in the Journal of the Royal Society Interface on February 4, 2015 (with detailed enzymatic and molecular-mechanism follow-up in Scientific Reports, January 2018), Kevin Williams, Elizabeth Bilsland, Ross D. King, and collaborators at Cambridge, Manchester, and Aberystwyth deployed Robot Scientist Eve to automate early-stage neglected-disease drug discovery. Combining econometric active learning, symbolic/QSAR hypothesis generation, and robotic liquid-handling yeast assays, Eve autonomously screened compound libraries and discovered that the common antimicrobial triclosan selectively inhibits Plasmodium falciparum and P. vivax dihydrofolate reductase (DHFR)—including strains resistant to the frontline antimalarial pyrimethamine.",
+  "technicalHighlights": [
+    "Executed closed-loop automated hypothesis generation, cherry-picking, assay execution, and econometric active learning over >1,400 compounds.",
+    "Autonomously discovered and experimentally verified triclosan as a selective inhibitor of both wild-type and pyrimethamine-resistant malaria DHFR.",
+    "Demonstrated substantial cost and assay reduction over brute-force high-throughput screening for neglected tropical diseases."
+  ],
+  "caveats": "Identified a repurposed lead compound and mechanism in yeast/enzymatic assays rather than a clinically approved malaria therapeutic.",
+  "contributors": [
+    "Kevin Williams",
+    "Elizabeth Bilsland",
+    "Andrew Sparkes",
+    "Wayne Aubrey",
+    "Michael Young",
+    "Larisa N. Soldatova",
+    "Kurt De Grave",
+    "Jan Ramon",
+    "Michaela de Clare",
+    "Worasom Sirawaraporn",
+    "Stephen G. Oliver",
+    "Ross D. King"
+  ],
+  "institutions": [
+    "University of Cambridge",
+    "University of Manchester",
+    "Aberystwyth University",
+    "KU Leuven"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 85,
+    "verification": 94,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "First autonomous closed-loop robotic AI scientist to discover a validated anti-parasitic drug-target mechanism.",
+    "ripple": "Bridged symbolic Robot Scientist Adam to modern AI-driven self-driving wet labs (Coscientist, A-Lab).",
+    "verification": "Peer-reviewed in J. R. Soc. Interface (2015) and confirmed by enzymatic/crystallographic assays in Scientific Reports (2018).",
+    "velocity": "Active-learning experimental selection sharply cut screening cost and assay volume."
+  },
+  "enables": [
+    "coscientist-autonomous-chemistry-2023"
+  ],
+  "sources": [
+    {
+      "label": "J. R. Soc. Interface (Feb 4, 2015) — Cheaper faster drug development validated by the repositioning of drugs against neglected tropical diseases",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4345494/",
+      "type": "paper"
+    },
+    {
+      "label": "Scientific Reports (Jan 18, 2018) — Plasmodium dihydrofolate reductase is a second enzyme target for the antimalarial action of triclosan",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5773535/",
+      "type": "paper"
+    }
+  ]
+}

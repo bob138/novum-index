@@ -1,0 +1,65 @@
+{
+  "id": "claude-preclinical-drug-programs-2026",
+  "title": "Anthropic Claude in Real Drug Programs: 70% Shorter CAR-T Domains & Anti-Allergy IgE Disruptors",
+  "shortTitle": "Claude Preclinical Drug Programs",
+  "date": "2026-10-27",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "CAR-T Immunotherapy",
+    "Antibody Engineering",
+    "Therapeutic Discovery"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Claude Biology Research Agents & Claude Code (Anthropic)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Weeks–months across wet-lab loops",
+  "isAnchor": false,
+  "whyItMatters": "Across six pharma partnerships, Claude agents engineered CAR-T domains 70% shorter with 10× receptor expression, 35,000 anti-IgE allergy antibodies beating Xolair in vitro, and >10× tighter cancer leads.",
+  "summary": "On October 27, 2026, Anthropic released technical reports with six life-sciences partners detailing wet-lab preclinical drug-discovery gains driven by Claude agents. At Generate:Biomedicines, six scientists directed Claude Code agents to refactor intrinsically disordered CAR-T signaling domains, producing a candidate 70% shorter than clinical standards that yielded ~10× higher T-cell surface receptor density and superior tumor-cell killing in vitro. At Divergence Labs, Claude largely autonomously designed ~35,000 dual-arm food-allergy antibodies in one month, yielding 20 IgE-disrupting hits—three dislodging cell-bound IgE more effectively than FDA-approved Xolair. At BigHat Biosciences, Claude integrated with an automated lab across 1,010 antibody variants in 10 weeks, achieving >10× tighter binding, +18 °C higher thermal stability, and >100× slower aggregation, while Enveda cut GMP review time 89% and flagged 7 missed manufacturing issues.",
+  "technicalHighlights": [
+    "Generate:Biomedicines: Claude agents designed a 70% shorter CAR-T signaling domain producing ~10× higher receptor expression and stronger tumor killing in human T-cells.",
+    "Divergence Labs: ~35,000 largely autonomous Claude antibody designs yielded 3 IgE disruptors outperforming FDA-approved Xolair at dislodging cell-bound IgE in vitro.",
+    "BigHat Biosciences: closed-loop Claude + automated wet lab tested 1,010 variants in 10 weeks, achieving >10× affinity, +18 °C stability, and >100× slower aggregation."
+  ],
+  "caveats": "Preclinical in-vitro and mouse-model results reported in company technical reports rather than peer-reviewed journals; none of the candidates have entered human clinical trials yet.",
+  "contributors": [
+    "Anthropic Life Sciences Team",
+    "Generate:Biomedicines",
+    "Divergence Labs",
+    "BigHat Biosciences",
+    "Enveda"
+  ],
+  "institutions": [
+    "Anthropic",
+    "Generate:Biomedicines",
+    "Divergence Labs",
+    "BigHat Biosciences"
+  ],
+  "scores": {
+    "foundational": 74,
+    "ripple": 85,
+    "verification": 68,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates frontier reasoning agents engineering intrinsically disordered immune domains and multi-objective antibodies directly inside wet-lab pipelines.",
+    "ripple": "Establishes a replicable agentic biotech blueprint spanning modality engineering, hit generation, lead optimization, and regulatory filings.",
+    "verification": "Backed by physical wet-lab assays across multiple independent biotech partners, though published as technical reports prior to peer review.",
+    "velocity": "Compressed multi-month antibody discovery and CAR-T design cycles into weeks across 1,000+ physical lab variants."
+  },
+  "sources": [
+    {
+      "label": "Anthropic Research: Early Progress on Accelerating Drug Development",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "type": "announcement"
+    },
+    {
+      "label": "BigHat Biosciences: Agents at the Bench",
+      "url": "https://www.bighatbio.com/news/agents-at-the-bench-anthropic-and-bighat-collaborate-on-rapid-agentic-driven-therapeutic-antibody-optimization",
+      "type": "announcement"
+    }
+  ],
+  "enables": []
+}

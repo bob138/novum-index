@@ -1,0 +1,68 @@
+{
+  "id": "google-ai-coscientist-2025",
+  "title": "Google AI Co-Scientist Generates Wet-Lab-Validated Biomedical Discoveries",
+  "shortTitle": "Google AI Co-Scientist",
+  "date": "2025-02-19",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Drug Repurposing",
+    "Antimicrobial Resistance",
+    "Multi-Agent Scientific AI"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Google AI Co-Scientist (Gemini 2.0 Multi-Agent)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "2 days",
+  "isAnchor": false,
+  "whyItMatters": "Multi-agent Gemini co-scientist independently proposed novel liver-fibrosis epigenetic targets, AML drug candidates, and a bacterial gene-transfer mechanism—all validated in wet labs.",
+  "summary": "Google Research, Stanford, and Imperial College London unveiled a multi-agent hypothesis-generation system powered by Gemini that uses tournament evolution and self-critique to propose testable research plans. In wet-lab validation, it identified drug repurposing candidates inhibiting acute myeloid leukemia, proposed epigenetic targets blocking scarring in human liver organoids, and independently reproduced in two days an unpublished antimicrobial-resistance gene-transfer mechanism that took Imperial researchers a decade to uncover.",
+  "technicalHighlights": [
+    "Independently derived an unpublished capsid-forming phage-inducible chromosomal island (cf-PICI) transfer hypothesis matching 10 years of Imperial College bench work.",
+    "Proposed novel epigenetic targets for liver fibrosis validated with statistically significant anti-fibrotic activity in human hepatic organoids at Stanford.",
+    "Graduated from February 2025 preprint to a peer-reviewed Nature publication in May 2026 after testing across 100+ institutions."
+  ],
+  "caveats": "Synthesizes existing scientific literature at superhuman breadth rather than performing physical bench experiments; human wet-lab teams remain essential for experimental validation.",
+  "contributors": [
+    "Juraj Gottweis",
+    "Wei-Hung Weng",
+    "Vivek Natarajan",
+    "José R. Penadés",
+    "Gary Peltz"
+  ],
+  "institutions": [
+    "Google Research",
+    "Stanford University",
+    "Imperial College London"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 92,
+    "verification": 94,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Validated multi-agent tournament hypothesis generation as a viable discovery engine in experimental biomedicine.",
+    "ripple": "Already integrated into Gemini for Science and tested across over 100 biomedical research institutions.",
+    "verification": "Wet-lab validated across three independent biomedical labs and published in Nature (May 2026).",
+    "velocity": "Recapitulated a decade-long antimicrobial resistance discovery in two days of multi-agent compute."
+  },
+  "enables": [
+    "claude-art-enzyme-system-2026",
+    "claude-prokaryotic-vault-2026",
+    "virtual-lab-nanobodies-2025"
+  ],
+  "sources": [
+    {
+      "label": "Google Research — Accelerating scientific breakthroughs with an AI co-scientist",
+      "url": "https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/",
+      "type": "announcement"
+    },
+    {
+      "label": "Gottweis et al. — Towards an AI co-scientist (arXiv:2502.18864)",
+      "url": "https://arxiv.org/abs/2502.18864",
+      "type": "paper"
+    }
+  ]
+}

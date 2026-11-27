@@ -1,0 +1,64 @@
+{
+  "id": "google-cogentic-factoring-2026",
+  "title": "Google Cogentic Autonomously Produces 6 Math Papers Led by Claimed Unconditional L[1/3] Integer Factoring Bound",
+  "shortTitle": "Cogentic L[1/3] Factoring & 6 Papers",
+  "date": "2026-11-25",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algorithmic Number Theory",
+    "Integer Factorization",
+    "Multi-Agent Theorem Proving"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Google Cogentic Multi-Agent Harness (Gemini 3.1 Pro / Gemini 4 Argon)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 34,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Google Research’s Cogentic agent autonomously wrote 6 theory papers in one drop—led by a claimed unconditional L[1/3] worst-case integer factoring bound improving Lenstra & Pomerance’s 1992 rigorous L[1/2] record.",
+  "summary": "On November 25, 2026, Google Research committed six autonomously written mathematics and theoretical computer science papers to GitHub under Apache 2.0, produced end-to-end by Cogentic (arXiv:2609.40324)—a multi-agent orchestrator pairing competing Gemini prover agents with adversarial verifier agents and a persistent verified ledger. The flagship 54-page paper claims a classical zero-error Las Vegas integer factorization algorithm running in unconditional worst-case expected time L_N[1/3, 10^5] (certifying prime factors via AKS), matching the heuristic General Number Field Sieve exponent without unproven hypotheses and breaking Lenstra & Pomerance’s 34-year-old rigorous L_N[1/2, 1] barrier from 1992. The same drop includes claimed advances on deterministic subexponential factoring, finite-field discrete logarithms, 2-player Nash equilibrium approximation, the 2014 square-root Log-Rank barrier, and the 1964 Edge Reconstruction Conjecture.",
+  "technicalHighlights": [
+    "Flagship manuscript claims an unconditional zero-error Las Vegas factoring algorithm in expected time L_N[1/3, 10^5] and workspace L_N[1/3, 40], improving the 1992 Lenstra–Pomerance rigorous L_N[1/2, 1] bound.",
+    "Accompanying 5 autonomous papers claim progress on deterministic subexponential factoring, finite-field discrete logs, Nash equilibrium approximation, the Log-Rank conjecture, and the 1964 Edge Reconstruction Conjecture.",
+    "Built by Cogentic’s orchestrator–prover–adversarial-verifier pipeline without human intervention after the initial prompt, though practical RSA security is unaffected by the 10^5 constant."
+  ],
+  "caveats": "Freshly posted unrefereed GitHub manuscripts without Lean formalization or independent number-theorist sign-off; the explicit 10^5 constant means practical RSA cryptography is unaffected even if the asymptotic proof holds up under expert scrutiny.",
+  "contributors": [
+    "Google Research Cogentic Team"
+  ],
+  "institutions": [
+    "Google Research",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 89,
+    "verification": 58,
+    "velocity": 98
+  },
+  "scoreRationale": {
+    "foundational": "If validated, removing unproven heuristics to prove an L[1/3] integer factoring bound breaks a 34-year cornerstone barrier in algorithmic number theory, alongside five other classical open problems.",
+    "ripple": "Demonstrates Google’s autonomous multi-agent proof-discovery architecture (Cogentic) competing head-to-head with OpenAI and Anthropic on flagship TCS and number-theory problems.",
+    "verification": "Marked down heavily because the six GitHub manuscripts are day-old unrefereed claims lacking Lean formalizations or independent expert review.",
+    "velocity": "Produced six full-length theory manuscripts autonomously from single prompts in a coordinated multi-agent batch."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Google Research — Cogentic Research Papers (GitHub Activity, Nov 25, 2026)",
+      "url": "https://github.com/google-research/google-research/activity",
+      "type": "code"
+    },
+    {
+      "label": "explainx.ai — Google Cogentic Factoring Claim: L[1/3] Proof, Claimed vs. Verified",
+      "url": "https://explainx.ai/blog/google-cogentic-six-math-papers-factoring-l-1-3-gemini-4-claimed-vs-verified-2026",
+      "type": "explainer"
+    },
+    {
+      "label": "Scott Aaronson (Shtetl-Optimized) — Reaction to Cogentic & Late-Nov AI Math Drops",
+      "url": "https://scottaaronson.blog/?p=10379",
+      "type": "explainer"
+    }
+  ]
+}

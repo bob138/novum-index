@@ -1,0 +1,66 @@
+{
+  "id": "openai-math-bulk-ugc-2026",
+  "title": "OpenAI 722-Manuscript Release: Claimed Proofs of Unique Games, Quasi-RH & Kaplansky",
+  "shortTitle": "OpenAI 722-Paper Math Release (UGC)",
+  "date": "2026-10-06",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Computational Complexity",
+    "Pure Mathematics",
+    "Bulk Autonomous Discovery"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI Internal Frontier Math Model",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 24,
+  "aiTimeToSolve": "~3 hrs / family",
+  "isAnchor": false,
+  "whyItMatters": "Unprecedented 722-manuscript release across 372 problem families (235 with Lean formalizations), claiming resolutions of Unique Games Conjecture, Quasi-RH (7/8), and Kaplansky zero-divisors.",
+  "summary": "OpenAI published github.com/openai/math containing 722 manuscripts grouped into 372 result families generated from ~4,000 open problems posed to an unreleased internal model (~3 hours of Pro compute each). Headline claims with Lean entries include Subhash Khot’s 2002 Unique Games Conjecture, a 7/8 zero-free Quasi-Riemann Hypothesis, Mahler conjectures, Kaplansky’s zero-divisor refutation, and matrix multiplication ω ≤ 9/4—triggering both awe and intense community scrutiny over bulk unrefereed releases.",
+  "technicalHighlights": [
+    "Released 722 manuscripts across 372 families, with 235 families linked to machine-checkable Lean 4 challenge files (405 challenge specs).",
+    "Headline Lean-backed claims include Unique Games Conjecture (family 102), Kaplansky zero-divisor refutation (196), and Quasi-RH at 7/8 (003).",
+    "Prompted independent extraction efforts (e.g., arXiv:2610.17090) and global debate over the IAS AGMAI release guidelines."
+  ],
+  "caveats": "OpenAI’s own catalogue marked formal checks as initially \"unchecked\"; three Hodge/Weil manuscripts were retracted within 3 days after a sign error, and some Lean entries cover narrower statements than the accompanying PDFs.",
+  "contributors": [
+    "OpenAI Frontier Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 92,
+    "verification": 62,
+    "velocity": 100
+  },
+  "scoreRationale": {
+    "foundational": "If even a fraction of headline Lean-backed claims (UGC, Kaplansky, Quasi-RH) survive audit, it reshapes CS and math.",
+    "ripple": "Transformed the sociology of mathematics overnight—demonstrating industrial-scale autonomous theorem generation.",
+    "verification": "Marked down candidly: 235 families have Lean entries, but bulk external audits are ongoing and 3 papers were retracted.",
+    "velocity": "Generated 372 open-problem result families in a single automated sweep at ~3 hours of compute per family."
+  },
+  "enables": [
+    "ostmann-inverse-goldbach-lean-2026",
+    "z-diophantine-in-q-2026"
+  ],
+  "sources": [
+    {
+      "label": "OpenAI — github.com/openai/math (722 Manuscripts & Lean Challenge Repository)",
+      "url": "https://github.com/openai/math",
+      "type": "code"
+    },
+    {
+      "label": "Mining New Mathematical Instruments from OpenAI’s October 2026 Release (arXiv:2610.17090)",
+      "url": "https://arxiv.org/abs/2610.17090",
+      "type": "paper"
+    },
+    {
+      "label": "Fello AI — What OpenAI Released on 6 October 2026 (Audit Breakdown)",
+      "url": "https://felloai.com/ai-solved-math-problems/",
+      "type": "explainer"
+    }
+  ]
+}

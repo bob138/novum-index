@@ -1,0 +1,68 @@
+{
+  "id": "eth-refutation-claim-2026",
+  "title": "Claimed Refutation of the Exponential Time Hypothesis (ETH)",
+  "shortTitle": "ETH Refutation Claim",
+  "date": "2026-10-25",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Fine-Grained Complexity",
+    "SAT Algorithms",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Reasoning Model + Lean 4 (also independently Claude)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 25,
+  "aiTimeToSolve": null,
+  "whyItMatters": "If confirmed, a subexponential algorithm for 3-SAT would overturn the foundational hardness assumption behind modern fine-grained complexity theory.",
+  "summary": "On October 25–26, 2026, OpenAI released a preprint and >100,000-line Lean 4 formalization claiming a deterministic subexponential-time, polynomial-space algorithm that counts satisfying assignments of fixed-width CNF formulas—refuting the Exponential Time Hypothesis (ETH, Impagliazzo & Paturi 1999/2001). Hours later, Anthropic posted an independent Claude proof (14M output tokens) of the same claim; remarkably, both labs reported their internal models independently discovered the core refutation on October 16. An independent working group led by ETH co-authors Russell Impagliazzo and Ramamohan Paturi alongside MIT’s Ryan Williams is auditing the algorithms and Lean specifications.",
+  "technicalHighlights": [
+    "Exhibits a claimed deterministic subexponential-time, polynomial-space exact counting algorithm for fixed-width CNF formulas (3-SAT case refutes ETH).",
+    "Independently discovered on October 16, 2026 by both OpenAI’s internal model and Anthropic’s Claude (14M output tokens), each released Oct 25–26 with large-scale Lean 4 formalizations.",
+    "Independent specialist working group led by Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams convened to examine the algorithm, computational model, and Lean statements."
+  ],
+  "caveats": "Explicitly remains an uncertified claim under active specialist audit. Impagliazzo, Paturi, and Williams emphasized that their involvement is not certification; OpenAI’s scope note also distinguishes the Lean-formalized subexponential bound (involving (log log n)²) from the sharper single-(log log n) bound in the Oct 25 manuscript, and auditors must confirm the formal model matches classical 3-SAT without specification loopholes.",
+  "contributors": [
+    "OpenAI Science Team",
+    "Anthropic Research (Independent Claim)",
+    "Russell Impagliazzo, Ramamohan Paturi & Ryan Williams (Audit Group)"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Anthropic",
+    "UC San Diego & MIT (Independent Audit)"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 89,
+    "verification": 58,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "ETH is one of the most influential conjectures in theoretical computer science; refuting it would rewrite fine-grained complexity.",
+    "ripple": "Would topple or require revisiting hundreds of conditional lower bounds in parameterized and graph algorithms.",
+    "verification": "Marked down significantly because independent community audit of the Lean specification and algorithm is still active.",
+    "velocity": "An extraordinary surprise given that most complexity theorists strongly expected ETH to be true."
+  },
+  "enables": [
+    "deterministic-factoring-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "OpenAI Math Preprint — The Exponential Time Hypothesis is False (Oct 25, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "OpenAI — Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "type": "announcement"
+    },
+    {
+      "label": "Computational Complexity Blog — The Exponential Time Refutation",
+      "url": "https://blog.computationalcomplexity.org/2026/10/the-exponential-time-refutation.html",
+      "type": "explainer"
+    }
+  ]
+}

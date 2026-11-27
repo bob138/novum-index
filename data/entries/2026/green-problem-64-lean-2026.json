@@ -1,0 +1,60 @@
+{
+  "id": "green-problem-64-lean-2026",
+  "title": "GPT-6 Astra Proves Ben Green’s Problem 64 (Odd Prime-Factor Parity of p − 2) in Lean 4",
+  "shortTitle": "Ben Green Problem 64 (GPT-6 Lean)",
+  "date": "2026-11-13",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Sieve Theory",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6 Astra (OpenAI, Lean 4 / Palomar)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "AI-led proof + Lean 4 build",
+  "isAnchor": false,
+  "whyItMatters": "GPT-6 Astra produced an 83-page proof and dual-kernel Palomar-verified Lean 4 formalization showing infinitely many primes p have p − 2 with an odd number of prime factors—a weak parity cousin of Twin Primes.",
+  "summary": "Registered on the Palomar Lean registry on November 13, 2026 (PALOMAR-2026-11-13-000010), GPT-6 Astra operating in a repository run by Igor Inozemtsev produced an 83-page analytic proof and complete Mathlib-only Lean 4 formalization solving Problem 64 from Ben Green’s famous list of 100 Open Problems: proving that infinitely many primes p satisfy that Ω(p − 2) is odd, where Ω counts prime factors with multiplicity. As Green notes, the problem is a weak parity form of the Twin Prime Conjecture (which asks for Ω(p − 2) = 1 infinitely often). Drawing on an October 2026 manuscript by Jizhou Guo and adapting OpenAI’s analytic number theory infrastructure, the proof constructs a nonnegative weight supported on odd prime-factor parity and applies correlation estimates with a weighted sieve, passing Comparator and both independent kernels (nanoda and con-ron).",
+  "technicalHighlights": [
+    "Unconditional Mathlib-only Lean 4 proof of Problem 64 from Ben Green’s 100 Open Problems with zero extra hypotheses.",
+    "Constructs a nonnegative weight supported on odd prime-factor parity combined with correlation estimates and a weighted sieve over shifted primes u + 2.",
+    "Passed Palomar Comparator plus both independent kernels (nanoda and con-ron) against the exact FormalConjectures/GreensOpenProblems/64.lean statement."
+  ],
+  "caveats": "Builds on and adapts analytic number theory ideas from an October 2026 manuscript by Jizhou Guo and OpenAI’s Prime Predecessors library; human journal peer review is pending.",
+  "contributors": [
+    "Igor Inozemtsev",
+    "OpenAI GPT-6 Astra"
+  ],
+  "institutions": [
+    "Independent",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 76,
+    "ripple": 68,
+    "verification": 95,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Settles a named open analytic number theory problem from Ben Green’s 100 Open Problems connected to the Twin Prime parity barrier.",
+    "ripple": "Demonstrates autonomous integration of recent preprints and Lean sieve libraries into fully kernel-checked number theory proofs.",
+    "verification": "Clean, zero-hypothesis Mathlib statement matching Formal Conjectures, verified by Lean, nanoda, and con-ron on Palomar.",
+    "velocity": "Synthesized and formalized an 83-page analytic number theory argument within weeks of prerequisite literature appearing."
+  },
+  "sources": [
+    {
+      "label": "Palomar Registry: PALOMAR-2026-11-13-000010",
+      "url": "https://palomar-registry.org/entry?id=PALOMAR-2026-11-13-000010&version=2",
+      "type": "formal-verification"
+    },
+    {
+      "label": "WhatAIFound Registry",
+      "url": "https://whataifound.org/",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sindy-governing-equations-2016",
+  "title": "SINDy Sparse Identification Recovers Governing Nonlinear Differential Equations Directly from Dynamical Data",
+  "shortTitle": "SINDy Governing Equations (PNAS, 2016)",
+  "date": "2016-03-28",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Sparse Symbolic Discovery",
+    "Nonlinear Dynamics",
+    "Fluid Mechanics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "SINDy (Sparse Identification of Nonlinear Dynamics)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Seconds–minutes sparse regression",
+  "isAnchor": true,
+  "whyItMatters": "Published in PNAS, SINDy reframed physical-law discovery as sparse regression over candidate function libraries—recovering chaotic Lorenz attractors and fluid vortex-shedding PDEs orders of magnitude faster than genetic programming.",
+  "summary": "Published in PNAS on March 28, 2016 (print April 12, 2016), Steven L. Brunton, Joshua L. Proctor, and J. Nathan Kutz at the University of Washington introduced SINDy (Sparse Identification of Nonlinear Dynamics). Recognizing that most physical governing equations contain only a few active nonlinear terms, SINDy applies sparsity-promoting regression over rich candidate function libraries to distill compact, human-interpretable ODEs and PDEs directly from noisy measurements—accurately recovering chaotic Lorenz systems and Navier–Stokes vortex-shedding dynamics behind a cylinder while scaling far beyond earlier evolutionary symbolic regression.",
+  "technicalHighlights": [
+    "Recast symbolic discovery of physical governing equations as convex/iteratively-thresholded sparse regression over nonlinear basis libraries.",
+    "Recovered chaotic Lorenz dynamics and nonlinear fluid vortex-shedding normal forms directly from noisy time-series and flow-field data.",
+    "Became a standard scientific-ML workhorse (PySINDy) across fluid dynamics, plasma physics, neuroscience, and control theory."
+  ],
+  "caveats": "Requires a well-chosen coordinate system and candidate basis library containing the active governing terms (later addressed with autoencoder-coupled SINDy).",
+  "contributors": [
+    "Steven L. Brunton",
+    "Joshua L. Proctor",
+    "J. Nathan Kutz"
+  ],
+  "institutions": [
+    "University of Washington",
+    "Institute for Disease Modeling"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 89,
+    "verification": 95,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Established sparse regression as a scalable, interpretable paradigm for discovering governing physical equations from data.",
+    "ripple": "Cited >6,000 times and adopted across physics, engineering, and scientific ML alongside AI Feynman and neural operators.",
+    "verification": "Peer-reviewed in PNAS (Vol. 113, pp. 3932–3937) with widely replicated open-source implementations.",
+    "velocity": "Distills nonlinear governing equations in seconds to minutes instead of evolutionary search hours."
+  },
+  "enables": [
+    "ai-feynman-symbolic-regression-2020"
+  ],
+  "sources": [
+    {
+      "label": "PMC / PNAS (Apr 12, 2016) — Discovering governing equations from data by sparse identification of nonlinear dynamical systems",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4839439/",
+      "type": "paper"
+    }
+  ]
+}

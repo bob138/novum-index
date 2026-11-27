@@ -1,0 +1,59 @@
+{
+  "id": "esteva-skin-cancer-cnn-2017",
+  "title": "Stanford Deep CNN Achieves Dermatologist-Level Classification of Skin Cancer on 129,450 Clinical Images",
+  "shortTitle": "Skin Cancer CNN (Nature, 2017)",
+  "date": "2017-01-25",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical AI",
+    "Dermatology",
+    "Medical Imaging"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Inception-v3 Dermatology CNN (Stanford)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Sub-second lesion classification",
+  "isAnchor": true,
+  "whyItMatters": "Cover story of Nature (Feb 2017): Esteva et al. trained a single end-to-end CNN across 129,450 clinical images spanning 2,032 skin diseases, matching 21 board-certified dermatologists on biopsy-proven carcinoma and melanoma.",
+  "summary": "Published online in Nature on January 25, 2017 (cover issue February 2, 2017), Andre Esteva, Brett Kuprel, Roberto A. Novoa, Justin Ko, Susan M. Swetter, Helen M. Blau, and Sebastian Thrun at Stanford University trained a single Inception-v3 convolutional neural network end-to-end on 129,450 clinical skin photographs covering 2,032 distinct diseases—using a novel disease-taxonomy tree partitioning. Evaluated directly against 21 board-certified dermatologists on biopsy-proven clinical images across the deadliest and most common skin cancers (melanoma and keratinocyte carcinoma), the CNN matched specialist sensitivity and specificity, becoming one of the most cited medical AI landmarks of the decade.",
+  "technicalHighlights": [
+    "Trained a single deep CNN end-to-end directly on pixels and clinical taxonomy labels across 129,450 images and 2,032 skin conditions.",
+    "Matched 21 board-certified dermatologists on biopsy-proven melanoma and keratinocyte carcinoma ROC benchmarks.",
+    "Featured on the cover of Nature, demonstrating smartphone-compatible visual diagnostic AI."
+  ],
+  "caveats": "Retrospective image evaluation; subsequent clinical studies emphasized sensitivity to skin-tone diversity, camera artifacts, and dermatoscopic lighting shifts.",
+  "contributors": [
+    "Andre Esteva",
+    "Brett Kuprel",
+    "Roberto A. Novoa",
+    "Justin Ko",
+    "Susan M. Swetter",
+    "Helen M. Blau",
+    "Sebastian Thrun"
+  ],
+  "institutions": [
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 91,
+    "verification": 95,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that a single end-to-end deep CNN trained on massive clinical taxonomies can match specialist dermatologists.",
+    "ripple": "Cited >15,000 times and became a defining catalyst for computer-vision diagnostics across medicine.",
+    "verification": "Peer-reviewed Nature cover study (Vol. 542, pp. 115–118) benchmarked against 21 board-certified specialists on biopsy-confirmed cases.",
+    "velocity": "Instantaneous visual lesion triage from standard photography."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PubMed / Nature (Feb 2, 2017) — Dermatologist-level classification of skin cancer with deep neural networks",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28117445/",
+      "type": "paper"
+    }
+  ]
+}

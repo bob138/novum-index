@@ -1,0 +1,67 @@
+{
+  "id": "funsearch-2023",
+  "title": "FunSearch: First Verifiable Open-Problem Discovery via LLM Program Search",
+  "shortTitle": "FunSearch (Anchor)",
+  "date": "2023-12-14",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "LLM Evolutionary Search",
+    "Extremal Combinatorics",
+    "Automated Discovery"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "FunSearch (Codey LLM + Evolutionary Evaluator, Google DeepMind)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 20,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Proved for the first time that pairing a pretrained LLM with an automated evaluator can make genuinely new, verifiable discoveries on open math problems—directly birthing AlphaEvolve.",
+  "summary": "Published in Nature (Vol. 625), Google DeepMind's FunSearch bypassed LLM hallucination by searching in the space of executable Python programs scored by deterministic evaluators. Applied to the open cap set problem in extremal combinatorics, it discovered the largest cap sets ever constructed in 8 dimensions—beating 20-year human records—while also evolving superior online bin-packing heuristics. Its closed-loop 'LLM + verifier' architecture became the direct ancestor of 2025–2026 autonomous research agents.",
+  "technicalHighlights": [
+    "First system to use a pretrained LLM to produce a verifiable, genuinely novel mathematical discovery on an established open problem.",
+    "Beat 20-year best-known constructions on the cap set problem and improved classical online bin-packing baselines.",
+    "Discovered short, human-interpretable Python programs rather than opaque black-box solutions."
+  ],
+  "caveats": "Limited to small single-function Python routines (~10–20 lines) with fast CPU evaluators—constraints later lifted by AlphaEvolve (2025) and multi-agent Lean verifiers (2026).",
+  "contributors": [
+    "Bernardino Romera-Paredes",
+    "Mohammadamin Barekatain",
+    "Alexander Novikov",
+    "Matej Balog",
+    "M. Pawan Kumar",
+    "Alhussein Fawzi",
+    "Pushmeet Kohli"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 94,
+    "verification": 99,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Solved the core 'hallucination' barrier to LLM scientific discovery by coupling generation with executable verification.",
+    "ripple": "Direct conceptual progenitor of AlphaEvolve, ThetaEvolve, and the entire 2025–2026 verifier-guided AI science ecosystem.",
+    "verification": "Published in Nature with deterministically verifiable combinatorial constructions and open code.",
+    "velocity": "Opened a brand-new paradigm for automated mathematical and algorithmic discovery overnight."
+  },
+  "enables": [
+    "alphaevolve-matrix-2025",
+    "alphaproof-imo-2024"
+  ],
+  "sources": [
+    {
+      "label": "Nature (PubMed): Mathematical discoveries from program search with large language models",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38096900/",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Open Access Full Text (Nature Vol. 625)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10794145/",
+      "type": "paper"
+    }
+  ]
+}

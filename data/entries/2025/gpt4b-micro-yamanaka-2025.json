@@ -1,0 +1,60 @@
+{
+  "id": "gpt4b-micro-yamanaka-2025",
+  "title": "OpenAI GPT-4b micro & Retro Biosciences Engineer Yamanaka Stem-Cell Factors with 50× Reprogramming Gains",
+  "shortTitle": "GPT-4b micro Yamanaka Factors",
+  "date": "2025-08-22",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Protein Engineering",
+    "Cellular Reprogramming",
+    "Regenerative Medicine"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-4b micro (Biology-Specialized LLM)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "OpenAI’s biology-tuned GPT-4b micro redesigned the Nobel-winning Yamanaka reprogramming proteins (SOX2 and KLF4), achieving >50× higher pluripotency marker expression and improved DNA repair in wet-lab human cells.",
+  "summary": "In August 2025, OpenAI and longevity biotech Retro Biosciences published experimental results from GPT-4b micro, a biology-specialized small language model trained on protein sequences, structural context, and protein-interaction data. Tasked with redesigning the notoriously disordered Yamanaka transcription factors SOX2 and KLF4—which have historically resisted rational mutagenesis—GPT-4b micro proposed extensive multi-mutation variants (RetroSOX and RetroKLF) that achieved over 50-fold increases in pluripotency marker expression and enhanced DNA-damage repair in wet-lab human fibroblast reprogramming assays across multiple donors.",
+  "technicalHighlights": [
+    "Engineered RetroSOX and RetroKLF variants containing dozens of simultaneous mutations across intrinsically disordered regions where structure-only tools struggle.",
+    "Wet-lab assays demonstrated >50× gains in pluripotency marker expression alongside faster reprogramming kinetics and reduced DNA damage.",
+    "Validated across multiple human donor cell lines and reprogramming protocols in Retro Biosciences laboratories."
+  ],
+  "caveats": "Disclosed via a joint OpenAI / Retro Biosciences technical report rather than a peer-reviewed journal publication; full sequence data, model weights, and independent academic replication remain limited.",
+  "contributors": [
+    "OpenAI Science Team",
+    "Retro Biosciences Research Team"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Retro Biosciences"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 88,
+    "verification": 68,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Shows that sequence-trained LLMs can substantially optimize intrinsically disordered transcription factors that evade traditional structure-based protein engineering.",
+    "ripple": "Higher-efficiency, lower-damage cellular reprogramming could accelerate induced pluripotent stem cell (iPSC) manufacturing and regenerative medicine.",
+    "verification": "Backed by multi-donor wet-lab validation at Retro Biosciences, but scored conservatively pending independent peer-reviewed journal publication and open replication.",
+    "velocity": "Proposed high-order multi-mutant variants far faster than iterative directed-evolution campaigns."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI (Aug 22, 2025) — Accelerating life sciences research with Retro Biosciences",
+      "url": "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/",
+      "type": "announcement"
+    },
+    {
+      "label": "Endpoints News — OpenAI, Retro Bio detail results of GPT-4b micro protein model",
+      "url": "https://endpoints.news/openai-retro-bio-detail-results-of-ai-model-for-proteins/",
+      "type": "explainer"
+    }
+  ]
+}

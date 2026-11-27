@@ -1,0 +1,60 @@
+{
+  "id": "abaucin-antibiotic-2023",
+  "title": "Deep Learning Discovers Abaucin, a Narrow-Spectrum Antibiotic Against Multidrug-Resistant A. baumannii",
+  "shortTitle": "Abaucin Superbug Antibiotic",
+  "date": "2023-05-25",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Antibiotic Discovery",
+    "Graph Neural Networks",
+    "Microbiology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Chemprop Directed Message-Passing Neural Network",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Used a graph neural network trained on ~7,500 molecules to discover abaucin—a narrow-spectrum antibiotic active against WHO’s critical-priority hospital superbug Acinetobacter baumannii.",
+  "summary": "Published in Nature Chemical Biology in May 2023 by Gary Liu, Denise Catacutan, Jonathan Stokes (McMaster University), and James J. Collins (MIT / Broad Institute), researchers trained a directed message-passing neural network on growth-inhibition data from ~7,500 compounds and screened the Drug Repurposing Hub in silico. The top structurally novel candidate—named abaucin—exhibited potent narrow-spectrum activity against 41 multidrug-resistant clinical isolates of Acinetobacter baumannii via lipoprotein-trafficking disruption (LolE) while sparing beneficial gut commensals, and successfully controlled infections in a mouse wound model.",
+  "technicalHighlights": [
+    "Identified abaucin (RS-102895) from ~6,680 Drug Repurposing Hub molecules using a message-passing graph neural network trained on ~7,500 empirical screens.",
+    "Demonstrated selective, narrow-spectrum inhibition across 41 multidrug-resistant clinical A. baumannii isolates while sparing 50+ commensal microbiome species.",
+    "Elucidated a novel antibacterial mechanism (perturbing LolE-mediated lipoprotein trafficking) and confirmed in vivo efficacy in a murine dorsal wound infection model."
+  ],
+  "caveats": "Preclinical lead compound requiring medicinal chemistry optimization, toxicology, and human clinical trials before any therapeutic approval.",
+  "contributors": [
+    "Gary Liu",
+    "Denise B. Catacutan",
+    "Jonathan M. Stokes",
+    "James J. Collins"
+  ],
+  "institutions": [
+    "McMaster University",
+    "MIT",
+    "Broad Institute"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 83,
+    "verification": 95,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Proved that Halicin-style molecular deep learning generalizes to narrow-spectrum, mechanism-specific targeting of a critical Gram-negative WHO superbug.",
+    "ripple": "Accelerated global AI-driven antimicrobial discovery pipelines targeting multidrug-resistant pathogens without destroying the gut microbiome.",
+    "verification": "Peer-reviewed in Nature Chemical Biology with mechanistic genetics (LolE mutants) and in vivo mouse wound validation.",
+    "velocity": "Screened thousands of candidate compounds computationally in hours to isolate a narrow-spectrum lead."
+  },
+  "enables": [
+    "boltz-2-binding-affinity-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature Chemical Biology — Deep learning-guided discovery of an antibiotic targeting Acinetobacter baumannii (May 2023)",
+      "url": "https://doi.org/10.1038/s41589-023-01349-8",
+      "type": "paper"
+    }
+  ]
+}

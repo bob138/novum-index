@@ -1,0 +1,70 @@
+{
+  "id": "kothe-conjecture-disproof-2026",
+  "title": "GPT-6 Astra Autonomously Disproves the 1930 Köthe Conjecture in Lean 4",
+  "shortTitle": "Köthe Conjecture Disproof (Lean)",
+  "date": "2026-09-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Non-Commutative Ring Theory",
+    "Algebra",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-6 Astra (Epoch AI LeanOpenProblems Harness)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 96,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Resolved non-commutative ring theory’s oldest open problem (1930) completely autonomously inside Epoch AI’s Lean evaluation harness, verified in Lean 4 and human-readable papers.",
+  "summary": "Running unsteered in Epoch AI’s LeanOpenProblems harness over DeepMind’s Formal Conjectures collection, a pre-release GPT-6 Astra model autonomously constructed a Lean 4 counterexample disproving Krempa’s matrix formulation of Gottfried Köthe’s 1930 conjecture (that the sum of two nil left ideals is nil). Ring theorists Bernhard Böhmler and Rene Marczinzik—and independently Greenfeld, King, and Vendramin—subsequently posted human-readable arXiv expositions confirming the refutation.",
+  "technicalHighlights": [
+    "Refuted a 96-year-old flagship conjecture in non-commutative ring theory without step-by-step human steering.",
+    "Machine-checked in Lean 4 with Mathlib and Comparator using only standard axioms (tadamcz/koethe).",
+    "Promptly translated into peer-checkable human-readable ring-theory papers (arXiv:2609.07996 and arXiv:2609.15080)."
+  ],
+  "caveats": "Initially posted with caution about potential misformalization until specialist ring theorists confirmed the Lean statement matched Köthe’s conjecture.",
+  "contributors": [
+    "Tom Adamczewski",
+    "Bernhard Böhmler",
+    "Rene Marczinzik",
+    "GPT-6 Astra"
+  ],
+  "institutions": [
+    "Epoch AI",
+    "OpenAI",
+    "University of Bonn / Independent Ring Theorists"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 82,
+    "verification": 97,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Overturned the most famous 96-year-old open conjecture in classical non-commutative ring theory.",
+    "ripple": "Proved that autonomous AI runs over formalized conjecture benchmarks can knock down century-old problems hands-free.",
+    "verification": "Verified in Lean 4 with Comparator and confirmed in multiple human-authored arXiv ring-theory expositions.",
+    "velocity": "Discovered autonomously during a routine benchmark sweep with zero human steering."
+  },
+  "enables": [
+    "caiolo-ferroni-hoster-disproof-2026"
+  ],
+  "sources": [
+    {
+      "label": "tadamcz/koethe — Lean 4 Disproof of Köthe Conjecture (GitHub)",
+      "url": "https://github.com/tadamcz/koethe",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Adamczewski, Böhmler & Marczinzik — A counterexample to Köthe’s conjecture (arXiv:2609.07996)",
+      "url": "https://arxiv.org/abs/2609.07996",
+      "type": "paper"
+    },
+    {
+      "label": "Greenfeld, King & Vendramin — The Köthe conjecture via point modules (arXiv:2609.15080)",
+      "url": "https://arxiv.org/abs/2609.15080",
+      "type": "paper"
+    }
+  ]
+}

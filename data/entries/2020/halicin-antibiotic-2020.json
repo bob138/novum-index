@@ -1,0 +1,75 @@
+{
+  "id": "halicin-antibiotic-2020",
+  "title": "Halicin: First Broad-Spectrum Antibiotic Discovered via Deep Learning",
+  "shortTitle": "Halicin Antibiotic (Anchor)",
+  "date": "2020-02-20",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Drug Discovery",
+    "Antimicrobial Resistance",
+    "Graph Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Chemprop (Directed Message-Passing GNN)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Days (107M molecules)",
+  "isAnchor": true,
+  "whyItMatters": "Nine months before AlphaFold 2, a deep graph neural network screened >107 million molecules and discovered a structurally novel antibiotic effective against pan-resistant pathogens.",
+  "summary": "MIT and Broad Institute researchers trained a directed message-passing graph neural network (Chemprop) on bacterial growth-inhibition assays and screened the Drug Repurposing Hub and over 107 million compounds from ZINC15. The model surfaced halicin—a molecule structurally divergent from conventional antibiotics that disrupts bacterial membrane proton motive force and cleared multidrug-resistant Acinetobacter baumannii and C. difficile infections in mouse models.",
+  "technicalHighlights": [
+    "Trained Chemprop message-passing GNN on 2,335 molecules, then virtually screened >107 million structures in days.",
+    "Identified halicin, structurally distinct from all known antibiotic classes, showing potent activity against Mycobacterium tuberculosis and carbapenem-resistant Enterobacteriaceae.",
+    "Demonstrated zero detectable resistance emergence in E. coli over a 30-day serial passage assay and launched the MIT Antibiotics-AI Project."
+  ],
+  "caveats": "Halicin itself faced systemic toxicity hurdles during follow-up preclinical translation, motivating subsequent narrow-spectrum AI antibiotics such as abaucin (2023) and explainable structural-class screens.",
+  "contributors": [
+    "Jonathan M. Stokes",
+    "Kevin Yang",
+    "Kyle Swanson",
+    "Wengong Jin",
+    "Regina Barzilay",
+    "Tommi Jaakkola",
+    "James J. Collins"
+  ],
+  "institutions": [
+    "MIT",
+    "Broad Institute of MIT and Harvard"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Established deep graph neural networks as a practical wet-lab drug discovery engine capable of finding structurally novel antimicrobial mechanisms.",
+    "ripple": "Catalyzed an entire wave of AI-guided antimicrobial and small-molecule discovery pipelines across academia and pharma.",
+    "verification": "Published in Cell with extensive in vitro assays, resistance-evolution testing, and in vivo mouse infection clearance models.",
+    "velocity": "Virtually screened >107 million candidate molecules in days, compressing early-stage antimicrobial hit identification by orders of magnitude."
+  },
+  "enables": [
+    "boltz-2-binding-affinity-2025",
+    "alphafold-3-2024",
+    "abaucin-antibiotic-2023",
+    "explainable-gnn-mrsa-antibiotics-2023"
+  ],
+  "sources": [
+    {
+      "label": "Cell — A Deep Learning Approach to Antibiotic Discovery (2020)",
+      "url": "https://doi.org/10.1016/j.cell.2020.01.021",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 32084340)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32084340/",
+      "type": "paper"
+    },
+    {
+      "label": "MIT News Announcement",
+      "url": "https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220",
+      "type": "announcement"
+    }
+  ]
+}

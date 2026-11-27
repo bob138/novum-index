@@ -1,0 +1,62 @@
+{
+  "id": "hadwiger-covering-3d-2026",
+  "title": "Gemini 4 Carbon & Lean 4 Prove Hadwiger’s 3D Covering Conjecture",
+  "shortTitle": "Hadwiger 3D Covering (Gemini 4)",
+  "date": "2026-11-24",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Convex & Discrete Geometry",
+    "Formal Verification",
+    "Combinatorial Geometry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Google Gemini 4 Carbon Experimental Harness (Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 69,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Proved the 70-year-old 3D Hadwiger covering conjecture (every compact 3D convex body can be covered by 8 smaller copies)—discovered by Gemini 4 Carbon and verified in 13,663 lines of Lean 4.",
+  "summary": "Dror Aiger, Sariel Har-Peled, and Goran Žužić posted a self-contained proof resolving Hadwiger’s 1957 covering / Boltyanski illumination conjecture in three dimensions, lowering the general upper bound from 14 to the optimal 8. Discovered via an experimental Google harness atop Gemini 4 Carbon with minimal human steering, the complete proof is formalized in 13,663 lines of Lean 4 across 34 files against an 18-line standalone specification.",
+  "technicalHighlights": [
+    "Unconditionally proved c(K) ≤ 8 for every compact 3D convex body without symmetry assumptions (improving Prymak’s bound of 14).",
+    "Combines John’s position, Cauchy’s planar perimeter formula, shadow-boundary curve variation, and Helly’s theorem in ℝ³.",
+    "Completely verified in 13,663 lines of Lean 4 with Mathlib using only standard axioms, checked against an 18-line specification."
+  ],
+  "caveats": "Unrefereed v1 arXiv preprint; author-reported Lean/Comparator audits await independent community replay, and higher dimensions (d ≥ 4) remain open.",
+  "contributors": [
+    "Dror Aiger",
+    "Sariel Har-Peled",
+    "Goran Žužić",
+    "Gemini 4 Carbon"
+  ],
+  "institutions": [
+    "Google Research",
+    "University of Illinois Urbana-Champaign"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 78,
+    "verification": 92,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Settled a classic 69-year-old conjecture in convex and discrete geometry (3D case).",
+    "ripple": "First headline research theorem publicly proved and Lean-formalized by Google’s Gemini 4 Carbon model.",
+    "verification": "13,663-line Lean 4 proof checked against an 18-line standalone statement; independent replay still pending.",
+    "velocity": "Both the geometric proof and full Lean formalization were synthesized via an experimental Gemini 4 Carbon harness."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Aiger, Har-Peled & Žužić — Hadwiger’s Covering Conjecture in Three Dimensions (arXiv:2611.32334)",
+      "url": "https://arxiv.org/abs/2611.32334",
+      "type": "paper"
+    },
+    {
+      "label": "John D. Cook — Covering a body with eight smaller copies of itself (Explainer)",
+      "url": "https://www.johndcook.com/blog/2026/11/25/hadwiger-covering/",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "lattice-standard-model-chiral-2026",
+  "title": "Candidate Nonperturbative Lattice Definition of the Standard Model with GPT-6 Astra & Lean",
+  "shortTitle": "Standard Model on a Lattice",
+  "date": "2026-10-06",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Particle Physics",
+    "Lattice Gauge Theory",
+    "Chiral Fermions",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6 Astra + Lean 4 (also Claude Opus 5.5 in follow-ups)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 28,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "UCSB physicist Nathaniel Craig and GPT-6 Astra proposed a Lean-formalized gauge-invariant measure for lattice chiral fermions—sparking AI-assisted follow-ups by Edward Witten and others within weeks.",
+  "summary": "Giving the chiral weak force of the Standard Model a rigorous nonperturbative spacetime-lattice definition remained open for over 25 years after Martin Lüscher’s 1998 Abelian prescription (and >50 years since the Standard Model’s formulation). On October 6, 2026, UC Santa Barbara particle theorist Nathaniel Craig posted arXiv:2610.09093—crediting GPT-6 Astra with leading the detailed refinement proof and 16 kernel-checked Lean 4 modules—proposing a smooth, exponentially local, gauge-invariant overlap-fermion measure. Within five weeks, Stephen Hsu, Edward Witten (crediting Claude Opus 5.5), and Dorota Grabowska posted follow-up lattice chiral papers.",
+  "technicalHighlights": [
+    "Extends Lüscher’s 1998 overlap-fermion phase reconstruction to non-Abelian anomaly-free chiral gauge theories including the Standard Model.",
+    "Accompanied by 16 Lean 4 modules verified without placeholders (archived on Zenodo) alongside private technical feedback from Maarten Golterman, Andreas Kronfeld, and Yigal Shamir.",
+    "Catalyzed a rapid 5-week theoretical physics burst including an arXiv paper by Edward Witten crediting Claude Opus 5.5."
+  ],
+  "caveats": "Explicitly presented by Craig as a candidate definition in principle rather than a settled theorem or practical Monte Carlo algorithm. Finite-spacing reflection positivity, residual disconnected-sector phases, and the interacting continuum limit remain open, and peer review is pending.",
+  "contributors": [
+    "Nathaniel Craig",
+    "Edward Witten (Follow-up w/ Claude)",
+    "GPT-6 Astra"
+  ],
+  "institutions": [
+    "UC Santa Barbara (KITP)",
+    "OpenAI",
+    "Institute for Advanced Study (Follow-up)"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 85,
+    "verification": 68,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Addresses one of the deepest foundational open problems in nonperturbative quantum field theory and the Standard Model.",
+    "ripple": "Immediately galvanized leading theoretical physicists—including Edward Witten—to engage with AI-assisted lattice gauge theory.",
+    "verification": "Backed by 16 Lean 4 modules and specialist dialogue, though Craig candidly stresses Lean cannot substitute for physical peer review and open reflection-positivity checks.",
+    "velocity": "Turned an unproved human strategy into a detailed Lean-formalized candidate construction and triggered four major arXiv papers in 35 days."
+  },
+  "enables": [
+    "null-cone-quantum-gravity-gpt6-2026",
+    "witten-chiral-fermions-claude-2026"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2610.09093 — A gauge-invariant measure for lattice chiral fermions (Oct 6, 2026)",
+      "url": "https://arxiv.org/abs/2610.09093",
+      "type": "paper"
+    },
+    {
+      "label": "Zenodo — Mathematical companion and Lean 4 formalization",
+      "url": "https://zenodo.org/records/23196062",
+      "type": "formal-verification"
+    },
+    {
+      "label": "OpenAI Science Blog — A step toward defining the Standard Model on a lattice (Nov 15, 2026)",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model/",
+      "type": "announcement"
+    }
+  ]
+}

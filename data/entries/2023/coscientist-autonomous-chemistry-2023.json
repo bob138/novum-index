@@ -1,0 +1,65 @@
+{
+  "id": "coscientist-autonomous-chemistry-2023",
+  "title": "Coscientist Uses GPT-4 to Autonomously Plan, Code & Execute Real Chemical Synthesis",
+  "shortTitle": "Coscientist (CMU Wet-Lab LLM)",
+  "date": "2023-12-20",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Autonomous Chemistry Agents",
+    "Organic Synthesis",
+    "Robotic Experimentation"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Coscientist (GPT-4 + Web/Docs Search + Python + Opentrons/Cloud Lab API)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First peer-reviewed Nature demonstration of an LLM agent autonomously designing, coding, debugging, and executing Nobel-prize-winning palladium cross-coupling reactions on real robotic wet-lab hardware.",
+  "summary": "Published in Nature in December 2023 by Daniil Boiko, Robert MacKnight, Ben Kline, and Gabe Gomes at Carnegie Mellon University, Coscientist equipped GPT-4 with web search, technical hardware documentation lookup, Python execution, and robotic liquid-handler control. Without step-by-step human programming, Coscientist autonomously planned multi-step chemical syntheses, wrote and debugged robot control scripts from hardware manuals, and successfully executed and optimized palladium-catalyzed Suzuki–Miyaura and Sonogashira cross-coupling reactions in a physical laboratory.",
+  "technicalHighlights": [
+    "Demonstrated end-to-end LLM agency spanning literature lookup, reagent selection, robotic hardware documentation reading, Python code generation, and live error recovery.",
+    "Successfully planned and executed real Suzuki–Miyaura and Sonogashira palladium-catalyzed cross-coupling reactions verified by GC–MS.",
+    "Bridges the symbolic Robot Scientist Adam (2009) era to the modern wave of tool-using LLM scientific agents (Google AI Co-Scientist, Virtual Lab, Mass Spec Skills)."
+  ],
+  "caveats": "Executed known reaction classes (cross-couplings and standard optimizations) rather than discovering new chemical reactions, and also highlighted dual-use bio/chemical safety considerations for autonomous synthesis agents.",
+  "contributors": [
+    "Daniil A. Boiko",
+    "Robert MacKnight",
+    "Ben Kline",
+    "Gabe Gomes"
+  ],
+  "institutions": [
+    "Carnegie Mellon University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 88,
+    "verification": 94,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Proved that general-purpose LLMs wired to scientific tools and lab robotics can cross from text reasoning into autonomous physical chemistry.",
+    "ripple": "Directly catalyzed the 2024–2026 boom in tool-augmented scientific agents across chemistry, biology, and analytical labs.",
+    "verification": "Peer-reviewed in Nature with physical wet-lab synthesis and GC–MS analytical confirmation.",
+    "velocity": "Compressed hardware-manual parsing, synthesis planning, and robotic protocol coding from days to minutes."
+  },
+  "enables": [
+    "google-ai-coscientist-2025",
+    "virtual-lab-nanobodies-2025",
+    "deepmind-mass-spec-skills-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Autonomous chemical research with large language models (Dec 2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/",
+      "type": "paper"
+    },
+    {
+      "label": "CMU Engineering — AI Coscientist automates scientific discovery",
+      "url": "https://engineering.cmu.edu/news-events/news/2023/12/20-ai-coscientist.html",
+      "type": "announcement"
+    }
+  ]
+}

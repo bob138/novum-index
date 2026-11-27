@@ -1,0 +1,59 @@
+{
+  "id": "strongly-polynomial-lp-smale9-2026",
+  "title": "Strongly Polynomial-Time Linear Programming Algorithm Answering Smale’s Ninth Problem",
+  "shortTitle": "Strongly Polynomial LP (Smale #9)",
+  "date": "2026-11-24",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Mathematical Optimization",
+    "Linear Programming",
+    "Algorithms",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Math Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 28,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Claims a deterministic strongly polynomial algorithm for linear programming with arbitrary real coefficients—resolving Smale’s 1998 Ninth Problem with a Lean 4 RAM formalization.",
+  "summary": "Posted in OpenAI’s November 24 math release (family 380), this manuscript presents a deterministic algorithm solving any explicitly given linear program with arbitrary real coefficients in a number of arithmetic operations polynomial solely in the number of variables and constraints (independent of coefficient bit-lengths), while preserving polynomial bit-length on rational inputs. It returns exact primal–dual optimal pairs, improving rays, or sparse infeasibility certificates, and extends to convex quadratic programming and turn-based mean-payoff games.",
+  "technicalHighlights": [
+    "Directly targets Smale’s Ninth Problem (1998)—whether linear programming admits a strongly polynomial algorithm.",
+    "Includes Lean 4 formalizations of strongly polynomial feasibility and optimization on fixed rational RAM programs, certifying primal–dual equality.",
+    "Released alongside a companion disproof of the Polynomial Hirsch Conjecture, proving strongly polynomial LP is achievable even though simplex edge-paths can be superpolynomial."
+  ],
+  "caveats": "Fresh November 24 unrefereed preprint. Independent optimization theorists must audit the Lean RAM cost model, formal statement alignment, and constant-factor practicality.",
+  "contributors": [
+    "OpenAI Math Research Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 90,
+    "verification": 65,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Answers one of Steve Smale’s 18 landmark 21st-century mathematical problems open since 1998.",
+    "ripple": "Linear programming underpins operations research, economics, control theory, and combinatorial optimization worldwide.",
+    "verification": "Includes machine-checked Lean 4 RAM feasibility/optimization proofs, but independent human audit of definitions and paper proof has just begun.",
+    "velocity": "Delivered alongside its dual polytope-diameter refutation in a single automated research family."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI Math Preprint — Strongly polynomial linear programming (Nov 24, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/Strongly-polynomial-linear-programming-November-24-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "OpenAI Math Lean Formalization — Optimization.lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/Optimization/LinearProgramming/Optimization.lean",
+      "type": "formal-verification"
+    }
+  ]
+}

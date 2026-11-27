@@ -1,0 +1,70 @@
+{
+  "id": "qma2-qma-oracle-separation-2026",
+  "title": "AI-Assisted Quantum & Classical Oracle Separation of QMA(2) ≠ QMA and No-Disentanglers Theorem",
+  "shortTitle": "QMA(2) ≠ QMA & No-Disentanglers",
+  "date": "2026-09-02",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Complexity Theory",
+    "Quantum Information",
+    "Oracle Separations"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-5.6 Sol & GPT-6 Astra (OpenAI)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 18,
+  "aiTimeToSolve": "Iterative prompting (~10 rounds)",
+  "isAnchor": false,
+  "whyItMatters": "Quantum complexity theorists disclosed GPT-5.6 Sol generated the key proof idea separating QMA(2) from QMA via a quantum oracle and proving Watrous’s No-Disentanglers Conjecture—soon strengthened to a classical oracle via GPT-6 Astra.",
+  "summary": "In two back-to-back landmark quantum complexity preprints, researchers explicitly credited OpenAI reasoning models with generating the central proof constructions. On September 2, 2026 (arXiv:2609.02865; Simons Institute lecture Oct 1), John Bostanci, Sabee Grewal, Jonas Haferkamp, and collaborators constructed a quantum oracle separating QMA(2) (two unentangled quantum proofs) from QMA and proved Watrous’s unrelativized geometric No-Disentanglers Conjecture (showing any approximate disentangler needs exponentially many input qubits)—explicitly disclosing that ChatGPT 5.6 Sol proposed the \"miraculous\" symmetric/antisymmetric subspace projector construction combining She–Yuen’s unitary polynomial method. On October 5, 2026 (arXiv:2610.06760), Grewal, Mutreja, and Tomer strengthened this to a classical oracle separation (QMA^A ≠ QMA(2)^A), disclosing the original proof came from ~10 rounds with ChatGPT 6 Astra before human verification and rewriting.",
+  "technicalHighlights": [
+    "Resolves Watrous’s unrelativized geometric No-Disentanglers Conjecture at constant error ε + δ < 1 and separates QMA(2) from QMA relative to a quantum oracle (arXiv:2609.02865).",
+    "Strengthened one month later to a classical oracle separation QMA^A ≠ QMA(2)^A via a signed-graph separable-Hamiltonian problem (arXiv:2610.06760).",
+    "Authors published transparent AI tool disclosures noting GPT-5.6 Sol and GPT-6 Astra generated the core proof ideas, which human quantum theorists fully checked and rewrote."
+  ],
+  "caveats": "Class separations are relativized (quantum and classical oracles) rather than an unrelativized proof of QMA(2) ≠ QMA; preprints are under active review.",
+  "contributors": [
+    "John Bostanci",
+    "Sabee Grewal",
+    "Jonas Haferkamp",
+    "Mutreja",
+    "Tomer"
+  ],
+  "institutions": [
+    "Columbia University",
+    "UT Austin",
+    "Harvard University",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 82,
+    "verification": 78,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Settles the long-standing Watrous No-Disentanglers Conjecture (unrelativized) and achieves both quantum and classical oracle separations of QMA(2) vs QMA.",
+    "ripple": "Set the gold standard for transparent AI-assistance disclosure in theoretical computer science and quantum complexity papers.",
+    "verification": "Human quantum-complexity leaders checked, reorganized, and presented the proofs (including at the Simons Institute), though formal journal peer review is pending.",
+    "velocity": "Core constructions emerged in roughly 10 rounds of prompting and moved from quantum to classical oracle separation in 33 days."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2609.02865 (Quantum Oracle + No-Disentanglers)",
+      "url": "https://arxiv.org/pdf/2609.02865",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2610.06760 (Classical Oracle Separation)",
+      "url": "https://arxiv.org/pdf/2610.06760",
+      "type": "paper"
+    },
+    {
+      "label": "Wolfram MathWorld: No-Disentanglers Conjecture",
+      "url": "https://mathworld.wolfram.com/No-DisentanglersConjecture.html",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "borsuk-conjecture-dim63-2026",
+  "title": "AI-Assisted Counterexample Lowers Borsuk’s Conjecture Threshold to Dimension n = 63",
+  "shortTitle": "Borsuk’s Conjecture (n = 63)",
+  "date": "2026-05-15",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Discrete Geometry",
+    "Combinatorial Geometry",
+    "Exact Arithmetic"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-5.5 Pro (independently reproduced w/ Claude)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 13,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Independent researcher Max Grinsztajn used GPT-5.5 Pro to break the 13-year Jenrich/Bondarenko record (n = 64) with an explicit 321-point counterexample in dimension 63.",
+  "summary": "Since Bondarenko and Jenrich established in 2013 that Karol Borsuk’s 1933 partition conjecture fails for finite point sets in dimension 64, no smaller finite counterexample had been found for 13 years. In May 2026, Max Grinsztajn prompted GPT-5.5 Pro to discover a 321-point three-distance configuration in ℝ^63 requiring at least 65 smaller-diameter parts. In August 2026, Nicholas Konz independently prompted Claude to rediscover the exact same 321-point construction point-for-point, adding an open one-command exact-arithmetic certificate.",
+  "technicalHighlights": [
+    "Lowers the smallest known finite-set counterexample dimension for Borsuk’s conjecture from n = 64 (2013) to n = 63 using a 321-point configuration.",
+    "Independently rediscovered point-for-point (including exact rescaling scalar μ = (-1 + √222)/13) by Claude in August 2026 with a public exact-arithmetic verifier.",
+    "Demonstrates grassroots, reproducible mathematical record-breaking by independent researchers using off-the-shelf frontier AI models."
+  ],
+  "caveats": "Circulated via open-internet notes and independent exact-arithmetic verification repos rather than formal journal refereeing; still far above the open finite-set gap between dimensions 4 and 62.",
+  "contributors": [
+    "Max Grinsztajn",
+    "Nicholas Konz (Independent Exact Certificate)"
+  ],
+  "institutions": [
+    "Independent Research"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 74,
+    "verification": 84,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Breaks a 13-year dimensional record on one of discrete geometry’s classic partition problems.",
+    "ripple": "Showcased independent convergence across two different frontier AI families (GPT-5.5 Pro and Claude) on the exact same geometric object.",
+    "verification": "Easily machine-checkable via exact algebraic arithmetic over all 321 points, though not yet formally journal-refereed.",
+    "velocity": "Cracked a 13-year combinatorial geometry standstill via consumer-accessible AI prompting."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nicholas Konz — Independent Claude Reproduction & Exact-Arithmetic Verifier",
+      "url": "https://nickk124.github.io/borsuk/",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Wikipedia — Borsuk’s Conjecture (n = 63 Record Documentation)",
+      "url": "https://en.wikipedia.org/wiki/Borsuk%27s_conjecture",
+      "type": "explainer"
+    }
+  ]
+}

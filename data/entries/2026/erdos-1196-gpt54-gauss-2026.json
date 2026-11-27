@@ -1,0 +1,63 @@
+{
+  "id": "erdos-1196-gpt54-gauss-2026",
+  "title": "GPT-5.4 Pro & Math, Inc. Gauss Solve and Formalize 58-Year-Old Erdős Problem #1196 on Primitive Sets",
+  "shortTitle": "Erdős #1196 (\"From The Book\", Lean)",
+  "date": "2026-04-14",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Primitive Sets",
+    "Formal Verification (Lean 4)"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-5.4 Pro + Gauss Autoformalization Agent (Math, Inc., Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 58,
+  "aiTimeToSolve": "~5 hrs Lean formalization (7.2K lines)",
+  "isAnchor": false,
+  "whyItMatters": "GPT-5.4 Pro solved the 1968 Erdős–Sárközy–Szemerédi primitive-sets conjecture using a novel von Mangoldt chain idea that leading expert Jared Duker Lichtman called \"from The Book,\" formalized in Lean 4 by Gauss in 5 hours.",
+  "summary": "In April 2026 (written up in arXiv:2605.00301 on May 1, 2026), Liam Price prompted OpenAI’s GPT-5.4 Pro on Erdős Problem #1196—a 58-year-old conjecture posed by Paul Erdős, András Sárközy, and Endre Szemerédi in 1968 concerning the asymptotic behavior of primitive sets of integers (sets where no element divides another). GPT-5.4 Pro discovered a clean, conceptual proof built around von Mangoldt divisibility chains; leading primitive-sets specialist Jared Duker Lichtman praised the argument as looking like it came \"from The Book,\" and mathematicians quickly used the new technique to resolve additional open problems. Within days, Math, Inc.’s Gauss agent autoformalized the full proof in ~7,200 lines of Lean 4 in roughly five hours.",
+  "technicalHighlights": [
+    "Resolved the 1968 Erdős–Sárközy–Szemerédi conjecture (Erdős Problem #1196) on primitive sets in analytic number theory.",
+    "Introduced an elegant von Mangoldt chain technique praised by domain experts as \"from The Book\" and rapidly generalized to settle related conjectures.",
+    "Fully machine-checked in Lean 4 (~7.2K lines) in ~5 hours by Math, Inc.’s Gauss autoformalization agent."
+  ],
+  "caveats": "Human mathematicians (including Liam Price and forum collaborators) prompted the model, verified the exposition, and extended the conceptual framework in the follow-up arXiv manuscript.",
+  "contributors": [
+    "Liam Price",
+    "Jared Duker Lichtman (Verification)",
+    "Math, Inc. Gauss Team",
+    "GPT-5.4 Pro"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Math, Inc.",
+    "Independent Research"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 88,
+    "verification": 98,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Solved a 58-year-old Erdős–Sárközy–Szemerédi conjecture with a genuinely new conceptual organizing idea rather than brute-force casework.",
+    "ripple": "Widely cited as a turning point that convinced skeptical research mathematicians that frontier LLMs can produce \"Book-quality\" novel proof techniques.",
+    "verification": "Both accepted by leading human number theorists and machine-checked end-to-end in Lean 4 by Gauss.",
+    "velocity": "Cracked a nearly six-decade open problem and produced a complete 7.2K-line Lean 4 formalization within hours."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2605.00301 (May 1, 2026) — Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond",
+      "url": "https://arxiv.org/abs/2605.00301",
+      "type": "paper"
+    },
+    {
+      "label": "Quanta Magazine (Aug 3, 2026) — Why the Legendary Erdős Problems Are Falling to AI",
+      "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/",
+      "type": "explainer"
+    }
+  ]
+}

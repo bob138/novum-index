@@ -1,0 +1,66 @@
+{
+  "id": "alphaevolve-67-math-problems-2025",
+  "title": "AlphaEvolve Scaled Across 67 Open Math Problems Improves Bounds & Generalizes Formulas",
+  "shortTitle": "AlphaEvolve (67 Math Problems)",
+  "date": "2025-11-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Combinatorics",
+    "Harmonic Analysis",
+    "Automated Mathematical Discovery"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaEvolve + Deep Think + AlphaProof",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Demonstrated across 67 open problems in analysis, combinatorics, and geometry—co-authored with Terence Tao—that evolutionary LLM agents can systematically beat human bounds at scale.",
+  "summary": "Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, and Adam Zsolt Wagner benchmarked Google DeepMind’s AlphaEvolve on 67 open mathematical optimization and construction problems. AlphaEvolve matched best-known human constructions in the majority of cases, discovered strictly improved bounds across multiple open problems (including kissing numbers and Nikodym/overlap constructions), and in several cases generalized finite constructions into symbolic formulas valid for all inputs.",
+  "technicalHighlights": [
+    "Systematically evaluated autonomous evolutionary code search across 67 open problems spanning analysis, combinatorics, geometry, and number theory.",
+    "Improved multiple long-standing human bounds and synthesized general closed-form constructions validated by AlphaProof and Deep Think.",
+    "Published in PNAS (2026), establishing a scalable methodology for mathematician-AI collaboration."
+  ],
+  "caveats": "Strongest on extremal and constructive problems with fast programmatic scoring functions; conceptual structural proofs still required coupling with separate proof systems.",
+  "contributors": [
+    "Bogdan Georgiev",
+    "Javier Gómez-Serrano",
+    "Terence Tao",
+    "Adam Zsolt Wagner"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Brown University",
+    "UCLA"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 88,
+    "verification": 96,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that automated evolutionary search generalizes across dozens of distinct branches of research mathematics.",
+    "ripple": "Provided the operational blueprint for coupling evolutionary search with formal provers across academia.",
+    "verification": "Published in PNAS with explicit, programmatically verified constructions and proofs.",
+    "velocity": "Compressed months of bespoke heuristic search across 67 open problems into parallelized agent runs."
+  },
+  "enables": [
+    "deepmind-formal-proof-search-2026",
+    "alphaevolve-ramsey-numbers-2026"
+  ],
+  "sources": [
+    {
+      "label": "Georgiev, Gómez-Serrano, Tao & Wagner — Mathematical exploration and discovery at scale (arXiv:2511.02864)",
+      "url": "https://arxiv.org/abs/2511.02864",
+      "type": "paper"
+    },
+    {
+      "label": "PNAS Published Article — Mathematical discovery and exploration can be done at scale",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2536158123",
+      "type": "paper"
+    }
+  ]
+}

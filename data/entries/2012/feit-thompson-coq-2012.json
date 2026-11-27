@@ -1,0 +1,72 @@
+{
+  "id": "feit-thompson-coq-2012",
+  "title": "Feit–Thompson Odd Order Theorem Formally Verified End-to-End in Coq (170,000 Lines)",
+  "shortTitle": "Feit–Thompson Theorem (Coq, 2012)",
+  "date": "2012-09-20",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Formal Verification",
+    "Finite Group Theory",
+    "Interactive Theorem Proving"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Coq Proof Assistant + Mathematical Components",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "6 years human + Coq verification",
+  "isAnchor": true,
+  "whyItMatters": "First complete machine-checked formalization of a monumental modern pure-mathematics proof—170,000 lines of Coq verifying the 255-page 1963 Odd Order Theorem, foundational pillar of finite simple group classification.",
+  "summary": "Completed on September 20, 2012 by Georges Gonthier and a 15-researcher Microsoft Research–INRIA team (published at ITP 2013), this six-year effort produced a complete, kernel-checked Coq formalization of the Feit–Thompson Odd Order Theorem—that every finite group of odd order is solvable. Unlike the Four Color Theorem, Feit–Thompson’s 255-page 1963 proof was pure abstract algebra spanning finite group theory, character theory, and Galois theory. The formalization required ~170,000 lines of Coq, ~4,200 definitions, and ~15,000 lemmas, creating the Mathematical Components (MathComp) library and proving deep modern algebra could be formally machine-verified.",
+  "technicalHighlights": [
+    "Verified the entire 255-page 1963 Odd Order Theorem from foundational axioms using ~170,000 lines of Coq/SSReflect code.",
+    "Built the reusable Mathematical Components (MathComp) algebraic hierarchy library covering group theory, linear algebra, and character theory.",
+    "Provided the historical benchmark for formalizing deep finite-group theory, directly preceding 2026 autonomous Lean CFSG formalizations."
+  ],
+  "caveats": "Required six years of manual interactive formalization by a large team using Coq’s symbolic tactics rather than autonomous AI proof synthesis.",
+  "contributors": [
+    "Georges Gonthier",
+    "Andrea Asperti",
+    "Jeremy Avigad",
+    "Yves Bertot",
+    "Cyril Cohen",
+    "François Garillot",
+    "Stéphane Le Roux",
+    "Assia Mahboubi",
+    "Russell O’Connor",
+    "Sidi Ould Biha",
+    "Ioana Pasca",
+    "Laurence Rideau",
+    "Alexey Solovyev",
+    "Enrico Tassi",
+    "Laurent Théry"
+  ],
+  "institutions": [
+    "Microsoft Research–INRIA Joint Centre",
+    "Carnegie Mellon University",
+    "University of Bologna"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 89,
+    "verification": 100,
+    "velocity": 62
+  },
+  "scoreRationale": {
+    "foundational": "Proved that deep, book-length modern pure mathematics—not just combinatorial case splits—could be completely machine-verified.",
+    "ripple": "Directly inspired mathlib in Lean and set the blueprint for large-scale formalized algebra.",
+    "verification": "100% machine-checked inside Coq’s trusted symbolic kernel.",
+    "velocity": "Took 6 years of expert effort, establishing the human-era pace baseline before LLM+Lean autoformalization."
+  },
+  "enables": [
+    "cfsg-enormous-theorem-lean-2026",
+    "fermat-last-theorem-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "INRIA HAL / ITP 2013 — A Machine-Checked Proof of the Odd Order Theorem",
+      "url": "https://inria.hal.science/hal-00816699/document",
+      "type": "formal-verification"
+    }
+  ]
+}

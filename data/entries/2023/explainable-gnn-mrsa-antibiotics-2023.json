@@ -1,0 +1,65 @@
+{
+  "id": "explainable-gnn-mrsa-antibiotics-2023",
+  "title": "Explainable Graph Neural Networks Discover the First New Structural Class of MRSA Antibiotics in Over 60 Years",
+  "shortTitle": "Explainable GNN MRSA Antibiotics",
+  "date": "2023-12-20",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Antibiotic Discovery",
+    "Explainable AI",
+    "Graph Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MIT Collins Lab Explainable Substructure GNN Ensemble (Chemprop + MCTS Rationales)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 60,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature, MIT’s explainable GNNs screened 12M compounds and extracted explicit chemical substructures to uncover a brand-new structural class of antibiotics active against MRSA and VRE in mouse models.",
+  "summary": "Published in Nature on December 20, 2023, Felix Wong, Erica J. Zheng, James J. Collins, and colleagues at MIT and the Broad Institute trained ensembles of graph neural networks on experimental antibiotic activity and human-cell cytotoxicity data for 39,312 compounds, then predicted activity and low toxicity across 12,076,365 molecules. Crucially, they applied Monte Carlo tree search explainability algorithms to open the neural \"black box\" and isolate the exact chemical substructures driving selective antibacterial potency. Testing 283 compounds empirically uncovered a novel structural class selective against methicillin-resistant Staphylococcus aureus (MRSA) and vancomycin-resistant enterococci (VRE) with minimal resistance development and confirmed efficacy in two mouse MRSA infection models.",
+  "technicalHighlights": [
+    "Screened >12 million compounds simultaneously for Staphylococcus aureus potency and low human-cell cytotoxicity.",
+    "Extracted explicit chemical substructure rationales from deep GNN ensembles to discover a first-in-60-years structural antibiotic class.",
+    "Reduced bacterial titers in both topical MRSA skin infection and systemic thigh infection mouse models while evading rapid resistance."
+  ],
+  "caveats": "Preclinical mouse validation only; clinical safety, formulation, and human efficacy trials remain ahead (advanced via nonprofit Phare Bio).",
+  "contributors": [
+    "Felix Wong",
+    "Erica J. Zheng",
+    "Jacqueline A. Valeri",
+    "James J. Collins"
+  ],
+  "institutions": [
+    "MIT",
+    "Broad Institute of MIT and Harvard",
+    "Harvard University"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 91,
+    "verification": 94,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that explainable graph neural networks can uncover an entirely new structural class of antibiotics rather than merely surfacing isolated single-molecule hits.",
+    "ripple": "Directly bridged discriminative library screening (Halicin/Abaucin) to mechanistic substructure design and subsequent 2025 generative antibiotics.",
+    "verification": "Peer-reviewed in Nature (Vol. 626, pp. 177–185) with 283 empirical compound assays, cytotoxicity profiling, and two in vivo mouse infection models.",
+    "velocity": "Evaluated 12 million compounds computationally and distilled actionable medicinal-chemistry substructures in months."
+  },
+  "enables": [
+    "mit-generative-antibiotics-2025"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Nature (Dec 20, 2023) — Discovery of a structural class of antibiotics with explainable deep learning",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38123686/",
+      "type": "paper"
+    },
+    {
+      "label": "MIT News — Using AI, MIT researchers identify a new class of antibiotic candidates",
+      "url": "https://news.mit.edu/2023/using-ai-mit-researchers-identify-antibiotic-candidates-1220",
+      "type": "announcement"
+    }
+  ]
+}

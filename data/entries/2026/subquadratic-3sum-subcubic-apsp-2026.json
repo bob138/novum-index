@@ -1,0 +1,60 @@
+{
+  "id": "subquadratic-3sum-subcubic-apsp-2026",
+  "title": "Claude Discovers Truly Subquadratic 3SUM & Subcubic APSP Algorithms (Lean 4)",
+  "shortTitle": "Subquadratic 3SUM & Subcubic APSP",
+  "date": "2026-10-05",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Fine-Grained Complexity",
+    "Graph Algorithms",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Internal Anthropic Claude Model (16M-token autonomous search + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 31,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Autonomously refutes two foundational pillars of fine-grained complexity—discovering deterministic O(n^1.9992) 3SUM and O(n^2.9995) APSP algorithms certified in Lean 4 and vetted by Alman & Vassilevska Williams.",
+  "summary": "In a landmark arXiv paper co-authored with Columbia’s Josh Alman and MIT’s Virginia Vassilevska Williams, Anthropic’s internal research model of Claude autonomously discovered—during a 16-million-token search—deterministic truly subquadratic O(n^1.9992) algorithms for 3SUM and truly subcubic O(n^2.9995) algorithms for All-Pairs Shortest Paths (APSP) on polynomial-weight integer graphs via triangles in sparse lopsided graphs. The result simultaneously refutes the 1995 3SUM hypothesis (31 years open), the 1962 Floyd–Warshall cubic APSP barrier (~64 years), Exact Triangle, and Zero-Weight k-Clique, with the core proof certified in Lean 4 with Mathlib and independently checked, simplified, and extended by Alman and Vassilevska Williams.",
+  "technicalHighlights": [
+    "Achieves deterministic O(n^1.9992) time for 3SUM and O(n^2.9995) time for integer-weighted APSP, breaking both the quadratic 3SUM and cubic APSP barriers simultaneously.",
+    "Also refutes the Exact Triangle and Zero-Weight k-Clique hypotheses via a new reduction through sparse lopsided triangle detection.",
+    "Discovered autonomously by Claude in a 16M-token session, machine-certified in Lean 4 with Mathlib, and verified, simplified, and extended by leading fine-grained complexity theorists Josh Alman and Virginia Vassilevska Williams."
+  ],
+  "caveats": "Unrefereed arXiv preprint (v1) whose asymptotic exponents (1.9992 and 2.9995) carry large constant factors and apply to polynomial-weight integer inputs rather than arbitrary real-RAM weights; conference/journal peer review is ongoing.",
+  "contributors": [
+    "Josh Alman",
+    "Virginia Vassilevska Williams",
+    "Anthropic"
+  ],
+  "institutions": [
+    "Columbia University",
+    "MIT",
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 94,
+    "ripple": 92,
+    "verification": 95,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Refutes two of the three central hardness pillars of fine-grained complexity theory (3SUM since 1995 and APSP since 1962) in one stroke.",
+    "ripple": "Forces a sweeping reassessment of hundreds of conditional lower bounds across computational geometry, stringology, dynamic graphs, and data structures.",
+    "verification": "Both machine-certified in Lean 4 with Mathlib and thoroughly vetted, simplified, and co-authored by two of fine-grained complexity’s foremost authorities.",
+    "velocity": "Autonomously uncovered by Claude in a single 16M-token search after decades of human attempts yielded only polylogarithmic improvements."
+  },
+  "enables": [
+    "eth-refutation-claim-2026",
+    "linear-time-mst-gpt62-2026"
+  ],
+  "sources": [
+    {
+      "label": "Alman, Vassilevska Williams & Anthropic — Truly Subquadratic 3SUM and Truly Subcubic APSP (arXiv:2610.06783)",
+      "url": "https://arxiv.org/abs/2610.06783",
+      "type": "paper"
+    }
+  ]
+}

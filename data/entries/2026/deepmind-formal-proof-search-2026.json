@@ -1,0 +1,56 @@
+{
+  "id": "deepmind-formal-proof-search-2026",
+  "title": "AI-Driven Lean Proof Search Autonomously Solves 9 Erdős & 44 OEIS Open Conjectures",
+  "shortTitle": "DeepMind Formal Proof Search",
+  "date": "2026-05-21",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Formal Proof Search",
+    "Combinatorics",
+    "OEIS Conjectures"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Google DeepMind Formal Proof Search Agent (Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First large-scale evaluation of autonomous Lean 4 proof search on open research conjectures: 9/353 open Erdős problems and 44/492 OEIS conjectures proved for a few hundred dollars each.",
+  "summary": "Google DeepMind evaluated an AlphaEvolve-inspired Lean formal proof search agent across hundreds of open mathematical conjectures. The system autonomously proved 9 of 353 open Erdős problems, 44 of 492 formalized OEIS conjectures, a 1996 Graffiti graph theory conjecture, and a bipartite graph reconstruction variant—at roughly a few hundred dollars of compute per solved theorem—followed by Epoch AI resolving 147 of the same 492 OEIS conjectures.",
+  "technicalHighlights": [
+    "Autonomously proved 9/353 open Erdős problems and 44/492 formalized OEIS conjectures with full Lean 4 kernel verification.",
+    "Closed the AI-conjecture-to-proof loop by proving a 30-year-old open graph conjecture originally proposed by the Graffiti system in 1996.",
+    "Demonstrated unit economics of a few hundred dollars per formally verified open-problem resolution."
+  ],
+  "caveats": "Many resolved OEIS and Erdős items are lower-tier open problems; success rates on flagship conjectures remained small in May 2026.",
+  "contributors": [
+    "Google DeepMind Formal Mathematics Team"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 89,
+    "verification": 97,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Established scalable autonomous resolution across dozens of formally verified open conjectures.",
+    "ripple": "Proved that cheap, automated Lean proof search can systematically sweep entire conjecture repositories.",
+    "verification": "Every resolved theorem carries an independently checkable Lean 4 certificate.",
+    "velocity": "Dropped the cost of formally verifying new open theorems to a few hundred dollars of compute."
+  },
+  "enables": [
+    "kothe-conjecture-disproof-2026",
+    "hadwiger-covering-3d-2026"
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind — Advancing Mathematics Research with AI-Driven Formal Proof Search (arXiv:2605.22763)",
+      "url": "https://arxiv.org/abs/2605.22763",
+      "type": "paper"
+    }
+  ]
+}

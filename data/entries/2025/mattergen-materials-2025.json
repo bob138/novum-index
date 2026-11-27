@@ -1,0 +1,69 @@
+{
+  "id": "mattergen-materials-2025",
+  "title": "MatterGen: Property-Guided Generative Diffusion for Inorganic Crystals",
+  "shortTitle": "MatterGen Crystal Diffusion",
+  "date": "2025-01-16",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Materials Science",
+    "Generative Diffusion",
+    "Solid-State Chemistry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MatterGen (Microsoft Research AI for Science)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Shifts inorganic materials discovery from brute-force screening to inverse generative design—steering crystal structures directly toward target mechanical, magnetic, or electronic properties.",
+  "summary": "Published in Nature (Vol. 639) with open-source weights and code, Microsoft Research's MatterGen is a joint diffusion model over atomic species, coordinates, and unit-cell lattices across the periodic table. Fine-tuned adapter modules steer crystal generation toward specified band gaps, magnetic densities, or bulk moduli, doubling the rate of stable, unique, novel candidates compared to prior generative models.",
+  "technicalHighlights": [
+    "Jointly diffuses discrete atom types, fractional coordinates, and continuous lattice geometry.",
+    "Supports multi-property conditioning (e.g., high magnetic density + low supply-chain-risk elements).",
+    "Open-source release (MIT) catalyzed a wave of inverse-design crystal diffusion models."
+  ],
+  "caveats": "An April 2026 Materials Horizons audit challenged the novelty of the flagship experimentally synthesized example (TaCr₂O₆, reported in 1972 literature and training sets), underscoring the gap between benchmark generation and genuinely unprecedented industrial materials.",
+  "contributors": [
+    "Claudio Zeni",
+    "Robert Pinsler",
+    "Daniel Zügner",
+    "Andrew Fowler",
+    "Tian Xie",
+    "Ryota Tomioka"
+  ],
+  "institutions": [
+    "Microsoft Research AI for Science"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 84,
+    "verification": 84,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Established conditional crystal-diffusion as a clean paradigm for inverse inorganic materials design.",
+    "ripple": "Widely adopted as an open baseline across battery electrolytes, magnets, photovoltaics, and catalysis research.",
+    "verification": "Peer-reviewed in Nature with open checkpoints, tempered by 2026 independent scrutiny over experimental novelty claims.",
+    "velocity": "Replaced million-structure DFT screening funnels with direct property-conditioned generation."
+  },
+  "enables": [
+    "elementsclaw-superconductors-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature (PubMed): A generative model for inorganic materials design",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39821164/",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub: microsoft/mattergen",
+      "url": "https://github.com/microsoft/mattergen",
+      "type": "code"
+    },
+    {
+      "label": "Materials Horizons (2026): Audit of MatterGen novelty claims",
+      "url": "https://pubs.rsc.org/mh/article/13/11/5672/1228702/Continued-challenges-in-high-throughput-materials",
+      "type": "explainer"
+    }
+  ]
+}

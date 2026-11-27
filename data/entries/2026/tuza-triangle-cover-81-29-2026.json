@@ -1,0 +1,59 @@
+{
+  "id": "tuza-triangle-cover-81-29-2026",
+  "title": "Lean-Verified 81/29 Upper Bound for Tuza’s 1981 Triangle-Cover Conjecture",
+  "shortTitle": "Tuza Conjecture 81/29 Bound (Lean)",
+  "date": "2026-11-22",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Extremal Graph Theory",
+    "Combinatorics",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "MathDiscoveries Autonomous AI Research Agents (Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 45,
+  "aiTimeToSolve": "Autonomous agent search + Lean 4",
+  "isAnchor": false,
+  "whyItMatters": "AI research agents proved and formally verified in Lean 4 that every graph satisfies τ(G) ≤ (81/29)ν(G), lowering the 45-year-old Tuza conjecture bound below Haxell (1999) and Wang (Sept 2026) with dual-kernel checks.",
+  "summary": "Registered on the Palomar Lean registry on November 22, 2026 (github.com/mathdiscoveries/tuza-triangle-cover), autonomous AI research agents built and directed by Tyler B. Hughes proved and formalized in Lean 4 that every finite simple graph G satisfies τ(G) ≤ (81/29)ν(G) ≈ 2.793 ν(G), where ν(G) is the maximum size of an edge-disjoint triangle packing and τ(G) is the minimum edge-cover of all triangles. Tuza conjectured τ(G) ≤ 2ν(G) in 1981 (Erdős Problem #167), and the general bound stood at Haxell’s 66/23 ≈ 2.870 for 27 years before falling to 63/22 (Aug 2026), Sichen Wang’s 165/59 ≈ 2.797 (Sept 2026), and now 81/29. Extending Wang’s MIT-licensed tuza-lean library with helper-arborescence coupling, unmerged coloured-family covers, and opposite-edge elimination, the 101-line Mathlib-only Challenge statement passed Palomar replay across two independent kernels (nanoda and con-ron) under Lean 4.35.0.",
+  "technicalHighlights": [
+    "Lowers the general upper bound on Tuza’s 1981 triangle-cover conjecture (Erdős #167) to 81/29 ≈ 2.793, beating Haxell (66/23) and Wang (165/59).",
+    "Compact 101-line Mathlib-only Challenge statement includes explicit K4 non-vacuity checks (ν(K4) = 1, τ(K4) = 2) and dual-kernel Palomar verification (nanoda + con-ron).",
+    "Introduces helper-arborescence coupling and opposite-edge elimination discovered by autonomous AI agents."
+  ],
+  "caveats": "No human mathematician has yet refereed the written exposition, and the specific underlying foundation models powering Hughes’s mathdiscoveries.org agent harness are undisclosed.",
+  "contributors": [
+    "Tyler B. Hughes",
+    "MathDiscoveries AI Research Agents"
+  ],
+  "institutions": [
+    "MathDiscoveries (Independent)"
+  ],
+  "scores": {
+    "foundational": 70,
+    "ripple": 62,
+    "verification": 93,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Advances a well-known 45-year-old extremal graph theory conjecture (Erdős #167), though the full τ ≤ 2ν bound remains open.",
+    "ripple": "Extends reusable Lean 4 extremal-combinatorics machinery and demonstrates independent researchers running autonomous discovery agents.",
+    "verification": "Dual-kernel Palomar verification (nanoda and con-ron) against a short, auditable Mathlib-only statement with non-vacuity checks.",
+    "velocity": "Pushed past a 27-year barrier and improved upon a September 2026 bound within two months."
+  },
+  "sources": [
+    {
+      "label": "GitHub: mathdiscoveries/tuza-triangle-cover",
+      "url": "https://github.com/mathdiscoveries/tuza-triangle-cover",
+      "type": "formal-verification"
+    },
+    {
+      "label": "WhatAIFound Registry Entry",
+      "url": "https://whataifound.org/",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "claude-prokaryotic-vault-2026",
+  "title": "Claude Helps Solve First 3D Structure of a Prokaryotic Vault Particle",
+  "shortTitle": "Prokaryotic Vault 3D Structure",
+  "date": "2026-11-04",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Cryo-EM",
+    "Microbiology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Anthropic Claude (Biology Research Lab)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 40,
+  "aiTimeToSolve": "< 4 months",
+  "isAnchor": false,
+  "whyItMatters": "A small team with limited structural-biology background used Claude to solve the first 3D structure of a microbial vault particle—a 40-year cell-biology mystery—in under four months.",
+  "summary": "Vaults are enigmatic hollow protein barrels discovered in 1986 whose biological purpose remains unknown. Working with Claude across protocol design, troubleshooting, and cryo-EM reconstruction, Anthropic’s biology lab resolved the first 3D structure of a prokaryotic/phage vault particle (phage L05, built from 96 protein copies vs. 78 in human vaults), compressing a 3-day purification protocol to 90 minutes and producing an initial structural model in 34 hours.",
+  "technicalHighlights": [
+    "Resolved the first 3D cryo-EM structure of a non-eukaryotic vault particle (96-subunit hollow barrel with three-tiered tapered cap).",
+    "Compressed protein purification from 3 days to ~90 minutes and initial 3D structural modeling from weeks to 34 hours.",
+    "Published candid error logs alongside the bioRxiv preprint—documenting a 2-week growth-medium error and mirror-image map caught by humans."
+  ],
+  "caveats": "Determines the 3D molecular structure rather than the biological function of vault particles; submitted as a bioRxiv preprint awaiting peer review.",
+  "contributors": [
+    "Anthropic Biology Research Lab",
+    "Claude"
+  ],
+  "institutions": [
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 82,
+    "verification": 83,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "First 3D structural determination of a prokaryotic vault particle after four decades of open mystery.",
+    "ripple": "Proved generalist AI assistants can empower non-specialist wet-lab teams to execute cryo-EM structural biology.",
+    "verification": "Experimental cryo-EM structural data submitted to bioRxiv with transparent failure/correction documentation.",
+    "velocity": "Completed an end-to-end structural biology project from scratch in under four months."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Anthropic Research — Investigating vault particles with Claude",
+      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "type": "announcement"
+    }
+  ]
+}

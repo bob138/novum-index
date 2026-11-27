@@ -1,0 +1,64 @@
+{
+  "id": "sam-lemma-atp-1969",
+  "title": "SAM V Theorem Prover Settles Open Modular Lattice Conjecture (“SAM’s Lemma”)",
+  "shortTitle": "SAM’s Lemma (SAM V ATP, 1969)",
+  "date": "1969-01-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Automated Theorem Proving",
+    "Lattice Theory",
+    "Symbolic Logic"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "SAM V (Semi-Automated Mathematics V)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Interactive ATP session",
+  "isAnchor": true,
+  "whyItMatters": "First open mathematical conjecture settled with an automated theorem prover: SAM V discovered a key lemma in modular lattice theory that mathematicians had not previously proved.",
+  "summary": "Published in the Journal of the ACM in January 1969, James R. Guard, Francis C. Oglesby, James H. Bennett, and L. G. Settle at Applied Logic Corporation built the Semi-Automated Mathematics (SAM) family of interactive symbolic theorem provers. During an investigation of modular lattices, SAM V automatically generated and verified a previously unproved lattice-theoretic lemma—christened “SAM’s Lemma”—which mathematicians then used to settle an open problem in modular lattice theory. It became the canonical benchmark problem for automated theorem proving for decades and marks the earliest documented instance of an AI deduction engine resolving an open mathematical question.",
+  "technicalHighlights": [
+    "Combined human goal guidance with automated symbolic unification, equality substitution, and resolution-style search on early CRT-equipped mainframes.",
+    "Autonomously produced a genuine new lemma in modular lattice theory rather than merely reproving textbook theorems.",
+    "Established “SAM’s Lemma” as a foundational benchmark across decades of automated reasoning competitions."
+  ],
+  "caveats": "Human mathematicians formulated the lattice problem and selected strategic subgoals interactively while SAM V carried out automated deduction steps.",
+  "contributors": [
+    "James R. Guard",
+    "Francis C. Oglesby",
+    "James H. Bennett",
+    "L. G. Settle"
+  ],
+  "institutions": [
+    "Applied Logic Corporation"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 86,
+    "verification": 96,
+    "velocity": 65
+  },
+  "scoreRationale": {
+    "foundational": "First open mathematical lemma solved by an automated theorem prover, opening the field of AI-assisted mathematical discovery.",
+    "ripple": "Directly catalyzed interactive and automated theorem proving (LCF, AURA, OTTER, EQP, Coq, Lean).",
+    "verification": "Published in JACM (Vol. 16, No. 1, pp. 49–62) with a complete symbolic mathematical proof.",
+    "velocity": "Pioneering early mainframe interactive proof discovery."
+  },
+  "enables": [
+    "aura-ternary-boolean-1982",
+    "robbins-conjecture-eqp-1996"
+  ],
+  "sources": [
+    {
+      "label": "JACM Vol. 16(1), pp. 49–62 (Jan 1969) — Semi-Automated Mathematics",
+      "url": "https://dl.acm.org/doi/10.1145/321495.321500",
+      "type": "paper"
+    },
+    {
+      "label": "Semantic Scholar — Guard, Oglesby, Bennett & Settle (1969)",
+      "url": "https://www.semanticscholar.org/paper/Semi-Automated-Mathematics-Guard-Oglesby/3eca05cf111caff6c586b788f3f836cdbea46f5d",
+      "type": "explainer"
+    }
+  ]
+}

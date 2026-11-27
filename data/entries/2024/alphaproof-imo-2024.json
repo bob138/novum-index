@@ -1,0 +1,61 @@
+{
+  "id": "alphaproof-imo-2024",
+  "title": "AlphaProof & AlphaGeometry 2 Achieve IMO Silver-Medal Formal Proving",
+  "shortTitle": "AlphaProof IMO Silver",
+  "date": "2024-07-25",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Formal Theorem Proving",
+    "Lean 4",
+    "Reinforcement Learning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaProof & AlphaGeometry 2 (Google DeepMind)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "whyItMatters": "First AI system to achieve medal-level performance at the International Mathematical Olympiad with machine-verified Lean 4 proofs—igniting the RL + Lean formal math era.",
+  "summary": "Google DeepMind paired a Gemini-based reinforcement-learning formal prover (AlphaProof) with a neuro-symbolic geometry engine (AlphaGeometry 2) to solve four of six problems at IMO 2024 (28/42 points, one point shy of gold), including the competition's hardest problem (P6), solved by only 5 of 609 human contestants. Every AlphaProof solution was formally checked in Lean, establishing the blueprint for combining LLMs, RL, and interactive theorem provers.",
+  "technicalHighlights": [
+    "Solved IMO 2024 Problem 6—an ultra-hard number theory problem solved by <1% of top human olympians—with a Lean-checked proof.",
+    "Trained via AlphaZero-style test-time reinforcement learning over millions of auto-formalized mathematical statements.",
+    "Directly inspired the 2025–2026 wave of Lean-verified research math and software verification systems."
+  ],
+  "caveats": "Required human experts to manually formalize problem statements into Lean beforehand and used up to three days of compute on the hardest problem.",
+  "contributors": [
+    "Thomas Hubert",
+    "Rishabh Mehta",
+    "Laurent Sartran",
+    "Trieu Trinh",
+    "Google DeepMind Math Team"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 94,
+    "verification": 99,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Proved reinforcement learning coupled with a formal proof verifier can discover non-trivial, creative multi-step proofs.",
+    "ripple": "Directly birthed the Lean + RL paradigm behind AlphaProof Code and the 2026 Millennium Problem formalizations.",
+    "verification": "Machine-verified in Lean 4 and graded by Fields Medalist Timothy Gowers and IMO coordinator Joseph Myers.",
+    "velocity": "Surpassed expectations for formal theorem proving years ahead of community forecasts."
+  },
+  "enables": [
+    "imo-2025-gold-natural-language",
+    "deepmind-formal-proof-search-2026",
+    "alphaproof-code-signal-2026",
+    "hadwiger-covering-3d-2026"
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind: AI achieves silver-medal standard solving IMO problems",
+      "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
+      "type": "announcement"
+    }
+  ]
+}

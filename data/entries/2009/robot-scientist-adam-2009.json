@@ -1,0 +1,64 @@
+{
+  "id": "robot-scientist-adam-2009",
+  "title": "Robot Scientist “Adam” Autonomously Discovers New Yeast Gene Functions",
+  "shortTitle": "Robot Scientist Adam (2009)",
+  "date": "2009-04-03",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Functional Genomics",
+    "Automated Science",
+    "Abductive Logic AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Robot Scientist Adam (Abductive Logic + Lab Robotics)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Historic pre-neural benchmark: the first closed-loop autonomous AI system to formulate hypotheses, run physical lab experiments, and publish new biological knowledge.",
+  "summary": "Developed by Ross King and colleagues at Aberystwyth and Cambridge, Robot Scientist “Adam” combined symbolic abductive logic programming, formal biological ontologies, and automated wet-lab robotics to investigate orphan enzymes in Saccharomyces cerevisiae. Without human intervention in the loop, Adam formulated 20 hypotheses identifying genes encoding orphan enzymes, designed and executed growth assays, confirmed 12 hypotheses, and had its key discoveries independently validated by manual human biochemistry.",
+  "technicalHighlights": [
+    "First physical machine to execute the full scientific method autonomously—hypothesis generation, experiment design, wet-lab execution, and result interpretation.",
+    "Identified three previously unannotated yeast genes encoding the orphan enzyme 2-aminoadipate transaminase (confirmed manually via wet-lab enzyme assays).",
+    "Demonstrated end-to-end formalization of experimental metadata and reasoning decades before LLM-based AI Co-Scientists."
+  ],
+  "caveats": "Relied on rigid symbolic logic rules and domain-specific yeast ontologies; it could not generalize outside narrowly encoded metabolic models—highlighting why modern neural foundation models triggered a phase transition.",
+  "contributors": [
+    "Ross D. King",
+    "Jem Rowland",
+    "Stephen G. Oliver",
+    "Michael Young",
+    "Wayne Aubrey",
+    "Emma Byrne"
+  ],
+  "institutions": [
+    "Aberystwyth University",
+    "University of Cambridge"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 85,
+    "verification": 94,
+    "velocity": 68
+  },
+  "scoreRationale": {
+    "foundational": "Proved in principle that an autonomous AI system can independently discover genuine new empirical scientific knowledge.",
+    "ripple": "Inspired the entire self-driving laboratory and autonomous AI scientist movement, culminating in systems like Google AI Co-Scientist.",
+    "verification": "Published in Science with human wet-lab biochemical verification of Adam’s newly discovered gene–enzyme mappings.",
+    "velocity": "Pioneered automated experimental cycles, though narrow symbolic engineering kept throughput modest compared to 2025–2026 foundation models."
+  },
+  "enables": [
+    "google-ai-coscientist-2025",
+    "coscientist-autonomous-chemistry-2023",
+    "a-lab-autonomous-materials-2023",
+    "robot-scientist-eve-malaria-2015"
+  ],
+  "sources": [
+    {
+      "label": "Science — The Automation of Science (Apr 3, 2009)",
+      "url": "https://doi.org/10.1126/science.1165620",
+      "type": "paper"
+    }
+  ]
+}

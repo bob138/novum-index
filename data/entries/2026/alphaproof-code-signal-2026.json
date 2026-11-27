@@ -1,0 +1,60 @@
+{
+  "id": "alphaproof-code-signal-2026",
+  "title": "AlphaProof Code: Machine-Code Formal Verification of Signal Protocol",
+  "shortTitle": "AlphaProof Code (Signal)",
+  "date": "2026-11-10",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Formal Software Verification",
+    "Cryptography",
+    "AI Agents"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaProof Code (Google DeepMind)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "4 weeks",
+  "whyItMatters": "First protocol-level mathematical security proofs for the unmodified compiled machine code of a globally deployed cryptographic protocol—completed in four weeks.",
+  "summary": "Google DeepMind unveiled AlphaProof Code, a multi-agent AI system that produced machine-checked Lean proofs establishing core security guarantees—including post-compromise security and post-quantum key exchange properties—directly on the compiled AArch64 Linux binary of Signal's unmodified libsignal (v0.105.4) and SPQR (v1.6.0) Rust crates. A five-person team completed the verification in four weeks.",
+  "technicalHighlights": [
+    "Operates directly on compiled AArch64 machine code rather than idealized abstract protocol models, eliminating compiler and implementation-gap vulnerabilities.",
+    "Proves post-compromise security and post-quantum key exchange guarantees in Lean.",
+    "Demonstrates an order-of-magnitude reduction in the human-effort cost of formal verification for production software."
+  ],
+  "caveats": "Proof guarantees hold relative to the formal security specification and trusted computing base (§5.3 of the technical paper); hardware side-channels and out-of-spec runtime assumptions remain outside the verified boundary.",
+  "contributors": [
+    "Google DeepMind Formal Verification Team"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 96,
+    "verification": 98,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Breaks the decades-old scalability barrier separating formal methods from real-world compiled cryptographic software.",
+    "ripple": "Establishes a practical blueprint for mathematically verifying critical infrastructure: OS kernels, TLS stacks, browsers, and avionics.",
+    "verification": "Machine-checked Lean proofs with public specifications and verification artifacts released for independent inspection.",
+    "velocity": "Compressed what historically required tens of person-years of formal-methods labor into four weeks with five researchers."
+  },
+  "enables": [
+    "deepmind-verified-quantum-algos-2026",
+    "google-cogentic-factoring-2026"
+  ],
+  "sources": [
+    {
+      "label": "AlphaProof Code: Verifying Signal's Security at the Machine-Code Level",
+      "url": "https://google-deepmind.github.io/code-verification/",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Google DeepMind Blog: Introducing AlphaProof Code",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "type": "announcement"
+    }
+  ]
+}

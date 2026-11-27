@@ -1,0 +1,66 @@
+{
+  "id": "harvard-anthropic-quera-quantum-circuits-2026",
+  "title": "Harvard–Anthropic–QuEra: Claude Mythos 5 Discovers 4×–39× Leaner Fault-Tolerant Quantum Circuits",
+  "shortTitle": "Claude Fault-Tolerant Quantum Circuits",
+  "date": "2026-10-16",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Computing",
+    "Fault-Tolerant Circuits",
+    "Evolutionary Program Synthesis"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Mythos 5 + OpenEvolve Evaluator (Anthropic / Harvard / QuEra)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Up to 53 hrs closed-loop search",
+  "isAnchor": false,
+  "whyItMatters": "In a Harvard–Anthropic–QuEra study, Claude Mythos 5 in a closed evolutionary loop beat hand-crafted quantum circuits on 7 of 8 tasks—cutting Toffoli×qubit cost up to 39× (12× on DQI decoding, 17× on elliptic curves).",
+  "summary": "Released on October 16, 2026 (highlighted by QuEra and Harvard on November 10, 2026), researchers from Harvard University (Mikhail Lukin, Susanne Yelin), Anthropic, and QuEra Computing paired Claude Mythos 5 with the open-source evolutionary framework OpenEvolve and an independent classical circuit verifier to discover state-of-the-art fault-tolerant quantum circuits with zero human intervention between rounds. Across seven of eight core computational primitives, Claude reduced both Toffoli-gate counts and logical qubit footprints relative to best published human designs: cutting the DQI Reed–Solomon decoder from 5.1M to ~440K Toffoli gates (12×), reducing the quantum-chemistry Coulomb potential space-time metric 9.9×, discovering a reversible modular-inversion circuit for elliptic-curve addition with 17× fewer gates in a 53-hour run, and achieving a 39× space-time cost reduction on a fixed-point Gaussian (alongside a separate Oct 13 IBM Research AI agent finding a 204× faster QEC decoder for $299 of inference).",
+  "technicalHighlights": [
+    "Beats best published human-crafted fault-tolerant quantum circuits on 7 of 8 benchmark primitives using closed-loop LLM evolutionary search (Claude Mythos 5 + OpenEvolve).",
+    "Cuts DQI Reed–Solomon optimization decoder Toffoli gates 12× (5.1M → 440K), chemistry Coulomb potential cost 9.9×, elliptic-curve modular inversion gates 17×, and Gaussian space-time cost 39×.",
+    "Every circuit was deterministically verified for exact functional equivalence and exact Toffoli/qubit counts by an independent classical evaluator."
+  ],
+  "caveats": "Resource reductions are verified classical circuit designs for core algorithmic building blocks rather than executions on physical fault-tolerant quantum hardware; peer review is pending.",
+  "contributors": [
+    "Mikhail Lukin",
+    "Susanne Yelin",
+    "Harvard Quantum Initiative",
+    "Anthropic",
+    "QuEra Computing"
+  ],
+  "institutions": [
+    "Harvard University",
+    "Anthropic",
+    "QuEra Computing"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 86,
+    "verification": 84,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Discovers genuinely novel reversible quantum algorithms and circuit architectures beating decades of hand-optimized fault-tolerant primitives.",
+    "ripple": "Directly pulls forward the practical horizon of fault-tolerant quantum computing for chemistry, optimization, and cryptography.",
+    "verification": "All circuits are deterministically checked by an independent classical evaluator for functional correctness and exact gate/qubit budgets.",
+    "velocity": "Autonomous closed-loop runs (up to 53 hours) outperformed decades of specialist human circuit engineering across 7 of 8 tasks."
+  },
+  "sources": [
+    {
+      "label": "QuEra Press Release: Harvard, Anthropic & QuEra Quantum Circuits",
+      "url": "https://www.quera.com/press-releases/harvard-anthropic-and-quera-breakthrough-research-uniquely-shows-ai-can-reduce-the-resources-quantum-applications-need-significantly-accelerating-the-era-of-useful-quantum-computing",
+      "type": "announcement"
+    },
+    {
+      "label": "Quantum Computing Report Technical Breakdown",
+      "url": "https://quantumcomputingreport.com/harvard-anthropic-and-quera-use-llms-to-discover-quantum-circuits-with-up-to-9100x-lower-resource-costs/",
+      "type": "explainer"
+    }
+  ],
+  "enables": [
+    "deepmind-verified-quantum-algos-2026"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cepheus-poker-solved-2015",
+  "title": "Cepheus Weakly Solves Heads-Up Limit Texas Hold’em Poker via CFR⁺ Regret Minimization",
+  "shortTitle": "Cepheus Solves Limit Hold’em (2015)",
+  "date": "2015-01-09",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Game Theory",
+    "Imperfect-Information AI",
+    "Regret Minimization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Cepheus (CFR⁺ Imperfect-Information Solver)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "68 days on 200-node cluster (CFR⁺)",
+  "isAnchor": true,
+  "whyItMatters": "Published in Science, Cepheus became the first nontrivial imperfect-information game played competitively by humans to be essentially weakly solved—computing a near-exact Nash equilibrium across 3.16×10¹⁴ decision points.",
+  "summary": "Published in Science on January 9, 2015, Michael Bowling, Neil Burch, Michael Johanson, and Oskari Tammelin at the University of Alberta unveiled Cepheus, which essentially weakly solved heads-up limit Texas hold’em poker. Introducing the CFR⁺ (Counterfactual Regret Minimization Plus) algorithm and custom lossless compression across 3.16×10¹⁴ information sets, Cepheus computed a Nash-equilibrium strategy with exploitability below 0.001 big blinds per game—statistically indistinguishable from unbeatable over a human lifetime—and formally proved that the dealer holds a quantifiable first-mover advantage.",
+  "technicalHighlights": [
+    "Introduced CFR⁺, accelerating imperfect-information extensive-form game solving by three orders of magnitude.",
+    "Computed a near-exact Nash equilibrium across 3.16×10¹⁴ decision points (11 TB compressed strategy) with exploitability <0.001 bb/hand.",
+    "Formally proved the longstanding poker folklore that the dealer position holds a statistically significant strategic advantage."
+  ],
+  "caveats": "Essentially weakly solved heads-up limit hold’em (not no-limit or multiplayer poker); exploitability is mathematically bounded below statistical detectability over a lifetime rather than strictly zero.",
+  "contributors": [
+    "Michael Bowling",
+    "Neil Burch",
+    "Michael Johanson",
+    "Oskari Tammelin"
+  ],
+  "institutions": [
+    "University of Alberta"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 86,
+    "verification": 97,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "First human-competitive imperfect-information game solved to mathematical equilibrium, solving a core challenge in computational game theory.",
+    "ripple": "CFR⁺ became the algorithmic backbone of superhuman imperfect-information AI (DeepStack, Libratus, Pluribus) and strategic decision systems.",
+    "verification": "Peer-reviewed in Science (Vol. 347, pp. 145–149) with publicly queryable strategy database.",
+    "velocity": "Solved a 10¹⁴-state hidden-information game tree in 68 days of cluster compute."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Science Vol. 347(6218), pp. 145–149 (Jan 9, 2015) — Heads-up limit hold’em poker is solved",
+      "url": "https://www.science.org/doi/10.1126/science.1259433",
+      "type": "paper"
+    }
+  ]
+}

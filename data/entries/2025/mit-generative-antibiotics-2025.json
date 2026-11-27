@@ -1,0 +1,62 @@
+{
+  "id": "mit-generative-antibiotics-2025",
+  "title": "Generative AI Designs De Novo Antibiotics (NG1 & DN1) Defeating Drug-Resistant Gonorrhea and MRSA in Mice",
+  "shortTitle": "MIT Generative Antibiotics (NG1/DN1)",
+  "date": "2025-08-14",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Antimicrobial Discovery",
+    "Generative Chemistry",
+    "Infectious Disease"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MIT Collins Lab Generative Fragment & Atom-Level Antibiotic AI",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Cell, MIT researchers moved beyond screening existing libraries to generatively design 36M+ hypothetical molecules from scratch—yielding two novel antibiotics (NG1 and DN1) that cleared superbug infections in mice.",
+  "summary": "Published in Cell on August 14, 2025, Aarti Krishnan, Melis Anahtar, Jacqueline Valeri, James J. Collins, and colleagues at MIT and the Broad Institute used two complementary generative deep-learning platforms (fragment-based genetic algorithms and unconstrained atom-by-atom variational/graph generative models) to design over 36 million completely novel chemical candidates targeting multidrug-resistant Neisseria gonorrhoeae and MRSA. After computational filtering for toxicity, synthetic accessibility, and structural novelty, the team synthesized 24 top designs and validated two structurally unprecedented leads—NG1 (targeting a novel bacterial membrane protein LptA in gonorrhea) and DN1 (disrupting MRSA membranes)—both of which cleared infections in mouse models.",
+  "technicalHighlights": [
+    "Generated and screened >36 million previously nonexistent chemical structures from scratch rather than searching pre-built vendor libraries.",
+    "Lead candidate NG1 selectively killed multidrug-resistant Neisseria gonorrhoeae via a novel membrane-assembly target (LptA) and cured vaginal infection models in mice.",
+    "Second lead DN1 cleared topical MRSA skin infections in mice with a structurally distinct membrane-disrupting scaffold."
+  ],
+  "caveats": "Validated in preclinical mouse infection models; extensive medicinal-chemistry optimization, pharmacokinetics, toxicology, and human clinical trials are still required before patient use.",
+  "contributors": [
+    "Aarti Krishnan",
+    "Melis N. Anahtar",
+    "Jacqueline A. Valeri",
+    "James J. Collins"
+  ],
+  "institutions": [
+    "MIT",
+    "Broad Institute of MIT and Harvard"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 92,
+    "verification": 92,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Marks the inflection from AI screening existing chemical libraries (Halicin, Abaucin) to de novo generative design of structurally unprecedented, in-vivo-active antibiotics.",
+    "ripple": "Directly addresses WHO priority drug-resistant pathogens (gonorrhea and MRSA) with novel mechanisms of action.",
+    "verification": "Peer-reviewed in Cell with chemical synthesis, mechanistic target elucidation, and in vivo mouse efficacy models.",
+    "velocity": "Explored 36 million hypothetical molecules computationally before synthesizing only 24 candidates in the wet lab."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PMC / Cell (Aug 14, 2025) — A generative deep learning approach to de novo antibiotic design",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12790861/",
+      "type": "paper"
+    },
+    {
+      "label": "MIT News — Using generative AI, researchers design compounds that can kill drug-resistant bacteria",
+      "url": "https://news.mit.edu/2025/using-generative-ai-researchers-design-compounds-kill-drug-resistant-bacteria-0814",
+      "type": "announcement"
+    }
+  ]
+}

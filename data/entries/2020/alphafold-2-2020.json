@@ -1,0 +1,73 @@
+{
+  "id": "alphafold-2-2020",
+  "title": "AlphaFold 2: Atomic-Accuracy Protein Structure Prediction (CASP14)",
+  "shortTitle": "AlphaFold 2 (Anchor)",
+  "date": "2020-11-30",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Protein Folding",
+    "Deep Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaFold 2 (DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 50,
+  "aiTimeToSolve": "Minutes / protein",
+  "isAnchor": true,
+  "whyItMatters": "Solved biology's 50-year protein structure prediction grand challenge at atomic accuracy—earning the 2024 Nobel Prize in Chemistry and establishing the modern AI-for-science benchmark.",
+  "summary": "Validated at the blind CASP14 competition in November 2020 and published in Nature (July 2021), DeepMind's AlphaFold 2 introduced the Evoformer and equivariant structure modules to predict 3D atomic coordinates of proteins directly from amino-acid sequences with accuracy rivaling X-ray crystallography and cryo-EM. Releasing open source code and >200 million predicted structures in the AlphaFold Protein Structure Database permanently transformed structural biology and served as the blueprint for the entire 2020s wave of scientific AI.",
+  "technicalHighlights": [
+    "Achieved ~0.96 Å median backbone RMSD on blind CASP14 targets, effectively solving single-chain static protein folding.",
+    "Awarded half of the 2024 Nobel Prize in Chemistry (Demis Hassabis and John Jumper).",
+    "Open-source release and EMBL-EBI database unlocked >200 million structures used by millions of researchers worldwide."
+  ],
+  "caveats": "Predicts static single-chain conformations rather than dynamic conformational ensembles, multi-ligand complexes, or folding pathways—gaps subsequently targeted by AlphaFold 3 and generative biology models.",
+  "contributors": [
+    "John Jumper",
+    "Richard Evans",
+    "Alexander Pritzel",
+    "Demis Hassabis",
+    "Pushmeet Kohli",
+    "AlphaFold Team"
+  ],
+  "institutions": [
+    "DeepMind",
+    "EMBL-EBI (Database Partner)"
+  ],
+  "scores": {
+    "foundational": 98,
+    "ripple": 100,
+    "verification": 100,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Resolved a 50-year grand challenge in molecular biology and proved deep learning can crack core scientific physics problems.",
+    "ripple": "One of the highest-impact scientific tools of the 21st century—directly catalyzing AlphaFold 3, AlphaProteo, Evo 2, and modern drug discovery.",
+    "verification": "Blind CASP14 benchmark victory, landmark Nature paper, tens of thousands of independent experimental confirmations, and the 2024 Nobel Prize.",
+    "velocity": "Compressed months-to-years of crystallography per protein into minutes of computation."
+  },
+  "enables": [
+    "alphafold-3-2024",
+    "alphaproteo-binders-2024",
+    "boltz-2-binding-affinity-2025",
+    "evo-2-genome-design-2025",
+    "rfdiffusion-protein-design-2023",
+    "alphamissense-variants-2023",
+    "bindcraft-oneshot-binders-2025",
+    "bioemu-protein-dynamics-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature (PubMed): Highly accurate protein structure prediction with AlphaFold",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34265844/",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Open Access Full Text (Nature Vol. 596)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/",
+      "type": "paper"
+    }
+  ]
+}

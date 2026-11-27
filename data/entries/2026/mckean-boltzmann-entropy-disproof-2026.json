@@ -1,0 +1,57 @@
+{
+  "id": "mckean-boltzmann-entropy-disproof-2026",
+  "title": "Disproof of McKean’s 1966 Boltzmann Entropy-Production Monotonicity Conjecture",
+  "shortTitle": "McKean Boltzmann Entropy Disproof",
+  "date": "2026-09-01",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Kinetic Theory",
+    "Statistical Mechanics",
+    "Partial Differential Equations"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-5.6 Sol (Codex Ultra) + Claude Code",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 60,
+  "aiTimeToSolve": "Codex Ultra discovery + rewrite",
+  "isAnchor": false,
+  "whyItMatters": "PDE leader Luis Silvestre disclosed GPT-5.6 Sol (Codex Ultra) found explicit Maxwellian mixtures disproving McKean’s 60-year-old conjecture that Boltzmann entropy production decreases monotonically.",
+  "summary": "Posted on September 1, 2026, renowned University of Chicago PDE mathematician Luis Silvestre resolved a 60-year-old open question posed by Henry McKean in 1966: whether the entropy production functional of the spatially homogeneous Boltzmann equation must decrease monotonically in time (a higher-order cousin of Boltzmann’s H-theorem). Silvestre’s paper constructs explicit radially symmetric mixtures of Maxwellian distributions showing entropy production is not always monotone decreasing for constant angular cross-sections across kinetic parameters γ ∈ [0, 1], covering both physically canonical regimes—hard spheres and Maxwell molecules. In his AI disclosure, Silvestre explicitly credited ChatGPT 5.6 Sol running in Codex Ultra mode with obtaining the first proof, which was then rewritten via Claude Code and restructured and verified by Silvestre.",
+  "technicalHighlights": [
+    "Disproves McKean’s 1966 conjecture across the physically standard Boltzmann models (both hard spheres and Maxwell molecules, γ ∈ [0, 1]).",
+    "Uses explicit radially symmetric mixtures of Maxwellian distributions rather than pathological edge cases.",
+    "First proof discovered by GPT-5.6 Sol in Codex Ultra mode, rewritten with Claude Code, and rigorously verified by a leading PDE specialist (Luis Silvestre)."
+  ],
+  "caveats": "Author-verified preprint awaiting formal journal peer review; the analogous question for the Landau kinetic equation remains open.",
+  "contributors": [
+    "Luis Silvestre",
+    "OpenAI GPT-5.6 Sol",
+    "Anthropic Claude Code"
+  ],
+  "institutions": [
+    "University of Chicago",
+    "OpenAI",
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 74,
+    "verification": 78,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Settles a 60-year-old foundational question in statistical mechanics and kinetic theory (McKean 1966) for both hard spheres and Maxwell molecules.",
+    "ripple": "High-credibility real-world case study of a top PDE researcher validating an AI-discovered counterexample in classical mathematical physics.",
+    "verification": "Author-verified by one of the world’s leading Boltzmann/PDE experts (Luis Silvestre), pending journal publication.",
+    "velocity": "GPT-5.6 Sol in Codex Ultra discovered the counterexample directly from Silvestre’s notes and prior paper."
+  },
+  "sources": [
+    {
+      "label": "WhatAIFound Registry: McKean Entropy-Production Disproof",
+      "url": "https://whataifound.org/finding/2026-09-01-mckean-entropy-production",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

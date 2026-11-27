@@ -1,0 +1,64 @@
+{
+  "id": "crouzeix-conjecture-2026",
+  "title": "Neurosurgery Resident & GPT-5.6 Sol Prove Crouzeix’s Conjecture in Matrix Analysis",
+  "shortTitle": "Crouzeix’s Conjecture Proof",
+  "date": "2026-07-27",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Matrix Analysis",
+    "Operator Theory",
+    "Numerical Linear Algebra"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-5.6 Sol",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 22,
+  "aiTimeToSolve": "16 hours",
+  "isAnchor": false,
+  "whyItMatters": "A Beijing neurosurgery resident with no math PhD used GPT-5.6 Sol to prove Michel Crouzeix’s 22-year-old matrix-analysis conjecture—confirmed by Crouzeix, Greenbaum, and Townsend.",
+  "summary": "On July 27, 2026, Beijing neurosurgery resident Shanmu Jin posted a preprint proving Crouzeix’s 2004 conjecture (that the numerical range of any matrix is a 2-spectral set), developed via a 16-hour run with GPT-5.6 Sol. Matrix-analysis specialists Michel Crouzeix, Anne Greenbaum, and Alex Townsend independently verified the proof, and a week later Emiel Lorist and Felix Schwenninger published a second independent proof also developed with GPT-5.6 Sol.",
+  "technicalHighlights": [
+    "Settled Crouzeix’s 2004 conjecture on the sharp constant C = 2 bounding ‖p(A)‖ over the numerical range W(A).",
+    "Reviewed and endorsed by Michel Crouzeix, Anne Greenbaum, and Alex Townsend (featured in SIAM News).",
+    "Landmark demonstration of democratization: a non-specialist physician cracked an active research conjecture using consumer-accessible frontier AI."
+  ],
+  "caveats": "Posted initially as an unrefereed preprint without Lean formalization; formal journal publication is pending despite strong expert consensus and an independent second proof.",
+  "contributors": [
+    "Shanmu Jin",
+    "Emiel Lorist",
+    "Felix Schwenninger",
+    "Alex Townsend (Verification)"
+  ],
+  "institutions": [
+    "Peking Union Medical College Hospital",
+    "Delft University of Technology",
+    "University of Twente",
+    "Cornell University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 82,
+    "verification": 94,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Resolved the central 22-year-old open conjecture in spectral-set theory and numerical linear algebra.",
+    "ripple": "Highlighted a major structural shift: domain outsiders can now resolve active math conjectures with frontier AI.",
+    "verification": "Checked and confirmed by Crouzeix, Greenbaum, and Townsend, plus an independent second proof days later.",
+    "velocity": "Produced in a 16-hour AI run by a medical resident outside academic mathematics."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "SIAM News — The Neurosurgery Resident Who Proved Crouzeix’s Conjecture",
+      "url": "https://www.siam.org/publications/siam-news/articles/the-neurosurgery-resident-who-proved-crouzeix-s-conjecture/",
+      "type": "explainer"
+    },
+    {
+      "label": "Lorist & Schwenninger — A solution to Crouzeix’s conjecture (arXiv:2608.03841)",
+      "url": "https://arxiv.org/abs/2608.03841",
+      "type": "paper"
+    }
+  ]
+}

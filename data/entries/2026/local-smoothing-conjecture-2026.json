@@ -1,0 +1,60 @@
+{
+  "id": "local-smoothing-conjecture-2026",
+  "title": "Claimed Proof & Lean Formalization of Sogge’s 1991 Local Smoothing Conjecture",
+  "shortTitle": "Local Smoothing Conjecture (Lean)",
+  "date": "2026-10-25",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Harmonic Analysis",
+    "Partial Differential Equations",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Reasoning Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 35,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Claims a complete resolution of Sogge’s 1991 Local Smoothing Conjecture in all dimensions n ≥ 2—the apex conjecture implying Bochner–Riesz, Fourier Restriction, and Kakeya.",
+  "summary": "Released in the openai/math repository on October 25, 2026 alongside OpenAI’s ETH refutation, a 59-page AI-generated preprint and accompanying Lean 4 formalization claim a full proof of Christopher Sogge’s 1991 Local Smoothing Conjecture for the Euclidean wave equation in every spatial dimension n ≥ 2 via a novel auxiliary PDE construction. Because Local Smoothing sits at the top of harmonic analysis’s classical implication hierarchy—implying the Bochner–Riesz, Fourier Restriction, and Kakeya conjectures—harmonic analyst Alex Iosevich described it as a potential 'historic development' pending full expert refereeing.",
+  "technicalHighlights": [
+    "Claims optimal L^p local smoothing estimates for the Euclidean wave equation across all spatial dimensions n ≥ 2 (open since Sogge 1991).",
+    "Introduces an AI-devised auxiliary PDE argument designed to bypass decades of decoupling and Kakeya bottlenecks.",
+    "Published openly in openai/math with both a 59-page LaTeX paper and accompanying Lean 4 formalization files for community audit."
+  ],
+  "caveats": "Remains an unrefereed preprint under active specialist review. As with other late-2026 self-published Lean dumps from openai/math, independent harmonic analysts must confirm that the Lean statements match the exact classical L^p space-time estimates without hidden hypotheses or scope gaps.",
+  "contributors": [
+    "OpenAI Science Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 94,
+    "ripple": 90,
+    "verification": 64,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "If confirmed, resolves the crowning open conjecture of Euclidean harmonic analysis since 1991, simultaneously implying Bochner–Riesz, Restriction, and Kakeya.",
+    "ripple": "Would reshape modern Fourier analysis, dispersive PDEs, and geometric measure theory overnight.",
+    "verification": "Scored conservatively because despite accompanying Lean files, independent specialist audit and journal refereeing have not yet certified the claim.",
+    "velocity": "Autonomous AI discovery of a claimed all-dimension proof via a new auxiliary PDE technique."
+  },
+  "enables": [
+    "kakeya-higher-dim-2026"
+  ],
+  "sources": [
+    {
+      "label": "OpenAI Math — Local smoothing for the Euclidean wave equation (GitHub PDF, Oct 25, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "Local smoothing conjecture — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Local_smoothing_conjecture",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "carleo-troyer-nqs-2017",
+  "title": "Carleo & Troyer Neural-Network Quantum States Solve Strongly Correlated Many-Body Ground States and Dynamics",
+  "shortTitle": "Neural-Network Quantum States (2017)",
+  "date": "2017-02-10",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Many-Body Physics",
+    "Variational Monte Carlo",
+    "Neural Wavefunctions"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Neural-Network Quantum States (RBM Variational Ansatz)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Variational Monte Carlo optimization",
+  "isAnchor": true,
+  "whyItMatters": "Published in Science, Carleo & Troyer represented exponentially complex quantum many-body wavefunctions as restricted Boltzmann machines—surpassing tensor-network benchmarks on 2D spin lattices and launching neural quantum physics.",
+  "summary": "Published in Science on February 10, 2017, Giuseppe Carleo and Matthias Troyer at ETH Zurich introduced Neural-Network Quantum States (NQS), using restricted Boltzmann machines (RBMs) trained via reinforcement-style variational Monte Carlo to compactly represent exponentially large quantum many-body wavefunctions. On benchmark 1D and 2D transverse-field Ising and antiferromagnetic Heisenberg models, their neural wavefunctions achieved ground-state energies and unitary time-evolution accuracy surpassing state-of-the-art tensor-network and projected entangled-pair state (PEPS) methods—directly inaugurating the neural quantum physics movement that produced FermiNet (2020) and modern neural QMC.",
+  "technicalHighlights": [
+    "Represented complex quantum many-body wavefunctions using restricted Boltzmann machines with complex weights trained by variational Monte Carlo.",
+    "Outperformed leading tensor-network/PEPS baselines on 2D Heisenberg ground-state energies and captured unitary quantum quench dynamics.",
+    "Launched the entire field of Neural-Network Quantum States (NetKet, FermiNet, PauliNet, Psiformer)."
+  ],
+  "caveats": "Initial RBM ansatz struggled with non-stoquastic fermionic sign structures before antisymmetric neural wavefunctions (FermiNet, PauliNet) in 2020.",
+  "contributors": [
+    "Giuseppe Carleo",
+    "Matthias Troyer"
+  ],
+  "institutions": [
+    "ETH Zurich",
+    "Microsoft Quantum"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 93,
+    "verification": 97,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Created the neural-wavefunction paradigm for tackling the exponential Hilbert-space curse in quantum many-body physics.",
+    "ripple": "Cited >4,000 times and directly enabled FermiNet, PauliNet, and modern neural quantum Monte Carlo.",
+    "verification": "Peer-reviewed in Science (Vol. 355, pp. 602–606) with exact variational energy bounds verified against QMC and DMRG.",
+    "velocity": "Dramatically expanded tractable 2D quantum many-body ground-state and dynamical simulations."
+  },
+  "enables": [
+    "ferminet-quantum-chemistry-2020"
+  ],
+  "sources": [
+    {
+      "label": "Science Vol. 355(6325), pp. 602–606 (Feb 10, 2017) — Solving the quantum many-body problem with artificial neural networks",
+      "url": "https://www.science.org/doi/10.1126/science.aag2302",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:1606.02318 — Solving the Quantum Many-Body Problem with Artificial Neural Networks",
+      "url": "https://arxiv.org/abs/1606.02318",
+      "type": "paper"
+    }
+  ]
+}

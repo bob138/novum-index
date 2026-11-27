@@ -1,0 +1,60 @@
+{
+  "id": "deepbind-dna-rna-cnn-2015",
+  "title": "DeepBind Deep CNN Decodes DNA- and RNA-Binding Protein Specificities and Uncovers Disease-Causing Mutations",
+  "shortTitle": "DeepBind Genomic CNN (Nat. Biotech., 2015)",
+  "date": "2015-07-27",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Genomics",
+    "Gene Regulation",
+    "Deep Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepBind (Convolutional Neural Network)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "End-to-end motif CNN training",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature Biotechnology, DeepBind was the first deep CNN decoding DNA- and RNA-binding protein specificities directly from raw genomics assays and pinpointing novel disease-causing regulatory mutations.",
+  "summary": "Published in Nature Biotechnology on July 27, 2015, Babak Alipanahi, Andrew Delong, Matthew T. Weirauch, and Brendan J. Frey at the University of Toronto introduced DeepBind, the first convolutional neural network trained directly on high-throughput sequencing data (PBM, ChIP-seq, RNAcompete) to learn sequence binding motifs for over 500 DNA- and RNA-binding proteins. DeepBind outperformed all 26 competing bioinformatics algorithms, generalized across experimental assays (in vitro to in vivo), and introduced in silico “mutation maps” that automatically pinpointed pathogenic noncoding regulatory variants in human disease—launching deep learning in functional genomics.",
+  "technicalHighlights": [
+    "First convolutional neural network architecture learning sequence binding specificities directly from raw nucleotide strings across >500 proteins.",
+    "Beat all 26 classical motif-finding algorithms and generalized zero-shot from in vitro binding arrays to in vivo ChIP-seq data.",
+    "Introduced in silico mutagenesis maps revealing disrupted transcription-factor binding sites behind hereditary diseases and cancers."
+  ],
+  "caveats": "Modeled short local binding windows (~14–101 bp) without capturing long-range 3D chromatin interactions.",
+  "contributors": [
+    "Babak Alipanahi",
+    "Andrew Delong",
+    "Matthew T. Weirauch",
+    "Brendan J. Frey"
+  ],
+  "institutions": [
+    "University of Toronto",
+    "Cincinnati Children’s Hospital"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 91,
+    "verification": 96,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Inaugurated deep convolutional sequence modeling in genomics and regulatory-mutation discovery.",
+    "ripple": "Directly inspired DeepSEA, SpliceAI, Enformer, Evo, and AlphaGenome across computational genomics.",
+    "verification": "Peer-reviewed in Nature Biotechnology (Vol. 33, pp. 831–838) with extensive cross-assay biological validation.",
+    "velocity": "Automated motif and variant-effect scoring across millions of genomic sequences."
+  },
+  "enables": [
+    "deepsea-noncoding-variants-2015",
+    "spliceai-cryptic-splicing-2019"
+  ],
+  "sources": [
+    {
+      "label": "Nature Biotechnology Vol. 33(8), pp. 831–838 (Jul 27, 2015) — Predicting the sequence specificities of DNA- and RNA-binding proteins by deep learning",
+      "url": "https://www.nature.com/articles/nbt.3300",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "non-sofic-groups-2026",
+  "title": "Formal Lean Proof of the Existence of Non-Sofic Groups",
+  "shortTitle": "Existence of Non-Sofic Groups",
+  "date": "2026-08-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Geometric Group Theory",
+    "Formal Verification",
+    "Combinatorics"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Internal GPT-6 Astra (OpenAI)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 27,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Resolves Mikhail Gromov's famous 1999 open question in group theory by constructing a non-sofic group—one that cannot be approximated by finite symmetric groups—with a Lean formalization.",
+  "summary": "In August 2026, OpenAI's internal Astra model produced a Lean-formalized proof settling the 27-year-old open question of whether every countable group is sofic. Introduced by Mikhail Gromov in 1999 and named by Benjamin Weiss, soficity generalizes amenable and residually finite groups and underpinned major results like Gottschalk's surjunctivity conjecture. Demonstrating that non-sofic groups exist closed one of geometric group theory's most stubborn foundational questions.",
+  "technicalHighlights": [
+    "Settles a landmark open problem posed by Mikhail Gromov in 1999 across geometric group theory and ergodic theory.",
+    "Accompanied by a machine-checked Lean formalization.",
+    "Part of the mid-2026 inflection when frontier reasoning models began resolving long-standing research-level conjectures."
+  ],
+  "caveats": "As with several 2026 AI-authored formal proofs, extracting streamlined human-readable expositions and testing the boundaries of related hyperlinear-group conjectures remain active follow-up work.",
+  "contributors": [
+    "OpenAI Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 78,
+    "verification": 87,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Answers a 27-year central structural question in geometric group theory and symbolic dynamics.",
+    "ripple": "Clarifies the exact boundaries of sofic entropy, Gottschalk surjunctivity, and Kaplansky's direct finiteness conjecture.",
+    "verification": "Backed by a Lean formalization, though human distillation and broader textbook integration are ongoing.",
+    "velocity": "An autonomous frontier model resolved a conjecture that resisted top group theorists for nearly three decades."
+  },
+  "enables": [
+    "kothe-conjecture-disproof-2026",
+    "openai-math-bulk-ugc-2026",
+    "quantum-parallel-repetition-astra10-2026"
+  ],
+  "sources": [
+    {
+      "label": "Wikipedia: Mathematics and artificial intelligence (2026 discoveries table)",
+      "url": "https://en.wikipedia.org/wiki/Mathematics_and_artificial_intelligence",
+      "type": "explainer"
+    },
+    {
+      "label": "Wikipedia: List of mathematical discoveries made with artificial intelligence",
+      "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+      "type": "explainer"
+    }
+  ]
+}

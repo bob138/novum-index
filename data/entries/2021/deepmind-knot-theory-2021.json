@@ -1,0 +1,61 @@
+{
+  "id": "deepmind-knot-theory-2021",
+  "title": "AI-Guided Discovery of New Theorems in Knot Theory & Representation Theory",
+  "shortTitle": "DeepMind Knot Theory (Anchor)",
+  "date": "2021-12-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Low-Dimensional Topology",
+    "Representation Theory",
+    "AI-Guided Conjecturing"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepMind Attribution Neural Networks",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 40,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First landmark Nature demonstration that machine learning attribution can guide pure mathematicians to discover and prove wholly new theorems across topology and algebra.",
+  "summary": "Google DeepMind partnered with mathematicians at Oxford and Sydney to train neural networks on mathematical invariants and apply saliency attribution to surface hidden relationships. The framework led directly to a new theorem linking the algebraic signature and geometric natural slope of hyperbolic knots, plus a new candidate algorithm for Kazhdan–Lusztig polynomials advancing the 40-year-old combinatorial invariance conjecture.",
+  "technicalHighlights": [
+    "Discovered and rigorously proved a new quantitative connection between hyperbolic knot geometry (natural slope) and algebraic knot signature.",
+    "Identified a salient subgraph structure predicting Kazhdan–Lusztig polynomials from Bruhat intervals, advancing Lusztig and Dyer’s combinatorial invariance conjecture.",
+    "Established the \"human intuition guided by ML attribution\" workflow that preceded generative LLM theorem discovery."
+  ],
+  "caveats": "Neural networks surfaced patterns and candidate conjectures rather than writing formal proofs; human mathematicians formulated and proved the final theorems.",
+  "contributors": [
+    "Alex Davies",
+    "Petar Veličković",
+    "András Juhász",
+    "Marc Lackenby",
+    "Geordie Williamson"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "University of Oxford",
+    "University of Sydney"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 89,
+    "verification": 99,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Established genuine peer-reviewed theorems in pure math via ML-guided conjecture generation.",
+    "ripple": "Catalyzed the modern AI-for-pure-mathematics movement and human-AI conjecture loops.",
+    "verification": "Published in Nature with complete human-verified mathematical proofs.",
+    "velocity": "Opened a new discovery paradigm years before reasoning LLMs could write formal proofs."
+  },
+  "enables": [
+    "alphaevolve-67-math-problems-2025"
+  ],
+  "sources": [
+    {
+      "label": "Davies et al. — Advancing mathematics by guiding human intuition with AI (Nature 2021)",
+      "url": "https://www.nature.com/articles/s41586-021-04086-x",
+      "type": "paper"
+    }
+  ]
+}

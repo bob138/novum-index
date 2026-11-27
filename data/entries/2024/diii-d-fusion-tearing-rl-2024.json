@@ -1,0 +1,63 @@
+{
+  "id": "diii-d-fusion-tearing-rl-2024",
+  "title": "Deep Reinforcement Learning Proactively Prevents Disruptive Tearing Instabilities in the DIII-D Fusion Tokamak",
+  "shortTitle": "DIII-D Fusion Tearing RL (Nature)",
+  "date": "2024-02-21",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Nuclear Fusion",
+    "Plasma Physics",
+    "Deep Reinforcement Learning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Princeton / PPPL Multimodal Deep Reinforcement Learning Plasma Controller",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Millisecond real-time control",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, Princeton engineers deployed a real-time deep RL controller on the DIII-D tokamak that forecasted and proactively prevented plasma-terminating tearing instabilities 300 ms ahead of disruption.",
+  "summary": "Published in Nature on February 21, 2024, Jaemin Seo, Egemen Kolemen, and collaborators at Princeton University, Princeton Plasma Physics Laboratory (PPPL), and General Atomics demonstrated an autonomous deep reinforcement learning controller running live on the DIII-D National Fusion Facility tokamak. Unlike DeepMind’s 2022 TCV breakthrough focused on magnetic plasma shaping, the Princeton system paired a neural tearing-mode predictor with a DRL policy trained on historical plasma discharges to continuously steer neutral-beam heating and triangularity—keeping tearing probability below critical thresholds even under ITER-relevant high-performance plasma regimes.",
+  "technicalHighlights": [
+    "Predicted destructive magnetic tearing instabilities up to 300 milliseconds in advance from multimodal reactor sensor streams.",
+    "Autonomously adjusted neutral-beam power and plasma shape in real time on physical DIII-D discharges to avoid disruptions while maintaining high fusion gain.",
+    "Validated under low-torque, ITER-baseline-like operating conditions where passive tearing modes otherwise routinely terminate plasma confinement."
+  ],
+  "caveats": "Demonstrated on the DIII-D tokamak; transferring policies to burning-plasma reactors like ITER or commercial plants will require adapting to distinct wall materials, alpha-heating dynamics, and tighter actuator constraints.",
+  "contributors": [
+    "Jaemin Seo",
+    "SangKyeun Kim",
+    "Azarakhsh Jalalvand",
+    "Egemen Kolemen"
+  ],
+  "institutions": [
+    "Princeton University",
+    "Princeton Plasma Physics Laboratory (PPPL)",
+    "General Atomics (DIII-D)"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 94,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Solves one of the most dangerous operational obstacles to tokamak fusion energy—proactive avoidance of tearing-mode disruptions—via learned closed-loop control.",
+    "ripple": "Directly informs real-time AI control architectures for ITER, SPARC, and commercial fusion reactors.",
+    "verification": "Peer-reviewed in Nature (Vol. 626, pp. 746–751) with live experimental validation inside the largest US magnetic fusion facility.",
+    "velocity": "Executes complex multi-actuator plasma stabilization decisions on millisecond timescales faster than manual physics controllers."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PubMed / Nature (Feb 21, 2024) — Avoiding fusion plasma tearing instability with deep reinforcement learning",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38383624/",
+      "type": "paper"
+    },
+    {
+      "label": "US Department of Energy — AI Tackles Disruptive Tearing Instability in Fusion Plasma",
+      "url": "https://www.energy.gov/science/fes/articles/ai-tackles-disruptive-tearing-instability-fusion-plasma",
+      "type": "announcement"
+    }
+  ]
+}

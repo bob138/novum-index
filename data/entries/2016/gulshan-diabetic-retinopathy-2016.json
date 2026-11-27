@@ -1,0 +1,72 @@
+{
+  "id": "gulshan-diabetic-retinopathy-2016",
+  "title": "Google Deep Learning CNN Achieves Ophthalmologist-Level Diabetic Retinopathy Screening in Landmark JAMA Study",
+  "shortTitle": "Diabetic Retinopathy CNN (JAMA, 2016)",
+  "date": "2016-11-29",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical AI",
+    "Medical Imaging",
+    "Ophthalmology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Inception-v3 Retinal CNN (Google Research)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Sub-second retinal grading",
+  "isAnchor": true,
+  "whyItMatters": "Published in JAMA, Google’s Inception-v3 CNN trained on 128,175 ophthalmologist-graded fundus photographs achieved 0.99 AUC and >97% sensitivity—catalyzing the modern clinical medical-imaging AI era and FDA approvals.",
+  "summary": "Published online in JAMA on November 29, 2016 (print December 13, 2016), Varun Gulshan, Lily Peng, Marc Coram, Dale R. Webster, and collaborators at Google Research trained a deep Inception-v3 convolutional neural network on 128,175 retinal fundus images graded multiple times by 54 licensed ophthalmologists. Validated across two independent clinical cohorts (EyePACS-1 and Messidor-2), the model achieved 0.991 and 0.990 AUC—97.5% sensitivity / 93.4% specificity at high-sensitivity operating points—matching or exceeding board-certified ophthalmologists and catalyzing clinical deployment of autonomous screening systems across ophthalmology and radiology.",
+  "technicalHighlights": [
+    "Trained a deep Inception-v3 CNN ensemble on 128,175 retinal photographs with multi-grader clinical consensus labels.",
+    "Achieved 0.991 AUC (EyePACS-1) and 0.990 AUC (Messidor-2), matching specialist ophthalmologist sensitivity and specificity.",
+    "Catalyzed prospective clinical trials and the FDA’s landmark regulatory pathway for autonomous diagnostic medical AI."
+  ],
+  "caveats": "Retrospective validation on curated fundus images; subsequent real-world clinic deployments (e.g., Thailand, 2020) highlighted lighting and image-quality workflow challenges.",
+  "contributors": [
+    "Varun Gulshan",
+    "Lily Peng",
+    "Marc Coram",
+    "Martin C. Stumpe",
+    "Derek Wu",
+    "Arunachalam Narayanaswamy",
+    "Subhashini Venugopalan",
+    "Kasumi Widner",
+    "Tom Madams",
+    "Jorge Cuadros",
+    "Ramasamy Kim",
+    "Rajiv Raman",
+    "Philip C. Nelson",
+    "Jessica L. Mega",
+    "Dale R. Webster"
+  ],
+  "institutions": [
+    "Google Research",
+    "EyePACS",
+    "Aravind Eye Care System",
+    "Sankara Nethralaya"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "First blockbuster clinical deep-learning study in JAMA proving end-to-end CNNs match subspecialist physicians at scale.",
+    "ripple": "Triggered the global clinical medical-AI wave across ophthalmology, dermatology, radiology, and pathology.",
+    "verification": "Peer-reviewed in JAMA (Vol. 316, pp. 2402–2410) with multi-center blinded ophthalmologist adjudication.",
+    "velocity": "Grades retinal scans in milliseconds vs. scarce specialist bottlenecks in developing regions."
+  },
+  "enables": [
+    "defauw-moorfields-retinal-oct-2018"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / JAMA (Dec 13, 2016) — Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27898976/",
+      "type": "paper"
+    }
+  ]
+}

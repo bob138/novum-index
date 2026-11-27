@@ -1,0 +1,60 @@
+{
+  "id": "theta-valley-delta-conjecture-2026",
+  "title": "AI-Assisted Proof & 6-Kernel Lean 4 Formalization of the Theta and Valley Delta Conjectures",
+  "shortTitle": "Theta & Valley Delta Conjectures",
+  "date": "2026-11-09",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Algebraic Combinatorics",
+    "Macdonald Polynomials",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI ChatGPT + Lean 4 (Six-Kernel Verified)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Human-AI proof + 6-kernel Lean 4",
+  "isAnchor": false,
+  "whyItMatters": "Nankai University combinatorialists working with ChatGPT proved the touch-refined Theta conjecture—implying the open valley Delta conjecture of Haglund, Remmel & Wilson—with a 6-kernel-checked Lean 4 library.",
+  "summary": "Released on GitHub in November 2026 (github.com/qiudun123/theta-conjecture), five combinatorialists at the Center for Combinatorics, Nankai University (including Dun Qiu) credited ChatGPT with assisting proof development of the touch-refined Theta conjecture of D’Adderio, Iraci, and Vanden Wyngaerd, which connects symmetric-function Macdonald/Theta operators to parking functions with decorated rises and contractible valleys. As immediate corollaries, the theorem settles the long-open valley version of the Haglund–Remmel–Wilson Delta conjecture and the generalized valley Delta conjecture of Qiu and Wilson. The core touching and summed Theta identities were formalized in Lean 4.35.0 / Mathlib (849 files, zero sorry, zero warnings) and passed full build, axiom audit, and six-kernel replay.",
+  "technicalHighlights": [
+    "Proves the touch-refined Theta conjecture in algebraic combinatorics, implying the open valley Delta conjecture and its generalized version.",
+    "Formalized in Lean 4.35.0 with Mathlib (zero sorry, warningAsError) and verified via full six-kernel replay.",
+    "Cited in Wolfram MathWorld’s Macdonald Polynomial entry as an AI-assisted resolution with formal Lean verification."
+  ],
+  "caveats": "The Lean formalization certifies the touching and summed Theta identities directly; the Delta-operator translation corollaries (1.5(2)–(3)) are proved in the manuscript rather than formalized in Lean.",
+  "contributors": [
+    "Dun Qiu",
+    "Nankai Center for Combinatorics"
+  ],
+  "institutions": [
+    "Nankai University",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 70,
+    "verification": 92,
+    "velocity": 80
+  },
+  "scoreRationale": {
+    "foundational": "Resolves central open conjectures in Macdonald polynomial and parking-function combinatorics (Theta and valley Delta conjectures).",
+    "ripple": "Shows working domain mathematicians pairing ChatGPT with multi-kernel Lean 4 verification for intricate algebraic combinatorics.",
+    "verification": "Main Theta identities passed full Lean 4.35.0 build, axiom audits, and six-kernel replay.",
+    "velocity": "Compressed both intricate q,t-combinatorial proof discovery and 849-file formal verification into a unified release."
+  },
+  "sources": [
+    {
+      "label": "GitHub: qiudun123/theta-conjecture (Lean 4)",
+      "url": "https://github.com/qiudun123/theta-conjecture",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Wolfram MathWorld: Macdonald Polynomial Update",
+      "url": "https://mathworld.wolfram.com/MacdonaldPolynomial.html",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

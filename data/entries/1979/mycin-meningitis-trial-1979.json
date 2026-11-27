@@ -1,0 +1,62 @@
+{
+  "id": "mycin-meningitis-trial-1979",
+  "title": "Stanford MYCIN Expert System Matches and Outperforms Infectious-Disease Specialists in Blinded JAMA Meningitis Evaluation",
+  "shortTitle": "MYCIN Clinical Trial (JAMA, 1979)",
+  "date": "1979-09-21",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical Decision Support",
+    "Expert Systems",
+    "Infectious Disease"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "MYCIN (Stanford Rule-Based Expert System)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Interactive clinical consultation",
+  "isAnchor": true,
+  "whyItMatters": "Landmark JAMA blinded trial showing a symbolic AI (~450 backward-chaining rules with certainty factors) outperformed five Stanford infectious-disease faculty specialists on meningitis antimicrobial selection.",
+  "summary": "Published in JAMA on September 21, 1979, Victor L. Yu, Lawrence M. Fagan, Edward H. Shortliffe, Bruce G. Buchanan, and colleagues at Stanford University conducted a rigorous blinded evaluation of MYCIN against human clinicians on ten complex cases of acute infectious meningitis. Eight independent national infectious-disease experts scored de-identified prescriptions: MYCIN achieved 65% therapeutic acceptability—outscoring every individual Stanford faculty specialist (42.5% to 62.5%), fellows, residents, and actual treating physicians—while never failing to cover a treatable pathogen. MYCIN established certainty-factor reasoning, explainable backward-chaining inference, and rigorous blinded clinical benchmarking for medical AI.",
+  "technicalHighlights": [
+    "Encoded ~450 domain production rules with certainty factors to reason under clinical uncertainty and incomplete lab cultures.",
+    "Achieved 65% blinded expert acceptability vs. 42.5%–62.5% for Stanford infectious-disease faculty specialists.",
+    "Provided natural-language explanation traces (“why” and “how” queries) justifying every recommended antimicrobial regimen."
+  ],
+  "caveats": "Evaluated on 10 complex retrospective meningitis cases and never deployed into routine hospital care due to 1970s compute/data-entry friction and clinical liability norms.",
+  "contributors": [
+    "Victor L. Yu",
+    "Lawrence M. Fagan",
+    "Sharon M. Wraith",
+    "William J. Clancey",
+    "A. Carlisle Scott",
+    "Edward H. Shortliffe",
+    "Bruce G. Buchanan"
+  ],
+  "institutions": [
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 89,
+    "verification": 91,
+    "velocity": 68
+  },
+  "scoreRationale": {
+    "foundational": "First blinded clinical proof that an AI reasoning system could match or exceed subspecialist physicians on high-stakes diagnostic therapy.",
+    "ripple": "Defined the expert-system architecture (eMYCIN, PROSPECTOR) and set the methodological template for modern clinical AI trials.",
+    "verification": "Peer-reviewed blinded evaluation published in JAMA (Vol. 242, No. 12, pp. 1279–1282).",
+    "velocity": "Real-time consultation on mainframe terminals, though rule engineering required years."
+  },
+  "enables": [
+    "gulshan-diabetic-retinopathy-2016",
+    "esteva-skin-cancer-cnn-2017"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / JAMA (Sep 21, 1979) — Antimicrobial selection by a computer: a blinded evaluation by infectious diseases experts",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/480542/",
+      "type": "paper"
+    }
+  ]
+}

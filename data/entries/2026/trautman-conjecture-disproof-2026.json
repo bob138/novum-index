@@ -1,0 +1,59 @@
+{
+  "id": "trautman-conjecture-disproof-2026",
+  "title": "AI-Assisted Smooth Counterexample to the Trautman Conjecture in CR Geometry & General Relativity",
+  "shortTitle": "Trautman Conjecture Disproof",
+  "date": "2026-09-02",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "General Relativity",
+    "Cauchy–Riemann Geometry",
+    "Differential Geometry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI ChatGPT (Differential Geometry Assistant)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 35,
+  "aiTimeToSolve": "Human-AI geometric construction",
+  "isAnchor": false,
+  "whyItMatters": "Working with ChatGPT, geometer Sean N. Curry constructed a smooth strongly pseudoconvex counterexample refuting Andrzej Trautman’s CR-geometry conjecture tied to 4D null electromagnetic spacetimes.",
+  "summary": "Posted to arXiv on September 2, 2026 (arXiv:2609.03198), mathematician Sean N. Curry—crediting ChatGPT with helping construct the argument—disproved Andrzej Trautman’s conjecture from general relativity and Cauchy–Riemann (CR) geometry. Trautman had conjectured that any smooth 3-dimensional CR manifold admitting a nowhere-zero closed section of its canonical bundle (equivalently a unimodular CR structure arising from null geodesic congruences in 4D Lorentzian spacetimes with null electromagnetic fields) must be locally embeddable in ℂ². Curry modified a nonembeddable strongly pseudoconvex CR structure via divergence-free vector fields so that the closed canonical form is preserved, proving that even arbitrarily small C¹ perturbations of S³ yield nonembeddable pseudo-Einstein CR structures and revealing a far richer family of 4D spacetime constructions than expected.",
+  "technicalHighlights": [
+    "Refutes Trautman’s conjecture even in the strongly pseudoconvex (pseudo-Einstein) case and arbitrarily close in C¹ norm to the standard 3-sphere S³.",
+    "Shows Bryant’s geometric flow on unimodular CR 3-manifolds cannot always admit smooth two-sided local solutions.",
+    "Expands the known class of 3D CR manifolds generating 4D Lorentzian spacetimes with null electromagnetic fields."
+  ],
+  "caveats": "Preliminary arXiv preprint awaiting independent journal refereeing; no formal Lean verification has been published.",
+  "contributors": [
+    "Sean N. Curry"
+  ],
+  "institutions": [
+    "Independent / Academic",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 72,
+    "ripple": 62,
+    "verification": 66,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "Overturns a decades-old conjecture at the intersection of Cauchy–Riemann geometry and general relativity (Trautman’s null-field program).",
+    "ripple": "Demonstrates LLMs contributing subtle smooth-perturbation counterexamples in differential geometry and mathematical relativity.",
+    "verification": "Author-checked arXiv preprint indexed by Wolfram MathWorld, pending independent refereeing.",
+    "velocity": "ChatGPT helped identify the divergence-free modification preserving the closed canonical bundle section."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2609.03198 (A Smooth Counterexample to the Trautman Conjecture)",
+      "url": "https://arxiv.org/abs/2609.03198",
+      "type": "paper"
+    },
+    {
+      "label": "Wolfram MathWorld: Trautman Conjecture",
+      "url": "https://mathworld.wolfram.com/TrautmanConjecture.html",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

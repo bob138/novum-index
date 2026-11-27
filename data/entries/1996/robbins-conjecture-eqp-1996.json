@@ -1,0 +1,63 @@
+{
+  "id": "robbins-conjecture-eqp-1996",
+  "title": "Automated Theorem Prover EQP Solves the 63-Year-Old Robbins Conjecture",
+  "shortTitle": "Robbins Conjecture (EQP, 1996)",
+  "date": "1996-10-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Universal Algebra",
+    "Boolean Algebra",
+    "Automated Theorem Proving"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "EQP (Equational Theorem Prover)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 63,
+  "aiTimeToSolve": "8 days",
+  "isAnchor": true,
+  "whyItMatters": "The foundational pre-neural milestone in autonomous AI mathematics: solved a 63-year-old algebra conjecture that defeated Alfred Tarski.",
+  "summary": "Posed by Herbert Robbins in 1933 and studied unsuccessfully by Alfred Tarski and generations of algebraists, the Robbins Conjecture asked whether every Robbins algebra is a Boolean algebra. On October 10, 1996, William McCune’s specialized symbolic equational prover EQP at Argonne National Laboratory autonomously discovered a complete proof in eight days on a workstation, outputting a machine-checked proof object later simplified and formalized in Isabelle/HOL.",
+  "technicalHighlights": [
+    "Used associative-commutative (AC) unification and paramodulation strategies in EQP to prove Winker’s sufficient condition automatically.",
+    "First widely celebrated resolution of a longstanding open mathematical conjecture by a fully autonomous computer reasoning program.",
+    "Produced a complete machine-verifiable proof object checked independently, later streamlined by Dahn (1998) and formalized in the Archive of Formal Proofs."
+  ],
+  "caveats": "Required extensive human algebraic reductions (Winker’s lemmas) and hand-crafted equational search heuristics; pure symbolic provers remained largely isolated to narrow algebraic/logic niches for the next two decades until neural networks arrived.",
+  "contributors": [
+    "William McCune",
+    "Larry Wos",
+    "Steve Winker"
+  ],
+  "institutions": [
+    "Argonne National Laboratory"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 84,
+    "verification": 98,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "Resolved a famous 63-year-old foundational algebra problem that resisted Alfred Tarski and decades of human mathematicians.",
+    "ripple": "Became the canonical proof-of-concept for automated mathematical discovery, directly motivating generations of ATP and formal verification research.",
+    "verification": "Produced a machine-checked formal proof object verified by independent checkers and published in the Journal of Automated Reasoning.",
+    "velocity": "Closed a 63-year open problem in 8 days of workstation search—though symbolic provers only achieved a handful of such wins across the next 24 years."
+  },
+  "enables": [
+    "boolean-pythagorean-triples-2016",
+    "alphaproof-imo-2024"
+  ],
+  "sources": [
+    {
+      "label": "Journal of Automated Reasoning — Solution of the Robbins Problem (1997)",
+      "url": "https://doi.org/10.1023/A:1005843212881",
+      "type": "paper"
+    },
+    {
+      "label": "William McCune — Official EQP Proof Archive (Oct 10, 1996)",
+      "url": "https://www.cs.unm.edu/~mccune/papers/robbins/",
+      "type": "announcement"
+    }
+  ]
+}

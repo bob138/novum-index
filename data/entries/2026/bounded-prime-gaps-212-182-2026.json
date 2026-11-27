@@ -1,0 +1,71 @@
+{
+  "id": "bounded-prime-gaps-212-182-2026",
+  "title": "AI Pushes Bounded Prime Gaps Below 246 to 212 (AxiomProver) and 186 / 182 (GPT-6 Astra)",
+  "shortTitle": "Bounded Prime Gaps: 212 & 186/182",
+  "date": "2026-09-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Prime Gaps",
+    "Sieve Methods"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AxiomProver (Axiom Math) & GPT-6 Astra (OpenAI)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 177,
+  "aiTimeToSolve": "Days after Stadlmann’s 240",
+  "isAnchor": false,
+  "whyItMatters": "Days after Julia Stadlmann broke Polymath8b’s 12-year record of 246 with 240, AxiomProver certified a sieve deduction to 212 while GPT-6 Astra pushed conditional Lean bounds to 186 and 182.",
+  "summary": "In early September 2026—immediately after Julia Stadlmann’s August 31 breakthrough (arXiv:2608.31126) lowered Polymath8b’s 12-year bounded prime gaps record from 246 to 240—two competing AI-powered analytic number theory efforts drove the bound sharply lower. On September 3, Axiom Math’s team (Ken Ono, François Charton, Ashvin Swaminathan, Jesse Thorner, et al.) optimized Stadlmann’s sieve to H₁ ≤ 212 and used AxiomProver to generate a Lean 4 certificate of the deduction (github.com/AxiomMath/BGP212). Concurrently, OpenAI’s GPT-6 Astra released a conditional Lean 4 development claiming H₁ ≤ 186 (github.com/openai/PrimeGaps186, Sept 2), followed two days later by UCLA number theorist Romyar Sharifi prompting GPT-6 Astra to reach H₁ ≤ 182 across 918 audited Lean modules (github.com/romyar1/prime-gaps-lean, Sept 4).",
+  "technicalHighlights": [
+    "Axiom Math (9 authors + AxiomProver) pushed bounded prime gaps from Stadlmann’s 240 to 212 with a Lean 4 deduction certificate (BGP212).",
+    "OpenAI GPT-6 Astra (PrimeGaps186) and Romyar Sharifi + GPT-6 Astra (prime-gaps-lean) pushed conditional Lean sieve bounds further to 186 and 182.",
+    "All developments check the intricate sieve/analytic deduction in Lean 4 while explicitly displaying external analytic/numerical hypotheses."
+  ],
+  "caveats": "None of the 212, 186, or 182 Lean repositories is an unconditional end-to-end proof from first principles: each retains stated analytic equidistribution theorems and numerical integral inequalities as explicit Lean axioms/hypotheses, and peer review is ongoing.",
+  "contributors": [
+    "Ken Ono",
+    "François Charton",
+    "Ashvin A. Swaminathan",
+    "Jesse Thorner",
+    "Romyar Sharifi",
+    "Axiom Math",
+    "OpenAI"
+  ],
+  "institutions": [
+    "Axiom Math",
+    "OpenAI",
+    "UCLA"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 76,
+    "verification": 72,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Substantially sharpens the famous Zhang–Maynard–Polymath8b bounded prime gaps frontier (246 → 212 → 186 → 182) toward Twin Primes.",
+    "ripple": "Triggered intense community debate over AI-accelerated follow-ups to junior researchers’ breakthroughs and conditional Lean certificates.",
+    "verification": "Deduction steps are machine-checked in Lean 4, but all three bounds remain conditional on external analytic/numerical inputs and unrefereed.",
+    "velocity": "Multiple competing AI teams broke the 240 barrier within 72 hours of Stadlmann’s preprint appearing."
+  },
+  "sources": [
+    {
+      "label": "GitHub: romyar1/prime-gaps-lean (182 Bound)",
+      "url": "https://github.com/romyar1/prime-gaps-lean",
+      "type": "formal-verification"
+    },
+    {
+      "label": "WhatAIFound: AxiomProver 212 Bound",
+      "url": "https://whataifound.org/finding/2026-09-03-prime-gaps-212",
+      "type": "explainer"
+    },
+    {
+      "label": "WhatAIFound: OpenAI GPT-6 Astra 186 Bound",
+      "url": "https://whataifound.org/finding/2026-09-02-prime-gaps-186",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

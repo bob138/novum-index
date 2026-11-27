@@ -1,0 +1,70 @@
+{
+  "id": "zeta-5-irrationality-lean-2026",
+  "title": "Irrationality of ζ(5) — Multi-Assistant Lean 4 & Isabelle/HOL Formal Verification",
+  "shortTitle": "Irrationality of ζ(5) (Lean & AFP)",
+  "date": "2026-09-17",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Special Zeta Values",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Opus 5 / 5.5 Multi-Agent Lean Provers + AI-Assisted Preprint",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 48,
+  "aiTimeToSolve": "1–2 wks for dual Lean 4 proofs",
+  "isAnchor": false,
+  "whyItMatters": "Forty-eight years after Apéry’s proof for ζ(3), Aabir Fauzan’s proof that ζ(5) is irrational was rapidly verified in Lean 4 by Claude Opus 5/5.5 agents, checked axiom-free in Formal Conjectures, and ported to Isabelle.",
+  "summary": "On September 17, 2026, Aabir Fauzan (Aalto University) posted a Zenodo preprint (DOI: 10.5281/zenodo.22826418, disclosing generative AI assistance for checks and editing) proving that ζ(5) = ∑ 1/n⁵ is irrational via rationally normalized Hankel determinants—settling the most famous odd-zeta irrationality problem since Roger Apéry’s 1978 proof for ζ(3). Within days, two independent Lean 4 formalizations verified the result: Moritz Firsching (Google DeepMind, mo271/Zeta5, Sept 23) completed a zero-sorry, standard-axioms-only Lean proof matched via Comparator to Formal Conjectures (merged Sept 29), while Dan Romik directed Claude Opus 5 and Claude Opus 5.5 multi-agent workflows in Claude Code (danromik/zeta5-irrationality, Sept 25) to formalize Fauzan’s preprint section-by-section in 29,400 lines (conditional only on PNT) while catching and fixing a missing inequality on p. 10. On October 26, 2026, the proof was independently ported to Isabelle/HOL’s Archive of Formal Proofs.",
+  "technicalHighlights": [
+    "Settles the 48-year-old problem of the irrationality of ζ(5) (first individual odd zeta value proved irrational since Apéry’s ζ(3) in 1978).",
+    "Claude Opus 5 / 5.5 multi-agent workflows directed by Dan Romik formalized 29,400 lines of Lean 4 following the paper section-by-section and repaired an unproved inequality.",
+    "Independently verified axiom-free against DeepMind’s Formal Conjectures (mo271/Zeta5, PR #6517) and cross-verified in Isabelle/HOL’s Archive of Formal Proofs."
+  ],
+  "caveats": "Fauzan’s original mathematical idea came from a human author using AI in a supporting role; AI’s decisive verifiable breakthrough here was the rapid multi-agent Lean 4 formalization, auditing, and gap-repair workflow that confirmed the result within days.",
+  "contributors": [
+    "Aabir Fauzan",
+    "Dan Romik",
+    "Moritz Firsching",
+    "Alex Raymond Hyman",
+    "Claude Opus 5 / 5.5"
+  ],
+  "institutions": [
+    "Aalto University",
+    "UC Davis",
+    "Google DeepMind",
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 82,
+    "verification": 98,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Establishes the irrationality of ζ(5), a landmark special-value problem open for 48 years since Apéry’s celebrated 1978 theorem for ζ(3).",
+    "ripple": "Showcased how AI Lean formalization agents can audit, repair, and cross-certify shocking outsider preprints in days rather than years.",
+    "verification": "Independently certified axiom-free in Lean 4 (Formal Conjectures + Comparator), cross-formalized by Claude agents, and ported to Isabelle/HOL AFP.",
+    "velocity": "Moved from an unknown author’s Zenodo preprint to multi-assistant formal certification (Lean 4 + Isabelle) in under six weeks."
+  },
+  "sources": [
+    {
+      "label": "GitHub: danromik/zeta5-irrationality (Claude Opus 5/5.5 Lean 4)",
+      "url": "https://github.com/danromik/zeta5-irrationality",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Isabelle Archive of Formal Proofs: Zeta_5_Irrational",
+      "url": "https://isa-afp.org/entries/Zeta_5_Irrational.html",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Verification Tracker: ζ(5) Checked in Lean",
+      "url": "https://ademb10.com/claims/zeta-5",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

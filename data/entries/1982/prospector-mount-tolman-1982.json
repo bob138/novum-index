@@ -1,0 +1,59 @@
+{
+  "id": "prospector-mount-tolman-1982",
+  "title": "SRI PROSPECTOR Expert System Predicts Hidden Ore-Grade Molybdenum Deposit at Mount Tolman",
+  "shortTitle": "PROSPECTOR Mineral Discovery (1982)",
+  "date": "1982-09-03",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Geoscience",
+    "Expert Systems",
+    "Bayesian Inference Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "PROSPECTOR (SRI Probabilistic Expert System)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Map-level inference run",
+  "isAnchor": true,
+  "whyItMatters": "Published in Science, SRI’s PROSPECTOR became the first AI system to predict a real-world hidden mineral deposit—identifying previously unknown ore-grade molybdenum mineralization at Mount Tolman confirmed by drilling.",
+  "summary": "Published in Science on September 3, 1982, A. N. Campbell, Victor F. Hollister, Richard O. Duda, and Peter E. Hart at SRI International demonstrated that the PROSPECTOR expert system successfully located previously unknown porphyry molybdenum ore mineralization at Mount Tolman in Washington State. Fed digitized pre-drilling geological, geophysical, and geochemical maps, PROSPECTOR propagated subjective Bayesian likelihood ratios across a symbolic geological inference network to output a spatial favorability map whose highest-scoring target matched subsequent exploratory drilling. It was the first field-verified physical resource discovery by an AI program.",
+  "technicalHighlights": [
+    "Combined symbolic rule-based geological models with probabilistic Bayesian inference networks over digitized exploration maps.",
+    "Accurately pinpointed previously unknown ore-grade molybdenum mineralization at Mount Tolman prior to consulting drilling results.",
+    "Field-validated by subsequent core drilling, proving symbolic AI could generate real-world physical discoveries."
+  ],
+  "caveats": "Operated in a previously explored regional district (Mount Tolman) using expert-encoded deposit templates rather than autonomous geological theory formation.",
+  "contributors": [
+    "A. N. Campbell",
+    "Victor F. Hollister",
+    "Richard O. Duda",
+    "Peter E. Hart"
+  ],
+  "institutions": [
+    "SRI International",
+    "U.S. Geological Survey"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 83,
+    "verification": 93,
+    "velocity": 72
+  },
+  "scoreRationale": {
+    "foundational": "First field-verified physical discovery of a hidden natural mineral deposit predicted by an AI program.",
+    "ripple": "Proved commercial and scientific viability of Bayesian inference networks and AI-guided resource exploration.",
+    "verification": "Peer-reviewed in Science (Vol. 217, pp. 927–929) and confirmed by physical drilling data.",
+    "velocity": "Generated spatial favorability maps from regional geological datasets in hours."
+  },
+  "enables": [
+    "dark-reactions-ml-materials-2016"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Science (Sep 3, 1982) — Recognition of a hidden mineral deposit by an artificial intelligence program",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17747953/",
+      "type": "paper"
+    }
+  ]
+}

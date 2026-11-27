@@ -1,0 +1,60 @@
+{
+  "id": "seymour-second-neighborhood-2026",
+  "title": "OpenAI Proves Seymour’s 1990 Second-Neighborhood Conjecture, Corroborated by Specialist Reproof",
+  "shortTitle": "Seymour Second-Neighborhood Conjecture",
+  "date": "2026-09-23",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Graph Theory",
+    "Directed Graphs",
+    "Extremal Combinatorics"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI Internal Reasoning Model (openai/math #173)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 36,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Resolves Paul Seymour’s 36-year-old Second-Neighborhood Conjecture for all finite oriented graphs—one of the flagship OpenAI math proofs to earn an independent specialist human reproof (Nov 24, 2026).",
+  "summary": "Released as entry #173 of OpenAI’s openai/math collection (dated September 23, 2026), an internal OpenAI reasoning model produced a complete proof of Paul Seymour’s 1990 Second-Neighborhood Conjecture: every finite oriented graph contains a vertex whose second out-neighborhood is at least as large as its first. Assuming a hypothetical counterexample exists, the AI proof amplifies the violation into strict subset inequalities that force a counting objective past its maximum. On November 24, 2026, independent graph-theory specialists posted a short alternative reproof combining OpenAI’s reduction with a streamlined out-neighborhood growth argument—elevating the result from the bulk catalog into independently corroborated territory.",
+  "technicalHighlights": [
+    "Resolves Paul Seymour’s 1990 conjecture (|N^{++}(v)| ≥ |N^+(v)| for some vertex v) across all finite oriented graphs without degree or tournament restrictions.",
+    "Avoids prior minimum-degree and median-order bottlenecks by amplifying a putative counterexample into a contradiction on a global subset counting objective.",
+    "Supported on November 24, 2026 by an independent short specialist reproof validating and streamlining OpenAI’s core reduction."
+  ],
+  "caveats": "Both OpenAI’s September 23 manuscript and the November 24 specialist reproof are unrefereed preprints awaiting formal journal peer review and full Lean certification.",
+  "contributors": [
+    "OpenAI Science Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 77,
+    "verification": 84,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Settles one of the best-known open conjectures in directed graph theory since Paul Seymour posed it in 1990.",
+    "ripple": "Proves that genuine, human-verifiable breakthroughs emerged from OpenAI’s autonomous mathematics pipeline and could be rapidly digested and shortened by specialists.",
+    "verification": "Substantially stronger than an unreviewed bulk dump thanks to the independent November 24 specialist reproof, though journal refereeing is still pending.",
+    "velocity": "Solved a stubborn 36-year-old extremal graph theory conjecture autonomously."
+  },
+  "enables": [
+    "openai-math-bulk-ugc-2026"
+  ],
+  "sources": [
+    {
+      "label": "Binary Verse AI — Seymour Second Neighborhood Conjecture: OpenAI Proof Explained",
+      "url": "https://binaryverseai.com/seymour-second-neighborhood-conjecture-proof/",
+      "type": "explainer"
+    },
+    {
+      "label": "Kingy AI Breakthrough Tracker — Specialist Reproof Supports Seymour’s Second-Neighborhood Claim (Nov 24, 2026)",
+      "url": "https://kingy.ai/mathematics-science-breakthrough-tracker/",
+      "type": "explainer"
+    }
+  ]
+}

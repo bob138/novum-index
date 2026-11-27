@@ -1,0 +1,60 @@
+{
+  "id": "yang-mills-existence-2026",
+  "title": "Lean-Verified Proof of 4D Yang–Mills Existence (Mass Gap Open)",
+  "shortTitle": "Yang–Mills Existence (Lean)",
+  "date": "2026-09-09",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Mathematical Physics",
+    "Quantum Field Theory",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Frontier Reasoning Models",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 26,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Establishes a machine-checked mathematical construction of 4D Yang–Mills quantum field theory—resolving the 'existence' half of a Millennium Prize Problem.",
+  "summary": "Following a September 9, 2026 natural-language derivation and subsequent Lean formalization announced by OpenAI alongside academic physicists, a verification committee chaired by Nobel laureate David Gross confirmed on November 9–10, 2026 that the Lean proof of the existence portion of 4D Yang–Mills theory passes formal verification. The crucial mass-gap half of the Clay Millennium Problem—explaining why the strong nuclear force is short-ranged—remains open.",
+  "technicalHighlights": [
+    "Addresses the rigorous non-perturbative construction of 4-dimensional Yang–Mills quantum gauge theory satisfying Osterwalder–Schrader / Wightman axioms.",
+    "Gross-led academic verification committee confirmed Lean verification on Nov 9–10, 2026.",
+    "Sparked independent human-directed verifications and extensions across constructive QFT."
+  ],
+  "caveats": "Proves existence only—the Yang–Mills mass gap remains unproven, so the Millennium Prize Problem is only partially resolved, and physicists note the formal proof is not yet fully distilled into human-intuitive exposition.",
+  "contributors": [
+    "OpenAI Science Team",
+    "Academic QFT Collaborators",
+    "Gross Verification Committee"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Academic Physics Community"
+  ],
+  "scores": {
+    "foundational": 94,
+    "ripple": 86,
+    "verification": 85,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Solves half of one of the deepest problems at the intersection of mathematics and fundamental physics.",
+    "ripple": "Provides rigorous constructive foundations for non-Abelian gauge theories underlying the Standard Model.",
+    "verification": "Confirmed Lean-verified by an eminent academic committee, though full human comprehension and axiom scrutiny continue.",
+    "velocity": "Achieved a constructive QFT milestone that eluded mathematical physicists for over half a century."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI: Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "type": "announcement"
+    },
+    {
+      "label": "CASRAI: Gross Committee Confirms Lean Verification of Yang–Mills Existence Proof",
+      "url": "https://casrai.org/news/ai-rivals-physics-mathematical-challenge-2026",
+      "type": "explainer"
+    }
+  ]
+}

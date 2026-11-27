@@ -1,0 +1,64 @@
+{
+  "id": "ramanujan-machine-2021",
+  "title": "The Ramanujan Machine Automatically Generates Novel Conjectures for Fundamental Constants",
+  "shortTitle": "The Ramanujan Machine",
+  "date": "2021-02-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Experimental Mathematics",
+    "Number Theory",
+    "Automated Conjecture Generation"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Ramanujan Machine (Gradient Descent & Meet-in-the-Middle Conjecture Search)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Demonstrated in Nature that automated search algorithms can discover dozens of previously unknown continued-fraction formulas for π, e, Catalan’s constant, and ζ(3)—launching modern AI conjecture discovery.",
+  "summary": "Published in Nature in February 2021 by Gal Raayoni, Shahar Gottlieb, Yahel Manor, George Pisha, Yoav Harris, Uri Mendlovic, Doron Haviv, Yaron Hadad, and Ido Kaminer at the Technion, the Ramanujan Machine inverted the traditional theorem-proving workflow by systematically searching for new polynomial continued-fraction conjectures matching fundamental mathematical constants to high precision. It discovered dozens of previously unknown identities for π, e, Catalan’s constant, and Riemann zeta values—many subsequently proved by mathematicians—and evolved into 'conservative matrix fields' (PNAS 2024) unifying irrationality proofs.",
+  "technicalHighlights": [
+    "Combined meet-in-the-middle hash search with numerical gradient descent over continued-fraction polynomials to surface candidate identities without prior human derivations.",
+    "Discovered dozens of novel continued-fraction formulas for π, e, Catalan’s constant, and ζ(3), several of which were subsequently proved analytically.",
+    "Directly inspired the 2024 PNAS discovery of 'conservative matrix fields' unifying hundreds of constant identities and generalizing Apéry’s irrationality proof for ζ(3)."
+  ],
+  "caveats": "Generates numerical conjectures to high precision rather than proving them autonomously; human mathematicians (or separate symbolic provers) are required to verify each identity.",
+  "contributors": [
+    "Gal Raayoni",
+    "Shahar Gottlieb",
+    "Yahel Manor",
+    "Ido Kaminer"
+  ],
+  "institutions": [
+    "Technion – Israel Institute of Technology"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 82,
+    "verification": 94,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered automated conjecture discovery for fundamental mathematical constants and laid groundwork for conservative matrix fields.",
+    "ripple": "Re-energized automated conjecturing (alongside DeepMind’s 2021 knot-theory work) and inspired community BOINC/Ramanujan Library research.",
+    "verification": "Peer-reviewed in Nature (590: 67–73) with follow-up proofs and PNAS (2024) mathematical unification.",
+    "velocity": "Automated formula discovery that historically relied on rare human intuition, though verification remained separate."
+  },
+  "enables": [
+    "deepmind-knot-theory-2021",
+    "funsearch-2023"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Generating conjectures on fundamental constants with the Ramanujan Machine (Feb 2021)",
+      "url": "https://doi.org/10.1038/s41586-021-03229-4",
+      "type": "paper"
+    },
+    {
+      "label": "PNAS — Algorithm-assisted discovery of an intrinsic order among mathematical constants (Jun 2024)",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2321440121",
+      "type": "paper"
+    }
+  ]
+}

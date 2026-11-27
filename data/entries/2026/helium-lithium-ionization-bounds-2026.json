@@ -1,0 +1,60 @@
+{
+  "id": "helium-lithium-ionization-bounds-2026",
+  "title": "Sharp Quantum Ionization Bounds for Helium and Lithium via AI-Generated Proofs",
+  "shortTitle": "Helium & Lithium Ionization Bounds",
+  "date": "2026-11-11",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Mathematical Physics",
+    "Quantum Mechanics",
+    "Atomic Ionization"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Frontier Reasoning LLMs + Computer-Assisted Spectral Bounds",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Collaborative AI proof + numerics",
+  "isAnchor": false,
+  "whyItMatters": "Stanford researchers with AI-generated proofs established sharp atomic ionization bounds proving neutral helium cannot bind a third electron (He⁻ has no ground state) and lithium binds at most four.",
+  "summary": "Posted to Hexagon on November 11, 2026 (hexagon:2611.00325v1), Alec Shelley, Yang, and Daniel Tartakovsky (Stanford) used mostly AI-generated mathematical proofs combined with rigorous computer-assisted spectral bounds to solve the maximum ionization problem for helium (Z = 2) and lithium (Z = 3), rigorously proving that helium binds at most two electrons (establishing the absence of a bound ground state for the helium anion He⁻) and lithium binds at most four. Independently corroborated days later by a separate arXiv preprint (arXiv:2611.19370) and appearing alongside an OpenAI AI-generated manuscript claiming the general uniform atomic excess-charge bound N ≤ Z + C, the work marks a milestone in rigorous many-body quantum mechanics.",
+  "technicalHighlights": [
+    "Establishes sharp rigorous bounds on maximum electron binding for real few-electron Coulomb Hamiltonians: N_max(He) = 2 and N_max(Li) ≤ 4.",
+    "Combines AI-generated variational/spectral inequality proofs with rigorous computer-assisted energy bounds.",
+    "Corroborated by independent mathematical-physics work (arXiv:2611.19370) proving absence of binding for the helium anion."
+  ],
+  "caveats": "Hexagon preprint carries a human-understanding caveat (\"some parts\") and awaits formal journal refereeing and Lean verification.",
+  "contributors": [
+    "Alec Shelley",
+    "Daniel Tartakovsky",
+    "Yang"
+  ],
+  "institutions": [
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 75,
+    "ripple": 66,
+    "verification": 65,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "Addresses the classic mathematical-physics ionization conjecture for real multi-electron Schrödinger Hamiltonians (He and Li).",
+    "ripple": "Demonstrates frontier LLMs assisting with rigorous spectral analysis and computer-assisted proofs in quantum physics.",
+    "verification": "Unrefereed Hexagon preprint, bolstered by an independent November 20, 2026 arXiv proof of the helium anion result.",
+    "velocity": "AI-generated analytical estimates paired with computer-assisted bounds accelerated rigorous few-body quantum proofs."
+  },
+  "sources": [
+    {
+      "label": "Hexagon Preprint 2611.00325v1",
+      "url": "https://hexagonmath.org/2611.00325v1",
+      "type": "paper"
+    },
+    {
+      "label": "Independent Helium Anion Preprint (arXiv:2611.19370)",
+      "url": "https://arxiv.org/html/2611.19370v2",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

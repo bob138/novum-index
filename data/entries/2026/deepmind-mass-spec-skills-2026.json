@@ -1,0 +1,62 @@
+{
+  "id": "deepmind-mass-spec-skills-2026",
+  "title": "DeepMind Mass Spec Skills Elucidates Molecular Structures from Tandem Mass Spectra",
+  "shortTitle": "Mass Spec Skills (Antigravity)",
+  "date": "2026-11-25",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Analytical Chemistry",
+    "Mass Spectrometry",
+    "Tool-Augmented Scientific Agents"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Gemini + Mass Spec Skills (Google Antigravity / SIRIUS / MetFrag / RDKit)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Hours (vs. days–months)",
+  "isAnchor": false,
+  "whyItMatters": "Pairs Gemini reasoning with deterministic cheminformatics tools to solve tandem mass spectra at >90% accuracy—a direct 50-year successor to Stanford’s Meta-DENDRAL (1976).",
+  "summary": "Google DeepMind released Mass Spec Skills for Google Antigravity, combining Gemini’s chemical reasoning with deterministic mass-spectrometry tools (matchms, SIRIUS, MAGMa, MetFrag, RDKit) and spectral databases (GNPS, MoNA, PubChem) to tackle the 'dark matter' of metabolomics (~95% unannotated tandem mass spectra). In end-to-end evaluations, the agentic workflow raised molecular structure elucidation accuracy from <4% for raw LLMs to over 90% (~97% on known-molecule benchmarks), compressing analytical workflows that take human chemists days or months into hours.",
+  "technicalHighlights": [
+    "Integrates Gemini chemical reasoning with deterministic spectral-analysis tools (SIRIUS, MetFrag, MAGMa, matchms, RDKit) inside an inspectable skill workflow.",
+    "Boosts end-to-end MS/MS structure elucidation from <4% (unassisted LLM baseline) to >90% (~97% on known-molecule benchmarks).",
+    "Closes a 50-year arc in AI-for-chemistry directly linking Stanford’s 1976 Meta-DENDRAL symbolic rule learner to modern neuro-symbolic scientific agents."
+  ],
+  "caveats": "Released as a Google DeepMind technical blog post and open skill suite rather than a peer-reviewed analytical chemistry paper; generalization to truly novel natural products outside spectral/chemical databases requires independent wet-lab validation.",
+  "contributors": [
+    "Robert Brunck",
+    "Stefan Ganscha",
+    "Swaroop Guntupalli",
+    "Dariusz Lasecki",
+    "Gabriella Marfani",
+    "Jack Mason",
+    "Hussain Masoom",
+    "Rose Mirshafian",
+    "Eliseo Papa",
+    "Zoi Tsangalidou"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 86,
+    "verification": 80,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates how neuro-symbolic tool orchestration unlocks a 50-year bottleneck in analytical chemistry (tandem mass-spectrum elucidation).",
+    "ripple": "Directly applicable across metabolomics, natural-product discovery, forensics, and pharmaceutical characterization where ~95% of spectra go unannotated.",
+    "verification": "Backed by public open-source skills and reproducible benchmark evaluations, though formal journal peer review and blind novel-compound studies remain pending.",
+    "velocity": "Compresses manual multi-day or multi-month MS/MS structure elucidation campaigns into hours with >90% accuracy."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Google DeepMind — Interpreting mass spectra with Google Antigravity (Nov 25, 2026)",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "type": "announcement"
+    }
+  ]
+}

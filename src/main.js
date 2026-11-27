@@ -2,7 +2,12 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/components.css';
 
-import dataset from '../data/breakthroughs.json';
+import {
+  loadIndexDataset,
+  getCachedDossierDetail,
+  loadDossierDetail,
+  prefetchDossierDetail,
+} from './dataLoader.js';
 import {
   DIMENSIONS,
   WEIGHT_PRESETS,
@@ -34,7 +39,8 @@ import {
 } from './theme.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
-const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
+let dataset = null;
+let DEFAULT_WEIGHTS = { foundational: 35, ripple: 30, verification: 20, velocity: 15 };
 
 const state = {
   theme: loadInitialTheme(),
@@ -394,6 +400,7 @@ function renderApp({ preserveSearchFocus = false } = {}) {
   const filtered = filterBreakthroughs(allRanked);
   const rankedMap = new Map(allRanked.map((b) => [b.id, b]));
   const activeDossier = state.activeDossierId ? rankedMap.get(state.activeDossierId) : null;
+  const activeDetail = activeDossier ? getCachedDossierDetail(activeDossier.id) : null;
 
   const app = document.getElementById('app');
   app.innerHTML = `
@@ -412,11 +419,31 @@ function renderApp({ preserveSearchFocus = false } = {}) {
       </div>
     </main>
 
-    ${renderDossierModal(activeDossier, allRanked, state.weights, filtered)}
+    ${renderDossierModal(activeDossier, allRanked, state.weights, filtered, activeDetail)}
   `;
 
   // Bind dynamic SVG interactions
   bindActiveViewInteractions(filtered, rankedMap);
+
+  // Lazy-fetch full dossier detail on demand & prefetch prev/next neighbors for instant stepping
+  if (activeDossier) {
+    const activeId = activeDossier.id;
+    if (!activeDetail) {
+      loadDossierDetail(activeId)
+        .then(() => {
+          if (state.activeDossierId === activeId) {
+            renderApp();
+          }
+        })
+        .catch(() => {
+          // keep summary view visible on transient error
+        });
+    }
+    const navList = filtered.length > 0 ? filtered : allRanked;
+    const idx = navList.findIndex((b) => b.id === activeId);
+    if (idx > 0) prefetchDossierDetail(navList[idx - 1].id);
+    if (idx >= 0 && idx < navList.length - 1) prefetchDossierDetail(navList[idx + 1].id);
+  }
 
   // Restore search focus smoothly during typing
   if (preserveSearchFocus) {
@@ -818,6 +845,21 @@ function attachGlobalListeners() {
   });
 }
 
-hydrateStateFromUrl();
-attachGlobalListeners();
-renderApp();
+async function init() {
+  applyTheme(state.theme);
+  try {
+    dataset = await loadIndexDataset();
+    DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
+    state.weights = { ...DEFAULT_WEIGHTS };
+    hydrateStateFromUrl();
+    attachGlobalListeners();
+    renderApp();
+  } catch (err) {
+    const app = document.getElementById('app');
+    if (app) {
+      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load The Novum Index</h3><p>${escapeHtml(err.message)}</p></div></div>`;
+    }
+  }
+}
+
+init();

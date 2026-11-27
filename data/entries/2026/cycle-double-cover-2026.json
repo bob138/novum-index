@@ -1,0 +1,62 @@
+{
+  "id": "cycle-double-cover-2026",
+  "title": "Autonomous AI Proof of the Cycle Double Cover Conjecture",
+  "shortTitle": "Cycle Double Cover Proof",
+  "date": "2026-07-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Graph Theory",
+    "Combinatorics",
+    "Multi-Agent Reasoning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-5.6 Sol Ultra (64-Subagent Harness)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 53,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Settled one of graph theory’s most celebrated 50-year-old open conjectures (Szekeres 1973 / Seymour 1979); independently verified and published on arXiv by Jim Geelen and Sang-il Oum.",
+  "summary": "OpenAI’s GPT-5.6 Sol Ultra produced a complete proof of the Cycle Double Cover Conjecture—stating that every bridgeless graph admits a collection of cycles covering every edge exactly twice. Within a week, leading graph theorists Jim Geelen (Waterloo) and Sang-il Oum (IBS) independently checked the proof and posted streamlined human-verified expositions on arXiv confirming its correctness.",
+  "technicalHighlights": [
+    "Resolved a flagship Wikipedia-listed open problem in structural graph theory open since the 1970s.",
+    "Independently verified within days by top graph theorists Jim Geelen (arXiv:2607.15399) and Sang-il Oum (arXiv:2607.16356).",
+    "Produced without Lean formalization, showing frontier reasoning models could deliver clean, human-refereeable graph theory proofs."
+  ],
+  "caveats": "Not formalized in Lean at release (owing to sparse graph-theory libraries in Mathlib); formal journal refereeing is still in progress following specialist confirmations.",
+  "contributors": [
+    "OpenAI Math Team",
+    "Jim Geelen (Independent Verification)",
+    "Sang-il Oum (Independent Verification)"
+  ],
+  "institutions": [
+    "OpenAI",
+    "University of Waterloo",
+    "Institute for Basic Science (IBS)"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 84,
+    "verification": 95,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Resolved one of the top central conjectures in structural graph theory, open for over half a century.",
+    "ripple": "Directly impacts cycle decompositions, nowhere-zero flows, and graph embedding theory.",
+    "verification": "Independently checked and re-derived in two separate arXiv expositions by leading graph theorists.",
+    "velocity": "Demonstrated that multi-agent frontier models can crack famous 50-year-old problems in natural language."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Jim Geelen — OpenAI’s proof of the Cycle Double Cover Theorem (arXiv:2607.15399)",
+      "url": "https://arxiv.org/abs/2607.15399",
+      "type": "paper"
+    },
+    {
+      "label": "Sang-il Oum — A proof of the cycle double cover conjecture by OpenAI: An exposition (arXiv:2607.16356)",
+      "url": "https://arxiv.org/abs/2607.16356",
+      "type": "paper"
+    }
+  ]
+}

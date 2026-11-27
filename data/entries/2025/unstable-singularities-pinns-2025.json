@@ -1,0 +1,63 @@
+{
+  "id": "unstable-singularities-pinns-2025",
+  "title": "AI Discovers Unstable Fluid Blow-Up Singularities to Near-Machine Precision",
+  "shortTitle": "Unstable PDE Singularities (PINNs)",
+  "date": "2025-09-17",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Fluid Dynamics",
+    "Nonlinear PDEs",
+    "Physics-Informed Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "High-Precision PINNs + Gauss–Newton Optimizer",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Physics-informed neural networks discovered new families of unstable self-similar blow-up singularities in 3D Euler and porous-media fluid PDEs at GPU double-precision accuracy.",
+  "summary": "Researchers from NYU, Google DeepMind, Stanford, and Brown paired physics-informed neural networks (PINNs) with a high-precision Gauss–Newton optimizer to locate elusive unstable self-similar blow-up profiles in nonlinear fluid equations. Reaching near-double-float machine precision (~10⁻¹³ residual), the discovered profiles cross the precision threshold required for rigorous computer-assisted mathematical blow-up proofs and revealed a clean asymptotic scaling law.",
+  "technicalHighlights": [
+    "Discovered multiple new families of unstable self-similar blow-up solutions for 3D Euler with boundary and incompressible porous media (IPM) equations.",
+    "Achieved near-double-float GPU round-off accuracy, overcoming the ~10⁻³ error ceiling that previously barred PINNs from rigorous PDE proofs.",
+    "Uncovered an empirical asymptotic law relating blow-up rate to instability order, informing subsequent Navier–Stokes blow-up research."
+  ],
+  "caveats": "Supplies ultra-high-precision numerical profiles rather than complete formal proofs on its own; rigorous existence proofs require follow-up interval-arithmetic certification.",
+  "contributors": [
+    "Yongji Wang",
+    "Mehdi Bennani",
+    "James Martens",
+    "Tristan Buckmaster",
+    "Javier Gómez-Serrano"
+  ],
+  "institutions": [
+    "New York University",
+    "Google DeepMind",
+    "Brown University",
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 88,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Opened a systematic AI-driven window into unstable PDE blow-up singularities previously invisible to standard numerics.",
+    "ripple": "Provided a key computational playbook directly feeding 2026 computer-assisted attacks on Euler and Navier–Stokes blow-up.",
+    "verification": "Residuals verified to near-machine precision with reproducible PDE checks; journal review ongoing.",
+    "velocity": "Turned fragile, infinitely-tuned unstable PDE searches into repeatable high-precision neural optimization."
+  },
+  "enables": [
+    "navier-stokes-forced-2026",
+    "unforced-navier-stokes-claim-2026"
+  ],
+  "sources": [
+    {
+      "label": "Wang et al. — Discovery of Unstable Singularities (arXiv:2509.14185)",
+      "url": "https://arxiv.org/abs/2509.14185",
+      "type": "paper"
+    }
+  ]
+}

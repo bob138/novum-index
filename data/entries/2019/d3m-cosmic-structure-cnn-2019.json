@@ -1,0 +1,62 @@
+{
+  "id": "d3m-cosmic-structure-cnn-2019",
+  "title": "D³M 3D Deep Neural Network Accurately Predicts Nonlinear Cosmic Structure Formation and Extrapolates Beyond Training Cosmology",
+  "shortTitle": "D³M 3D Cosmic Structure CNN (2019)",
+  "date": "2019-06-24",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Cosmology",
+    "Astrophysics Simulation",
+    "3D Convolutional Neural Nets"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "D³M (Deep Density Displacement Model 3D U-Net, Flatiron/CMU)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "30 ms vs. hundreds of CPU-hours",
+  "isAnchor": true,
+  "whyItMatters": "Published in PNAS, D³M trained a 3D U-Net to predict full nonlinear dark-matter cosmic web formation 10,000× faster than N-body simulations—and extrapolated accurately to unseen cosmological parameters.",
+  "summary": "Published in PNAS on June 24, 2019, Siyu He, Yin Li, Yu Feng, Shirley Ho, Siamak Ravanbakhsh, Wei Chen, and Barnabás Póczos at the Flatiron Institute (CCA), Carnegie Mellon University, and UC Berkeley introduced D³M (Deep Density Displacement Model). Using a 3D convolutional U-Net to predict nonlinear gravitational displacement fields of 32³ dark-matter particles from fast linear approximations, D³M surpassed second-order Lagrangian perturbation theory by an order of magnitude while running in 30 milliseconds (vs. hundreds of CPU-hours for N-body simulations)—and unexpectedly generalized accurately to vastly different dark-matter density cosmologies (Ω_m = 0.1–0.5) never seen during training.",
+  "technicalHighlights": [
+    "Predicted full nonlinear 3D dark-matter cosmic web formation in ~30 ms—orders of magnitude faster than full N-body gravitational simulations.",
+    "Achieved ~2.8% relative error vs. ~9.3% for second-order perturbation theory (2LPT) across nonlinear cosmic scales.",
+    "Demonstrated surprising out-of-distribution generalization to unseen cosmological dark-matter densities (Ω_m varying 5× beyond training)."
+  ],
+  "caveats": "Modeled dark-matter-only gravitational evolution on periodic 32³ particle grids rather than full baryonic hydrodynamics with star formation and AGN feedback.",
+  "contributors": [
+    "Siyu He",
+    "Yin Li",
+    "Yu Feng",
+    "Shirley Ho",
+    "Siamak Ravanbakhsh",
+    "Wei Chen",
+    "Barnabás Póczos"
+  ],
+  "institutions": [
+    "Flatiron Institute (Center for Computational Astrophysics)",
+    "Carnegie Mellon University",
+    "UC Berkeley",
+    "Princeton University"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 87,
+    "verification": 95,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Proved 3D deep neural networks can learn nonlinear gravitational physics well enough to extrapolate accurately to unseen universes.",
+    "ripple": "Launched neural cosmological emulators and super-resolution universe simulations across computational astrophysics.",
+    "verification": "Peer-reviewed in PNAS (Vol. 116, pp. 13825–13832) with rigorous N-body power-spectrum and bispectrum verification.",
+    "velocity": "Accelerated nonlinear 3D cosmic structure prediction from CPU-hours to 30 milliseconds."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PMC / PNAS (Jun 24, 2019) — Learning to predict the cosmological structure formation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6628645/",
+      "type": "paper"
+    }
+  ]
+}

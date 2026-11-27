@@ -1,0 +1,61 @@
+{
+  "id": "smale-mean-value-disproof-2026",
+  "title": "Autonomous Lean 4 Disproof of Smale’s 1981 Mean Value Conjecture (K = 1)",
+  "shortTitle": "Smale Mean Value Disproof (Lean)",
+  "date": "2026-09-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Complex Analysis",
+    "Polynomial Dynamics",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Pre-Release GPT-6 Astra (OpenAI / Epoch AI LeanOpenProblems)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 45,
+  "aiTimeToSolve": "1 autonomous run (<$1k budget)",
+  "isAnchor": false,
+  "whyItMatters": "In Epoch AI’s autonomous evaluation over Formal Conjectures’ Wikipedia open problems, pre-release GPT-6 Astra disproved Steve Smale’s 1981 Mean Value Conjecture (K = 1) in Lean 4 with zero human guidance.",
+  "summary": "In the same September 3, 2026 Epoch AI LeanOpenProblems evaluation that disproved the Köthe conjecture (github.com/tadamcz/mean-value-problem), a pre-release version of OpenAI’s GPT-6 Astra autonomously disproved the K = 1 form of Fields Medalist Steve Smale’s 1981 Mean Value Conjecture—a classic 45-year-old problem in complex analysis motivated by the complexity of Newton’s root-finding method. With zero human steering, GPT-6 Astra constructed a complex polynomial p with p(0) = 0, p′(0) = 1, and |p(c)/c| > 1 at every critical point c, formalizing the exact negation of DeepMind’s Formal Conjectures statement in Lean 4 + Mathlib with Comparator verification. The breakthrough spurred rapid follow-up work on Hexagon in November 2026, lowering the rigorously certified counterexample degree down to 2,799.",
+  "technicalHighlights": [
+    "Autonomously disproved Steve Smale’s 1981 Mean Value Conjecture (K = 1) in Lean 4 + Mathlib with zero human intervention.",
+    "Exact negation of Formal Conjectures’ MeanValueProblem statement verified in an isolated Comparator container under standard axioms only.",
+    "Catalyzed November 2026 follow-up machine-certified counterexamples reducing polynomial degree down to 7,299 and 2,799."
+  ],
+  "caveats": "Disproves the classic K = 1 bound in Smale’s conjecture; subsequent November 2026 Hexagon preprints examine the exact sharp constant (proposed as 4) and await peer review.",
+  "contributors": [
+    "OpenAI GPT-6 Astra",
+    "Tom Adamczewski",
+    "Epoch AI"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Epoch AI"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 78,
+    "verification": 96,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Overturns a famous 45-year-old conjecture posed by Fields Medalist Steve Smale in complex polynomial analysis.",
+    "ripple": "Directly sparked follow-up human–AI optimizations driving counterexample degrees down to 2,799 within two months.",
+    "verification": "Machine-checked in Lean 4 against DeepMind’s verbatim Formal Conjectures statement via isolated Comparator container.",
+    "velocity": "Resolved autonomously in a single unsteered Epoch AI evaluation run under a $1,000 budget."
+  },
+  "sources": [
+    {
+      "label": "GitHub: tadamcz/mean-value-problem (Lean 4 Disproof)",
+      "url": "https://github.com/tadamcz/mean-value-problem",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Hexagon Follow-Up: Degree-2799 Certified Counterexample",
+      "url": "https://hexagonmath.org/2611.01056v1",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "gentrl-ddr1-drug-design-2019",
+  "title": "Insilico Medicine GENTRL Designs, Synthesizes, and Mouse-Validates Potent DDR1 Kinase Inhibitors in 46 Days",
+  "shortTitle": "GENTRL De Novo DDR1 Drug (46d)",
+  "date": "2019-09-02",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Generative Drug Design",
+    "Reinforcement Learning",
+    "Medicinal Chemistry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GENTRL (Generative Tensorial Reinforcement Learning, Insilico Medicine)",
+  "verificationStatus": "Contested / Partial",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "21 days design (46 days to mouse PK)",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature Biotechnology, GENTRL was the landmark first demonstration of deep generative RL designing potent kinase inhibitors synthesized and validated in mice in 46 days—though debated over similarity to existing drug ponatinib.",
+  "summary": "Published in Nature Biotechnology on September 2, 2019, Alex Zhavoronkov, Yan A. Ivanenkov, and collaborators at Insilico Medicine and WuXi AppTec introduced GENTRL (Generative Tensorial Reinforcement Learning) to generatively design small-molecule inhibitors of the fibrosis-linked DDR1 kinase in 21 days. Six generated molecules were synthesized and tested, yielding four biochemically active leads, two cell-active inhibitors, and one lead demonstrating favorable pharmacokinetics in mice within 46 days end-to-end. While celebrated as a catalytic proof-of-concept for generative pharma AI, medicinal chemists (notably Derek Lowe and Pat Walters) promptly pointed out strong structural resemblance between the lead hit and the marketed kinase inhibitor ponatinib, making GENTRL an important calibrated early milestone.",
+  "technicalHighlights": [
+    "Combined variational autoencoders with tensorial reinforcement learning optimizing potency, synthetic feasibility, and novelty rewards.",
+    "Completed computational generation in 21 days and full synthesis, biochemical, cellular, and mouse pharmacokinetic validation in 46 days.",
+    "Catalyzed a global wave of generative chemistry investment and laid the groundwork for Insilico’s later Phase 2a drug rentosertib."
+  ],
+  "caveats": "Tagged Contested / Partial because independent medicinal chemists noted close structural similarity between the lead DDR1 hit and the known kinase inhibitor ponatinib, questioning true scaffold novelty and selectivity.",
+  "contributors": [
+    "Alex Zhavoronkov",
+    "Yan A. Ivanenkov",
+    "Alex Aliper",
+    "Alán Aspuru-Guzik"
+  ],
+  "institutions": [
+    "Insilico Medicine",
+    "University of Toronto",
+    "WuXi AppTec"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 86,
+    "verification": 74,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered end-to-end generative deep RL small-molecule design coupled to wet-lab synthesis and in vivo pharmacokinetics, despite scaffold-novelty caveats.",
+    "ripple": "Became the defining early proof-of-concept that launched modern generative drug discovery across biotech and pharma.",
+    "verification": "Peer-reviewed in Nature Biotechnology (Vol. 37, pp. 1038–1040) with mouse PK data, discounted for contested scaffold novelty and selectivity.",
+    "velocity": "Compressed hit identification through synthesis and mouse PK validation into 46 days."
+  },
+  "enables": [
+    "rentosertib-phase2a-ipf-2025"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Nature Biotechnology (Sep 2, 2019) — Deep learning enables rapid identification of potent DDR1 kinase inhibitors",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31477924/",
+      "type": "paper"
+    },
+    {
+      "label": "Springer Nature Research Communities — GENTRL DDR1 Preclinical Validation Overview",
+      "url": "https://communities.springernature.com/posts/molecules-imagined-using-advanced-artificial-intelligence-show-promising-results-in-pre-clinical-experiments",
+      "type": "explainer"
+    }
+  ]
+}

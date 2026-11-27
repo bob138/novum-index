@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2026-11-26",
+  "defaultWeights": {
+    "foundational": 35,
+    "ripple": 25,
+    "verification": 20,
+    "velocity": 20
+  }
+}

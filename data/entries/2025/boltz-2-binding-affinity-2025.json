@@ -1,0 +1,65 @@
+{
+  "id": "boltz-2-binding-affinity-2025",
+  "title": "Boltz-2 Achieves Physics-Grade Drug Binding Affinity Prediction 1,000× Faster",
+  "shortTitle": "Boltz-2 Binding Affinity",
+  "date": "2025-06-06",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Computational Chemistry",
+    "Drug Discovery",
+    "Biomolecular Structure"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Boltz-2 (Open-Source Biomolecular Foundation Model)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~18 sec / ligand",
+  "isAnchor": false,
+  "whyItMatters": "First open-source AI model to jointly predict 3D biomolecular structure and small-molecule binding affinity near free-energy perturbation (FEP) accuracy at 1,000× speed.",
+  "summary": "Developed by MIT’s Jameel Clinic and Recursion, Boltz-2 extends open-source biomolecular structure prediction beyond static folding into quantitative thermodynamics. Trained on roughly 5 million binding affinity measurements and molecular dynamics trajectories, it approaches the accuracy of expensive physics-based FEP simulations in ~20 seconds on a single GPU, making high-accuracy virtual screening accessible across academia and biotech.",
+  "technicalHighlights": [
+    "Jointly predicts 3D protein–ligand complex structures and quantitative binding affinity (IC50 / Ki) in a single open-source MIT-licensed model.",
+    "Approaches gold-standard physics-based Free Energy Perturbation (FEP) accuracy while running ~1,000× faster.",
+    "Demonstrated end-to-end generative hit-finding for diverse, synthesizable small-molecule binders."
+  ],
+  "caveats": "Independent medicinal-chemistry benchmarks note accuracy can still degrade on novel chemical scaffolds far outside training distributions compared with bespoke FEP setups.",
+  "contributors": [
+    "Saro Passaro",
+    "Gabriele Corso",
+    "Jeremy Wohlwend",
+    "Regina Barzilay",
+    "Tommi Jaakkola"
+  ],
+  "institutions": [
+    "MIT CSAIL / Jameel Clinic",
+    "Recursion"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 91,
+    "verification": 84,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Bridged the long-standing gap between AI structure prediction and quantitative thermodynamic binding affinity.",
+    "ripple": "MIT-licensed open weights drove immediate global adoption across pharmaceutical screening and academic labs.",
+    "verification": "Strong bioRxiv benchmarks and CASP16 affinity results, with ongoing independent pharmaceutical evaluations.",
+    "velocity": "Compressed hours of cluster FEP physics simulations into ~18 seconds on a single GPU."
+  },
+  "enables": [
+    "boltzgen-universal-binder-2025"
+  ],
+  "sources": [
+    {
+      "label": "MIT Jameel Clinic — Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction",
+      "url": "https://jclinic.mit.edu/boltz-2-towards-accurate-and-efficient-binding-affinity-prediction/",
+      "type": "announcement"
+    },
+    {
+      "label": "Passaro et al. — Boltz-2 Preprint (bioRxiv 2025.06.14.659707)",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1",
+      "type": "paper"
+    }
+  ]
+}

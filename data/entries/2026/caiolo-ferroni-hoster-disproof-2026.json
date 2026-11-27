@@ -1,0 +1,66 @@
+{
+  "id": "caiolo-ferroni-hoster-disproof-2026",
+  "title": "Lean-Verified Disproof of the Caiolo–Ferroni–Hoster Dual Chow Conjecture for Matroids",
+  "shortTitle": "Caiolo–Ferroni–Hoster Disproof",
+  "date": "2026-11-24",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Matroid Theory",
+    "Algebraic Combinatorics",
+    "Real-Rooted Polynomials"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6.2 Astra & Claude Opus 5.5 + Lean 4.35",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 1,
+  "aiTimeToSolve": "Days",
+  "isAnchor": false,
+  "whyItMatters": "High-school senior Cinna Davis used GPT-6.2 Astra and Claude Opus 5.5 to disprove Caiolo–Ferroni–Hoster’s matroid dual Chow real-rootedness conjecture—verified in Lean 4 and posted directly to X & GitHub.",
+  "summary": "Posted directly on X and GitHub rather than waiting for journal publication, Illinois Mathematics and Science Academy senior Cinna Davis (@1337isnot1337)—working with GPT-6.2 Astra and Claude Opus 5.5—disproved Conjecture 7.3 of Caiolo–Ferroni–Hoster (arXiv:2605.28474). By constructing an explicit family of simple rank-5 matroids via hyperplane coalescence for every prime power q ≥ 17, the proof shows the dual Chow quartic has no real roots and establishes the sharp rank threshold r ≤ 4, completely verified in Lean 4.35.0 and SymPy.",
+  "technicalHighlights": [
+    "Constructed an infinite family of simple rank-5 matroids (prime powers q ≥ 17) whose dual Chow polynomial is strictly positive on ℝ (zero real roots) and whose dual right augmented polynomial fails real-rootedness.",
+    "Proved the exact sharp rank threshold: dual Chow real-rootedness holds for all matroids of rank r if and only if r ≤ 4.",
+    "Fully formalized in Lean 4.35.0 with Mathlib matroids plus an independent exact SymPy certificate, published openly on GitHub and X."
+  ],
+  "caveats": "Unrefereed open-internet release (X + GitHub); internally audited with Lean 4 and SymPy replay scripts, while independent matroid-theorist journal review and priority checks remain open.",
+  "contributors": [
+    "Cinna Davis (@1337isnot1337)",
+    "GPT-6.2 Astra",
+    "Claude Opus 5.5"
+  ],
+  "institutions": [
+    "Illinois Mathematics and Science Academy (IMSA)",
+    "Independent Open Research"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 82,
+    "verification": 93,
+    "velocity": 98
+  },
+  "scoreRationale": {
+    "foundational": "Cleanly disproved an active research conjecture in matroid Hodge/Chow theory and pinned down the exact sharp rank boundary r = 4 vs. 5.",
+    "ripple": "Powerful emblem of the late-2026 shift: a high-school researcher with consumer AI + Lean can settle active arXiv conjectures and publish directly on X & GitHub.",
+    "verification": "Complete Lean 4.35.0 formalization of the finite Mathlib matroid family plus reproducible exact SymPy verification scripts; unrefereed.",
+    "velocity": "Refuted a May 2026 research conjecture with full Lean verification and sharp rank classification within days of targeting it."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Cinna Davis (@1337isnot1337) — Announcement Thread on X",
+      "url": "https://x.com/1337isnot1337/status/2125235237471080565",
+      "type": "social-post"
+    },
+    {
+      "label": "1337isnot1337/solved-conjectures — Caiolo–Ferroni–Hoster Proof, Lean & SymPy Verifier (GitHub)",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/tree/main/results/caiolo-ferroni-hoster",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Caiolo, Ferroni & Hoster — Dual Chow polynomials of matroids and posets (arXiv:2605.28474)",
+      "url": "https://arxiv.org/abs/2605.28474",
+      "type": "paper"
+    }
+  ]
+}

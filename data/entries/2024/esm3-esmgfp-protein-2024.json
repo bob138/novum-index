@@ -1,0 +1,65 @@
+{
+  "id": "esm3-esmgfp-protein-2024",
+  "title": "ESM3 Simulates 500 Million Years of Evolution to Generate Novel Fluorescent Protein esmGFP",
+  "shortTitle": "ESM3 & esmGFP Protein",
+  "date": "2024-06-25",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Protein Language Models",
+    "Synthetic Biology",
+    "Multimodal Generative Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "ESM3 (98B-Parameter Multimodal Sequence–Structure–Function PLM)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "EvolutionaryScale’s 98B-parameter multimodal protein model generated esmGFP—a bright, functional green fluorescent protein only 58% identical to any known natural protein (a ~500M-year evolutionary leap).",
+  "summary": "Unveiled in June 2024 and published in Science (Jan 2025) by Thomas Hayes, Roshan Rao, Halil Akin, Alexander Rives, and the EvolutionaryScale team, ESM3 jointly tokenizes protein sequence, 3D atomic structure, and biological function inside a single 98-billion-parameter generative language model trained on 771 billion biological tokens. Using chain-of-thought prompting over active-site geometry and chromophore chemistry, ESM3 generated esmGFP—a bright fluorescent protein sharing only 58% sequence identity with its closest known natural relative, representing a jump equivalent to over 500 million years of natural evolution.",
+  "technicalHighlights": [
+    "First frontier-scale (98B-parameter) multimodal biological model jointly reasoning over protein sequence, 3D coordinates, and functional annotations.",
+    "Synthesized esmGFP, a wet-lab-validated bright fluorescent protein just 58% identical to the closest natural GFP—far outside natural sequence space.",
+    "Released ESM3-Open (1.4B) publicly and established multimodal chain-of-thought prompting as a new paradigm for programmable biology."
+  ],
+  "caveats": "While esmGFP was a striking wet-lab proof of concept, generating a single fluorescent protein required screening 96 candidates (and iterative refinement), and the full 98B weights remain proprietary.",
+  "contributors": [
+    "Thomas Hayes",
+    "Roshan Rao",
+    "Halil Akin",
+    "Alexander Rives"
+  ],
+  "institutions": [
+    "EvolutionaryScale",
+    "Arc Institute"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 89,
+    "verification": 95,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that scaling multimodal biological language models enables coherent leaps far across evolutionary sequence space.",
+    "ripple": "Set the blueprint for unified sequence–structure–function foundation models and programmable synthetic biology.",
+    "verification": "Peer-reviewed in Science (387: 850–858, Jan 2025) with full wet-lab expression and fluorescence spectroscopy of esmGFP.",
+    "velocity": "Traversed an estimated ~500 million years of evolutionary divergence in silico via chain-of-thought generation."
+  },
+  "enables": [
+    "opencrispr-1-gene-editor-2025",
+    "evo-2-genome-design-2025"
+  ],
+  "sources": [
+    {
+      "label": "Science — Simulating 500 million years of evolution with a language model (ESM3, doi:10.1126/science.ads0018)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39818825/",
+      "type": "paper"
+    },
+    {
+      "label": "bioRxiv — Simulating 500 million years of evolution with a language model (Jul 2024)",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.07.01.600583v1",
+      "type": "paper"
+    }
+  ]
+}

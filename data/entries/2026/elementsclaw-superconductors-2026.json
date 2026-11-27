@@ -1,0 +1,61 @@
+{
+  "id": "elementsclaw-superconductors-2026",
+  "title": "ElementsClaw Fuses Large Atomic Models and LLMs to Guide Synthesis of 4 New Superconductors",
+  "shortTitle": "ElementsClaw 4 New Superconductors",
+  "date": "2026-04-26",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Superconductivity",
+    "Materials Discovery",
+    "Large Atomic Models"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "ElementsClaw (Large Atomic Model + LLM Agentic Orchestrator)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "28 GPU-hrs (2.4M crystals screened)",
+  "isAnchor": false,
+  "whyItMatters": "By orchestrating Large Atomic Models with LLM semantic reasoning, ElementsClaw screened 2.4M crystals in 28 GPU-hours and guided wet-lab synthesis of 4 newly confirmed superconductors (Zr3ScRe8, HfZrRe4, Zr4VRe7, Hf21Re25).",
+  "summary": "Posted on April 26, 2026 (arXiv:2604.23758), Mingze Li, Yu Rong, Songyou Li, and collaborators introduced ElementsClaw, an agentic materials-discovery framework coupling an LLM reasoning orchestrator with fine-tuned Large Atomic Models (Elements) for high-fidelity atomistic property computation. Scaling across 2.4 million stable crystal structures in just 28 GPU-hours, the system rediscovered 66 known superconductors absent from SuperCon3D, flagged 68,000 high-confidence candidates, and guided experimental laboratory synthesis of four previously unconfirmed superconductors: Zr3ScRe8 (Tc = 6.8 K), HfZrRe4 (6.7 K), Zr4VRe7 (5.1 K, correcting an erroneous orthorhombic phase assignment to hexagonal), and Hf21Re25 (3.0 K).",
+  "technicalHighlights": [
+    "Synergized LLM high-level scientific planning with fine-tuned Large Atomic Models (LAMs) for fast, physically grounded crystal screening.",
+    "Screened >2.4 million stable crystals in 28 GPU-hours and rediscovered 66 experimentally verified superconductors missing from SuperCon3D.",
+    "Guided wet-lab synthesis and confirmation of four novel superconducting compounds (Zr3ScRe8 at 6.8 K, HfZrRe4 at 6.7 K, Zr4VRe7 at 5.1 K, Hf21Re25 at 3.0 K)."
+  ],
+  "caveats": "Currently an arXiv preprint undergoing community audit; all four newly synthesized compounds are conventional low-Tc superconductors (3.0–6.8 K) rather than high-temperature or ambient-pressure breakthroughs.",
+  "contributors": [
+    "Mingze Li",
+    "Yu Rong",
+    "Songyou Li",
+    "ElementsClaw Team"
+  ],
+  "institutions": [
+    "ElementsClaw Research Collaboration"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 87,
+    "verification": 78,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates closed-loop agentic fusion of Large Atomic Models and LLMs moving from computational prediction to lab-synthesized superconductors.",
+    "ripple": "Provides an actionable blueprint for autonomous quantum-materials discovery across catalysts, thermoelectrics, and superconductors.",
+    "verification": "Includes experimental lab synthesis and Tc measurements for four new compounds, scored conservatively pending journal peer review and independent lab replication.",
+    "velocity": "Evaluated 2.4 million crystal structures in 28 GPU-hours before guiding targeted experimental synthesis."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2604.23758 (Apr 26, 2026) — Agentic Fusion of Large Atomic and Language Models to Accelerate Superconductor Discovery",
+      "url": "https://arxiv.org/abs/2604.23758",
+      "type": "paper"
+    },
+    {
+      "label": "alphaXiv — ElementsClaw Novel Superconductors Summary (arXiv:2604.23758)",
+      "url": "https://www.alphaxiv.org/abs/2604.23758",
+      "type": "explainer"
+    }
+  ]
+}

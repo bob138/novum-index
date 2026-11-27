@@ -1,0 +1,63 @@
+{
+  "id": "jacobian-conjecture-disproof-2026",
+  "title": "Explicit Counterexample Disproves the 1939 Jacobian Conjecture in Dimensions ≥ 3",
+  "shortTitle": "Jacobian Conjecture Disproof",
+  "date": "2026-07-20",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Algebraic Geometry",
+    "Commutative Algebra",
+    "Polynomial Maps"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Claude Fable 5 (Anthropic)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 87,
+  "aiTimeToSolve": "1 weekend",
+  "isAnchor": false,
+  "whyItMatters": "Disproved Ott-Heinrich Keller’s famous 87-year-old Jacobian Conjecture (Smale’s 16th Problem) in dimensions ≥ 3 with a 3-line polynomial map verifiable in seconds via SymPy.",
+  "summary": "Anthropic mathematician Levent Alpöge—prompted by a question from Akhil Mathew and collaborating with Claude Fable 5—posted on X an explicit three-variable polynomial map from ℂ³ to ℂ³ whose Jacobian determinant is identically −2, yet maps three distinct points to (−1/4, 0, 0). Because an invertible map cannot merge distinct points, this single compact formula instantaneously refuted the 1939 Jacobian Conjecture for every dimension n ≥ 3.",
+  "technicalHighlights": [
+    "Refuted Keller’s 1939 conjecture (one of Steve Smale’s 18 problems for the 21st century) for all n ≥ 3 with an elementary explicit counterexample.",
+    "Checkable by hand or in 10 lines of SymPy / WolframAlpha within seconds of the X post, bypassing multi-month refereeing lag.",
+    "Showcased how public frontier models (Claude Fable 5) paired with an expert mathematician can crack century-scale algebra problems in a weekend."
+  ],
+  "caveats": "Leaves the two-dimensional case (n = 2) of the Jacobian Conjecture still open; originally announced informally on X before follow-up arXiv analyses.",
+  "contributors": [
+    "Levent Alpöge",
+    "Akhil Mathew",
+    "Claude Fable 5"
+  ],
+  "institutions": [
+    "Anthropic",
+    "University of Chicago"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 86,
+    "verification": 99,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Resolved one of Steve Smale’s flagship 21st-century open problems in algebraic geometry after 87 years.",
+    "ripple": "Reshapes research in polynomial automorphisms, Dixmier’s conjecture equivalences, and affine algebraic geometry.",
+    "verification": "Trivially and universally verified algebraically (determinant = −2, three distinct preimages map to the same point).",
+    "velocity": "Found over a single weekend with a public Claude model and verified globally within minutes on X."
+  },
+  "enables": [
+    "riemann-hypothesis-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Fello AI — Jacobian Conjecture Counterexample & Verification Script",
+      "url": "https://felloai.com/ai-solved-math-problems/",
+      "type": "explainer"
+    },
+    {
+      "label": "Anthropic Research — Learning more about Claude’s mathematical capabilities",
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "type": "announcement"
+    }
+  ]
+}

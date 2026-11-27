@@ -1,0 +1,63 @@
+{
+  "id": "primo-m87-black-hole-2023",
+  "title": "PRIMO Dictionary-Learning ML Sharpens the First M87* Supermassive Black Hole Image to Nominal EHT Resolution",
+  "shortTitle": "PRIMO M87* Black Hole Imaging",
+  "date": "2023-04-13",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Astrophysics",
+    "Black Hole Imaging",
+    "Physics-Informed ML"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "PRIMO (Principal-Component Interferometric Modeling Dictionary-Learning ML)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Published in The Astrophysical Journal Letters, PRIMO trained on 30,000 GRMHD black-hole simulations to fill sparse Event Horizon Telescope interferometry gaps, halving the ring width of M87* to the telescope’s full diffraction limit.",
+  "summary": "Published in The Astrophysical Journal Letters on April 13, 2023, Lia Medeiros (IAS), Dimitrios Psaltis, Tod R. Lauer (NOIRLab), and Feryal Özel introduced PRIMO (Principal-component Interferometric Modeling), a dictionary-learning machine learning algorithm trained on over 30,000 high-fidelity general-relativistic magnetohydrodynamic (GRMHD) simulations of accreting black holes. Applied to the original 2017 Event Horizon Telescope (EHT) observations of M87*, PRIMO reconstructed missing Earth-sized interferometer baselines without inventing unsupported structure—producing an image consistent with EHT data that narrowed the bright emission ring by roughly a factor of two and sharpened constraints on M87*’s mass and general relativity.",
+  "technicalHighlights": [
+    "Trained principal-component dictionary learning on >30,000 simulated black hole images spanning diverse accretion physics.",
+    "Reconstructed missing sparse VLBI Fourier-plane data to reach the Event Horizon Telescope’s full nominal angular resolution.",
+    "Revealed a ring roughly twice as thin as the 2019 reconstruction with a deeper central shadow, improving black-hole mass precision."
+  ],
+  "caveats": "Image reconstruction depends on the GRMHD simulation training prior (assuming general-relativistic accretion physics); it refines observational inference from existing 2017 EHT data rather than discovering a new astrophysical object.",
+  "contributors": [
+    "Lia Medeiros",
+    "Dimitrios Psaltis",
+    "Tod R. Lauer",
+    "Feryal Özel"
+  ],
+  "institutions": [
+    "Institute for Advanced Study (IAS)",
+    "NSF NOIRLab",
+    "Georgia Institute of Technology"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 84,
+    "verification": 92,
+    "velocity": 81
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered simulation-trained machine-learning interferometric reconstruction at the physical diffraction limit of an Earth-scale radio telescope.",
+    "ripple": "Became an iconic demonstration of physics-informed ML in observational astrophysics and next-generation EHT / Sagittarius A* imaging.",
+    "verification": "Peer-reviewed in The Astrophysical Journal Letters (947:L7) with extensive synthetic-data fidelity and consistency checks against EHT visibilities.",
+    "velocity": "Extracted full-resolution physical structure from existing sparse observations years ahead of launching space-based VLBI antennas."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Institute for Advanced Study (Apr 13, 2023) — Sharper Look at M87 Black Hole (PRIMO, ApJL 947:L7)",
+      "url": "https://www.ias.edu/news/sharper-look-m87",
+      "type": "announcement"
+    },
+    {
+      "label": "NSF NOIRLab — A Sharper Look at the First Image of a Black Hole",
+      "url": "https://noirlab.edu/public/news/noirlab2310/",
+      "type": "explainer"
+    }
+  ]
+}

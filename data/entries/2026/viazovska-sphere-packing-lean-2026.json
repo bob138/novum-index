@@ -1,0 +1,65 @@
+{
+  "id": "viazovska-sphere-packing-lean-2026",
+  "title": "Gauss Agent Autoformalizes Viazovska’s 8D & 24D Sphere Packing Proofs in Lean 4",
+  "shortTitle": "Sphere Packing 8D/24D (Lean)",
+  "date": "2026-03-15",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Sphere Packing",
+    "Modular Forms",
+    "Autoformalization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Gauss Autoformalization Agent (Math Inc.)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Weeks",
+  "isAnchor": false,
+  "whyItMatters": "Autoformalized Maryna Viazovska’s Fields Medal–winning 8D and 24D sphere packing proofs into ~200,000 lines of Lean 4, proving AI agents can formalize modern research-grade analysis.",
+  "summary": "Following its September 2025 formalization of the Strong Prime Number Theorem, Math Inc.’s Gauss autoformalization agent—collaborating with Maryna Viazovska and formalization researchers—completed machine-checked Lean 4 proofs of optimal sphere packing in dimensions 8 and 24 (~200,000 lines of Lean). The milestone showed that deep modular-form and Fourier-analytic arguments could be translated into formal kernels at industrial speed.",
+  "technicalHighlights": [
+    "Machine-checked Maryna Viazovska’s E8 (8D) and Leech lattice (24D) sphere packing theorems in ~200,000 lines of Lean 4.",
+    "Required formalizing extensive machinery in quasimodular forms, Poisson summation, and linear programming bounds.",
+    "Established autoformalization at 10⁵-line scale months before multi-million-line FLT and RH proofs."
+  ],
+  "caveats": "Formalizes established 2016 human breakthroughs rather than proving a previously unknown theorem, though it dramatically expanded Mathlib-compatible analysis infrastructure.",
+  "contributors": [
+    "Math Inc. Gauss Team",
+    "Sidharth Hariharan",
+    "Chris Birkbeck",
+    "Maryna Viazovska"
+  ],
+  "institutions": [
+    "Math Inc.",
+    "EPFL",
+    "Imperial College London"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 88,
+    "verification": 98,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Landmark achievement in formalizing Fields-Medal-level analytic number theory and geometry.",
+    "ripple": "Directly accelerated large-scale Lean autoformalization pipelines used across 2026 mathematics.",
+    "verification": "Complete Lean 4 kernel verification documented with Viazovska and formalization specialists.",
+    "velocity": "Compressed multi-year projected human formalization timelines into weeks of agent execution."
+  },
+  "enables": [
+    "fermat-last-theorem-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Hariharan, Viazovska et al. — A milestone in formalization: sphere packing in dimension 8 (arXiv:2604.23468)",
+      "url": "https://arxiv.org/abs/2604.23468",
+      "type": "paper"
+    },
+    {
+      "label": "Wikipedia — List of mathematical discoveries made with artificial intelligence",
+      "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+      "type": "explainer"
+    }
+  ]
+}

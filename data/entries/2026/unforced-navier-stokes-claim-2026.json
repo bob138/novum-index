@@ -1,0 +1,61 @@
+{
+  "id": "unforced-navier-stokes-claim-2026",
+  "title": "Claimed AI-Assisted Finite-Time Blow-Up for Unforced 3D Navier–Stokes Equations",
+  "shortTitle": "Unforced Navier–Stokes Claim",
+  "date": "2026-11-20",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Fluid Dynamics",
+    "Nonlinear PDEs",
+    "Millennium Prize Problem"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Anthropic Claude + Lean 4 (600K Lines)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 180,
+  "aiTimeToSolve": "10 weeks",
+  "isAnchor": false,
+  "whyItMatters": "Claims finite-time blow-up for 3D incompressible Navier–Stokes with zero external force—directly targeting the unforced version experts said OpenAI’s September proof left open.",
+  "summary": "On the same day as the Riemann Hypothesis release, Levent Alpöge (Anthropic) and Tristan Buckmaster (NYU) posted a 79-page GitHub paper and ~600,000-line Lean 4 library claiming smooth, compactly supported starting data can blow up in finite time for the *unforced* 3D Navier–Stokes equations (disproving Fefferman’s statements A & B). The strategy constructs a discretely self-similar profile numerically and upgrades it via rigorous perturbation theory.",
+  "technicalHighlights": [
+    "Targets the physically core unforced 3D Navier–Stokes Millennium Prize statements (A) and (B) on ℝ³ and the periodic torus.",
+    "Accompanied by a 79-page manuscript and ~600,000-line Lean 4 + Mathlib library formalizing the analytical reduction.",
+    "Developed using Anthropic’s Claude throughout the analytic derivation and formalization."
+  ],
+  "caveats": "Decisive numerical interval-arithmetic certificate (Arb) has not yet been publicly released (only its hash), and a late Lean patch was not rebuilt; unrefereed claim until the certificate can be independently replayed.",
+  "contributors": [
+    "Levent Alpöge",
+    "Tristan Buckmaster",
+    "Claude"
+  ],
+  "institutions": [
+    "Anthropic",
+    "New York University (Courant)"
+  ],
+  "scores": {
+    "foundational": 98,
+    "ripple": 92,
+    "verification": 54,
+    "velocity": 98
+  },
+  "scoreRationale": {
+    "foundational": "If verified, resolves the true unforced 3D Navier–Stokes Millennium Prize Problem open for over a century.",
+    "ripple": "Would fundamentally reshape fluid mechanics, turbulence theory, and computer-assisted PDE proofs.",
+    "verification": "Scored conservatively (54): Lean formalizes the analytical reduction, but the decisive numerical certificate is not yet public.",
+    "velocity": "Moved from forced-equation controversy to an unforced 600K-line Lean + paper claim in just 10 weeks."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "tristanbuckmaster/navier-stokes — Paper & Lean 4 Repository (GitHub)",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes",
+      "type": "code"
+    },
+    {
+      "label": "DataStudios — Technical Breakdown of the Unforced Navier–Stokes Claim",
+      "url": "https://www.datastudios.org/post/claude-navier-stokes-proof-blow-up-without-external-force-alpoge-buckmaster",
+      "type": "explainer"
+    }
+  ]
+}

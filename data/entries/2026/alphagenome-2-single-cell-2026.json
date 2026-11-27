@@ -1,0 +1,53 @@
+{
+  "id": "alphagenome-2-single-cell-2026",
+  "title": "AlphaGenome 2 Brings Single-Cell Precision to Human Regulatory Genomics",
+  "shortTitle": "AlphaGenome 2 (Single-Cell DNA)",
+  "date": "2026-11-11",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Single-Cell Genomics",
+    "Gene Regulation",
+    "Precision Medicine"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaGenome 2 (Google DeepMind)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Trained on 100M+ individual cell profiles across 68 tissues, AlphaGenome 2 nearly doubles cell-type-specific causal DNA variant discovery and generalizes zero-shot to new experiments.",
+  "summary": "Google DeepMind’s AlphaGenome 2 upgrades genomic variant modeling from bulk tissue averages to conditional single-cell precision. Taking a 1-million-letter DNA sequence alongside a target cellular context, it predicts gene expression, histone marks, chromatin accessibility, and DNA methylation—nearly doubling detection of gene-expression-linked variants in specific immune cell types and letting researchers upload their own single-cell RNA-seq profiles without fine-tuning.",
+  "technicalHighlights": [
+    "Trained on >100 million individual cell profiles across 68 human tissues to resolve close cell-type regulatory differences.",
+    "Nearly doubled identification of expression-linked variants in specific human cell types (e.g., TenK10K 28 immune cell types).",
+    "Zero-shot adaptation to unseen biological states, drug treatments, or disease progression from user-uploaded scRNA-seq data."
+  ],
+  "caveats": "Currently evaluated on DeepMind benchmarks with API access restricted to non-commercial research and private commercial preview; independent clinical validation is pending.",
+  "contributors": [
+    "Google DeepMind AlphaGenome Team"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 92,
+    "verification": 84,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Solved the bulk-tissue averaging limitation by conditioning 1 Mb regulatory DNA prediction on single-cell states.",
+    "ripple": "Directly pinpoints cell-type-specific disease mechanisms and drug targets across human genetics.",
+    "verification": "Strong internal and TenK10K benchmark validation; independent peer-reviewed clinical replications pending.",
+    "velocity": "Arrived just 16 months after AlphaGenome 1, doubling cell-specific variant resolution."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Google DeepMind — AlphaGenome & AlphaGenome 2 Science Portal",
+      "url": "https://deepmind.google/science/alphagenome/",
+      "type": "announcement"
+    }
+  ]
+}

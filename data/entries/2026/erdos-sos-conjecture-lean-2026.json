@@ -1,0 +1,69 @@
+{
+  "id": "erdos-sos-conjecture-lean-2026",
+  "title": "Autonomous Lean 4 Proof of the 1962 Erdős–Sós Conjecture (Erdős #548)",
+  "shortTitle": "Erdős–Sós Conjecture (GPT-6 Lean)",
+  "date": "2026-09-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Extremal Graph Theory",
+    "Tree Embeddings",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Pre-Release GPT-6 Astra (OpenAI / Epoch AI LeanOpenProblems)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 64,
+  "aiTimeToSolve": "1 autonomous run (<$300 budget)",
+  "isAnchor": false,
+  "whyItMatters": "With zero human steering, pre-release GPT-6 Astra proved the 64-year-old Erdős–Sós Conjecture in Lean 4 via a surprising elementary counting argument—independently verified and simplified by Oxford’s Riordan & Scott.",
+  "summary": "In Epoch AI’s FrontierMath Erdős evaluation (September 3, 2026; github.com/tadamcz/erdos548, arXiv:2609.25050), a pre-release version of OpenAI’s GPT-6 Astra autonomously discovered and formally proved in Lean 4 + Mathlib the 1962 Erdős–Sós Conjecture (Erdős Problem #548): every graph on n vertices with average degree greater than k − 2 contains every tree on k vertices as a subgraph. Avoiding both Szemerédi’s regularity lemma and probabilistic machinery, GPT-6 Astra invented a remarkably short, elementary permutation-word counting proof (its internal lemma proves the exact sharp classical bound, while the benchmark Comparator target uses |E| ≥ (k−1)n/2 + 1). Within weeks, Oxford combinatorialists Oliver Riordan and Alex Scott (arXiv:2609.15893), Thomas Bloom (erdosproblems.com), and Santos–Stein–Williams independently verified, simplified, and published human expositions of what Riordan & Scott called \"a very ingenious and surprising argument.\"",
+  "technicalHighlights": [
+    "Autonomously solved a 64-year-old flagship conjecture of Paul Erdős and Vera Sós (1962) with zero human steering under a $300 compute budget.",
+    "Discovered a completely elementary permutation-word counting argument bypassing regularity-lemma machinery altogether.",
+    "Verified in Lean 4 via Comparator (standard axioms only) and independently confirmed & simplified in human papers by Riordan & Scott (Oxford) and Thomas Bloom."
+  ],
+  "caveats": "In one odd-parity case, the benchmark’s formal Comparator statement assumes half an edge more than the strict classical inequality, though the Lean file’s internal counting lemma and Riordan–Scott’s human exposition confirm the full sharp classical conjecture.",
+  "contributors": [
+    "OpenAI GPT-6 Astra",
+    "Tom Adamczewski",
+    "Thomas F. Bloom",
+    "Oliver Riordan",
+    "Alex Scott"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Epoch AI",
+    "University of Oxford"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 88,
+    "verification": 98,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Settles one of extremal graph theory’s most iconic 64-year-old conjectures (Erdős–Sós, 1962) with an elementary, textbook-worthy proof.",
+    "ripple": "Immediately triggered multiple human follow-up papers (Riordan–Scott, Santos–Stein–Williams) extending the AI’s counting method to Eulerian digraphs and related conjectures.",
+    "verification": "Gold-standard dual verification: Comparator-checked Lean 4 proof plus independent human verification and published simplifications by leading combinatorialists.",
+    "velocity": "Discovered and formalized autonomously in a single unsteered benchmark run under a $300 API budget."
+  },
+  "sources": [
+    {
+      "label": "GitHub: tadamcz/erdos548 (Lean 4 Proof)",
+      "url": "https://github.com/tadamcz/erdos548",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Riordan & Scott (Oxford): A Short Proof of the Erdős–Sós Conjecture",
+      "url": "https://arxiv.org/html/2609.15893",
+      "type": "paper"
+    },
+    {
+      "label": "Epoch AI: FrontierMath Erdős (arXiv:2609.25050)",
+      "url": "https://arxiv.org/html/2609.25050v1",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

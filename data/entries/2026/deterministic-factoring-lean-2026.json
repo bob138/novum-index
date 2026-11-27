@@ -1,0 +1,64 @@
+{
+  "id": "deterministic-factoring-lean-2026",
+  "title": "Lean-Verified Deterministic Subexponential Integer Factoring Bound 2^O(b/√log b)",
+  "shortTitle": "Deterministic Factoring (Lean)",
+  "date": "2026-10-30",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algorithmic Number Theory",
+    "Cryptography",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Anthropic Clique Evaluator + Multi-Agent Lean Proofs (Big O Speedrun)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Days",
+  "isAnchor": false,
+  "whyItMatters": "Open-internet Big O Speedrun collaboration proved and dual-kernel Lean-verified a deterministic 2^O(b/√log b) factoring bound—turning Rudich–Rousseau Conjecture 1 into a theorem.",
+  "summary": "Bridging Anthropic’s ETH clique evaluator with Isaac Rudich and Louis-Martin Rousseau’s factoring reduction, independent researchers—including high-school researcher Cinna Davis and Big O Speedrun contributors—proved in Lean 4 that deterministic integer factoring of b-bit numbers runs in time 2^O(b/√log b). The formal proof was independently checked by two separate Lean kernels (Lean + nanoda) on Big O Speedrun.",
+  "technicalHighlights": [
+    "Elevated Rudich & Rousseau’s Conjecture 1 to a machine-checked unconditional deterministic complexity theorem.",
+    "Independently verified by two distinct Lean proof kernels via the open Big O Speedrun verification harness.",
+    "Exemplifies rapid, decentralized GitHub-native research combining AI-generated theorems from major labs with independent open-source contributors."
+  ],
+  "caveats": "Asymptotic worst-case complexity theorem with large implicit constants; does not threaten practical RSA key sizes or beat randomized GNFS in practice.",
+  "contributors": [
+    "Cinna Davis",
+    "Big O Speedrun Contributors",
+    "Isaac Rudich",
+    "Louis-Martin Rousseau",
+    "Anthropic Claude"
+  ],
+  "institutions": [
+    "Big O Speedrun (Open Research)",
+    "IMSA",
+    "Anthropic (Upstream Clique Evaluator)"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 82,
+    "verification": 98,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Established a major deterministic unconditional upper bound on integer factoring complexity.",
+    "ripple": "Showcased how open Lean leaderboards (Big O Speedrun) let independent researchers and agents compose lab breakthroughs in days.",
+    "verification": "Verified independently by two separate Lean kernels with standard axioms only.",
+    "velocity": "Assembled, formalized, and dual-kernel verified within days of Anthropic’s October clique-evaluator release."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Big O Speedrun — Integer Factoring Verified Leaderboard",
+      "url": "https://bigospeedrun.com/integer-factoring",
+      "type": "formal-verification"
+    },
+    {
+      "label": "1337isnot1337/integer-factoring — Deterministic Factoring Repository (GitHub)",
+      "url": "https://github.com/1337isnot1337/integer-factoring",
+      "type": "code"
+    }
+  ]
+}

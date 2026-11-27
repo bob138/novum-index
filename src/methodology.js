@@ -2,7 +2,7 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/components.css';
 
-import dataset from '../data/breakthroughs.json';
+import { loadIndexDataset } from './dataLoader.js';
 import {
   DIMENSIONS,
   DISCIPLINE_META,
@@ -20,7 +20,8 @@ import {
 } from './theme.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
-const DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
+let dataset = null;
+let DEFAULT_WEIGHTS = { foundational: 35, ripple: 30, verification: 20, velocity: 15 };
 
 let currentTheme = loadInitialTheme();
 
@@ -193,7 +194,7 @@ function renderMethodologyPage() {
           <div class="meth-section__eyebrow">Section 02</div>
           <h2 class="meth-section__title" id="h-rubric">The Four-Axis Impact Scoring Rubric</h2>
           <p class="meth-prose">
-            Every breakthrough is scored from <code>0</code> to <code>100</code> on four orthogonal dimensions, each accompanied by an entry-specific written justification in <code>data/breakthroughs.json</code>. Composite scores are computed dynamically client-side as a normalized weighted mean, rounded to one decimal place:
+            Every breakthrough is scored from <code>0</code> to <code>100</code> on four orthogonal dimensions, each accompanied by an entry-specific written justification in its entry record under <code>data/entries/&lt;year&gt;/&lt;id&gt;.json</code>. Composite scores are computed dynamically client-side as a normalized weighted mean, rounded to one decimal place:
           </p>
 
           <div class="meth-formula-box" role="region" aria-label="Composite Impact Index formula">
@@ -472,12 +473,13 @@ function renderMethodologyPage() {
           <div class="meth-section__eyebrow">Section 09</div>
           <h2 class="meth-section__title" id="h-gov">Schema Validation, Audits &amp; Open-Source Governance</h2>
           <p class="meth-prose">
-            The entire ledger lives in a single human-readable JSON file (<code>data/breakthroughs.json</code>) licensed under the MIT License. Every commit and pull request is automatically validated by GitHub Actions against <code>data/schema.json</code> via <code>scripts/validate-data.mjs</code>—enforcing valid ISO dates, strict AI-only provenance, required <code>aiParadigm</code> and <code>aiSystem</code> fields, bounded 0–100 sub-scores, primary source URLs, and referential integrity across every <code>enables</code> lineage edge.
+            Every breakthrough lives as its own human-readable JSON file under <code>data/entries/&lt;year&gt;/&lt;id&gt;.json</code> alongside <code>data/meta.json</code> (MIT License), compiled at build time into a lightweight edge index plus lazy-loaded per-entry dossiers and a single-file open-data download (<code>/data/breakthroughs.json</code>). Every commit and pull request is automatically validated by GitHub Actions against <code>data/schema.json</code> via <code>scripts/validate-data.mjs</code>—enforcing valid ISO dates, strict AI-only provenance, required <code>aiParadigm</code> and <code>aiSystem</code> fields, bounded 0–100 sub-scores, primary source URLs, and referential integrity across every <code>enables</code> lineage edge.
           </p>
           <div class="meth-cta-row">
             <a class="nav-btn nav-btn--primary" href="${REPO_URL}/issues/new?template=submit-breakthrough.yml" target="_blank" rel="noopener noreferrer">Submit a New AI-Enabled Breakthrough</a>
             <a class="nav-btn" href="${REPO_URL}/issues/new?template=challenge-score.yml" target="_blank" rel="noopener noreferrer">Challenge / Update a Score or Audit Status</a>
-            <a class="nav-btn" href="${REPO_URL}/blob/main/data/breakthroughs.json" target="_blank" rel="noopener noreferrer">Inspect Raw JSON Ledger</a>
+            <a class="nav-btn" href="${REPO_URL}/tree/main/data/entries" target="_blank" rel="noopener noreferrer">Browse Entry Files</a>
+            <a class="nav-btn" href="./data/breakthroughs.json" target="_blank" rel="noopener noreferrer">Download Full JSON</a>
             <a class="nav-btn" href="./">← Return to Live Index</a>
           </div>
         </section>
@@ -506,14 +508,28 @@ document.addEventListener('click', (e) => {
   if (themeBtn) {
     currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
     applyTheme(currentTheme, { persist: true });
-    renderMethodologyPage();
+    if (dataset) renderMethodologyPage();
   }
 });
 
 subscribeThemeSync((nextTheme) => {
   if (nextTheme === currentTheme) return;
   currentTheme = nextTheme;
-  renderMethodologyPage();
+  if (dataset) renderMethodologyPage();
 });
 
-renderMethodologyPage();
+async function init() {
+  applyTheme(currentTheme);
+  try {
+    dataset = await loadIndexDataset();
+    DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
+    renderMethodologyPage();
+  } catch (err) {
+    const app = document.getElementById('app');
+    if (app) {
+      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load methodology metrics</h3><p>${escapeHtml(err.message)}</p></div></div>`;
+    }
+  }
+}
+
+init();

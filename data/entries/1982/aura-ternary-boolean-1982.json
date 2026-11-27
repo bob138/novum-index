@@ -1,0 +1,64 @@
+{
+  "id": "aura-ternary-boolean-1982",
+  "title": "AURA Automated Theorem Prover Settles Open Axiom-Independence Problems in Ternary Boolean Algebra",
+  "shortTitle": "AURA Ternary Boolean Algebra (1982)",
+  "date": "1982-04-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Automated Theorem Proving",
+    "Universal Algebra",
+    "Finite Model Generation"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "AURA / NIUTP (Argonne Automated Theorem Prover)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 35,
+  "aiTimeToSolve": "Automated countermodel search",
+  "isAnchor": true,
+  "whyItMatters": "First systematic use of an automated theorem prover to generate finite countermodels settling open mathematical questions—resolving a 35-year-old independence problem in Grau’s ternary Boolean algebra.",
+  "summary": "Published in the Journal of the ACM in April 1982, Steve Winker (building on Larry Wos and Ross Overbeek’s Argonne National Laboratory automated reasoning engine AURA) used automated theorem proving in a novel model-generation mode to settle two open problems in abstract algebra, including proving the independence of the first three axioms of Grau’s 1947 ternary Boolean algebra. Soon after, Wos, Winker, and collaborators also used AURA to settle open questions on shortest single axioms in equivalential calculus (1983). Together, these results proved that general-purpose symbolic deduction engines could crack genuine open problems in algebra and logic—directly launching Argonne’s path to OTTER and EQP’s Robbins proof.",
+  "technicalHighlights": [
+    "Pioneered automated generation and verification of finite algebraic countermodels using resolution and hyperresolution.",
+    "Settled the 35-year-old independence status of axioms (1), (2), and (3) in Grau’s 1947 ternary Boolean algebra.",
+    "Direct methodological stepping stone to Argonne’s OTTER and EQP automated theorem provers."
+  ],
+  "caveats": "Required expert clause formulation and strategy tuning by automated reasoning pioneers at Argonne National Laboratory.",
+  "contributors": [
+    "Steve Winker",
+    "Larry Wos",
+    "Ross Overbeek",
+    "Ewing Lusk"
+  ],
+  "institutions": [
+    "Argonne National Laboratory"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 82,
+    "verification": 97,
+    "velocity": 70
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that general-purpose automated reasoning software could solve genuine decades-old open questions in abstract algebra.",
+    "ripple": "Directly pioneered finite model finding and Argonne’s ATP lineage culminating in Robbins (EQP) and OTTER.",
+    "verification": "Peer-reviewed mathematical proofs and verified finite countermodels in JACM (Vol. 29, pp. 273–284).",
+    "velocity": "Automated search cracked problems untouched by human algebraists for 35 years."
+  },
+  "enables": [
+    "robbins-conjecture-eqp-1996",
+    "otter-boolean-single-axiom-2000"
+  ],
+  "sources": [
+    {
+      "label": "JACM Vol. 29(2), pp. 273–284 (Apr 1982) — Generation and Verification of Finite Models and Counterexamples Using an Automated Theorem Prover",
+      "url": "https://dl.acm.org/doi/10.1145/322307.322308",
+      "type": "paper"
+    },
+    {
+      "label": "Argonne National Laboratory — New Mathematical Results with ANL ATP Software",
+      "url": "https://www-unix.mcs.anl.gov/AR/new_results/",
+      "type": "explainer"
+    }
+  ]
+}

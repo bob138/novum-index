@@ -1,0 +1,55 @@
+{
+  "id": "gpt6-intrinsic-protein-design-2026",
+  "title": "GPT-6 Models Demonstrate Intrinsic Wet-Lab Protein Design via Reasoning & Code",
+  "shortTitle": "GPT-6 Intrinsic Protein Design",
+  "date": "2026-11-24",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Protein Design",
+    "Antibody Engineering",
+    "Structural Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6.2 & Internal GPT-6 Reasoning Models",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Shows general-purpose frontier reasoning models can design functional wet-lab protein binders and predict molecular docking using reasoning and code—surpassing specialized models like DiffDock.",
+  "summary": "In a November 24, 2026 preprint and wet-lab collaboration with Onava, OpenAI demonstrated that general-purpose GPT-6 reasoning models possess intrinsic protein-design capabilities using natural-language reasoning and code alone. Across 322 lab-tested minibinders against five protein targets, 35 bound their targets (10.9% hit rate across all five targets), while 66–70% of redesigned antibody/VHH binding loops retained target binding. On blind and covalent small-molecule docking benchmarks, GPT-6.2 and an internal model achieved 92–97% accuracy versus 50–60% for DiffDock.",
+  "technicalHighlights": [
+    "Wet-lab verified with Onava: 35 of 322 GPT-6.2-designed minibinders bound targets across all 5 tested proteins; 70% of 182 VHH and 66% of 272 therapeutic antibody loop redesigns retained binding.",
+    "Reached 93–96% blind docking accuracy (vs. 50% for DiffDock-L) and 92–97% covalent docking accuracy on the Scarpino dataset (vs. 60% for DiffDock).",
+    "Demonstrated prompt-steerable structural motif scaffolding via explicit physics/chemistry reasoning and code rather than bespoke structural diffusion weights."
+  ],
+  "caveats": "Preprint not yet peer-reviewed. OpenAI candidly notes that specialized models (ProteinMPNN, ESMFold) still assisted sequence selection/filtering in the wet-lab workflow, and de novo structure prediction from raw sequence remains a weakness.",
+  "contributors": [
+    "OpenAI Science Team",
+    "Onava Experimental Biology Team"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Onava"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 88,
+    "verification": 76,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Signals a paradigm shift where general-purpose reasoning LLMs rival or outperform specialized structural-biology models.",
+    "ripple": "Lowers the barrier to programmable therapeutic binder and antibody engineering through natural-language prompting.",
+    "verification": "Backed by physical wet-lab binding assays across five targets with Onava, though still at preprint stage and partially assisted by specialized sequence tools.",
+    "velocity": "Compressed multi-model computational protein engineering pipelines into promptable reasoning-and-code loops."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI — GPT-6 models demonstrate intrinsic protein-design capabilities (Nov 24, 2026)",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+      "type": "announcement"
+    }
+  ]
+}

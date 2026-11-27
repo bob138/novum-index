@@ -1,0 +1,69 @@
+{
+  "id": "alphachip-floorplanning-2021",
+  "title": "AlphaChip Uses Deep Reinforcement Learning to Design Production TPU Silicon Floorplans",
+  "shortTitle": "AlphaChip TPU Floorplanning",
+  "date": "2021-06-09",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Electronic Design Automation (EDA)",
+    "Reinforcement Learning",
+    "Hardware Co-Design"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaChip (Edge-Based Graph Neural RL Macro Placer)",
+  "verificationStatus": "Contested / Partial",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Hours (vs. weeks–months)",
+  "isAnchor": true,
+  "whyItMatters": "First deep RL method published in Nature for real-world semiconductor floorplanning—deployed in multiple Google TPU and Axion silicon generations, while sparking a landmark reproducibility debate in EDA.",
+  "summary": "Published in Nature in June 2021 by Azalia Mirhoseini, Anna Goldie, Mustafa Yazgan, Joe Wenjie Jiang, and colleagues at Google Brain (later rebranded AlphaChip by Google DeepMind in 2024), the system framed chip macro placement as a reinforcement learning game over netlist graphs. Deployed inside Google’s production TPU v5e, TPU v5p, Trillium (v6e), and Axion CPU design flows to generate floorplans in hours rather than weeks, AlphaChip also triggered a prominent academic dispute (including a 2023 UC San Diego critique by Cheng et al. and a 2024 Nature editorial investigation) over benchmark baselines and public reproducibility.",
+  "technicalHighlights": [
+    "Uses an edge-based graph neural network pre-trained across prior chip blocks so the RL policy transfers to unseen commercial chip netlists.",
+    "Adopted in real tape-outs across multiple generations of Google TPUs (v5e, v5p, Trillium) and Axion ARM CPUs, compressing floorplanning cycles from weeks to hours.",
+    "Became a touchstone case study in AI-for-engineering governance after academic EDA groups contested its comparisons against commercial placers and simulated annealing."
+  ],
+  "caveats": "Tagged Contested / Partial because while production deployment inside Google TPUs is documented, independent EDA researchers (notably Cheng et al., UC San Diego) disputed claims of superhuman performance over strong classical/commercial baselines and criticized missing proprietary test cases.",
+  "contributors": [
+    "Azalia Mirhoseini",
+    "Anna Goldie",
+    "Mustafa Yazgan",
+    "Jeff Dean"
+  ],
+  "institutions": [
+    "Google Brain / Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 86,
+    "verification": 68,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated transferable graph-RL optimization on complex physical VLSI macro-placement problems.",
+    "ripple": "Catalyzed widespread industry investment in AI-assisted chip design (EDA) and directly contributed to designing accelerators that train newer AI models.",
+    "verification": "Published in Nature and taped out in real Google silicon, but marked down significantly due to unresolved external benchmark and reproducibility disputes.",
+    "velocity": "Compressed multi-week human macro-floorplanning iterations into hours."
+  },
+  "enables": [
+    "alphatensor-2022",
+    "alphadev-sorting-2023"
+  ],
+  "sources": [
+    {
+      "label": "Nature — A graph placement methodology for fast chip design (Jun 2021)",
+      "url": "https://doi.org/10.1038/s41586-021-03544-w",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind — How AlphaChip transformed computer chip design (Sep 2024)",
+      "url": "https://deepmind.google/blog/how-alphachip-transformed-computer-chip-design/",
+      "type": "announcement"
+    },
+    {
+      "label": "AlphaChip — Wikipedia (Deployment History & Benchmark Controversy)",
+      "url": "https://en.wikipedia.org/wiki/AlphaChip",
+      "type": "explainer"
+    }
+  ]
+}

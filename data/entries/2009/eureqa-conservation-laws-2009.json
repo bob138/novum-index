@@ -1,0 +1,57 @@
+{
+  "id": "eureqa-conservation-laws-2009",
+  "title": "Eureqa Symbolic Regression Distills Hamiltonians, Lagrangians, and Conservation Laws from Raw Physical Motion Data",
+  "shortTitle": "Eureqa Conservation Laws (Science, 2009)",
+  "date": "2009-04-03",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Symbolic Regression",
+    "Evolutionary AI",
+    "Dynamical Systems"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Eureqa (Evolutionary Symbolic Regression)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Hours on desktop cluster",
+  "isAnchor": true,
+  "whyItMatters": "Published alongside Robot Scientist Adam in the same April 2009 issue of Science, Eureqa autonomously distilled exact Hamiltonians, Lagrangians, and invariants directly from motion-capture video of chaotic double pendulums.",
+  "summary": "Published in Science on April 3, 2009, Michael Schmidt and Hod Lipson at Cornell University introduced Eureqa, an evolutionary symbolic regression engine capable of discovering exact natural laws directly from noisy experimental time-series data without prior knowledge of Newtonian physics or geometry. Fed raw position/velocity motion-capture trajectories from simple harmonic oscillators, air-track systems, and chaotic double pendulums, Eureqa autonomously searched spaces of mathematical expressions using partial-derivative conservation criteria to distill exact Hamiltonians, Lagrangians, and momentum/energy invariants—launching modern AI symbolic equation discovery.",
+  "technicalHighlights": [
+    "Introduced an automated partial-derivative invariance criterion allowing evolutionary search to discover nontrivial conservation laws instead of trivial algebraic identities.",
+    "Recovered exact Lagrangians, Hamiltonians, and equations of motion from noisy motion-capture data of chaotic double pendulums.",
+    "Published on the exact same date in Science (April 3, 2009) as Robot Scientist Adam, marking a watershed moment for automated scientific discovery."
+  ],
+  "caveats": "Primary demonstrations recovered known classical-mechanics laws from experimental data, though Eureqa was subsequently applied to distill novel empirical models in biology and engineering.",
+  "contributors": [
+    "Michael Schmidt",
+    "Hod Lipson"
+  ],
+  "institutions": [
+    "Cornell University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that evolutionary AI could extract exact analytical conservation laws directly from raw chaotic experimental trajectories.",
+    "ripple": "Directly spawned the entire modern field of AI equation discovery (SINDy, AI Feynman, PySR, FunSearch).",
+    "verification": "Peer-reviewed in Science (Vol. 324, pp. 81–85) with open experimental benchmarks and widely adopted software.",
+    "velocity": "Distilled complex nonlinear physical invariants in hours from raw sensor streams."
+  },
+  "enables": [
+    "sindy-governing-equations-2016",
+    "ai-feynman-symbolic-regression-2020"
+  ],
+  "sources": [
+    {
+      "label": "Science Vol. 324(5923), pp. 81–85 (Apr 3, 2009) — Distilling Free-Form Natural Laws from Experimental Data",
+      "url": "https://www.science.org/doi/10.1126/science.1165893",
+      "type": "paper"
+    }
+  ]
+}

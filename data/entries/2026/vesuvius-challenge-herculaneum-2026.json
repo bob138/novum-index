@@ -1,0 +1,69 @@
+{
+  "id": "vesuvius-challenge-herculaneum-2026",
+  "title": "Vesuvius Challenge: First Complete Herculaneum Scroll (PHerc. 1667) Virtually Unwrapped & Read End-to-End",
+  "shortTitle": "Vesuvius: Full Herculaneum Scroll",
+  "date": "2026-06-25",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "3D Computer Vision",
+    "Virtual Unwrapping",
+    "Computational Archaeology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Vesuvius Challenge 3D U-Net & Self-Supervised 3D DINO Ink Models",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Open-source 3D CT deep learning",
+  "isAnchor": false,
+  "whyItMatters": "Sealed since Mount Vesuvius erupted in 79 AD, the entire surviving Herculaneum scroll PHerc. 1667 was non-destructively unrolled and read end-to-end using 3D CT deep learning—recovering a lost Stoic ethics treatise.",
+  "summary": "On June 25, 2026, the open-source Vesuvius Challenge (led by Brent Seales, Nat Friedman, Daniel Gross, ESRF, and global ML contributors) achieved a historic milestone in computational archaeology: virtually unwrapping and reading the entire surviving portion of carbonized Herculaneum scroll PHerc. 1667 end-to-end without physically opening it—the first complete ancient bookroll recovered since the 79 AD eruption of Mount Vesuvius. Using synchrotron X-ray micro-CT scans paired with open-source 3D segmentation and ink-detection neural networks (3D U-Nets and self-supervised 3D DINO transfer models), papyrologists identified PHerc. 1667 as a previously unknown 2nd-century BC Stoic ethics treatise naming Aristocreon, while parallel scans recovered Philodemus’s On Gods Book 8 (PHerc. 139) and broke open first Greek letters in PHerc. 306B and PHerc. 211 in November 2026.",
+  "technicalHighlights": [
+    "First complete non-destructive virtual unwrapping and end-to-end reading of a carbonized Herculaneum papyrus scroll (PHerc. 1667) buried since 79 AD.",
+    "Recovered previously unknown classical antiquity texts including a 2nd-century BC Stoic ethics treatise naming Aristocreon and Philodemus’s On Gods, Book 8 (PHerc. 139).",
+    "Open-source 3D U-Net + self-supervised 3D DINO transfer pipelines generalized zero-shot to unlock additional unread scrolls (PHerc. 306B and PHerc. 211) in November 2026."
+  ],
+  "caveats": "Individual faint letter readings rely on learned ink-probability reconstructions verified by the Vesuvius papyrology team; formal critical editions of the full recovered texts are in preparation.",
+  "contributors": [
+    "Brent Seales",
+    "Vesuvius Challenge Community",
+    "Federica Nicolardi",
+    "Priyank Aranke",
+    "ESRF Beamline Team"
+  ],
+  "institutions": [
+    "University of Kentucky",
+    "Vesuvius Challenge",
+    "ESRF (Grenoble)"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 88,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Solves a 2,000-year-old physical barrier by recovering complete lost works of ancient Greek philosophy from carbonized scrolls without destroying them.",
+    "ripple": "Unlocks hundreds of remaining unread Herculaneum scrolls and establishes a general 3D CT + deep-learning paradigm for damaged historical artifacts.",
+    "verification": "Independently corroborated by synchrotron imaging, open-source reproducible ML weights/code, and classical papyrology teams.",
+    "velocity": "Progressed from first isolated letters in late 2023 to reading an entire scroll end-to-end and scaling across multiple new scrolls by 2026."
+  },
+  "sources": [
+    {
+      "label": "ESRF Announcement: The Day the Herculaneum Scrolls Began Speaking Again",
+      "url": "https://www.esrf.fr/home/news/general/content-news/general/the-day-the-herculaneum-scrolls-began-speaking-again.html",
+      "type": "announcement"
+    },
+    {
+      "label": "Vesuvius Challenge Press & Open Data",
+      "url": "https://scrollprize.org/press",
+      "type": "announcement"
+    },
+    {
+      "label": "University of Kentucky Herculaneum Project",
+      "url": "https://engr.uky.edu/herculaneum",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

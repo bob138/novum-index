@@ -1,0 +1,62 @@
+{
+  "id": "segler-retrosynthesis-mcts-2018",
+  "title": "Segler, Preuss & Waller: Deep Neural Networks + Monte Carlo Tree Search Match Human Chemists in Organic Retrosynthesis",
+  "shortTitle": "3N-MCTS Chemical Retrosynthesis",
+  "date": "2018-03-28",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Organic Synthesis Planning",
+    "Neuro-Symbolic AI",
+    "Monte Carlo Tree Search"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "3N-MCTS (Three Neural Networks + Monte Carlo Tree Search, Segler et al.)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 60,
+  "aiTimeToSolve": "Seconds per synthesis route (30× faster)",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature, 3N-MCTS ended 60 years of brittle rule-based synthesis planning by pairing deep policy/filter networks with MCTS—solving 2× more organic molecules 30× faster and tying human chemists in double-blind tests.",
+  "summary": "Published in Nature on March 28, 2018, Marwin H. S. Segler, Mike Preuss, and Mark P. Waller at the University of Münster broke a 60-year bottleneck in computer-aided organic synthesis planning (dating back to E. J. Corey’s pioneering 1960s LHASA program). Trained on roughly 12 million published organic reactions, their 3N-MCTS neuro-symbolic system combined Monte Carlo Tree Search with three neural networks (an expansion policy, an in-scope reaction filter, and a rollout policy) to plan multi-step retrosynthetic routes autonomously. It solved nearly twice as many target molecules 30× faster than classical heuristic tools, and in a double-blind A/B evaluation, expert organic chemists judged its computer-generated routes equivalent in quality to published human literature syntheses.",
+  "technicalHighlights": [
+    "Trained three deep neural networks on ~12 million published organic reactions and coupled them to symbolic Monte Carlo Tree Search (3N-MCTS).",
+    "Solved ~2× more organic target molecules 30× faster than classical rule-based retrosynthesis engines.",
+    "First automated synthesis planner whose routes were indistinguishable from human literature routes in a double-blind chemist evaluation."
+  ],
+  "caveats": "Evaluated via double-blind route quality and benchmark solve rates rather than robotic wet-lab synthesis of every proposed route; stereochemistry and rare reaction conditions remained active follow-up challenges.",
+  "contributors": [
+    "Marwin H. S. Segler",
+    "Mike Preuss",
+    "Mark P. Waller"
+  ],
+  "institutions": [
+    "University of Münster"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 90,
+    "verification": 93,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Landmark neuro-symbolic breakthrough in chemistry—translating AlphaGo-style MCTS + neural policies to solve a 60-year grand challenge in organic retrosynthesis.",
+    "ripple": "Became the foundational paradigm for modern automated synthesis planning (AiZynthFinder, ASKCOS, Coscientist, robotic synthesis labs).",
+    "verification": "Peer-reviewed in Nature (Vol. 555, pp. 604–610) with double-blind expert chemist evaluation.",
+    "velocity": "Delivered a 30× speedup over legacy computer-aided synthesis tools while doubling solvability."
+  },
+  "enables": [
+    "coscientist-autonomous-chemistry-2023"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Nature (Mar 28, 2018) — Planning chemical syntheses with deep neural networks and symbolic AI",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29595767/",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:1708.04202 — Learning to Plan Chemical Syntheses (Segler, Preuss, Waller)",
+      "url": "https://arxiv.org/abs/1708.04202",
+      "type": "paper"
+    }
+  ]
+}

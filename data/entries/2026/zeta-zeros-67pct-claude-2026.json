@@ -1,0 +1,59 @@
+{
+  "id": "zeta-zeros-67pct-claude-2026",
+  "title": "Claude Raises Proven Share of Riemann Zeta Zeros on the Critical Line to 67.25%",
+  "shortTitle": "67.25% Zeta Zeros on Critical Line",
+  "date": "2026-08-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Riemann Zeta Function",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Unreleased Claude Research Model (Anthropic)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Jumped the unconditional lower bound on Riemann zeta zeros on the critical line from 41.6% to 67.25%—a massive leap over decades of 0.1%-scale incremental improvements.",
+  "summary": "Asked to take a serious run at the Riemann Hypothesis, an unreleased Anthropic Claude research model instead discovered a Lean-verified analytic proof raising the unconditional proportion of nontrivial Riemann zeta zeros proved to lie on the critical line Re(s) = 1/2 from 41.6% to 67.25%. Analytic number theorists Brian Conrey, Dan Goldston, and Youness Lamzouri examined the argument, with Lamzouri confirming correctness and publishing a simplified exposition.",
+  "technicalHighlights": [
+    "Shattered decades of sub-percentage incremental improvements (Conrey 40% → Pratt–Robles–Zaharescu–Zeindler 41.7% → Claude 67.25%).",
+    "Passed Lean 4 comparator verification and underwent independent review by leading analytic number theorists.",
+    "Served as an immediate technical stepping stone toward Anthropic’s November 2026 Lean proof of GRH."
+  ],
+  "caveats": "Did not settle the full Riemann Hypothesis on its own; Anthropic noted at release that the specific mollifier techniques alone would not reach 100%.",
+  "contributors": [
+    "Anthropic Math & Claude Research Team",
+    "Jarred Sumner",
+    "Levent Alpöge",
+    "Youness Lamzouri (Review)"
+  ],
+  "institutions": [
+    "Anthropic",
+    "Université Paris-Saclay (Review)"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 83,
+    "verification": 96,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Achieved the largest single jump in critical-line zeta zero proportions in analytic number theory history.",
+    "ripple": "Directly catalyzed new analytic tools and momentum leading to the November 2026 Lean Riemann proof.",
+    "verification": "Passed Lean comparator checks and received independent confirmation from Conrey, Goldston, and Lamzouri.",
+    "velocity": "Improved a fiercely contested analytic bound by +25.6 percentage points in a single AI research campaign."
+  },
+  "enables": [
+    "riemann-hypothesis-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Anthropic Research — Learning more about Claude’s mathematical capabilities",
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "type": "announcement"
+    }
+  ]
+}

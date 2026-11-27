@@ -1,0 +1,59 @@
+{
+  "id": "sunflower-conjecture-lean-2026",
+  "title": "Lean-Formalized Proof of the 1960 Erdős–Rado Fixed-Petal Sunflower Conjecture",
+  "shortTitle": "Erdős–Rado Sunflower Conjecture",
+  "date": "2026-11-24",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Extremal Combinatorics",
+    "Set Systems",
+    "Tensor Geometry",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Math Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 66,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Claims an exponential B_r^k upper bound settling the 66-year-old Erdős–Rado Sunflower Conjecture for every fixed petal count r ≥ 3, accompanied by a Lean 4 formalization.",
+  "summary": "Posed by Paul Erdős and Richard Rado in 1960, the Sunflower Conjecture asks whether every family of more than C_r^k sets of size k contains an r-sunflower (r sets with identical pairwise intersections). Following the landmark 2019 Alweiss–Lovett–Wu–Zhang (log k)^k breakthrough, OpenAI’s November 24 preprint applies Euclidean geometry of the asymptotic spectrum of tensors to remove the log-factor barrier completely, proving an exponential bound B_r^k with Lean 4 formalization of the fixed-petal theorem.",
+  "technicalHighlights": [
+    "Proves that for every r ≥ 3, more than B_r^k sets of size ≤ k force an r-sunflower, with log B_r = O((log r)^4 (log log 2r)^(5/2)).",
+    "Accompanied by a Lean 4 formalization (FixedBase.lean) proving existence of the exponential base C_r for every r ≥ 3.",
+    "Demonstrates unexpected transfer from algebraic tensor-spectrum geometry directly into extremal combinatorics."
+  ],
+  "caveats": "Unreviewed November 24 preprint; the Lean file formalizes existence of C_r while the sharper quantitative dependence of B_r on r appears in the manuscript and awaits independent combinatorial refereeing.",
+  "contributors": [
+    "OpenAI Math Research Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 85,
+    "verification": 65,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Settles one of Paul Erdős’s most famous and widely cited 1960 conjectures in extremal combinatorics.",
+    "ripple": "Sunflower lemmas are core tools in circuit complexity, pseudorandomness, data structures, and matrix multiplication.",
+    "verification": "Includes a Lean 4 proof of the fixed-base exponential theorem, awaiting independent review of both Lean definitions and quantitative manuscript bounds.",
+    "velocity": "Bridged the final gap from the 2019 (log k)^k bound to the full exponential conjecture via AI-developed tensor geometry."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI Math Preprint — An exponential bound for sunflowers (Nov 24, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/An-exponential-bound-for-sunflowers-November-24-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "OpenAI Math Lean Formalization — FixedBase.lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/Combinatorics/Sunflower/FixedBase.lean",
+      "type": "formal-verification"
+    }
+  ]
+}

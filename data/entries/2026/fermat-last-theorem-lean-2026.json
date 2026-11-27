@@ -1,0 +1,58 @@
+{
+  "id": "fermat-last-theorem-lean-2026",
+  "title": "Claude Completes Full 13-Million-Line Lean 4 Formalization of Fermat’s Last Theorem in 11 Days",
+  "shortTitle": "Fermat’s Last Theorem (Lean, 11d)",
+  "date": "2026-09-04",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Number Theory",
+    "Formal Verification",
+    "Large-Scale Autoformalization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Anthropic Claude Multi-Agent Fleet",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "11 days",
+  "isAnchor": false,
+  "whyItMatters": "Dozens of Claude agents formalized Wiles–Taylor’s complete proof of Fermat’s Last Theorem—13 million lines and 30,300 theorems, 5× Mathlib’s size—in just 11 days.",
+  "summary": "Anthropic deployed a coordinated fleet of Claude agents that wrote ~13 million lines of Lean 4 code (~6 billion output tokens, ~30,300 proved lemmas) to complete the first full computer-verified proof of Fermat’s Last Theorem in 11 days—a milestone human formalization leaders like Kevin Buzzard had projected would take years. Buzzard reviewed the top-level theorem and architecture, cementing multi-agent Lean synthesis as the backbone for certifying massive proofs.",
+  "technicalHighlights": [
+    "Generated ~13 million lines of kernel-checked Lean 4 (>5× the entire Mathlib library) in 11 days with minimal human mathematical guidance.",
+    "Formally verified Andrew Wiles and Richard Taylor’s modularity-lifting proof of Fermat’s Last Theorem.",
+    "Directly proved the multi-million-line Lean infrastructure that enabled rapid certification of the November 2026 Riemann Hypothesis proof."
+  ],
+  "caveats": "Formalizes an established 1995 human theorem rather than discovering new mathematics; the 13M-line codebase is far more verbose than curated human Mathlib code.",
+  "contributors": [
+    "Anthropic Formal Mathematics Team",
+    "Kevin Buzzard (Review)"
+  ],
+  "institutions": [
+    "Anthropic",
+    "Imperial College London (Review)"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 94,
+    "verification": 98,
+    "velocity": 98
+  },
+  "scoreRationale": {
+    "foundational": "Achieved the first complete formal verification of one of modern mathematics’ most intricate proofs.",
+    "ripple": "Demonstrated industrial-scale Lean formalization capability that immediately unlocked RH and massive proof auditing.",
+    "verification": "Compiled and checked by Lean 4 kernel and reviewed by Kevin Buzzard.",
+    "velocity": "Compressed a multi-year global human formalization roadmap into an 11-day autonomous agent run."
+  },
+  "enables": [
+    "riemann-hypothesis-lean-2026",
+    "cfsg-enormous-theorem-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Anthropic Research — Formalizing Fermat’s Last Theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "type": "announcement"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "dinitz-garg-goemans-disproof-2026",
+  "title": "GPT-5.6 Pro Finds Explicit Counterexample Disproving the Dinitz–Garg–Goemans Conjecture",
+  "shortTitle": "Dinitz–Garg–Goemans Disproof",
+  "date": "2026-07-22",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Combinatorial Optimization",
+    "Network Flows",
+    "Approximation Algorithms"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-5.6 Pro",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 27,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "From a single public ChatGPT prompt, GPT-5.6 Pro constructed a finite network counterexample refuting the 27-year-old Dinitz–Garg–Goemans unsplittable-flow conjecture.",
+  "summary": "Independent researcher Dmitry Rybin posted a public ChatGPT session on X showing OpenAI’s GPT-5.6 Pro disproving the 1999 Dinitz–Garg–Goemans conjecture in combinatorial optimization. The model constructed an explicit small directed network admitting a fractional flow of cost 58 while every unsplittable flow respecting the conjectured capacity-violation bound (≤ 15) has cost at least 60—demonstrating that an off-the-shelf frontier reasoning model could refute a 27-year-old network-flow conjecture on demand.",
+  "technicalHighlights": [
+    "Exhibits an explicit finite directed network where a fractional routing achieves cost 58, yet no unsplittable flow within the Dinitz–Garg–Goemans capacity violation bound (≤ 15) achieves cost below 60.",
+    "Refutes a 27-year-old (1999) open conjecture on the cost–congestion trade-off of single-source unsplittable flows.",
+    "Produced transparently in a publicly shared ChatGPT session link, making both the AI provenance and the finite counterexample immediately reproducible."
+  ],
+  "caveats": "Released directly via X and a public ChatGPT share link (covered in science press) rather than a refereed journal paper or formal Lean artifact; while the finite graph counterexample is directly verifiable by elementary flow arithmetic, formal archival publication is pending.",
+  "contributors": [
+    "Dmitry Rybin"
+  ],
+  "institutions": [
+    "Independent Researcher"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 74,
+    "verification": 90,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Cleanly refutes a 27-year-old open conjecture in combinatorial optimization and network routing theory.",
+    "ripple": "Striking public proof-of-concept that consumer-accessible reasoning models can refute decades-old research conjectures from a single prompt.",
+    "verification": "Finite graph counterexample is directly checkable by exact linear/integer programming arithmetic, though unrefereed and posted on X rather than a journal.",
+    "velocity": "Generated an explicit counterexample to a 1999 conjecture in a single interactive ChatGPT session."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Public GPT-5.6 Pro Session — Dinitz–Garg–Goemans Counterexample (ChatGPT Share)",
+      "url": "https://chatgpt.com/share/6a60b2eb-0b64-83ee-9c76-7931ca1de063",
+      "type": "social-post"
+    },
+    {
+      "label": "List of mathematical discoveries made with artificial intelligence — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+      "type": "explainer"
+    }
+  ]
+}

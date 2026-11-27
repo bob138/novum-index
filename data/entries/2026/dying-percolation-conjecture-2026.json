@@ -1,0 +1,67 @@
+{
+  "id": "dying-percolation-conjecture-2026",
+  "title": "Anthropic AI & Lean 4 Prove the Critical Dying Percolation Conjecture (θ(p_c) = 0)",
+  "shortTitle": "Dying Percolation Conjecture",
+  "date": "2026-08-26",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Probability Theory",
+    "Statistical Physics",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Anthropic Internal Claude Model + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 66,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Settles probability theory’s 66-year-old 'holy grail'—proving no infinite cluster survives at the critical percolation threshold θ(p_c) = 0 in every dimension d ≥ 3, verified in Lean 4 and streamlined by human experts.",
+  "summary": "On August 26, 2026, a dangling commit (795efb8) by Justin Leder in Anthropic’s formal-math GitHub repository surfaced a Lean 4 proof of Kozma and Nitzan’s (2024) correlation inequality—immediately settling the 66-year-old dying percolation conjecture (θ(p_c) = 0 on ℤ^d in all dimensions, including the physically central 3D case). Discovered by mathematicians on X just days before Fields Medalist Hugo Duminil-Copin predicted AI would crack it first, the proof was rapidly checked, explained by Ahmed Bou-Rabee (extending it to site percolation), condensed to 9 human-readable pages by Arthur Blanc-Renaudie, and generalized to FK-percolation (arXiv:2610.26419).",
+  "technicalHighlights": [
+    "Resolves θ(p_c) = 0 on ℤ^d for all intermediate dimensions d ≥ 3 (including d = 3), closing the main long-standing open problem in percolation theory since Harris (1960).",
+    "Proves Kozma–Nitzan’s (2024) general finite weighted-graph correlation inequality in Lean 4—a conjecture many specialists had suspected might have a counterexample.",
+    "Independently verified, streamlined into a 9-page human proof by Arthur Blanc-Renaudie, and generalized to site percolation and random-cluster (FK) models (arXiv:2610.26419)."
+  ],
+  "caveats": "Originally surfaced via an unannounced GitHub commit rather than a traditional paper; journal publication of the streamlined human expositions and FK-percolation generalizations is still working through peer review.",
+  "contributors": [
+    "Justin Leder",
+    "Anthropic",
+    "Ahmed Bou-Rabee",
+    "Arthur Blanc-Renaudie"
+  ],
+  "institutions": [
+    "Anthropic",
+    "University of Pennsylvania"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 86,
+    "verification": 97,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Solves what Fields Medalist Hugo Duminil-Copin and Gil Kalai called the most famous open conjecture in percolation theory (open since 1960).",
+    "ripple": "Directly impacts statistical mechanics, phase-transition theory, and random-cluster (FK) models, immediately sparking new generalizations.",
+    "verification": "Gold-standard dual verification: complete Lean 4 formalization plus concise 9-page human proofs and independent arXiv extensions.",
+    "velocity": "Cracked a 66-year-old 'holy grail' of probability theory autonomously and proved an inequality experts thought might be false."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Dying percolation conjecture — Wikipedia (Anthropic Lean commit 795efb8 & generalizations)",
+      "url": "https://en.wikipedia.org/wiki/Dying_percolation_conjecture",
+      "type": "explainer"
+    },
+    {
+      "label": "Gil Kalai — The θ(p_c) = 0 conjecture is solved in all dimensions (Sep 3, 2026)",
+      "url": "https://gilkalai.wordpress.com/2026/09/03/amazing-there-is-no-percolation-at-the-critical-probability-in-all-dimensions-solved-by-ai-via-a-conjecture-of-gady-kozma-and-shahaf-nitzan/",
+      "type": "explainer"
+    },
+    {
+      "label": "A Connection Inequality for the Random-Cluster Model (arXiv:2610.26419)",
+      "url": "https://arxiv.org/abs/2610.26419",
+      "type": "paper"
+    }
+  ]
+}

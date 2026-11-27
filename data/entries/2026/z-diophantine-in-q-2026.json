@@ -1,0 +1,66 @@
+{
+  "id": "z-diophantine-in-q-2026",
+  "title": "ℤ Is Diophantine in ℚ: Collaborative AI Proof & Explicit 229-Variable Quartic (Mazur / Hilbert 10th)",
+  "shortTitle": "ℤ Is Diophantine in ℚ (229-Var)",
+  "date": "2026-11-05",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Number Theory",
+    "Diophantine Geometry",
+    "Mathematical Logic"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6 Astra / 6.1 Sol + Claude Opus 5.5 / Fable 5.2 + Gemini 4 Carbon",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 56,
+  "aiTimeToSolve": "Multi-model GitHub sprint (v1–v21)",
+  "isAnchor": false,
+  "whyItMatters": "Building on OpenAI’s Oct 6 preprint, Elliot Glazer and collaborators used GPT-6, Claude 5.5/Fable, and Gemini 4 Carbon on GitHub to prove ℤ is Diophantine in ℚ—refuting Mazur’s conjecture—with an explicit 229-variable quartic.",
+  "summary": "Maintained as a rapidly iterating public GitHub research project (github.com/elliotglazer/diophantine-z-q, Versions 1–21 in November 2026), Elliot Glazer, Sohail Farhangi, José Brox, Gabriel Conant, Jennifer Park, Caroline Terry, and collaborators—working jointly with GPT-6 Astra, GPT-6.1 Sol, Claude Opus 5.5, Claude Fable 5.1/5.2, and Gemini 4 Carbon—developed a claimed proof that the integers ℤ are Diophantine over the rational numbers ℚ, building on OpenAI’s October 6 preprint on Hilbert’s Tenth Problem over ℚ. If verified, this both gives a negative answer to Hilbert’s Tenth Problem for ℚ (56 years after Matiyasevich’s 1970 theorem for ℤ) and refutes Barry Mazur’s widely believed topology conjecture on rational points. Across 21 revisions, human–AI collaboration shrank the explicit defining polynomial from 292.89 billion variables down to an explicit 229-variable, 3,312-monomial quartic (74 KB in plain decimal) using Gemini 4 Carbon’s three-detector construction.",
+  "technicalHighlights": [
+    "Claims an explicit single Diophantine quartic P(q, w) = 0 over ℚ defining q ∈ ℤ, settling Hilbert’s Tenth Problem over ℚ negatively and refuting Mazur’s conjecture.",
+    "Multi-lab AI collaboration (GPT-6 Astra/Sol, Claude Opus 5.5/Fable 5.2, Gemini 4 Carbon) compressed the construction from 292.89 billion variables to 229 explicit variables (degree 4, 3,312 monomials).",
+    "Includes open SHA-256-pinned finite verification scripts, 48 accepted Lean 4 helper modules, and public GitHub issue audits."
+  ],
+  "caveats": "Lean formalization is currently incomplete (48 helper modules compiled, main bounded-polynomial theorem still has sorry); the full arithmetic proof remains under active community audit and is not yet peer-reviewed.",
+  "contributors": [
+    "Elliot Glazer",
+    "Sohail Farhangi",
+    "José Brox",
+    "Gabriel Conant",
+    "Jennifer Park",
+    "Caroline Terry"
+  ],
+  "institutions": [
+    "Independent / Academic Consortium",
+    "OpenAI",
+    "Anthropic",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 86,
+    "verification": 58,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "A positive proof that ℤ is Diophantine in ℚ would settle Hilbert’s Tenth Problem over ℚ and overturn Barry Mazur’s landmark conjecture.",
+    "ripple": "Pioneered open, multi-model, multi-lab GitHub mathematical collaboration (21 rapid revisions compressing variables by 9 orders of magnitude).",
+    "verification": "Finite algebraic checks and 48 Lean helper modules pass, but the main arithmetic theorem still has sorry and awaits independent human verification.",
+    "velocity": "Shrank a 292-billion-variable theoretical construction to a 74 KB explicit 229-variable quartic in under three weeks."
+  },
+  "sources": [
+    {
+      "label": "GitHub: elliotglazer/diophantine-z-q (v21)",
+      "url": "https://github.com/elliotglazer/diophantine-z-q",
+      "type": "code"
+    },
+    {
+      "label": "AI & Mathematics Research Watch (Nov 6, 2026)",
+      "url": "https://djalil.chafai.net/aim/archives/20261106T081501Z-8c28a311.html",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

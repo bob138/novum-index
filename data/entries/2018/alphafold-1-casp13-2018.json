@@ -1,0 +1,80 @@
+{
+  "id": "alphafold-1-casp13-2018",
+  "title": "DeepMind AlphaFold 1 Wins CASP13 by Crushing Free-Modeling Protein Folding with Deep Distance-Distribution Potentials",
+  "shortTitle": "AlphaFold 1 Wins CASP13 (Dec 2018)",
+  "date": "2018-12-02",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Protein Folding",
+    "Deep Residual Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaFold 1 (DeepMind CASP13 ResNet + Gradient Potential)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Hours per protein fold",
+  "isAnchor": true,
+  "whyItMatters": "The watershed CASP13 shockwave (Dec 2018): AlphaFold 1 predicted deep ResNet distance distributions, winning 25 of 43 hard free-modeling targets (vs. 3 for runner-up) and proving deep learning could crack protein folding.",
+  "summary": "Unveiled at the 13th Critical Assessment of Protein Structure Prediction (CASP13) on December 2, 2018 (and published in Nature on January 15, 2020), Andrew W. Senior, Richard Evans, John Jumper, Demis Hassabis, and the Google DeepMind team introduced AlphaFold 1. Extending RaptorX-Contact’s 2D residual CNN paradigm from binary contact maps to fine-grained continuous inter-residue distance distributions (“distograms”) and torsion angles, AlphaFold 1 constructed protein-specific smooth energy potentials minimized by simple gradient descent. In blind CASP13 competition, AlphaFold 1 won 25 of 43 template-free domains (versus 3 for the next-best academic group), doubling prior progress rates and triggering the global race to AlphaFold 2.",
+  "technicalHighlights": [
+    "Replaced coarse binary contact predictions with deep 2D dilated ResNets predicting continuous probability distributions over inter-residue distances and backbone angles.",
+    "Eliminated complex fragment-assembly physics search in favor of direct gradient descent over a learned neural potential.",
+    "Won 25 of 43 blind CASP13 free-modeling domains (runner-up won 3), signaling that deep learning had broken the decades-old protein-folding logjam."
+  ],
+  "caveats": "Still relied on a multi-stage distance-prediction + gradient-folding pipeline and did not yet reach experimental atomic accuracy (~1 Å), which required AlphaFold 2’s end-to-end Evoformer/IPA rewrite in 2020.",
+  "contributors": [
+    "Andrew W. Senior",
+    "Richard Evans",
+    "John Jumper",
+    "James Kirkpatrick",
+    "Laurent Sifre",
+    "Tim Green",
+    "Chongli Qin",
+    "Augustin Žídek",
+    "Alexander W. R. Nelson",
+    "Alex Bridgland",
+    "Hugo Penedones",
+    "Stig Petersen",
+    "Karen Simonyan",
+    "Steve Crossan",
+    "Pushmeet Kohli",
+    "David T. Jones",
+    "David Silver",
+    "Koray Kavukcuoglu",
+    "Demis Hassabis"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "University College London"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 96,
+    "verification": 98,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Proved that deep neural distance potentials could outperform decades of physics-based fragment assembly in blind de novo protein folding.",
+    "ripple": "Directly triggered the architectural revolution behind trRosetta, RoseTTAFold, and Nobel-winning AlphaFold 2.",
+    "verification": "Blindly verified at CASP13 (Dec 2018) and peer-reviewed in Nature (Vol. 577, pp. 706–710, 2020).",
+    "velocity": "Folded novel protein domains in hours via direct neural-potential gradient descent."
+  },
+  "enables": [
+    "alphafold-2-2020",
+    "rosettafold-protein-structure-2021"
+  ],
+  "sources": [
+    {
+      "label": "Nature Vol. 577, pp. 706–710 (2020) — Improved protein structure prediction using potentials from deep learning",
+      "url": "https://www.nature.com/articles/s41586-019-1923-7",
+      "type": "paper"
+    },
+    {
+      "label": "Bioinformatics (2019) — AlphaFold at CASP13 Independent Assessment (Mohammed AlQuraishi)",
+      "url": "https://academic.oup.com/bioinformatics/article/35/22/4862/5497249",
+      "type": "explainer"
+    }
+  ]
+}

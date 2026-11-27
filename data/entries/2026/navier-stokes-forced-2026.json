@@ -1,0 +1,62 @@
+{
+  "id": "navier-stokes-forced-2026",
+  "title": "Forced 3D Navier–Stokes Finite-Time Blowup Formal Proof",
+  "shortTitle": "Navier–Stokes (Forced) Proof",
+  "date": "2026-09-08",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Partial Differential Equations",
+    "Fluid Dynamics",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Model (10,000-agent search)",
+  "verificationStatus": "Contested / Partial",
+  "yearsUnsolved": 26,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Lean-verified construction of finite-time blowup for smoothly forced 3D incompressible Navier–Stokes—sparking intense debate over scope, priority, and Clay prize criteria.",
+  "summary": "On September 8, 2026, OpenAI released a writeup and Lean-verified formal proof demonstrating that a smooth solution to the 3D incompressible Navier–Stokes equations starting from rest under a specific smooth external forcing term can develop a singularity in finite time. While the formal Lean proof checked out, PDE specialists (including Tristan Buckmaster and Terence Tao's broader community) sparked a fierce priority and scope controversy—noting that the forced formulation bypasses the core unforced (zero-force) Millennium Prize mystery.",
+  "technicalHighlights": [
+    "Constructed via massive multi-agent AI search and formalized in Lean 4.",
+    "Satisfies the literal wording of one branch of the official Clay Mathematics Institute forced-equation statement.",
+    "Became the defining case study of the 2026 'mathocalypse' debate over specification gaming vs. deep mathematical insight."
+  ],
+  "caveats": "Heavily contested on scientific scope and priority grounds: fluid-dynamics experts emphasize that constructing an artificial external force that drives blowup does not resolve the physically central unforced 3D Navier–Stokes regularity question.",
+  "contributors": [
+    "OpenAI Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 76,
+    "verification": 68,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Mathematically non-trivial PDE construction, but scored below unforced Millennium resolutions due to the external-forcing caveat.",
+    "ripple": "Sparked sweeping reforms in how math communities define formal specifications and evaluate AI-authored proofs.",
+    "verification": "Lean-checked for the forced statement, yet actively disputed on priority, provenance, and Millennium-scope grounds.",
+    "velocity": "Showcased 10,000-agent autonomous theorem discovery at industrial compute scale."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI: On the Navier–Stokes Millennium Prize Problem",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "type": "announcement"
+    },
+    {
+      "label": "Wikipedia: Navier–Stokes priority controversy",
+      "url": "https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy",
+      "type": "explainer"
+    },
+    {
+      "label": "Terence Tao: A Severe Misalignment of AI in Mathematics",
+      "url": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/",
+      "type": "explainer"
+    }
+  ]
+}

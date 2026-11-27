@@ -1,0 +1,65 @@
+{
+  "id": "erdos-728-gpt52-aristotle-2026",
+  "title": "Autonomous Lean-Verified Proof of Erdős Problem #728 (GPT-5.2 Pro & Aristotle)",
+  "shortTitle": "Erdős #728 (GPT-5.2 + Aristotle)",
+  "date": "2026-01-09",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Number Theory",
+    "Formal Verification",
+    "Erdős Problems"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-5.2 Pro + Harmonic Aristotle (Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 30,
+  "aiTimeToSolve": "Hours",
+  "isAnchor": false,
+  "whyItMatters": "Watershed moment of early 2026: GPT-5.2 Pro and Harmonic’s Aristotle autonomously produced a Lean-checked proof of a 30-year-open Erdős problem, confirmed by Terence Tao.",
+  "summary": "In January 2026, GPT-5.2 Pro generated a novel proof of Paul Erdős’s open factorial-divisibility Problem #728, which Harmonic’s Aristotle agent formalized and machine-checked in Lean 4. Terence Tao publicly confirmed the solution as an early milestone where an AI pipeline resolved a genuinely open Erdős problem largely autonomously, kicking off the 2026 wave of AI-solved Erdős problems.",
+  "technicalHighlights": [
+    "Combined frontier natural-language reasoning (GPT-5.2 Pro) with automated Lean 4 formalization (Harmonic Aristotle).",
+    "Confirmed by Terence Tao and logged on the official teorth/erdosproblems AI contributions wiki.",
+    "Catalyzed rapid community adoption of LLM-to-Lean workflows for attacking long-tail open conjectures."
+  ],
+  "caveats": "Problem #728 was a relatively accessible open Erdős problem rather than a central structural conjecture, and minor edge-case tightening was refined during community review.",
+  "contributors": [
+    "GPT-5.2 Pro / Aristotle Pipeline",
+    "Terence Tao (Verification)",
+    "Erdős Problems Community"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Harmonic",
+    "UCLA (Verification)"
+  ],
+  "scores": {
+    "foundational": 74,
+    "ripple": 85,
+    "verification": 96,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Modest individual theorem depth, but a historic proof-of-concept for autonomous resolution of open problems.",
+    "ripple": "Triggered an explosion of independent researchers deploying LLM + Lean loops on open conjecture lists.",
+    "verification": "Lean 4 formally verified and explicitly confirmed by Terence Tao.",
+    "velocity": "Marked the inflection point where open Erdős problems began falling in hours rather than decades."
+  },
+  "enables": [
+    "erdos-unit-distance-disproof-2026",
+    "deepmind-formal-proof-search-2026"
+  ],
+  "sources": [
+    {
+      "label": "Terence Tao — AI contributions to Erdős problems Wiki (GitHub)",
+      "url": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems",
+      "type": "code"
+    },
+    {
+      "label": "Quanta Magazine — Why the Legendary Erdős Problems Are Falling to AI",
+      "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/",
+      "type": "explainer"
+    }
+  ]
+}

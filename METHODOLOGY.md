@@ -4,7 +4,7 @@ Ranking scientific breakthroughs across pure mathematics, theoretical computer s
 
 ## 1. The Four Impact Dimensions (0–100 Each)
 
-Every breakthrough receives an integer score from `0` to `100` on four orthogonal dimensions, each accompanied by a written rationale in `data/breakthroughs.json`:
+Every breakthrough receives an integer score from `0` to `100` on four orthogonal dimensions, each accompanied by a written rationale in its JSON record under `data/entries/<year>/<id>.json`:
 
 | Dimension | Default Weight | Anchoring Criteria |
 | :--- | :---: | :--- |

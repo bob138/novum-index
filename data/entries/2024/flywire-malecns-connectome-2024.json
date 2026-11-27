@@ -1,0 +1,71 @@
+{
+  "id": "flywire-malecns-connectome-2024",
+  "title": "FlyWire & MaleCNS: Flood-Filling Neural Networks Enable Complete Adult Fruit Fly Brain & Nerve Cord Connectomes",
+  "shortTitle": "FlyWire & MaleCNS Brain Connectome",
+  "date": "2024-10-02",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Connectomics",
+    "Systems Neuroscience",
+    "3D Computer Vision"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Google Flood-Filling Networks (FFNs) + Automated Synapse & Neurotransmitter CNNs",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~33–44 person-yrs (vs. ~50,000 manual)",
+  "isAnchor": false,
+  "whyItMatters": "Google’s Flood-Filling Neural Networks compressed ~50,000 person-years of EM neuron tracing into ~33–44 person-years, enabling the first complete adult fruit fly brain (Nature 2024) and full brain+nerve cord (Cell 2026).",
+  "summary": "In a landmark Nature package on October 2, 2024, the FlyWire Consortium (led by Sebastian Seung and Mala Murthy at Princeton with Google Research, Cambridge, and HHMI Janelia) published the first complete neuronal wiring diagram of an adult animal brain—reconstructing 139,255 neurons and 54.5 million chemical synapses across a full Drosophila melanogaster brain from 21 million electron-microscopy images. Powered by Google’s Flood-Filling Networks (FFNs) for 3D volumetric segmentation alongside automated synapse and neurotransmitter-classification neural nets, the AI pipeline reduced an estimated ~50,000 person-years of manual tracing to ~33 person-years of proofreading. On September 3, 2026, Janelia, Cambridge, and Google extended this milestone in Cell with MaleCNS: 166,700 neurons and 124 million synaptic contacts uniting the entire male brain and ventral nerve cord from eyes to legs.",
+  "technicalHighlights": [
+    "FlyWire (Nature, Oct 2024): First complete adult brain connectome (139,255 neurons, 54.5M synapses, 8,453 cell types) plus whole-brain computational circuit simulations.",
+    "MaleCNS (Cell, Sep 2026): Extended AI segmentation to 166,700 neurons and 124M synaptic contacts uniting the full brain and ventral nerve cord (\"eyes to legs\").",
+    "Google Flood-Filling Networks + ResNet50 neurotransmitter classifiers achieved >1,000× human-effort compression over manual electron-microscopy reconstruction."
+  ],
+  "caveats": "AI automated segmentation still required 33–44 person-years of expert human proofreading to correct merge/split errors, and static connectomes do not directly capture neuromodulators, gap junctions, or synaptic plasticity.",
+  "contributors": [
+    "Sven Dorkenwald",
+    "Sebastian Seung",
+    "Mala Murthy",
+    "Gregory Jefferis",
+    "Viren Jain",
+    "FlyWire & MaleCNS Consortia"
+  ],
+  "institutions": [
+    "Princeton University",
+    "Google Research",
+    "HHMI Janelia Research Campus",
+    "University of Cambridge"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 91,
+    "verification": 96,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "First complete synaptic-resolution wiring diagrams of a complex adult animal brain and full central nervous system in the history of neuroscience.",
+    "ripple": "Already powers whole-brain behavioral simulations, cell-type atlases, and circuit-level studies of vision, navigation, and neurological disease models.",
+    "verification": "Peer-reviewed across flagship Nature (Oct 2024) and Cell (Sep 2026) collections with open-access community proofreading and public data portals.",
+    "velocity": "Compressed an estimated ~50,000 person-years of impossible manual tracing into a feasible multi-year human–AI collaboration."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PubMed / Nature (Oct 2, 2024) — Neuronal wiring diagram of an adult brain (DOI: 10.1038/s41586-024-07558-y)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39358518/",
+      "type": "paper"
+    },
+    {
+      "label": "NIH Research Matters — Complete wiring map of an adult fruit fly brain",
+      "url": "https://www.nih.gov/news-events/nih-research-matters/complete-wiring-map-adult-fruit-fly-brain",
+      "type": "explainer"
+    },
+    {
+      "label": "Progressive Robot (Oct 2026) — Google Research & Janelia MaleCNS Complete Male Fruit Fly Brain + Nerve Cord (Cell, Sep 3, 2026)",
+      "url": "https://www.progressiverobot.com/2026/10/26/ai-quests-polar-peaks-mapping-human-brain/",
+      "type": "explainer"
+    }
+  ]
+}

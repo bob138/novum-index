@@ -2,7 +2,8 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/components.css';
 
-import dataset from '../data/breakthroughs.json';
+import { loadIndexDataset } from './dataLoader.js';
+let dataset = null;
 import {
   DISCIPLINE_META,
   WEIGHT_PRESETS,
@@ -999,6 +1000,19 @@ function attachListeners() {
   });
 }
 
-hydrateStateFromUrl();
-renderPage();
-attachListeners();
+async function init() {
+  applyTheme(state.theme);
+  hydrateStateFromUrl();
+  try {
+    dataset = await loadIndexDataset();
+    renderPage();
+    attachListeners();
+  } catch (err) {
+    const app = document.getElementById('app');
+    if (app) {
+      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load AI Systems dataset</h3><p>${escapeHtml(err.message)}</p></div></div>`;
+    }
+  }
+}
+
+init();

@@ -1,0 +1,67 @@
+{
+  "id": "dark-reactions-ml-materials-2016",
+  "title": "Machine Learning Trained on 6,114 Failed (“Dark”) Lab Reactions Predicts New Inorganic Crystal Syntheses at 89% Accuracy",
+  "shortTitle": "Dark Reactions ML Synthesis (Nature, 2016)",
+  "date": "2016-05-05",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Materials Synthesis",
+    "Chemical Informatics",
+    "Classical ML"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Dark Reactions SVM & Decision-Tree ML Pipeline",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Automated synthesis-condition prediction",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature, Raccuglia et al. trained ML on 6,114 failed (“dark”) lab reactions to predict novel vanadium selenite crystal syntheses at 89% accuracy—beating human chemists (78%) and uncovering new rules.",
+  "summary": "Published in Nature on May 5, 2016, Paul Raccuglia, Katherine C. Elbert, Philip D. F. Adler, Alexander J. Norquist, Joshua Schrier, and collaborators at Haverford College and Purdue University demonstrated the transformative value of failed experimental records (“dark reactions”) for machine-learning materials discovery. Training support vector machines and interpretable decision trees on 6,114 archived hydrothermal reaction outcomes, their model predicted crystallization success for new organically templated vanadium selenites with 89% accuracy—outperforming human chemist intuition (78%)—synthesized novel inorganic-organic hybrid crystals in the wet lab, and yielded human-readable decision rules revealing previously unrecognized physicochemical synthesis constraints.",
+  "technicalHighlights": [
+    "Proved that systematically capturing negative (“dark”) lab-notebook outcomes unlocks high-accuracy ML synthesis prediction.",
+    "Achieved 89% prospective experimental success rate on novel templated vanadium selenite syntheses vs. 78% for human chemists.",
+    "Extracted interpretable chemical decision-tree hypotheses identifying previously unappreciated pH and amine-descriptor crystallization boundaries."
+  ],
+  "caveats": "Focused on a targeted family of hydrothermally synthesized organically templated vanadium selenites using classical SVM/decision-tree features rather than deep generative models.",
+  "contributors": [
+    "Paul Raccuglia",
+    "Katherine C. Elbert",
+    "Philip D. F. Adler",
+    "Casey Falk",
+    "Malia B. Wenny",
+    "Aurelio Mollo",
+    "Matthias Zeller",
+    "Sorelle A. Friedler",
+    "Joshua Schrier",
+    "Alexander J. Norquist"
+  ],
+  "institutions": [
+    "Haverford College",
+    "Purdue University",
+    "Youngstown State University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 87,
+    "verification": 96,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Landmark proof that ML trained on negative lab data can outperform human synthetic chemists and discover new crystalline compounds.",
+    "ripple": "Reshaped data-sharing standards in chemistry and inspired autonomous synthesis planning (A-Lab, GNoME).",
+    "verification": "Peer-reviewed in Nature (Vol. 533, pp. 73–76) with prospective wet-lab crystallization and single-crystal X-ray confirmation.",
+    "velocity": "Dramatically raised experimental hit rate on new inorganic crystal syntheses."
+  },
+  "enables": [
+    "a-lab-autonomous-materials-2023",
+    "gnome-materials-2023"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Nature (May 5, 2016) — Machine-learning-assisted materials discovery using failed experiments",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27147027/",
+      "type": "paper"
+    }
+  ]
+}

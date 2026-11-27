@@ -1,0 +1,65 @@
+{
+  "id": "imo-2025-gold-natural-language",
+  "title": "End-to-End Natural-Language Gold Medal at IMO 2025",
+  "shortTitle": "IMO 2025 AI Gold Medal",
+  "date": "2025-07-21",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Automated Reasoning",
+    "Mathematical Olympiad",
+    "General-Purpose AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Gemini Deep Think (Google DeepMind) & OpenAI Experimental Model",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Just one year after specialized formal systems earned IMO silver, general-purpose LLMs solved 5 of 6 IMO problems in plain English within the official 4.5-hour limit.",
+  "summary": "In July 2025, Google DeepMind's advanced Gemini with Deep Think officially achieved gold-medal standard (35/42 points, solving 5 of 6 problems perfectly) at the 2025 International Mathematical Olympiad—graded directly by official IMO coordinators. Operating end-to-end in natural language with zero human translation to Lean and within the strict 4.5-hour human time limit, alongside a concurrent gold-level claim by OpenAI, this marked the inflection point from narrow theorem provers to general mathematical reasoning.",
+  "technicalHighlights": [
+    "Official IMO graders certified 35/42 points—describing the proofs as clear, precise, and easy to follow.",
+    "Eliminated the human-in-the-loop Lean translation bottleneck and 2–3 day runtime required by AlphaProof at IMO 2024.",
+    "Foreshadowed the 2026 wave of frontier research-level mathematical proofs."
+  ],
+  "caveats": "Olympiad problems are self-contained puzzles with known solutions rather than open research conjectures; nonetheless, the leap in 12 months reset nearly every expert timeline.",
+  "contributors": [
+    "Google DeepMind Gemini Deep Think Team",
+    "OpenAI Reasoning Team"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Proved general-purpose natural-language reasoning models could perform creative, competition-grade mathematical proof synthesis.",
+    "ripple": "Directly paved the way for 2026 research-level AI mathematicians across Lean formalization and open problems.",
+    "verification": "Officially graded by IMO organizers using the exact human competition rules and time constraints.",
+    "velocity": "Jumped from specialized formal silver (2024) to general natural-language gold (2025) in exactly 12 months."
+  },
+  "enables": [
+    "erdos-unit-distance-disproof-2026",
+    "jacobian-conjecture-disproof-2026",
+    "fermat-last-theorem-lean-2026",
+    "riemann-hypothesis-lean-2026",
+    "imo-2026-perfect-42-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind: Advanced version of Gemini with Deep Think officially achieves IMO gold-medal standard",
+      "url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+      "type": "announcement"
+    },
+    {
+      "label": "ETH Zurich SRI Lab: Independent Analysis of IMO 2025 LLM Evaluations",
+      "url": "https://www.sri.inf.ethz.ch/blog/imo",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "hadamard-matrix-668-claude-2026",
+  "title": "Claude Assists Construction of Hadamard Matrix of Order 668 & All 12 Open Orders Below 2,000",
+  "shortTitle": "Hadamard Matrix Order 668",
+  "date": "2026-08-12",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Combinatorial Designs",
+    "Orthogonal Matrices",
+    "Experimental Mathematics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Unreleased Anthropic Claude Model",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 21,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Constructed explicit Hadamard matrices for all 12 missing orders below 2,000—resolving order 668, the smallest open case of the 1893 Hadamard Conjecture since 2005.",
+  "summary": "Anthropic researchers Levent Alpöge, Philippe Voinov, and Saul Reynolds-Haertle used an unreleased Claude model to discover explicit ±1 orthogonal Hadamard matrices for all 12 previously open orders below 2,000 (668, 716, 892, 1132, 1244, 1388, 1436, 1676, 1772, 1916, 1948, and 1964). In particular, settling order 668 resolved the smallest remaining open case of the 1893 Hadamard Conjecture—a benchmark target that had resisted combinatorial search for 21 years since order 428 was discovered in 2005—with the constructions independently verified and analyzed in arXiv:2610.27175.",
+  "technicalHighlights": [
+    "Explicitly constructs orthogonal ±1 matrices satisfying H H^T = n I for all 12 previously missing multiples of 4 below 2,000, leaving zero gaps up to 2,000.",
+    "Resolves order 668, which stood for 21 years (2005–2026) as the smallest open case of the 1893 Hadamard Conjecture.",
+    "Trivially and exactly computer-verified via direct matrix multiplication (H H^T = n I) and independently analyzed in arXiv:2610.27175."
+  ],
+  "caveats": "Settles all finite cases below 2,000 (and the iconic 21-year order-668 barrier) rather than proving the general 1893 Hadamard Conjecture for every multiple of 4.",
+  "contributors": [
+    "Levent Alpöge",
+    "Philippe Voinov",
+    "Saul Reynolds-Haertle"
+  ],
+  "institutions": [
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 77,
+    "verification": 99,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Clears every remaining open case below 2,000 of a celebrated 1893 combinatorial conjecture, including the famous 21-year-old order-668 bottleneck.",
+    "ripple": "Directly impacts combinatorial design theory, error-correcting codes, and signal processing, while proving AI can synthesize structured algebraic search ansatzes.",
+    "verification": "Exact finite ±1 matrix certificates verified trivially via H H^T = n I and independently analyzed in arXiv:2610.27175.",
+    "velocity": "Swept all 12 missing orders below 2,000 at once after two decades of incremental human progress on order 668."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Independent Verification & Analysis of Hadamard Matrices for All Open Orders < 2000 (arXiv:2610.27175)",
+      "url": "https://arxiv.org/abs/2610.27175",
+      "type": "paper"
+    },
+    {
+      "label": "List of mathematical discoveries made with artificial intelligence — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+      "type": "explainer"
+    }
+  ]
+}

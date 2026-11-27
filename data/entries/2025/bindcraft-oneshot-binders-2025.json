@@ -1,0 +1,61 @@
+{
+  "id": "bindcraft-oneshot-binders-2025",
+  "title": "EPFL BindCraft: One-Shot Open-Source Design of Functional Protein Binders via AlphaFold2 Backpropagation",
+  "shortTitle": "BindCraft One-Shot Binders (Nature)",
+  "date": "2025-08-27",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Protein Binder Design",
+    "AlphaFold2 Backpropagation",
+    "Gene Therapy Vectors"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "BindCraft (AlphaFold2 Backpropagation + ProteinMPNN + PyRosetta, EPFL)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "One-shot (<100 designs tested)",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, EPFL’s open-source BindCraft backpropagated directly through AlphaFold2 to achieve 10–100% wet-lab hit rates across 12 diverse targets (including CRISPR-Cas9 and allergens), democratizing one-shot protein design.",
+  "summary": "Published in Nature on August 27, 2025 (Vol. 646, pp. 483–492, DOI: 10.1038/s41586-025-09429-6), Martin Pacesa, Lennart Nickel, Bruno E. Correia, and collaborators at EPFL introduced BindCraft, an automated open-source pipeline that designs functional de novo protein binders in a single shot by backpropagating structural interface losses directly through AlphaFold2 weights, followed by ProteinMPNN sequence refinement and PyRosetta filtering. Across 12 diverse and challenging biological targets—including cell-surface receptors, allergens, de novo multi-domain proteins, and CRISPR-Cas9—BindCraft achieved 10% to 100% experimental success rates (averaging 46.3%) while testing only dozens of candidates per target, without requiring high-throughput screening facilities.",
+  "technicalHighlights": [
+    "Backpropagates directly through AlphaFold2 to hallucinate complementary binding interfaces and sequences in one unified open-source workflow.",
+    "Achieved 10–100% experimental success rates (46.3% average) across 12 diverse targets, including functional inhibition of CRISPR-Cas9 and allergen neutralization.",
+    "Enabled ordinary academic wet labs without robotic display facilities to design nanomolar binders on standard GPUs."
+  ],
+  "caveats": "Relies on AlphaFold2’s folded-protein structural priors, making highly disordered targets and small-molecule/covalent modalities harder without complementary all-atom tools.",
+  "contributors": [
+    "Martin Pacesa",
+    "Lennart Nickel",
+    "Christian Schellhaas",
+    "Bruno E. Correia"
+  ],
+  "institutions": [
+    "EPFL (École Polytechnique Fédérale de Lausanne)"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 93,
+    "verification": 96,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Showed that direct gradient backpropagation through AlphaFold2 achieves remarkably high zero-shot binder hit rates without training a new diffusion generator.",
+    "ripple": "Immediately became one of the most widely adopted open-source binder design tools worldwide, from gene-therapy AAV targeting to academic therapeutics.",
+    "verification": "Peer-reviewed in Nature (Vol. 646, pp. 483–492) with extensive wet-lab affinity, functional inhibition, and structural validation across 12 targets.",
+    "velocity": "Turned binder discovery from screening tens of thousands of yeast-display clones into testing a handful of one-shot designs."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PubMed / Nature (Aug 27, 2025) — One-shot design of functional protein binders with BindCraft (DOI: 10.1038/s41586-025-09429-6)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40866699/",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Full Text — Pacesa, Nickel, Correia et al., Nature 2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12507698/",
+      "type": "paper"
+    }
+  ]
+}

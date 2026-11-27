@@ -1,0 +1,59 @@
+{
+  "id": "polynomial-hirsch-disproof-2026",
+  "title": "Lean-Formalized Disproof of the Polynomial Hirsch Conjecture for Simple Polytopes",
+  "shortTitle": "Polynomial Hirsch Disproof",
+  "date": "2026-11-24",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Discrete Geometry",
+    "Polytope Theory",
+    "Linear Optimization",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Math Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 69,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Constructs bounded simple rational polytopes whose vertex–edge graph diameter grows superpolynomially in facet count—refuting the 69-year-old Polynomial Hirsch Conjecture.",
+  "summary": "While Francisco Santos disproved the linear Hirsch conjecture in 2010, the Polynomial Hirsch Conjecture—asking whether the diameter of every d-dimensional polytope with n facets is bounded by a polynomial in n and d—remained the central open question governing the worst-case complexity of simplex methods. OpenAI’s November 24 companion manuscript constructs bounded simple rational polytopes with n facets and subpolynomial dimension whose graph diameter exceeds every fixed power of n, formalized in Lean 4.",
+  "technicalHighlights": [
+    "Shows superpolynomial vertex separation persists even if moves may cross faces of dimension up to s(n) = n^o(1).",
+    "Formalized in Lean 4 (OAI/Geometry/Hirsch/Main.lean) with Comparator challenge statements verifying the bounded simple rational polytope construction.",
+    "Paired with OpenAI’s strongly polynomial LP paper, cleanly separating polytope graph diameter from linear-programming tractability."
+  ],
+  "caveats": "Released November 24, 2026 without peer review; requires independent geometric and formal-statement verification to confirm the Lean polytope definitions match standard bounded simple polytopes.",
+  "contributors": [
+    "OpenAI Math Research Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 83,
+    "verification": 66,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Refutes the flagship 1957 geometric conjecture governing the combinatorial diameter of convex polytopes.",
+    "ripple": "Settles the theoretical ceiling for edge-following simplex pivot rules across optimization and polyhedral combinatorics.",
+    "verification": "Backed by Lean 4 refutation theorems and Comparator specs, pending independent audit by discrete geometers.",
+    "velocity": "Closed a 69-year geometric barrier simultaneously with Smale’s Ninth Problem."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI Math Preprint — Superpolynomial graph diameter of simple polytopes (Nov 24, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "OpenAI Math Lean Formalization — Hirsch/Main.lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/Geometry/Hirsch/Main.lean",
+      "type": "formal-verification"
+    }
+  ]
+}

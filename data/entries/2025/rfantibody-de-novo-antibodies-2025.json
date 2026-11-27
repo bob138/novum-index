@@ -1,0 +1,63 @@
+{
+  "id": "rfantibody-de-novo-antibodies-2025",
+  "title": "Atomically Accurate De Novo Design of Therapeutic Antibodies with Fine-Tuned RFdiffusion (RFantibody)",
+  "shortTitle": "RFantibody De Novo Antibodies (Nature)",
+  "date": "2025-11-05",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Antibody Design",
+    "Structural Immunology",
+    "SE(3) Diffusion"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFantibody (Fine-Tuned RFdiffusion + ProteinMPNN + RoseTTAFold2, UW IPD)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, David Baker’s lab cracked the long-standing challenge of designing hypervariable antibody CDR loops from scratch—producing cryo-EM-verified, atomically accurate de novo antibodies against disease epitopes.",
+  "summary": "Published online in Nature on November 5, 2025 (Vol. 649, Jan 2026, DOI: 10.1038/s41586-025-09721-5), Nathaniel R. Bennett, Joseph L. Watson, Robert J. Ragotte, David Baker, and colleagues at the University of Washington’s Institute for Protein Design demonstrated atomically accurate de novo design of antibodies targeting user-specified epitopes using a fine-tuned version of RFdiffusion (RFantibody). Designing antibodies had remained far harder than designing rigid helical mini-proteins because antigen recognition relies on flexible, unstructured complementarity-determining region (CDR) loops. Cryo-EM structures of the AI-designed single-domain and scFv antibodies bound to viral and bacterial targets—including influenza hemagglutinin and C. difficile toxin—matched computational predictions with sub-angstrom accuracy.",
+  "technicalHighlights": [
+    "Fine-tuned RFdiffusion on antibody–antigen complexes to generate CDR loops targeting exact user-chosen epitopes from scratch.",
+    "Cryo-EM structural determination confirmed atomic-level agreement between AI-designed antibody loops and physical antigen-bound complexes.",
+    "Validated against clinically relevant targets including influenza hemagglutinin, SARS-CoV-2, and Clostridioides difficile toxin B."
+  ],
+  "caveats": "Initial de novo hits often had modest affinities requiring affinity maturation or larger screens before matching clinical-grade monoclonal antibodies, paving the way for higher-hit-rate models like Chai-2.",
+  "contributors": [
+    "Nathaniel R. Bennett",
+    "Joseph L. Watson",
+    "Robert J. Ragotte",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (Institute for Protein Design)"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Solved the flexible-loop antibody design grand challenge with atomic cryo-EM precision—moving beyond rigid de novo scaffolds.",
+    "ripple": "Unlocks programmable, animal-free antibody discovery against previously undruggable epitopes across oncology and infectious disease.",
+    "verification": "Peer-reviewed in Nature (Vol. 649, pp. 183–193) with direct cryo-EM atomic structure confirmation and open-source code.",
+    "velocity": "Eliminates months of animal immunization and random library panning by generating epitope-specific antibodies directly in silico."
+  },
+  "enables": [
+    "chai-2-antibody-design-2025"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Nature (Nov 5, 2025) — Atomically accurate de novo design of antibodies with RFdiffusion (DOI: 10.1038/s41586-025-09721-5)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41193805/",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Full Text — Bennett, Watson, Ragotte, Baker et al., Nature 2025/2026",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12727541/",
+      "type": "paper"
+    }
+  ]
+}

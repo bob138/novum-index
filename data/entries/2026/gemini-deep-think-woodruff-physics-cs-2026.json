@@ -1,0 +1,66 @@
+{
+  "id": "gemini-deep-think-woodruff-physics-cs-2026",
+  "title": "Gemini Deep Think Derives Exact Cosmic-String Gravitational Radiation Integrals and Settles Open TCS Conjectures",
+  "shortTitle": "Gemini Deep Think Physics & TCS",
+  "date": "2026-02-03",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Theoretical Physics",
+    "Cosmic Strings",
+    "Theoretical Computer Science"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Gemini Deep Think + Tree Search & Numerical Verification (Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 10,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Collaborating with David Woodruff and physicists, Gemini Deep Think derived six exact analytical Gegenbauer-polynomial solutions for cosmic-string gravitational radiation and settled a decade-old online submodular optimization conjecture.",
+  "summary": "In companion February–March 2026 papers (arXiv:2602.03837 led by David P. Woodruff et al., and arXiv:2603.04735), Google DeepMind and academic collaborators documented a suite of original research breakthroughs produced with Gemini Deep Think across theoretical physics, computer science, information theory, and mechanism design. In theoretical physics, a neuro-symbolic Gemini Deep Think + tree-search agent derived six novel exact analytical evaluations—most elegantly via Gegenbauer polynomial expansions absorbing integrand singularities—for the gravitational-wave power spectrum integral I(N, α) of cosmic-string loops. In theoretical CS, Gemini broke deadlocks on Max-Cut and high-dimensional Steiner Tree bounds, settled a 10-year conjecture in online submodular optimization, and extended auction Revelation Principles from rational to real bids, with multiple results accepted at top venues including ICLR 2026.",
+  "technicalHighlights": [
+    "Derived six novel exact analytical methods (highlighting Gegenbauer polynomials) solving singular cosmic-string gravitational-wave radiation integrals for arbitrary loop geometries.",
+    "Settled a 10-year-old conjecture in online submodular optimization and broke deadlocks on classic Max-Cut and Steiner Tree problems.",
+    "Demonstrated cross-disciplinary human–AI collaboration spanning physics, cryptography, economics, and complexity theory, including peer-reviewed conference acceptances."
+  ],
+  "caveats": "Case studies were produced under expert human guidance and problem selection; several individual results are distributed across follow-up conference and journal submissions.",
+  "contributors": [
+    "David P. Woodruff",
+    "Google DeepMind Science Team",
+    "Academic Physics & TCS Collaborators"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Carnegie Mellon University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 87,
+    "verification": 89,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Produced multiple genuine analytical breakthroughs in both theoretical astrophysics (cosmic-string integrals) and theoretical computer science.",
+    "ripple": "Demonstrated that reasoning LLMs generalize well beyond pure math competitions into open-ended physics derivations and TCS proofs.",
+    "verification": "Verified analytically, numerically, and through peer-reviewed academic submissions including ICLR 2026.",
+    "velocity": "Synthesized cross-field mathematical techniques (e.g., Gegenbauer expansions connecting to QFT Feynman parameters) rapidly under guided tree search."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2602.03837 (Feb 3, 2026) — Accelerating Scientific Research with Gemini: Case Studies and Common Techniques",
+      "url": "https://arxiv.org/abs/2602.03837",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2603.04735 (Mar 5, 2026) — Solving an Open Problem in Theoretical Physics (Cosmic Strings) using AI-Assisted Tree Search",
+      "url": "https://arxiv.org/abs/2603.04735",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind (Feb 11, 2026) — Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
+      "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "type": "announcement"
+    }
+  ]
+}

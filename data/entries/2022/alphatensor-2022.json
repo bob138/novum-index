@@ -1,0 +1,68 @@
+{
+  "id": "alphatensor-2022",
+  "title": "AlphaTensor: Reinforcement Learning Discovers Faster Matrix Multiplication",
+  "shortTitle": "AlphaTensor (Anchor)",
+  "date": "2022-10-05",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algebraic Complexity",
+    "Algorithm Discovery",
+    "Reinforcement Learning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaTensor (DeepMind)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 53,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First AI system to surpass a 50-year human algorithmic record in core mathematics—finding a 47-multiplication 4×4 algorithm in mod 2 and 14,000+ novel factorizations.",
+  "summary": "Published in Nature (Vol. 610), DeepMind's AlphaTensor framed matrix multiplication as a single-player 3D tensor-decomposition game played by an AlphaZero-style reinforcement learning agent. It improved the best-known scalar multiplication count for over 70 matrix sizes—including beating Volker Strassen's iconic 1969 49-multiplication 4×4 algorithm with 47 multiplications in finite-field arithmetic (ℤ₂)—while also optimizing hardware-specific GPU/TPU kernels.",
+  "technicalHighlights": [
+    "Reduced 4×4 matrix multiplication in mod-2 arithmetic from Strassen's 49 multiplications (1969) to 47.",
+    "Discovered >14,000 non-equivalent rank-49 4×4 factorizations, revealing unexpected richness in algebraic complexity.",
+    "Pioneered the autonomous algorithm-discovery lineage culminating in FunSearch (2023) and AlphaEvolve (2025)."
+  ],
+  "caveats": "The 47-multiplication 4×4 breakthrough held in finite-field (characteristic 2) arithmetic rather than real/complex numbers—a gap later closed by AlphaEvolve's 48-multiplication complex algorithm in 2025.",
+  "contributors": [
+    "Alhussein Fawzi",
+    "Matej Balog",
+    "Aja Huang",
+    "Thomas Hubert",
+    "Bernardino Romera-Paredes",
+    "David Silver",
+    "Pushmeet Kohli"
+  ],
+  "institutions": [
+    "DeepMind"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 91,
+    "verification": 100,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Proved deep RL can autonomously discover mathematically novel, provably exact fundamental algorithms beyond human intuition.",
+    "ripple": "Launched the AI-for-algorithm-discovery subfield directly leading to AlphaDev, FunSearch, and AlphaEvolve.",
+    "verification": "Every tensor factorization is algebraically exact, published in Nature, and openly released for deterministic checking.",
+    "velocity": "Broke a 53-year algorithmic standstill and accelerated automated search across discrete math."
+  },
+  "enables": [
+    "alphadev-sorting-2023",
+    "funsearch-2023",
+    "alphaevolve-matrix-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature (PubMed): Discovering faster matrix multiplication algorithms with reinforcement learning",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36198780/",
+      "type": "paper"
+    },
+    {
+      "label": "PMC Open Access Full Text (Nature Vol. 610)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9534758/",
+      "type": "paper"
+    }
+  ]
+}

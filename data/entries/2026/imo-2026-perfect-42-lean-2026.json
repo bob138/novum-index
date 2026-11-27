@@ -1,0 +1,65 @@
+{
+  "id": "imo-2026-perfect-42-lean-2026",
+  "title": "IMO 2026 Autonomous Perfect 42/42 Scores & Full Lean 4 Formalization of All Six Problems",
+  "shortTitle": "IMO 2026 Perfect 42/42 & Lean 4",
+  "date": "2026-07-22",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Olympiad Mathematics",
+    "Automated Theorem Proving",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Fable 5, GPT-5.6 Sol (LeanFlow) & Kimi K3",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "1.8 hrs (Fable 5 single-shot 42/42)",
+  "isAnchor": false,
+  "whyItMatters": "One year after the first 35/42 IMO Gold medal, Claude Fable 5 scored a perfect 42/42 autonomously in 1.8 hours, Kimi K3 hit 42/42, and GPT-5.6 Sol formally proved all six IMO 2026 problems end-to-end in Lean 4.",
+  "summary": "Marking the complete saturation of the world’s hardest high-school mathematics competition just 12 months after IMO 2025’s first AI gold medals (35/42), open GitHub benchmarks on the official IMO 2026 problems demonstrated autonomous perfect 42/42 performance and full formalization across multiple frontier model families. In github.com/deedy/imo-2026 (using a minimal three-tool, network-blocked single-context agent harness), Anthropic’s Claude Fable 5 achieved a verified single-shot 42/42 in just 1.8 hours—including the only fully synthetic P2 geometry proof—while GPT-5.6 Sol and Moonshot AI’s Kimi K3 also reached verified 42/42 (Kimi K3 inventing an original compactness theorem for P6). Independently, EPFL’s LARA lab (github.com/epfl-lara/AutoformalizedProjects) used GPT-5.6 Sol with LeanFlow to produce complete, machine-checked Lean 4 formalizations of all six IMO 2026 problems verified together as one Lake project.",
+  "technicalHighlights": [
+    "Claude Fable 5 scored an autonomous, single-shot 42/42 on IMO 2026 in 1.8 hours with no reviewer, orchestration, or internet access.",
+    "EPFL LARA’s AutoformalizedProjects verified proof-complete Lean 4 formalizations of all 6 IMO 2026 problems produced autonomously by GPT-5.6 Sol.",
+    "Kimi K3 became an open-ecosystem frontier model to reach 42/42 (with review feedback), inventing an original P6 compactness argument."
+  ],
+  "caveats": "The deedy/imo-2026 natural-language scores were graded by automated verifier agents rather than official IMO jury coordinators, whereas EPFL’s GPT-5.6 Sol Lean 4 formalizations of Problems 1–6 are deterministically kernel-checked in Lean.",
+  "contributors": [
+    "Deedy Das",
+    "EPFL LARA Lab",
+    "Anthropic",
+    "OpenAI",
+    "Moonshot AI"
+  ],
+  "institutions": [
+    "EPFL",
+    "Anthropic",
+    "OpenAI",
+    "Moonshot AI"
+  ],
+  "scores": {
+    "foundational": 76,
+    "ripple": 82,
+    "verification": 94,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Marks complete saturation (perfect 42/42 and full Lean 4 proof-completeness) of the International Mathematical Olympiad.",
+    "ripple": "Demonstrated that gold-plus olympiad reasoning diffused from closed lab harnesses in 2025 to general API models across three labs by mid-2026.",
+    "verification": "All six IMO 2026 problems formally verified as one compiled Lean 4 project in EPFL’s public AutoformalizedProjects repository.",
+    "velocity": "Jumped from 35/42 (IMO 2025) to single-shot 42/42 in 1.8 hours and full 6/6 Lean formalization within 12 months."
+  },
+  "sources": [
+    {
+      "label": "GitHub: epfl-lara/AutoformalizedProjects (IMO 2026 Lean 4)",
+      "url": "https://github.com/epfl-lara/AutoformalizedProjects",
+      "type": "formal-verification"
+    },
+    {
+      "label": "GitHub: deedy/imo-2026 (Autonomous 42/42 Benchmark)",
+      "url": "https://github.com/deedy/imo-2026",
+      "type": "code"
+    }
+  ],
+  "enables": []
+}

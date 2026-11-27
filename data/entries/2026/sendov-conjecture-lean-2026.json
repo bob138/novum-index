@@ -1,0 +1,65 @@
+{
+  "id": "sendov-conjecture-lean-2026",
+  "title": "Lean-Verified Proof of Sendov’s Conjecture for All Degrees n ≥ 2",
+  "shortTitle": "Sendov’s Conjecture (Lean)",
+  "date": "2026-08-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Complex Analysis",
+    "Polynomial Geometry",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-5.6 Pro + ProofAtlas Lean Pipeline",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 67,
+  "aiTimeToSolve": "Days",
+  "isAnchor": false,
+  "whyItMatters": "Independent researcher Lech Mazur used GPT-5.6 Pro and Lean 4 to close the 67-year-old Sendov conjecture for every polynomial degree n ≥ 2; Terence Tao digested and streamlined the proof.",
+  "summary": "Sendov’s 1959 conjecture asserts that if all roots of a complex polynomial lie in the unit disk, every root has a critical point within distance 1. Terence Tao had previously resolved sufficiently high degrees (2020) without an explicit threshold; in August 2026, independent researcher Lech Mazur used AI agents through ProofAtlas to obtain a complete, remarkably elementary Lean-verified proof for all n ≥ 2. Tao published an expository digestion and shorter Lean formalization, noting the argument also settles the stronger Phelps–Rodriguez conjecture.",
+  "technicalHighlights": [
+    "Closed the finite-degree gap left by Tao’s 2020 asymptotic theorem with a unified, elementary argument valid for every degree n ≥ 2.",
+    "Fully verified in Lean 4 both by ProofAtlas and in Terence Tao’s independent streamlined repository (teorth/sendov).",
+    "Simultaneously implied the stronger Phelps–Rodriguez conjecture as noted by Tao."
+  ],
+  "caveats": "Initial AI-assisted manuscript was verbose and certificate-heavy until streamlined in Tao’s digestion and follow-up arXiv exposition (2609.04246).",
+  "contributors": [
+    "Lech Mazur",
+    "Terence Tao (Exposition & Lean Streamlining)"
+  ],
+  "institutions": [
+    "ProofAtlas (Independent)",
+    "UCLA"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 80,
+    "verification": 99,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Settled a famous 67-year-old conjecture in complex analysis for all degrees, plus Phelps–Rodriguez.",
+    "ripple": "Showed independent researchers outside academia can produce Lean-verified resolutions verified by Fields Medalists.",
+    "verification": "Double-verified in Lean 4 (Mazur and teorth/sendov) and digested line-by-line by Terence Tao.",
+    "velocity": "Completed a 67-year-old problem via an AI-curated elementary scalar optimization proof in days."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Terence Tao — A digestion of the proof of Sendov’s conjecture",
+      "url": "https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/",
+      "type": "explainer"
+    },
+    {
+      "label": "teorth/sendov — Streamlined Lean 4 Formalization (GitHub)",
+      "url": "https://github.com/teorth/sendov",
+      "type": "formal-verification"
+    },
+    {
+      "label": "ProofAtlas — Sendov’s Conjecture Formalization & Manuscript",
+      "url": "https://www.proofatlas.ai/formalizations/sendov-conjecture/",
+      "type": "announcement"
+    }
+  ]
+}

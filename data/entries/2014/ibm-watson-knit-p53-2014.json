@@ -1,0 +1,63 @@
+{
+  "id": "ibm-watson-knit-p53-2014",
+  "title": "IBM Watson KnIT Mines 70,000 Biomedical Papers to Predict Novel p53 Kinases Validated in Wet-Lab Assays",
+  "shortTitle": "IBM Watson KnIT p53 Kinases (2014)",
+  "date": "2014-08-24",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Automated Hypothesis Generation",
+    "Cancer Biology",
+    "Biomedical NLP"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "IBM Watson / KnIT (Knowledge Integration Toolkit)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Weeks vs. years of manual synthesis",
+  "isAnchor": true,
+  "whyItMatters": "KDD 2014 landmark in automated literature-based discovery: KnIT mined 70,000 p53 papers to predict novel p53-phosphorylating kinases, with 6 of 7 top AI predictions confirmed in Baylor wet-lab assays.",
+  "summary": "Presented at ACM SIGKDD in August 2014, Scott Spangler, Olivier Lichtarge, Lawrence Donehower, and collaborators at IBM Research and Baylor College of Medicine deployed KnIT (Knowledge Integration Toolkit, built into IBM Watson Discovery Advisor) to mine ~70,000 Medline abstracts on the tumor-suppressor protein p53. Combining NLP relation extraction with graph-diffusion similarity networks over known protein kinases, KnIT predicted previously unknown kinases capable of phosphorylating p53—and Baylor wet-lab experiments validated six of the top seven AI-predicted candidates, demonstrating an order-of-magnitude acceleration in biomedical target discovery.",
+  "technicalHighlights": [
+    "Automatically extracted protein-interaction graphs from ~70,000 biomedical abstracts and applied graph diffusion to hypothesize missing kinase links.",
+    "Six of the top seven AI-predicted novel p53 kinases were experimentally confirmed in wet-lab biochemical assays at Baylor College of Medicine.",
+    "Precursor to modern LLM literature-mining co-scientists (Google AI Co-Scientist, FutureHouse)."
+  ],
+  "caveats": "Focused on predicting missing interactions within an extensively studied kinase family rather than discovering an entirely new molecular class.",
+  "contributors": [
+    "Scott Spangler",
+    "Angela D. Wilkins",
+    "Benjamin J. Bachman",
+    "Meena Nagarajan",
+    "Tajhal Dayaram",
+    "Peter Haas",
+    "Lawrence Donehower",
+    "Olivier Lichtarge"
+  ],
+  "institutions": [
+    "IBM Research Almaden",
+    "Baylor College of Medicine"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 83,
+    "verification": 92,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "First high-profile wet-lab validation of novel cancer-biology protein targets hypothesized purely by AI literature mining.",
+    "ripple": "Established automated literature-based hypothesis generation as a precursor to modern scientific co-scientist agents.",
+    "verification": "Peer-reviewed at ACM KDD 2014 with prospective experimental kinase-assay confirmation at Baylor College of Medicine.",
+    "velocity": "Identified 6 confirmed kinases in weeks—comparable to a decade of prior community discovery rates."
+  },
+  "enables": [
+    "halicin-antibiotic-2020"
+  ],
+  "sources": [
+    {
+      "label": "ACM KDD 2014 — Automated Hypothesis Generation Based on Mining Scientific Literature",
+      "url": "https://dl.acm.org/doi/10.1145/2623330.2623667",
+      "type": "paper"
+    }
+  ]
+}

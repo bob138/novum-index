@@ -1,0 +1,74 @@
+{
+  "id": "deepvariant-genomic-cnn-2018",
+  "title": "Google Brain DeepVariant Cuts Genomic Variant-Calling Errors by >50% Using Deep Image-Recognition CNNs",
+  "shortTitle": "DeepVariant Genomic CNN (2018)",
+  "date": "2018-09-24",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Genomics",
+    "Variant Calling",
+    "Bioinformatics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepVariant (Inception CNN, Google Brain)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "End-to-end whole-genome calling",
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature Biotechnology, Google Brain’s DeepVariant reframed DNA read pileups as RGB-like images for a CNN—winning PrecisionFDA and slashing genomic variant-calling errors by >50% over hand-engineered GATK pipelines.",
+  "summary": "Published in Nature Biotechnology on September 24, 2018, Ryan Poplin, Pi-Chuan Chang, David Alexander, Mark A. DePristo, and collaborators at Google Brain and Verily replaced decades of hand-crafted statistical error models in genomics with a deep convolutional neural network. By rendering aligned DNA sequencing read pileups as tensor images and training an Inception CNN to classify diploid genotypes, DeepVariant won the FDA’s PrecisionFDA Truth Challenge, reduced SNP and indel calling errors by more than 50% relative to industry-standard GATK, and generalized across human genomes, mice, and distinct sequencing platforms (Illumina, PacBio, Oxford Nanopore).",
+  "technicalHighlights": [
+    "Replaced complex hand-engineered statistical sequencing error models with an end-to-end Inception CNN over aligned read-pileup images.",
+    "Won the PrecisionFDA Truth Challenge (Highest Performance SNP calling) and cut variant errors >50% below GATK.",
+    "Generalized cleanly across species (human-trained model accurately called mouse genomes) and became standard infrastructure in clinical and pangenome sequencing."
+  ],
+  "caveats": "Focuses on short-variant (SNP and small indel) calling rather than large complex structural chromosomal rearrangements.",
+  "contributors": [
+    "Ryan Poplin",
+    "Pi-Chuan Chang",
+    "David Alexander",
+    "Scott Schwartz",
+    "Thomas Colthurst",
+    "Alexander Ku",
+    "Dan Newburger",
+    "Jojo Dijamco",
+    "Nam Nguyen",
+    "Pegah T. Afshar",
+    "Sam S. Gross",
+    "Lizzie Dorfman",
+    "Cory Y. McLean",
+    "Mark A. DePristo"
+  ],
+  "institutions": [
+    "Google Brain",
+    "Verily Life Sciences"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 92,
+    "verification": 98,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Replaced a foundational hand-crafted bioinformatics pipeline (GATK) with a single generalizable deep CNN.",
+    "ripple": "Became production-grade genomic infrastructure used across the Human Pangenome, UK Biobank, and clinical sequencing worldwide.",
+    "verification": "Peer-reviewed in Nature Biotechnology (Vol. 36, pp. 983–987), PrecisionFDA winner, and open-source verified on millions of genomes.",
+    "velocity": "Eliminated years of manual instrument-specific statistical tuning for new sequencing technologies."
+  },
+  "enables": [
+    "alphamissense-variants-2023"
+  ],
+  "sources": [
+    {
+      "label": "Nature Biotechnology Vol. 36, pp. 983–987 (Sep 24, 2018) — A universal SNP and small-indel variant caller using deep neural networks",
+      "url": "https://www.nature.com/articles/nbt.4235",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — google/deepvariant",
+      "url": "https://github.com/google/deepvariant",
+      "type": "code"
+    }
+  ]
+}

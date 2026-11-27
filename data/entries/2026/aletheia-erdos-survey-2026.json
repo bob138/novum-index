@@ -1,0 +1,61 @@
+{
+  "id": "aletheia-erdos-survey-2026",
+  "title": "Aletheia Agent Surveys 700 Open Erdős Problems and Resolves Multiple Open Cases",
+  "shortTitle": "Aletheia Erdős Survey (DeepMind)",
+  "date": "2026-02-05",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Combinatorics",
+    "Number Theory",
+    "Autonomous Math Agents"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Aletheia (Gemini Deep Think Math Agent)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "1 week",
+  "isAnchor": false,
+  "whyItMatters": "First systematic batch deployment of a math research agent across 700 open Erdős problems, resolving 4–5 genuinely open problems and exposing 9 overlooked literature solutions.",
+  "summary": "Google DeepMind deployed Aletheia—a specialized math research agent built on Gemini Deep Think—across roughly 700 problems listed as open in the Erdős database over a single week. Human experts audited every candidate output, identifying 4–5 genuinely new solutions alongside 8–9 problems already solved in obscure literature—highlighting both AI’s emerging research throughput and the subtle risk of \"subconscious plagiarism\" or literature rediscovery.",
+  "technicalHighlights": [
+    "Screened ~700 open Erdős problems semi-autonomously within a single 7-day campaign.",
+    "Expert mathematician grading confirmed 4–5 new solutions plus 8–9 overlooked prior literature proofs.",
+    "Established rigorous taxonomy for distinguishing genuine AI novelty from literature retrieval."
+  ],
+  "caveats": "Authors candidly noted that solved problems remained open partly through obscurity rather than deep conceptual barriers, and most candidates failed expert screening.",
+  "contributors": [
+    "Google DeepMind Aletheia Team",
+    "External Expert Graders"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 76,
+    "ripple": 84,
+    "verification": 88,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Resolved multiple genuine open Erdős problems while establishing rigorous evaluation standards for AI math.",
+    "ripple": "Defined how labs and mathematicians measure novelty, failure rates, and literature overlap in automated math surveys.",
+    "verification": "Every reported solution was individually graded by human domain experts in the arXiv case study.",
+    "velocity": "Audited 700 open mathematical problems in one week of agent compute."
+  },
+  "enables": [
+    "deepmind-formal-proof-search-2026"
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind — A Case Study on the Erdős Problems (arXiv:2601.22401)",
+      "url": "https://arxiv.org/abs/2601.22401",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind — Accelerating mathematical and scientific discovery with Gemini Deep Think",
+      "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "type": "announcement"
+    }
+  ]
+}

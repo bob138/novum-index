@@ -1,0 +1,59 @@
+{
+  "id": "witten-chiral-fermions-claude-2026",
+  "title": "Edward Witten Credits Claude Opus 5.5 in Lattice Chiral Fermion Gauge Theory Construction",
+  "shortTitle": "Witten Lattice Chiral Fermions (Claude)",
+  "date": "2026-11-03",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Lattice Gauge Theory",
+    "Quantum Field Theory",
+    "Standard Model Foundations"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Anthropic Claude Opus 5.5",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Fields Medalist Edward Witten credits Claude Opus 5.5 three times in a 33-page IAS preprint on lattice chiral fermions—including proposing a key continuum-interpolation construction for the partition function.",
+  "summary": "Institute for Advanced Study physicist and Fields Medalist Edward Witten posted arXiv:2611.05051 ('A Note On Lattice Definition of Gauge Theories With Chiral Fermions'), advancing the decades-old problem of placing anomaly-free chiral gauge theories—such as the Standard Model—rigorously on a spacetime lattice. Witten explicitly credits Anthropic’s Claude Opus 5.5 in three places across the 33-page note, including an in-body attribution for proposing a continuum-interpolation construction at the core of the nonperturbative partition function, as well as assistance on numerous technical details.",
+  "technicalHighlights": [
+    "Constructs a nonperturbative lattice partition function for chiral gauge theories incorporating an AI-suggested continuum-interpolation scheme.",
+    "Marks a watershed moment in fundamental physics: one of the world’s foremost theoretical physicists crediting a frontier LLM for a substantive mathematical construction inside a solo IAS preprint.",
+    "Complements Nathaniel Craig’s GPT-6 Astra lattice Standard Model preprint (Oct 6) and Venkatesa Chandrasekaran’s GPT-6 Astra null-cone quantum gravity paper (Nov 25)."
+  ],
+  "caveats": "Unrefereed v1 arXiv preprint focused on lattice QFT formalism (not a full continuum existence proof or Millennium Prize claim); Witten retains full physics judgment and authorship while crediting Claude Opus 5.5 for the suggested variant and technical details.",
+  "contributors": [
+    "Edward Witten",
+    "Claude Opus 5.5"
+  ],
+  "institutions": [
+    "Institute for Advanced Study (IAS)"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 78,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Advances one of the deepest open foundational challenges in quantum field theory—nonperturbative lattice regularization of chiral gauge theories.",
+    "ripple": "Edward Witten publicly crediting Claude Opus 5.5 for a core mathematical construction normalized AI co-derivation across the theoretical physics community overnight.",
+    "verification": "Authored and personally vetted by Edward Witten at IAS, though still an unrefereed v1 preprint without formal proof-assistant verification.",
+    "velocity": "Demonstrates high-leverage human–AI collaboration on subtle topological and lattice-QFT constructions."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Edward Witten — A Note On Lattice Definition of Gauge Theories With Chiral Fermions (arXiv:2611.05051)",
+      "url": "https://arxiv.org/abs/2611.05051",
+      "type": "paper"
+    },
+    {
+      "label": "explainx.ai — Edward Witten Names Claude Opus 5.5 in arXiv Physics Paper",
+      "url": "https://explainx.ai/blog/edward-witten-claude-opus-5-5-lattice-chiral-fermions-arxiv-2026",
+      "type": "explainer"
+    }
+  ]
+}

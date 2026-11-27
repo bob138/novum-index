@@ -1,0 +1,57 @@
+{
+  "id": "kakeya-higher-dim-2026",
+  "title": "Proposed Proof of the Higher-Dimensional Kakeya Conjecture (n ≥ 4)",
+  "shortTitle": "Kakeya Conjecture (n ≥ 4)",
+  "date": "2026-10-26",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Harmonic Analysis",
+    "Geometric Measure Theory",
+    "AI Theorem Proving"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI Frontier Reasoning Model",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 109,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Extends the landmark 2025 3D Kakeya breakthrough to all higher Euclidean dimensions n ≥ 4—currently under rigorous inspection by harmonic analysts.",
+  "summary": "Less than 20 months after Hong Wang and Joshua Zahl proved the 3-dimensional Kakeya conjecture, OpenAI announced on October 26, 2026 an AI-derived proof tackling the general higher-dimensional Kakeya conjecture (n ≥ 4) as part of its trio of math, CS, and physics discoveries. If validated, it completes the Hausdorff-dimension Kakeya conjecture across all Euclidean dimensions.",
+  "technicalHighlights": [
+    "Targets the full n ≥ 4 dimensional generalization of Besicovitch/Kakeya set Hausdorff dimension.",
+    "Builds directly in the intellectual wake of Wang and Zahl's February 2025 3D breakthrough.",
+    "Released to academic harmonic analysts for independent line-by-line refereeing."
+  ],
+  "caveats": "Not yet independently peer-reviewed or universally accepted; harmonic analysts are closely examining the high-dimensional induction steps for potential hidden gaps.",
+  "contributors": [
+    "OpenAI Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 92,
+    "ripple": 80,
+    "verification": 56,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Completing the Kakeya dimension conjecture in all dimensions would resolve a century-old centerpiece of harmonic analysis.",
+    "ripple": "Strong implications for high-dimensional Fourier restriction, Bochner–Riesz, and oscillatory integral theory.",
+    "verification": "Held back pending independent expert verification and formalization checks.",
+    "velocity": "Proposed less than two years after the 3D breakthrough—an astonishing compression of expected timelines."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI: Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "type": "announcement"
+    },
+    {
+      "label": "Kakeya Conjecture Explained: The 3D Proof and 2026 Update",
+      "url": "https://www.effortlessmath.com/blog/kakeya-conjecture-explained/",
+      "type": "explainer"
+    }
+  ]
+}

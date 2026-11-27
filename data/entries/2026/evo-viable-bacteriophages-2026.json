@@ -1,0 +1,67 @@
+{
+  "id": "evo-viable-bacteriophages-2026",
+  "title": "Evo 1 & Evo 2 Generatively Design 16 Viable Whole-Genome Bacteriophages Overcoming E. coli Resistance",
+  "shortTitle": "Evo Viable AI Bacteriophages (Science)",
+  "date": "2026-08-06",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Synthetic Biology",
+    "Genome Foundation Models",
+    "Phage Therapy"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Evo 1 & Evo 2 Genome Language Models (Arc Institute / Stanford)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Science, Arc Institute and Stanford used Evo genome language models to design 16 living, replicating bacteriophage viruses from scratch that defeated phage-resistant E. coli.",
+  "summary": "Published in Science on August 6, 2026 (following a September 2025 bioRxiv preprint), Samuel H. King, Brian L. Hie, and colleagues at Stanford University and the Arc Institute demonstrated the first generative design of complete, viable viral genomes using the Evo 1 and Evo 2 genomic foundation models. Fine-tuned on Microviridae bacteriophages with ΦX174 as a design template, the models generated 302 full-genome candidates; experimental synthesis and testing yielded 16 distinct replicating phages with diverse fitness profiles. Cryo-electron microscopy confirmed that one AI-designed phage incorporated an evolutionarily distant DNA packaging protein into its capsid, and cocktails of the generated phages rapidly overcame ΦX174-resistant E. coli strains.",
+  "technicalHighlights": [
+    "Synthesized 302 AI-generated complete viral genomes from Evo 1 and Evo 2, yielding 16 viable, replicating bacteriophages in wet-lab E. coli assays.",
+    "Cryo-EM verified that an AI-generated phage successfully assembled a capsid incorporating an evolutionarily distant DNA packaging protein.",
+    "Cocktails of AI-designed phages rapidly overcame bacterial strains resistant to natural ΦX174, illustrating a path to generative phage therapy."
+  ],
+  "caveats": "Restricted intentionally to non-pathogenic bacterial viruses (bacteriophages) with strict biosafety screening; as discussed in an accompanying Science Perspective by Inglesby & Hanke, genome-scale generative models raise biosecurity governance questions alongside therapeutic promise.",
+  "contributors": [
+    "Samuel H. King",
+    "Claudia L. Driscoll",
+    "David B. Li",
+    "Brian L. Hie"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Arc Institute"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 92,
+    "verification": 94,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "First experimental demonstration that generative genome language models can design complete, viable self-replicating biological genomes rather than isolated genes or proteins.",
+    "ripple": "Establishes a genome-scale blueprint for AI-designed phage therapies against antimicrobial resistance and synthetic biology.",
+    "verification": "Peer-reviewed in Science (Vol. 393, Issue 6811) with full wet-lab replication, cryo-EM structural confirmation, and resistance-escape assays.",
+    "velocity": "Compressed whole-genome evolutionary design and multi-gene epistatic compatibility into automated generative sampling."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Science (Aug 6, 2026) — Generative design of bacteriophages with genome language models (DOI: 10.1126/science.aec2657)",
+      "url": "https://www.science.org/doi/10.1126/science.aec2657",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — King et al., Science 2026 (PMID: 42561074)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42561074/",
+      "type": "paper"
+    },
+    {
+      "label": "Arc Institute — How We Built the First AI-Generated Genomes",
+      "url": "https://arcinstitute.org/news/hie-king-first-synthetic-phage",
+      "type": "announcement"
+    }
+  ]
+}

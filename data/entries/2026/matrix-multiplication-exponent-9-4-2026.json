@@ -1,0 +1,66 @@
+{
+  "id": "matrix-multiplication-exponent-9-4-2026",
+  "title": "Exact Matrix Multiplication Exponent ω = 9/4 Over Every Field (Claimed Proof & Lean)",
+  "shortTitle": "Matrix Mult. Exponent ω = 9/4",
+  "date": "2026-11-24",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algebraic Complexity",
+    "Matrix Multiplication",
+    "Tensor Geometry",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Math Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 57,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Claims to settle the 57-year quest since Strassen (1969) by proving ω = 9/4 = 2.25 exactly over every field—simultaneously slashing the upper bound from 2.371 and refuting the famous ω = 2 conjecture.",
+  "summary": "Building on its October 2 upper bound (ω ≤ 9/4, independently exposed by Amir Shpilka at ECCC and extended over arbitrary fields by Amanov, van den Berg, and Zuiddam), OpenAI released a 111-page November 24 preprint via its Euclidean tensor geometry framework claiming the matching lower bound ω ≥ 9/4 over every field. Corollary 1.2 asserts every n × n formal arithmetic circuit needs at least ⌈n^(9/4)/2⌉ multiplication or division gates, pinning the asymptotic rank of matrix multiplication to n^(9/4).",
+  "technicalHighlights": [
+    "Pairs the verified ω ≤ 9/4 upper bound (far below the prior 2.371177 record) with a new matching lower bound ω ≥ 9/4 via Euclidean geometry in the asymptotic spectrum of tensors.",
+    "Accompanied by a Lean 4 formalization (ExactExponent.lean) proving the exact square exponent 9/4 for division-free circuits over every field.",
+    "Part of OpenAI’s November 24 family 379 release spanning seven interconnected tensor-geometry and complexity manuscripts."
+  ],
+  "caveats": "Unreviewed preprint released November 24, 2026. Notably, the accompanying Lean 4 formalization is narrower than the full manuscript—covering division-free formal polynomial circuits rather than arbitrary circuits with division—so the general lower bound still awaits full human specialist refereeing.",
+  "contributors": [
+    "OpenAI Math Research Team",
+    "Amir Shpilka & Jeroen Zuiddam et al. (Upper-Bound Expositions)"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Tel Aviv University & University of Amsterdam (Upper-Bound Checks)"
+  ],
+  "scores": {
+    "foundational": 95,
+    "ripple": 91,
+    "verification": 64,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "If fully verified, pinning down the exact matrix multiplication exponent ω = 9/4 resolves one of the crown-jewel open problems in theoretical computer science.",
+    "ripple": "Reshapes algebraic complexity, tensor rank theory, and every algorithm whose runtime is parameterized by ω.",
+    "verification": "Upper bound already has independent human expositions and Lean checks division-free circuits, but the full Nov 24 lower bound remains unreviewed.",
+    "velocity": "Compressed decades of incremental ~0.0001 improvements into a single leap to 2.25 plus matching lower bound within two months."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI Math Preprint — The matrix multiplication exponent is nine fourths (Nov 24, 2026)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "OpenAI Math Lean Proof — ExactExponent.lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean",
+      "type": "formal-verification"
+    },
+    {
+      "label": "OpenAI Math Release History (Nov 24, 2026)",
+      "url": "https://github.com/openai/math/blob/main/history.md",
+      "type": "announcement"
+    }
+  ]
+}

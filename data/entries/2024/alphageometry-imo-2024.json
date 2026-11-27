@@ -1,0 +1,65 @@
+{
+  "id": "alphageometry-imo-2024",
+  "title": "AlphaGeometry Solves Olympiad Geometry at Near-Gold Level Without Human Proofs",
+  "shortTitle": "AlphaGeometry (IMO Geometry)",
+  "date": "2024-01-17",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Euclidean Geometry",
+    "Neuro-Symbolic Theorem Proving",
+    "Synthetic Data"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaGeometry (Neuro-Symbolic Transformer + DD+AR)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Solved 25 of 30 International Mathematical Olympiad geometry problems from purely synthetic proof data, proving neuro-symbolic AI can invent creative auxiliary constructions.",
+  "summary": "Google DeepMind trained a neural language model from scratch on 100 million synthetically generated geometric theorems—with zero human proof demonstrations—and paired it with a symbolic deduction engine. AlphaGeometry solved 25 of 30 IMO geometry problems (vs. 10 for the prior state of the art), produced human-readable machine-verified proofs, and even discovered a generalized version of a 2004 IMO theorem.",
+  "technicalHighlights": [
+    "Generated 100 million synthetic training proofs via symbolic traceback, overcoming extreme scarcity of formalized math data.",
+    "Solved 25/30 IMO geometry benchmark problems, approaching the average human IMO gold medalist score (25.9).",
+    "Every proof is mechanically checked by the symbolic deduction engine and readable by human olympiad graders."
+  ],
+  "caveats": "Scoped specifically to Euclidean plane geometry; generalizing beyond geometry required the formal Lean 4 synthesis architecture introduced months later in AlphaProof.",
+  "contributors": [
+    "Trieu H. Trinh",
+    "Yuhuai Wu",
+    "Quoc V. Le",
+    "He He",
+    "Thang Luong"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "New York University"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 90,
+    "verification": 99,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that synthetic data + neuro-symbolic search unlocks creative mathematical auxiliary constructions.",
+    "ripple": "Directly paved the way for AlphaProof, IMO 2025 gold systems, and modern Lean autoformalization loops.",
+    "verification": "Published in Nature with 100% symbolically verified proofs and open-source code.",
+    "velocity": "Jumped Olympiad geometry benchmark performance from 10/30 to 25/30 in a single architectural leap."
+  },
+  "enables": [
+    "alphaproof-imo-2024"
+  ],
+  "sources": [
+    {
+      "label": "Trinh et al. — Solving olympiad geometry without human demonstrations (Nature / PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10794143/",
+      "type": "paper"
+    },
+    {
+      "label": "Google Research — AlphaGeometry Publication Overview",
+      "url": "https://research.google/pubs/solving-olympiad-geometry-without-human-demonstrations/",
+      "type": "announcement"
+    }
+  ]
+}

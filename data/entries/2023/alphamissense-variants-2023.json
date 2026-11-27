@@ -1,0 +1,64 @@
+{
+  "id": "alphamissense-variants-2023",
+  "title": "AlphaMissense Classifies 71 Million Human Missense Genetic Variants Proteome-Wide",
+  "shortTitle": "AlphaMissense Variant Catalog",
+  "date": "2023-09-22",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical Genomics",
+    "Variant Effect Prediction",
+    "Structural Bioinformatics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaMissense (AlphaFold-Derived Structural Variant Predictor)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Classified 89% of all 71 million possible human missense DNA mutations as likely benign or pathogenic—turning a huge clinical 'variants of uncertain significance' blind spot into an open public catalog.",
+  "summary": "Published in Science in September 2023 by Jun Cheng, Guido Novati, Joshua Pan, Žiga Avsec, and Pushmeet Kohli at Google DeepMind, AlphaMissense adapted AlphaFold’s structural representations and combined them with population-frequency weak supervision and protein language modeling to score all 71 million single-letter amino-acid substitutions across the human proteome. Whereas only ~0.1% of missense variants had previously been clinically confirmed, AlphaMissense confidently classified 89% (57% likely benign, 32% likely pathogenic) at state-of-the-art ClinVar and deep-mutational-scanning accuracy, and was immediately integrated into Ensembl, ClinVar workflows, and rare-disease diagnostics.",
+  "technicalHighlights": [
+    "Scored all 71 million possible human missense mutations across ~19,000 proteins, classifying 89% with ~90% precision on ClinVar benchmarks.",
+    "Avoids circular clinical-label bias by training on structural context and evolutionary/population frequency distributions rather than curated disease databases.",
+    "Released openly as a proteome-wide resource immediately adopted by genomics platforms (Ensembl, gnomAD, rare-disease clinics) worldwide."
+  ],
+  "caveats": "Provides computational pathogenicity probabilities rather than standalone clinical diagnoses; misses non-coding regulatory mutations (subsequently addressed by AlphaGenome in 2025) and can be less accurate on intrinsically disordered regions.",
+  "contributors": [
+    "Jun Cheng",
+    "Guido Novati",
+    "Joshua Pan",
+    "Žiga Avsec",
+    "Pushmeet Kohli"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 91,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Bridged protein structure prediction directly into proteome-wide human genetics and evolutionary constraint modeling.",
+    "ripple": "Immediately embedded across global clinical genomics databases and rare-disease diagnostic pipelines.",
+    "verification": "Peer-reviewed in Science (adg7492) and independently benchmarked across ClinVar, Genomics England, and deep mutational scanning assays.",
+    "velocity": "Classified 71 million possible human mutations computationally where decades of wet-lab and clinical work had resolved <0.2%."
+  },
+  "enables": [
+    "alphagenome-regulatory-dna-2025"
+  ],
+  "sources": [
+    {
+      "label": "Science — Accurate proteome-wide missense variant effect prediction with AlphaMissense (Sep 2023)",
+      "url": "https://doi.org/10.1126/science.adg7492",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — AlphaMissense (PMID 37733863)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37733863/",
+      "type": "paper"
+    }
+  ]
+}

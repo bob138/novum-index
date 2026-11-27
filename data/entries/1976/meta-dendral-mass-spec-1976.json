@@ -1,0 +1,63 @@
+{
+  "id": "meta-dendral-mass-spec-1976",
+  "title": "Meta-DENDRAL Discovers Novel Mass-Spectrometry Rules Published in JACS",
+  "shortTitle": "Meta-DENDRAL (1976)",
+  "date": "1976-10-01",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Analytical Chemistry",
+    "Mass Spectrometry",
+    "Symbolic Rule Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Meta-DENDRAL (Symbolic Rule-Formation Expert System)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Widely regarded as the earliest peer-reviewed scientific discovery made by a machine learning system—inferring new chemical fragmentation rules accepted in JACS.",
+  "summary": "Built at Stanford by Bruce Buchanan, Dennis Smith, Edward Feigenbaum, Joshua Lederberg, and Carl Djerassi as the rule-learning companion to Heuristic DENDRAL, Meta-DENDRAL analyzed empirical mass spectra and molecular structures of aliphatic amines and ketoandrostanes to induce new bond-cleavage fragmentation rules automatically. Published in the Journal of the American Chemical Society in October 1976, several of Meta-DENDRAL’s induced rules for mono- and polyketoandrostanes were judged novel by chemists and entered the refereed chemical literature.",
+  "technicalHighlights": [
+    "Used a theory-constrained generate-and-test rule-induction pipeline (RULEGEN and RULEMOD) to learn interpretable chemical cleavage rules directly from empirical spectra.",
+    "Discovered previously unformulated mass-spectrometry fragmentation rules for mono-, di-, and triketoandrostanes published in JACS (1976).",
+    "Established the knowledge-rich machine learning paradigm and directly inspired Tom Mitchell’s version-space framework and subsequent AI-for-chemistry systems."
+  ],
+  "caveats": "Operated inside a tightly hand-engineered symbolic chemistry representation and required substantial expert curation; its rules were domain-specific analytical heuristics rather than general physical laws.",
+  "contributors": [
+    "Bruce G. Buchanan",
+    "Dennis H. Smith",
+    "William C. White",
+    "Roy J. Gritter",
+    "Edward A. Feigenbaum",
+    "Joshua Lederberg",
+    "Carl Djerassi"
+  ],
+  "institutions": [
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 76,
+    "ripple": 84,
+    "verification": 92,
+    "velocity": 66
+  },
+  "scoreRationale": {
+    "foundational": "Marked the historical birth of AI-assisted scientific rule discovery by producing novel, publishable chemical rules from empirical data.",
+    "ripple": "Catalyzed decades of cheminformatics, expert systems, and machine learning for molecular inference—the 50-year ancestor of modern AI chemistry.",
+    "verification": "Peer-reviewed and published in the Journal of the American Chemical Society (JACS 98(20): 6168–6178) and empirically validated against spectral data.",
+    "velocity": "Automated tedious spectral rule induction that previously required expert chemists, though handcrafted LISP knowledge bases limited throughput."
+  },
+  "enables": [
+    "robot-scientist-adam-2009",
+    "gnome-materials-2023",
+    "deepmind-mass-spec-skills-2026"
+  ],
+  "sources": [
+    {
+      "label": "JACS — Automatic Rule Formation in Mass Spectrometry by Meta-DENDRAL (Oct 1976)",
+      "url": "https://doi.org/10.1021/ja00436a017",
+      "type": "paper"
+    }
+  ]
+}

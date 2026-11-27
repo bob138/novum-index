@@ -1,0 +1,63 @@
+{
+  "id": "rosettafold-protein-structure-2021",
+  "title": "RoseTTAFold: Open-Source Three-Track Neural Network Predicts Atomic Protein Structures and Complexes",
+  "shortTitle": "RoseTTAFold (Baker Lab, Science)",
+  "date": "2021-07-15",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Protein Complexes",
+    "Geometric Deep Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RoseTTAFold (Three-Track 1D/2D/3D SE(3)-Transformer Network, UW IPD)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~10–30 min per complex on 1 GPU",
+  "isAnchor": true,
+  "whyItMatters": "Published in Science alongside AlphaFold 2’s paper, David Baker and Minkyung Baek’s open-source 3-track neural network solved hundreds of human structures and multi-protein complexes and became the backbone for RFdiffusion.",
+  "summary": "Published in Science on July 15, 2021 (the same day as AlphaFold 2’s Nature publication), Minkyung Baek, Frank DiMaio, David Baker, and colleagues at the University of Washington’s Institute for Protein Design introduced RoseTTAFold—a novel three-track neural network simultaneously exchanging representations across 1D amino-acid sequences, 2D residue-distance maps, and 3D atomic coordinates. Running in ~10–30 minutes on a single gaming GPU, RoseTTAFold approached AlphaFold 2’s accuracy, solved challenging X-ray crystallography and cryo-EM structures, pioneered direct multi-chain protein–protein complex prediction, and became the architectural foundation fine-tuned to create RFdiffusion (contributing to David Baker’s 2024 Nobel Prize in Chemistry).",
+  "technicalHighlights": [
+    "Introduced a novel 3-track (1D sequence / 2D distance / 3D SE(3) coordinate) attention architecture running on a single GPU.",
+    "First open-source deep-learning system demonstrated to predict multi-chain protein–protein complexes directly from sequence.",
+    "Directly spawned RoseTTAFold All-Atom and RFdiffusion, anchoring the open academic generative protein-design ecosystem."
+  ],
+  "caveats": "Slightly trailed AlphaFold 2 on monomeric CASP14 benchmarks, though its speed, open-source availability from day one, and multi-chain/generative extensibility drove massive community adoption.",
+  "contributors": [
+    "Minkyung Baek",
+    "Frank DiMaio",
+    "Ivan Anishchenko",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (Institute for Protein Design)"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 94,
+    "verification": 96,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Independently achieved atomic-scale protein and protein-complex prediction via a distinct three-track 1D/2D/3D architecture.",
+    "ripple": "Democratized atomic structural prediction and directly enabled RFdiffusion and modern open-source protein design (recognized in the 2024 Chemistry Nobel ecosystem).",
+    "verification": "Peer-reviewed in Science (Vol. 373, pp. 871–876) with immediate GitHub code release, public web server, and independent experimental structure validation.",
+    "velocity": "Generated accurate multi-protein complex models in ~10–30 minutes on a single consumer GPU."
+  },
+  "enables": [
+    "rfdiffusion-protein-design-2023"
+  ],
+  "sources": [
+    {
+      "label": "PMC / Science (Jul 15, 2021) — Accurate prediction of protein structures and interactions using a three-track neural network",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612213/",
+      "type": "paper"
+    },
+    {
+      "label": "UW Institute for Protein Design — RoseTTAFold: Accurate protein structure prediction accessible to all",
+      "url": "https://www.ipd.uw.edu/2021/07/rosettafold-accurate-protein-structure-prediction-accessible-to-all/",
+      "type": "announcement"
+    }
+  ]
+}

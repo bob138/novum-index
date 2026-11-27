@@ -1,0 +1,60 @@
+{
+  "id": "claude-godel-notebooks-2026",
+  "title": "Claude Deciphers Kurt Gödel’s 1,009-Page Shorthand Notebooks, Unearthing 663 Theorems (~400 Coq-Verified)",
+  "shortTitle": "Gödel’s Shorthand Notebooks (Claude)",
+  "date": "2026-11-13",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Mathematical Logic",
+    "Formal Verification",
+    "Archival Theorem Recovery"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Anthropic Claude + Coq Proof Assistant",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Days",
+  "isAnchor": false,
+  "whyItMatters": "Digested 1,009 pages of Kurt Gödel’s enigmatic 1940s Gabelsberger German shorthand in days—extracting 663 mathematical claims (~400 formally verified in Coq), including a lost 1966 near-proof.",
+  "summary": "Working with University of Helsinki logician Jan von Plato’s team, Anthropic’s Claude processed 1,009 pages of Kurt Gödel’s handwritten 1940s Gabelsberger German shorthand notebooks in a matter of days—a scholarly bottleneck that had taken human paleographers and logicians decades to transcribe piecemeal. Claude identified 663 proved, sketched, or conjectured theorems across logic and foundations of mathematics, including a previously unverified 1966 near-proof; when translated into the Coq proof assistant, roughly 400 of the extracted statements compiled and verified directly as stated.",
+  "technicalHighlights": [
+    "Transcribed and mathematically parsed 1,009 pages of Gödel’s dense Gabelsberger German shorthand notebooks in days.",
+    "Extracted 663 distinct mathematical claims and proto-theorems, including previously unstudied arguments from Gödel’s unpublished 1966 notes.",
+    "Paired LLM archival extraction with Coq formalization, verifying approximately 400 of Gödel’s recovered claims directly in the proof assistant."
+  ],
+  "caveats": "Represents AI-assisted historical/archival theorem recovery and formalization of Gödel’s unpublished work rather than originating brand-new mathematical breakthroughs; full scholarly edition and peer-reviewed verification of all 663 extracted claims remain ongoing.",
+  "contributors": [
+    "Jan von Plato",
+    "University of Helsinki Gödel Research Team",
+    "Claude (Anthropic)"
+  ],
+  "institutions": [
+    "University of Helsinki"
+  ],
+  "scores": {
+    "foundational": 74,
+    "ripple": 84,
+    "verification": 86,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Recovers and formalizes hundreds of unpublished theorems from one of the 20th century’s greatest logicians, though it recovers historical mathematics rather than proving a new open conjecture.",
+    "ripple": "Opens an entire new genre of AI-for-science: neuro-symbolic archival recovery and formal verification of legacy notebooks across mathematics and physics.",
+    "verification": "Roughly 400 of the 663 extracted claims were formally verified in Coq, with the remainder undergoing ongoing scholarly review.",
+    "velocity": "Compressed decades of specialized shorthand transcription and logical checking into days."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "The Guardian — ‘Ahead of his time’: AI helps unlock discoveries hidden in Kurt Gödel’s notebooks (Nov 13, 2026)",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "type": "announcement"
+    },
+    {
+      "label": "explainx.ai — Claude and Gödel’s Notebooks: 663 Theorems Checked in Coq",
+      "url": "https://explainx.ai/blog/claude-godel-notebooks-von-plato-663-theorems-coq-what-is-verified-2026",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "ferminet-quantum-chemistry-2020",
+  "title": "FermiNet Solves the Many-Electron Schrödinger Equation from First Principles",
+  "shortTitle": "FermiNet Quantum Chemistry",
+  "date": "2020-09-16",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Quantum Chemistry",
+    "Variational Quantum Monte Carlo",
+    "Ab Initio Electronic Structure"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "FermiNet (DeepMind Antisymmetric Neural Wavefunction)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First deep-learning wavefunction ansatz to solve the many-electron Schrödinger equation from first principles at chemical accuracy—without external training data—outperforming coupled cluster on stretched bonds.",
+  "summary": "Published in Physical Review Research in September 2020 by David Pfau, James Spencer, Alexander Matthews, and W. M. C. Foulkes (DeepMind & Imperial College London), FermiNet introduced a permutation-equivariant neural network architecture obeying the Pauli exclusion principle by construction. Trained purely via variational energy minimization on physics alone (zero external training datasets), FermiNet achieved chemical accuracy across atoms, small molecules, and strongly correlated stretched bonds where gold-standard CCSD(T) breaks down, launching neural quantum Monte Carlo for chemistry and condensed-matter physics.",
+  "technicalHighlights": [
+    "Replaces fixed single-electron orbitals inside Slater determinants with many-electron neural orbitals, capturing rich electron correlation while strictly preserving fermionic antisymmetry.",
+    "Requires no precomputed quantum-chemistry training dataset—optimizing the wavefunction directly against the physical Hamiltonian via variational quantum Monte Carlo.",
+    "Outperformed gold-standard coupled-cluster CCSD(T) on bond dissociation and strongly correlated chains (such as H₁₀) and later uncovered Fermi-liquid-to-Wigner-crystal transitions in electron gases."
+  ],
+  "caveats": "High computational scaling (roughly O(N⁴) in electron count) limits ab initio FermiNet calculations to molecules and unit cells with tens of electrons rather than large biomolecules.",
+  "contributors": [
+    "David Pfau",
+    "James S. Spencer",
+    "Alexander G. D. G. Matthews",
+    "W. M. C. Foulkes"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Imperial College London"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 85,
+    "verification": 96,
+    "velocity": 80
+  },
+  "scoreRationale": {
+    "foundational": "Established neural wavefunctions as a first-principles ab initio method competitive with and surpassing classical quantum chemistry benchmarks.",
+    "ripple": "Catalyzed an entire subfield of neural quantum Monte Carlo (Psiformer, PauliNet, periodic FermiNet) spanning chemistry and condensed-matter physics.",
+    "verification": "Peer-reviewed in Physical Review Research (2, 033429), open-sourced, and independently reproduced across dozens of follow-up papers.",
+    "velocity": "Achieved breakthrough variational accuracy directly from the Schrödinger equation, though compute costs remain substantial."
+  },
+  "enables": [
+    "gnome-materials-2023"
+  ],
+  "sources": [
+    {
+      "label": "Physical Review Research — Ab initio solution of the many-electron Schrödinger equation with deep neural networks (Sep 2020)",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevResearch.2.033429",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind — FermiNet: Quantum physics and chemistry from first principles",
+      "url": "https://deepmind.google/blog/ferminet-quantum-physics-and-chemistry-from-first-principles/",
+      "type": "announcement"
+    }
+  ]
+}

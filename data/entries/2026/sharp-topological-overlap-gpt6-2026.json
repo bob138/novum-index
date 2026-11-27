@@ -1,0 +1,54 @@
+{
+  "id": "sharp-topological-overlap-gpt6-2026",
+  "title": "GPT-6 Astra Proves Sharp Topological Overlap & Bukh–Matoušek–Nivasch Conjecture in Every Dimension",
+  "shortTitle": "Bukh–Matoušek–Nivasch (GPT-6)",
+  "date": "2026-11-19",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Combinatorial Topology",
+    "Discrete Geometry",
+    "Algebraic Topology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-6 Astra (with Claude Opus 5.5 assistance)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 15,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Settles the 2011 Bukh–Matoušek–Nivasch conjecture by proving the exact topological overlap constant c_d = (d+1)!/(d+1)^(d+1) for every dimension d—discovered by GPT-6 Astra under Sergey Norin’s direction.",
+  "summary": "McGill mathematician Sergey Norin posted a self-contained proof establishing that the topological and affine overlap constants of simplices coincide and equal exactly (d+1)!/(d+1)^(d+1) in every dimension d, confirming the 2011 Bukh–Matoušek–Nivasch conjecture and sharply improving Gromov’s celebrated 2010 topological overlap bounds. In his transparent AI disclosure, Norin explains that after directing GPT-6 Astra to abandon numerical optimization and unify his bramble lemma with Gromov’s method, Astra discovered a conceptual Morse-theoretic and homological proof in 3D that generalized immediately to all dimensions.",
+  "technicalHighlights": [
+    "Proves c_d^top = c_d^aff = (d+1)! / (d+1)^(d+1) for every positive integer dimension d, matching the 2011 Bukh–Matoušek–Nivasch upper bound.",
+    "Combines descending chain fillings, relative-homology vanishing, Morse theory, and a novel Hessian eigenvalue lower bound on multilinear cocycle densities.",
+    "Exemplifies transparent human–AI mathematical collaboration: GPT-6 Astra found the core conceptual proof under Norin’s guidance, while Norin digested, verified, and restructured the full manuscript."
+  ],
+  "caveats": "Unrefereed v1 arXiv preprint without a machine-checked Lean formalization; while Norin personally checked and rewrote every step over several weeks, formal peer review is pending.",
+  "contributors": [
+    "Sergey Norin",
+    "GPT-6 Astra"
+  ],
+  "institutions": [
+    "McGill University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 74,
+    "verification": 82,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Determines the exact optimal constant in Gromov’s topological overlap theorem across every dimension, resolving a 15-year-old conjecture.",
+    "ripple": "Advances discrete geometry and combinatorial topology, and serves as a landmark case study of an LLM producing a genuinely conceptual, non-brute-force proof.",
+    "verification": "Clean, human-vetted manuscript by a leading combinatorialist (Sergey Norin), though unrefereed and not formally verified in Lean.",
+    "velocity": "Solved in all dimensions after human efforts had stalled at suboptimal 3D bounds matching Gromov’s 2010 estimates."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Sergey Norin — Sharp topological overlap in every dimension (arXiv:2611.26229)",
+      "url": "https://arxiv.org/abs/2611.26229",
+      "type": "paper"
+    }
+  ]
+}

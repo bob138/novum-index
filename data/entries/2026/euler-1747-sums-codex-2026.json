@@ -1,0 +1,63 @@
+{
+  "id": "euler-1747-sums-codex-2026",
+  "title": "Proof of Euler’s 1747 Conjecture on Sums of Integers with Restricted Prime Factors",
+  "shortTitle": "Euler’s 1747 Conjecture (Codex)",
+  "date": "2026-11-12",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Additive Number Theory",
+    "Modular Forms",
+    "Hurwitz Quaternions"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Codex (Hurwitz Quaternions + Exact Sieve)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 279,
+  "aiTimeToSolve": "AI-drafted proof + exact sieve",
+  "isAnchor": false,
+  "whyItMatters": "Four Purdue researchers and OpenAI Codex posted a proof of Euler’s 279-year-old 1747 conjecture to Goldbach that every n ≡ 2 (mod 4) sums two numbers whose prime factors are all ≡ 1 (mod 4).",
+  "summary": "Posted to Hexagon on November 12, 2026 (hexagon:2611.00370v1), Purdue University researchers Will Howe, Grant Huffman, Jensen Kohlmeyer, and Liam Kruer—disclosing that OpenAI Codex generated the mathematical argument, performed the exact calculations, and drafted the manuscript under their direction—claimed a full proof of Leonhard Euler’s May 6, 1747 conjecture to Christian Goldbach: every positive integer n ≡ 2 (mod 4) can be written as a + b where every prime factor of a and b is ≡ 1 (mod 4) (allowing 1). While Dietmann and Elsholtz (2019) proved the result for sufficiently large n without an explicit threshold, Codex’s proof averages Hurwitz-quaternion four-square representations over a nonsplit torus normalizer, invoking the weight-two Ramanujan–Petersson bound via Jacquet–Langlands and Deligne to obtain an explicit threshold n ≥ 64⁴ = 16,777,216, paired with an exact arithmetic sieve covering all 4,194,304 cases below (independently reproduced by whataifound.org).",
+  "technicalHighlights": [
+    "Resolves the explicit threshold gap left by Dietmann–Elsholtz (2019) on a 279-year-old conjecture posed by Euler to Goldbach in 1747.",
+    "Combines Hurwitz quaternion norms, nonsplit torus averaging, and explicit Jacquet–Langlands / Deligne Hecke bounds to drop the analytic threshold to 64⁴ = 16,777,216.",
+    "Finite arithmetic sieve covering all 4,194,304 integers n ≡ 2 (mod 4) below 64⁴ was independently recomputed and confirmed."
+  ],
+  "caveats": "No Lean formalization yet; while the finite sieve certificate up to 16.77M has been independently reproduced, the explicit constants in the analytic Hecke/Jacquet–Langlands estimate above 64⁴ still await specialist peer review.",
+  "contributors": [
+    "Will Howe",
+    "Grant Huffman",
+    "Jensen Kohlmeyer",
+    "Liam Kruer",
+    "OpenAI Codex"
+  ],
+  "institutions": [
+    "Purdue University",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 74,
+    "ripple": 60,
+    "verification": 64,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Completes a classic 279-year-old additive number theory conjecture from Euler’s correspondence with Goldbach by making the asymptotic bound effective.",
+    "ripple": "Illustrates effective explicitization of automorphic Hecke bounds combined with exact computational certificates by AI coding agents.",
+    "verification": "Finite computational certificate independently verified, but the analytic estimate above 64⁴ is unrefereed and not formalized in Lean.",
+    "velocity": "OpenAI Codex generated both the analytic quaternion/Hecke strategy and the exact finite verification sieve."
+  },
+  "sources": [
+    {
+      "label": "Hexagon Preprint 2611.00370v1 (PDF)",
+      "url": "https://hexagonmath.org/pdf/2611.00370v1",
+      "type": "paper"
+    },
+    {
+      "label": "WhatAIFound Registry & Independent Sieve Check",
+      "url": "https://whataifound.org/finding/2026-11-12-euler-1747-sums",
+      "type": "explainer"
+    }
+  ],
+  "enables": []
+}

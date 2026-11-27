@@ -1,0 +1,66 @@
+{
+  "id": "alphafold-3-2024",
+  "title": "AlphaFold 3: Unified Atomic Modeling of All Biomolecular Complexes",
+  "shortTitle": "AlphaFold 3",
+  "date": "2024-05-08",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Computational Drug Discovery",
+    "Diffusion Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaFold 3 (Google DeepMind / Isomorphic Labs)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Minutes / complex",
+  "whyItMatters": "Extends atomic-precision structure prediction beyond isolated proteins to joint complexes of proteins, DNA, RNA, small-molecule drugs, and ions.",
+  "summary": "Published in Nature by Google DeepMind and Isomorphic Labs, AlphaFold 3 replaced AlphaFold 2's Evoformer/structure module with a Pairformer and diffusion-based architecture capable of jointly predicting 3D structures of virtually all molecules of life. It achieved ~50% higher accuracy than prior physics-based docking tools on protein–ligand interactions and transformed everyday structural biology and drug design workflows.",
+  "technicalHighlights": [
+    "Unified diffusion architecture predicts joint atomic coordinates across proteins, nucleic acids, small-molecule ligands, ions, and post-translational modifications.",
+    "Substantially outperforms specialized docking tools and AlphaFold-Multimer on antibody–antigen and protein–ligand complexes.",
+    "Cited >17,000 times within two years and serves as the structural validation backbone for generative biology platforms like Evo 2."
+  ],
+  "caveats": "Can hallucinate plausible-looking structures in disordered regions and predicts static snapshots rather than full conformational dynamics; initial restricted code release drew community pushback before academic weights were opened.",
+  "contributors": [
+    "Josh Abramson",
+    "Jonas Adler",
+    "John Jumper",
+    "Demis Hassabis",
+    "Pushmeet Kohli",
+    "AlphaFold 3 Team"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Isomorphic Labs"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 98,
+    "verification": 97,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Generalizes deep learning structural prediction from single-chain folding to the full interactome of cellular chemistry.",
+    "ripple": "Adopted globally across academia and pharma; directly accelerates target discovery, binder design, and genome validation.",
+    "verification": "Published in Nature, independently benchmarked across thousands of crystal structures, and replicated by open models (Boltz, Chai, Protenix).",
+    "velocity": "Collapsed wet-lab structural co-crystallization cycles from months into minutes on standard hardware."
+  },
+  "enables": [
+    "alphaproteo-binders-2024",
+    "evo-2-genome-design-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature (PubMed): Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38718835/",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind AlphaFold Portal",
+      "url": "https://deepmind.google/science/alphafold/",
+      "type": "announcement"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "alphaproteo-binders-2024",
+  "title": "AlphaProteo: High-Affinity De Novo Protein Binder Design",
+  "shortTitle": "AlphaProteo Binders",
+  "date": "2024-09-05",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Protein Design",
+    "Structural Biochemistry",
+    "Therapeutics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaProteo (Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Designs custom disease-targeting protein binders in silico with up to 10× tighter wet-lab affinity and 88% hit rates—eliminating rounds of experimental evolution.",
+  "summary": "Google DeepMind unveiled AlphaProteo, an AI system capable of generating novel high-affinity protein binders for challenging biomedical targets including VEGF-A (cancer and diabetic retinopathy), SARS-CoV-2 spike, IL-7Rα, and TrkA. Wet-lab experiments demonstrated 3× to 300× stronger binding affinities than prior computational design methods and up to 88% experimental success on target BHRF1—without post-design lab optimization.",
+  "technicalHighlights": [
+    "First AI system to design a successful de novo binder for VEGF-A, a clinically vital angiogenesis target.",
+    "Achieved ~10× stronger average binding affinity than state-of-the-art computational protein design pipelines.",
+    "Validated directly in wet-lab biophysical assays across seven diverse disease-linked proteins."
+  ],
+  "caveats": "Did not succeed on all tested targets (e.g., TNFα proved refractory), and clinical translation still requires immunogenicity, stability, and delivery optimization.",
+  "contributors": [
+    "Google DeepMind Protein Design & Wet Lab Teams"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 88,
+    "verification": 92,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates reliable zero-shot functional molecular design directly from target structure.",
+    "ripple": "Accelerates biologics, diagnostic biosensors, oncology therapeutics, and antiviral countermeasure development.",
+    "verification": "Backed by direct experimental wet-lab validation across multiple independent protein targets.",
+    "velocity": "Replaces months of iterative phage-display and affinity-maturation cycles with single-shot AI generation."
+  },
+  "enables": [
+    "chai-2-antibody-design-2025"
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind: AlphaProteo generates novel proteins for biology and health research",
+      "url": "https://deepmind.google/blog/alphaproteo-generates-novel-proteins-for-biology-and-health-research/",
+      "type": "announcement"
+    }
+  ]
+}

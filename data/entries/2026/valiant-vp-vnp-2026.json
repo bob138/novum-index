@@ -1,0 +1,64 @@
+{
+  "id": "valiant-vp-vnp-2026",
+  "title": "Same-Day AI Proofs of Valiant's Conjecture (VP ≠ VNP)",
+  "shortTitle": "Valiant's Conjecture (VP ≠ VNP)",
+  "date": "2026-11-23",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algebraic Complexity Theory",
+    "P vs NP",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Internal Claude + Lean 4 (Anthropic) & OpenAI Frontier Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 47,
+  "aiTimeToSolve": "Same day",
+  "whyItMatters": "Anthropic and OpenAI posted independent Lean-formalized AI proofs of the 47-year-old algebraic analogue of P ≠ NP within five hours of each other.",
+  "summary": "On November 23, 2026, Anthropic published a 70-page Claude-authored paper and Lean 4 formalization claiming to prove Leslie Valiant's 1979 conjecture VP ≠ VNP—the algebraic analogue of P vs. NP separating the determinant from the permanent. Hours later, OpenAI added its own independent Lean-backed proof ('VP and VNP are different') to openai/math, noting its internal model had obtained the result on November 6. Complexity theorists hailed the simultaneous dual-lab Lean releases as unprecedented while emphasizing that independent specification audits and human mathematical digestion are still underway.",
+  "technicalHighlights": [
+    "Targets Valiant's 1979 conjecture separating polynomial-sized algebraic circuits (VP) from algebraic NP (VNP).",
+    "Two rival labs released independent Lean 4 proofs hours apart on November 23, 2026 (with OpenAI's internal proof dated November 6).",
+    "Backed by public Lean 4 formalizations currently undergoing independent community axiom, definition, and exposition audits."
+  ],
+  "caveats": "Neither proof has yet completed full independent human refereeing or Mathlib/Lean-community sign-off; even if confirmed, VP ≠ VNP does not immediately imply Boolean P ≠ NP.",
+  "contributors": [
+    "Anthropic Research Team",
+    "OpenAI Research Team"
+  ],
+  "institutions": [
+    "Anthropic",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 94,
+    "ripple": 88,
+    "verification": 64,
+    "velocity": 99
+  },
+  "scoreRationale": {
+    "foundational": "If verified, resolves the central open conjecture of algebraic complexity theory and the closest major stepping stone toward P vs. NP.",
+    "ripple": "Would reshape geometric complexity theory (GCT), lower-bound techniques, and permanent/determinant theory.",
+    "verification": "Lean formalizations are public, but independent verification of definitions and proof validity is still pending.",
+    "velocity": "Two independent AI solutions to a 47-year-old landmark conjecture posted within five hours of each other."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Notebookcheck: Anthropic and OpenAI claim breakthroughs on a 47-year-old fundamental math problem",
+      "url": "https://www.notebookcheck.net/Anthropic-and-OpenAI-claim-breakthroughs-on-a-47-year-old-fundamental-math-problem.1459160.0.html",
+      "type": "announcement"
+    },
+    {
+      "label": "DataCamp: Anthropic's Claude Claims Proof of Valiant's Conjecture (VP vs. VNP)",
+      "url": "https://www.datacamp.com/blog/claude-claims-proof-of-valiants-conjecture-vp-vs-vnp",
+      "type": "explainer"
+    },
+    {
+      "label": "explainx.ai — OpenAI VP ≠ VNP Proof in Lean (Nov 23, 2026)",
+      "url": "https://explainx.ai/blog/openai-vp-vnp-different-lean-proof-november-2026",
+      "type": "explainer"
+    }
+  ]
+}

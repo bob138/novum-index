@@ -1,0 +1,63 @@
+{
+  "id": "graffiti-graph-conjectures-1986",
+  "title": "Graffiti Autonomously Generates Novel Graph Theory Conjectures Studied by Erdős & Chung",
+  "shortTitle": "Graffiti (1986)",
+  "date": "1986-03-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Graph Theory",
+    "Automated Conjecturing",
+    "Mathematical Chemistry"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Graffiti (Heuristic Invariant Search + Dalmatian Filter)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First automated mathematical conjecturing system to produce genuinely novel open conjectures that sparked ~80 peer-reviewed papers by leading mathematicians.",
+  "summary": "Developed by Siemion Fajtlowicz at the University of Houston and publicly unveiled in 1986 with its first 18 conjectures, Graffiti searched algebraic expressions across graph invariants and retained candidate inequalities holding without counterexample across a curated graph database—later refined with the Dalmatian informativeness heuristic. Its conjectures in graph theory and mathematical chemistry (fullerenes) proved deep enough to inspire roughly 80 published papers by mathematicians including Paul Erdős, Fan Chung, Béla Bollobás, Noga Alon, and László Lovász.",
+  "technicalHighlights": [
+    "Autonomously generated Graffiti Conjecture 2 (average distance ≤ independence number for any connected graph), proved by Fan Chung in 1988, and the residue–independence inequality proved by Favaron, Mahéo, and Saclé in 1991.",
+    "Introduced the Dalmatian heuristic to suppress true-but-trivial statements by retaining only inequalities strictly sharper than all prior bounds on at least one graph.",
+    "Extended into mathematical chemistry, formulating novel structural conjectures on fullerene and benzenoid molecular graphs."
+  ],
+  "caveats": "Generated conjectures empirically from finite graph databases rather than proving theorems; many candidate inequalities were later refuted by counterexamples, illustrating both the power and fragility of pure symbolic heuristic search.",
+  "contributors": [
+    "Siemion Fajtlowicz",
+    "Ermelinda DeLaViña"
+  ],
+  "institutions": [
+    "University of Houston"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 83,
+    "verification": 90,
+    "velocity": 70
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated empirically that a computer program can originate genuinely novel, non-trivial mathematical hypotheses rather than merely checking human proofs.",
+    "ripple": "Sparked ~80 peer-reviewed papers across combinatorics and mathematical chemistry and established the automated conjecturing lineage leading to DeepMind Knot Theory and AlphaEvolve.",
+    "verification": "Multiple core Graffiti conjectures were formally proved and published in top refereed venues (Discrete Mathematics, Journal of Graph Theory) by leading mathematicians.",
+    "velocity": "Compressed systematic exploration of invariant inequalities across hundreds of graphs, though narrow symbolic templates limited scope to inequality-form conjectures."
+  },
+  "enables": [
+    "deepmind-knot-theory-2021",
+    "funsearch-2023",
+    "ramanujan-machine-2021"
+  ],
+  "sources": [
+    {
+      "label": "Discrete Mathematics — S. Fajtlowicz, On Conjectures of Graffiti (1988)",
+      "url": "https://doi.org/10.1016/0012-365X(88)90199-9",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2409.19379 — Historical Survey of Graffiti & TxGraffiti",
+      "url": "https://arxiv.org/abs/2409.19379",
+      "type": "paper"
+    }
+  ]
+}

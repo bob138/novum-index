@@ -1,0 +1,61 @@
+{
+  "id": "golem-ilp-drug-design-1992",
+  "title": "Golem Inductive Logic Programming Learns Human-Interpretable QSAR Drug-Binding Rules Matching X-Ray Crystallography",
+  "shortTitle": "Golem ILP Drug Design (PNAS, 1992)",
+  "date": "1992-12-01",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Inductive Logic Programming",
+    "QSAR Drug Design",
+    "Medicinal Chemistry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Golem (Inductive Logic Programming)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Symbolic rule induction",
+  "isAnchor": true,
+  "whyItMatters": "Landmark PNAS study showing symbolic inductive logic programming (Golem) outperformed classical Hansch regression on DHFR drug-binding prediction while discovering stereochemical rules matching X-ray crystallography.",
+  "summary": "Published in PNAS in December 1992, Ross D. King, Stephen Muggleton, Richard A. Lewis, and Michael J. E. Sternberg applied the inductive logic programming (ILP) system Golem to model structure-activity relationships of 55 trimethoprim analogues inhibiting E. coli dihydrofolate reductase (DHFR). Golem achieved higher predictive accuracy on unseen test molecules than standard Hansch linear regression and—crucially—induced readable first-order logic rules characterizing favored inhibitors by polarity, flexibility, and hydrogen bonding that independently agreed with crystallographic X-ray structures of the DHFR binding site. This work directly launched Ross King’s closed-loop Robot Scientist program (Adam and Eve).",
+  "technicalHighlights": [
+    "Used relational first-order logic induction (Golem ILP) over molecular substituent properties rather than fixed-vector statistical features.",
+    "Outperformed standard Hansch QSAR regression on both training (44 compounds) and unseen test (11 compounds) DHFR inhibition.",
+    "Induced human-understandable chemical binding rules that independently matched the 3D stereochemistry observed in X-ray crystallography."
+  ],
+  "caveats": "Evaluated on a modest 55-compound congeneric series of trimethoprim analogues.",
+  "contributors": [
+    "Ross D. King",
+    "Stephen Muggleton",
+    "Richard A. Lewis",
+    "Michael J. E. Sternberg"
+  ],
+  "institutions": [
+    "Imperial Cancer Research Fund",
+    "Turing Institute",
+    "Oxford University"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 82,
+    "verification": 92,
+    "velocity": 72
+  },
+  "scoreRationale": {
+    "foundational": "First demonstration that symbolic machine learning could outperform statistical QSAR and recover physically valid binding-site stereochemistry.",
+    "ripple": "Catalyzed relational machine learning in chemoinformatics and directly inspired Robot Scientists Adam and Eve.",
+    "verification": "Peer-reviewed in PNAS (Vol. 89, No. 23, pp. 11322–11326) with independent crystallographic corroboration.",
+    "velocity": "Automated rule discovery from empirical assay tables."
+  },
+  "enables": [
+    "robot-scientist-adam-2009",
+    "robot-scientist-eve-malaria-2015"
+  ],
+  "sources": [
+    {
+      "label": "PNAS Vol. 89(23), pp. 11322–11326 (Dec 1992) — Drug design by machine learning (Golem ILP)",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.89.23.11322",
+      "type": "paper"
+    }
+  ]
+}

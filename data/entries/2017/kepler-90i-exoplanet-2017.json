@@ -1,0 +1,61 @@
+{
+  "id": "kepler-90i-exoplanet-2017",
+  "title": "Google Brain & NASA Deep Neural Network Discovers Exoplanet Kepler-90i, First Known 8-Planet Analog System",
+  "shortTitle": "Kepler-90i AI Exoplanet Discovery",
+  "date": "2017-12-14",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Exoplanet Astronomy",
+    "Astrophysics",
+    "Deep Convolutional Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AstroNet (Deep Convolutional Neural Network, Google Brain / NASA)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Automated search of 670 stars",
+  "isAnchor": true,
+  "whyItMatters": "A deep CNN trained on 15,000 Kepler light curves discovered two missed exoplanets—including Kepler-90i, making Kepler-90 the first known star system tying our Solar System’s eight confirmed planets.",
+  "summary": "Announced by NASA on December 14, 2017 and published in The Astronomical Journal (2018), Google Brain engineer Christopher J. Shallue and NASA Sagan Fellow Andrew Vanderburg built AstroNet, a deep convolutional neural network trained on 15,000 labeled Kepler transit signals to distinguish true planetary transits from astrophysical false positives. Scanning 670 previously searched multi-planet stars, the neural network detected weak periodic transit signals missed by all prior human and classical automated pipelines—discovering Kepler-80g (completing a 5-planet resonant chain) and Kepler-90i, a rocky super-Earth that made Kepler-90 the first confirmed eight-planet exoplanet system matching our Solar System.",
+  "technicalHighlights": [
+    "Trained a deep CNN (AstroNet) on global and local folded Kepler photometric light curves with ~96% classification accuracy.",
+    "Discovered two confirmed exoplanets (Kepler-90i and Kepler-80g) hidden in faint transit signals overlooked by all previous pipelines.",
+    "Established Kepler-90 as the first confirmed 8-planet system outside our Solar System and open-sourced AstroNet for TESS/K2 surveys."
+  ],
+  "caveats": "Neural-network detections still required follow-up statistical validation by human astronomers to rule out background eclipsing binaries and instrumental artifacts.",
+  "contributors": [
+    "Christopher J. Shallue",
+    "Andrew M. Vanderburg"
+  ],
+  "institutions": [
+    "Google Brain",
+    "University of Texas at Austin",
+    "NASA"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 84,
+    "verification": 94,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "First high-profile discovery of new confirmed worlds by a deep neural network mining archival telescope telemetry.",
+    "ripple": "Popularized deep-learning vetting pipelines across NASA’s Kepler, K2, and TESS exoplanet surveys and broader time-domain astronomy.",
+    "verification": "Peer-reviewed in The Astronomical Journal (doi:10.3847/1538-3881/aa9e09) and officially confirmed by NASA.",
+    "velocity": "Automatically uncovered faint multi-planet signals across hundreds of archival star systems missed over years of prior searches."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "NASA (Dec 14, 2017) — Artificial Intelligence, NASA Data Used to Discover Eighth Planet Circling Distant Star",
+      "url": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+      "type": "announcement"
+    },
+    {
+      "label": "The Astronomical Journal (2018) — Identifying Exoplanets with Deep Learning (DOI: 10.3847/1538-3881/aa9e09)",
+      "url": "https://doi.org/10.3847/1538-3881/aa9e09",
+      "type": "paper"
+    }
+  ]
+}

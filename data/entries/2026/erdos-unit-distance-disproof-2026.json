@@ -1,0 +1,68 @@
+{
+  "id": "erdos-unit-distance-disproof-2026",
+  "title": "Autonomous AI Disproof of Erdős’s 1946 Unit-Distance Conjecture (Problem #90)",
+  "shortTitle": "Erdős Unit-Distance Disproof",
+  "date": "2026-05-20",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Discrete Geometry",
+    "Number Theory",
+    "Combinatorics"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI Internal Reasoning Model",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 80,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Disproved Paul Erdős’s 80-year-old 1946 unit-distance conjecture; independently verified by nine prominent mathematicians including Timothy Gowers and Melanie Wood.",
+  "summary": "OpenAI announced that an internal reasoning model autonomously constructed a counterexample disproving Erdős Problem #90 (1946) on unit distances in the plane, synthesizing ideas from Ellenberg–Venkatesh, Golod–Shafarevich, and Hajir–Maire–Ramakrishna. Nine external mathematicians—including Fields Medalist Timothy Gowers and Melanie Wood—published a concise human-verified exposition on arXiv the same day, with Gowers noting that no prior AI-generated proof had come close to top-journal quality.",
+  "technicalHighlights": [
+    "Resolved an 80-year-old problem posed by Paul Erdős in 1946 via an unexpected algebraic-number-theoretic construction.",
+    "Independently checked and digested by nine leading mathematicians (Alon et al., arXiv:2605.20695) with day-one transparency.",
+    "Widely cited by skeptics and proponents alike as the turning point where AI crossed into genuine top-journal research math."
+  ],
+  "caveats": "OpenAI’s Sebastien Bubeck noted the proof synthesized known deep tools rather than inventing wholly new mathematical theory, and the internal model remains unreleased.",
+  "contributors": [
+    "OpenAI Math Team",
+    "Noga Alon",
+    "Timothy Gowers",
+    "Melanie Wood",
+    "Daniel Litt"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Princeton University",
+    "University of Cambridge",
+    "Harvard University"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 89,
+    "verification": 96,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Settled a classic 80-year-old Erdős problem using nontrivial algebraic number theory.",
+    "ripple": "Became the gold-standard template for responsible human-verified release of autonomous AI mathematical breakthroughs.",
+    "verification": "Independently verified and rewritten in a companion paper by nine leading mathematicians.",
+    "velocity": "First autonomous AI resolution of a famous 80-year-old conjecture widely judged publishable in a top math journal."
+  },
+  "enables": [
+    "cycle-double-cover-2026",
+    "non-sofic-groups-2026"
+  ],
+  "sources": [
+    {
+      "label": "Alon et al. — Remarks on the disproof of the unit distance conjecture (arXiv:2605.20695)",
+      "url": "https://arxiv.org/abs/2605.20695",
+      "type": "paper"
+    },
+    {
+      "label": "Quanta Magazine — Why the Legendary Erdős Problems Are Falling to AI",
+      "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/",
+      "type": "explainer"
+    }
+  ]
+}

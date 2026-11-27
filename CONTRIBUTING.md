@@ -9,16 +9,16 @@ We welcome scientists, mathematicians, engineers, and curious readers to help ke
 
 ## Option 2: Submit a Pull Request
 
-All index data lives in [`data/breakthroughs.json`](./data/breakthroughs.json) and is validated against [`data/schema.json`](./data/schema.json).
+All index data lives as individual per-breakthrough JSON files under [`data/entries/`](./data/entries/) (`data/entries/<year>/<id>.json`) alongside [`data/meta.json`](./data/meta.json), validated against [`data/schema.json`](./data/schema.json).
 
 1. Fork this repository and create a new branch (`git checkout -b add-my-breakthrough`).
-2. Add or edit an entry in `data/breakthroughs.json`, ensuring:
+2. Add or edit a file at `data/entries/<year>/<id>.json` (matching the entry's `date` year and `id`), ensuring:
    - The breakthrough is **AI-assisted or AI-led** (`aiRole` must be `"AI-Assisted"` or `"Autonomous AI"`) and specifies a non-empty `aiSystem` (model/architecture name). Exclusively human discoveries are out of scope.
    - Every claim is backed by at least one **primary verifiable URL** (arXiv, DOI/PubMed, official Lean/GitHub verification repository, lab paper, or primary researcher announcement on X).
    - `verificationStatus` accurately reflects current community consensus—do not mark unreviewed preprints or social posts as `Peer-Reviewed` or `Formally Verified` unless independently machine-checked or published.
    - `caveats` candidly notes open limitations, scope boundaries, or pending audits.
    - `scoreRationale` justifies each of the four 0–100 sub-scores (see [METHODOLOGY.md](./METHODOLOGY.md)).
-   - Update `meta.lastUpdated` to today's date (`YYYY-MM-DD`).
+   - Update `lastUpdated` in [`data/meta.json`](./data/meta.json) to today's date (`YYYY-MM-DD`).
 3. Validate locally:
    ```bash
    npm install

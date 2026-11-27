@@ -1,0 +1,55 @@
+{
+  "id": "cfsg-enormous-theorem-lean-2026",
+  "title": "Axiom Math Completes Full 43.1M-Line Lean 4 Formalization of the Classification of Finite Simple Groups",
+  "shortTitle": "Finite Simple Groups (CFSG, Lean)",
+  "date": "2026-10-26",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Finite Group Theory",
+    "Formal Verification",
+    "Automated Autoformalization"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AxiomProver Multi-Agent Swarm (Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "24 days",
+  "isAnchor": false,
+  "whyItMatters": "Formalized mathematics’ largest proof (~15,000 pages across 500+ papers) into 43.1M lines of Lean 4 in just 24 days—exposing 34 literature errors and proving a new group-theory theorem to close a gap.",
+  "summary": "Between October 1 and October 25, 2026, Axiom Math’s AxiomProver multi-agent swarm—working with consulting group theorists Richard Lyons and Ronald Solomon—completed the first end-to-end machine-checked Lean 4 formalization of the Classification of Finite Simple Groups ('the enormous theorem'). Spanning 108 milestones and ~43.1 million lines of Lean 4, the campaign not only verified the 20th century’s most sprawling collaborative proof, but surfaced 34 noteworthy deviations and errors in the published literature (including counterexamples in Aschbacher–Smith’s quasithin volumes and Walter’s 1986 Unbalanced Group Theorem) and proved a new group-theory result to seal the gap.",
+  "technicalHighlights": [
+    "Machine-checks the full Classification of Finite Simple Groups—originally ~15,000 pages across 500+ articles by ~100 mathematicians—in ~43.1 million lines of Lean 4 across 108 milestones.",
+    "Completed in 24 calendar days by a coordinated multi-agent AxiomProver swarm consulting GLS project leaders Richard Lyons and Ronald Solomon.",
+    "Uncovered 34 substantive deviations/errors in the published CFSG literature and supplied a novel group-theoretic proof to repair an exposed gap."
+  ],
+  "caveats": "Formalizes an already-proven landmark theorem rather than solving an open conjecture (hence yearsUnsolved is null), and auditing the 43.1M-line codebase’s top-level definitions and integrating it into Mathlib remains an ongoing community undertaking.",
+  "contributors": [
+    "Axiom Math Team",
+    "Richard Lyons (consultant)",
+    "Ronald Solomon (consultant)"
+  ],
+  "institutions": [
+    "Axiom Math"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 91,
+    "verification": 96,
+    "velocity": 98
+  },
+  "scoreRationale": {
+    "foundational": "Places the largest, most intricate theorem in the history of algebra—previously impossible for any single human to verify in full—on a machine-checked foundation, while catching real gaps.",
+    "ripple": "Demonstrates that multi-agent autoformalization can audit and repair entire encyclopedic bodies of mathematics within weeks.",
+    "verification": "Compiled end-to-end in Lean 4 with expert guidance from CFSG architects Richard Lyons and Ronald Solomon; independent audits of top-level specifications continue.",
+    "velocity": "Compressed a multi-decade formalization dream (equivalent to thousands of human-years of manual Lean work) into 24 days."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Axiom Math — The Enormous Theorem, Formalized (Oct 26, 2026)",
+      "url": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
+      "type": "formal-verification"
+    }
+  ]
+}

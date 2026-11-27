@@ -1,0 +1,66 @@
+{
+  "id": "boolean-pythagorean-triples-2016",
+  "title": "Boolean Pythagorean Triples Problem Solved via Cube-and-Conquer SAT",
+  "shortTitle": "Pythagorean Triples (SAT)",
+  "date": "2016-05-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Ramsey Theory",
+    "SAT Solving",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Cube-and-Conquer SAT Solver (Glucose / DRAT)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 30,
+  "aiTimeToSolve": "2 days (800 cores)",
+  "isAnchor": true,
+  "whyItMatters": "Pioneering pre-neural symbolic AI milestone: resolved a 30-year Ramsey theory problem via a 200-terabyte machine-verified SAT proof.",
+  "summary": "Marijn Heule, Oliver Kullmann, and Victor Marek encoded Ronald Graham’s longstanding Boolean Pythagorean Triples problem—whether the positive integers can be 2-colored with no monochromatic solution to a² + b² = c²—into propositional logic and solved it via Cube-and-Conquer SAT search. The solver proved 1..7,824 is 2-colorable while 1..7,825 is impossible, producing a 200 TB DRAT proof certificate later formally verified in Coq.",
+  "technicalHighlights": [
+    "Partitioned the search space into one million sub-problems (“cubes”) solved in two days across 800 cores on the Stampede supercomputer.",
+    "Established the exact threshold at n = 7,825—the largest mathematical proof certificate generated up to that time (200 TB uncompressed, 68 GB compressed).",
+    "Independently verified by formal checkers extracted from Coq, proving symbolic search could settle open combinatorial problems beyond human casework."
+  ],
+  "caveats": "A pure classical SAT/symbolic search milestone rather than deep learning; while 100% machine-verified, the 200 TB proof offers little human-readable structural intuition and required bespoke symmetry breaking.",
+  "contributors": [
+    "Marijn J. H. Heule",
+    "Oliver Kullmann",
+    "Victor W. Marek"
+  ],
+  "institutions": [
+    "UT Austin",
+    "Swansea University",
+    "University of Kentucky"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 82,
+    "verification": 98,
+    "velocity": 74
+  },
+  "scoreRationale": {
+    "foundational": "Settled a famous open Ramsey theory conjecture posed by Ronald Graham and established the exact critical coloring threshold.",
+    "ripple": "Demonstrated scalable machine-checked proof certificates (DRAT) and directly foreshadowed hybrid formal-verification pipelines.",
+    "verification": "Machine-checked via DRAT certificates and independently verified in Coq—gold-standard formal certainty.",
+    "velocity": "Solved a 30-year open problem in two days of parallel symbolic search, yet remained restricted to finite combinatorial encodings."
+  },
+  "enables": [
+    "alphaproof-imo-2024",
+    "deepmind-formal-proof-search-2026",
+    "schur-number-five-sat-2017"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:1605.00723 — Solving and Verifying the Boolean Pythagorean Triples Problem",
+      "url": "https://arxiv.org/abs/1605.00723",
+      "type": "paper"
+    },
+    {
+      "label": "SAT 2016 Proceedings (LNCS 9710)",
+      "url": "https://doi.org/10.1007/978-3-319-40970-2_15",
+      "type": "paper"
+    }
+  ]
+}

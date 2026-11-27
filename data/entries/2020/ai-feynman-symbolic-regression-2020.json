@@ -1,0 +1,61 @@
+{
+  "id": "ai-feynman-symbolic-regression-2020",
+  "title": "AI Feynman: Physics-Inspired Neuro-Symbolic Regression Rediscovers All 100 Equations from the Feynman Lectures",
+  "shortTitle": "AI Feynman Symbolic Regression",
+  "date": "2020-04-15",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Symbolic Regression",
+    "Physics-Informed AI",
+    "Automated Law Discovery"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AI Feynman (Neural Network + Recursive Physics-Symmetry Symbolic Regression, MIT)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Minutes per equation",
+  "isAnchor": true,
+  "whyItMatters": "Published in Science Advances, MIT’s neuro-symbolic AI Feynman paired neural fitting with dimensional analysis and symmetry detection to rediscover 100/100 equations from the Feynman Lectures on Physics from raw data.",
+  "summary": "Published in Science Advances on April 15, 2020, Silviu-Marian Udrescu and Max Tegmark at MIT introduced AI Feynman, a recursive neuro-symbolic regression system designed to discover exact, human-readable mathematical laws directly from empirical data. Rather than relying purely on black-box curve fitting or brute-force expression trees, AI Feynman trains neural networks to detect translational symmetry, scale invariance, separability, and compositionality, recursively simplifying NP-hard symbolic search alongside dimensional analysis. Tested on 100 equations from the Feynman Lectures on Physics, AI Feynman solved 100% (versus 71% for prior commercial software Eureqa) and boosted accuracy on harder physics mysteries from 15% to 90%.",
+  "technicalHighlights": [
+    "Paired neural-network symmetry/separability discovery with recursive symbolic search and dimensional analysis.",
+    "Rediscovered 100/100 equations from the Feynman Lectures on Physics from numerical tables alone (vs. 71% for Eureqa).",
+    "Improved symbolic recovery on a harder nonlinear physics benchmark from 15% to 90%, catalyzing modern symbolic regression benchmarks."
+  ],
+  "caveats": "Benchmark milestone focused on rediscovering known textbook physics equations from clean or mildly noisy synthetic data rather than discovering a previously unknown fundamental law of nature.",
+  "contributors": [
+    "Silviu-Marian Udrescu",
+    "Max Tegmark"
+  ],
+  "institutions": [
+    "MIT"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 85,
+    "verification": 92,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Established a foundational neuro-symbolic architecture showing how neural representations can unlock tractable exact symbolic law discovery.",
+    "ripple": "Widely cited across AI-for-physics, creating the standard Feynman symbolic regression benchmark and inspiring subsequent scientific equation-discovery agents.",
+    "verification": "Peer-reviewed in Science Advances (6:eaay2631) with open-source code and reproducible 100-equation benchmark.",
+    "velocity": "Automated exact equation extraction in minutes on problems intractable for pure brute-force search."
+  },
+  "enables": [
+    "dusty-plasma-new-physics-2025"
+  ],
+  "sources": [
+    {
+      "label": "PMC / Science Advances (Apr 15, 2020) — AI Feynman: A physics-inspired method for symbolic regression",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7159912/",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:1905.11481 — AI Feynman: a Physics-Inspired Method for Symbolic Regression",
+      "url": "https://arxiv.org/abs/1905.11481",
+      "type": "paper"
+    }
+  ]
+}

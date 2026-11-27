@@ -1,0 +1,57 @@
+{
+  "id": "four-color-coq-2005",
+  "title": "Georges Gonthier Formally Verifies the Four Color Theorem End-to-End in the Coq Symbolic Proof Assistant",
+  "shortTitle": "Four Color Theorem (Coq, 2005)",
+  "date": "2005-09-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Formal Verification",
+    "Graph Theory",
+    "Interactive Theorem Proving"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Coq Proof Assistant + SSReflect",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~5 years human + Coq verification",
+  "isAnchor": true,
+  "whyItMatters": "Eliminated three decades of mathematical skepticism over the 1976 computer-checked Four Color proof by certifying every discharging step and 633 reducible configurations inside Coq’s small trusted symbolic kernel.",
+  "summary": "Completed in 2005 by Georges Gonthier and Benjamin Werner at Microsoft Research–INRIA (reported in Notices of the AMS, 2008), this landmark formalization verified the entire Four Color Theorem inside the Coq interactive proof assistant using a newly developed proof-by-reflection language (SSReflect). Because Appel and Haken’s 1976 proof (and Robertson–Sanders–Seymour–Thomas’s 1997 simplification) relied on unverified custom C/Fortran programs to check hundreds of graph configurations, many mathematicians remained uneasy; Gonthier’s ~60,000-line Coq formalization proved both the mathematical graph theory and the correctness of the computational decision procedures directly inside Coq’s trusted logical kernel.",
+  "technicalHighlights": [
+    "Formally proved the entire Four Color Theorem—including both topological/combinatorial theory and computational reducibility checks—inside Coq.",
+    "Introduced the SSReflect symbolic tactic language and computational reflection paradigm that powered modern formal mathematics.",
+    "Resolved the foundational “trust gap” of computer-assisted proofs by reducing verification to a compact, auditable symbolic proof kernel."
+  ],
+  "caveats": "Human-authored interactive proof (~5 years) assisted by Coq’s symbolic tactics and reflection checker, rather than an autonomous AI prover; included to maintain apples-to-apples fairness with modern Lean 4 formalizations.",
+  "contributors": [
+    "Georges Gonthier",
+    "Benjamin Werner"
+  ],
+  "institutions": [
+    "Microsoft Research–INRIA Joint Centre"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 100,
+    "velocity": 64
+  },
+  "scoreRationale": {
+    "foundational": "First major contentious theorem in mathematical history completely certified inside a general-purpose symbolic proof assistant.",
+    "ripple": "Birthed SSReflect and the modern formal-verification movement leading directly to Feit–Thompson, Flyspeck, and Lean 4 mathlib.",
+    "verification": "100% kernel-checked formal proof in Coq with zero unverified external code.",
+    "velocity": "Required ~5 years of expert interactive formalization—providing the historical baseline against modern multi-agent Lean provers."
+  },
+  "enables": [
+    "feit-thompson-coq-2012",
+    "flyspeck-kepler-conjecture-2014"
+  ],
+  "sources": [
+    {
+      "label": "Notices of the AMS Vol. 55(11), pp. 1382–1393 (2008) — Formal Proof—The Four-Color Theorem",
+      "url": "https://www.ams.org/notices/200811/tx081101382p.pdf",
+      "type": "formal-verification"
+    }
+  ]
+}

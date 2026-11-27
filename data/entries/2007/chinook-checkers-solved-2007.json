@@ -1,0 +1,62 @@
+{
+  "id": "chinook-checkers-solved-2007",
+  "title": "Chinook AI Weakly Solves 8×8 Checkers Across 5×10²⁰ Positions, Proving Perfect Play Is a Draw",
+  "shortTitle": "Chinook Solves Checkers (Science, 2007)",
+  "date": "2007-07-19",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Heuristic Search",
+    "Game Theory",
+    "Endgame Tablebases"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Chinook (Symbolic Heuristic Search + Proof-Number Tree)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "18 years distributed heuristic search",
+  "isAnchor": true,
+  "whyItMatters": "Published in Science, Jonathan Schaeffer’s Chinook became the largest complete-information game ever mathematically solved—proving optimal play in 8×8 checkers (5×10²⁰ states) always ends in a draw.",
+  "summary": "Published online in Science on July 19, 2007 (print September 14, 2007), Jonathan Schaeffer, Neil Burch, Yngvi Björnsson, Akihiro Kishimoto, Martin Müller, Robert Lake, Paul Lu, and Steve Sutphen at the University of Alberta announced the complete weak solution of 8×8 English draughts (checkers). Combining a 39-trillion-position retrograde 10-piece endgame database with a forward heuristic proof-number search guided by Chinook’s evaluation function, the team proved that from the starting position neither player can force a win under perfect play—solving a state space of roughly 5×10²⁰ positions, six orders of magnitude larger than any previously solved game.",
+  "technicalHighlights": [
+    "Constructed a complete 39-trillion-position retrograde endgame database (all positions with ≤10 pieces on the board).",
+    "Coupled heuristic proof-number search with Chinook’s world-champion evaluation function to prune the 5×10²⁰-state search tree into a verifiable proof.",
+    "Established the high-water mark of classical symbolic game-tree search and exact game-theoretic solving."
+  ],
+  "caveats": "Weakly solved (proved the game-theoretic value from the initial position) rather than strongly solved for every arbitrary reachable board state, and required 18 years of compute.",
+  "contributors": [
+    "Jonathan Schaeffer",
+    "Neil Burch",
+    "Yngvi Björnsson",
+    "Akihiro Kishimoto",
+    "Martin Müller",
+    "Robert Lake",
+    "Paul Lu",
+    "Steve Sutphen"
+  ],
+  "institutions": [
+    "University of Alberta"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 84,
+    "verification": 98,
+    "velocity": 65
+  },
+  "scoreRationale": {
+    "foundational": "Solved the largest complete-information combinatorial game in history (5×10²⁰ states), settling a century-old strategic question.",
+    "ripple": "Advanced heuristic proof-tree search, distributed verification, and University of Alberta’s game-solving lineage culminating in Cepheus.",
+    "verification": "Published in Science (Vol. 317, pp. 1518–1522) with independently verifiable proof trees and endgame tablebases.",
+    "velocity": "Required 18 years of sustained algorithmic refinement and cluster compute."
+  },
+  "enables": [
+    "cepheus-poker-solved-2015"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Science (2007) — Checkers Is Solved",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17641166/",
+      "type": "paper"
+    }
+  ]
+}

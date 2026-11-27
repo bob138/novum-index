@@ -1,0 +1,54 @@
+{
+  "id": "lehmer-problem-gemini-2026",
+  "title": "Human–AI Loop with Gemini 4 Argon Breaks High-Degree Barrier in Lehmer’s Problem",
+  "shortTitle": "Lehmer’s Problem (Gemini 4)",
+  "date": "2026-10-23",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Number Theory",
+    "Mahler Measure",
+    "Human–AI Discovery Loop"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Gemini 4 Argon (Google DeepMind)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 93,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Used a Gemini 4 Argon human–AI discovery loop to shatter 100% of prior high-degree Mahler-measure records (d ≥ 166 up to d = 2,000) and uncover a 2D Coulomb-gas root law.",
+  "summary": "Combining internal Gemini 4 Argon reasoning with exact arithmetic verification, researchers generalized Boyd’s algorithm and broke the high-degree computational barrier in Lehmer’s 1933 Mahler-measure problem across all 996 even degrees d ∈ [10, 2000], surpassing every prior record for d ≥ 166. Interpreting log M(P) as a 2D Coulomb gas potential, exact rational root counting revealed a scale-invariant fraction (~82.5%) of roots on the unit circle.",
+  "technicalHighlights": [
+    "Surpassed 100% of previously known minimal Mahler-measure records for all even degrees d ≥ 166 up to d = 2,000.",
+    "Released a complete exact-arithmetic verified benchmark dataset across all 996 even degrees in expanded and cyclotomic-quotient forms.",
+    "Uncovered a physical 2D Coulomb-gas interpretation explaining the universal ~82.5% unit-circle root fraction."
+  ],
+  "caveats": "Does not resolve Lehmer’s conjecture itself (whether a uniform lower bound > 1 exists), and the preprint awaits formal journal peer review.",
+  "contributors": [
+    "Lehmer Human–AI Research Team",
+    "Gemini 4 Argon"
+  ],
+  "institutions": [
+    "Google DeepMind / Collaborating Mathematicians"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 75,
+    "verification": 88,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Substantially advanced a 93-year-old number-theory problem and revealed new structural root physics.",
+    "ripple": "Demonstrates the power of tight human–AI algorithmic loops paired with exact rational arithmetic certificates.",
+    "verification": "All 996 degree records are verified in exact rational arithmetic over ℚ; preprint under review.",
+    "velocity": "Swept through nearly 1,000 polynomial degrees that resisted classical numerical search for decades."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Breaking the high-degree barrier in Lehmer’s problem with a human–AI loop (arXiv:2610.30277)",
+      "url": "https://arxiv.org/abs/2610.30277",
+      "type": "paper"
+    }
+  ]
+}

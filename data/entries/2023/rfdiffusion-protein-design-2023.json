@@ -1,0 +1,67 @@
+{
+  "id": "rfdiffusion-protein-design-2023",
+  "title": "RFdiffusion Pioneers Generative Diffusion for De Novo Functional Protein Design",
+  "shortTitle": "RFdiffusion De Novo Proteins",
+  "date": "2023-07-11",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Protein Design",
+    "Generative Diffusion Models",
+    "Structural Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFdiffusion (RoseTTAFold Fine-Tuned SE(3) Diffusion)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "David Baker’s landmark Nature paper (central to his 2024 Nobel Prize in Chemistry) showed diffusion models can invent brand-new, experimentally validated protein binders, enzymes, and symmetric nanocages from scratch.",
+  "summary": "Published in Nature in July 2023 by Joseph Watson, David Juergens, Nathaniel Bennett, Brian Trippe, and David Baker at the University of Washington’s Institute for Protein Design, RFdiffusion adapted denoising diffusion models directly onto RoseTTAFold’s 3D protein structure network. Across unconditional generation, motif scaffolding, symmetric oligomer assembly, and high-affinity binder design, RFdiffusion achieved orders-of-magnitude higher experimental success rates than prior physics-based Rosetta protocols—with cryo-EM and X-ray crystallography confirming atomic-level fidelity to the AI-generated blueprints.",
+  "technicalHighlights": [
+    "Fine-tunes RoseTTAFold as an SE(3)-equivariant denoising diffusion network, turning structure prediction into controllable de novo protein generation.",
+    "Experimentally validated hundreds of newly invented proteins—including picomolar-to-nanomolar binders, symmetric oligomers, and functional motif scaffolds—confirmed by cryo-EM and crystallography.",
+    "Open-sourced globally and recognized as a cornerstone of computational protein design cited in David Baker’s 2024 Nobel Prize in Chemistry."
+  ],
+  "caveats": "Requires pairing with sequence-design (ProteinMPNN) and structure-filtering tools (AlphaFold 2), and challenging dynamic or small-molecule-binding pockets required later all-atom successors (RFdiffusion All-Atom, AlphaFold 3, Chai-2).",
+  "contributors": [
+    "Joseph L. Watson",
+    "David Juergens",
+    "Nathaniel R. Bennett",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (Institute for Protein Design)"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 95,
+    "verification": 98,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Transformed protein engineering from slow physics-based combinatorial tweaking into controllable generative structural design—part of the 2024 Chemistry Nobel legacy.",
+    "ripple": "Became the open-source workhorse of modern generative biology, directly inspiring AlphaProteo, Chai-2, and hundreds of therapeutic design programs.",
+    "verification": "Peer-reviewed in Nature (620: 1089–1100) with extensive wet-lab, cryo-EM, and X-ray crystallographic confirmation across diverse protein classes.",
+    "velocity": "Raised de novo binder experimental hit rates by orders of magnitude, shrinking design-test campaigns from years to weeks."
+  },
+  "enables": [
+    "alphaproteo-binders-2024",
+    "esm3-esmgfp-protein-2024",
+    "chai-2-antibody-design-2025",
+    "gpt6-intrinsic-protein-design-2026",
+    "rfantibody-de-novo-antibodies-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — De novo design of protein structure and function with RFdiffusion (Jul 2023)",
+      "url": "https://doi.org/10.1038/s41586-023-06415-8",
+      "type": "paper"
+    },
+    {
+      "label": "Baker Lab — RFdiffusion: A generative model for protein design",
+      "url": "https://www.bakerlab.org/2023/07/11/diffusion-model-for-protein-design/",
+      "type": "announcement"
+    }
+  ]
+}

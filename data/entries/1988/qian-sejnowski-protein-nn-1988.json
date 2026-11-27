@@ -1,0 +1,57 @@
+{
+  "id": "qian-sejnowski-protein-nn-1988",
+  "title": "Qian & Sejnowski Feedforward Neural Network Breaks Structural Biology Plateau on Protein Secondary Structure",
+  "shortTitle": "Qian–Sejnowski Protein NN (1988)",
+  "date": "1988-08-20",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Early Neural Networks",
+    "Protein Folding"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Qian–Sejnowski Feedforward Neural Network",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Backpropagation over 106 protein chains",
+  "isAnchor": true,
+  "whyItMatters": "First landmark neural network breakthrough in structural biology: Qian & Sejnowski reached 64.3% protein secondary-structure accuracy on unseen proteins, breaking a decade-long statistical ceiling and launching neural protein science.",
+  "summary": "Published in the Journal of Molecular Biology on August 20, 1988, Ning Qian and Terrence J. Sejnowski at Johns Hopkins University applied backpropagation-trained neural networks to predict alpha-helix, beta-sheet, and coil secondary structure directly from amino-acid sequence windows. Achieving 64.3% three-state accuracy on non-homologous test proteins—beating classical Chou–Fasman and GOR statistical methods that had stalled for over a decade—the paper proved neural networks could extract higher-order local biochemical sequence patterns and directly founded the neural structural-biology lineage culminating in PHD, RaptorX, and AlphaFold.",
+  "technicalHighlights": [
+    "Trained a sliding-window backpropagation neural network (plus a cascaded structure-to-structure refinement network) on 106 crystallized proteins.",
+    "Reached 64.3% Q3 accuracy on non-homologous test proteins, surpassing classical Chou–Fasman and GOR informational methods.",
+    "Established cascaded two-level neural architectures and direct sequence-to-structure learning as foundations of computational structural biology."
+  ],
+  "caveats": "Predicted 1D secondary structure (helix/sheet/coil) rather than full 3D atomic coordinates, and remained bounded by single-sequence local windows.",
+  "contributors": [
+    "Ning Qian",
+    "Terrence J. Sejnowski"
+  ],
+  "institutions": [
+    "Johns Hopkins University",
+    "Salk Institute"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 89,
+    "verification": 94,
+    "velocity": 72
+  },
+  "scoreRationale": {
+    "foundational": "First major neural network breakthrough in molecular biology, proving learned representations beat hand-crafted statistical potentials.",
+    "ripple": "Launched the 32-year neural structural-biology lineage from PHD (1993) to RaptorX (2017) and AlphaFold 2 (2020).",
+    "verification": "Peer-reviewed in Journal of Molecular Biology (Vol. 202, pp. 865–884) and independently reproduced across structural bioinformatics.",
+    "velocity": "Early neural training on late-1980s workstations."
+  },
+  "enables": [
+    "phd-protein-structure-nn-1993"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / J. Mol. Biol. (Aug 20, 1988) — Predicting the secondary structure of globular proteins using neural network models",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3172241/",
+      "type": "paper"
+    }
+  ]
+}

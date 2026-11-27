@@ -1,0 +1,64 @@
+{
+  "id": "c2s-scale-cancer-therapy-2025",
+  "title": "C2S-Scale 27B Discovers & Wet-Lab Validates a Novel Cancer Immunotherapy Pathway",
+  "shortTitle": "C2S-Scale 27B Cancer Pathway",
+  "date": "2025-10-15",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Single-Cell Transcriptomics",
+    "Cancer Immunotherapy",
+    "Biomedical Foundation Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "C2S-Scale 27B (Gemma-Based Single-Cell Language Model)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Google DeepMind and Yale’s 27B-parameter single-cell foundation model predicted a context-dependent cancer immunotherapy drug combo (silmitasertib + low-dose interferon) that boosted antigen presentation ~50% in wet-lab tests.",
+  "summary": "Developed by Google DeepMind and Yale University and unveiled in October 2025 (bioRxiv 2025.04.14.648850v2), Cell2Sentence-Scale (C2S-Scale 27B) translates single-cell RNA-seq profiles into biological 'cell sentences' processed by a 27-billion-parameter Gemma foundation model. Running a virtual screen of >4,000 drugs across immune-context-positive and immune-context-neutral tumor microenvironments, C2S-Scale 27B generated an unexpected, context-conditioned hypothesis: that the CK2 kinase inhibitor silmitasertib (CX-4945) dramatically amplifies MHC-I antigen presentation specifically in the presence of low-dose interferon. Laboratory experiments in human neuroendocrine cell models confirmed an ~50% boost in antigen presentation—a potential mechanism for turning immunologically 'cold' tumors 'hot'.",
+  "technicalHighlights": [
+    "Scaled single-cell transcriptomic modeling to 27 billion parameters on Gemma, uncovering emergent context-dependent perturbation reasoning absent in smaller models.",
+    "Screened >4,000 compounds across dual immune contexts to predict a previously unestablished synergy between silmitasertib (CX-4945) and low-dose interferon.",
+    "Experimentally confirmed an ~50% increase in antigen presentation in human neuroendocrine cell models, validating a genuine AI-originated biomedical hypothesis."
+  ],
+  "caveats": "Validated in human in vitro cell models and posted on bioRxiv rather than a peer-reviewed clinical journal; in vivo animal oncology studies and human clinical trials are required to test therapeutic efficacy.",
+  "contributors": [
+    "Syed Asad Rizvi",
+    "David van Dijk",
+    "Curtis Jamison Perry",
+    "Google DeepMind & Yale Research Teams"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Yale University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 86,
+    "verification": 84,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that scaling single-cell foundation models unlocks emergent, context-conditioned biological hypothesis generation.",
+    "ripple": "Provides an open 27B single-cell reasoning model and validates a new blueprint for AI-originated combination oncology discoveries.",
+    "verification": "Experimentally confirmed in Yale wet-lab human cell models, though still a bioRxiv preprint awaiting peer review and in vivo clinical testing.",
+    "velocity": "Virtually screened >4,000 compounds across nuanced immune-context perturbations to pinpoint a non-obvious drug synergy."
+  },
+  "enables": [
+    "alphagenome-2-single-cell-2026"
+  ],
+  "sources": [
+    {
+      "label": "Google — How a Gemma model (C2S-Scale 27B) helped discover a new potential cancer therapy pathway (Oct 15, 2025)",
+      "url": "https://blog.google/innovation-and-ai/products/google-gemma-ai-cancer-therapy-discovery/",
+      "type": "announcement"
+    },
+    {
+      "label": "bioRxiv — Scaling Large Language Models for Next-Generation Single-Cell Analysis (v2, Oct 2025)",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v2",
+      "type": "paper"
+    }
+  ]
+}

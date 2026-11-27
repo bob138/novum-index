@@ -1,0 +1,66 @@
+{
+  "id": "dusty-plasma-new-physics-2025",
+  "title": "Physics-Tailored Neural Network Discovers Unexpected Non-Reciprocal Force Laws in Dusty Plasmas",
+  "shortTitle": "AI Discovers Dusty Plasma Physics (PNAS)",
+  "date": "2025-08-05",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Plasma Physics",
+    "Many-Body Dynamics",
+    "AI Physical Law Discovery"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Emory Physics-Tailored Symmetry-Constrained Neural Network",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Desktop GPU training on 3D tracks",
+  "isAnchor": false,
+  "whyItMatters": "In PNAS, Emory physicists trained a symmetry-constrained neural network on 3D dusty-plasma trajectories, discovering unexpected non-reciprocal force laws and overturning textbook particle-charge scaling.",
+  "summary": "Published in PNAS on August 5, 2025 (DOI: 10.1073/pnas.2505725122; widely covered in early 2026), Wentao Yu, Eslam Abdelaleem, Ilya Nemenman, and Justin C. Burton at Emory University built a physics-tailored neural network encoding physical symmetries and nonidentical particle dynamics to infer interaction laws directly from 3D laboratory laser-tracked trajectories in a dusty plasma (\"the fourth state of matter\"). Achieving R > 0.99 predictive fidelity, the network extracted precise mathematical approximations of asymmetric non-reciprocal forces (where leading particles attract trailing particles while trailing particles repel leading ones) and revealed major deviations from longstanding theoretical assumptions—showing that particle electric charge does not scale simply linearly with size and that exponential screening length depends directly on particle size, confirmed experimentally.",
+  "technicalHighlights": [
+    "Inferred previously unknown non-reciprocal many-body force laws directly from noisy 3D experimental plasma-particle trajectories with R > 0.99 accuracy.",
+    "Overturned two textbook dusty-plasma theoretical assumptions regarding charge–size linearity and size-independent screening length, validated by independent mass-inference experiments.",
+    "Runs on a standard desktop computer, offering a general law-discovery framework for collective motion from colloids to living systems."
+  ],
+  "caveats": "Discovered effective mesoscopic force laws within laboratory dusty plasmas rather than a new fundamental particle-physics interaction, requiring careful human physics encoding of symmetries.",
+  "contributors": [
+    "Wentao Yu",
+    "Eslam Abdelaleem",
+    "Ilya Nemenman",
+    "Justin C. Burton"
+  ],
+  "institutions": [
+    "Emory University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 85,
+    "verification": 94,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Rare peer-reviewed case of a neural network discovering genuinely new, experimentally confirmed physical laws from raw laboratory data that overturn prior theoretical assumptions.",
+    "ripple": "Provides an interpretable, desktop-scale template for inferring unknown effective force laws across active matter, plasma physics, and biological collectives.",
+    "verification": "Peer-reviewed in PNAS (edited by Curtis Callan Jr.) with independent experimental confirmation of inferred particle masses and force scaling.",
+    "velocity": "Extracted high-precision non-reciprocal many-body interaction laws directly from 3D trajectories where decades of analytic approximations fell short."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "PNAS (Aug 5, 2025) — Physics-tailored machine learning reveals unexpected physics in dusty plasmas (DOI: 10.1073/pnas.2505725122)",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2505725122",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — Yu, Abdelaleem, Nemenman, Burton (PMID: 40743396)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40743396/",
+      "type": "paper"
+    },
+    {
+      "label": "ScienceDaily — AI just discovered new physics in the fourth state of matter",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260422044635.htm",
+      "type": "explainer"
+    }
+  ]
+}

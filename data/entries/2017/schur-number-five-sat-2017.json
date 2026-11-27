@@ -1,0 +1,60 @@
+{
+  "id": "schur-number-five-sat-2017",
+  "title": "Schur Number Five (S(5) = 160) Settled After 101 Years via Formally Certified 2-Petabyte SAT Proof",
+  "shortTitle": "Schur Number Five (SAT, 2 PB)",
+  "date": "2017-11-21",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Ramsey Theory",
+    "Combinatorics",
+    "SAT Solving & Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Cube-and-Conquer SAT Solver (Massively Parallel SAT + Certified DRAT Checker)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 101,
+  "aiTimeToSolve": "Multi-CPU-yr cluster run (2 PB proof)",
+  "isAnchor": true,
+  "whyItMatters": "Marijn Heule settled Issai Schur’s 101-year-old Ramsey-theory problem (1916), proving S(5) = 160 via massively parallel SAT solving and certifying a record 2-petabyte proof with a formally verified checker.",
+  "summary": "Posted on November 21, 2017 (and published at AAAI-18), Marijn J. H. Heule at the University of Texas at Austin resolved the century-old Schur Number Five problem posed by Issai Schur in 1916: finding the largest integer n such that {1, …, n} can be 5-colored without a monochromatic solution to a + b = c. Encoding the problem into propositional logic and applying massively parallel Cube-and-Conquer SAT solving on the Stampede supercomputer, Heule proved S(5) = 160 and validated the resulting 2-petabyte unsatisfiability proof—ten times larger than the 2016 Pythagorean Triples proof—using a formally verified proof checker.",
+  "technicalHighlights": [
+    "Settled Issai Schur’s 1916 Ramsey-theory problem after 101 years, proving S(5) = 160.",
+    "Constructed and mechanically certified a 2-petabyte clausal proof—demonstrating formal verification scales to petabyte-class automated reasoning.",
+    "Advanced Cube-and-Conquer partitioning heuristics subsequently used to resolve Keller’s Conjecture in dimension 7."
+  ],
+  "caveats": "The 2-petabyte proof is purely machine-verifiable rather than human-readable, offering no short conceptual explanation for why 160 is the exact threshold.",
+  "contributors": [
+    "Marijn J. H. Heule"
+  ],
+  "institutions": [
+    "University of Texas at Austin"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 79,
+    "verification": 98,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Resolved a classical 101-year-old problem in Ramsey theory and additive combinatorics.",
+    "ripple": "Proved that formally verified SAT proof checkers can scale to petabyte-level automated mathematical proofs.",
+    "verification": "Certified end-to-end by a formally verified clausal proof checker and peer-reviewed at AAAI-18.",
+    "velocity": "Cracked a combinatorial coloring threshold that resisted a century of mathematical and computational attacks."
+  },
+  "enables": [
+    "keller-conjecture-dim7-sat-2020"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:1711.08076 (Nov 21, 2017 / AAAI-18) — Schur Number Five (Marijn J. H. Heule)",
+      "url": "https://arxiv.org/abs/1711.08076",
+      "type": "formal-verification"
+    },
+    {
+      "label": "SAT for Mathematics — Schur Number Five Proof Archive",
+      "url": "https://sat4math.com/",
+      "type": "code"
+    }
+  ]
+}

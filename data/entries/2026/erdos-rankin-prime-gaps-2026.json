@@ -1,0 +1,59 @@
+{
+  "id": "erdos-rankin-prime-gaps-2026",
+  "title": "GPT-5.6 Sol & Lean 4 Introduce the Tilted Sieve for Large Prime Gaps (Erdős–Rankin)",
+  "shortTitle": "Erdős–Rankin Tilted Sieve (Lean)",
+  "date": "2026-08-25",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Sieve Theory",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-5.6 Sol + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Discovered a surprisingly elementary 'tilted sieve' surpassing the 1938 Erdős–Rankin sieve framework for large prime gaps—praised by Ben Green and formally verified in Lean 4.",
+  "summary": "Working with OpenAI’s GPT-5.6 Sol, Alexander Wang obtained a genuinely new construction for large gaps between consecutive primes (Erdős Problem #4 / Erdős–Rankin), formalized in Lean 4 by Boris Alexeev. Instead of relying on modern Maynard sieve weights or hypergraph covering theorems, GPT-5.6 Sol invented an elementary 'tilted sieve' that biases residue classes toward zero during the preliminary sieving stage—an idea analytic number theorist Ben Green praised as elementary enough to have been found in the 1960s, subsequently given a standalone human exposition in arXiv:2609.28253.",
+  "technicalHighlights": [
+    "Introduces the 'tilted sieve', modifying the preliminary sieving stage of the classical 1938 Erdős–Rankin construction rather than only the final covering stage.",
+    "Surpasses the classical Erdős–Rankin bound using only the prime number theorem, Mertens’ formula, and elementary probability—without Maynard weights.",
+    "Formally verified in Lean 4 by Boris Alexeev (OpenAI) and independently exposited in arXiv:2609.28253 ('A tyro’s approach to the tilted sieve')."
+  ],
+  "caveats": "Improves and reimagines the classical Erdős–Rankin framework rather than settling an unsolved prize conjecture (Ford–Green–Konyagin–Maynard–Tao settled Erdős’s original $10,000 problem in 2014, hence yearsUnsolved is null); formal journal publication is pending.",
+  "contributors": [
+    "Alexander Wang",
+    "Boris Alexeev"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 76,
+    "verification": 93,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Contributes a genuinely novel, elementary sieve idea ('tilted sieve') to one of classical analytic number theory’s most studied problems.",
+    "ripple": "Demonstrates that frontier LLMs can uncover overlooked elementary techniques that specialists immediately adopt and exposit.",
+    "verification": "Machine-verified in Lean 4 by Boris Alexeev and independently reconstructed in a self-contained arXiv exposition (arXiv:2609.28253).",
+    "velocity": "Uncovered an elementary sieving idea missed for nearly nine decades of human study of the Erdős–Rankin construction."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "A tyro’s approach to the tilted sieve: beyond the Erdős–Rankin bound (arXiv:2609.28253)",
+      "url": "https://arxiv.org/abs/2609.28253",
+      "type": "paper"
+    },
+    {
+      "label": "WhatAIFound Registry — Improved lower bound for large gaps between consecutive primes (Aug 25, 2026)",
+      "url": "https://whataifound.org/finding/2026-08-25-erdos-4-prime-gaps",
+      "type": "explainer"
+    }
+  ]
+}

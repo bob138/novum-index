@@ -1,0 +1,62 @@
+{
+  "id": "otter-boolean-single-axiom-2000",
+  "title": "OTTER Automated Theorem Prover Discovers and Proves Shortest Possible Single Axiom for Boolean Algebra",
+  "shortTitle": "OTTER Shortest Boolean Axiom (2000)",
+  "date": "2000-10-17",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Automated Theorem Proving",
+    "Boolean Algebra",
+    "Equational Logic"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "OTTER (Argonne Equational Theorem Prover)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 87,
+  "aiTimeToSolve": "Automated equational search & proof",
+  "isAnchor": true,
+  "whyItMatters": "Settling an 87-year quest since Sheffer (1913), Argonne’s OTTER prover discovered and proved the shortest possible 15-symbol single equational axiom for Boolean algebra in terms of the Sheffer stroke.",
+  "summary": "Completed in October 2000 (published in the Journal of Automated Reasoning, 2002), William McCune, Robert Veroff, Branden Fitelson, Kenneth Harris, Andrew Feist, and Larry Wos used Argonne’s OTTER automated theorem prover (evaluating candidates including Stephen Wolfram’s 25-equation list) to prove that a 15-symbol Sheffer-stroke identity—((x|y)|z)|(x|((x|z)|x)) = z—is a complete single axiom for all of Boolean algebra, and proved no shorter single axiom exists. They also discovered far shorter single axioms in terms of disjunction and negation via automated semantic filtering and OTTER paramodulation proofs.",
+  "technicalHighlights": [
+    "Combined automated candidate filtering with OTTER paramodulation/demodulation proof search to derive full equational proofs.",
+    "Proved the shortest possible single Sheffer-stroke axiom for Boolean algebra has length 15 (6 NAND operations, 3 variables), beating Nicod’s 1917 and Meredith’s 1969 axioms.",
+    "Exhaustively proved no shorter Sheffer single axiom can exist using automated finite-model counterexamples."
+  ],
+  "caveats": "Operated within first-order equational logic on compact algebraic axiom bases.",
+  "contributors": [
+    "William McCune",
+    "Robert Veroff",
+    "Branden Fitelson",
+    "Kenneth Harris",
+    "Andrew Feist",
+    "Larry Wos"
+  ],
+  "institutions": [
+    "Argonne National Laboratory",
+    "University of New Mexico",
+    "University of Wisconsin–Madison"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 81,
+    "verification": 99,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "Settled the exact minimal single-axiom complexity of Boolean algebra 87 years after Sheffer introduced NAND logic.",
+    "ripple": "Became a textbook showcase of automated deduction discovering minimal mathematical foundations humans had missed for decades.",
+    "verification": "Complete machine-generated equational proof steps published in JAR and archived online for independent checking.",
+    "velocity": "Automated search and proof pipeline outpaced decades of manual algebraic simplification."
+  },
+  "enables": [
+    "erdos-discrepancy-sat-2014"
+  ],
+  "sources": [
+    {
+      "label": "Journal of Automated Reasoning (2002) / ANL Preprint (Oct 2000) — Short Single Axioms for Boolean Algebra",
+      "url": "https://www.cs.unm.edu/~mccune/papers/basax/v12.pdf",
+      "type": "formal-verification"
+    }
+  ]
+}

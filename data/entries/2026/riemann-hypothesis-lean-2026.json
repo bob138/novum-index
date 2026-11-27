@@ -1,0 +1,71 @@
+{
+  "id": "riemann-hypothesis-lean-2026",
+  "title": "Formal Lean Proof of the Riemann Hypothesis & Dirichlet GRH",
+  "shortTitle": "Riemann Hypothesis (Lean)",
+  "date": "2026-11-20",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Formal Verification",
+    "Langlands Program"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Unreleased Claude Research Model (Anthropic)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 167,
+  "aiTimeToSolve": "6 weeks",
+  "whyItMatters": "Resolves mathematics' most iconic Millennium Prize Problem—and Dirichlet GRH—with a machine-checked Lean 4 proof verified by the Lean FRO and Mathlib Initiative.",
+  "summary": "On November 20, 2026, Anthropic mathematician Levent Alpöge released a formal Lean 4 proof of both the classical Riemann Hypothesis and the Generalized Riemann Hypothesis for Dirichlet L-functions, developed over six weeks alongside an unreleased research model of Claude. Within 24 hours, the Lean FRO and Mathlib Initiative confirmed the ~17.4-million-line formalization compiles cleanly against standard axioms. Five days later (Nov 25), Anthropic researcher Luke Sernau, colleagues, and Claude released grh-lean—compressing the exact same five theorems by 99.56% into a 76,000-line compact edition alongside a 300,000-line readable edition adopted by Terence Tao’s GRH Polymath project.",
+  "technicalHighlights": [
+    "Proves all non-trivial zeros of the Riemann zeta function and Dirichlet L-functions lie on the critical line Re(s) = 1/2.",
+    "Draws on deep machinery spanning modern number theory, the Langlands program, and arithmetic geometry.",
+    "Verified by Lean FRO and Mathlib Initiative on Nov 21, 2026; compressed 99.56% from 17.4M lines to a 76,000-line compact edition (and 300,000-line readable edition) by Nov 25, independently checked across six Lean kernels.",
+    "On Nov 26, 2026, independent runs by Michael Rubinstein (Waterloo) and Andrew Sutherland verified all 794 modules of the 76k-line compact edition across all six kernels (default, paranoid, nanoda, lean4lean, con-leche, con-ron) via lake comparator --paranoid, while Sahay, Sawin & Silberman launched a public Polymath project to extract a human-readable proof."
+  ],
+  "caveats": "No complete human-readable mathematical exposition exists yet. While the Lean kernel guarantees logical soundness relative to the stated definitions, mathematicians are actively auditing whether the formal definitions match classical conventions and extracting human intuition from the proof.",
+  "contributors": [
+    "Levent Alpöge",
+    "Luke Sernau"
+  ],
+  "institutions": [
+    "Anthropic",
+    "Lean FRO (verifier)",
+    "Mathlib Initiative (verifier)"
+  ],
+  "scores": {
+    "foundational": 100,
+    "ripple": 92,
+    "verification": 91,
+    "velocity": 99
+  },
+  "scoreRationale": {
+    "foundational": "Resolves the foremost open problem in pure mathematics since Bernhard Riemann's 1859 paper, plus Dirichlet GRH.",
+    "ripple": "Converts hundreds of conditional theorems across prime distribution, analytic number theory, and primality algorithms into unconditional truths.",
+    "verification": "Machine-verified in Lean 4 by independent Lean FRO and Mathlib teams, docked slightly pending a full human-readable monograph.",
+    "velocity": "Compressed what many mathematicians considered a multi-decade or century-scale open problem into a six-week human–AI collaboration."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Lean FRO & Mathlib Initiative Joint Verification Statement",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Alpöge's proof of the Riemann hypothesis — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alp%C3%B6ge%27s_proof_of_the_Riemann_hypothesis",
+      "type": "explainer"
+    },
+    {
+      "label": "The Guardian: Two groups verify mathematician's claim that Claude helped prove Riemann Hypothesis",
+      "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
+      "type": "announcement"
+    },
+    {
+      "label": "Michael Rubinstein (Waterloo) — Independent 6-Kernel Verification of the 17.4M & 76k-Line GRH Lean Proofs",
+      "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/",
+      "type": "formal-verification"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "global-lyapunov-transformers-2024",
+  "title": "Symbolic Transformers Discover New Global Lyapunov Stability Functions",
+  "shortTitle": "Global Lyapunov Transformers",
+  "date": "2024-10-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Dynamical Systems",
+    "Control Theory",
+    "Symbolic AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Meta AI Symbolic Seq2Seq Transformers",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 132,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Transformers trained on backward-generated synthetic systems beat state-of-the-art algorithmic solvers 5× over on polynomial stability and discovered new non-polynomial Lyapunov functions.",
+  "summary": "Researchers at Meta AI and École des Ponts trained sequence-to-sequence transformers on synthetic dynamical systems generated backward from random Lyapunov functions. On unseen random polynomial systems, the models discovered verified global Lyapunov stability functions for 10.1% of systems versus 2.1% for state-of-the-art sum-of-squares solvers—and discovered new Lyapunov functions for 12.7% of non-polynomial systems where no general algorithm exists.",
+  "technicalHighlights": [
+    "Outperformed sum-of-squares algorithmic baselines by nearly 5× (10.1% vs. 2.1%) in discovering unknown global Lyapunov functions.",
+    "Discovered explicit, externally verifiable Lyapunov functions for 12.7% of random non-polynomial dynamical systems.",
+    "Validated backward synthetic data generation as a general template for neural mathematical discovery."
+  ],
+  "caveats": "Demonstrated primarily on low-dimensional (2–5 equation) synthetic benchmarks rather than high-dimensional open PDE stability conjectures.",
+  "contributors": [
+    "Alberto Alfarano",
+    "François Charton",
+    "Amaury Hayat"
+  ],
+  "institutions": [
+    "Meta FAIR",
+    "École des Ponts ParisTech"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 80,
+    "verification": 95,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Tackled a 130-year-old problem in global dynamical stability where no general algorithmic solver exists.",
+    "ripple": "Showed compact symbolic transformers can act as explicit conjecture/certificate generators verifiable by classical solvers.",
+    "verification": "Published at NeurIPS 2024 with every discovered Lyapunov function explicitly verified via SOS/SMT checks.",
+    "velocity": "Demonstrated an immediate 5× jump in automated stability discovery over decades of SOS tooling."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Alfarano, Charton & Hayat — Global Lyapunov functions with symbolic transformers (arXiv:2410.08304)",
+      "url": "https://arxiv.org/abs/2410.08304",
+      "type": "paper"
+    }
+  ]
+}

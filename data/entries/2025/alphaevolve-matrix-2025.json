@@ -1,0 +1,67 @@
+{
+  "id": "alphaevolve-matrix-2025",
+  "title": "AlphaEvolve: Evolutionary Coding Agent & 48-Multiplication 4×4 Matrix Algorithm",
+  "shortTitle": "AlphaEvolve & 4×4 Matrix",
+  "date": "2025-05-14",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algorithm Discovery",
+    "Evolutionary Computing",
+    "Systems Optimization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaEvolve (Gemini-powered agent, Google DeepMind)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 56,
+  "aiTimeToSolve": null,
+  "whyItMatters": "First AI coding agent to simultaneously break a 56-year mathematical record (Strassen's 1969 4×4 matrix bound) and optimize production data centers and chip circuits.",
+  "summary": "Google DeepMind introduced AlphaEvolve, an evolutionary coding agent pairing Gemini LLMs with automated evaluators to iteratively mutate and verify entire codebases. Across 50+ open math problems it matched or improved state-of-the-art constructions—most famously finding a 48-scalar-multiplication algorithm for 4×4 complex matrices (beating Strassen's 49 from 1969)—while also recovering 0.7% of Google's worldwide compute via scheduling heuristics and speeding up FlashAttention and TPU matrix circuits.",
+  "technicalHighlights": [
+    "Discovered a provably exact rank-48 algorithm for multiplying 4×4 complex-valued matrices, improving on Strassen's 1969 record over ℂ.",
+    "Improved best-known mathematical bounds on ~20% of 50+ open problems (including kissing numbers in 11D).",
+    "Deployed directly into production at Google for Borg scheduling, TPU Verilog optimization, and Gemini training kernels."
+  ],
+  "caveats": "Requires a fast, automated objective evaluator; excels on optimization, constructive math, and verifiable code rather than open-ended physical theory without formal metrics.",
+  "contributors": [
+    "Alexander Novikov",
+    "Ngân Vũ",
+    "Marvin Eisenberger",
+    "Matej Balog",
+    "Pushmeet Kohli",
+    "AlphaEvolve Team"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 95,
+    "verification": 98,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated general-purpose autonomous algorithm discovery spanning both pure mathematics and real-world systems engineering.",
+    "ripple": "Established the LLM + verifier evolutionary search paradigm now powering quantum circuit design, hardware synthesis, and scientific discovery.",
+    "verification": "The 48-multiplication factorization and evolved kernels are algebraically and programmatically verified, with independent GitHub verifications.",
+    "velocity": "Cracked a 56-year-old algebraic complexity record while shipping measurable global infrastructure speedups."
+  },
+  "enables": [
+    "alphaevolve-67-math-problems-2025",
+    "sub-100k-qubit-qec-2026",
+    "deepmind-verified-quantum-algos-2026",
+    "matrix-multiplication-exponent-9-4-2026"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2506.13131 — AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+      "url": "https://arxiv.org/abs/2506.13131",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind Blog: AlphaEvolve",
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+      "type": "announcement"
+    }
+  ]
+}

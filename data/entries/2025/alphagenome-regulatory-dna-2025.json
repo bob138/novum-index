@@ -1,0 +1,64 @@
+{
+  "id": "alphagenome-regulatory-dna-2025",
+  "title": "AlphaGenome Decodes Non-Coding Regulatory DNA Across 1-Million-Base Windows",
+  "shortTitle": "AlphaGenome (Regulatory DNA)",
+  "date": "2025-06-25",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Functional Genomics",
+    "Gene Regulation",
+    "Variant Interpretation"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaGenome (DeepMind Sequence-to-Function Model)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Predicts how single-letter mutations anywhere in a 1-million-base-pair DNA window disrupt gene expression, splicing, and chromatin structure across the 98% non-coding human genome.",
+  "summary": "Google DeepMind’s AlphaGenome unified long-range sequence context (1 Mb) with single-base-pair output resolution, resolving a longstanding trade-off in computational genomics. Published in Nature in January 2026 and later expanded into the 9-billion-variant AlphaGenome Atlas, it enables geneticists to pinpoint disease-causing non-coding mutations that previously resisted experimental screening.",
+  "technicalHighlights": [
+    "Simultaneously predicts thousands of molecular regulatory tracks—gene expression, RNA splicing, chromatin accessibility, and 3D contact maps—at single-base resolution.",
+    "Surpassed specialized state-of-the-art models across 22 of 24 variant-effect prediction benchmarks.",
+    "Peer-reviewed in Nature (Jan 2026) and expanded into a public predictive atlas covering 9 billion possible single-letter human DNA variants."
+  ],
+  "caveats": "AlphaGenome 1 predicted bulk-tissue regulatory profiles rather than fine-grained individual cell states—a limitation subsequently addressed by AlphaGenome 2 in November 2026.",
+  "contributors": [
+    "Žiga Avsec",
+    "Jun Cheng",
+    "Pushmeet Kohli",
+    "AlphaGenome Team"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 93,
+    "verification": 96,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Solved the sequence-length vs. single-base-resolution bottleneck for modeling non-coding human genome regulation.",
+    "ripple": "Directly accelerates rare-disease diagnosis, cancer genomics, and non-coding therapeutic target discovery.",
+    "verification": "Peer-reviewed in Nature (Jan 2026) with broad public API and benchmark validation.",
+    "velocity": "Enabled an instant in-silico variant-impact atlas across all 9 billion human single-nucleotide substitutions."
+  },
+  "enables": [
+    "alphagenome-2-single-cell-2026",
+    "c2s-scale-cancer-therapy-2025"
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind — AlphaGenome: AI for better understanding the genome",
+      "url": "https://deepmind.google/blog/alphagenome-ai-for-better-understanding-the-genome/",
+      "type": "announcement"
+    },
+    {
+      "label": "Google DeepMind — AlphaGenome Atlas (9 Billion DNA Variants)",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "behler-parrinello-nn-potentials-2007",
+  "title": "Behler–Parrinello Symmetry-Function Neural Networks Unlock Scalable Ab Initio Interatomic Potentials",
+  "shortTitle": "Behler–Parrinello NN Potentials (2007)",
+  "date": "2007-04-02",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Machine Learning Interatomic Potentials",
+    "Quantum Chemistry",
+    "Materials Physics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Behler–Parrinello Neural Network Potential (BPNN)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Orders-of-magnitude DFT speedup",
+  "isAnchor": true,
+  "whyItMatters": "Published in Physical Review Letters, Behler & Parrinello invented high-dimensional symmetry-function neural network potentials—achieving quantum DFT accuracy at classical molecular-dynamics cost and launching modern AI materials discovery.",
+  "summary": "Published in Physical Review Letters on April 2, 2007, Jörg Behler and Michele Parrinello at ETH Zurich solved the central scaling bottleneck of machine-learned quantum chemistry by decomposing total system energy into atomic energy contributions parameterized by translation-, rotation-, and permutation-invariant symmetry functions fed into atomic neural networks. Demonstrated on bulk silicon, their neural potential reproduced density functional theory (DFT) energies, forces, and radial distributions across thousands of atoms orders of magnitude faster than ab initio calculations—launching the entire field of machine-learning interatomic potentials (MACE, NequIP, GNoME, MatterSim).",
+  "technicalHighlights": [
+    "Introduced atom-centered, symmetry-invariant descriptors enabling neural potentials to scale linearly to arbitrary system sizes and atom counts.",
+    "Reproduced quantum DFT potential-energy surfaces, forces, and melting/phase properties of bulk silicon at classical MD computational cost.",
+    "Directly founded the field of neural interatomic potentials powering modern AI materials discovery (GNoME, MatterGen, ElementsClaw)."
+  ],
+  "caveats": "Hand-crafted local radial/angular symmetry functions had finite cutoff radii and limited multi-element scaling before message-passing GNNs (SchNet, NequIP, MACE).",
+  "contributors": [
+    "Jörg Behler",
+    "Michele Parrinello"
+  ],
+  "institutions": [
+    "ETH Zurich",
+    "Università della Svizzera Italiana"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 96,
+    "verification": 97,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Created the foundational mathematical and neural architecture for scalable quantum-accurate interatomic potentials.",
+    "ripple": "Cited >6,000 times and underpins nearly every modern AI chemistry and materials simulation platform.",
+    "verification": "Peer-reviewed in Physical Review Letters (Vol. 98, 146401) and validated across thousands of subsequent DFT/MD studies.",
+    "velocity": "Delivered orders-of-magnitude acceleration over direct quantum DFT molecular dynamics."
+  },
+  "enables": [
+    "gnome-materials-2023",
+    "mattergen-materials-2025",
+    "elementsclaw-superconductors-2026"
+  ],
+  "sources": [
+    {
+      "label": "PubMed / Physical Review Letters (Apr 2, 2007) — Generalized neural-network representation of high-dimensional potential-energy surfaces",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17501293/",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "deepmind-tokamak-plasma-2022",
+  "title": "Autonomous Deep Reinforcement Learning Control of Tokamak Fusion Plasmas",
+  "shortTitle": "DeepMind Tokamak RL (Anchor)",
+  "date": "2022-02-16",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Plasma Physics",
+    "Nuclear Fusion",
+    "Reinforcement Learning Control"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepMind Deep RL Magnetic Controller",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First autonomous deep reinforcement learning system to command real-time magnetic coils inside a live nuclear fusion tokamak, sculpting novel plasma geometries.",
+  "summary": "DeepMind and EPFL’s Swiss Plasma Center trained a deep reinforcement learning controller in simulation and deployed it zero-shot onto the TCV tokamak in Lausanne. Controlling 19 magnetic coils at 10 kHz, the AI autonomously shaped and stabilized complex fusion plasmas—including elongated, negative-triangularity, snowflake, and simultaneous dual-plasma \"droplet\" configurations.",
+  "technicalHighlights": [
+    "Replaced hand-engineered decoupled PID controller stacks with a single end-to-end neural policy acting at 100-microsecond intervals.",
+    "Stabilized exotic advanced divertor geometries (snowflake and dual-droplet plasmas) in physical tokamak shots.",
+    "Proved sim-to-real transfer of autonomous AI control onto one of experimental physics’ most unforgiving nonlinear systems."
+  ],
+  "caveats": "Demonstrated on the research-scale TCV tokamak rather than a net-energy burning plasma reactor; scaling to ITER-class thermal loads requires additional safety guarantees.",
+  "contributors": [
+    "Jonas Degrave",
+    "Federico Felici",
+    "Jonas Buchli",
+    "Martin Riedmiller"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "EPFL Swiss Plasma Center"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 87,
+    "verification": 98,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered end-to-end learned physical control for high-temperature magnetized fusion plasmas.",
+    "ripple": "Directly influenced subsequent AI-controlled fusion experiments across tokamaks worldwide (including WEST and DIII-D).",
+    "verification": "Peer-reviewed in Nature with live experimental validation on TCV reactor hardware.",
+    "velocity": "Compressed months of bespoke control-engineering design per plasma shape into rapid automated policy synthesis."
+  },
+  "enables": [
+    "diii-d-fusion-tearing-rl-2024"
+  ],
+  "sources": [
+    {
+      "label": "Degrave et al. — Magnetic control of tokamak plasmas through deep RL (Nature / PubMed)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35173339/",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind — Accelerating fusion science through learned plasma control",
+      "url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/",
+      "type": "announcement"
+    }
+  ]
+}

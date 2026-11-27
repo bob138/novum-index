@@ -9,27 +9,30 @@ import { renderStatusBadge } from './Leaderboard.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
 
-export function renderDossierModal(item, allRanked, weights, navList = null) {
+export function renderDossierModal(item, allRanked, weights, navList = null, detail = null) {
   if (!item) return '';
 
-  const disc = DISCIPLINE_META[item.discipline];
+  const merged = detail ? { ...item, ...detail } : item;
+  const hasDetail = Boolean(merged.summary && Array.isArray(merged.sources));
+
+  const disc = DISCIPLINE_META[merged.discipline];
   const norm = normalizeWeights(weights);
   const byId = new Map(allRanked.map((b) => [b.id, b]));
 
   const enabledBy = allRanked.filter(
-    (other) => Array.isArray(other.enables) && other.enables.includes(item.id)
+    (other) => Array.isArray(other.enables) && other.enables.includes(merged.id)
   );
-  const enablesList = (item.enables || []).map((id) => byId.get(id)).filter(Boolean);
+  const enablesList = (merged.enables || []).map((id) => byId.get(id)).filter(Boolean);
 
   const list = Array.isArray(navList) && navList.length > 0 ? navList : allRanked;
-  const curIdx = list.findIndex((b) => b.id === item.id);
+  const curIdx = list.findIndex((b) => b.id === merged.id);
   const prevItem = curIdx > 0 ? list[curIdx - 1] : null;
   const nextItem = curIdx >= 0 && curIdx < list.length - 1 ? list[curIdx + 1] : null;
 
   const anchorBadgeText =
-    item.date < '2020-01-01'
+    merged.date < '2020-01-01'
       ? 'PRE-2020 PIONEER'
-      : item.isAnchor
+      : merged.isAnchor
         ? '2020–23 ANCHOR'
         : '';
 
@@ -44,7 +47,7 @@ export function renderDossierModal(item, allRanked, weights, navList = null) {
       >
         <div class="dossier__topbar">
           <span class="dossier__rank-pill">
-            RANK #${String(item.rank).padStart(2, '0')} · IMPACT ${item.compositeScore.toFixed(1)}/100${anchorBadgeText ? ` · ${anchorBadgeText}` : ''}
+            RANK #${String(merged.rank).padStart(2, '0')} · IMPACT ${merged.compositeScore.toFixed(1)}/100${anchorBadgeText ? ` · ${anchorBadgeText}` : ''}
           </span>
           <div class="dossier__topbar-actions">
             <div class="dossier__step-group" role="group" aria-label="Step between breakthroughs">
@@ -67,7 +70,7 @@ export function renderDossierModal(item, allRanked, weights, navList = null) {
               type="button"
               class="icon-btn"
               id="dossier-share-btn"
-              data-share-id="${escapeHtml(item.id)}"
+              data-share-id="${escapeHtml(merged.id)}"
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
               <span>Share</span>
@@ -89,74 +92,83 @@ export function renderDossierModal(item, allRanked, weights, navList = null) {
             <div class="dossier__badges">
               <span class="disc-tag" style="color: ${disc.colorVar}; background: ${disc.bgVar};">
                 <span class="disc-tag__dot" style="background: ${disc.colorVar};"></span>
-                ${escapeHtml(item.discipline)}
+                ${escapeHtml(merged.discipline)}
               </span>
-              ${renderStatusBadge(item.verificationStatus)}
-              <span class="ai-tag">${escapeHtml(item.aiParadigm)} · ${escapeHtml(item.aiRole)}</span>
+              ${renderStatusBadge(merged.verificationStatus)}
+              <span class="ai-tag">${escapeHtml(merged.aiParadigm)} · ${escapeHtml(merged.aiRole)}</span>
               ${
-                item.yearsUnsolved && item.aiTimeToSolve
-                  ? `<span class="time-tag">${item.yearsUnsolved}y open → ${escapeHtml(item.aiTimeToSolve)} AI</span>`
-                  : item.yearsUnsolved
-                    ? `<span class="time-tag">${item.yearsUnsolved} years open</span>`
-                    : item.aiTimeToSolve
-                      ? `<span class="time-tag">AI: ${escapeHtml(item.aiTimeToSolve)}</span>`
+                merged.yearsUnsolved && merged.aiTimeToSolve
+                  ? `<span class="time-tag">${merged.yearsUnsolved}y open → ${escapeHtml(merged.aiTimeToSolve)} AI</span>`
+                  : merged.yearsUnsolved
+                    ? `<span class="time-tag">${merged.yearsUnsolved} years open</span>`
+                    : merged.aiTimeToSolve
+                      ? `<span class="time-tag">AI: ${escapeHtml(merged.aiTimeToSolve)}</span>`
                       : ''
               }
             </div>
-            <h2 class="dossier__title" id="dossier-title">${escapeHtml(item.title)}</h2>
-            <p class="dossier__why">${escapeHtml(item.whyItMatters)}</p>
+            <h2 class="dossier__title" id="dossier-title">${escapeHtml(merged.title)}</h2>
+            <p class="dossier__why">${escapeHtml(merged.whyItMatters)}</p>
           </header>
 
           <dl class="dossier__meta-grid">
             <div>
               <dt class="dossier__meta-label">Date Announced / Published</dt>
-              <dd class="dossier__meta-value mono" style="margin: 0;">${formatDate(item.date)}</dd>
+              <dd class="dossier__meta-value mono" style="margin: 0;">${formatDate(merged.date)}</dd>
             </div>
             <div>
               <dt class="dossier__meta-label">AI System &amp; Paradigm</dt>
-              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.aiSystem || item.aiRole)} <span style="color: var(--ink-muted);">(${escapeHtml(item.aiParadigm)})</span></dd>
+              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(merged.aiSystem || merged.aiRole)} <span style="color: var(--ink-muted);">(${escapeHtml(merged.aiParadigm)})</span></dd>
             </div>
             ${
-              item.yearsUnsolved || item.aiTimeToSolve
+              merged.yearsUnsolved || merged.aiTimeToSolve
                 ? `
             <div style="grid-column: 1 / -1;">
               <dt class="dossier__meta-label">Human Wait vs. AI Time to Solution</dt>
               <dd class="dossier__meta-value mono" style="margin: 0;">${
-                item.yearsUnsolved && item.aiTimeToSolve
-                  ? `${item.yearsUnsolved} human years unsolved → ${escapeHtml(item.aiTimeToSolve)} with AI`
-                  : item.yearsUnsolved
-                    ? `${item.yearsUnsolved} human years unsolved prior to this breakthrough`
-                    : `${escapeHtml(item.aiTimeToSolve)} with AI`
+                merged.yearsUnsolved && merged.aiTimeToSolve
+                  ? `${merged.yearsUnsolved} human years unsolved → ${escapeHtml(merged.aiTimeToSolve)} with AI`
+                  : merged.yearsUnsolved
+                    ? `${merged.yearsUnsolved} human years unsolved prior to this breakthrough`
+                    : `${escapeHtml(merged.aiTimeToSolve)} with AI`
               }</dd>
             </div>`
                 : ''
             }
             <div>
               <dt class="dossier__meta-label">Key Contributors</dt>
-              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.contributors.join(', '))}</dd>
+              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(merged.contributors.join(', '))}</dd>
             </div>
             <div>
               <dt class="dossier__meta-label">Institutions</dt>
-              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(item.institutions.join(', '))}</dd>
+              <dd class="dossier__meta-value" style="margin: 0;">${escapeHtml(merged.institutions.join(', '))}</dd>
             </div>
           </dl>
 
+          ${
+            hasDetail
+              ? `
           <section>
             <h3 class="dossier__section-title">Overview</h3>
-            <p class="dossier__summary">${escapeHtml(item.summary)}</p>
+            <p class="dossier__summary">${escapeHtml(merged.summary)}</p>
           </section>
 
           <section>
             <h3 class="dossier__section-title">Technical Milestones</h3>
             <ul class="dossier__highlights">
-              ${item.technicalHighlights.map((h) => `<li>${escapeHtml(h)}</li>`).join('')}
+              ${merged.technicalHighlights.map((h) => `<li>${escapeHtml(h)}</li>`).join('')}
             </ul>
           </section>
 
           <section class="dossier__caveat" aria-label="Verification notes and caveats">
             <div class="dossier__caveat-title">Verification Notes &amp; Caveats</div>
-            <p>${escapeHtml(item.caveats)}</p>
-          </section>
+            <p>${escapeHtml(merged.caveats)}</p>
+          </section>`
+              : `
+          <section>
+            <h3 class="dossier__section-title">Overview</h3>
+            <p class="dossier__summary" style="color: var(--ink-muted);">Loading full breakthrough dossier, verification notes, and primary sources…</p>
+          </section>`
+          }
 
           <section>
             <h3 class="dossier__section-title">Transparent Impact Breakdown</h3>
@@ -166,12 +178,13 @@ export function renderDossierModal(item, allRanked, weights, navList = null) {
                   <strong>Composite Impact Index</strong>
                   <div style="font-size: 0.76rem; color: var(--ink-muted);">Calculated live from your active rubric weights</div>
                 </div>
-                <span class="score-breakdown__total-val">${item.compositeScore.toFixed(1)}</span>
+                <span class="score-breakdown__total-val">${merged.compositeScore.toFixed(1)}</span>
               </div>
 
               ${DIMENSIONS.map((d) => {
-                const score = item.scores[d.key];
+                const score = merged.scores[d.key];
                 const weightPct = Math.round(norm[d.key] * 100);
+                const rationale = merged.scoreRationale?.[d.key];
                 return `
                   <div class="score-axis">
                     <div class="score-axis__head">
@@ -181,7 +194,7 @@ export function renderDossierModal(item, allRanked, weights, navList = null) {
                     <div class="score-axis__bar">
                       <div class="score-axis__fill" style="width: ${score}%; background: ${disc.colorVar};"></div>
                     </div>
-                    <p class="score-axis__rationale">${escapeHtml(item.scoreRationale[d.key])}</p>
+                    ${rationale ? `<p class="score-axis__rationale">${escapeHtml(rationale)}</p>` : ''}
                   </div>
                 `;
               }).join('')}
@@ -240,10 +253,13 @@ export function renderDossierModal(item, allRanked, weights, navList = null) {
               : ''
           }
 
+          ${
+            hasDetail
+              ? `
           <section>
             <h3 class="dossier__section-title">Primary Sources &amp; Verification</h3>
             <div class="source-list">
-              ${item.sources
+              ${merged.sources
                 .map(
                   (src) => `
                 <a
@@ -258,7 +274,9 @@ export function renderDossierModal(item, allRanked, weights, navList = null) {
               `
                 )
                 .join('')}
-            </div>
+            </div>`
+              : '<section>'
+          }
             <div style="margin-top: 0.85rem; font-size: 0.78rem; color: var(--ink-muted);">
               Disagree with this score or have a verification update?
               <a

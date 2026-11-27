@@ -1,0 +1,63 @@
+{
+  "id": "vibe-physics-qcd-claude-2026",
+  "title": "Matthew Schwartz’s ‘Vibe Physics’: First End-to-End AI-Executed QCD Resummation Paper",
+  "shortTitle": "Vibe Physics: QCD Resummation (Claude)",
+  "date": "2026-01-05",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Chromodynamics",
+    "Effective Field Theory",
+    "AI-Assisted Research Methodology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Anthropic Claude Opus 4.5 + Claude Code (36M tokens)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "2 weeks",
+  "isAnchor": false,
+  "whyItMatters": "Harvard QFT textbook author Matthew Schwartz guided Claude Opus 4.5 to compute, analyze, and write a complete QCD effective-field-theory paper in two weeks without manually editing files—sparking the ‘Vibe Physics’ shift.",
+  "summary": "In January 2026 (followed by his landmark March 23 Anthropic guest essay 'Vibe Physics: The AI Grad Student'), Harvard theoretical physicist Matthew Schwartz posted arXiv:2601.02484 ('Resummation of the C-Parameter Sudakov Shoulder Using Effective Field Theory'), whose abstract declares that all calculations, numerical analysis, and manuscript preparation were performed by Claude under physicist supervision. Across two weeks, 270 sessions, 110 drafts, 36 million tokens, and 40+ CPU hours, Schwartz directed Claude Opus 4.5 and Claude Code through a complete Soft-Collinear Effective Theory (SCET) derivation without editing files himself—demonstrating PhD-level execution in theoretical physics and catalyzing the 2026 wave of AI-assisted physics papers.",
+  "technicalHighlights": [
+    "Completed a full Soft-Collinear Effective Theory (SCET) factorization and Sudakov-shoulder resummation calculation for the C-parameter event shape in QCD.",
+    "Executed across 270 sessions, 110 drafts, and 36 million tokens in two weeks with Claude Opus 4.5 + Claude Code performing all analytic derivations, numerical checks, and LaTeX drafting under expert supervision.",
+    "Coined 'Vibe Physics' and framed the 'G2 vs. G3+ taste' benchmark for AI in theoretical science, directly foreshadowing late-2026 physics collaborations by Craig, Witten, and Chandrasekaran."
+  ],
+  "caveats": "Schwartz candidly emphasized that the physics result itself was a well-defined, graduate-student-level methodological extension rather than a paradigm-shifting discovery, and required continuous expert oversight to catch subtle errors and spurious citations.",
+  "contributors": [
+    "Matthew D. Schwartz",
+    "Claude Opus 4.5"
+  ],
+  "institutions": [
+    "Harvard University"
+  ],
+  "scores": {
+    "foundational": 70,
+    "ripple": 85,
+    "verification": 82,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Solid but incremental graduate-level QCD effective-field-theory calculation; its historic weight is methodological rather than a new physical law.",
+    "ripple": "Widely credited as the cultural and methodological inflection point ('Vibe Physics') that convinced theoretical physicists to deploy coding/reasoning agents directly inside QFT derivations.",
+    "verification": "Every physics step was supervised and cross-checked by a leading QFT textbook author (Matthew Schwartz), though early drafts surfaced citation flaws and formal journal review is separate.",
+    "velocity": "Compressed a multi-month graduate theoretical physics project into two weeks of agentic iteration."
+  },
+  "enables": [
+    "claude-black-hole-physics-2026",
+    "witten-chiral-fermions-claude-2026",
+    "null-cone-quantum-gravity-gpt6-2026"
+  ],
+  "sources": [
+    {
+      "label": "Matthew Schwartz — Resummation of the C-Parameter Sudakov Shoulder Using Effective Field Theory (arXiv:2601.02484)",
+      "url": "https://arxiv.org/abs/2601.02484",
+      "type": "paper"
+    },
+    {
+      "label": "Anthropic Research — Vibe physics: The AI grad student (Guest Essay by Matthew Schwartz, Mar 23, 2026)",
+      "url": "https://www.anthropic.com/research/vibe-physics",
+      "type": "explainer"
+    }
+  ]
+}

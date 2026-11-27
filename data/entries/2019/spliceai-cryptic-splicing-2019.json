@@ -1,0 +1,79 @@
+{
+  "id": "spliceai-cryptic-splicing-2019",
+  "title": "Illumina SpliceAI Deep Dilated CNN Uncovers Cryptic RNA Splicing Mutations Driving Autism and Intellectual Disability",
+  "shortTitle": "SpliceAI Cryptic Splicing (Cell, 2019)",
+  "date": "2019-01-17",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "RNA Splicing",
+    "Clinical Genomics",
+    "Neurodevelopmental Genetics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "SpliceAI (32-Layer Dilated CNN, Illumina)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Whole-genome splice-site inference",
+  "isAnchor": true,
+  "whyItMatters": "Published in Cell, SpliceAI’s 32-layer dilated CNN predicted cryptic RNA splicing from 10-kb DNA windows—uncovering hidden pathogenic mutations accounting for ~10% of genetic diagnoses in autism and intellectual disability.",
+  "summary": "Published in Cell on January 17, 2019, Kishore Jaganathan, Sofia Kyriazopoulou Panagiotopoulou, Jeremy F. McRae, Kyle Kai-How Farh, and collaborators at Illumina Artificial Intelligence Laboratory introduced SpliceAI, a 32-layer deep residual dilated convolutional neural network scanning 10,000 nucleotides of raw pre-mRNA sequence context to predict splice donor and acceptor sites with 95% top-k accuracy. Applying SpliceAI to clinical cohorts of patients with autism spectrum disorder and severe intellectual disability uncovered previously missed de novo cryptic splicing mutations—experimentally validated by RNA-seq—accounting for roughly 9–11% of pathogenic genetic diagnoses in those cohorts and transforming clinical rare-disease diagnostics worldwide.",
+  "technicalHighlights": [
+    "Expanded genomic CNN context to 10 kb via 32 dilated residual layers, achieving 95% top-k accuracy predicting exon-intron boundaries from primary sequence alone.",
+    "Discovered previously missed pathogenic de novo cryptic splicing mutations in autism and severe intellectual disability, confirmed by patient RNA-seq.",
+    "Became a clinical diagnostic standard worldwide for interpreting rare-disease whole-genome variants."
+  ],
+  "caveats": "Predicts constitutive pre-mRNA splicing disruptions rather than full cell-type-specific alternative isoform abundance (later addressed by Pangolin and AlphaGenome).",
+  "contributors": [
+    "Kishore Jaganathan",
+    "Sofia Kyriazopoulou Panagiotopoulou",
+    "Jeremy F. McRae",
+    "Siavash Fazel Darbandi",
+    "David Knowles",
+    "Yang I. Li",
+    "Jack A. Kosmicki",
+    "Juan Arbelaez",
+    "Wenwu Cui",
+    "Grace B. Schwartz",
+    "Eric D. Chow",
+    "Efstathios Kanterakis",
+    "Hong Gao",
+    "Amirali Kia",
+    "Serafim Batzoglou",
+    "Stephan J. Sanders",
+    "Kyle Kai-How Farh"
+  ],
+  "institutions": [
+    "Illumina Artificial Intelligence Laboratory",
+    "UCSF",
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 94,
+    "verification": 97,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Solved long-range sequence-to-splicing prediction and directly discovered a major hidden class of pathogenic mutations in human neurodevelopmental disorders.",
+    "ripple": "Adopted globally in clinical rare-disease genome diagnostics and directly paved the way for AlphaMissense and AlphaGenome.",
+    "verification": "Peer-reviewed in Cell (Vol. 176, pp. 535–548) with direct RNA-seq validation in patient cohorts and clinical replication.",
+    "velocity": "Screens entire patient genomes for cryptic splicing pathology in minutes."
+  },
+  "enables": [
+    "alphamissense-variants-2023",
+    "alphagenome-regulatory-dna-2025"
+  ],
+  "sources": [
+    {
+      "label": "Cell Vol. 176(3), pp. 535–548 (Jan 17, 2019) — Predicting Splicing from Primary Sequence with Deep Learning",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(18)31629-5",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — Illumina/SpliceAI",
+      "url": "https://github.com/Illumina/SpliceAI",
+      "type": "code"
+    }
+  ]
+}

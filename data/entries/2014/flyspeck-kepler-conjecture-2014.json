@@ -1,0 +1,86 @@
+{
+  "id": "flyspeck-kepler-conjecture-2014",
+  "title": "Flyspeck Completes Full Machine-Checked Formal Proof of the 403-Year-Old Kepler Conjecture",
+  "shortTitle": "Flyspeck Kepler Proof (HOL Light, 2014)",
+  "date": "2014-08-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Formal Verification",
+    "Discrete Geometry",
+    "Interactive Theorem Proving"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "HOL Light & Isabelle/HOL Proof Assistants",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "11 years human + HOL Light/Isabelle",
+  "isAnchor": true,
+  "whyItMatters": "Resolved a 16-year refereeing crisis over Thomas Hales’s 1998 proof of Johannes Kepler’s 1611 sphere-packing conjecture by formally certifying every geometric lemma, tame graph, and 23,000 nonlinear inequalities in HOL Light and Isabelle.",
+  "summary": "Announced complete on August 10, 2014 (published in Forum of Mathematics, Pi in 2017), Thomas Hales and an international 22-author Flyspeck collaboration completed the formal verification of the 1611 Kepler Conjecture—that no packing of equal spheres in 3D space exceeds the density π/√18 (~74.05%) of face-centered cubic packing. After Annals of Mathematics referees spent four years checking Hales’s 1998 proof and could only declare themselves “99% certain,” Flyspeck formalized the entire proof across HOL Light and Isabelle/HOL, combining symbolic proof automation with formally verified interval arithmetic and linear programming to eliminate all doubt.",
+  "technicalHighlights": [
+    "Formally certified the complete proof of the 1611 Kepler Conjecture inside HOL Light and Isabelle/HOL.",
+    "Replaced unverified 1998 C++ code with machine-checked symbolic proofs covering tame-graph enumeration, ~23,000 nonlinear inequalities, and thousands of linear programs.",
+    "Turned a notorious “99% certain” refereeing crisis into a 100% kernel-verified mathematical theorem."
+  ],
+  "caveats": "Human-led 11-year formalization effort assisted by HOL Light/Isabelle symbolic automation and certified solvers; included for apples-to-apples comparison with modern Lean formalizations.",
+  "contributors": [
+    "Thomas Hales",
+    "Mark Adams",
+    "Gertrud Bauer",
+    "Tat Dat Dang",
+    "John Harrison",
+    "Le Truong Hoang",
+    "Cezary Kaliszyk",
+    "Victor Magron",
+    "Sean McLaughlin",
+    "Tat Thang Nguyen",
+    "Quang Truong Nguyen",
+    "Tobias Nipkow",
+    "Steven Obua",
+    "Joseph Pleso",
+    "Jason Rute",
+    "Alexey Solovyev",
+    "Thi Hoai An Ta",
+    "Nam Trung Tran",
+    "Thi Diep Trieu",
+    "Josef Urban",
+    "Ky Vu",
+    "Roland Zumkeller"
+  ],
+  "institutions": [
+    "University of Pittsburgh",
+    "Intel",
+    "TU Munich",
+    "Radboud University",
+    "VNU Hanoi"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 90,
+    "verification": 100,
+    "velocity": 60
+  },
+  "scoreRationale": {
+    "foundational": "Resolved one of mathematics’ most famous verification crises—certifying the 403-year-old Kepler sphere-packing theorem.",
+    "ripple": "Proved that massive hybrid geometric + numerical proofs can be formally verified end-to-end, directly inspiring Lean sphere-packing formalizations.",
+    "verification": "100% formally verified in HOL Light and Isabelle/HOL and published in Forum of Mathematics, Pi (2017).",
+    "velocity": "Required 11 years of global interactive formalization—an essential historical contrast to 2025–2026 AI formalization speeds."
+  },
+  "enables": [
+    "viazovska-sphere-packing-lean-2026",
+    "gauss-strong-pnt-lean-2025"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:1501.02155 / Forum of Mathematics, Pi (2017) — A Formal Proof of the Kepler Conjecture",
+      "url": "https://arxiv.org/abs/1501.02155",
+      "type": "formal-verification"
+    },
+    {
+      "label": "GitHub — Flyspeck Formal Proof Repository",
+      "url": "https://github.com/flyspeck/flyspeck",
+      "type": "code"
+    }
+  ]
+}

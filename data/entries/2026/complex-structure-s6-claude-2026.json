@@ -1,0 +1,68 @@
+{
+  "id": "complex-structure-s6-claude-2026",
+  "title": "Claude & Levent Alpöge Construct Complex Structures on the 6-Sphere (Hopf’s 1948 Problem)",
+  "shortTitle": "Complex Structure on 6-Sphere (S⁶)",
+  "date": "2026-08-23",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Complex Geometry",
+    "Differential Topology",
+    "Algebraic Geometry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Anthropic Claude (Unreleased Research Model)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 78,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Resolves Heinz Hopf’s iconic 78-year-old problem by constructing a complex structure on S⁶—triggering a wave of independent arXiv proofs and infinite families by human complex geometers.",
+  "summary": "On August 23, 2026, Levent Alpöge circulated a 108-page manuscript produced with Anthropic’s Claude (alpo.ge/s6.pdf) claiming an affirmative answer to Heinz Hopf’s celebrated 1948 problem: whether the six-dimensional sphere S⁶ admits an integrable complex structure. Constructing a 1-parameter family of compact complex threefolds diffeomorphic to S⁶ by completing the (3, 4, ∞) modular family of 2-tori, the Alpöge–Claude breakthrough triggered an extraordinary response from human complex geometers—with Philip Engel (arXiv:2609.38442), Jeff Viaclovsky (arXiv:2609.33785, arXiv:2610.10451), and Wenfei Liu & Sönke Rollenske (arXiv:2609.33826) rapidly digesting, simplifying, and generalizing the construction into two-parameter and infinitely many biholomorphically inequivalent complex structures on S⁶.",
+  "technicalHighlights": [
+    "Answers Heinz Hopf’s 1948 question in the affirmative by building a 1-parameter family of compact complex threefolds diffeomorphic to the standard 6-sphere S⁶.",
+    "Completes the (3, 4, ∞) modular family of 2-tori at its three special points via logarithmic transformations.",
+    "Rapidly corroborated and generalized by multiple independent human complex geometers (Engel, Viaclovsky, Liu–Rollenske) into multi-parameter and infinite families of inequivalent complex structures on S⁶."
+  ],
+  "caveats": "Originally circulated as a self-hosted 108-page PDF without a Lean formalization; while multiple independent specialist arXiv preprints build directly on and extend the Alpöge–Claude construction, formal journal peer review of the original manuscript and its extensions is still completing.",
+  "contributors": [
+    "Levent Alpöge",
+    "Claude (Anthropic)",
+    "Philip Engel (independent exposition)",
+    "Jeff Viaclovsky (extensions)",
+    "Wenfei Liu & Sönke Rollenske (extensions)"
+  ],
+  "institutions": [
+    "Anthropic",
+    "Harvard University"
+  ],
+  "scores": {
+    "foundational": 94,
+    "ripple": 87,
+    "verification": 88,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Settles one of the most famous, longest-standing open problems in differential and complex geometry (Hopf 1948, 78 years open)—a problem that had tripped up decades of top geometers.",
+    "ripple": "Immediately launched a vibrant subfield of new arXiv papers constructing two-parameter families, arbitrary Kuranishi dimensions, and non-Gauduchon Hodge theory on complex S⁶.",
+    "verification": "No Lean formalization or completed journal refereeing yet, but unusually high independent confidence given multiple specialist arXiv papers confirming and extending the construction.",
+    "velocity": "Cracked a 78-year-old geometry monument in an AI-assisted breakthrough that human geometers immediately ran with."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Philip Engel — Complex structures on S⁶ (Independent Exposition, arXiv:2609.38442)",
+      "url": "https://arxiv.org/abs/2609.38442",
+      "type": "paper"
+    },
+    {
+      "label": "Jeff Viaclovsky — A two-parameter family of complex structures on S⁶ (arXiv:2609.33785)",
+      "url": "https://arxiv.org/abs/2609.33785",
+      "type": "paper"
+    },
+    {
+      "label": "Wenfei Liu & Sönke Rollenske — Yet another family of complex structures on S⁶ (arXiv:2609.33826)",
+      "url": "https://arxiv.org/abs/2609.33826",
+      "type": "paper"
+    }
+  ]
+}

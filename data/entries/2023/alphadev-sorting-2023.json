@@ -1,0 +1,60 @@
+{
+  "id": "alphadev-sorting-2023",
+  "title": "AlphaDev Discovers Faster Assembly Sorting & Hashing Algorithms Deployed in LLVM",
+  "shortTitle": "AlphaDev Sorting (Anchor)",
+  "date": "2023-06-07",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Algorithms",
+    "Compiler Optimization",
+    "Reinforcement Learning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaDev (AlphaZero AssemblyGame)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First AI-discovered fundamental computer science routines merged into the standard LLVM C++ sorting library, running trillions of times daily worldwide.",
+  "summary": "By framing assembly-instruction synthesis as a single-player game rewarding both exact correctness and low CPU latency, DeepMind’s AlphaDev discovered instruction-saving tricks (\"AlphaDev swap and copy moves\") overlooked by human compiler engineers for decades. Its sort-3/4/5 routines accelerated short sequences up to 70% and were merged into LLVM libc++, alongside a 30%-faster hashing routine adopted in Google’s Abseil library.",
+  "technicalHighlights": [
+    "Discovered branchless assembly instruction sequences reducing sort-3 and sort-5 instruction counts below decades-old human baselines.",
+    "Merged into LLVM libc++ standard library and Google Abseil, achieving real-world production deployment across billions of devices.",
+    "Verified exact equivalence across all permutation inputs and microarchitectural latency benchmarks."
+  ],
+  "caveats": "Improvements target fixed-length base-case sorting networks (3–5 elements) and short hashing keys rather than asymptotically faster general sorting algorithms.",
+  "contributors": [
+    "Daniel J. Mankowitz",
+    "Andrea Michi",
+    "Anton Zhernov",
+    "Alhussein Fawzi",
+    "Pushmeet Kohli"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 92,
+    "verification": 99,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Proved RL can invent non-obvious instruction-level algorithmic primitives from scratch.",
+    "ripple": "Deployed directly into LLVM libc++ and Abseil, executing trillions of times daily across global computing infrastructure.",
+    "verification": "Published in Nature and exhaustively verified for functional equivalence in production compilers.",
+    "velocity": "Surpassed decades of manual micro-optimization in standard library sorting primitives."
+  },
+  "enables": [
+    "alphaevolve-matrix-2025",
+    "subquadratic-3sum-subcubic-apsp-2026"
+  ],
+  "sources": [
+    {
+      "label": "Mankowitz et al. — Faster sorting algorithms discovered using deep RL (Nature / PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10247365/",
+      "type": "paper"
+    }
+  ]
+}

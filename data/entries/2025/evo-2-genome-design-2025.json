@@ -1,0 +1,66 @@
+{
+  "id": "evo-2-genome-design-2025",
+  "title": "Evo 2: 40B Genomic Foundation Model & Viable AI-Designed Genomes",
+  "shortTitle": "Evo 2 & AI Genomes",
+  "date": "2025-02-19",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Genomics",
+    "Generative Biology",
+    "Mechanistic Interpretability"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Evo 2 (StripedHyena 2, Arc Institute)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "whyItMatters": "Trained on 9.3 trillion nucleotides across all domains of life with a 1M base-pair context, enabling zero-shot pathogenic variant prediction and wet-lab-viable AI-designed viral genomes.",
+  "summary": "Arc Institute, Stanford, and NVIDIA released Evo 2, a 40-billion-parameter open-source genomic foundation model trained on 9.3 trillion base pairs from over 100,000 species across prokaryotes and eukaryotes. Handling 1-million-nucleotide contexts via the StripedHyena 2 architecture, Evo 2 predicts human BRCA1 pathogenicity without task-specific training, exposes interpretable biological features (α-helices, β-sheets, exon boundaries), and by 2026 guided the chemical synthesis of viable AI-designed bacteriophage genomes capable of lysing E. coli.",
+  "technicalHighlights": [
+    "1-million-base-pair context window spans entire microbial genomes and long-range eukaryotic regulatory loci.",
+    "Mechanistic interpretability (with Goodfire) revealed learned internal representations of 3D protein secondary structure straight from raw DNA.",
+    "Downstream 2026 wet-lab validation synthesized 285 Evo-designed ΦX174 phage genomes, with 16 actively inhibiting E. coli."
+  ],
+  "caveats": "Viability drops steeply as generated sequences diverge from natural evolutionary neighborhoods; eukaryotic whole-genome design raises biosecurity governance challenges (prompting exclusion of human-pathogenic viruses from training).",
+  "contributors": [
+    "Garyk Brixi",
+    "Matthew G. Durrant",
+    "Brian L. Hie",
+    "Patrick D. Hsu",
+    "Evo 2 Team"
+  ],
+  "institutions": [
+    "Arc Institute",
+    "Stanford University",
+    "NVIDIA",
+    "UC Berkeley"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 91,
+    "verification": 92,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates that foundation-model scaling laws and interpretability transfer directly to raw genomic sequences across all domains of life.",
+    "ripple": "Powers clinical variant interpretation, programmable epigenomics, and de novo synthetic genome engineering.",
+    "verification": "Open weights/code, bioRxiv/peer-reviewed benchmarks, and wet-lab synthesis of functional phage genomes.",
+    "velocity": "Moved generative biology from single protein chains to whole functional viral genomes in under two years."
+  },
+  "enables": [
+    "evo-viable-bacteriophages-2026"
+  ],
+  "sources": [
+    {
+      "label": "bioRxiv: Genome modeling and design across all domains of life with Evo 2",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full",
+      "type": "paper"
+    },
+    {
+      "label": "CAS Insights: Genome-Scale Generative Design Wet-Lab Analysis (2026)",
+      "url": "https://www.cas.org/resources/cas-insights/genome-scale-generative-design",
+      "type": "explainer"
+    }
+  ]
+}

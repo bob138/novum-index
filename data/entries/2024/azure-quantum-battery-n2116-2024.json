@@ -1,0 +1,62 @@
+{
+  "id": "azure-quantum-battery-n2116-2024",
+  "title": "Microsoft Azure Quantum Elements & PNNL Screen 32 Million Candidates in 80 Hours to Synthesize Battery Electrolyte N2116",
+  "shortTitle": "Azure Quantum Battery N2116",
+  "date": "2024-01-09",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Solid-State Batteries",
+    "Materials Screening",
+    "High-Throughput AI + HPC"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Microsoft Azure Quantum Elements AI Screening Pipeline + DFT/MD",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "80 hours (32M to 18 candidates)",
+  "isAnchor": false,
+  "whyItMatters": "Microsoft and PNNL used AI property-prediction models plus cloud HPC to winnow 32.6 million inorganic candidates down to 18 in 80 hours, synthesizing novel solid-state electrolyte N2116 that cuts lithium use by up to 70%.",
+  "summary": "Announced on January 9, 2024, Microsoft Research and the U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) combined graph neural network materials screening with automated density functional theory (DFT) and molecular dynamics inside Azure Quantum Elements to search 32.6 million hypothetical inorganic crystal structures for low-lithium solid-state battery electrolytes. Within 80 hours, the AI pipeline narrowed the search to 500,000 stable candidates, 800 functional candidates, and 18 top leads; PNNL chemists synthesized one previously unknown lithium–sodium–yttrium chloride electrolyte (N2116) and demonstrated it powering a working prototype lightbulb.",
+  "technicalHighlights": [
+    "Screened 32.6 million inorganic crystal candidates down to 18 viable solid-state electrolyte leads in ~80 hours—an effort estimated to take >20 years conventionally.",
+    "Synthesized novel mixed lithium/sodium solid-state electrolyte N2116 at PNNL, reducing lithium content by up to 70% compared with conventional lithium electrolytes.",
+    "Demonstrated an end-to-end cloud AI + HPC + national-lab wet synthesis loop from virtual screening to a functioning battery cell in under 9 months."
+  ],
+  "caveats": "Commercial viability, long-term dendrite resistance, high-rate cycling stability, and full independent peer-reviewed electrochemical benchmarking remain ongoing; initial demo proved functional conductivity rather than drop-in EV readiness.",
+  "contributors": [
+    "Nathan Baker",
+    "Brian Abrahamson",
+    "Vijay Murugesan",
+    "Microsoft Quantum & PNNL Teams"
+  ],
+  "institutions": [
+    "Microsoft Research",
+    "Pacific Northwest National Laboratory (PNNL)"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 86,
+    "verification": 74,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Validates high-throughput neural-potential + DFT funneling to discover a genuinely novel synthesized solid-state ion conductor.",
+    "ripple": "High strategic relevance for battery supply chains and grid storage, showcasing practical AI-HPC integration with DOE national labs.",
+    "verification": "Physically synthesized and tested in a working cell at PNNL, though scored below Nature/Science journal benchmarks pending full long-cycle peer-reviewed validation.",
+    "velocity": "Compressed an estimated ~20-year materials screening pipeline into 80 hours of automated AI + HPC filtering."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Microsoft Azure Blog (Jan 9, 2024) — How Microsoft’s AI screened over 32 million candidates to find a better battery",
+      "url": "https://azure.microsoft.com/en-us/blog/quantum/2024/01/09/unlocking-a-new-era-for-scientific-discovery-with-ai-how-microsofts-ai-screened-over-32-million-candidates-to-find-a-better-battery/",
+      "type": "announcement"
+    },
+    {
+      "label": "Microsoft News — How AI and high-performance computing are speeding up scientific discovery",
+      "url": "https://news.microsoft.com/source/features/innovation/how-ai-and-hpc-are-speeding-up-scientific-discovery/",
+      "type": "explainer"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "gpt52-gluon-amplitudes-2026",
+  "title": "GPT-5.2 Derives & Proves Nonzero Single-Minus Gluon Scattering Amplitudes",
+  "shortTitle": "Single-Minus Gluon Amplitudes",
+  "date": "2026-02-12",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Theoretical Particle Physics",
+    "Scattering Amplitudes",
+    "Quantum Field Theory"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-5.2 (Scaffolded Reasoning Model)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 40,
+  "aiTimeToSolve": "~12 hours",
+  "isAnchor": false,
+  "whyItMatters": "Overturned a decades-old textbook assumption in Yang–Mills theory by conjecturing and proving an exact closed-form formula for nonzero single-minus n-gluon tree amplitudes.",
+  "summary": "Collaborating with physicists from the Institute for Advanced Study, Harvard, and Cambridge, an internal scaffolded GPT-5.2 model reasoned for ~12 hours to conjecture a piecewise-constant closed-form formula for tree-level n-gluon scattering with one negative-helicity gluon in half-collinear (Klein-space / complexified) kinematics—previously assumed to vanish—and produced a formal proof verified via Berends–Giele recursion and Weinberg’s soft theorem. Within weeks, the team extended the result to gravitons.",
+  "technicalHighlights": [
+    "Conjectured an all-n closed-form expression for single-minus tree-level gluon amplitudes and proved it via Berends–Giele recursion.",
+    "Verified consistency with Weinberg’s soft theorem and generalized within a month to single-minus graviton amplitudes (arXiv:2603.04330).",
+    "Co-authored with leading theoretical physicists including Andrew Strominger and David Skinner."
+  ],
+  "caveats": "Applies to special half-collinear complexified/Klein-space kinematics rather than generic real Minkowski momenta, and prompt/scaffolding logs were not fully released.",
+  "contributors": [
+    "Alfredo Guevara",
+    "Alexandru Lupsasca",
+    "David Skinner",
+    "Andrew Strominger",
+    "Kevin Weil"
+  ],
+  "institutions": [
+    "Institute for Advanced Study",
+    "Harvard University",
+    "University of Cambridge",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 84,
+    "verification": 89,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Corrected a widely taught vanishing assumption in tree-level Yang–Mills amplitude theory and yielded an all-n formula.",
+    "ripple": "Immediately extended to graviton scattering amplitudes and sparked a wave of AI-assisted theoretical physics.",
+    "verification": "Analytically verified against Berends–Giele recursion and Weinberg soft limits by leading QFT physicists; awaiting journal publication.",
+    "velocity": "Synthesized a clean all-n formula and proof in ~12 hours of scaffolded reasoning."
+  },
+  "enables": [
+    "claude-black-hole-physics-2026"
+  ],
+  "sources": [
+    {
+      "label": "Guevara et al. — Single-minus gluon tree amplitudes are nonzero (arXiv:2602.12176)",
+      "url": "https://arxiv.org/abs/2602.12176",
+      "type": "paper"
+    },
+    {
+      "label": "OpenAI — GPT-5.2 derives a new result in theoretical physics",
+      "url": "https://openai.com/index/new-result-theoretical-physics/",
+      "type": "announcement"
+    }
+  ]
+}
