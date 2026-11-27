@@ -61,7 +61,7 @@ const state = {
   velocity: {
     groupBy: 'paradigm',
     granularity: 'default',
-    barMode: 'count',
+    barMode: 'rate',
     yScale: 'linear',
     curveMetric: 'count',
   },

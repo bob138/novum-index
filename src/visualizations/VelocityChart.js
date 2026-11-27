@@ -199,7 +199,7 @@ export function computeVelocityData(items, opts = {}) {
 export function renderVelocityChart(items, opts = {}) {
   const groupBy = typeof opts === 'string' ? opts : opts.groupBy || 'paradigm';
   const granularity = typeof opts === 'string' ? 'default' : opts.granularity || 'default';
-  const barMode = typeof opts === 'string' ? 'count' : opts.barMode === 'rate' ? 'rate' : 'count';
+  const barMode = typeof opts === 'string' ? 'rate' : opts.barMode === 'count' ? 'count' : 'rate';
   const yScale = typeof opts === 'string' ? 'linear' : opts.yScale === 'log' ? 'log' : 'linear';
   const curveMetricKey =
     typeof opts === 'string'
@@ -317,7 +317,7 @@ export function renderVelocityChart(items, opts = {}) {
         <div>
           <h2 class="viz-card__title">AI Scientific Acceleration &amp; Paradigm Shift Curve</h2>
           <p class="viz-card__desc">
-            Switch between <strong>Raw Count</strong> and <strong>Pace (/yr)</strong> to compare the 51-year pre-2020 baseline fairly against single quarters, or toggle a <strong>Log</strong> right axis.
+            Switch between <strong>Pace (/yr)</strong> and <strong>Raw Count</strong> to compare the 51-year pre-2020 baseline fairly against single quarters, or toggle a <strong>Log</strong> right axis.
           </p>
         </div>
 
@@ -355,8 +355,8 @@ export function renderVelocityChart(items, opts = {}) {
 
           <span class="viz-ctrl-label">Bars</span>
           <div class="segmented-ctrl segmented-ctrl--sm" role="group" aria-label="Bar display metric">
-            <button type="button" data-velocity-barmode="count" aria-pressed="${barMode === 'count' ? 'true' : 'false'}" title="Raw count of breakthroughs per bucket">Raw Count</button>
             <button type="button" data-velocity-barmode="rate" aria-pressed="${barMode === 'rate' ? 'true' : 'false'}" title="Annualized discovery pace (breakthroughs per year) — normalizes 51-year pre-2020 era against single quarters">Pace (/yr)</button>
+            <button type="button" data-velocity-barmode="count" aria-pressed="${barMode === 'count' ? 'true' : 'false'}" title="Raw count of breakthroughs per bucket">Raw Count</button>
           </div>
         </div>
 
