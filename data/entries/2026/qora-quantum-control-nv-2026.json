@@ -1,0 +1,57 @@
+{
+  "id": "qora-quantum-control-nv-2026",
+  "title": "QORA Autonomous AI Scientist Nearly Doubles Spin Coherence in Real Diamond NV Centers",
+  "shortTitle": "QORA AI Quantum Control (NV Centers)",
+  "date": "2026-11-16",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Control",
+    "NV-Center Spin Physics",
+    "Autonomous Physics Labs"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "QORA (GPT-6 Astra + Sorol Multi-Agent Scientist)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Closes the full theory-to-experiment loop on physical diamond spin-1 NV centers, autonomously discovering pulse sequences (AID-ROD-1/2) that nearly double spin coherence time over human SOTA.",
+  "summary": "Washington University in St. Louis physicists built QORA, a multi-agent AI scientist powered by GPT-6 Astra and Sorol that autonomously calibrates microwave/optical hardware, proposes hypotheses, runs simulations, and executes real experiments on a bulk diamond (DNV-B14) spin-1 nitrogen-vacancy ensemble. Without human sequence design, QORA discovered AID-ROD-1 (T2 = 18.6 ± 0.7 μs) and AID-ROD-2 (T2 = 19.3 ± 1.0 μs), nearly doubling measured coherence time over the human-engineered DROID-C3PO benchmark (9.8 ± 1.1 μs) and uncovering a hierarchical 18-pulse block mechanism that suppresses quadratic onsite disorder.",
+  "technicalHighlights": [
+    "Closed the complete autonomous loop—from theoretical Hamiltonian reasoning to live microwave pulse synthesis and optical readout—on real diamond NV-center hardware.",
+    "Discovered AID-ROD-1 (18.6 ± 0.7 μs) and AID-ROD-2 (19.3 ± 1.0 μs), nearly doubling T2 over state-of-the-art human-designed DROID-C3PO (9.8 ± 1.1 μs).",
+    "Revealed a new hierarchical 18-pulse decoupling mechanism suppressing quadratic onsite crystal-field disorder D_i(S_i^z)^2 alongside dipolar interactions."
+  ],
+  "caveats": "Published as a November 2026 arXiv preprint (arXiv:2611.21765) awaiting formal peer review, though backed by direct physical laboratory measurements on DNV-B14 diamond.",
+  "contributors": [
+    "Jiahao Yan",
+    "Xuanying Lai",
+    "Xiaoshui Lin",
+    "Chong Zu",
+    "Chuanwei Zhang"
+  ],
+  "institutions": [
+    "Washington University in St. Louis"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 86,
+    "verification": 82,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Discovers a genuinely new physical decoupling mechanism for interacting spin-1 ensembles and nearly doubles experimental coherence time.",
+    "ripple": "Provides a template for closed-loop LLM scientists directly operating quantum sensors, simulators, and solid-state qubit hardware.",
+    "verification": "Experimentally validated on physical bulk-diamond NV centers against DROID-C3PO, pending formal journal peer review.",
+    "velocity": "Autonomously calibrated optics/microwaves and discovered superior multi-pulse blocks far faster than manual Floquet engineering."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Yan et al. — AI Scientist Discovered Robust Quantum Control (arXiv:2611.21765)",
+      "url": "https://arxiv.org/abs/2611.21765",
+      "type": "paper"
+    }
+  ]
+}

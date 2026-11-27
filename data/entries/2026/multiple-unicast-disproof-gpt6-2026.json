@@ -1,0 +1,54 @@
+{
+  "id": "multiple-unicast-disproof-gpt6-2026",
+  "title": "GPT-6 Helps Disprove the 2004 Undirected Multiple-Unicast Network Coding Conjecture",
+  "shortTitle": "Multiple-Unicast Conjecture Disproof",
+  "date": "2026-10-07",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Network Coding",
+    "Information Theory",
+    "Theoretical Computer Science"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 22,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Refutes Li & Li’s 22-year-old Multiple-Unicast Conjecture—showing network coding strictly outperforms routing in undirected networks with an Ω((log n)^ε) gap via a GPT-6-found Reed–Solomon counterexample.",
+  "summary": "Mark Braverman and Zhongtian He refuted the famous 2004 Undirected Multiple-Unicast Conjecture of Li and Li, which posited that network coding offers no throughput advantage over multicommodity routing for multiple-unicast sessions in undirected graphs. Using GPT-6 to discover a nondeterministic Reed–Solomon local-code construction on a 182-vertex subgraph of the projective plane PG(2,9), the authors converted it into a deterministic linear network code over 𝔽_9 achieving rate ≥ 1 for 157 sessions where maximum fractional multicommodity flow is 147/157, and lifted it via tensoring to an asymptotic Ω((log n)^ε) coding-over-routing gap.",
+  "technicalHighlights": [
+    "Refutes Li & Li’s 2004 Multiple-Unicast Conjecture after 22 years, resolving one of the central open problems in network information theory.",
+    "GPT-6 discovered the underlying nondeterministic Reed–Solomon local-code counterexample on a 182-vertex subgraph of PG(2,9).",
+    "Yields a deterministic linear network code over 𝔽_9 supporting 157 unicast sessions at rate ≥ 1 vs. max fractional flow 147/157, amplifying to an Ω((log n)^ε) gap."
+  ],
+  "caveats": "Currently an October 2026 arXiv preprint (arXiv:2610.10108) undergoing community verification and peer review; not yet formally verified in Lean.",
+  "contributors": [
+    "Mark Braverman",
+    "Zhongtian He"
+  ],
+  "institutions": [
+    "Princeton University"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 86,
+    "verification": 80,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Settles one of the deepest 21st-century conjectures in network coding and communication complexity by proving a super-constant coding advantage.",
+    "ripple": "Impacts information theory, graph sparsifiers, multicommodity flow gaps, and algebraic coding theory.",
+    "verification": "Explicit finite 182-vertex algebraic counterexample authored by Fields-medal-caliber TCS researchers (Abacus Medal winner Braverman), awaiting formal journal review.",
+    "velocity": "GPT-6 surfaced the finite projective-plane Reed–Solomon counterexample that cracked a 22-year barrier."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Braverman & He — The Multiple Unicast Conjecture is False (arXiv:2610.10108)",
+      "url": "https://arxiv.org/abs/2610.10108",
+      "type": "paper"
+    }
+  ]
+}

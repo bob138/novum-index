@@ -1,0 +1,60 @@
+{
+  "id": "erdos-593-1177-aristotle-lean-2026",
+  "title": "Lean 4 Resolution of Erdős Problems #593 and #1177 on Obligatory Hypergraph Triple Systems",
+  "shortTitle": "Erdős #593 & #1177 (Aristotle, Lean)",
+  "date": "2026-06-23",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Hypergraph Combinatorics",
+    "Infinitary Combinatorics",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Harmonic Aristotle + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 50,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Completely classifies all obligatory finite 3-uniform hypergraphs (#593, $500 prize) and resolves all three clauses of #1177 in a zero-sorry Lean 4 formalization co-authored with Harmonic Aristotle.",
+  "summary": "Eric Li (Trinity College, University of Cambridge), collaborating with Harmonic’s Aristotle theorem prover (explicitly co-authored in the Lean 4 repository), unconditionally resolved Erdős Problem #593 ($500 prize, posed by Erdős, Galvin, and Hajnal) and all three sub-questions of Erdős Problem #1177 (truth values: yes, no, yes). The proof proves an exact bridge-trace theorem for complete-rank one-apex sequence lifts, characterizing obligatory finite triple systems in uncountably chromatic 3-uniform hypergraphs, with every theorem machine-checked in Lean 4 (zero sorry, standard axioms, independently replayed across 8,091 jobs).",
+  "technicalHighlights": [
+    "Exact characterization of Erdős #593 ($500 prize): a finite triple system (sans isolated vertices) is obligatory iff it is linear, every hyperedge-node of its Levi graph has an incident bridge, and every Berge cycle is even.",
+    "Establishes a class-valued exact avoidance-spectrum dichotomy settling all three clauses of Erdős #1177 (yes, no, yes).",
+    "100% formalized in Lean 4 with Harmonic Aristotle (zero sorry, standard axioms) and independently replayed across 8,091 build jobs."
+  ],
+  "caveats": "Published as an arXiv preprint (arXiv:2606.24882v2) and public Lean 4 repository rather than a peer-reviewed journal article, though independently kernel-replayed in Lean 4.",
+  "contributors": [
+    "Eric Li",
+    "Aristotle (Harmonic)"
+  ],
+  "institutions": [
+    "University of Cambridge (Trinity College)",
+    "Harmonic"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 77,
+    "verification": 97,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Completely classifies obligatory 3-uniform hypergraphs in uncountably chromatic triple systems, settling a $500 Erdős prize problem and #1177.",
+    "ripple": "Demonstrates high-trust mathematician + Aristotle neuro-symbolic workflows achieving complete Lean 4 formalization of deep set-theoretic combinatorics.",
+    "verification": "Unconditional zero-sorry Lean 4 formalization using standard axioms only, independently replayed on Erdős Problem a Day.",
+    "velocity": "Full human+AI formalization completed within a month of v1 preprint release."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Li — A Resolution of Erdős Problems 593 and 1177 (arXiv:2606.24882)",
+      "url": "https://arxiv.org/abs/2606.24882",
+      "type": "paper"
+    },
+    {
+      "label": "Eric Li & Aristotle — github.com/ericlisg/erdos-593-1177-lean (Lean 4 Formalization)",
+      "url": "https://github.com/ericlisg/erdos-593-1177-lean",
+      "type": "formal-verification"
+    }
+  ]
+}

@@ -44,7 +44,9 @@
   },
   "enables": [
     "ostmann-inverse-goldbach-lean-2026",
-    "z-diophantine-in-q-2026"
+    "z-diophantine-in-q-2026",
+    "hadwiger-nelson-plane-6colors-2026",
+    "cannons-conjecture-lean-openai-2026"
   ],
   "sources": [
     {

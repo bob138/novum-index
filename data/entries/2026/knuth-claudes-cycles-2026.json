@@ -46,7 +46,9 @@
     "verification": "Proved rigorously by Donald Knuth and independently machine-checked in Lean 4.",
     "velocity": "Uncovered a general constructive rule in roughly one hour of interactive exploration after weeks of human effort."
   },
-  "enables": [],
+  "enables": [
+    "jfc-autonomous-hep-lund-plane-2026"
+  ],
   "sources": [
     {
       "label": "Stanford CS (Feb 28, 2026) — Donald E. Knuth: “Claude’s Cycles” (PDF)",

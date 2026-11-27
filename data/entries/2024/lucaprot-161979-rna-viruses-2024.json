@@ -1,0 +1,70 @@
+{
+  "id": "lucaprot-161979-rna-viruses-2024",
+  "title": "LucaProt Deep Learning Discovers 161,979 Potential New RNA Virus Species Across Global Ecosystems",
+  "shortTitle": "LucaProt: 161,979 New RNA Viruses",
+  "date": "2024-10-09",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Virology",
+    "Metatranscriptomics",
+    "Protein Language Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "LucaProt (Sequence + Structure Deep Learning)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Cell: integrates protein sequence and predicted 3D structure to mine 10,487 global metatranscriptomes, uncovering 161,979 putative RNA virus species and 180 supergroups—the largest single expansion of the RNA virosphere.",
+  "summary": "Researchers from Sun Yat-sen University, Alibaba Cloud Intelligence (Apsara Lab), and the University of Sydney developed LucaProt, a deep learning model fusing protein sequence embeddings with predicted structural representations to detect highly divergent RNA-dependent RNA polymerase (RdRP) sequences invisible to homology-based tools like BLAST. Screening 10,487 global metatranscriptomes spanning hot springs, hydrothermal vents, air, and soil, LucaProt identified 161,979 putative RNA virus species across 180 supergroups—including ultra-long RNA genomes up to 47,250 nucleotides—with a representative subset experimentally confirmed via RT-PCR and RNA/DNA sequencing.",
+  "technicalHighlights": [
+    "Identified 161,979 putative RNA virus species and 180 RNA virus supergroups across 10,487 global metatranscriptomes—dramatically expanding known viral diversity.",
+    "Detected deeply divergent RdRP proteins and exceptionally long RNA virus genomes up to 47,250 nucleotides where sequence-only homology fails.",
+    "Experimentally confirmed a subset of novel viruses via RT-PCR and RNA/DNA sequencing, with open-source model weights and code (github.com/alibaba/LucaProt)."
+  ],
+  "caveats": "The 161,979 figure represents putative viral species defined by RdRP sequence-identity clustering (>90%), with wet-lab RT-PCR confirmation performed on a representative subset rather than all 161,979 species.",
+  "contributors": [
+    "Xin Hou",
+    "Yong He",
+    "Pan Fang",
+    "Edward C. Holmes",
+    "Zhao-Rong Li",
+    "Mang Shi"
+  ],
+  "institutions": [
+    "Sun Yat-sen University",
+    "Alibaba Cloud Intelligence (Apsara Lab)",
+    "University of Sydney"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 89,
+    "verification": 95,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Executed the largest single expansion of the documented RNA virosphere, uncovering viruses in extreme habitats from hydrothermal vents to the atmosphere.",
+    "ripple": "Established sequence-plus-structure deep learning as the standard paradigm for dark-matter viral and microbial discovery.",
+    "verification": "Peer-reviewed in Cell (2024, PMID 39389057) with direct RT-PCR/sequencing confirmation and open-source code.",
+    "velocity": "Uncovered over 160,000 divergent viral species across 10,487 global datasets in a single computational sweep."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Hou et al. — Using artificial intelligence to document the hidden RNA virosphere (Cell, 2024)",
+      "url": "https://doi.org/10.1016/j.cell.2024.09.027",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 39389057",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39389057/",
+      "type": "paper"
+    },
+    {
+      "label": "Alibaba Apsara Lab — github.com/alibaba/LucaProt",
+      "url": "https://github.com/alibaba/LucaProt",
+      "type": "code"
+    }
+  ]
+}

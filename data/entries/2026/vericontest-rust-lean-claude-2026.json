@@ -1,0 +1,57 @@
+{
+  "id": "vericontest-rust-lean-claude-2026",
+  "title": "Rust-Prover & Claude Opus 5.5 Formally Verify All 1,007 VeriContest Rust Programs in Lean 4",
+  "shortTitle": "VeriContest: 1,007 Rust Proofs (Lean)",
+  "date": "2026-10-02",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Formal Software Verification",
+    "Rust Verification",
+    "Theorem Proving"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Rust-Prover + Claude Opus 5.5 + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "<32 hrs (1,259/1,325)",
+  "isAnchor": false,
+  "whyItMatters": "Formally proves all 1,325 theorems across 1,007 Rust programs in Lean 4—jumping from a 13.95% Verus baseline to 100% at a median 3.2 minutes and $1.17 per proof.",
+  "summary": "Runtime Verification and UIUC researchers built Rust-Prover, a Lean 4-backed Rust verification pipeline driven by Claude Opus 5.5, and formally verified every single problem in the 1,007-program VeriContest Rust benchmark (1,325 total theorems, up from the 13.95% prior Verus baseline). In a single automated run under 32 hours, the system proved 1,259 of 1,325 theorems at a median of 3.2 minutes and $1.17 per proof before completing the remaining specifications, while passing all 21,413 Rust test cases.",
+  "technicalHighlights": [
+    "Formally verified 100% of VeriContest—all 1,325 theorems across 1,007 Rust programs—in Lean 4, up from 13.95% on the prior Verus baseline.",
+    "Proved 1,259/1,325 theorems in one automated run under 32 hours at median 3.2 min and $1.17 API cost per proof.",
+    "Verified programs simultaneously pass all 21,413 executable Rust test cases, bridging formal proofs with real systems code."
+  ],
+  "caveats": "Demonstrated on competitive-programming-scale Rust benchmarks (VeriContest) rather than million-line OS kernels; paper is an October 2026 preprint.",
+  "contributors": [
+    "Traian Serbanuta",
+    "Jun Xu",
+    "Andrei Stefanescu",
+    "Cosmin Radoi"
+  ],
+  "institutions": [
+    "Runtime Verification",
+    "University of Illinois Urbana-Champaign"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 88,
+    "verification": 96,
+    "velocity": 98
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates economically viable ($1.17/proof) autonomous end-to-end formal verification of imperative Rust software in Lean 4.",
+    "ripple": "Directly accelerates industrial adoption of AI-driven formal verification for memory-safe critical systems.",
+    "verification": "All 1,325 theorems are kernel-checked in Lean 4 and validated against 21,413 executable Rust tests.",
+    "velocity": "Shattered the 13.95% baseline to 100% coverage in under 32 hours for the bulk automated pass."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Serbanuta et al. — Solving VeriContest with a Lean-Backed Rust Verifier (arXiv:2610.03994)",
+      "url": "https://arxiv.org/abs/2610.03994",
+      "type": "paper"
+    }
+  ]
+}

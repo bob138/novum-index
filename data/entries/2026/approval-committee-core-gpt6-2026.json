@@ -1,0 +1,61 @@
+{
+  "id": "approval-committee-core-gpt6-2026",
+  "title": "GPT-6 Astra Drives Proof That the Core Always Exists in Approval-Based Committee Elections",
+  "shortTitle": "Core in Committee Elections (GPT-6)",
+  "date": "2026-09-10",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Computational Social Choice",
+    "Algorithmic Game Theory",
+    "Optimization"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6 Astra",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 9,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Resolves the central 2017 open problem in approval-based multiwinner voting—and marks the first \"Major Advance\" solved on Epoch AI’s FrontierMath: Open Problems—via a harmonic-entropy objective found with GPT-6 Astra.",
+  "summary": "Patrick Becker, Matthias Greger, and Dominik Peters resolved the central open problem of approval-based committee elections posed by Aziz et al. (2017): proving that a core-stable committee always exists and can be computed in polynomial time. By strengthening the core to fractional-deviation core+, applying LP duality to obtain payment certificates, and maximizing a novel harmonic-entropy objective whose key idea emerged from an interactive research session with GPT-6 Astra, the result became the first solved problem in the \"Major Advance\" tier of Epoch AI’s FrontierMath: Open Problems.",
+  "technicalHighlights": [
+    "Resolves the 2017 Aziz–Brill–Conitzer–Elkind–Freeman–Walsh open question by proving the core is always non-empty and polynomial-time computable.",
+    "First \"Major Advance\"-tier problem solved on Epoch AI’s FrontierMath: Open Problems benchmark board.",
+    "Uses a novel harmonic-entropy payment objective discovered in a sustained interactive session with GPT-6 Astra, explicitly credited by the authors and Epoch AI."
+  ],
+  "caveats": "Currently an arXiv preprint (arXiv:2609.11912v2, revised Nov 3, 2026) without Lean formalization; Epoch AI classifies it as a human+AI collaboration rather than a bare-prompt autonomous solve.",
+  "contributors": [
+    "Patrick Becker",
+    "Matthias Greger",
+    "Dominik Peters"
+  ],
+  "institutions": [
+    "CNRS / Université Paris Dauphine-PSL (LAMSADE)",
+    "Technical University of Munich"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 82,
+    "verification": 81,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Settles the defining existence and tractability conjecture of proportional multiwinner voting theory.",
+    "ripple": "Directly impacts participatory budgeting, collective decision-making mechanisms, and AI-assisted theoretical economics.",
+    "verification": "43-page rewritten preprint by the field’s leading researchers (including the problem’s benchmark proposer), undergoing peer review.",
+    "velocity": "Delivered the decisive harmonic-entropy potential function after 9 years of partial approximations."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Becker, Greger & Peters — Existence of the Core in Approval-Based Committee Elections (arXiv:2609.11912)",
+      "url": "https://arxiv.org/abs/2609.11912",
+      "type": "paper"
+    },
+    {
+      "label": "AlphaSignal / Epoch AI Coverage — First Major Advance Solved on FrontierMath: Open Problems",
+      "url": "https://alphasignal.ai/news/gpt-6-astra-cracks-a-decade-old-voting-theory-problem-nobody-could-solve",
+      "type": "explainer"
+    }
+  ]
+}

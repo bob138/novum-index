@@ -1,0 +1,57 @@
+{
+  "id": "caratheodory-conjecture-claude-2026",
+  "title": "Claude-Assisted Smooth C^∞ Counterexample Challenging the 1924 Carathéodory Conjecture",
+  "shortTitle": "Carathéodory Counterexample (Claude)",
+  "date": "2026-08-19",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Differential Geometry",
+    "Convex Geometry",
+    "Umbilic Points"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Anthropic Claude",
+  "verificationStatus": "Contested / Partial",
+  "yearsUnsolved": 102,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Proposes an explicit C^∞ convex-body support function with a single index-2 umbilic point—challenging the 102-year-old Carathéodory conjecture—though actively contested against prior published proofs.",
+  "summary": "On August 19, 2026, Anthropic/Harvard mathematician Levent Alpöge announced on X an explicit family of smooth C^∞ support functions g_k, claiming that g_2 defines a closed, smooth convex surface in ℝ³ with exactly one umbilic point (of index 2)—which would refute the 1924 Carathéodory conjecture in the smooth non-analytic category. Alpöge credited John-Paul Smith and Anthropic’s Claude with checking the explicit construction. Because the result was announced on X without a refereed preprint or Lean formalization and directly conflicts with Guilfoyle & Klingenberg’s 2025 claimed C^{3,α} proof, its status remains contested pending formal verification.",
+  "technicalHighlights": [
+    "Constructs an explicit family of C^∞ support functions g_k whose member g_2 is claimed to yield a smooth convex ovaloid with exactly one umbilic point of index 2.",
+    "Explicitly credits Anthropic’s Claude alongside John-Paul Smith for checking the differential-geometric calculations.",
+    "Highlights the tension between rapid social-media AI math announcements and classical differential geometry (directly contradicting Guilfoyle & Klingenberg, 2025)."
+  ],
+  "caveats": "Indexed candidly as Contested / Partial: announced via X without a peer-reviewed paper or Lean 4 formalization, and directly conflicts with Guilfoyle & Klingenberg’s 2025 claimed proof for C^{3,α} surfaces.",
+  "contributors": [
+    "Levent Alpöge",
+    "John-Paul Smith"
+  ],
+  "institutions": [
+    "Anthropic",
+    "Harvard University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 74,
+    "verification": 45,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "If validated, refuting the 102-year-old smooth Carathéodory conjecture would overturn a famous pillar of global differential geometry.",
+    "ripple": "Prefigured Alpöge and Claude’s November 2026 Lean Riemann Hypothesis effort and sparked intense scrutiny of smooth umbilic claims.",
+    "verification": "Marked low (45) and Contested / Partial: X announcement only, no Lean proof, and conflicts with published 2025 work.",
+    "velocity": "Explicit analytical support-function counterexample constructed and checked within roughly a week."
+  },
+  "enables": [
+    "riemann-hypothesis-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Wikipedia — Carathéodory Conjecture (Summary & X Citation of Alpöge 2026)",
+      "url": "https://en.wikipedia.org/wiki/Carath%C3%A9odory_conjecture",
+      "type": "explainer"
+    }
+  ]
+}

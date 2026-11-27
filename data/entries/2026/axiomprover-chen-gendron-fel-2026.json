@@ -1,0 +1,73 @@
+{
+  "id": "axiomprover-chen-gendron-fel-2026",
+  "title": "AxiomProver Autonomously Proves Fel’s Syzygy and Chen–Gendron k-Differential Conjectures in Lean 4",
+  "shortTitle": "AxiomProver: Fel & Chen–Gendron (Lean)",
+  "date": "2026-02-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Commutative Algebra",
+    "Number Theory",
+    "Algebraic Geometry",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AxiomProver + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Overnight autonomous proof",
+  "isAnchor": false,
+  "whyItMatters": "AxiomProver’s debut breakthrough: autonomously discovered and Lean 4/Mathlib-verified proofs of both Fel’s Conjecture on numerical semigroup syzygies and the Chen–Gendron Conjecture on spin parity of k-differentials.",
+  "summary": "Axiom Math researchers (with Ken Ono, Evan Chen, Dawei Chen, Kenny Lau, Jujian Zhang, Letong Hong, and collaborators) demonstrated AxiomProver’s first pair of genuine autonomous open-conjecture proofs directly from natural-language problem statements. AxiomProver proved Fel’s Conjecture on alternating syzygy power sums of numerical semigroups via exponential generating functions (arXiv:2602.03716, fully formalized in Lean/Mathlib) and solved the Chen–Gendron Conjecture A.10 determining spin parity of k-differentials in genus 0 and 1 overnight via an unexpected Jacobi-symbol reduction (arXiv:2602.03722, formalized in Lean/Mathlib). Both preprints underwent referee revisions in June–July 2026.",
+  "technicalHighlights": [
+    "Autonomously proved Fel’s Conjecture on numerical semigroup syzygies from a natural-language statement and formalized the full proof in Lean/Mathlib (github.com/AxiomMath/fel-polynomial).",
+    "Solved the Chen–Gendron Conjecture on spin parity of k-differentials in genus 0 and 1 overnight via a novel Jacobi-symbol reformulation (github.com/AxiomMath/parity-differential).",
+    "Both papers were revised to address journal referee reports (June–July 2026), laying the foundation for AxiomProver’s later bounded prime gaps and CFSG breakthroughs."
+  ],
+  "caveats": "Note that a separate third AxiomProver paper from the same February 2026 wave (arXiv:2602.05095 on dead ends in square-free walks) was later found to have been proved by Mirsky in 1947 and is deliberately excluded from this entry.",
+  "contributors": [
+    "Evan Chen",
+    "Dawei Chen",
+    "Ken Ono",
+    "Kenny Lau",
+    "Jujian Zhang",
+    "Letong Hong"
+  ],
+  "institutions": [
+    "Axiom Math",
+    "Boston College"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 86,
+    "verification": 96,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Autonomously resolved two genuinely open research conjectures in commutative algebra and moduli of Riemann surfaces.",
+    "ripple": "Launched AxiomProver’s trajectory toward lowering bounded prime gaps to 212 and formalizing the 43.1M-line CFSG.",
+    "verification": "Both proofs are formalized in Lean 4 / Mathlib on public GitHub and have already passed referee-report revisions.",
+    "velocity": "Produced complete novel proofs and Lean formalizations overnight directly from natural-language statements."
+  },
+  "enables": [
+    "bounded-prime-gaps-212-182-2026",
+    "cfsg-enormous-theorem-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Chen et al. — Fel’s Conjecture on Syzygies of Numerical Semigroups (arXiv:2602.03716)",
+      "url": "https://arxiv.org/abs/2602.03716",
+      "type": "paper"
+    },
+    {
+      "label": "Chen, Chen, Lau, Ono & Zhang — Parity of k-differentials in genus zero and one (arXiv:2602.03722)",
+      "url": "https://arxiv.org/abs/2602.03722",
+      "type": "paper"
+    },
+    {
+      "label": "Axiom Math — github.com/AxiomMath/fel-polynomial (Lean 4 Formalization)",
+      "url": "https://github.com/AxiomMath/fel-polynomial",
+      "type": "formal-verification"
+    }
+  ]
+}

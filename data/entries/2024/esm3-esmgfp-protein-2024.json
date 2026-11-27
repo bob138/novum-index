@@ -48,7 +48,8 @@
   },
   "enables": [
     "opencrispr-1-gene-editor-2025",
-    "evo-2-genome-design-2025"
+    "evo-2-genome-design-2025",
+    "lucaprot-161979-rna-viruses-2024"
   ],
   "sources": [
     {

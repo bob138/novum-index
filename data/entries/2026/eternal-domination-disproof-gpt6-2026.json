@@ -1,0 +1,55 @@
+{
+  "id": "eternal-domination-disproof-gpt6-2026",
+  "title": "GPT-6 Astra Autonomously Disproves the γ–θ Eternal Domination Conjecture on a 243-Vertex Graph",
+  "shortTitle": "Eternal Domination Disproof (Lean 4)",
+  "date": "2026-09-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Graph Theory",
+    "Eternal Domination",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6 Astra + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 11,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "GPT-6 Astra autonomously found a 243-vertex strongly regular graph complement refuting the 2015 γ–θ Eternal Domination Conjecture, exhaustively verified over 1.98M triples and formalized in Lean 4.",
+  "summary": "Tom Adamczewski (Epoch AI) and William F. Klostermeyer (University of North Florida, co-proposer of eternal domination conjectures) reported an autonomous refutation of the γ–θ conjecture for eternal dominating sets discovered by GPT-6 Astra. The model identified the complement of the 243-vertex Berlekamp–Van Lint–Seidel graph as a counterexample with domination number γ(G) = γ^∞(G) = 3 strictly less than the clique covering number θ(G), confirmed over all 1,987,821 dominating triples and formally verified in Lean 4.",
+  "technicalHighlights": [
+    "Autonomously discovered the 243-vertex Berlekamp–Van Lint–Seidel complement counterexample satisfying γ(G) = γ^∞(G) = 3 < θ(G).",
+    "Disproves the 11-year-old γ–θ Eternal Domination Conjecture in graph domination theory.",
+    "Verified computationally across all 1,987,821 dominating triples and formally certified in Lean 4."
+  ],
+  "caveats": "Disproof applies to a specific open graph-domination conjecture rather than a Millennium-tier problem; arXiv:2609.11500 is awaiting journal publication, though Lean 4 confirms the finite counterexample.",
+  "contributors": [
+    "Tom Adamczewski",
+    "William F. Klostermeyer"
+  ],
+  "institutions": [
+    "Epoch AI",
+    "University of North Florida"
+  ],
+  "scores": {
+    "foundational": 77,
+    "ripple": 72,
+    "verification": 96,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Cleanly settles an 11-year-old conjecture in graph domination theory with an unexpected strongly regular algebraic construction.",
+    "ripple": "Shows frontier models autonomously connecting algebraic coding theory graphs to combinatorial domination conjectures.",
+    "verification": "Finite 243-vertex counterexample checked exhaustively and formalized in Lean 4 with the domain specialist as co-author.",
+    "velocity": "Found autonomously by GPT-6 Astra without human construction hints."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Adamczewski & Klostermeyer — A Counterexample to an Eternal Domination Conjecture (arXiv:2609.11500)",
+      "url": "https://arxiv.org/abs/2609.11500",
+      "type": "paper"
+    }
+  ]
+}

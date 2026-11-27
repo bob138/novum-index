@@ -48,7 +48,9 @@
   },
   "enables": [
     "erdos-unit-distance-disproof-2026",
-    "deepmind-formal-proof-search-2026"
+    "deepmind-formal-proof-search-2026",
+    "erdos-593-1177-aristotle-lean-2026",
+    "erdos-1-disproof-gpt6-lean-2026"
   ],
   "sources": [
     {

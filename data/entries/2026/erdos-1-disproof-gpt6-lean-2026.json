@@ -1,0 +1,60 @@
+{
+  "id": "erdos-1-disproof-gpt6-lean-2026",
+  "title": "GPT-6 Astra Autonomously Disproves Erdős Problem #1 (Distinct Subset Sums) in Lean 4",
+  "shortTitle": "Erdős #1 Disproof (GPT-6 Astra, Lean)",
+  "date": "2026-08-28",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Additive Combinatorics",
+    "Number Theory",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6 Astra + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 95,
+  "aiTimeToSolve": "27.1 hrs ($405)",
+  "isAnchor": false,
+  "whyItMatters": "Autonomously refutes Paul Erdős’s 1931 Problem #1 (\"perhaps my first serious problem\", $500 prize) in 27.1 hours for $405 with zero human steering, verified in Lean 4 + Comparator.",
+  "summary": "As part of Epoch AI and Thomas F. Bloom’s FrontierMath Erdős evaluation (arXiv:2609.25050), GPT-6 Astra autonomously disproved Erdős Problem #1—posed in 1931 and famously called by Paul Erdős \"perhaps my first serious problem\"—in 27.1 working hours and $405 of compute with zero human steering. The proof was checked end-to-end in Lean 4 via Comparator and NanoDa (github.com/tadamcz/erdos1), alongside standardized $300-budget Lean 4 resolutions of Erdős Problems #74 (disproved) and #126 (proved) where four competing frontier models scored 0/68.",
+  "technicalHighlights": [
+    "Autonomously disproved Paul Erdős’s iconic 1931 Problem #1 ($500 prize, 95 years open) with zero human steering in 27.1 working hours ($405).",
+    "Verified independently in Lean 4 using Comparator and NanoDa with zero sorrys (github.com/tadamcz/erdos1).",
+    "In the companion standardized FrontierMath Erdős benchmark (arXiv:2609.25050), GPT-6 Astra also solved Erdős #74 and #126 in Lean 4 while all other tested models scored 0/68."
+  ],
+  "caveats": "Erdős #1 was resolved during extended-budget follow-up runs ($405 / 27.1 hrs) beyond the strict $300 standardized benchmark cap under which Astra solved #74 and #126; formal statement alignment was independently checked with Thomas Bloom.",
+  "contributors": [
+    "Tom Adamczewski",
+    "Thomas F. Bloom"
+  ],
+  "institutions": [
+    "Epoch AI",
+    "University of Manchester"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 86,
+    "verification": 97,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Settles Erdős Problem #1—a 95-year-old $500-prize flagship of additive combinatorics.",
+    "ripple": "Established FrontierMath Erdős as the gold-standard machine-checked benchmark for genuine open-problem math discovery.",
+    "verification": "Machine-checked in Lean 4 with both Comparator and NanoDa, audited by erdosproblems.com curator Thomas Bloom.",
+    "velocity": "Zero-steering autonomous refutation of a 95-year-old problem in 27.1 hours for $405."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Adamczewski — github.com/tadamcz/erdos1 (Lean 4 & Comparator Proof of Erdős #1)",
+      "url": "https://github.com/tadamcz/erdos1",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Adamczewski & Bloom — FrontierMath Erdős (arXiv:2609.25050)",
+      "url": "https://arxiv.org/abs/2609.25050",
+      "type": "paper"
+    }
+  ]
+}

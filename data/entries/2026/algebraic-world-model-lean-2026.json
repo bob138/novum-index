@@ -1,0 +1,57 @@
+{
+  "id": "algebraic-world-model-lean-2026",
+  "title": "Algebraic World Model Induces Category-Theoretic Rules and Proves Impossibility in Lean 4",
+  "shortTitle": "Algebraic World Model (Lean 4 Proofs)",
+  "date": "2026-10-29",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Formal Verification",
+    "World Models",
+    "Category Theory",
+    "Autonomous Reasoning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Algebraic World Model (AWM) + Claude Opus 5 + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Bridges empirical exploration and formal mathematics: autonomously discovers unknown environment laws, formalizes them in Lean 4, and outputs kernel-checked impossibility proofs where frontier LLMs score 0/12.",
+  "summary": "Researchers at Tsinghua University IIIS led by Andrew Chi-Chih Yao and Yang Yuan introduced the Algebraic World Model (AWM), a neuro-symbolic agent (paired with Claude Opus 5) that actively probes unknown environments, abstracts their transition dynamics into typed category-theoretic algebraic structures, and compiles those models into Lean 4. Beyond clearing all 183 levels across all 25 public ARC-AGI-3 interactive environments (99.9 score using 43% of human baseline actions), AWM autonomously constructs closed, kernel-checked Lean 4 impossibility proofs demonstrating that no legal action sequence can reach a goal on unsolvable levels (6/6 runs vs. 0/12 for Claude Opus 5.5 and GPT-6 Astra).",
+  "technicalHighlights": [
+    "Induces formal category-theoretic algebraic specifications directly from black-box environment interactions and verifies them in the Lean 4 kernel.",
+    "Autonomously constructs closed Lean 4 impossibility proofs excluding all legal winning sequences on unsolvable levels (6/6 runs vs. 0/12 for frontier LLM baselines).",
+    "Clears all 183 levels across all 25 public ARC-AGI-3 interactive games with a 99.9 score at 43% of human baseline actions."
+  ],
+  "caveats": "Lean kernel verification guarantees the impossibility proofs hold for the induced formal model, while faithfulness of the induced model to the underlying environment relies on active empirical testing; manuscript is an October 2026 preprint.",
+  "contributors": [
+    "Guancheng Pan",
+    "Qixin Tan",
+    "Yang Yuan",
+    "Andrew Chi-Chih Yao"
+  ],
+  "institutions": [
+    "Tsinghua University (IIIS)"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 85,
+    "verification": 90,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates end-to-end transition from black-box empirical exploration to kernel-checked formal impossibility theorems.",
+    "ripple": "Connects category-theoretic world modeling with formal verification for robotics, software safety, and autonomous science.",
+    "verification": "Impossibility proofs are machine-checked by the Lean 4 kernel with zero sorry placeholders, alongside full empirical evaluation.",
+    "velocity": "Autonomously synthesizes rules, plans, and formal proofs without human-authored formal specifications."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Pan, Tan, Yuan & Yao — Algebraic World Model: From Exploration to Proofs (arXiv:2610.40503)",
+      "url": "https://arxiv.org/abs/2610.40503",
+      "type": "paper"
+    }
+  ]
+}

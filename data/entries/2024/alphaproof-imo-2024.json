@@ -49,7 +49,10 @@
     "imo-2025-gold-natural-language",
     "deepmind-formal-proof-search-2026",
     "alphaproof-code-signal-2026",
-    "hadwiger-covering-3d-2026"
+    "hadwiger-covering-3d-2026",
+    "axiomprover-chen-gendron-fel-2026",
+    "vericontest-rust-lean-claude-2026",
+    "algebraic-world-model-lean-2026"
   ],
   "sources": [
     {

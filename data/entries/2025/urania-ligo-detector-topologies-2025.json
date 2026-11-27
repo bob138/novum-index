@@ -45,7 +45,9 @@
     "verification": "Peer-reviewed in Physical Review X (15: 021012) with open-source physics-simulator verification across all 50 topologies.",
     "velocity": "Systematically explored interferometer design spaces that took human LIGO collaborations decades to map incrementally."
   },
-  "enables": [],
+  "enables": [
+    "metadesign-quantum-experiments-2026"
+  ],
   "sources": [
     {
       "label": "Physical Review X — Digital Discovery of Interferometric Gravitational Wave Detectors (Apr 2025)",

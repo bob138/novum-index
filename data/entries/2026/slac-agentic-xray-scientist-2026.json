@@ -1,0 +1,61 @@
+{
+  "id": "slac-agentic-xray-scientist-2026",
+  "title": "MCP-Equipped Autonomous AI X-Ray Scientist Operates a Live SLAC Synchrotron Beamline",
+  "shortTitle": "SLAC Autonomous X-Ray Beamline AI",
+  "date": "2026-07-01",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Synchrotron X-Ray Scattering",
+    "Autonomous Laboratories",
+    "Condensed Matter Physics"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "SLAC MCP Agentic X-Ray Scientist",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First peer-reviewed MCP-powered LLM agent deployed directly on a live synchrotron diffractometer (SSRL at SLAC), autonomously aligning single crystals and solving orientation matrices.",
+  "summary": "Published in Nature Machine Intelligence, physicists from SLAC National Accelerator Laboratory, Stanford, MIT, and Northeastern deployed an agentic AI X-ray scientist built on the Model Context Protocol (MCP) directly onto a live six-circle diffractometer at the Stanford Synchrotron Radiation Lightsource (SSRL). Operating real beamline motors, detectors, and scattering analysis tools with human-level physical reasoning, the agent autonomously aligned single-crystal samples, hunted reference Bragg reflections, determined crystallographic orientation matrices, and recovered dynamically from unexpected hardware and scattering anomalies.",
+  "technicalHighlights": [
+    "First peer-reviewed demonstration of an MCP-equipped LLM scientific agent directly controlling a live national-facility synchrotron X-ray beamline (SSRL).",
+    "Autonomously executed sample alignment, Bragg peak searches, and orientation-matrix determination on real single crystals.",
+    "Adapted in real time to unexpected experimental conditions and detector anomalies without rigid pre-scripted workflows."
+  ],
+  "caveats": "Focuses on autonomous beamline alignment, peak discovery, and crystallographic setup rather than discovering a new quantum phase of matter on its own; safety interlocks remain hardware-enforced.",
+  "contributors": [
+    "Zhantao Chen",
+    "Alexander N. Petsch",
+    "Aidan J. Israelski",
+    "Rajan Plumley",
+    "Vivek Thampy",
+    "Joshua J. Turner"
+  ],
+  "institutions": [
+    "SLAC National Accelerator Laboratory",
+    "Stanford University",
+    "MIT",
+    "Northeastern University"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 88,
+    "verification": 93,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Establishes the standardized MCP agentic blueprint for autonomous control of billion-dollar national X-ray and neutron user facilities.",
+    "ripple": "Directly generalizes across synchrotrons, XFELs, neutron diffractometers, and electron microscopes worldwide.",
+    "verification": "Peer-reviewed in Nature Machine Intelligence (2026) with live experimental validation on SSRL hardware.",
+    "velocity": "Compresses complex manual six-circle diffractometer alignment and reciprocal-space mapping into autonomous runs."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Chen et al. — Nature Machine Intelligence 8:1075–1086 (2026), doi:10.1038/s42256-026-01261-5",
+      "url": "https://doi.org/10.1038/s42256-026-01261-5",
+      "type": "paper"
+    }
+  ]
+}

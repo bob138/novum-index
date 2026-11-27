@@ -1,0 +1,53 @@
+{
+  "id": "cannons-conjecture-lean-openai-2026",
+  "title": "OpenAI Internal Model Formalizes a Modulus Proof of Cannon’s Conjecture in Lean 4",
+  "shortTitle": "Cannon’s Conjecture (Lean 4)",
+  "date": "2026-09-23",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Geometric Group Theory",
+    "3-Manifold Topology",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Math Model + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 32,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Formally proves James Cannon’s 1994 conjecture in Lean 4 + Comparator: every word-hyperbolic group with Gromov boundary S² acts properly and cocompactly by isometries on hyperbolic 3-space ℍ³.",
+  "summary": "In family 246 of OpenAI’s formal math repository (CannonGeometricAction.lean), an internal OpenAI frontier reasoning model produced and machine-verified a modulus-based Lean 4 + Comparator proof of Cannon’s Conjecture (1994)—one of the flagship open problems of geometric group theory and 3-manifold topology. The formalized theorem proves that every Gromov word-hyperbolic group whose visual boundary is homeomorphic to the 2-sphere S² admits a proper, cocompact isometric action on ℍ³ with finite kernel.",
+  "technicalHighlights": [
+    "Targets Cannon’s 1994 Conjecture (32 years open), a foundational bridge between Gromov hyperbolic groups and Thurston’s geometrization of 3-manifolds.",
+    "Uses a discrete conformal modulus argument formalized end-to-end in Lean 4 with Comparator challenge specification (CannonGeometricAction.lean).",
+    "Proves existence of a proper cocompact isometric action on ℍ³ with finite kernel for any word-hyperbolic group with S² boundary."
+  ],
+  "caveats": "Released inside OpenAI’s unrefereed github.com/openai/math collection; while Lean 4 + Comparator checks kernel soundness, human specialist audit of the formal definitions (Gromov boundary and hyperbolic action) remains essential.",
+  "contributors": [
+    "OpenAI Frontier Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 82,
+    "verification": 88,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Settles one of the major post-geometrization conjectures in geometric group theory and low-dimensional topology.",
+    "ripple": "Impacts quasiconformal analysis on metric spaces, Kleinian groups, and formalization of modern topology in Lean.",
+    "verification": "Machine-checked in Lean 4 with Comparator challenge files, though external specialist definition audits are still ongoing.",
+    "velocity": "Autonomous proof synthesis and Lean formalization of a deep 32-year-old topological conjecture."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI — github.com/openai/math (Family 246: A Modulus Proof of Cannon’s Conjecture)",
+      "url": "https://github.com/openai/math/blob/main/lean/docs/246.md",
+      "type": "formal-verification"
+    }
+  ]
+}

@@ -45,7 +45,10 @@
   "enables": [
     "kothe-conjecture-disproof-2026",
     "smale-mean-value-disproof-2026",
-    "dittert-conjecture-lean-2026"
+    "dittert-conjecture-lean-2026",
+    "erdos-1-disproof-gpt6-lean-2026",
+    "eternal-domination-disproof-gpt6-2026",
+    "approval-committee-core-gpt6-2026"
   ],
   "sources": [
     {

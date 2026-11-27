@@ -1,0 +1,53 @@
+{
+  "id": "plasma-erdos-173-lean-2026",
+  "title": "Plasma AI Formally Proves Erdős Problem #173 on Monochromatic Congruent Triangles in the Plane",
+  "shortTitle": "Erdős #173: Planar Triangles (Lean 4)",
+  "date": "2026-10-19",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Euclidean Ramsey Theory",
+    "Discrete Geometry",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Plasma AI (GPT-6 Astra + Claude Opus 5.5 + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 53,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Resolves the 53-year-old 1973 Erdős–Graham–Montgomery–Rothschild–Spencer–Straus problem in Euclidean Ramsey theory with a Comparator-checked Lean 4 proof.",
+  "summary": "Plasma AI combined GPT-6 Astra (in OpenAI Codex) and Claude Opus 5.5 (in Claude Code), building on OpenAI’s open-source Lean rigidity library, to autonomously discover and formally verify a complete Lean 4 proof of Erdős Problem #173 (posed in 1973). The theorem proves that in any arbitrary 2-coloring of the Euclidean plane ℝ², every non-equilateral triangle—including collinear triples—admits a monochromatic congruent copy, verified against Comparator with standard Lean axioms only.",
+  "technicalHighlights": [
+    "Resolves Erdős Problem #173 (Erdős–Graham–Montgomery–Rothschild–Spencer–Straus, 1973), open for 53 years.",
+    "Establishes monochromatic congruent copies for all non-equilateral triangles (and degenerate collinear triples) in every 2-coloring of ℝ².",
+    "Fully formalized in Lean 4 and validated via Comparator using only standard axioms, publicly auditable on GitHub."
+  ],
+  "caveats": "Published as a public Lean 4 GitHub repository rather than a peer-reviewed journal paper, though the mathematical statement and proof are machine-checked by Lean 4 and Comparator.",
+  "contributors": [
+    "Plasma AI Research Team"
+  ],
+  "institutions": [
+    "Plasma AI"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 78,
+    "verification": 96,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Settles a classic 1973 foundational question of Euclidean Ramsey theory posed by Erdős, Graham, Spencer, and collaborators.",
+    "ripple": "Demonstrates cross-lab multi-agent theorem proving (GPT-6 Astra + Claude Opus 5.5) composing over open Lean mathematical libraries.",
+    "verification": "Machine-checked in Lean 4 and audited with Comparator against standard axioms.",
+    "velocity": "Closed a 53-year-old problem in geometric combinatorics via autonomous multi-model proof search and formalization."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Plasma AI — github.com/plasma-ai/erdos-173 (Lean 4 & Comparator Proof)",
+      "url": "https://github.com/plasma-ai/erdos-173",
+      "type": "formal-verification"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "linear-hadwiger-conjecture-gpt6-2026",
+  "title": "GPT-6 Astra Finds Proof of the Linear Hadwiger Conjecture in Graph Coloring",
+  "shortTitle": "Linear Hadwiger Conjecture (GPT-6)",
+  "date": "2026-10-04",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Extremal Graph Theory",
+    "Graph Minors",
+    "Graph Coloring"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6 Astra",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 42,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Proves K_t-minor-free graphs are Ct-colorable for an absolute constant C—eliminating the final log log log t barrier—with the authors crediting GPT-6 Astra for finding the proof.",
+  "summary": "Sergey Norin (McGill University) and Raphael Steiner (ETH Zürich) announced a proof of the celebrated Linear Hadwiger Conjecture (popularized by Kawarabayashi and Reed after Kostochka and Thomason’s 1984 O(t√log t) bound): there exists an absolute constant C ∈ ℕ such that every K_t-minor-free graph is Ct-colorable. Removing the final iterated-logarithmic factor remaining after Delcourt–Postle’s O(t log log t) and subsequent O(t log log log t) bounds, the authors explicitly state in the abstract that \"the proof was found by GPT-6 Astra, following the directions by the authors.\"",
+  "technicalHighlights": [
+    "Resolves the Linear Hadwiger Conjecture: every K_t-minor-free graph has chromatic number at most C·t for an absolute constant C.",
+    "Closes the decades-long asymptotic progression from O(t√log t) (1984) and O(t log log t) (2021) down to exact linear O(t).",
+    "Authors Sergey Norin and Raphael Steiner explicitly credit GPT-6 Astra with discovering the proof under their mathematical guidance."
+  ],
+  "caveats": "Published as an October 2026 arXiv preprint (arXiv:2610.05291) undergoing expert community refereeing; human-checked prose proof without a Lean formalization.",
+  "contributors": [
+    "Sergey Norin",
+    "Raphael Steiner"
+  ],
+  "institutions": [
+    "McGill University",
+    "ETH Zürich"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 87,
+    "verification": 80,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Resolves one of the marquee open conjectures in modern structural and extremal graph theory.",
+    "ripple": "Advances graph-minor coloring theory and marks a watershed where top graph theorists credit an LLM with finding the core proof.",
+    "verification": "Checked and co-authored by two foremost specialists on Hadwiger’s conjecture, though still in preprint peer review.",
+    "velocity": "Eliminated the stubborn sub-logarithmic barrier through interactive guidance of GPT-6 Astra."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Norin & Steiner — A Proof of the Linear Hadwiger Conjecture (arXiv:2610.05291)",
+      "url": "https://arxiv.org/abs/2610.05291",
+      "type": "paper"
+    }
+  ]
+}

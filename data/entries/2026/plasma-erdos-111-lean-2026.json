@@ -1,0 +1,53 @@
+{
+  "id": "plasma-erdos-111-lean-2026",
+  "title": "Plasma AI Formally Proves Erdős Problem #111 on Bipartite-Edge Cuts of Uncountably Chromatic Graphs",
+  "shortTitle": "Erdős #111: Uncountable Graphs (Lean)",
+  "date": "2026-10-17",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Infinitary Combinatorics",
+    "Graph Theory",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Plasma AI (GPT-6 Astra + Claude Opus 5.5 + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 45,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Settles the 45-year-old 1981 Erdős–Hajnal–Szemerédi conjecture (Erdős #111) in infinitary graph theory via a public, Comparator-verified Lean 4 proof.",
+  "summary": "Using GPT-6 Astra in Codex together with Claude Opus 5.5 in Claude Code, Plasma AI produced and formally verified a complete Lean 4 proof of Erdős Problem #111, posed by Erdős, Hajnal, and Szemerédi in 1981. The theorem proves that for every graph G that is not countably colorable (and in particular every graph of chromatic number ℵ₁), the function h_G(n)—measuring the maximum number of edges that must be deleted from an n-vertex subgraph to make it bipartite—satisfies h_G(n)/n → ∞ as n → ∞.",
+  "technicalHighlights": [
+    "Resolves Erdős Problem #111 (Erdős–Hajnal–Szemerédi, 1981), open for 45 years.",
+    "Proves h_G(n)/n → ∞ for every non-countably-colorable graph, including graphs with chromatic number ℵ₁.",
+    "Machine-checked in Lean 4 with Comparator verification and zero sorrys on public GitHub."
+  ],
+  "caveats": "Released directly as a public Lean 4 repository without an accompanying refereed journal article, though the formal proof is independently reproducible in Lean 4.",
+  "contributors": [
+    "Plasma AI Research Team"
+  ],
+  "institutions": [
+    "Plasma AI"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 75,
+    "verification": 96,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Resolves a canonical 1981 Erdős–Hajnal–Szemerédi problem linking uncountable chromatic number to finite subgraph structure.",
+    "ripple": "Reinforces multi-agent autonomous Lean proving on subtle infinitary combinatorics.",
+    "verification": "Complete machine-checked Lean 4 proof validated under Comparator with standard axioms.",
+    "velocity": "Settled a 45-year-old infinitary graph-theory problem autonomously."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Plasma AI — github.com/plasma-ai/erdos-111 (Lean 4 & Comparator Proof)",
+      "url": "https://github.com/plasma-ai/erdos-111",
+      "type": "formal-verification"
+    }
+  ]
+}

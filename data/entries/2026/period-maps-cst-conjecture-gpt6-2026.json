@@ -1,0 +1,56 @@
+{
+  "id": "period-maps-cst-conjecture-gpt6-2026",
+  "title": "GPT-6 Discovers Counterexample Disproving the p-Adic Hodge-Theory C_st Conjecture on Open Discs",
+  "shortTitle": "p-Adic C_st Conjecture Disproof (GPT-6)",
+  "date": "2026-11-20",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Arithmetic Geometry",
+    "p-Adic Hodge Theory",
+    "Non-Archimedean Geometry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6, Claude Fable 5.2 & Claude Opus 5.5",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Refutes the rigid-analytic C_st conjecture in p-adic Hodge theory via an explicit GPT-6 counterexample family of elliptic curves over an open disc and a non-Kähler elliptic surface over a 2D polydisc.",
+  "summary": "Pierre Colmez, Wiesława Nizioł, and Xinyu Shao construct explicit counterexamples to the open-disc rigid-analytic C_st conjecture in p-adic Hodge theory and establish a sharp local criterion for semistable comparison. The authors explicitly credit GPT-6 with discovering the degree-1 counterexample family of elliptic curves over an open disc (Section 3.1) as well as the higher-dimensional non-Kähler elliptic surface counterexample over a two-dimensional polydisc (Section 4.3), while GPT-6, Claude Fable 5.2, and Claude Opus 5.5 assisted in proving the accompanying local criterion.",
+  "technicalHighlights": [
+    "GPT-6 discovered the explicit elliptic curve family over an open p-adic disc violating the C_st conjecture in cohomological degree 1.",
+    "GPT-6 also constructed a higher-dimensional non-Kähler elliptic surface counterexample over a 2D polydisc.",
+    "Authored by leading p-adic Hodge theorists Pierre Colmez and Wiesława Nizioł (IMJ-PRG / CNRS) with Xinyu Shao, establishing a new local criterion for period maps."
+  ],
+  "caveats": "Released as an arXiv preprint (arXiv:2611.27054) undergoing peer review; proofs are human-written and human-checked rather than formalized in Lean 4.",
+  "contributors": [
+    "Pierre Colmez",
+    "Wiesława Nizioł",
+    "Xinyu Shao"
+  ],
+  "institutions": [
+    "CNRS / IMJ-PRG / Sorbonne Université",
+    "Leibniz Universität Hannover"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 74,
+    "verification": 78,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Refutes a central rigid-analytic conjecture in p-adic Hodge theory and clarifies the exact boundary of semistable period-map comparison.",
+    "ripple": "Directly shapes active research in p-adic geometry, rigid-analytic cohomology, and AI-assisted arithmetic geometry.",
+    "verification": "Authored and checked by top domain experts in p-adic Hodge theory, though still an arXiv preprint awaiting journal refereeing.",
+    "velocity": "GPT-6 surfaced both the degree-1 and 2D polydisc counterexamples rapidly during active frontier research."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Colmez, Nizioł & Shao — Period maps and the C_st conjecture (arXiv:2611.27054)",
+      "url": "https://arxiv.org/abs/2611.27054",
+      "type": "paper"
+    }
+  ]
+}

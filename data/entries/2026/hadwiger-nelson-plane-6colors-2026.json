@@ -1,0 +1,60 @@
+{
+  "id": "hadwiger-nelson-plane-6colors-2026",
+  "title": "OpenAI Internal Model Proves the Euclidean Plane Is Not Five-Colorable (χ(ℝ²) ≥ 6) in Lean 4",
+  "shortTitle": "Hadwiger–Nelson: χ(ℝ²) ≥ 6 (Lean 4)",
+  "date": "2026-09-23",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Discrete Geometry",
+    "Graph Coloring",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Math Model + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 76,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Pushes the chromatic number of the Euclidean plane from ≥ 5 (de Grey, 2018) to ≥ 6—narrowing the 1950 Hadwiger–Nelson problem to {6, 7} with an independently kernel-replayed 70-module Lean 4 proof.",
+  "summary": "As a centerpiece of OpenAI’s mathematical formalization suite (family 158, Erdős Problem #508), an unreleased internal OpenAI model constructed and formally verified in Lean 4 + Comparator a proof that the unit-distance graph of the Euclidean plane cannot be 5-colored, raising the lower bound on the chromatic number of the plane to χ(ℝ²) ≥ 6 for the first time since Aubrey de Grey’s 2018 breakthrough (≥ 5). Independent verification by Erdős Problem a Day replayed all 70 Lean 4 modules from scratch using standard axioms only and audited the proof with seven hostile referee checks, finding zero logical gaps.",
+  "technicalHighlights": [
+    "Advances the 1950 Hadwiger–Nelson problem (Erdős #508) for the first time since 2018, narrowing χ(ℝ²) to either 6 or 7.",
+    "Formalized across 70 Lean 4 modules verified with Comparator and standard axioms only.",
+    "Independently kernel-replayed and audited with zero gaps by Erdős Problem a Day’s multi-referee review."
+  ],
+  "caveats": "Part of OpenAI’s non-peer-reviewed bulk math repository, though unlike unrefereed manuscripts in the dump, family 158 has been independently kernel-replayed and line-audited.",
+  "contributors": [
+    "OpenAI Frontier Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 93,
+    "ripple": 87,
+    "verification": 97,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Resolves a landmark step on one of the most famous open problems in discrete geometry (1950), narrowing χ(ℝ²) to just two possibilities.",
+    "ripple": "Directly supplied rigidity lemmas reused by Plasma AI to prove Erdős #173 and catalyzed community formal-audit workflows.",
+    "verification": "70-module Lean 4 + Comparator proof independently kernel-replayed and audited with zero gaps.",
+    "velocity": "Surpassed decades of SAT-assisted human searches for 6-chromatic unit-distance graphs."
+  },
+  "enables": [
+    "plasma-erdos-173-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "OpenAI — github.com/openai/math (Family 158: The Euclidean Plane Is Not Five-Colorable)",
+      "url": "https://github.com/openai/math/blob/main/lean/docs/158.md",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Erdős Problem a Day — Independent Kernel Replay & Referee Audit of Problem #508",
+      "url": "https://erdosproblemaday.com/day/508-openai-plane-not-five-colorable-refereed",
+      "type": "explainer"
+    }
+  ]
+}

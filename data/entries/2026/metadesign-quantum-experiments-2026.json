@@ -1,0 +1,61 @@
+{
+  "id": "metadesign-quantum-experiments-2026",
+  "title": "MetaDesign Discovers Symbolic Python Blueprints for Infinite Families of Quantum Experiments",
+  "shortTitle": "MetaDesign: Symbolic Quantum Blueprints",
+  "date": "2026-02-19",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Optics",
+    "Quantum Information",
+    "Symbolic Discovery"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "MetaDesign (Seq2Seq Symbolic Transformer)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Peer-reviewed in Nature Machine Intelligence: generates human-readable Python meta-solutions construct_setup(N) for infinite families of quantum-optical experiments, discovering two previously unknown generalizable setups.",
+  "summary": "Mario Krenn’s Artificial Scientist Lab at the Max Planck Institute for the Science of Light introduced MetaDesign, a sequence-to-sequence transformer that moves beyond one-off numerical optimization to emit concise, human-readable Python functions construct_setup(N) generating experimental layouts for arbitrarily large system sizes N. Applied across quantum optics, quantum circuits, and entangled graph states, MetaDesign discovered two previously unknown generalizable quantum-optics setups and extrapolated cleanly to larger photon and qubit numbers beyond its training distribution.",
+  "technicalHighlights": [
+    "Outputs interpretable symbolic Python meta-solutions construct_setup(N) valid for infinite families of quantum experiments rather than fixed-size numerical graphs.",
+    "Discovered two previously unknown generalizable quantum-optics experimental constructions for high-dimensional entangled states.",
+    "Extrapolates beyond training system sizes across quantum optical setups, circuits, and graph-state preparation."
+  ],
+  "caveats": "Designs are validated mathematically and in exact quantum-optical simulation rather than physically built on an optical table in this paper.",
+  "contributors": [
+    "Sören Arlt",
+    "Haonan Duan",
+    "Felix Li",
+    "Mario Krenn"
+  ],
+  "institutions": [
+    "Max Planck Institute for the Science of Light"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 82,
+    "verification": 92,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Shifts AI experimental design from fixed-N black-box optimization to human-readable, generalizable symbolic laws valid for all N.",
+    "ripple": "Directly advances interpretable AI for quantum optics, photonic state engineering, and automated physics discovery.",
+    "verification": "Peer-reviewed in Nature Machine Intelligence (Feb 2026) with open-source code and exact algebraic/quantum verification.",
+    "velocity": "Synthesizes generalizable N-body experimental recipes that humans historically derived case by case."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Arlt et al. — Nature Machine Intelligence 8(2):148–157 (2026), doi:10.1038/s42256-025-01153-0",
+      "url": "https://doi.org/10.1038/s42256-025-01153-0",
+      "type": "paper"
+    },
+    {
+      "label": "Artificial Scientist Lab — github.com/artificial-scientist-lab/metadesign",
+      "url": "https://github.com/artificial-scientist-lab/metadesign",
+      "type": "code"
+    }
+  ]
+}

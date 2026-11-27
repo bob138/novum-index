@@ -46,7 +46,9 @@
     "verification": "Peer-reviewed in Nature (July 2026) with experimental demonstration on Willow hardware and public Zenodo dataset.",
     "velocity": "Outperformed exhaustive human-in-the-loop expert calibration by 20% while adapting continuously to hardware drift."
   },
-  "enables": [],
+  "enables": [
+    "qora-quantum-control-nv-2026"
+  ],
   "sources": [
     {
       "label": "Nature (2026): Reinforcement learning control of quantum error correction",

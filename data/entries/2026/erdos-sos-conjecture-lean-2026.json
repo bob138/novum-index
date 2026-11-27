@@ -65,5 +65,8 @@
       "type": "paper"
     }
   ],
-  "enables": []
+  "enables": [
+    "linear-hadwiger-conjecture-gpt6-2026",
+    "plasma-erdos-111-lean-2026"
+  ]
 }

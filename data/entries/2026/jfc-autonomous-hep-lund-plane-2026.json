@@ -1,0 +1,58 @@
+{
+  "id": "jfc-autonomous-hep-lund-plane-2026",
+  "title": "Autonomous AI Agent Produces First Lund Plane Measurement on LEP Collider Data",
+  "shortTitle": "Autonomous HEP Agent: LEP Lund Plane",
+  "date": "2026-03-20",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Experimental High Energy Physics",
+    "Jet Substructure (QCD)",
+    "Autonomous Science"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Just Furnish Context (JFC) + Claude Code",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First genuinely novel experimental particle-physics measurement—the Lund jet-substructure plane on open LEP collider data—executed end-to-end autonomously by a Claude Code agent.",
+  "summary": "MIT and IAIFI experimental particle physicists built Just Furnish Context (JFC), a minimal multi-agent analysis harness powered by Claude Code with access to open collider datasets (ALEPH, DELPHI, CMS), analysis codebases, and HEP literature. Without bespoke analysis scaffolding, the agent autonomously performed event selection, background estimation, systematic uncertainty quantification, statistical inference, and paper drafting—reproducing CMS Run 1 H → τ⁺τ⁻ and producing the first-ever Lund plane QCD measurement on archived LEP e⁺e⁻ collider data.",
+  "technicalHighlights": [
+    "Autonomously executed every stage of an experimental HEP analysis: event selection, backgrounds, systematics, statistical fits, and paper drafting.",
+    "Produced the first Lund plane jet-substructure measurement on archived LEP collider open data—a genuinely novel experimental physics result.",
+    "Validated methodology by independently reproducing benchmark electroweak, QCD, and CMS Run 1 H → τ⁺τ⁻ analyses across ALEPH, DELPHI, and CMS open datasets."
+  ],
+  "caveats": "Released as an arXiv preprint (arXiv:2603.20179v3, revised June 2026) undergoing HEP community peer review; operates on archived open collider data rather than live detector triggers.",
+  "contributors": [
+    "Eric A. Moreno",
+    "Samuel Bright-Thonney",
+    "Andrzej Novak",
+    "Dolores Garcia",
+    "Philip Harris"
+  ],
+  "institutions": [
+    "MIT",
+    "IAIFI"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 86,
+    "verification": 82,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates that general-purpose coding agents can autonomously conduct a complete, novel experimental particle-physics measurement.",
+    "ripple": "Reshapes collider data-analysis workflows across CERN, Fermilab, and open-data reinterpretation initiatives.",
+    "verification": "Cross-checked against established CMS Run 1 Higgs analyses and reviewed by MIT/IAIFI experimental physicists, pending journal publication.",
+    "velocity": "Compresses months-long graduate-level HEP analysis pipelines into autonomous agentic runs."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Moreno et al. — AI Agents Can Already Autonomously Perform Experimental High Energy Physics (arXiv:2603.20179)",
+      "url": "https://arxiv.org/abs/2603.20179",
+      "type": "paper"
+    }
+  ]
+}
