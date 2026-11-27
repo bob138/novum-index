@@ -1,8 +1,3 @@
-import './styles/tokens.css';
-import './styles/base.css';
-import './styles/components.css';
-
-import { loadIndexDataset } from './dataLoader.js';
 let dataset = null;
 import {
   DISCIPLINE_META,
@@ -848,171 +843,200 @@ function renderPage() {
   });
 }
 
-function attachListeners() {
+function resetStateForMount() {
+  state.theme = loadInitialTheme();
+  state.groupBy = 'family';
+  state.sortBy = 'cumulativeImpact';
+  state.attribution = 'fractional';
+  state.paradigm = 'all';
+  state.discipline = 'all';
+  state.era = 'all';
+  state.minBreakthroughs = 1;
+  state.rubricPreset = 'balanced';
+  state.search = '';
+  state.expandedIds.clear();
+}
+
+function attachListeners(signal) {
   const app = document.getElementById('app');
 
-  app.addEventListener('click', (e) => {
-    if (e.target.closest('#theme-toggle-btn')) {
-      state.theme = state.theme === 'dark' ? 'light' : 'dark';
-      applyTheme(state.theme, { persist: true });
-      renderPage();
-      return;
-    }
-
-    const groupBtn = e.target.closest('[data-group-by]');
-    if (groupBtn) {
-      state.groupBy = groupBtn.dataset.groupBy;
-      state.expandedIds.clear();
-      renderPage();
-      return;
-    }
-
-    const attrBtn = e.target.closest('[data-attribution]');
-    if (attrBtn) {
-      state.attribution = attrBtn.dataset.attribution;
-      renderPage();
-      return;
-    }
-
-    const sortBtn = e.target.closest('[data-sort-by]');
-    if (sortBtn) {
-      state.sortBy = sortBtn.dataset.sortBy;
-      renderPage();
-      return;
-    }
-
-    const chartBtn = e.target.closest('[data-chart-view]');
-    if (chartBtn) {
-      state.chartView = chartBtn.dataset.chartView;
-      renderResultsRegion();
-      return;
-    }
-
-    const quadYBtn = e.target.closest('[data-quadrant-y]');
-    if (quadYBtn) {
-      state.quadrantY = quadYBtn.dataset.quadrantY;
-      renderResultsRegion();
-      return;
-    }
-
-    const pBarBtn = e.target.closest('[data-paradigm-bar]');
-    if (pBarBtn) {
-      state.paradigmBarMetric = pBarBtn.dataset.paradigmBar;
-      renderResultsRegion();
-      return;
-    }
-
-    const toggleParadigmBtn = e.target.closest('[data-toggle-paradigm]');
-    if (toggleParadigmBtn) {
-      const p = toggleParadigmBtn.dataset.toggleParadigm;
-      state.paradigm = state.paradigm === p ? 'all' : p;
-      renderPage();
-      return;
-    }
-
-    if (e.target.closest('#models-min-toggle')) {
-      state.minBreakthroughs = state.minBreakthroughs >= 2 ? 1 : 2;
-      renderPage();
-      return;
-    }
-
-    if (e.target.closest('#models-clear-filters')) {
-      state.paradigm = 'all';
-      state.discipline = 'all';
-      state.era = 'all';
-      state.minBreakthroughs = 1;
-      state.rubricPreset = 'balanced';
-      state.search = '';
-      renderPage();
-      return;
-    }
-
-    const expandBtn = e.target.closest('[data-expand-model]');
-    if (expandBtn) {
-      const id = expandBtn.dataset.expandModel;
-      if (state.expandedIds.has(id)) state.expandedIds.delete(id);
-      else state.expandedIds.add(id);
-      renderResultsRegion();
-      return;
-    }
-
-    if (e.target.closest('#models-expand-top')) {
-      const weights = getActiveWeights();
-      const filtered = filterBreakthroughsForModels(
-        rankBreakthroughs(dataset.breakthroughs, weights)
-      );
-      const rows = aggregateModelRankings(filtered, {
-        groupBy: state.groupBy,
-        attribution: state.attribution,
-        sortBy: state.sortBy,
-        minBreakthroughs: state.minBreakthroughs,
-        search: state.search,
-      });
-      rows.slice(0, 3).forEach((r) => state.expandedIds.add(r.id));
-      renderResultsRegion();
-      return;
-    }
-
-    if (e.target.closest('#models-collapse-all')) {
-      state.expandedIds.clear();
-      renderResultsRegion();
-    }
-  });
-
-  app.addEventListener('change', (e) => {
-    if (e.target.id === 'models-filter-discipline') {
-      state.discipline = e.target.value;
-      renderPage();
-    } else if (e.target.id === 'models-filter-paradigm') {
-      state.paradigm = e.target.value;
-      renderPage();
-    } else if (e.target.id === 'models-filter-era') {
-      state.era = e.target.value;
-      renderPage();
-    } else if (e.target.id === 'models-rubric-preset') {
-      state.rubricPreset = e.target.value;
-      renderPage();
-    }
-  });
-
-  app.addEventListener('input', (e) => {
-    if (e.target.id === 'models-search-input') {
-      state.search = e.target.value;
-      const clearBtn = document.getElementById('models-clear-filters');
-      if (clearBtn) {
-        const hasFilters =
-          state.paradigm !== 'all' ||
-          state.discipline !== 'all' ||
-          state.era !== 'all' ||
-          state.minBreakthroughs > 1 ||
-          state.rubricPreset !== 'balanced' ||
-          state.search.trim() !== '';
-        clearBtn.hidden = !hasFilters;
+  app.addEventListener(
+    'click',
+    (e) => {
+      if (e.target.closest('#theme-toggle-btn')) {
+        state.theme = state.theme === 'dark' ? 'light' : 'dark';
+        applyTheme(state.theme, { persist: true });
+        renderPage();
+        return;
       }
-      syncUrl();
-      renderResultsRegion();
-    }
-  });
-  subscribeThemeSync((nextTheme) => {
-    if (nextTheme === state.theme) return;
-    state.theme = nextTheme;
-    renderPage();
-  });
+
+      const groupBtn = e.target.closest('[data-group-by]');
+      if (groupBtn) {
+        state.groupBy = groupBtn.dataset.groupBy;
+        state.expandedIds.clear();
+        renderPage();
+        return;
+      }
+
+      const attrBtn = e.target.closest('[data-attribution]');
+      if (attrBtn) {
+        state.attribution = attrBtn.dataset.attribution;
+        renderPage();
+        return;
+      }
+
+      const sortBtn = e.target.closest('[data-sort-by]');
+      if (sortBtn) {
+        state.sortBy = sortBtn.dataset.sortBy;
+        renderPage();
+        return;
+      }
+
+      const chartBtn = e.target.closest('[data-chart-view]');
+      if (chartBtn) {
+        state.chartView = chartBtn.dataset.chartView;
+        renderResultsRegion();
+        return;
+      }
+
+      const quadYBtn = e.target.closest('[data-quadrant-y]');
+      if (quadYBtn) {
+        state.quadrantY = quadYBtn.dataset.quadrantY;
+        renderResultsRegion();
+        return;
+      }
+
+      const pBarBtn = e.target.closest('[data-paradigm-bar]');
+      if (pBarBtn) {
+        state.paradigmBarMetric = pBarBtn.dataset.paradigmBar;
+        renderResultsRegion();
+        return;
+      }
+
+      const toggleParadigmBtn = e.target.closest('[data-toggle-paradigm]');
+      if (toggleParadigmBtn) {
+        const p = toggleParadigmBtn.dataset.toggleParadigm;
+        state.paradigm = state.paradigm === p ? 'all' : p;
+        renderPage();
+        return;
+      }
+
+      if (e.target.closest('#models-min-toggle')) {
+        state.minBreakthroughs = state.minBreakthroughs >= 2 ? 1 : 2;
+        renderPage();
+        return;
+      }
+
+      if (e.target.closest('#models-clear-filters')) {
+        state.paradigm = 'all';
+        state.discipline = 'all';
+        state.era = 'all';
+        state.minBreakthroughs = 1;
+        state.rubricPreset = 'balanced';
+        state.search = '';
+        renderPage();
+        return;
+      }
+
+      const expandBtn = e.target.closest('[data-expand-model]');
+      if (expandBtn) {
+        const id = expandBtn.dataset.expandModel;
+        if (state.expandedIds.has(id)) state.expandedIds.delete(id);
+        else state.expandedIds.add(id);
+        renderResultsRegion();
+        return;
+      }
+
+      if (e.target.closest('#models-expand-top')) {
+        const weights = getActiveWeights();
+        const filtered = filterBreakthroughsForModels(
+          rankBreakthroughs(dataset.breakthroughs, weights)
+        );
+        const rows = aggregateModelRankings(filtered, {
+          groupBy: state.groupBy,
+          attribution: state.attribution,
+          sortBy: state.sortBy,
+          minBreakthroughs: state.minBreakthroughs,
+          search: state.search,
+        });
+        rows.slice(0, 3).forEach((r) => state.expandedIds.add(r.id));
+        renderResultsRegion();
+        return;
+      }
+
+      if (e.target.closest('#models-collapse-all')) {
+        state.expandedIds.clear();
+        renderResultsRegion();
+      }
+    },
+    { signal }
+  );
+
+  app.addEventListener(
+    'change',
+    (e) => {
+      if (e.target.id === 'models-filter-discipline') {
+        state.discipline = e.target.value;
+        renderPage();
+      } else if (e.target.id === 'models-filter-paradigm') {
+        state.paradigm = e.target.value;
+        renderPage();
+      } else if (e.target.id === 'models-filter-era') {
+        state.era = e.target.value;
+        renderPage();
+      } else if (e.target.id === 'models-rubric-preset') {
+        state.rubricPreset = e.target.value;
+        renderPage();
+      }
+    },
+    { signal }
+  );
+
+  app.addEventListener(
+    'input',
+    (e) => {
+      if (e.target.id === 'models-search-input') {
+        state.search = e.target.value;
+        const clearBtn = document.getElementById('models-clear-filters');
+        if (clearBtn) {
+          const hasFilters =
+            state.paradigm !== 'all' ||
+            state.discipline !== 'all' ||
+            state.era !== 'all' ||
+            state.minBreakthroughs > 1 ||
+            state.rubricPreset !== 'balanced' ||
+            state.search.trim() !== '';
+          clearBtn.hidden = !hasFilters;
+        }
+        syncUrl();
+        renderResultsRegion();
+      }
+    },
+    { signal }
+  );
+
+  subscribeThemeSync(
+    (nextTheme) => {
+      if (nextTheme === state.theme) return;
+      state.theme = nextTheme;
+      renderPage();
+    },
+    { signal }
+  );
 }
 
-async function init() {
+export function mountModelsPage(loadedDataset) {
+  dataset = loadedDataset;
+  resetStateForMount();
   applyTheme(state.theme);
   hydrateStateFromUrl();
-  try {
-    dataset = await loadIndexDataset();
-    renderPage();
-    attachListeners();
-  } catch (err) {
-    const app = document.getElementById('app');
-    if (app) {
-      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load AI Systems dataset</h3><p>${escapeHtml(err.message)}</p></div></div>`;
-    }
-  }
-}
 
-init();
+  const controller = new AbortController();
+  renderPage();
+  attachListeners(controller.signal);
+
+  return () => {
+    controller.abort();
+    hideTooltip();
+  };
+}

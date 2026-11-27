@@ -1,8 +1,3 @@
-import './styles/tokens.css';
-import './styles/base.css';
-import './styles/components.css';
-
-import { loadIndexDataset } from './dataLoader.js';
 import {
   DIMENSIONS,
   DISCIPLINE_META,
@@ -503,33 +498,41 @@ function renderMethodologyPage() {
   `;
 }
 
-document.addEventListener('click', (e) => {
-  const themeBtn = e.target.closest('#theme-toggle-btn');
-  if (themeBtn) {
-    currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(currentTheme, { persist: true });
-    if (dataset) renderMethodologyPage();
-  }
-});
-
-subscribeThemeSync((nextTheme) => {
-  if (nextTheme === currentTheme) return;
-  currentTheme = nextTheme;
-  if (dataset) renderMethodologyPage();
-});
-
-async function init() {
+export function mountMethodologyPage(loadedDataset) {
+  dataset = loadedDataset;
+  DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
+  currentTheme = loadInitialTheme();
   applyTheme(currentTheme);
-  try {
-    dataset = await loadIndexDataset();
-    DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
-    renderMethodologyPage();
-  } catch (err) {
-    const app = document.getElementById('app');
-    if (app) {
-      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load methodology metrics</h3><p>${escapeHtml(err.message)}</p></div></div>`;
-    }
-  }
-}
 
-init();
+  const controller = new AbortController();
+  const { signal } = controller;
+  const app = document.getElementById('app');
+
+  renderMethodologyPage();
+
+  app?.addEventListener(
+    'click',
+    (e) => {
+      const themeBtn = e.target.closest('#theme-toggle-btn');
+      if (themeBtn) {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(currentTheme, { persist: true });
+        if (dataset) renderMethodologyPage();
+      }
+    },
+    { signal }
+  );
+
+  subscribeThemeSync(
+    (nextTheme) => {
+      if (nextTheme === currentTheme) return;
+      currentTheme = nextTheme;
+      if (dataset) renderMethodologyPage();
+    },
+    { signal }
+  );
+
+  return () => {
+    controller.abort();
+  };
+}

@@ -44,7 +44,7 @@ export function applyTheme(theme, { persist = false } = {}) {
  * cross-tab localStorage updates, and bfcache pageshow restores so theme state
  * never drifts across pages, reloads, or browser Back/Forward navigation.
  */
-export function subscribeThemeSync(onThemeChange) {
+export function subscribeThemeSync(onThemeChange, { signal } = {}) {
   if (window.matchMedia) {
     const media = window.matchMedia('(prefers-color-scheme: dark)');
     const onSystemChange = (ev) => {
@@ -54,22 +54,33 @@ export function subscribeThemeSync(onThemeChange) {
       onThemeChange(next);
     };
     if (typeof media.addEventListener === 'function') {
-      media.addEventListener('change', onSystemChange);
+      media.addEventListener('change', onSystemChange, signal ? { signal } : undefined);
     } else if (typeof media.addListener === 'function') {
       media.addListener(onSystemChange);
+      if (signal) {
+        signal.addEventListener('abort', () => media.removeListener(onSystemChange), { once: true });
+      }
     }
   }
 
-  window.addEventListener('storage', (ev) => {
-    if (ev.key !== THEME_STORAGE_KEY && ev.key !== LEGACY_THEME_STORAGE_KEY) return;
-    const next = loadInitialTheme();
-    applyTheme(next);
-    onThemeChange(next);
-  });
+  window.addEventListener(
+    'storage',
+    (ev) => {
+      if (ev.key !== THEME_STORAGE_KEY && ev.key !== LEGACY_THEME_STORAGE_KEY) return;
+      const next = loadInitialTheme();
+      applyTheme(next);
+      onThemeChange(next);
+    },
+    signal ? { signal } : undefined
+  );
 
-  window.addEventListener('pageshow', () => {
-    const next = loadInitialTheme();
-    applyTheme(next);
-    onThemeChange(next);
-  });
+  window.addEventListener(
+    'pageshow',
+    () => {
+      const next = loadInitialTheme();
+      applyTheme(next);
+      onThemeChange(next);
+    },
+    signal ? { signal } : undefined
+  );
 }

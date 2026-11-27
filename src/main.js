@@ -1,9 +1,4 @@
-import './styles/tokens.css';
-import './styles/base.css';
-import './styles/components.css';
-
 import {
-  loadIndexDataset,
   getCachedDossierDetail,
   loadDossierDetail,
   prefetchDossierDetail,
@@ -474,10 +469,12 @@ function renderResultsOnly() {
   }
 }
 
-function attachGlobalListeners() {
+function attachGlobalListeners(signal) {
   const app = document.getElementById('app');
 
-  app.addEventListener('click', (e) => {
+  app.addEventListener(
+    'click',
+    (e) => {
     const themeBtn = e.target.closest('#theme-toggle-btn');
     if (themeBtn) {
       state.theme = state.theme === 'dark' ? 'light' : 'dark';
@@ -713,153 +710,195 @@ function attachGlobalListeners() {
       state.activeDossierId = openTrigger.dataset.openDossier;
       renderApp();
     }
-  });
+    },
+    { signal }
+  );
 
-  app.addEventListener('change', (e) => {
-    if (e.target.id === 'filter-paradigm') {
-      state.paradigm = e.target.value;
-      renderApp();
-    } else if (e.target.id === 'filter-ai-role') {
-      state.aiRole = e.target.value;
-      renderApp();
-    } else if (e.target.id === 'filter-status') {
-      state.status = e.target.value;
-      renderApp();
-    } else if (e.target.id === 'filter-year') {
-      state.year = e.target.value;
-      renderApp();
-    } else if (e.target.id === 'sort-by') {
-      state.sortBy = e.target.value;
-      renderApp();
-    } else if (e.target.id === 'scatter-y-metric') {
-      state.scatter.yMetric = e.target.value;
-      if (state.scatter.customZoom) {
-        state.scatter.customZoom = {
-          tMin: state.scatter.customZoom.tMin,
-          tMax: state.scatter.customZoom.tMax,
-        };
-      }
-      renderResultsOnly();
-    }
-  });
-
-  app.addEventListener('input', (e) => {
-    if (e.target.id === 'search-input') {
-      state.search = e.target.value;
-      renderApp({ preserveSearchFocus: true });
-      return;
-    }
-
-    if (e.target.matches('[data-weight-key]')) {
-      const key = e.target.dataset.weightKey;
-      state.weights[key] = Number(e.target.value);
-
-      // Update live normalized percentage labels without destroying slider drag focus
-      const total = DIMENSIONS.reduce((s, d) => s + Math.max(0, state.weights[d.key]), 0);
-      for (const d of DIMENSIONS) {
-        const lbl = document.getElementById(`weight-val-${d.key}`);
-        if (lbl) {
-          const pct = total > 0 ? Math.round((state.weights[d.key] / total) * 100) : 25;
-          lbl.textContent = `${pct}%`;
+  app.addEventListener(
+    'change',
+    (e) => {
+      if (e.target.id === 'filter-paradigm') {
+        state.paradigm = e.target.value;
+        renderApp();
+      } else if (e.target.id === 'filter-ai-role') {
+        state.aiRole = e.target.value;
+        renderApp();
+      } else if (e.target.id === 'filter-status') {
+        state.status = e.target.value;
+        renderApp();
+      } else if (e.target.id === 'filter-year') {
+        state.year = e.target.value;
+        renderApp();
+      } else if (e.target.id === 'sort-by') {
+        state.sortBy = e.target.value;
+        renderApp();
+      } else if (e.target.id === 'scatter-y-metric') {
+        state.scatter.yMetric = e.target.value;
+        if (state.scatter.customZoom) {
+          state.scatter.customZoom = {
+            tMin: state.scatter.customZoom.tMin,
+            tMax: state.scatter.customZoom.tMax,
+          };
         }
+        renderResultsOnly();
       }
-      renderResultsOnly();
-    }
-  });
+    },
+    { signal }
+  );
+
+  app.addEventListener(
+    'input',
+    (e) => {
+      if (e.target.id === 'search-input') {
+        state.search = e.target.value;
+        renderApp({ preserveSearchFocus: true });
+        return;
+      }
+
+      if (e.target.matches('[data-weight-key]')) {
+        const key = e.target.dataset.weightKey;
+        state.weights[key] = Number(e.target.value);
+
+        // Update live normalized percentage labels without destroying slider drag focus
+        const total = DIMENSIONS.reduce((s, d) => s + Math.max(0, state.weights[d.key]), 0);
+        for (const d of DIMENSIONS) {
+          const lbl = document.getElementById(`weight-val-${d.key}`);
+          if (lbl) {
+            const pct = total > 0 ? Math.round((state.weights[d.key] / total) * 100) : 25;
+            lbl.textContent = `${pct}%`;
+          }
+        }
+        renderResultsOnly();
+      }
+    },
+    { signal }
+  );
 
   // Keyboard shortcuts: Escape closes dossier, ←/→ steps dossiers, '/' focuses search, Enter/Space activates SVG nodes
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && state.activeDossierId) {
-      state.activeDossierId = null;
-      renderApp();
-      return;
-    }
-
-    if (
-      state.activeDossierId &&
-      (e.key === 'ArrowLeft' || e.key === 'ArrowRight') &&
-      !e.metaKey &&
-      !e.ctrlKey &&
-      !e.altKey &&
-      document.activeElement?.tagName !== 'INPUT' &&
-      document.activeElement?.tagName !== 'TEXTAREA' &&
-      document.activeElement?.tagName !== 'SELECT'
-    ) {
-      const btn = document.getElementById(
-        e.key === 'ArrowLeft' ? 'dossier-prev-btn' : 'dossier-next-btn'
-      );
-      const nextId = btn?.dataset?.openDossier;
-      if (nextId) {
-        e.preventDefault();
-        state.activeDossierId = nextId;
+  document.addEventListener(
+    'keydown',
+    (e) => {
+      if (e.key === 'Escape' && state.activeDossierId) {
+        state.activeDossierId = null;
         renderApp();
-        const dialog = document.getElementById('dossier-dialog');
-        if (dialog) dialog.scrollTop = 0;
+        return;
       }
-      return;
-    }
 
-    if (
-      e.key === '/' &&
-      !state.activeDossierId &&
-      document.activeElement?.tagName !== 'INPUT' &&
-      document.activeElement?.tagName !== 'TEXTAREA'
-    ) {
-      const input = document.getElementById('search-input');
-      if (input) {
+      if (
+        state.activeDossierId &&
+        (e.key === 'ArrowLeft' || e.key === 'ArrowRight') &&
+        !e.metaKey &&
+        !e.ctrlKey &&
+        !e.altKey &&
+        document.activeElement?.tagName !== 'INPUT' &&
+        document.activeElement?.tagName !== 'TEXTAREA' &&
+        document.activeElement?.tagName !== 'SELECT'
+      ) {
+        const btn = document.getElementById(
+          e.key === 'ArrowLeft' ? 'dossier-prev-btn' : 'dossier-next-btn'
+        );
+        const nextId = btn?.dataset?.openDossier;
+        if (nextId) {
+          e.preventDefault();
+          state.activeDossierId = nextId;
+          renderApp();
+          const dialog = document.getElementById('dossier-dialog');
+          if (dialog) dialog.scrollTop = 0;
+        }
+        return;
+      }
+
+      if (
+        e.key === '/' &&
+        !state.activeDossierId &&
+        document.activeElement?.tagName !== 'INPUT' &&
+        document.activeElement?.tagName !== 'TEXTAREA'
+      ) {
+        const input = document.getElementById('search-input');
+        if (input) {
+          e.preventDefault();
+          input.focus();
+        }
+        return;
+      }
+
+      if (
+        (e.key === 'Enter' || e.key === ' ') &&
+        document.activeElement?.hasAttribute('data-open-dossier') &&
+        document.activeElement.tagName !== 'BUTTON'
+      ) {
         e.preventDefault();
-        input.focus();
-      }
-      return;
-    }
-
-    if (
-      (e.key === 'Enter' || e.key === ' ') &&
-      document.activeElement?.hasAttribute('data-open-dossier') &&
-      document.activeElement.tagName !== 'BUTTON'
-    ) {
-      e.preventDefault();
-      state.activeDossierId = document.activeElement.dataset.openDossier;
-      renderApp();
-    }
-  });
-
-  window.addEventListener('hashchange', () => {
-    const hash = window.location.hash;
-    if (hash.startsWith('#breakthrough/')) {
-      const id = decodeURIComponent(hash.slice('#breakthrough/'.length));
-      if (dataset.breakthroughs.some((b) => b.id === id) && state.activeDossierId !== id) {
-        state.activeDossierId = id;
+        state.activeDossierId = document.activeElement.dataset.openDossier;
         renderApp();
       }
-    } else if (state.activeDossierId) {
-      state.activeDossierId = null;
-      renderApp();
-    }
-  });
+    },
+    { signal }
+  );
 
-  subscribeThemeSync((nextTheme) => {
-    if (nextTheme === state.theme) return;
-    state.theme = nextTheme;
-    renderApp();
-  });
+  window.addEventListener(
+    'hashchange',
+    () => {
+      const hash = window.location.hash;
+      if (hash.startsWith('#breakthrough/')) {
+        const id = decodeURIComponent(hash.slice('#breakthrough/'.length));
+        if (dataset.breakthroughs.some((b) => b.id === id) && state.activeDossierId !== id) {
+          state.activeDossierId = id;
+          renderApp();
+        }
+      } else if (state.activeDossierId) {
+        state.activeDossierId = null;
+        renderApp();
+      }
+    },
+    { signal }
+  );
+
+  subscribeThemeSync(
+    (nextTheme) => {
+      if (nextTheme === state.theme) return;
+      state.theme = nextTheme;
+      renderApp();
+    },
+    { signal }
+  );
 }
 
-async function init() {
+function resetStateForMount() {
+  state.theme = loadInitialTheme();
+  state.view = 'leaderboard';
+  state.tunerOpen = false;
+  state.mobileFiltersOpen = false;
+  state.discipline = 'all';
+  state.paradigm = 'all';
+  state.aiRole = 'all';
+  state.status = 'all';
+  state.year = 'all';
+  state.sortBy = 'impact';
+  state.search = '';
+  state.weights = { ...DEFAULT_WEIGHTS };
+  state.activeDossierId = null;
+  state.scatter.customZoom = null;
+  state.scatter.preset = 'all';
+}
+
+export function mountIndexPage(loadedDataset) {
+  dataset = loadedDataset;
+  DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
+  resetStateForMount();
   applyTheme(state.theme);
-  try {
-    dataset = await loadIndexDataset();
-    DEFAULT_WEIGHTS = { ...dataset.meta.defaultWeights };
-    state.weights = { ...DEFAULT_WEIGHTS };
-    hydrateStateFromUrl();
-    attachGlobalListeners();
-    renderApp();
-  } catch (err) {
-    const app = document.getElementById('app');
-    if (app) {
-      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load The Novum Index</h3><p>${escapeHtml(err.message)}</p></div></div>`;
-    }
-  }
-}
+  hydrateStateFromUrl();
 
-init();
+  const controller = new AbortController();
+  attachGlobalListeners(controller.signal);
+  renderApp();
+
+  return () => {
+    controller.abort();
+    if (toastTimer) {
+      clearTimeout(toastTimer);
+      toastTimer = null;
+    }
+    hideTooltip();
+    document.body.style.overflow = '';
+  };
+}
