@@ -1,10 +1,10 @@
-# The Novum Index
+# Novum Index
 
 **An open-source interactive index tracking, verifying, and visualizing the exponential rise of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, Physics, Biology, and Chemistry/Materials.**
 
-> Named after *novum* (Latin for *"the genuinely new thing"*, honoring Francis Bacon’s 1620 *Novum Organum* as AI becomes science’s new instrument), **The Novum Index** exclusively tracks AI-assisted and AI-led discoveries—separating machine-verified theorems and peer-reviewed landmarks from early preprints and contested claims posted directly to GitHub, arXiv, and X.
+> Named after *novum* (Latin for *"the genuinely new thing"*, honoring Francis Bacon’s 1620 *Novum Organum* as AI becomes science’s new instrument), **Novum Index** exclusively tracks AI-assisted and AI-led discoveries—separating machine-verified theorems and peer-reviewed landmarks from early preprints and contested claims posted directly to GitHub, arXiv, and X.
 
-![The Novum Index Editorial Cover](./public/og-card.jpg)
+![Novum Index Editorial Cover](./public/og-card.jpg)
 
 ## Features
 

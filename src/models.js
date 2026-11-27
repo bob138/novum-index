@@ -816,7 +816,7 @@ function renderPage() {
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <strong>The Novum Index</strong> — AI Systems &amp; Model Attribution · Open-source MIT · Edition ${escapeHtml(dataset.meta.lastUpdated)}
+          <strong>Novum Index</strong> — AI Systems &amp; Model Attribution · Open-source MIT · Edition ${escapeHtml(dataset.meta.lastUpdated)}
         </div>
         <div class="site-footer__links">
           <a href="./">Breakthrough Index</a>

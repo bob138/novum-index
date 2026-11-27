@@ -1,5 +1,5 @@
 /**
- * Shared client-side data loader for The Novum Index.
+ * Shared client-side data loader for Novum Index.
  * Fetches the lightweight compiled index once (/data/index.json) and lazy-loads
  * full per-breakthrough dossiers (/data/dossiers/<id>.json) on demand with in-memory caching.
  */

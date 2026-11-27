@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://novumindex.org/data/schema.json",
-  "title": "The Novum Index Breakthroughs Dataset",
+  "title": "Novum Index Breakthroughs Dataset",
   "type": "object",
   "required": ["meta", "breakthroughs"],
   "properties": {

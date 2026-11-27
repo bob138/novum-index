@@ -8,17 +8,17 @@ import { loadInitialTheme, applyTheme } from './theme.js';
 
 const ROUTES = {
   index: {
-    title: 'The Novum Index — AI-Enabled Scientific Breakthroughs & Acceleration Curve',
+    title: 'Novum Index — AI-Enabled Scientific Breakthroughs & Acceleration Curve',
     loader: () => import('./main.js'),
     mountKey: 'mountIndexPage',
   },
   models: {
-    title: 'AI Systems & Model Rankings — The Novum Index',
+    title: 'AI Systems & Model Rankings — Novum Index',
     loader: () => import('./models.js'),
     mountKey: 'mountModelsPage',
   },
   methodology: {
-    title: 'Methodology — The Novum Index',
+    title: 'Methodology — Novum Index',
     loader: () => import('./methodology.js'),
     mountKey: 'mountMethodologyPage',
   },
@@ -261,7 +261,7 @@ async function boot() {
   } catch (err) {
     const app = document.getElementById('app');
     if (app) {
-      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load The Novum Index</h3><p>${escapeHtml(err.message)}</p></div></div>`;
+      app.innerHTML = `<div class="container" style="padding:3rem 1rem;"><div class="empty-state"><h3>Unable to load Novum Index</h3><p>${escapeHtml(err.message)}</p></div></div>`;
     }
   }
 }

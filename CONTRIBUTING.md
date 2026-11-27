@@ -1,6 +1,6 @@
-# Contributing to The Novum Index
+# Contributing to Novum Index
 
-We welcome scientists, mathematicians, engineers, and curious readers to help keep **The Novum Index** accurate, balanced, and up to date!
+We welcome scientists, mathematicians, engineers, and curious readers to help keep **Novum Index** accurate, balanced, and up to date!
 
 ## Option 1: Open a GitHub Issue (No Code Needed)
 

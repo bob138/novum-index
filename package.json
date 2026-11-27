@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "type": "module",
-  "description": "The Novum Index — An open-source interactive tracker, visualization suite, and impact ranking of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, and the Sciences.",
+  "description": "Novum Index — An open-source interactive tracker, visualization suite, and impact ranking of AI-assisted and AI-led breakthroughs across Mathematics, Computer Science, and the Sciences.",
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
     "dev": "node scripts/build-data.mjs && vite",

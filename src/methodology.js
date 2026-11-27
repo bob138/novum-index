@@ -133,10 +133,10 @@ function renderMethodologyPage() {
       <div class="container">
         <p class="hero__kicker">Open Methodology &amp; Epistemic Framework · Edition ${escapeHtml(dataset.meta.lastUpdated)}</p>
         <h1 class="hero__title meth-hero__title">
-          How The Novum Index curates, verifies, and <em>transparently</em> ranks AI-driven science.
+          How Novum Index curates, verifies, and <em>transparently</em> ranks AI-driven science.
         </h1>
         <p class="hero__lead meth-hero__lead">
-          Named after <em>novum</em>—Latin for “the genuinely new thing,” honoring Francis Bacon’s 1620 <em>Novum Organum</em> as artificial intelligence becomes science’s new instrument—The Novum Index governs every score, verification tier, paradigm tag, and time-compression figure with an explicit, auditable rubric that readers can override live.
+          Named after <em>novum</em>—Latin for “the genuinely new thing,” honoring Francis Bacon’s 1620 <em>Novum Organum</em> as artificial intelligence becomes science’s new instrument—Novum Index governs every score, verification tier, paradigm tag, and time-compression figure with an explicit, auditable rubric that readers can override live.
         </p>
 
         <nav class="meth-toc" aria-label="Methodology sections">
@@ -160,7 +160,7 @@ function renderMethodologyPage() {
           <div class="meth-section__eyebrow">Section 01</div>
           <h2 class="meth-section__title" id="h-scope">Scope, Inclusion Criteria &amp; Open-Internet Tracking</h2>
           <p class="meth-prose">
-            <strong>The Novum Index exclusively tracks AI-assisted and AI-led scientific breakthroughs.</strong> Exclusively human discoveries—however monumental—are intentionally out of scope. This strict focus allows the index to isolate and measure the rate at which artificial intelligence contributes to human scientific knowledge and to visualize the paradigm shift from early symbolic provers to modern neural and neuro-symbolic systems.
+            <strong>Novum Index exclusively tracks AI-assisted and AI-led scientific breakthroughs.</strong> Exclusively human discoveries—however monumental—are intentionally out of scope. This strict focus allows the index to isolate and measure the rate at which artificial intelligence contributes to human scientific knowledge and to visualize the paradigm shift from early symbolic provers to modern neural and neuro-symbolic systems.
           </p>
 
           <div class="meth-two-col">
@@ -356,7 +356,7 @@ function renderMethodologyPage() {
           <div class="meth-section__eyebrow">Section 06</div>
           <h2 class="meth-section__title" id="h-time">Human Years Unsolved vs. AI Time-to-Solution</h2>
           <p class="meth-prose">
-            To quantify discovery acceleration concretely, The Novum Index tracks two strictly conservative temporal fields:
+            To quantify discovery acceleration concretely, Novum Index tracks two strictly conservative temporal fields:
           </p>
           <ul class="meth-list meth-list--wide">
             <li><strong><code>yearsUnsolved</code> (${totalOpenYears.toLocaleString('en-US')}+ combined years across ${openProblems.length} open problems):</strong> Populated <em>only</em> when a breakthrough resolves or breaks a well-defined, named open scientific or mathematical problem, measured from the year it was formally posed until resolution. We intentionally set <code>yearsUnsolved: null</code> for formalizations of already-proven theorems (such as Fermat’s Last Theorem or Viazovska’s sphere packing) and general-purpose scientific platforms so the cumulative human-years total is never inflated.</li>
@@ -484,7 +484,7 @@ function renderMethodologyPage() {
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <strong>The Novum Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
+          <strong>Novum Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
         </div>
         <div class="site-footer__links">
           <a href="./">Live Index</a>

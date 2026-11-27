@@ -256,7 +256,7 @@ function renderMethodologyFooter() {
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <strong>The Novum Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
+          <strong>Novum Index</strong> · Open-source AI-for-science ledger (MIT License) · Updated ${escapeHtml(dataset.meta.lastUpdated)}
         </div>
         <div class="site-footer__links">
           <a href="./models.html">AI Systems &amp; Models</a>

@@ -20,7 +20,7 @@ export function renderNavbar({ activePage, theme, editionLabel }) {
       <div class="container site-nav__inner">
         <a href="${brandHref}" class="site-brand" ${activePage === 'index' ? 'id="brand-home"' : ''}>
           <img src="./favicon.svg" alt="" class="site-brand__mark" width="26" height="26" />
-          <span class="site-brand__title">The Novum Index</span>
+          <span class="site-brand__title">Novum Index</span>
           ${editionLabel ? `<span class="site-brand__edition">${escapeHtml(editionLabel)}</span>` : ''}
         </a>
 

@@ -1,6 +1,6 @@
 # Scoring & Verification Methodology
 
-Ranking scientific breakthroughs across pure mathematics, theoretical computer science, experimental physics, biology, and materials science is inherently imperfect. **The Novum Index** (named after *novum*—Latin for *"the genuinely new thing"*, honoring Francis Bacon’s 1620 *Novum Organum* as AI becomes science’s new instrument) makes those judgments explicit, auditable, and customizable rather than hiding them behind a black-box score.
+Ranking scientific breakthroughs across pure mathematics, theoretical computer science, experimental physics, biology, and materials science is inherently imperfect. **Novum Index** (named after *novum*—Latin for *"the genuinely new thing"*, honoring Francis Bacon’s 1620 *Novum Organum* as AI becomes science’s new instrument) makes those judgments explicit, auditable, and customizable rather than hiding them behind a black-box score.
 
 ## 1. The Four Impact Dimensions (0–100 Each)
 
@@ -30,7 +30,7 @@ To maintain epistemic clarity during the rapid 2025–2026 wave of AI-generated 
 
 ## 3. Scope, AI Paradigm & Provenance Taxonomy
 
-**The Novum Index exclusively tracks breakthroughs with substantive AI involvement** (`AI-Assisted` or `Autonomous AI`) in order to measure and visualize the accelerating rate of AI contributions to scientific knowledge. Purely human breakthroughs—however landmark—are intentionally excluded.
+**Novum Index exclusively tracks breakthroughs with substantive AI involvement** (`AI-Assisted` or `Autonomous AI`) in order to measure and visualize the accelerating rate of AI contributions to scientific knowledge. Purely human breakthroughs—however landmark—are intentionally excluded.
 
 ### AI Paradigm (`aiParadigm`)
 To contrast classical symbolic systems with modern deep learning without muddying the neural-era curve, every entry is tagged with one of three paradigms:
@@ -49,7 +49,7 @@ To contrast classical symbolic systems with modern deep learning without muddyin
 
 ## 5. Historical Pioneers & Calibration Anchors (1976–2023)
 
-To anchor the exponential acceleration curve and prevent recency inflation across the 2024–2026 wave, The Novum Index includes **13 historical anchor milestones** (`isAnchor: true`):
+To anchor the exponential acceleration curve and prevent recency inflation across the 2024–2026 wave, Novum Index includes **13 historical anchor milestones** (`isAnchor: true`):
 - **5 Pre-2020 Symbolic Pioneers (1976–2016)**: **Meta-DENDRAL (1976)**, **Graffiti (1986)**, **Robbins Conjecture (`EQP`, 1996)**, **Robot Scientist "Adam" (2009)**, and **Boolean Pythagorean Triples (`SAT`, 2016)**.
 - **8 Early Neural Anchors (2020–2023)**: **Halicin Antibiotic Discovery (Feb 2020)**, **AlphaFold 2 (Nov 2020)**, **DeepMind Knot Theory (2021)**, **Tokamak RL Plasma Control (2022)**, **AlphaTensor (2022)**, **AlphaDev (2023)**, **GNoME (2023)**, and **FunSearch (2023)**.
 
