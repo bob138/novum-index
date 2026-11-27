@@ -50,7 +50,8 @@
     "velocity": "Reduced specialist clinical annotation requirements by an order of magnitude for rare and systemic disease tasks."
   },
   "enables": [
-    "chief-pathology-foundation-2024"
+    "chief-pathology-foundation-2024",
+    "delphi-2m-disease-trajectories-2025"
   ],
   "sources": [
     {

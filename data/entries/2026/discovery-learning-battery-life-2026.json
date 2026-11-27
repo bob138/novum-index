@@ -1,0 +1,64 @@
+{
+  "id": "discovery-learning-battery-life-2026",
+  "title": "Discovery Learning Predicts Industrial Battery Cycle Life with 98% Less Testing Time and 95% Less Energy",
+  "shortTitle": "Discovery Learning Battery AI (Nature)",
+  "date": "2026-02-04",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Battery Engineering",
+    "Active Learning",
+    "Energy Storage"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Discovery Learning (Active + Physics-Guided + Zero-Shot ML)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "First 50 cycles (98% time savings)",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: integrates active, physics-guided, and zero-shot learning across 123 industrial lithium-ion pouch cells to predict cycle life at 7.2% error from the first 50 cycles—cutting validation time 98% and energy 95%.",
+  "summary": "Researchers at the University of Michigan, National University of Singapore, and Farasis Energy introduced Discovery Learning in Nature, uniting active learning, physics-guided features, and zero-shot transfer from public battery datasets to predict the full cycle life of brand-new industrial battery chemistries from minimal experiments. Validated across 123 large-format industrial lithium-ion pouch cells spanning diverse electrode designs and cycling protocols, Discovery Learning achieved 7.2% test error using physical measurements from just the first 50 cycles of 51% of cell prototypes—saving 98% of testing time and 95% of energy compared with conventional lifetime validation.",
+  "technicalHighlights": [
+    "Combines active learning, physics-guided features, and zero-shot transfer across distinct historical cell chemistries without requiring target-design lifetime labels upfront.",
+    "Validated on 123 industrial-grade large-format lithium-ion pouch cells across diverse material designs and cycling protocols.",
+    "Achieved 7.2% cycle-life prediction error from just the first 50 cycles of 51% of prototypes—delivering 98% time savings and 95% energy savings."
+  ],
+  "caveats": "Demonstrated on lithium-ion pouch-cell designs; extreme sudden-death failure modes or radically new solid-state chemistries still require safety and calendar-aging verification.",
+  "contributors": [
+    "Jiawei Zhang",
+    "Yifei Zhang",
+    "Baozhao Yi",
+    "Weiran Jiang",
+    "Ziyou Song"
+  ],
+  "institutions": [
+    "University of Michigan",
+    "National University of Singapore",
+    "Farasis Energy USA"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Solves zero-shot cross-chemistry industrial battery lifetime prediction by fusing physics-guided ML with active experimental design.",
+    "ripple": "Directly accelerates electric-vehicle and grid-storage battery R&D while slashing energy-intensive multi-month cycling bottlenecks.",
+    "verification": "Peer-reviewed in Nature (Feb 2026) with 123 industrial large-format pouch cells rather than small laboratory coin cells.",
+    "velocity": "Cuts industrial battery lifetime validation time by 98% and energy consumption by 95%."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Zhang, Jiang, Song et al. — Discovery Learning predicts battery cycle life from minimal experiments (Nature, 2026)",
+      "url": "https://doi.org/10.1038/s41586-025-09951-7",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 41639573",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41639573/",
+      "type": "paper"
+    }
+  ]
+}

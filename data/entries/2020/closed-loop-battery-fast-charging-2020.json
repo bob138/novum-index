@@ -51,7 +51,8 @@
     "velocity": "Delivered a >30× real-world wet-lab speedup (500+ days down to 16 days) in battery protocol discovery."
   },
   "enables": [
-    "azure-quantum-battery-n2116-2024"
+    "azure-quantum-battery-n2116-2024",
+    "discovery-learning-battery-life-2026"
   ],
   "sources": [
     {

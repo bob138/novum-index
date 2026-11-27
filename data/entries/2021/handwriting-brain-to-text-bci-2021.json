@@ -1,0 +1,68 @@
+{
+  "id": "handwriting-brain-to-text-bci-2021",
+  "title": "RNN Brain-to-Text Interface Decodes Attempted Handwriting from Paralysis at 90 Characters/Min",
+  "shortTitle": "Handwriting Brain-to-Text BCI (Nature)",
+  "date": "2021-05-12",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Brain-Computer Interfaces",
+    "Neuroprosthetics",
+    "Recurrent Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Stanford / BrainGate RNN Handwriting Decoder",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature: decodes attempted handwriting from motor-cortex neural spikes in a paralyzed participant at 90 characters/min (94.1% online / >99% LM accuracy)—more than doubling prior BCI typing records.",
+  "summary": "Francis R. Willett, Donald T. Avansino, Leigh R. Hochberg, Jaimie M. Henderson, and Krishna V. Shenoy (Stanford University, HHMI, and BrainGate) demonstrated in Nature an intracortical brain-computer interface that uses a recurrent neural network decoder to translate imagined handwriting movements directly from motor-cortex spiking activity into real-time text. A clinical trial participant paralyzed from the neck down achieved 90 characters per minute with 94.1% raw online accuracy—and >99% accuracy with a language model—more than doubling prior point-and-click BCI speeds and approaching able-bodied smartphone typing (115 chars/min).",
+  "technicalHighlights": [
+    "RNN neural decoder translated attempted handwriting trajectories from motor-cortex microelectrode arrays into real-time text at 90 characters per minute.",
+    "Achieved 94.1% raw online accuracy and >99% accuracy with a general-purpose autocorrect language model in a participant with spinal cord injury.",
+    "Proved that temporally rich dexterous movements are far easier to separate in neural state space than point-to-point cursor motions, launching modern speech BCIs."
+  ],
+  "caveats": "Demonstrated in a single clinical-trial participant using surgically implanted Utah microelectrode arrays; indexed as a 2021 historical calibration anchor.",
+  "contributors": [
+    "Francis R. Willett",
+    "Donald T. Avansino",
+    "Leigh R. Hochberg",
+    "Jaimie M. Henderson",
+    "Krishna V. Shenoy"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Howard Hughes Medical Institute (HHMI)",
+    "Brown University",
+    "Massachusetts General Hospital"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 93,
+    "verification": 96,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered RNN sequence decoding of complex dexterous motor intent, breaking the cursor-typing ceiling for paralyzed communication.",
+    "ripple": "Directly enabled Stanford’s 62-WPM speech neuroprosthesis (2023), UC Davis’s 97.5% speech BCI (2024), and modern clinical neuroprosthetics.",
+    "verification": "Peer-reviewed in Nature (May 2021) with live human clinical trial demonstration and public neural dataset release.",
+    "velocity": "More than doubled decades-old BCI typing speeds in a single architectural leap to sequence-based RNN decoding."
+  },
+  "enables": [
+    "stanford-speech-neuroprosthesis-2023",
+    "ucdavis-speech-bci-nejm-2024"
+  ],
+  "sources": [
+    {
+      "label": "Willett et al. — High-performance brain-to-text communication via handwriting (Nature, 2021)",
+      "url": "https://doi.org/10.1038/s41586-021-03506-2",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 33981047",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33981047/",
+      "type": "paper"
+    }
+  ]
+}

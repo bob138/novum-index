@@ -1,0 +1,61 @@
+{
+  "id": "fmri-semantic-language-decoder-2023",
+  "title": "Non-Invasive fMRI & Language Model Decoder Reconstructs Continuous Speech and Imagined Thoughts",
+  "shortTitle": "Non-Invasive fMRI Semantic Brain AI",
+  "date": "2023-05-01",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Neuroscience",
+    "Non-Invasive BCI",
+    "Neural Decoding"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "UT Austin fMRI Semantic Language Decoder (GPT-1 + Ridge)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature Neuroscience: first non-invasive brain-computer interface decoding continuous open-vocabulary language from fMRI scans across perceived speech, imagined stories, and silent videos.",
+  "summary": "Jerry Tang, Amanda LeBel, Shailee Jain, and Alexander G. Huth at the University of Texas at Austin demonstrated in Nature Neuroscience the first non-invasive brain-computer interface capable of reconstructing continuous, open-vocabulary language directly from functional MRI (fMRI) recordings without brain surgery. Pairing cortical semantic encoding models with a generative GPT language model beam search, a single decoder recovered the gist of perceived stories, internally imagined speech, and even silent movies—while proving experimentally that decoding fails without active subject cooperation, establishing key mental-privacy safeguards.",
+  "technicalHighlights": [
+    "First non-invasive (fMRI) brain decoder to reconstruct continuous, open-vocabulary natural language rather than selecting from small fixed word lists.",
+    "Generalizes with a single trained model across perceived speech, silently imagined stories, and watched silent films across multiple cortical networks.",
+    "Demonstrated experimentally that decoding cannot succeed without active user cooperation during both training and inference."
+  ],
+  "caveats": "Requires bulky MRI scanners and ~16 hours of per-subject fMRI training data, and reconstructs semantic paraphrases rather than exact verbatim words; indexed as a 2023 historical calibration anchor.",
+  "contributors": [
+    "Jerry Tang",
+    "Amanda LeBel",
+    "Shailee Jain",
+    "Alexander G. Huth"
+  ],
+  "institutions": [
+    "University of Texas at Austin"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Broke the barrier from fixed-word classification to continuous open-vocabulary semantic language reconstruction from non-invasive neuroimaging.",
+    "ripple": "Catalyzed non-invasive neurotechnology, neural-LLM alignment research, and global neuroethics and mental-privacy frameworks.",
+    "verification": "Peer-reviewed in Nature Neuroscience (May 2023) with multi-task human fMRI validation and open code.",
+    "velocity": "Enabled generative LMs to bridge the slow temporal resolution of BOLD fMRI signals into continuous language."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Tang, LeBel, Jain & Huth — Semantic reconstruction of continuous language from non-invasive brain recordings (Nature Neuroscience, 2023)",
+      "url": "https://doi.org/10.1038/s41593-023-01304-9",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 37127759",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37127759/",
+      "type": "paper"
+    }
+  ]
+}

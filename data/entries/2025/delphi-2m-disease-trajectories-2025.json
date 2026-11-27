@@ -1,0 +1,68 @@
+{
+  "id": "delphi-2m-disease-trajectories-2025",
+  "title": "Delphi-2M Generative Transformer Forecasts Multi-Decade Trajectories Across Over 1,000 Human Diseases",
+  "shortTitle": "Delphi-2M: 1,000-Disease Health AI",
+  "date": "2025-09-17",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Preventive Medicine",
+    "Epidemiology",
+    "Generative Healthcare Transformers"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Delphi-2M (Modified GPT Disease-Trajectory Transformer)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: trained on 0.4M UK Biobank participants and validated unchanged on 1.9M Danish citizens, Delphi-2M forecasts incidence rates and 20-year synthetic health trajectories across >1,000 human diseases.",
+  "summary": "Scientists from EMBL-EBI, the German Cancer Research Center (DKFZ), and the University of Copenhagen introduced Delphi-2M in Nature, adapting the GPT transformer architecture to model the continuous-time progression and competing risks of human diseases. Trained on electronic health records from 0.4 million UK Biobank participants and externally validated with zero parameter changes on 1.9 million Danish citizens, Delphi-2M predicts rates across more than 1,000 diseases simultaneously with accuracy rivaling dedicated single-disease clinical scores, generates privacy-preserving synthetic future health trajectories up to 20 years ahead, and uncovers time-dependent comorbidity clusters.",
+  "technicalHighlights": [
+    "Adapts a generative pretrained transformer (Delphi-2M) to continuous-time competing-risk disease modeling across >1,000 ICD disease categories.",
+    "Trained on 400,000 UK Biobank participants and externally validated with zero parameter changes on 1.9 million individuals in Denmark.",
+    "Samples calibrated synthetic 20-year future health trajectories and reveals interpretable temporal comorbidity dependencies across organ systems."
+  ],
+  "caveats": "Trained on European national biobank/registry populations (UK and Denmark) and reflects healthcare coding and demographic biases; requires prospective clinical trials before individualized prescribing.",
+  "contributors": [
+    "Artem Shmatko",
+    "Alexander Wolfgang Jung",
+    "Kumar Gaurav",
+    "Søren Brunak",
+    "Ewan Birney",
+    "Tom Fitzgerald",
+    "Moritz Gerstung"
+  ],
+  "institutions": [
+    "EMBL-EBI",
+    "German Cancer Research Center (DKFZ)",
+    "University of Copenhagen"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates that generative transformers can learn the unified natural history and competing progression of over 1,000 human diseases at once.",
+    "ripple": "Transforms population-scale preventive medicine, healthcare resource forecasting, and privacy-preserving synthetic clinical cohorts.",
+    "verification": "Peer-reviewed in Nature (Sep 2025) with zero-shot external validation across 1.9 million Danish citizens.",
+    "velocity": "Replaces hundreds of siloed single-disease risk calculators with a single generative population-health model."
+  },
+  "enables": [
+    "sleepfm-multimodal-disease-2026"
+  ],
+  "sources": [
+    {
+      "label": "Shmatko, Jung, Birney, Gerstung et al. — Learning the natural history of human disease with generative transformers (Nature, 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-09529-3",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 40963019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40963019/",
+      "type": "paper"
+    }
+  ]
+}

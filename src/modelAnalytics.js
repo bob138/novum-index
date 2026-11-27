@@ -2234,6 +2234,46 @@ const EXPLICIT_ATTRIBUTIONS = {
       lab: 'Princeton / PPPL',
     },
   ],
+  'discovery-learning-battery-life-2026': [
+    {
+      familyId: 'umich-nus-discovery-learning',
+      familyName: 'Discovery Learning Battery AI (U-M / NUS / Farasis)',
+      modelId: 'discovery-learning-battery',
+      modelName: 'Discovery Learning (Active + Physics-Guided + Zero-Shot ML)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'University of Michigan / NUS / Farasis Energy',
+    },
+  ],
+  'delphi-2m-disease-trajectories-2025': [
+    {
+      familyId: 'delphi-2m-embl',
+      familyName: 'Delphi-2M Disease-Trajectory Transformer (EMBL-EBI / DKFZ)',
+      modelId: 'delphi-2m',
+      modelName: 'Delphi-2M (1,000-Disease Generative Health Transformer)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'EMBL-EBI / DKFZ / University of Copenhagen',
+    },
+  ],
+  'fmri-semantic-language-decoder-2023': [
+    {
+      familyId: 'utaustin-fmri-decoder',
+      familyName: 'Non-Invasive fMRI Semantic Brain Decoder (UT Austin)',
+      modelId: 'fmri-gpt-semantic-decoder',
+      modelName: 'fMRI + GPT Continuous Semantic Language Decoder',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'University of Texas at Austin',
+    },
+  ],
+  'handwriting-brain-to-text-bci-2021': [
+    {
+      familyId: 'braingate-speech-bci',
+      familyName: 'Deep-Learning Speech Neuroprostheses (BrainGate)',
+      modelId: 'stanford-handwriting-bci',
+      modelName: 'Stanford / BrainGate RNN Handwriting BCI',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Stanford University',
+    },
+  ],
 };
 
 /**
