@@ -33,7 +33,7 @@ export const SCATTER_Y_METRICS = {
 
 export const SCATTER_PRESETS = [
   { id: 'all', label: 'All (1969–26)' },
-  { id: '2020-2026', label: '2020–26', tMin: '2019-11-01', tMax: '2026-12-20' },
+  { id: '2013-2026', label: '2013–26', tMin: '2012-11-01', tMax: '2026-12-20' },
   { id: '2024-2026', label: '2024–26', tMin: '2023-12-01', tMax: '2026-12-20' },
   { id: '2026', label: '2026', tMin: '2025-12-20', tMax: '2026-12-10' },
   { id: 'q4-2026', label: 'Q4 2026', tMin: '2026-09-25', tMax: '2026-12-03' },
@@ -174,22 +174,74 @@ function buildScatterSvgContent(items, opts = {}) {
   const innerW = width - margin.left - margin.right;
   const innerH = height - margin.top - margin.bottom;
 
-  const hasPioneers = items.some((i) => i.date < '2020-01-01');
-  const hasEarlyAnchors = items.some((i) => i.date >= '2020-01-01' && i.date < '2024-01-01');
+  const hasPioneers = items.some((i) => i.date < '2013-01-01');
+  const hasEarlyNeural = items.some((i) => i.date >= '2013-01-01' && i.date < '2024-01-01');
+  const hasPost2020Early = items.some((i) => i.date >= '2020-01-01' && i.date < '2024-01-01');
   const hasWave = items.some((i) => i.date >= '2024-01-01');
-  const hasModern = hasEarlyAnchors || hasWave;
+  const hasModern = hasEarlyNeural || hasWave;
 
   const activePreset = SCATTER_PRESETS.find((p) => p.id === presetId) || SCATTER_PRESETS[0];
   const isZoomed = Boolean(customZoom) || presetId !== 'all';
-  const splitPioneerZone = !isZoomed && timeScale === 'split' && hasPioneers && hasModern;
 
-  const pioneerZoneW = splitPioneerZone ? Math.round(innerW * 0.19) : 0;
-  const pioneerGap = splitPioneerZone ? 16 : 0;
-  const modernStartX = margin.left + pioneerZoneW + pioneerGap;
-  const modernW = innerW - pioneerZoneW - pioneerGap;
+  // Progressive 3-zone Split axis:
+  //   Zone 1 (1969–2012 · Pioneers, pre-AlexNet): 19% width
+  //   Zone 2 (2013–23 · Early Neural, post-AlexNet DL rise): 38% width
+  //   Zone 3 (2024–2026 · Frontier Wave): 43% width
+  const rawZones = [];
+  if (!isZoomed && timeScale === 'split') {
+    if (hasPioneers) {
+      rawZones.push({
+        id: 'pioneers',
+        label: '1969–2012 · Pioneers',
+        tMin: toTimestamp('1966-06-01'),
+        tMax: toTimestamp('2012-12-31'),
+        weight: 0.19,
+        shadeOpacity: 0.72,
+      });
+    }
+    if (hasEarlyNeural) {
+      const earlyMaxIso = hasWave || hasPost2020Early ? '2023-12-31' : '2020-02-01';
+      rawZones.push({
+        id: 'earlyNeural',
+        label: hasWave || hasPost2020Early ? '2013–23 · Early Neural' : '2013–19 · Early Neural',
+        tMin: toTimestamp('2013-01-01'),
+        tMax: toTimestamp(earlyMaxIso),
+        weight: 0.38,
+        shadeOpacity: 0.36,
+      });
+    }
+    if (hasWave) {
+      rawZones.push({
+        id: 'wave',
+        label: '2024–2026 · Frontier Wave',
+        tMin: toTimestamp('2024-01-01'),
+        tMax: toTimestamp('2026-12-20'),
+        weight: 0.43,
+        shadeOpacity: 0,
+      });
+    }
+  }
 
-  const pioneerMinTime = toTimestamp('1966-01-01');
-  const pioneerMaxTime = toTimestamp('2019-12-31');
+  const isSplitMode = rawZones.length >= 2;
+  const zoneGap = 14;
+  const splitZones = [];
+  if (isSplitMode) {
+    const totalWeight = rawZones.reduce((s, z) => s + z.weight, 0);
+    const usableW = innerW - zoneGap * (rawZones.length - 1);
+    let cursorX = margin.left;
+    rawZones.forEach((z, idx) => {
+      const w =
+        idx === rawZones.length - 1
+          ? margin.left + innerW - cursorX
+          : Math.round((z.weight / totalWeight) * usableW);
+      splitZones.push({
+        ...z,
+        x0: cursorX,
+        x1: cursorX + w,
+      });
+      cursorX += w + zoneGap;
+    });
+  }
 
   let minTime;
   let maxTime;
@@ -199,27 +251,27 @@ function buildScatterSvgContent(items, opts = {}) {
   } else if (presetId !== 'all' && activePreset.tMin && activePreset.tMax) {
     minTime = toTimestamp(activePreset.tMin);
     maxTime = toTimestamp(activePreset.tMax);
-  } else if (splitPioneerZone) {
-    minTime = toTimestamp('2019-11-01');
-    maxTime = hasWave ? toTimestamp('2026-12-20') : toTimestamp('2024-03-01');
+  } else if (isSplitMode) {
+    minTime = splitZones[0].tMin;
+    maxTime = splitZones[splitZones.length - 1].tMax;
   } else if (timeScale === 'linear' && hasPioneers && hasModern) {
     minTime = toTimestamp('1967-06-01');
     maxTime = toTimestamp('2027-02-01');
   } else {
-    minTime = hasEarlyAnchors
-      ? toTimestamp('2019-11-01')
+    minTime = hasEarlyNeural
+      ? toTimestamp('2012-11-01')
       : hasWave
-        ? toTimestamp('2024-04-01')
-        : toTimestamp('1966-01-01');
+        ? toTimestamp('2024-01-01')
+        : toTimestamp('1966-06-01');
     maxTime = hasWave
       ? toTimestamp('2026-12-20')
-      : hasEarlyAnchors
-        ? toTimestamp('2024-03-01')
-        : toTimestamp('2019-12-31');
+      : hasEarlyNeural
+        ? toTimestamp(hasPost2020Early ? '2024-03-01' : '2020-02-01')
+        : toTimestamp('2013-02-01');
   }
 
   const visibleItems = items.filter((item) => {
-    if (splitPioneerZone) return true;
+    if (isSplitMode) return true;
     const t = toTimestamp(item.date);
     const padT = Math.max(DAY_MS * 3, (maxTime - minTime) * 0.03);
     return t >= minTime - padT && t <= maxTime + padT;
@@ -245,14 +297,19 @@ function buildScatterSvgContent(items, opts = {}) {
   const spanY = Math.max(4, maxY - minY);
 
   const scaleXTime = (t) => {
-    if (splitPioneerZone) {
-      if (t < toTimestamp('2020-01-01')) {
-        const clamped = Math.max(pioneerMinTime, Math.min(pioneerMaxTime, t));
-        return margin.left + ((clamped - pioneerMinTime) / (pioneerMaxTime - pioneerMinTime)) * pioneerZoneW;
+    if (isSplitMode) {
+      let zone = splitZones[splitZones.length - 1];
+      for (const z of splitZones) {
+        if (t <= z.tMax) {
+          zone = z;
+          break;
+        }
       }
-      return modernStartX + ((t - minTime) / (maxTime - minTime)) * modernW;
+      const clamped = Math.max(zone.tMin, Math.min(zone.tMax, t));
+      const frac = (clamped - zone.tMin) / Math.max(1, zone.tMax - zone.tMin);
+      return zone.x0 + frac * (zone.x1 - zone.x0);
     }
-    return margin.left + ((t - minTime) / (maxTime - minTime)) * innerW;
+    return margin.left + ((t - minTime) / Math.max(1, maxTime - minTime)) * innerW;
   };
 
   const scaleX = (iso) => scaleXTime(toTimestamp(iso));
@@ -262,29 +319,41 @@ function buildScatterSvgContent(items, opts = {}) {
   };
 
   let xTicks;
-  if (splitPioneerZone) {
-    xTicks = hasWave
-      ? [
+  if (isSplitMode) {
+    xTicks = [];
+    for (const z of splitZones) {
+      if (z.id === 'pioneers') {
+        xTicks.push(
           { t: toTimestamp('1969-01-01'), label: '’69', major: false },
-          { t: toTimestamp('1996-10-10'), label: '’96', major: false },
-          { t: toTimestamp('2017-01-01'), label: '’17', major: false },
-          { t: toTimestamp('2020-01-01'), label: '2020', major: true },
-          { t: toTimestamp('2021-01-01'), label: '2021', major: true },
-          { t: toTimestamp('2022-01-01'), label: '2022', major: true },
-          { t: toTimestamp('2023-01-01'), label: '2023', major: true },
+          { t: toTimestamp('1990-01-01'), label: '’90', major: false },
+          { t: toTimestamp('2012-09-20'), label: '’12', major: false }
+        );
+      } else if (z.id === 'earlyNeural') {
+        if (hasWave || hasPost2020Early) {
+          xTicks.push(
+            { t: toTimestamp('2014-01-01'), label: '2014', major: true },
+            { t: toTimestamp('2016-01-01'), label: '2016', major: true },
+            { t: toTimestamp('2018-01-01'), label: '2018', major: true },
+            { t: toTimestamp('2020-01-01'), label: '2020', major: true },
+            { t: toTimestamp('2022-01-01'), label: '2022', major: true }
+          );
+        } else {
+          xTicks.push(
+            { t: toTimestamp('2014-01-01'), label: '2014', major: true },
+            { t: toTimestamp('2016-01-01'), label: '2016', major: true },
+            { t: toTimestamp('2018-01-01'), label: '2018', major: true },
+            { t: toTimestamp('2019-10-01'), label: '’19', major: false }
+          );
+        }
+      } else if (z.id === 'wave') {
+        xTicks.push(
           { t: toTimestamp('2024-01-01'), label: '2024', major: true },
           { t: toTimestamp('2025-01-01'), label: '2025', major: true },
           { t: toTimestamp('2026-01-01'), label: '2026', major: true },
-          { t: toTimestamp('2026-11-25'), label: 'Nov 26', major: false },
-        ]
-      : [
-          { t: toTimestamp('1994-01-01'), label: '1969–2019', major: false },
-          { t: toTimestamp('2020-01-01'), label: '2020', major: true },
-          { t: toTimestamp('2021-01-01'), label: '2021', major: true },
-          { t: toTimestamp('2022-01-01'), label: '2022', major: true },
-          { t: toTimestamp('2023-01-01'), label: '2023', major: true },
-          { t: toTimestamp('2024-01-01'), label: '2024', major: true },
-        ];
+          { t: toTimestamp('2026-11-25'), label: 'Nov 26', major: false }
+        );
+      }
+    }
   } else {
     xTicks = buildDynamicXTicks(minTime, maxTime);
   }
@@ -304,17 +373,17 @@ function buildScatterSvgContent(items, opts = {}) {
   const floodX1 = showFloodBand ? Math.max(margin.left, scaleXTime(Math.max(floodT1, minTime))) : null;
   const floodX2 = showFloodBand ? Math.min(width - margin.right, scaleXTime(Math.min(floodT2, maxTime))) : null;
 
-  const pioneerDividerX = splitPioneerZone ? margin.left + pioneerZoneW + pioneerGap / 2 : null;
-  const anchorDividerT = toTimestamp('2024-01-15');
-  const showAnchorDivider =
-    (hasEarlyAnchors || splitPioneerZone) &&
+  const anchorDividerT = toTimestamp('2024-01-01');
+  const showLinearWaveDivider =
+    !isSplitMode &&
+    hasEarlyNeural &&
     hasWave &&
     !customZoom &&
     !isFullLinearSpan &&
-    (presetId === 'all' || presetId === '2020-2026') &&
+    presetId === '2013-2026' &&
     anchorDividerT > minTime &&
     anchorDividerT < maxTime;
-  const anchorDividerX = showAnchorDivider ? scaleXTime(anchorDividerT) : null;
+  const anchorDividerX = showLinearWaveDivider ? scaleXTime(anchorDividerT) : null;
 
   // Deterministic jitter keyed on data coordinates (date + rounded score) so nodes never jump while panning
   const dataBuckets = new Map();
@@ -478,84 +547,97 @@ function buildScatterSvgContent(items, opts = {}) {
   }
   const labelMap = new Map(placedLabels.map((l) => [l.id, l]));
 
-  const fullSpanMs = toTimestamp('2026-12-20') - toTimestamp('2019-11-01');
+  const fullSpanMs = toTimestamp('2026-12-20') - toTimestamp('2013-01-01');
   const currentSpanMs = Math.max(DAY_MS, maxTime - minTime);
   const zoomFactor = isZoomed ? Math.max(1, fullSpanMs / currentSpanMs) : 1;
 
   const innerSvgHtml = `
-    <!-- Pre-2020 Symbolic Pioneers Compressed Band -->
+    <!-- Progressive Split Era Bands (1969–2012 Pioneers | 2013–23 Early Neural | 2024–2026 Frontier Wave) -->
     ${
-      pioneerDividerX !== null
-        ? `
-      <rect
-        x="${margin.left}"
-        y="${margin.top}"
-        width="${(pioneerDividerX - margin.left).toFixed(1)}"
-        height="${innerH}"
-        fill="var(--bg-surface-alt)"
-        opacity="0.72"
-        pointer-events="none"
-      />
-      <line
-        x1="${pioneerDividerX.toFixed(1)}"
-        y1="${margin.top}"
-        x2="${pioneerDividerX.toFixed(1)}"
-        y2="${margin.top + innerH}"
-        stroke="var(--border-strong)"
-        stroke-width="1.3"
-        stroke-dasharray="3 3"
-        pointer-events="none"
-      />
-      <text
-        x="${(margin.left + (pioneerDividerX - margin.left) / 2).toFixed(1)}"
-        y="${margin.top - 11}"
-        text-anchor="middle"
-        class="viz-annotation"
-        pointer-events="none"
-      >1969–2019 · Pioneers</text>
-    `
-        : ''
-    }
-
-    <!-- Subtle Divider between 2020-2023 Early Neural Anchors and 2024-2026 Wave -->
-    ${
-      anchorDividerX !== null
-        ? `
-      <rect
-        x="${(pioneerDividerX ?? margin.left).toFixed(1)}"
-        y="${margin.top}"
-        width="${Math.max(0, anchorDividerX - (pioneerDividerX ?? margin.left)).toFixed(1)}"
-        height="${innerH}"
-        fill="var(--bg-surface-alt)"
-        opacity="0.38"
-        pointer-events="none"
-      />
-      <line
-        x1="${anchorDividerX.toFixed(1)}"
-        y1="${margin.top}"
-        x2="${anchorDividerX.toFixed(1)}"
-        y2="${margin.top + innerH}"
-        stroke="var(--border-strong)"
-        stroke-width="1.2"
-        stroke-dasharray="4 4"
-        pointer-events="none"
-      />
-      <text
-        x="${((pioneerDividerX ?? margin.left) + (anchorDividerX - (pioneerDividerX ?? margin.left)) / 2).toFixed(1)}"
-        y="${margin.top - 11}"
-        text-anchor="middle"
-        class="viz-annotation"
-        pointer-events="none"
-      >2020–23 · Early Neural</text>
-      <text
-        x="${(anchorDividerX + (width - margin.right - anchorDividerX) / 2).toFixed(1)}"
-        y="${margin.top - 11}"
-        text-anchor="middle"
-        class="viz-annotation"
-        pointer-events="none"
-      >2024–2026 Neural &amp; Neuro-Symbolic Wave</text>
-    `
-        : ''
+      isSplitMode
+        ? splitZones
+            .map((z, idx) => {
+              const isLast = idx === splitZones.length - 1;
+              const nextZ = !isLast ? splitZones[idx + 1] : null;
+              const divX = nextZ ? (z.x1 + nextZ.x0) / 2 : null;
+              const bandStart = idx === 0 ? margin.left : (splitZones[idx - 1].x1 + z.x0) / 2;
+              const bandEnd = divX !== null ? divX : width - margin.right;
+              const bandW = Math.max(0, bandEnd - bandStart);
+              return `
+                ${
+                  z.shadeOpacity > 0
+                    ? `<rect
+                        x="${bandStart.toFixed(1)}"
+                        y="${margin.top}"
+                        width="${bandW.toFixed(1)}"
+                        height="${innerH}"
+                        fill="var(--bg-surface-alt)"
+                        opacity="${z.shadeOpacity}"
+                        pointer-events="none"
+                      />`
+                    : ''
+                }
+                ${
+                  divX !== null
+                    ? `<line
+                        x1="${divX.toFixed(1)}"
+                        y1="${margin.top}"
+                        x2="${divX.toFixed(1)}"
+                        y2="${margin.top + innerH}"
+                        stroke="var(--border-strong)"
+                        stroke-width="1.25"
+                        stroke-dasharray="3.5 3.5"
+                        pointer-events="none"
+                      />`
+                    : ''
+                }
+                <text
+                  x="${(bandStart + bandW / 2).toFixed(1)}"
+                  y="${margin.top - 11}"
+                  text-anchor="middle"
+                  class="viz-annotation"
+                  pointer-events="none"
+                >${escapeHtml(z.label)}</text>
+              `;
+            })
+            .join('')
+        : anchorDividerX !== null
+          ? `
+            <rect
+              x="${margin.left}"
+              y="${margin.top}"
+              width="${Math.max(0, anchorDividerX - margin.left).toFixed(1)}"
+              height="${innerH}"
+              fill="var(--bg-surface-alt)"
+              opacity="0.36"
+              pointer-events="none"
+            />
+            <line
+              x1="${anchorDividerX.toFixed(1)}"
+              y1="${margin.top}"
+              x2="${anchorDividerX.toFixed(1)}"
+              y2="${margin.top + innerH}"
+              stroke="var(--border-strong)"
+              stroke-width="1.2"
+              stroke-dasharray="4 4"
+              pointer-events="none"
+            />
+            <text
+              x="${(margin.left + (anchorDividerX - margin.left) / 2).toFixed(1)}"
+              y="${margin.top - 11}"
+              text-anchor="middle"
+              class="viz-annotation"
+              pointer-events="none"
+            >2013–23 · Early Neural</text>
+            <text
+              x="${(anchorDividerX + (width - margin.right - anchorDividerX) / 2).toFixed(1)}"
+              y="${margin.top - 11}"
+              text-anchor="middle"
+              class="viz-annotation"
+              pointer-events="none"
+            >2024–2026 · Frontier Wave</text>
+          `
+          : ''
     }
 
     <!-- Shaded Autumn 2026 Acceleration Band -->
@@ -709,11 +791,8 @@ function buildScatterSvgContent(items, opts = {}) {
     minY,
     maxY,
     isZoomed,
-    splitPioneerZone,
-    pioneerZoneW,
-    pioneerGap,
-    pioneerMinTime,
-    pioneerMaxTime,
+    isSplitMode,
+    splitZones,
     zoomFactor,
     visibleCount: inBoundsCount,
     innerSvgHtml,
@@ -752,15 +831,18 @@ export function renderTimelineScatter(items, opts = {}) {
     minY,
     maxY,
     isZoomed,
-    splitPioneerZone,
-    pioneerZoneW,
-    pioneerGap,
-    pioneerMinTime,
-    pioneerMaxTime,
+    isSplitMode,
+    splitZones,
     zoomFactor,
     visibleCount,
     innerSvgHtml,
   } = layout;
+
+  const serializedZones = escapeHtml(
+    JSON.stringify(
+      splitZones.map((z) => ({ x0: z.x0, x1: z.x1, tMin: z.tMin, tMax: z.tMax }))
+    )
+  );
 
   return `
     <div class="viz-card">
@@ -890,11 +972,8 @@ export function renderTimelineScatter(items, opts = {}) {
           data-t-max="${maxTime}"
           data-y-min="${minY}"
           data-y-max="${maxY}"
-          data-split-pioneer="${splitPioneerZone ? '1' : '0'}"
-          data-pioneer-w="${pioneerZoneW}"
-          data-pioneer-gap="${pioneerGap}"
-          data-pioneer-t-min="${pioneerMinTime}"
-          data-pioneer-t-max="${pioneerMaxTime}"
+          data-split-mode="${isSplitMode ? '1' : '0'}"
+          data-split-zones="${serializedZones}"
           data-interaction-mode="${interactionMode}"
           role="img"
           aria-label="Scatter plot of AI scientific breakthroughs by date and ${escapeHtml(metricMeta.label)}"
@@ -956,22 +1035,20 @@ export function bindScatterInteractions(svg, items, rankedMap, opts, callbacks) 
   const mTop = Number(svg.dataset.marginTop);
   const innerW = Number(svg.dataset.innerW);
   const innerH = Number(svg.dataset.innerH);
-  const pioneerW = Number(svg.dataset.pioneerW);
-  const pioneerGap = Number(svg.dataset.pioneerGap);
-  const pioneerTMin = Number(svg.dataset.pioneerTMin);
-  const pioneerTMax = Number(svg.dataset.pioneerTMax);
   const mode = svg.dataset.interactionMode || 'zoom';
 
   let curTMin = Number(svg.dataset.tMin);
   let curTMax = Number(svg.dataset.tMax);
   let curYMin = Number(svg.dataset.yMin);
   let curYMax = Number(svg.dataset.yMax);
-  let curSplitPioneer = svg.dataset.splitPioneer === '1';
+  let curSplitZones = [];
+  try {
+    curSplitZones = svg.dataset.splitMode === '1' ? JSON.parse(svg.dataset.splitZones || '[]') : [];
+  } catch {
+    curSplitZones = [];
+  }
 
-  const modernStartX = mLeft + pioneerW + pioneerGap;
-  const modernW = innerW - pioneerW - pioneerGap;
-
-  const MIN_PAN_T = toTimestamp('1973-01-01');
+  const MIN_PAN_T = toTimestamp('1966-01-01');
   const MAX_PAN_T = toTimestamp('2027-06-01');
 
   const dynamicLayer = svg.querySelector('#scatter-dynamic-layer');
@@ -1000,14 +1077,22 @@ export function bindScatterInteractions(svg, items, rankedMap, opts, callbacks) 
     return { x: p.x, y: p.y };
   }
 
+  function findSplitZoneAtX(px) {
+    if (!curSplitZones.length) return null;
+    for (let i = 0; i < curSplitZones.length; i++) {
+      const z = curSplitZones[i];
+      const nextZ = curSplitZones[i + 1];
+      const upper = nextZ ? (z.x1 + nextZ.x0) / 2 : Infinity;
+      if (px <= upper) return z;
+    }
+    return curSplitZones[curSplitZones.length - 1];
+  }
+
   function invertX(px) {
-    if (curSplitPioneer) {
-      if (px <= mLeft + pioneerW + pioneerGap / 2) {
-        const frac = Math.max(0, Math.min(1, (px - mLeft) / Math.max(1, pioneerW)));
-        return pioneerTMin + frac * (pioneerTMax - pioneerTMin);
-      }
-      const frac = Math.max(0, Math.min(1, (px - modernStartX) / Math.max(1, modernW)));
-      return curTMin + frac * (curTMax - curTMin);
+    if (curSplitZones.length >= 2) {
+      const z = findSplitZoneAtX(px);
+      const frac = Math.max(0, Math.min(1, (px - z.x0) / Math.max(1, z.x1 - z.x0)));
+      return z.tMin + frac * (z.tMax - z.tMin);
     }
     const frac = (px - mLeft) / Math.max(1, innerW);
     return curTMin + frac * (curTMax - curTMin);
@@ -1133,13 +1218,13 @@ export function bindScatterInteractions(svg, items, rankedMap, opts, callbacks) 
     curTMax = layout.maxTime;
     curYMin = layout.minY;
     curYMax = layout.maxY;
-    curSplitPioneer = layout.splitPioneerZone;
+    curSplitZones = layout.isSplitMode ? layout.splitZones : [];
 
     svg.dataset.tMin = String(curTMin);
     svg.dataset.tMax = String(curTMax);
     svg.dataset.yMin = String(curYMin);
     svg.dataset.yMax = String(curYMax);
-    svg.dataset.splitPioneer = curSplitPioneer ? '1' : '0';
+    svg.dataset.splitMode = layout.isSplitMode ? '1' : '0';
 
     if (visibleCountEl) visibleCountEl.textContent = String(layout.visibleCount);
     if (resetBtn) {
@@ -1173,14 +1258,16 @@ export function bindScatterInteractions(svg, items, rankedMap, opts, callbacks) 
     let baseTMin = curTMin;
     let baseTMax = curTMax;
 
-    if (usePan && curSplitPioneer) {
-      // Smooth Split-to-Linear handoff anchored directly under the pointer (zero jump on frame 0)
+    if (usePan && curSplitZones.length >= 2) {
+      // Smooth Split-to-Linear handoff anchored directly under the pointer using active zone's scale
       const focusT = invertX(start.x);
       const frac = Math.max(0, Math.min(1, (start.x - mLeft) / Math.max(1, innerW)));
-      const baseSpanT =
-        start.x >= modernStartX
-          ? Math.min(MAX_PAN_T - MIN_PAN_T, (curTMax - curTMin) * (innerW / Math.max(1, modernW)))
-          : MAX_PAN_T - MIN_PAN_T;
+      const activeZone = findSplitZoneAtX(start.x);
+      const zoneRate =
+        activeZone
+          ? (activeZone.tMax - activeZone.tMin) / Math.max(1, activeZone.x1 - activeZone.x0)
+          : (MAX_PAN_T - MIN_PAN_T) / Math.max(1, innerW);
+      const baseSpanT = Math.min(MAX_PAN_T - MIN_PAN_T, Math.max(DAY_MS * 30, zoneRate * innerW));
       baseTMin = focusT - frac * baseSpanT;
       baseTMax = baseTMin + baseSpanT;
     }

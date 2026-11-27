@@ -574,7 +574,10 @@ function attachGlobalListeners() {
       }
       const svg = document.getElementById('timeline-scatter-svg');
       if (svg) {
-        const curTMin = Number(svg.dataset.tMin);
+        const isSplit = svg.dataset.splitMode === '1';
+        const curTMin = isSplit && action === 'in'
+          ? Date.parse('2013-01-01T00:00:00Z')
+          : Number(svg.dataset.tMin);
         const curTMax = Number(svg.dataset.tMax);
         const curYMin = Number(svg.dataset.yMin);
         const curYMax = Number(svg.dataset.yMax);
@@ -586,7 +589,7 @@ function attachGlobalListeners() {
 
         const minBound = Date.parse('1966-01-01T00:00:00Z');
         const maxBound = Date.parse('2027-02-01T00:00:00Z');
-        const fullModernSpan = Date.parse('2026-12-20T00:00:00Z') - Date.parse('2019-11-01T00:00:00Z');
+        const fullModernSpan = Date.parse('2026-12-20T00:00:00Z') - Date.parse('2013-01-01T00:00:00Z');
 
         if (action === 'out' && newHalfT * 2 >= fullModernSpan * 0.96 && newHalfY * 2 >= 26) {
           state.scatter.customZoom = null;
