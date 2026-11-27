@@ -54,7 +54,8 @@
     "baker-serine-hydrolases-2025",
     "baker-calcium-ion-channels-2025",
     "rfdiffusion2-enzyme-scaffolding-2025",
-    "rfdiffusion3-all-atom-design-2026"
+    "rfdiffusion3-all-atom-design-2026",
+    "rfdiffusion-antivenom-binders-2025"
   ],
   "sources": [
     {

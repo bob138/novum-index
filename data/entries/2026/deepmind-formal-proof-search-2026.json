@@ -44,7 +44,9 @@
   },
   "enables": [
     "kothe-conjecture-disproof-2026",
-    "hadwiger-covering-3d-2026"
+    "hadwiger-covering-3d-2026",
+    "epoch-oeis-open-147-conjectures-2026",
+    "alphaproof-nexus-ghz-nogo-2026"
   ],
   "sources": [
     {

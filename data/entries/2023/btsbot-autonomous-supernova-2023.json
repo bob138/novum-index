@@ -1,0 +1,64 @@
+{
+  "id": "btsbot-autonomous-supernova-2023",
+  "title": "BTSbot Achieves First Fully Autonomous End-to-End AI Supernova Discovery (SN 2023tyk)",
+  "shortTitle": "BTSbot Autonomous Supernova (ApJ)",
+  "date": "2023-10-13",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Time-Domain Astrophysics",
+    "Autonomous Observatories",
+    "Computer Vision"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "BTSbot + SNIascore Robotic Observatory AI (Northwestern CIERA / Caltech / ZTF)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Zero human intervention (end-to-end)",
+  "isAnchor": true,
+  "whyItMatters": "First supernova (SN 2023tyk) in history to be detected, scheduled for robotic spectroscopy, classified (Type Ia), and publicly announced to astronomers with zero human intervention.",
+  "summary": "Achieved on October 13, 2023 and published in The Astrophysical Journal in September 2024 (arXiv January 2024) by Nabeel Rehemtulla, Adam A. Miller, Christoffer Fremling, and the Zwicky Transient Facility (ZTF) consortium led by Northwestern University (CIERA) and Caltech, BTSbot is a multimodal convolutional neural network trained on >1.4 million historical transient images to identify bright extragalactic supernovae in real time. On October 5–13, 2023, BTSbot autonomously spotted candidate SN 2023tyk in ZTF sky images, automatically commanded the robotic Palomar 60-inch telescope (SEDM) to acquire an optical spectrum, ran automated spectral classification (SNIascore) confirming a Type Ia thermonuclear supernova, and broadcast the official public discovery report—completing the entire scientific discovery loop with zero human action.",
+  "technicalHighlights": [
+    "Multimodal CNN fused difference-imaging cutouts and light-curve metadata to rival human scanner completeness while eliminating ~2,200 hours of manual visual inspection.",
+    "Closed the full physical observatory loop between ZTF survey alerts, robotic Palomar SEDM spectroscopy, automated SNIascore classification, and public Transient Name Server announcement.",
+    "Validated a blueprint essential for coping with the Vera C. Rubin Observatory’s upcoming deluge of ~10 million transient alerts per night."
+  ],
+  "caveats": "Automated robotic follow-up was initially optimized for bright extragalactic Type Ia and core-collapse supernovae; rare exotic transients still benefit from human spectroscopic review.",
+  "contributors": [
+    "Nabeel Rehemtulla",
+    "Adam A. Miller",
+    "Christoffer Fremling",
+    "Daniel A. Perley",
+    "Mansi M. Kasliwal"
+  ],
+  "institutions": [
+    "Northwestern University (CIERA)",
+    "California Institute of Technology",
+    "Liverpool John Moores University"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 86,
+    "verification": 97,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated the first completely end-to-end autonomous physical observatory discovery loop in astrophysics.",
+    "ripple": "Establishes the operational autonomous-discovery paradigm required for the Vera C. Rubin Observatory (LSST) era.",
+    "verification": "Peer-reviewed in The Astrophysical Journal with real spectroscopic confirmation of SN 2023tyk and subsequent autonomous discoveries (e.g., SN 2024jlf).",
+    "velocity": "Eliminated human triage latency from survey detection to robotic spectroscopic confirmation and global scientific publication."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "The Astrophysical Journal — The Zwicky Transient Facility Bright Transient Survey III: BTSbot (Sep 2024)",
+      "url": "https://doi.org/10.3847/1538-4357/ad5666",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2401.15167",
+      "url": "https://arxiv.org/abs/2401.15167",
+      "type": "paper"
+    }
+  ]
+}

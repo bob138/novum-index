@@ -1,0 +1,63 @@
+{
+  "id": "pluribus-six-player-poker-2019",
+  "title": "Pluribus Defeats Elite Human Pros in Six-Player No-Limit Texas Hold’em Poker",
+  "shortTitle": "Pluribus 6-Player Poker (Science)",
+  "date": "2019-07-11",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Imperfect-Information Game Theory",
+    "Multi-Agent Search",
+    "Counterfactual Regret Minimization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Pluribus (Monte Carlo CFR + Depth-Limited Multi-Agent Search — CMU / Facebook AI)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "8 days on 64-core server (~$144 compute)",
+  "isAnchor": true,
+  "whyItMatters": "First AI to defeat elite human professionals in a complex six-player imperfect-information game—breaking the classic two-player zero-sum game-theory barrier on just ~$144 of cloud compute.",
+  "summary": "Published in Science in July 2019 by Noam Brown and Tuomas Sandholm at Carnegie Mellon University and Facebook AI Research, Pluribus solved a milestone long considered fundamentally harder than two-player games like Chess, Go, or heads-up poker: six-player No-Limit Texas Hold’em, where computing a Nash equilibrium is PPAD-complete and offers no mathematical guarantee against multi-agent collusion or non-equilibrium opponents. Combining Linear Monte Carlo Counterfactual Regret Minimization (MCCFR) self-play blueprints with a novel depth-limited real-time search algorithm that hedges over multiple continuation strategies, Pluribus trained in just 8 days on a single 64-core server (~$144 compute) and decisively defeated 15 elite world-champion poker professionals across 10,000 hands.",
+  "technicalHighlights": [
+    "Broke the two-player zero-sum game-theory barrier by achieving superhuman play in six-player imperfect-information No-Limit Hold’em.",
+    "Introduced depth-limited imperfect-information search over multiple assumed opponent continuation policies without needing deep neural networks or massive GPU clusters.",
+    "Trained in 8 days on 64 CPU cores (~$144 cloud compute) and defeated elite human professionals by a statistically significant margin over 10,000 hands."
+  ],
+  "caveats": "Does not guarantee formal Nash equilibrium convergence in general >2-player games (which is theoretically intractable), relying instead on empirical self-play robustness.",
+  "contributors": [
+    "Noam Brown",
+    "Tuomas Sandholm"
+  ],
+  "institutions": [
+    "Carnegie Mellon University",
+    "Meta FAIR (Facebook AI Research)"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 90,
+    "verification": 98,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Overcame the foundational two-player zero-sum boundary in imperfect-information multi-agent game theory.",
+    "ripple": "Directly inspired strategic multi-agent reasoning in Cicero (Diplomacy) and influenced test-time search ideas behind modern reasoning LLMs.",
+    "verification": "Peer-reviewed in Science with statistically significant 10,000-hand evaluation against 15 world-class poker professionals.",
+    "velocity": "Achieved superhuman six-player imperfect-information mastery on a single 64-core server (~$144 compute)."
+  },
+  "enables": [
+    "cicero-diplomacy-strategic-lm-2022",
+    "deepnash-stratego-gt-rl-2022"
+  ],
+  "sources": [
+    {
+      "label": "Science — Superhuman AI for multiplayer poker (Jul 2019)",
+      "url": "https://doi.org/10.1126/science.aay2400",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 31296650",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31296650/",
+      "type": "paper"
+    }
+  ]
+}

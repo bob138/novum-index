@@ -1,0 +1,62 @@
+{
+  "id": "lion-optimizer-program-search-2023",
+  "title": "Symbolic Program Search Autonomously Discovers Lion Deep-Learning Optimizer Outperforming AdamW",
+  "shortTitle": "Lion Optimizer (Program Search)",
+  "date": "2023-02-13",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Automated Algorithm Discovery",
+    "Deep Learning Optimization",
+    "Evolutionary Program Search"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Regularized Evolutionary Symbolic Program Search (Google Brain / UCLA)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Evolutionary symbolic program search autonomously discovered Lion—a simpler, lower-memory deep-learning optimizer outperforming AdamW across vision, diffusion, and language models with up to 5× compute savings.",
+  "summary": "Released in February 2023 and published at NeurIPS 2023 by Xiangning Chen, Chen Liang, Da Huang, Esteban Real, Kaiyuan Wang, Hieu Pham, Xuanyi Dong, Thang Luong, Cho-Jui Hsieh, Yifeng Lu, and Quoc V. Le at Google Brain and UCLA, this work searched directly over an open-ended space of symbolic mathematical programs to discover new neural-network optimization algorithms. Starting from simple training proxies and using regularized evolution plus automated program simplification, the search autonomously discovered Lion (EvoLved Sign Momentum)—an unexpectedly simple update rule tracking only momentum and taking the sign of interpolated updates. Lion cut optimizer memory overhead by 50% compared to AdamW while boosting Vision Transformer ImageNet accuracy by +2%, slashing JFT pretraining compute up to 5×, and accelerating diffusion and language-model training.",
+  "technicalHighlights": [
+    "Searched an open-ended symbolic space of executable Python/math programs rather than tuning hyperparameters of fixed human optimizer templates.",
+    "Autonomously discovered Lion (EvoLved Sign Momentum), requiring only a single momentum buffer (half the memory of AdamW) and a sign-based update rule.",
+    "Generalized from tiny search proxies to billion-parameter Vision Transformers, diffusion models, and LLMs—achieving up to 5× pretraining compute savings and widespread adoption in PyTorch/Optax."
+  ],
+  "caveats": "Lion typically requires ~3–10× smaller learning rates and larger batch sizes than AdamW to achieve peak stability and gains, and shows smaller margins on small-batch or highly noisy text setups.",
+  "contributors": [
+    "Xiangning Chen",
+    "Chen Liang",
+    "Da Huang",
+    "Esteban Real",
+    "Quoc V. Le"
+  ],
+  "institutions": [
+    "Google Brain (Google DeepMind)",
+    "University of California, Los Angeles"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Proved automated symbolic program search can discover a clean, human-interpretable core ML algorithm rivaling and surpassing AdamW.",
+    "ripple": "Integrated into Optax, PyTorch ecosystems, and frontier training pipelines while foreshadowing LLM-driven evolutionary algorithm discovery (FunSearch, AlphaEvolve, DiscoRL).",
+    "verification": "Peer-reviewed at NeurIPS 2023 with open-source implementations independently reproduced and analyzed theoretically (Hamiltonian descent) across the ML community.",
+    "velocity": "Autonomously synthesized an optimizer beating a decade of human-engineered adaptive gradient methods."
+  },
+  "enables": [
+    "funsearch-2023",
+    "alphaevolve-matrix-2025",
+    "deepmind-discorl-algorithm-discovery-2025"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2302.06675 — Symbolic Discovery of Optimization Algorithms (NeurIPS 2023)",
+      "url": "https://arxiv.org/abs/2302.06675",
+      "type": "paper"
+    }
+  ]
+}

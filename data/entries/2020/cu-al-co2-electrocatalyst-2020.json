@@ -1,0 +1,68 @@
+{
+  "id": "cu-al-co2-electrocatalyst-2020",
+  "title": "Active Machine Learning Discovers Cu–Al Electrocatalyst for Record CO₂-to-Ethylene Conversion",
+  "shortTitle": "Cu–Al CO₂ Electrocatalyst (Nature)",
+  "date": "2020-05-13",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Electrocatalysis",
+    "Carbon Capture & Utilization",
+    "Active Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Active-Learning DFT Surrogate (GASpy — U of Toronto / CMU)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Active machine learning screened 244 copper alloys across ~229,000 adsorption sites to discover a nanoporous Cu–Al electrocatalyst achieving a record 80% Faradaic efficiency for converting CO₂ into ethylene.",
+  "summary": "Published in Nature in May 2020 by Miao Zhong, Kevin Tran, Zachary W. Ulissi, Edward H. Sargent, and colleagues at the University of Toronto, Carnegie Mellon University, and Nanjing University, this study deployed an iterative active-learning framework (GASpy) combining automated density functional theory (DFT) with machine-learned adsorption-energy surrogates to search 244 copper-containing intermetallic crystals spanning 12,229 surfaces and 228,966 adsorption sites. The models pinpointed copper–aluminum (Cu–Al) alloys as optimal CO-binding catalysts; experimental synthesis of de-alloyed nanoporous Cu–Al delivered the highest reported Faradaic efficiency for electrochemical CO₂ reduction to ethylene (>80% at 400 mA/cm² and ~82% peak).",
+  "technicalHighlights": [
+    "Screened 244 Cu-containing alloys, 12,229 facets, and 228,966 adsorption sites via active-learning-guided DFT (~4,000 automated calculations).",
+    "Identified Cu–Al as providing near-optimal CO adsorption energies and high-density active sites suppressing competing hydrogen evolution.",
+    "Experimentally validated de-alloyed nanoporous Cu–Al at >80% Faradaic efficiency for CO₂-to-ethylene conversion at industrially relevant current densities (400 mA/cm²)."
+  ],
+  "caveats": "Long-term catalyst stability under industrial electrolyzer operation, carbonate formation in alkaline electrolytes, and full-cell energy efficiency remained engineering challenges beyond initial discovery.",
+  "contributors": [
+    "Miao Zhong",
+    "Kevin Tran",
+    "Yimeng Min",
+    "Zachary W. Ulissi",
+    "Edward H. Sargent"
+  ],
+  "institutions": [
+    "University of Toronto",
+    "Carnegie Mellon University",
+    "Nanjing University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 86,
+    "verification": 95,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated closed-loop active machine learning overcoming the combinatorial bottleneck of heterogeneous alloy catalyst screening.",
+    "ripple": "Directly galvanized the Open Catalyst Project (OC20/OC22) and modern ML-guided electrocatalyst design for green fuels and decarbonization.",
+    "verification": "Peer-reviewed in Nature with full experimental synthesis, synchrotron characterization, and electrochemical validation.",
+    "velocity": "Compressed tens of thousands of prohibitive DFT surface evaluations into an active-learning search of ~4,000 calculations."
+  },
+  "enables": [
+    "gnome-materials-2023",
+    "meta-omol25-uma-atoms-2025",
+    "ibs-cbnn-cross-material-catalyst-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Accelerated discovery of CO2 electrocatalysts using active machine learning (May 2020)",
+      "url": "https://doi.org/10.1038/s41586-020-2242-8",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 32405017",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32405017/",
+      "type": "paper"
+    }
+  ]
+}

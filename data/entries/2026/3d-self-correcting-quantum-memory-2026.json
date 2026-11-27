@@ -1,0 +1,59 @@
+{
+  "id": "3d-self-correcting-quantum-memory-2026",
+  "title": "Patrick Hayden & Gemini 4 Argon Prove Thermal and Perturbative Stability for 3D Passive Quantum Memory",
+  "shortTitle": "3D Passive Quantum Memory (Gemini 4)",
+  "date": "2026-11-16",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Error Correction",
+    "Topological Quantum Matter",
+    "Quantum Information"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Google Gemini 4 Argon & Carbon (+ Partial Lean 4 Certificates)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Stanford physicist Patrick Hayden and Gemini 4 Argon—which performed most of the detailed proof construction—proved thermal self-correction below Tc > 0 and zero-temperature perturbative stability for a 3D passive quantum memory family.",
+  "summary": "Posted to arXiv on November 16, 2026 (arXiv:2611.21749) by Patrick Hayden (Stanford University) with an explicit disclosure that Google’s Gemini 4 Argon performed 'most of the detailed mathematical reasoning and proof construction', this work tackles one of quantum physics’ most celebrated open challenges: whether a local 3D quantum system can passively protect a qubit against thermal noise and Hamiltonian imperfections like a classical ferromagnet protects a bit. Modifying a three-layer welded stabilizer hierarchy, Part I proves (1) unperturbed thermal self-correction with stretched-exponential memory lifetime below a positive critical temperature Tc > 0 under Markovian Davies baths, and (2) zero-temperature stability with a uniform bulk spectral gap and superpolynomially long dressed logical memory under weak superpolynomially decaying perturbations—accompanied by author-reported Lean 4 certificates of standalone existence theorems.",
+  "technicalHighlights": [
+    "Establishes a three-layer welded 3D code hierarchy proving unperturbed thermal self-correction below Tc > 0 and zero-temperature perturbative stability via relaxed Bravyi–Hastings–Michalakis local topological order.",
+    "Gemini 4 Argon executed most of the detailed operator-algebraic, Lieb–Robinson, and multiscale spectral-gap proof construction under Hayden’s strategic direction.",
+    "Includes standalone Lean 4 existential verification certificates for key existence conclusions (with joint T > 0, V ≠ 0 stability deferred to a planned Part II)."
+  ],
+  "caveats": "Part I proves thermal stability (V = 0, T > 0) and perturbative stability (T = 0, V ≠ 0) separately—not simultaneously—with strictly asymptotic, non-physical constants (Tc ≲ 10⁻⁵¹); independent expert review of the preprint and partial Lean certificates is ongoing.",
+  "contributors": [
+    "Patrick Hayden"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 84,
+    "verification": 74,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Makes substantial technical progress on the long-standing 3D passive self-correcting quantum memory problem shortly after Haah’s cubic code was shown to thermalize.",
+    "ripple": "Demonstrates frontier AI executing deep, multi-section mathematical-physics proofs in topological quantum matter and fault-tolerant memory theory.",
+    "verification": "Early preprint with partial standalone Lean 4 certificates (not line-by-line formalization) currently awaiting independent expert audit and companion Part II.",
+    "velocity": "Gemini 4 Argon constructed intricate multiscale homological and operator-algebraic proofs that typically take research groups years."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.21749 — Robust Passive Quantum Memory in Three Dimensions, Part I (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.21749",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — Paper Summary & AI Disclosure (Nov 2026)",
+      "url": "https://quantumresearch.center/news/papers/2611.21749/",
+      "type": "explainer"
+    }
+  ]
+}

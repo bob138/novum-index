@@ -1,0 +1,60 @@
+{
+  "id": "gibbs-states-markov-property-2026",
+  "title": "GPT-6 Astra Helps Prove Uniform Markov Property & Triviality of High-Temperature Quantum Gibbs States",
+  "shortTitle": "Quantum Gibbs Markov Property (GPT-6)",
+  "date": "2026-11-19",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Many-Body Physics",
+    "Quantum Statistical Mechanics",
+    "Mixed-State Phases of Matter"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-6 Astra & Anthropic Claude Opus 5",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Proves long-conjectured exponential decay of conditional mutual information (uniform Markov property) for all local high-temperature quantum Gibbs states—via a projective 2-design cluster-expansion proof found with GPT-6 Astra.",
+  "summary": "Posted to arXiv on November 19, 2026 (arXiv:2611.26626) by Andrew D. Kim, Tai Hsuan Yang, and Jong Yeon Lee (University of Illinois Urbana-Champaign), this mathematical-physics paper proves that thermal Gibbs states of arbitrary local noncommuting quantum Hamiltonians above a constant temperature threshold satisfy a uniform Markov property—exponential decay of mutual and conditional mutual information across arbitrary spatial tripartitions A ⊔ B ⊔ C—and belong to the same mixed-state phase as the maximally mixed state. Previously proved only in 1D or for commuting Hamiltonians because noncommutativity breaks cluster expansions of log(ρ), the authors circumvented the obstruction via an overcomplete projective 2-design classical-shadow decomposition yielding strictly positive cluster weights, explicitly stating that the proof was found under their guidance using GPT-6 Astra (with Claude Opus 5 assistance) and verified and reorganized by the authors.",
+  "technicalHighlights": [
+    "Proves uniform exponential decay of conditional mutual information (CMI) and separability for arbitrary local noncommuting quantum Hamiltonians at sufficiently high temperature in any dimension.",
+    "Bypasses the classic noncommuting log(ρ) divergence obstruction using a local projective 2-design classical representation with convergent positive polymer cluster expansions.",
+    "Establishes that all high-temperature quantum Gibbs states lie in the trivial mixed-state phase of matter; proof discovered with GPT-6 Astra and Claude Opus 5."
+  ],
+  "caveats": "Recent November 2026 arXiv preprint awaiting independent peer review; the projective 2-design decomposition yields a non-tight inverse-temperature threshold β rather than the sharp physical critical point.",
+  "contributors": [
+    "Andrew D. Kim",
+    "Tai Hsuan Yang",
+    "Jong Yeon Lee"
+  ],
+  "institutions": [
+    "University of Illinois Urbana-Champaign"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 83,
+    "verification": 78,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Resolves a major longstanding open problem in quantum statistical mechanics and mixed-state phases of matter beyond 1D and commuting models.",
+    "ripple": "Directly impacts quantum Gibbs sampling algorithms, quantum learning theory, and condensed-matter classification of finite-temperature mixed phases.",
+    "verification": "Author-verified analytical proof posted on arXiv, currently awaiting peer review.",
+    "velocity": "GPT-6 Astra found the key projective 2-design cluster-expansion trick under physicist guidance."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.26626 — High-temperature Gibbs states are uniformly Markovian and trivial (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.26626",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — AI Claims Entry (Nov 2026)",
+      "url": "https://quantumresearch.center/news/ai-claims/",
+      "type": "explainer"
+    }
+  ]
+}

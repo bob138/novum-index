@@ -1,0 +1,62 @@
+{
+  "id": "deepmind-glassy-dynamics-gnn-2020",
+  "title": "DeepMind Graph Neural Networks Predict Long-Time Glassy Dynamics From Static Atomic Structure",
+  "shortTitle": "Glassy Dynamics GNN (Nature Physics)",
+  "date": "2020-04-06",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Condensed Matter Physics",
+    "Statistical Mechanics",
+    "Graph Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepMind Glassy-Dynamics Graph Neural Network (Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Graph neural networks predicted long-time particle rearrangements in disordered amorphous glasses from static structure alone, substantially outperforming decades of handcrafted condensed-matter physics theories.",
+  "summary": "Published in Nature Physics in April 2020 by Victor Bapst, Thomas Keck, Aleksandar Grabska-Barwińska, Craig Donner, Ekin D. Cubuk, Samuel S. Schoenholz, Andrea Liu, and colleagues at Google DeepMind and the University of Pennsylvania, this study tackled one of condensed-matter physics’ most stubborn mysteries—how static atomic arrangement governs the dramatically slow, heterogeneous dynamics of supercooled liquids and amorphous glasses. Representing 3D particle neighborhoods as graphs and training a deep message-passing GNN to predict each particle’s future 'propensity' to rearrange across orders of magnitude in time, the model significantly outperformed every established physics-based structural descriptor and prior ML baseline, generalized across temperatures and system sizes, and revealed that subtle multi-shell local structural correlations drive glassy relaxation.",
+  "technicalHighlights": [
+    "Represented disordered 3D amorphous solids as particle-interaction graphs and trained a GNN to predict ensemble-averaged future particle mobility solely from an initial static snapshot.",
+    "Surpassed decades of handcrafted structural indicators (free volume, local potential energy, softness SVM) across the full structural-relaxation timescale of Kob–Andersen glasses.",
+    "Generalized zero-shot across temperatures and system sizes, establishing strong quantitative evidence for a deep structure–dynamics link in disordered matter."
+  ],
+  "caveats": "While demonstrating strong predictive power from static structure, the GNN did not by itself yield a closed-form analytical theory of the glass transition and relied on simulated Lennard–Jones glass trajectories.",
+  "contributors": [
+    "Victor Bapst",
+    "Thomas Keck",
+    "Ekin D. Cubuk",
+    "Samuel S. Schoenholz",
+    "Andrea J. Liu"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "University of Pennsylvania"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 96,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Resolved a longstanding debate in statistical mechanics by proving static atomic structure carries far more predictive signal for long-time glassy dynamics than classical theories captured.",
+    "ripple": "Catalyzed graph-network physics across soft matter, amorphous solids, active matter, and materials mechanics—and directly informed DeepMind’s GraphCast and GNoME architectures.",
+    "verification": "Peer-reviewed in Nature Physics with rigorous out-of-temperature generalization tests and open benchmarks.",
+    "velocity": "Compressed decades of manual condensed-matter order-parameter engineering into end-to-end geometric graph representation learning."
+  },
+  "enables": [
+    "gnome-materials-2023",
+    "graphcast-weather-2023",
+    "dusty-plasma-new-physics-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature Physics — Unveiling the predictive power of static structure in glassy systems (Apr 2020)",
+      "url": "https://doi.org/10.1038/s41567-020-0842-8",
+      "type": "paper"
+    }
+  ]
+}

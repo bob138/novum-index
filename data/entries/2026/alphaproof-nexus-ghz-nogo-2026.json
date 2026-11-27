@@ -1,0 +1,65 @@
+{
+  "id": "alphaproof-nexus-ghz-nogo-2026",
+  "title": "AlphaProof Nexus Autonomously Proves Quantum-Optics No-Go Theorem for High-Dimensional GHZ States",
+  "shortTitle": "AlphaProof Nexus: Photonic GHZ No-Go",
+  "date": "2026-11-19",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Optics",
+    "Multiphoton Entanglement",
+    "Automated Theorem Proving"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaProof Nexus (Google DeepMind Formal Conjectures + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 9,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "AlphaProof Nexus autonomously discovered and Lean-verified a tensor-algebraic no-go theorem settling Krenn’s 2017 photonic GHZ conjecture for all D ≥ N, yielding a new physical optical law.",
+  "summary": "Posted to arXiv on November 19, 2026 (arXiv:2611.26300) by Mario Krenn, Moritz Firsching, George Tsoukalas, Rishikesh Gajjala, Xuemei Gu, and Swarat Chaudhuri (Google DeepMind, Max Planck Institute for the Science of Light, and UT Austin), this work closes a nine-year loop directly descended from Krenn’s 2016 Melvin AI experiments. In 2017, Krenn and coauthors conjectured from AI-designed photonic graphs that linear-optical pair-source networks cannot generate N-photon, D-dimensional Greenberger–Horne–Zeilinger (GHZ) states beyond small known cases. Deployed on DeepMind’s Formal Conjectures repository, AlphaProof Nexus autonomously discovered a formal Lean 4 proof establishing that no complex-weighted monochromatic quantum graph exists for any even N ≥ 4 whenever D ≥ N—constructing a vertex-factored linear functional whose row–column imbalance vanishes on every graph amplitude yet stays nonzero on the GHZ state. The authors then translated the AI’s formal proof into a new physical coincidence principle forbidding such photonic setups.",
+  "technicalHighlights": [
+    "AlphaProof Nexus autonomously discovered a complete, machine-checked Lean 4 proof resolving Krenn et al.’s 2017 photonic GHZ conjecture for all even N ≥ 4 and D ≥ N.",
+    "Invented a clean vertex-factored linear functional argument reducing perfect-matching graph amplitudes to an (N−1) × N effective weight matrix imbalance.",
+    "Exemplifies true AI-to-human scientific understanding: physicists translated the AI’s formal proof into an interpretable optical coincidence no-go law."
+  ],
+  "caveats": "Resolves the major regime D ≥ N of Krenn’s 2017 conjecture; smaller-dimension cases (3 ≤ D < N) remain open.",
+  "contributors": [
+    "Mario Krenn",
+    "Moritz Firsching",
+    "George Tsoukalas",
+    "Rishikesh Gajjala",
+    "Xuemei Gu",
+    "Swarat Chaudhuri"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Max Planck Institute for the Science of Light",
+    "University of Texas at Austin"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 86,
+    "verification": 98,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Proves a fundamental no-go theorem in high-dimensional photonic quantum entanglement and extracts a new physical law from an AI-discovered proof.",
+    "ripple": "Demonstrates an end-to-end paradigm where formal AI theorem provers discover new theoretical-physics theorems that humans subsequently interpret physically.",
+    "verification": "Machine-checked directly in Lean 4 by AlphaProof Nexus and independently read, digested, and physically interpreted by leading quantum-optics authors.",
+    "velocity": "Autonomously cracked a 9-year-old quantum-optics conjecture formalized in DeepMind’s Formal Conjectures benchmark."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.26300 — A Tensor-Algebraic No-Go Theorem for High-Dimensional Photonic GHZ States Discovered with AlphaProof Nexus (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.26300",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — Paper Summary (Nov 2026)",
+      "url": "https://quantumresearch.center/news/papers/2611.26300/",
+      "type": "explainer"
+    }
+  ]
+}

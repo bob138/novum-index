@@ -1,0 +1,67 @@
+{
+  "id": "alphazero-general-selfplay-2018",
+  "title": "AlphaZero Tabula-Rasa Self-Play RL Masters Chess, Shogi & Go From Rules Alone",
+  "shortTitle": "AlphaZero General Self-Play (Science)",
+  "date": "2018-12-07",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "General Reinforcement Learning",
+    "Self-Play Search",
+    "Algorithm Discovery"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaZero & AlphaGo Zero (Tabula-Rasa Self-Play RL + MCTS — Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "4–24 hours tabula-rasa training per game",
+  "isAnchor": true,
+  "whyItMatters": "Eliminated human training data and domain heuristics entirely: a single tabula-rasa self-play RL + MCTS algorithm mastered Chess, Shogi, and Go from rules alone in hours—directly spawning AlphaTensor, AlphaDev, MuZero, and AlphaProof.",
+  "summary": "Published in Science in December 2018 (generalizing October 2017’s Nature AlphaGo Zero breakthrough, doi:10.1038/nature24270) by David Silver, Thomas Hubert, Julian Schrittwieser, Ioannis Antonoglou, Demis Hassabis, and colleagues at Google DeepMind, AlphaZero proved that a single general-purpose reinforcement learning algorithm—starting from completely random play with zero human games or domain-specific evaluation heuristics—could master three radically different grand-challenge games (Chess, Shogi, and Go) from basic rules alone. Within 4 to 24 hours of self-play, AlphaZero defeated world-champion specialized engines Stockfish (Chess), Elmo (Shogi), and AlphaGo Zero (Go) while searching ~1,000× fewer positions per second than Stockfish, directly creating the template for autonomous algorithmic and mathematical discovery.",
+  "technicalHighlights": [
+    "Single unified neural-network + MCTS algorithm achieved superhuman mastery across Chess, Shogi, and Go starting purely tabula rasa from game rules.",
+    "Defeated Stockfish 8 in Chess (28 wins, 72 draws, 0 losses in 100 games) while evaluating ~60,000 positions/sec versus Stockfish’s ~60 million/sec.",
+    "Directly evolved into MuZero (learned world models), AlphaTensor (faster matrix multiplication), AlphaDev (faster assembly sorting), and AlphaProof (Lean theorem proving)."
+  ],
+  "caveats": "Requires an exact, fast simulator of deterministic, perfect-information environment rules (generalized to unknown dynamics by MuZero and to imperfect-information games by Pluribus/DeepNash).",
+  "contributors": [
+    "David Silver",
+    "Thomas Hubert",
+    "Julian Schrittwieser",
+    "Ioannis Antonoglou",
+    "Demis Hassabis"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 94,
+    "ripple": 98,
+    "verification": 99,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Proved general-purpose tabula-rasa self-play reinforcement learning + tree search can surpass centuries of accumulated human domain knowledge.",
+    "ripple": "Directly enabled AlphaTensor, AlphaDev, AlphaProof, MuZero, and modern test-time RL reasoning search across math and computer science.",
+    "verification": "Peer-reviewed in Science (2018) and Nature (AlphaGo Zero, 2017) with decisive open-engine match validation against Stockfish and Elmo.",
+    "velocity": "Rebuilt and surpassed centuries of human chess and shogi theory from scratch in 4 to 24 hours of self-play."
+  },
+  "enables": [
+    "muzero-learned-world-model-2020",
+    "alphatensor-2022",
+    "alphadev-sorting-2023",
+    "alphaproof-imo-2024"
+  ],
+  "sources": [
+    {
+      "label": "Science — A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play (Dec 2018)",
+      "url": "https://doi.org/10.1126/science.aar6404",
+      "type": "paper"
+    },
+    {
+      "label": "Nature — Mastering the game of Go without human knowledge (AlphaGo Zero, Oct 2017)",
+      "url": "https://doi.org/10.1038/nature24270",
+      "type": "paper"
+    }
+  ]
+}

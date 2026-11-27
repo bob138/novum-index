@@ -1,0 +1,65 @@
+{
+  "id": "chalmers-neurosymbolic-ai-scientist-2026",
+  "title": "Chalmers Neuro-Symbolic AI Scientist Autonomously Discovers & Validates Yeast Metabolic Interactions",
+  "shortTitle": "Chalmers Neuro-Symbolic AI Lab",
+  "date": "2026-07-01",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Robot Scientists",
+    "Systems Biology",
+    "Neuro-Symbolic AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Chalmers Hybrid LLM + Inductive Logic Programming Robot Scientist (Chalmers / KTH)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "The direct neuro-symbolic successor to Robot Scientists Adam and Eve fused LLMs with inductive logic programming, formal ontologies, and robotic metabolomics to autonomously discover and validate novel metabolic interactions in yeast.",
+  "summary": "Published in Journal of the Royal Society Interface in July 2026 by Daniel Brunnsåker, Alexander Howard Gower, Prajakta Naval, Ross D. King, and colleagues at Chalmers University of Technology and KTH Royal Institute of Technology, this work bridges two eras of automated science—uniting the symbolic inductive logic programming (ILP) and formal scientific ontologies of Ross King’s pioneering Robot Scientists Adam (2009) and Eve (2015) with modern LLM agents and robotic laboratory hardware. Mining structured yeast databases via Prolog/ILP to generate auditable logical hypotheses, translating them via LLM agents into executable protocols, and running robotic liquid handlers, automated cell culturing, and ion-mobility mass-spectrometry metabolomics, the system autonomously discovered and experimentally validated novel biological interactions—including glutamate-induced synergistic growth inhibition under spermine stress, arginine-enhanced caffeine toxicity, and aminoadipate-mediated rescue of formic-acid stress.",
+  "technicalHighlights": [
+    "Coupled LLM experimental-design agents with inductive logic programming (Prolog), description-logic ontologies, and graph databases to curb LLM hallucination and guarantee auditable provenance.",
+    "Closed the experimental loop on robotic liquid handlers, automated yeast cultivation, and ion-mobility mass-spectrometry metabolomics.",
+    "Autonomously generated and experimentally confirmed previously unreported metabolic interactions in Saccharomyces cerevisiae (including aminoadipate rescue of formic-acid stress)."
+  ],
+  "caveats": "Human technicians still prepared stock solutions, performed occasional plate transfers between non-networked instruments, and conducted safety reviews of AI-proposed experiments.",
+  "contributors": [
+    "Daniel Brunnsåker",
+    "Alexander Howard Gower",
+    "Prajakta Naval",
+    "Elin Y. B. Carlsson",
+    "Ross D. King"
+  ],
+  "institutions": [
+    "Chalmers University of Technology",
+    "KTH Royal Institute of Technology"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 84,
+    "verification": 95,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Unified formal symbolic reasoning (ILP + ontologies) with agentic LLMs inside a closed-loop biological wet lab, solving key LLM traceability failures.",
+    "ripple": "Establishes an auditable, ontology-grounded neuro-symbolic architecture for autonomous systems-biology laboratories.",
+    "verification": "Peer-reviewed in Journal of the Royal Society Interface with automated time-series growth and mass-spectrometry metabolomic validation.",
+    "velocity": "Automated hypothesis mining, experimental formalization, robotic execution, and metabolomic verification across multiple biological discovery cycles."
+  },
+  "enables": [
+    "autodna-autonomous-biomolecular-lab-2026"
+  ],
+  "sources": [
+    {
+      "label": "Journal of the Royal Society Interface — Agentic AI integrated with scientific knowledge (Jul 2026)",
+      "url": "https://doi.org/10.1098/rsif.2026.0043",
+      "type": "paper"
+    },
+    {
+      "label": "Chalmers University — AI scientist autonomously generates and validates new biological discoveries (Sep 2026)",
+      "url": "https://www.chalmers.se/en/current/news/ai-scientist-autonomously-generates-and-validates-new-biological-discoveries/",
+      "type": "announcement"
+    }
+  ]
+}

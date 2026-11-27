@@ -1,0 +1,62 @@
+{
+  "id": "dingo-gravitational-waves-2021",
+  "title": "DINGO Neural Posterior Estimation Performs Full LIGO/Virgo Gravitational-Wave Inference in 1 Second",
+  "shortTitle": "DINGO Gravitational-Wave AI (PRL)",
+  "date": "2021-12-08",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Gravitational-Wave Astrophysics",
+    "Simulation-Based Inference",
+    "Normalizing Flows"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DINGO (Deep Inference for Gravitational-Wave Observations — MPI-IS / AEI)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~1 second per merger (vs. hours–days MCMC)",
+  "isAnchor": true,
+  "whyItMatters": "Compressed full 15-parameter Bayesian inference of colliding black holes from LIGO/Virgo gravitational-wave signals from hours or days down to ~1 second with zero loss of statistical accuracy, enabling real-time multi-messenger astronomy.",
+  "summary": "Published in Physical Review Letters in December 2021 by Maximilian Dax, Stephen R. Green, Jonathan Gair, Jakob H. Macke, Alessandra Buonanno, and Bernhard Schölkopf at the Max Planck Institute for Intelligent Systems and the Max Planck Institute for Gravitational Physics (Albert Einstein Institute), DINGO (Deep Inference for Gravitational-Wave Observations) introduced group-equivariant neural posterior estimation using conditional normalizing flows trained on simulated gravitational waveforms and real detector noise. Applied to real LIGO/Virgo binary black-hole detections (GWTC-1), DINGO generated exact 15-dimensional Bayesian posteriors over masses, spins, distance, and sky location in roughly 1–2 seconds—three to four orders of magnitude faster than standard MCMC/nested sampling—while matching classical samplers with negligible Jensen–Shannon divergence and subsequently extending to real-time binary neutron-star multi-messenger alerts (Nature 2025).",
+  "technicalHighlights": [
+    "Used conditional normalizing flows conditioned on detector noise spectra (PSD) to amortize exact 15-dimensional Bayesian inference across arbitrary observing conditions.",
+    "Reproduced full LIGO/Virgo binary black-hole posteriors across all 8 GWTC-1 events in ~1–2 seconds versus hours to days for classical MCMC samplers.",
+    "Paired with importance sampling (DINGO-IS) to provide mathematically guaranteed, asymptotically exact Bayesian posteriors with real-time self-verification."
+  ],
+  "caveats": "Requires retraining or importance-sampling correction when gravitational waveform physical models change or detector noise contains severe non-Gaussian glitches.",
+  "contributors": [
+    "Maximilian Dax",
+    "Stephen R. Green",
+    "Jonathan Gair",
+    "Jakob H. Macke",
+    "Alessandra Buonanno",
+    "Bernhard Schölkopf"
+  ],
+  "institutions": [
+    "Max Planck Institute for Intelligent Systems",
+    "Max Planck Institute for Gravitational Physics (AEI)",
+    "University of Tübingen"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 97,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated amortized simulation-based deep inference achieving exact scientific-grade Bayesian precision on real LIGO/Virgo astrophysical data.",
+    "ripple": "Transformed real-time gravitational-wave data analysis for LIGO/Virgo/KAGRA and future Cosmic Explorer / Einstein Telescope observatories.",
+    "verification": "Peer-reviewed in Physical Review Letters with quantitative posterior agreement verified directly against LIGO/Virgo MCMC baselines on real detections.",
+    "velocity": "Slashed full 15-parameter astrophysical inference latency by ~1,000–10,000× (from hours/days to ~1 second)."
+  },
+  "enables": [
+    "urania-ligo-detector-topologies-2025"
+  ],
+  "sources": [
+    {
+      "label": "Physical Review Letters — Real-Time Gravitational Wave Science with Neural Posterior Estimation (Dec 2021)",
+      "url": "https://doi.org/10.1103/PhysRevLett.127.241103",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "patternboost-hypercube-conjecture-2024",
+  "title": "PatternBoost Alternates Local Search & Transformers to Disprove a 30-Year-Old Hypercube Conjecture",
+  "shortTitle": "PatternBoost: 30-Yr Hypercube Disproof",
+  "date": "2024-11-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Extremal Combinatorics",
+    "Graph Theory",
+    "Transformer-Guided Search"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "PatternBoost (Makemore Transformer + Local Search — Meta FAIR / UW–Madison / DeepMind / Sydney)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 30,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Alternating fast local search with lightweight transformer training autonomously disproved a 30-year-old conjecture on spanning subgraphs of the 6-dimensional hypercube and broke multiple extremal combinatorics records.",
+  "summary": "Published in November 2024 (arXiv:2411.00566) by François Charton (Meta FAIR), Jordan S. Ellenberg (UW–Madison), Adam Zsolt Wagner (Google DeepMind), and Geordie Williamson (University of Sydney), PatternBoost introduced a general two-phase 'local–global' discovery loop for extremal mathematics: a fast local heuristic constructs high-scoring combinatorial objects, and a small transformer is iteratively trained on the top discoveries to learn global structural patterns and sample improved seeds for the next local-search round. Applied to open problems across graph theory, geometry, and combinatorics, PatternBoost disproved a 30-year-old conjecture of Brouwer, Dejter, and Thomassen / Bondy on the minimum edges in a spanning subgraph of the 6-dimensional hypercube Q₆ containing no induced 4-cycle (constructing an explicit 81-edge counterexample beating the conjectured lower bound of 82) while also improving records on no-three-in-line, triangle-free graphs, and extremal set systems.",
+  "technicalHighlights": [
+    "Alternates fast domain-specific local optimization with a compact transformer trained solely on the best discovered constructions—requiring no massive pretrained LLM.",
+    "Disproved a 30-year-old conjecture on induced C₄-free spanning subgraphs of the 6-cube Q₆ via an explicit, trivially checkable 81-edge construction (refuting the conjectured bound of 82).",
+    "Matched or surpassed best-known human extremal bounds across multiple benchmarks in discrete geometry and combinatorics."
+  ],
+  "caveats": "Requires encoding candidate mathematical objects into compact token sequences and supplying a fast computable scoring function; excels at extremal constructions rather than deductive proofs.",
+  "contributors": [
+    "François Charton",
+    "Jordan S. Ellenberg",
+    "Adam Zsolt Wagner",
+    "Geordie Williamson"
+  ],
+  "institutions": [
+    "Meta FAIR",
+    "University of Wisconsin–Madison",
+    "Google DeepMind",
+    "University of Sydney"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 98,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that tiny domain-trained transformers alternating with local search can crack decades-old extremal combinatorics conjectures.",
+    "ripple": "Adopted rapidly as a lightweight open-source discovery toolkit across combinatorics, knot theory, and discrete geometry.",
+    "verification": "Explicit 81-edge Q₆ hypercube counterexample and extremal constructions are deterministically verified by exact computation.",
+    "velocity": "Overturned a 30-year-old hypercube conjecture and improved multiple extremal bounds using lightweight local-search + transformer compute."
+  },
+  "enables": [
+    "alphaevolve-ramsey-numbers-2026"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2411.00566 — PatternBoost: Constructions in Mathematics with a Little Help from AI (Nov 2024)",
+      "url": "https://arxiv.org/abs/2411.00566",
+      "type": "paper"
+    }
+  ]
+}

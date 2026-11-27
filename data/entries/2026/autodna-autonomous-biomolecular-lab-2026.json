@@ -1,0 +1,65 @@
+{
+  "id": "autodna-autonomous-biomolecular-lab-2026",
+  "title": "AutoDNA: AI-Native Multi-Agent Laboratory Executes 11,382-Step Autonomous DNA Operations",
+  "shortTitle": "AutoDNA Autonomous Bio-Lab (Nature)",
+  "date": "2026-11-04",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Autonomous Laboratories",
+    "DNA Data Storage",
+    "Synthetic Biology"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AutoDNA (6-Agent AI-Native Laboratory Platform — Shanghai Jiao Tong Univ.)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "203.5 hours (11,382 hardware steps)",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, AutoDNA built a biomolecular lab around six LLM agents that plan protocols, write control code, and drive >20 instruments—completing an 8-day, 11,382-step DNA storage workflow.",
+  "summary": "Published in Nature on November 4, 2026 by Mingyu Wu, Zhaoguo Wang, Jiabin Wang, and colleagues at Shanghai Jiao Tong University (IPADS), AutoDNA introduced an AI-native experimental laboratory engineered from the ground up around multi-agent AI orchestration rather than bolting AI onto rigid human automation scripts. Six specialized AI agents—spanning literature review, hypothesis generation, experimental planning, reagent management, control-program synthesis, and hardware execution/verification—confer in natural language from a single plain-text prompt, generate executable control code, and drive more than 20 distinct biomolecular instruments across DNA synthesis, transcription, amplification, and sequencing. In its longest demonstration, AutoDNA autonomously encoded digital information into 78 synthetic DNA strands, stored them, and sequenced them back to recover the exact original text across 11,382 hardware steps over 203.5 hours (~8.5 days).",
+  "technicalHighlights": [
+    "Six specialized LLM agents collaborate to design protocols, manage reagents, write instrument-control code, and verify execution across >20 laboratory hardware platforms.",
+    "Executed an end-to-end 5-stage DNA digital data storage round trip (encoding, synthesis of 78 strands, storage, amplification, sequencing, decoding) spanning 11,382 hardware steps over 203.5 hours.",
+    "Released open-source under Apache 2.0 (IPADS-X/AutoDNA) with atomic instrument services and complete multi-agent experimental audit logs."
+  ],
+  "caveats": "Human staff still replenished reagents/consumables, cleared waste, and intervened in 6 of 14 logged physical hardware faults during the 8-day run; the authors note current automation fits standardized biomolecular assays rather than complex animal models.",
+  "contributors": [
+    "Mingyu Wu",
+    "Zhaoguo Wang",
+    "Jiabin Wang"
+  ],
+  "institutions": [
+    "Shanghai Jiao Tong University"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Pioneered an 'AI-native' multi-agent wet-lab architecture where agents dynamically write control software across >20 heterogeneous instruments from plain-language requests.",
+    "ripple": "Open-source Apache-2.0 release sets a new engineering benchmark for autonomous molecular biology and synthetic genomics laboratories.",
+    "verification": "Peer-reviewed in Nature (Nov 2026) with complete multi-day physical hardware execution logs and lossless digital-to-DNA-to-digital recovery.",
+    "velocity": "Orchestrated 11,382 continuous multi-instrument biomolecular steps over 8.5 days from a single natural-language specification."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — An AI-native experimental laboratory for autonomous biomolecular operations (Nov 2026)",
+      "url": "https://doi.org/10.1038/s41586-026-11228-6",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 42983087",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42983087/",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — IPADS-X/AutoDNA",
+      "url": "https://github.com/IPADS-X/AutoDNA",
+      "type": "code"
+    }
+  ]
+}

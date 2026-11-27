@@ -1,0 +1,69 @@
+{
+  "id": "nequip-equivariant-potentials-2022",
+  "title": "NequIP: E(3)-Equivariant Graph Neural Networks Achieve 1,000× Data Efficiency in Atomistic Potentials",
+  "shortTitle": "NequIP Equivariant MLIPs",
+  "date": "2022-05-04",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Machine-Learned Interatomic Potentials",
+    "Geometric Deep Learning",
+    "Molecular Dynamics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "NequIP (E(3)-Equivariant Graph Neural Network — Harvard)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First E(3)-equivariant neural interatomic potential replaced scalar descriptors with geometric tensor features, slashing quantum-chemistry training-data requirements by up to 1,000× and launching modern equivariant MLIPs.",
+  "summary": "Published in Nature Communications in May 2022 (preprint January 2021) by Simon Batzner, Albert Musaelian, Lixin Sun, Mario Geiger, Tess E. Smidt, and Boris Kozinsky at Harvard University, MIT, and Robert Bosch LLC, NequIP (Neural Equivariant Interatomic Potentials) introduced E(3)-equivariant tensor message passing for ab initio molecular dynamics. By representing atomic neighborhoods with rotation-, reflection-, and translation-equivariant spherical harmonics rather than invariant distances and angles alone, NequIP outperformed invariant neural potentials with up to three orders of magnitude fewer quantum-mechanical reference calculations while accurately simulating complex catalytic reactions, amorphous lithium phosphate electrolytes, and water dynamics.",
+  "technicalHighlights": [
+    "Replaced invariant geometric descriptors with E(3)-equivariant tensor-product convolutions (e3nn) preserving exact 3D Euclidean symmetries of physical forces.",
+    "Achieved state-of-the-art force accuracy on MD17, water, catalytic formate decomposition, and LiPS solid-state electrolytes with up to 1,000× less DFT training data.",
+    "Directly established the equivariant architectural lineage leading to Allegro, MACE-MP-0, and Meta FAIR’s Universal Models for Atoms (UMA)."
+  ],
+  "caveats": "Message passing across multiple hops introduces larger effective cutoff radii that complicate multi-GPU domain parallelization compared with strictly local models such as Allegro.",
+  "contributors": [
+    "Simon Batzner",
+    "Albert Musaelian",
+    "Lixin Sun",
+    "Mario Geiger",
+    "Tess E. Smidt",
+    "Boris Kozinsky"
+  ],
+  "institutions": [
+    "Harvard University",
+    "Massachusetts Institute of Technology",
+    "Robert Bosch LLC"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 92,
+    "verification": 95,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that full E(3)-equivariant tensor representations are transformative for physical force-field learning.",
+    "ripple": "Became the architectural cornerstone for nearly all modern universal atomistic foundation models (MACE, SevenNet, MatterSim, Meta UMA).",
+    "verification": "Peer-reviewed in Nature Communications with open-source code independently benchmarked across chemistry and materials science.",
+    "velocity": "Cut DFT reference-data generation cost by up to 1,000× while delivering quantum-accurate molecular dynamics orders of magnitude faster than DFT."
+  },
+  "enables": [
+    "mace-mp0-materials-foundation-2023",
+    "gnome-materials-2023",
+    "meta-omol25-uma-atoms-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature Communications — E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials (May 2022)",
+      "url": "https://doi.org/10.1038/s41467-022-29939-5",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC9068614",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9068614/",
+      "type": "paper"
+    }
+  ]
+}

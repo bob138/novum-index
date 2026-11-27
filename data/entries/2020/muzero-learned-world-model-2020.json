@@ -1,0 +1,64 @@
+{
+  "id": "muzero-learned-world-model-2020",
+  "title": "MuZero Masters Chess, Go, Shogi & 57 Atari Games by Planning Over a Learned Latent World Model",
+  "shortTitle": "MuZero Learned World Model (Nature)",
+  "date": "2020-12-23",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Model-Based Reinforcement Learning",
+    "World Models",
+    "Planning & Control"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "MuZero (Value-Equivalent Latent World Model + MCTS — Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Removed AlphaZero’s need for known environment rules by learning a value-equivalent latent world model—matching AlphaZero in Chess, Go, and Shogi while setting a new record across 57 Atari games.",
+  "summary": "Published in Nature in December 2020 (arXiv November 2019) by Julian Schrittwieser, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan, David Silver, and colleagues at Google DeepMind, MuZero unified model-based planning and model-free reinforcement learning without ever being told the rules of the environment. Rather than attempting to reconstruct raw future pixels or simulator states, MuZero learns a compact latent world model trained solely to predict the three quantities needed for Monte Carlo Tree Search—policy, value, and immediate reward—matching AlphaZero’s superhuman strength on Go, Chess, and Shogi while achieving a new state of the art across 57 visually complex Atari games and subsequently powering real-world YouTube video-compression optimization.",
+  "technicalHighlights": [
+    "Replaced hand-coded game simulators with an end-to-end learned value-equivalent latent dynamics model predicting only reward, value, and policy.",
+    "Matched AlphaZero’s superhuman performance on Go, Chess, and Shogi without knowing their rules while beating prior state of the art across 57 Atari benchmarks.",
+    "Demonstrated real-world scientific and engineering generalization (including deployed video-compression bitrate optimization and seeding DiscoRL meta-discovered RL algorithms)."
+  ],
+  "caveats": "Original MuZero still required substantial environment interaction samples and operated primarily in deterministic or discrete-action domains (later extended via Stochastic MuZero and Sampled MuZero).",
+  "contributors": [
+    "Julian Schrittwieser",
+    "Ioannis Antonoglou",
+    "Thomas Hubert",
+    "Karen Simonyan",
+    "David Silver"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 93,
+    "verification": 98,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Solved the classic model-based RL bottleneck by proving world models need only predict value-equivalent latent abstractions rather than raw pixel reconstructions.",
+    "ripple": "Directly influenced modern world-model RL (TD-MPC2, DreamerV3, Stochastic MuZero), algorithmic discovery (DiscoRL), and real-world engineering optimization.",
+    "verification": "Peer-reviewed in Nature with comprehensive multi-domain benchmarks across board games and all 57 Atari environments.",
+    "velocity": "Unlocked superhuman tree-search planning in complex environments where exact physical simulators are unavailable."
+  },
+  "enables": [
+    "deepmind-discorl-algorithm-discovery-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Mastering Atari, Go, chess and shogi by planning with a learned model (Dec 2020)",
+      "url": "https://doi.org/10.1038/s41586-020-03051-4",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:1911.08265",
+      "url": "https://arxiv.org/abs/1911.08265",
+      "type": "paper"
+    }
+  ]
+}

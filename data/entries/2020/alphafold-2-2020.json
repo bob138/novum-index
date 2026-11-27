@@ -56,7 +56,10 @@
     "rfdiffusion-protein-design-2023",
     "alphamissense-variants-2023",
     "bindcraft-oneshot-binders-2025",
-    "bioemu-protein-dynamics-2025"
+    "bioemu-protein-dynamics-2025",
+    "alphafold-nuclear-pore-complex-2022",
+    "proteinmpnn-sequence-design-2022",
+    "alphafold-fertilization-complex-2024"
   ],
   "sources": [
     {

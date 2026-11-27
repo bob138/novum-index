@@ -1,0 +1,67 @@
+{
+  "id": "geneformer-network-biology-2023",
+  "title": "Geneformer Single-Cell Foundation Transformer Discovers Experimentally Validated Cardiomyopathy Targets",
+  "shortTitle": "Geneformer Single-Cell AI (Nature)",
+  "date": "2023-05-31",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Single-Cell Transcriptomics",
+    "Network Biology",
+    "Target Discovery"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Geneformer (Single-Cell Transformer Pretrained on 30M Cells — Broad / Harvard)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Pioneered single-cell foundation transformers on 30 million human transcriptomes; in silico gene perturbations discovered novel cardiomyopathy therapeutic targets that experimentally improved human iPSC heart-muscle contraction.",
+  "summary": "Published in Nature in May 2023 by Christina V. Theodoris, Ling Xiao, Anant Chopra, Patrick T. Ellinor, and colleagues at the Broad Institute, Dana-Farber Cancer Institute, and Harvard Medical School, Geneformer pretrained a context-aware attention transformer via masked rank-value modeling on Genecorpus-30M—a corpus of ~30 million human single-cell transcriptomes across diverse tissues. Fine-tuned with limited disease data, Geneformer predicted chromatin dynamics, dosage-sensitive disease genes, and gene-network hierarchy; critically, in silico deletion perturbations predicted candidate therapeutic targets for dilated cardiomyopathy whose experimental knockdown significantly improved contractile force in human iPSC-derived cardiac microtissues.",
+  "technicalHighlights": [
+    "Encoded each cell as a rank-value ordered gene sequence and pretrained a self-supervised transformer on ~30 million single-cell human transcriptomes.",
+    "Achieved strong data-efficient transfer across chromatin-state, bivalent-promoter, transcription-factor hierarchy, and dosage-sensitivity prediction tasks.",
+    "In silico perturbation discovered novel cardiomyopathy therapeutic targets validated experimentally in human iPSC-derived cardiomyocyte disease models."
+  ],
+  "caveats": "Subsequent systematic benchmarks noted that zero-shot single-cell foundation models do not always beat simpler baselines on all cell-type annotation or perturbation tasks, underscoring the value of task-specific fine-tuning and wet-lab validation.",
+  "contributors": [
+    "Christina V. Theodoris",
+    "Ling Xiao",
+    "Anant Chopra",
+    "Mark D. Chaffin",
+    "Patrick T. Ellinor"
+  ],
+  "institutions": [
+    "Broad Institute of MIT and Harvard",
+    "Dana-Farber Cancer Institute",
+    "Harvard Medical School"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Established self-supervised single-cell foundation models capable of zero-/few-shot in silico genetic perturbation for network biology.",
+    "ripple": "Sparked the entire single-cell foundation-model and AI Virtual Cell movement (including C2S-Scale, scGPT, and State).",
+    "verification": "Peer-reviewed in Nature with wet-lab experimental validation in human iPSC-derived engineered cardiac microtissues.",
+    "velocity": "Enabled rapid virtual CRISPR-like screening across disease gene networks from sparse patient single-cell datasets."
+  },
+  "enables": [
+    "c2s-scale-cancer-therapy-2025",
+    "alphagenome-2-single-cell-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Transfer learning enables predictions in network biology (May 2023)",
+      "url": "https://doi.org/10.1038/s41586-023-06139-9",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC10949956",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10949956/",
+      "type": "paper"
+    }
+  ]
+}

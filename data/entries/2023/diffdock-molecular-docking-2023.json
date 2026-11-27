@@ -1,0 +1,66 @@
+{
+  "id": "diffdock-molecular-docking-2023",
+  "title": "DiffDock: SE(3) Diffusion Generative Modeling Transforms Blind Protein–Ligand Molecular Docking",
+  "shortTitle": "DiffDock Molecular Docking",
+  "date": "2023-02-11",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Molecular Docking",
+    "Drug Discovery",
+    "Geometric Diffusion"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DiffDock (Non-Euclidean Diffusion Model — MIT)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Reframed protein–ligand molecular docking from brittle energy-scoring optimization into a diffusion generative process over ligand translations, rotations, and torsions—doubling blind-docking accuracy on PDBBind.",
+  "summary": "Published at ICLR 2023 (arXiv October 2022, revised February 2023) by Gabriele Corso, Hannes Stärk, Bowen Jing, Regina Barzilay, and Tommi Jaakkola at MIT, DiffDock reframed blind protein–ligand docking as a generative modeling problem on the product manifold of 3D translations, SO(3) rotations, and rotatable torsion angles. Paired with a learned confidence model, DiffDock achieved 38% top-1 success (<2 Å RMSD) on the PDBBind blind-docking benchmark—nearly doubling the accuracy of prior deep-learning models (23%) and physics-based search engines like AutoDock Vina and GNINA (20–23%)—while showing far greater robustness on computationally predicted (ESMFold) protein structures.",
+  "technicalHighlights": [
+    "Defined a score-based diffusion generative process over the non-Euclidean manifold of ligand poses (translation, SO(3) rotation, and internal torsion angles).",
+    "Achieved 38.2% top-1 (<2 Å) blind-docking success on PDBBind, nearly doubling prior deep-learning and classical physics-based docking methods.",
+    "Pioneered generative diffusion for protein–small-molecule complex prediction, directly paving the conceptual bridge toward all-atom co-folding models like AlphaFold 3 and Boltz-2."
+  ],
+  "caveats": "Later community benchmarks (PoseBusters) revealed that DiffDock poses could occasionally violate physical stereochemical constraints (steric clashes or bond lengths), motivating physics-aware energy checks and co-folding architectures.",
+  "contributors": [
+    "Gabriele Corso",
+    "Hannes Stärk",
+    "Bowen Jing",
+    "Regina Barzilay",
+    "Tommi Jaakkola"
+  ],
+  "institutions": [
+    "Massachusetts Institute of Technology"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 88,
+    "verification": 92,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Shifted computational drug docking from deterministic energy-minimization search to geometric generative diffusion over molecular degrees of freedom.",
+    "ripple": "Became one of the most widely adopted open-source docking tools and directly influenced diffusion-based co-folding (AlphaFold 3, Boltz-2, Chai).",
+    "verification": "Peer-reviewed at ICLR 2023 with open-source weights and extensive independent benchmarking (including PoseBusters audits).",
+    "velocity": "Delivered accurate blind docking across whole protein surfaces in seconds without prior binding-pocket specification."
+  },
+  "enables": [
+    "alphafold-3-2024",
+    "rosettafold-all-atom-2024",
+    "boltz-2-binding-affinity-2025"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2210.01776 — DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking (ICLR 2023)",
+      "url": "https://arxiv.org/abs/2210.01776",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — gcorso/DiffDock",
+      "url": "https://github.com/gcorso/DiffDock",
+      "type": "code"
+    }
+  ]
+}

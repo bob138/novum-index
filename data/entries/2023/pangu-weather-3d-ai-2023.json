@@ -1,0 +1,69 @@
+{
+  "id": "pangu-weather-3d-ai-2023",
+  "title": "Pangu-Weather 3D Earth Transformer Becomes First AI System to Outperform ECMWF Global Weather Forecasts",
+  "shortTitle": "Pangu-Weather 3D AI (Nature)",
+  "date": "2023-07-05",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Atmospheric Physics",
+    "Numerical Weather Prediction",
+    "3D Vision Transformers"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Pangu-Weather (3D Earth-Specific Transformer — Huawei Cloud)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~10,000× faster than ECMWF IFS",
+  "isAnchor": true,
+  "whyItMatters": "First deep-learning global weather model published in Nature to surpass the world’s premier operational numerical weather prediction system (ECMWF IFS) across all tested variables while running ~10,000× faster.",
+  "summary": "Published in Nature in July 2023 (preprint November 2022) by Kaifeng Bi, Lingxi Xie, Hengheng Zhang, Xin Chen, Xiaotao Gu, and Qi Tian at Huawei Cloud, Pangu-Weather broke a seven-decade monopoly of supercomputer physical PDE solvers in global medium-range weather forecasting. Trained on 39 years of hourly ERA5 global reanalysis data, Pangu-Weather introduced a 3D Earth-Specific Transformer explicitly encoding atmospheric height levels and spherical latitude/longitude geometry alongside hierarchical temporal aggregation (chaining 1h, 3h, 6h, and 24h models to suppress autoregressive rollout drift). It outperformed the operational ECMWF Integrated Forecasting System (IFS) on deterministic global weather metrics and tropical cyclone track prediction while running in seconds on a single GPU (~10,000× faster than IFS).",
+  "technicalHighlights": [
+    "3D Earth-Specific Transformer captured height-dependent atmospheric dynamics across 13 pressure levels and 0.25° global horizontal resolution.",
+    "Hierarchical temporal aggregation minimized cumulative forecast error across 1- to 7-day horizons, beating operational ECMWF IFS across tested variables and tropical cyclone tracks.",
+    "Ran ~10,000× faster than supercomputer numerical weather prediction, triggering ECMWF to deploy real-time operational AI weather models alongside GraphCast and Aurora."
+  ],
+  "caveats": "Deterministic forecast trained on ERA5 reanalysis rather than raw observations; tended to smooth sharp local precipitation extremes and did not directly predict rainfall rates (later addressed by probabilistic GenCast and end-to-end Aardvark).",
+  "contributors": [
+    "Kaifeng Bi",
+    "Lingxi Xie",
+    "Hengheng Zhang",
+    "Xin Chen",
+    "Xiaotao Gu",
+    "Qi Tian"
+  ],
+  "institutions": [
+    "Huawei Cloud"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 94,
+    "verification": 97,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Marked the historic inflection point where pure deep learning first surpassed operational numerical physics solvers in global medium-range weather forecasting.",
+    "ripple": "Directly catalyzed operational AI weather forecasting at ECMWF and NOAA and ushered in GraphCast, GenCast, NeuralGCM, Aurora, and Aardvark.",
+    "verification": "Peer-reviewed in Nature with open pretrained weights independently verified operationally by ECMWF.",
+    "velocity": "Accelerated global 7-day atmospheric forecasting ~10,000× compared to classical supercomputer PDE integration."
+  },
+  "enables": [
+    "graphcast-weather-2023",
+    "neuralgcm-hybrid-climate-2024",
+    "gencast-probabilistic-weather-2024",
+    "aurora-earth-system-2025",
+    "aardvark-end-to-end-weather-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Accurate medium-range global weather forecasting with 3D neural networks (Jul 2023)",
+      "url": "https://doi.org/10.1038/s41586-023-06185-3",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 37407823",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37407823/",
+      "type": "paper"
+    }
+  ]
+}

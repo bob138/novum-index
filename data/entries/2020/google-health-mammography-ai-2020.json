@@ -1,0 +1,68 @@
+{
+  "id": "google-health-mammography-ai-2020",
+  "title": "Google Health Mammography AI Outperforms Expert Radiologists Across UK & US Breast Cancer Screening",
+  "shortTitle": "Google Health Mammography AI",
+  "date": "2020-01-01",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Medical Imaging",
+    "Oncology Screening",
+    "Clinical AI"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Google Health Mammography Ensemble CNN (Google Health / DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "An international Nature study showed mammography AI beat all six expert radiologists (+11.5% AUC), cutting US false positives 5.7% and false negatives 9.4% while reducing UK double-reading workload 88%.",
+  "summary": "Published in Nature in January 2020 by Scott Mayer McKinney, Marcin Sieniek, Varun Godbole, Shravya Shetty, and colleagues across Google Health, DeepMind, Imperial College London, Northwestern University, and the NHS, this international validation study evaluated an ensemble of three deep convolutional neural networks on 25,856 UK and 3,097 US screening mammograms. The AI system outperformed individual radiologists in an independent reader study of six board-certified specialists by an 11.5% absolute AUC margin, reduced false positives by 5.7% (US) and 1.2% (UK) and false negatives by 9.4% (US) and 2.7% (UK), generalized across continents when trained solely on UK data and tested in the US, and maintained non-inferior accuracy as a simulated second reader while slashing second-reader workload by 88%.",
+  "technicalHighlights": [
+    "Ensemble of three complementary deep learning models analyzed lesion-, breast-, and case-level mammographic features across >28,000 UK and US patients.",
+    "Beat all six individual expert radiologists (+11.5% absolute ROC-AUC advantage) and reduced both false negatives (9.4% US / 2.7% UK) and false positives (5.7% US / 1.2% UK).",
+    "Demonstrated cross-country generalization (trained on UK NHS scans, tested on US Northwestern scans) and an 88% reduction in double-reading clinician workload."
+  ],
+  "caveats": "Retrospective evaluation relied primarily on a single mammography vendor (Hologic) in the UK dataset and drew methodological transparency critiques regarding proprietary model weights; prospective randomized clinical trials (such as MASAI) later confirmed screening AI benefits.",
+  "contributors": [
+    "Scott Mayer McKinney",
+    "Marcin Sieniek",
+    "Varun Godbole",
+    "Jonathan Godwin",
+    "Shravya Shetty"
+  ],
+  "institutions": [
+    "Google Health",
+    "Google DeepMind",
+    "Imperial College London",
+    "Northwestern University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Established international multi-cohort clinical benchmark evidence that deep learning can surpass human radiology experts in population cancer screening.",
+    "ripple": "Directly catalyzed prospective clinical trials and regulatory clearances for AI-assisted breast cancer screening worldwide.",
+    "verification": "Peer-reviewed in Nature across large independent UK and US screening cohorts with biopsy-confirmed ground truth.",
+    "velocity": "Demonstrated an 88% reduction in second-reader clinical workload while catching cancers missed by human radiologists."
+  },
+  "enables": [
+    "chief-pathology-foundation-2024",
+    "google-amie-clinical-diagnosis-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — International evaluation of an AI system for breast cancer screening (Jan 2020)",
+      "url": "https://doi.org/10.1038/s41586-019-1799-6",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 31894144",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31894144/",
+      "type": "paper"
+    }
+  ]
+}

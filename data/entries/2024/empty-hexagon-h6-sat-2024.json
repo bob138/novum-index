@@ -1,0 +1,63 @@
+{
+  "id": "empty-hexagon-h6-sat-2024",
+  "title": "Cube-and-Conquer SAT Solving Settles & Formally Verifies Erdős’s 46-Year-Old Empty Hexagon Number h(6) = 30",
+  "shortTitle": "Empty Hexagon Number h(6) = 30 (SAT)",
+  "date": "2024-03-01",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Discrete Geometry",
+    "Automated Reasoning (SAT)",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Cube-and-Conquer SAT Solver (CaDiCaL + Lean 4 / Isabelle Verification — CMU / TU Berlin)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 46,
+  "aiTimeToSolve": "~17,300 CPU hours",
+  "isAnchor": false,
+  "whyItMatters": "Resolved Paul Erdős’s 1978 Empty Hexagon problem after 46 years—proving that every 30 planar points in general position contain an empty convex hexagon (h(6) = 30)—with end-to-end machine verification in Lean 4 and Isabelle.",
+  "summary": "Posted in March 2024 (arXiv:2403.00737) and formally verified in ITP 2024 (arXiv:2403.17370, doi:10.4230/LIPIcs.ITP.2024.35) by Marijn J. H. Heule (Carnegie Mellon University) and Manfred Scheucher (TU Berlin), with Lean 4 formalization by Bernardo Subercaseaux, Wojciech Nawrocki, James Gallicchio, and Cayden Codel, this milestone settled Paul Erdős’s 1978 Empty Hexagon conjecture—the discrete-geometry cousin of the Happy Ending Problem. While Overmars (2003) constructed 29 points with no empty convex hexagon (h(6) ≥ 30) and Nicolás/Gerken proved h(6) existed (bounded above by 463), the exact value remained open for 46 years. Encoding planar point-set orientations via symmetry-broken propositional clauses and solving via Cube-and-Conquer SAT (~17,300 CPU hours), the authors proved h(6) = 30 and certified both the SAT unsatisfiability proof and the geometric encoding completely inside Lean 4 and Isabelle.",
+  "technicalHighlights": [
+    "Proved the exact 1978 Erdős Empty Hexagon Number h(6) = 30, closing the 46-year gap between Overmars’s 29-point lower bound and prior upper bounds.",
+    "Combined geometric symmetry breaking with parallel Cube-and-Conquer SAT solving (~17,300 CPU hours) producing checkable LRAT unsatisfiability certificates.",
+    "End-to-end verified in Lean 4 (ITP 2024) confirming both the propositional proof and the geometric soundness of the SAT encoding."
+  ],
+  "caveats": "Proof relies on exhaustive machine-verified case analysis via SAT certificates rather than a short human-readable synthetic geometric proof.",
+  "contributors": [
+    "Marijn J. H. Heule",
+    "Manfred Scheucher",
+    "Bernardo Subercaseaux",
+    "Wojciech Nawrocki",
+    "James Gallicchio"
+  ],
+  "institutions": [
+    "Carnegie Mellon University",
+    "Technische Universität Berlin"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 83,
+    "verification": 100,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Exact resolution of a famous 46-year-old Erdős discrete-geometry problem closely tied to the Erdős–Szekeres Happy Ending theorem.",
+    "ripple": "Set the gold standard for end-to-end formally verified SAT encodings bridging geometric axiomatics and industrial-scale SAT certificates in Lean 4.",
+    "verification": "End-to-end formally verified in Lean 4 (ITP 2024) and independently checked via certified LRAT proof checkers.",
+    "velocity": "Resolved a 46-year-old open discrete-geometry problem in ~17,300 CPU hours after clever symmetry breaking."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2403.00737 — Happy Ending: An Empty Hexagon in Every Set of 30 Points (Mar 2024)",
+      "url": "https://arxiv.org/abs/2403.00737",
+      "type": "paper"
+    },
+    {
+      "label": "ITP 2024 — Formal Verification of the Empty Hexagon Number (Lean 4)",
+      "url": "https://doi.org/10.4230/LIPIcs.ITP.2024.35",
+      "type": "formal-verification"
+    }
+  ]
+}

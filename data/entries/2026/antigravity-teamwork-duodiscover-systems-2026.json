@@ -1,0 +1,61 @@
+{
+  "id": "antigravity-teamwork-duodiscover-systems-2026",
+  "title": "Google Antigravity /teamwork & DuoDiscover Accelerate TPU Kernels 4.09×, Cut Borg Preemptions & Port libgav1",
+  "shortTitle": "Antigravity /teamwork & DuoDiscover",
+  "date": "2026-11-13",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "ML Systems & Kernel Optimization",
+    "Autonomous Software Engineering",
+    "Multi-Agent Orchestration"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Google Antigravity /teamwork & DuoDiscover (Gemini 4 Argon Multi-Agent Harness)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "23-sec proxy yardsticks (vs. 7–32 min runs)",
+  "isAnchor": false,
+  "whyItMatters": "Antigravity /teamwork’s DuoDiscover sped up JAXBench TPU kernels 4.09× and vLLM Pallas kernels 2.99×, shipped Borg patches cutting TPU preemption 24%, and ported libgav1 to 20–30% faster Rust.",
+  "summary": "Published by Google Research and Google DeepMind on November 13, 2026 alongside its Weil Conjectures and Courtade–Kumar math breakthroughs, the Antigravity /teamwork multi-agent harness (running on Gemini 4 Argon) demonstrated autonomous long-horizon systems-engineering breakthroughs across production ML compilers, fleet scheduling, and safety-critical C++ migration. Solving the hardware-evaluation bottleneck via DuoDiscover—where parallel agents jointly discover code bottlenecks and synthesize 23-second proxy 'yardstick' evaluators continuously calibrated against full 7–32 minute TPU runs via Kendall rank correlation—the system achieved a 4.09× geometric-mean speedup across 17 JAXBench kernels and a 2.99× speedup across 7 hand-optimized vLLM TPU-Inference Pallas kernels. Simultaneously, /teamwork shipped two production Borg scheduler optimizations cutting TPU workload preemption by 24%, identified >1 pebibyte of fleet memory savings, and ported Google’s ~170K-line libgav1 AV1 video decoder to memory-safe Rust running 20–30% faster than C++ (alongside an ~800K-line Zircon microkernel port).",
+  "technicalHighlights": [
+    "DuoDiscover agents invented fast 23-second proxy 'yardsticks' validated by Kendall rank correlation against 7–32 minute hardware runs, delivering 4.09× geometric-mean speedup on 17 JAXBench kernels and 2.99× on 7 hand-optimized vLLM TPU Pallas kernels.",
+    "Shipped two production Google Borg scheduler changes reducing TPU workload preemption by 24% while preserving SLOs and fleet utilization, plus >1 PiB fleet memory savings.",
+    "Autonomously rewrote Google’s libgav1 AV1 video decoder (~170K lines) into memory-safe Rust that beat the original C++ performance by 20–30% after profiling-guided optimization."
+  ],
+  "caveats": "Reported via Google Research technical blog rather than a peer-reviewed conference paper; independent third-party reproduction of production Borg fleet metrics and full Zircon microkernel completeness has not yet been externally audited.",
+  "contributors": [
+    "Vahab Mirrokni",
+    "Google Research & Antigravity /teamwork Team",
+    "Google DeepMind"
+  ],
+  "institutions": [
+    "Google Research",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 92,
+    "verification": 84,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Introduced DuoDiscover’s co-evolution of code optimizations and rank-calibrated proxy evaluators, solving the evaluation-latency bottleneck of autonomous systems engineering.",
+    "ripple": "Directly transforms production ML compiler/kernel optimization, hyperscale datacenter scheduling, and large-scale C++-to-Rust memory-safety migration.",
+    "verification": "Backed by shipped production Google Borg fleet changes and hardware-measured TPU/AV1 benchmarks, though awaiting peer-reviewed publication and external code audits.",
+    "velocity": "Compressed weeks of expert kernel tuning and multi-year systems rewrites into autonomous multi-agent campaigns."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Google Research Blog — Advancing science & engineering with Antigravity’s /teamwork (Nov 2026)",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "type": "announcement"
+    },
+    {
+      "label": "ExplainX Analysis — Antigravity /teamwork Math & CS Engineering Results (Nov 2026)",
+      "url": "https://explainx.ai/blog/google-antigravity-teamwork-open-math-cs-engineering-results-november-2026",
+      "type": "explainer"
+    }
+  ]
+}

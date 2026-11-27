@@ -1,0 +1,65 @@
+{
+  "id": "alphago-go-mastery-2016",
+  "title": "AlphaGo Combines Deep Neural Networks & Monte Carlo Tree Search to Defeat World Go Champions",
+  "shortTitle": "AlphaGo Masters Go (Nature, 2016)",
+  "date": "2016-01-28",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Deep Reinforcement Learning",
+    "Neuro-Symbolic Tree Search",
+    "Game Theory"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "AlphaGo (Policy/Value Deep CNNs + MCTS — Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Conquered Go a decade ahead of expectations by fusing deep policy/value neural networks with Monte Carlo tree search—birthing the neuro-symbolic search lineage behind AlphaTensor, AlphaDev, and AlphaProof.",
+  "summary": "Published in Nature in January 2016 (followed by its iconic 4–1 match victory over 18-time world champion Lee Sedol in March 2016) by David Silver, Aja Huang, Chris J. Maddison, Arthur Guez, Demis Hassabis, and colleagues at Google DeepMind, AlphaGo solved the combinatorial explosion of full-board Go (~10¹⁷⁰ legal positions), where traditional brute-force alpha–beta search failed. By coupling deep convolutional policy networks (to prune branching factor) and value networks (to evaluate board positions without full rollouts) with Monte Carlo Tree Search (MCTS), AlphaGo defeated European champion Fan Hui 5–0 and world champion Lee Sedol 4–1, unleashing creative non-human strategies (such as Game 2’s Move 37) and establishing deep neural-guided tree search as a foundational scientific-discovery engine.",
+  "technicalHighlights": [
+    "Combined supervised + reinforcement-learning deep policy and value networks with parallel Monte Carlo Tree Search (MCTS) to navigate Go’s ~10¹⁷⁰ state space.",
+    "Defeated European champion Fan Hui (5–0) and 18-time world champion Lee Sedol (4–1), solving a benchmark widely projected to be a decade away.",
+    "Directly seeded the neural-guided tree-search architecture powering AlphaZero, MuZero, 3N-MCTS chemical retrosynthesis, AlphaTensor, AlphaDev, and AlphaProof."
+  ],
+  "caveats": "Original AlphaGo (Lee) still bootstrapped from ~30 million human expert moves and hand-crafted Go board features—limitations completely removed one year later by tabula-rasa AlphaGo Zero (2017) and general AlphaZero (2018).",
+  "contributors": [
+    "David Silver",
+    "Aja Huang",
+    "Chris J. Maddison",
+    "Arthur Guez",
+    "Demis Hassabis"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 94,
+    "ripple": 98,
+    "verification": 99,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Broke one of computer science’s most iconic grand challenges by demonstrating deep neural networks guiding symbolic tree search at superhuman intuition.",
+    "ripple": "Sparked the entire modern wave of neural-guided search across chemistry (3N-MCTS), algorithms (AlphaTensor, AlphaDev), mathematics (AlphaProof), and RL.",
+    "verification": "Peer-reviewed in Nature and verified publicly in historic sanctioned matches against world-champion human Go professionals.",
+    "velocity": "Compressed a widely expected 10+ year timeline for conquering Go into a single architectural breakthrough."
+  },
+  "enables": [
+    "segler-retrosynthesis-mcts-2018",
+    "alphazero-general-selfplay-2018"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Mastering the game of Go with deep neural networks and tree search (Jan 2016)",
+      "url": "https://doi.org/10.1038/nature16961",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 26819042",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26819042/",
+      "type": "paper"
+    }
+  ]
+}

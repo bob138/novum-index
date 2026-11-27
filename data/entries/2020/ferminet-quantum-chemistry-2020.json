@@ -47,7 +47,8 @@
     "velocity": "Achieved breakthrough variational accuracy directly from the Schrödinger equation, though compute costs remain substantial."
   },
   "enables": [
-    "gnome-materials-2023"
+    "gnome-materials-2023",
+    "dm21-neural-density-functional-2021"
   ],
   "sources": [
     {

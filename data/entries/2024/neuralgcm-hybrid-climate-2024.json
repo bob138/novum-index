@@ -1,0 +1,68 @@
+{
+  "id": "neuralgcm-hybrid-climate-2024",
+  "title": "NeuralGCM Fuses Differentiable Atmospheric Physics & Deep Learning for Weather and Decadal Climate",
+  "shortTitle": "NeuralGCM Hybrid Climate (Nature)",
+  "date": "2024-07-22",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Climate Modeling",
+    "Differentiable Physics",
+    "Atmospheric Dynamics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "NeuralGCM (Differentiable Spectral Dynamical Core + Learned Physics — Google Research)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "1,000–100,000× less compute than GCMs",
+  "isAnchor": false,
+  "whyItMatters": "First hybrid general circulation model fusing a differentiable spectral physics core with learned neural physics—matching leading AI weather models while staying stable across 40-year climate simulations.",
+  "summary": "Published in Nature in July 2024 by Dmitrii Kochkov, Janni Yuval, Ian Langmore, Peter Battaglia, Michael P. Brenner, Stephan Hoyer, and colleagues at Google Research, Google DeepMind, Harvard University, and ECMWF, NeuralGCM addressed the central weakness of purely data-driven weather models (such as Pangu-Weather and GraphCast): instability and unphysical drift over multi-month and decadal climate horizons. Implemented fully in differentiable JAX, NeuralGCM retains an exact spectral dynamical core solving large-scale atmospheric fluid mechanics while replacing hand-tuned subgrid parameterizations (clouds, radiation, convection) with neural networks trained end-to-end through multi-day physical rollouts. NeuralGCM matched state-of-the-art ML and ECMWF ensemble forecasts out to 15 days while faithfully reproducing tropical cyclones, atmospheric energy spectra, and 40-year decadal warming trends at a fraction of classical GCM compute.",
+  "technicalHighlights": [
+    "Coupled an exact differentiable spectral dynamical core in JAX with learned neural subgrid physics trained end-to-end via backpropagation through time.",
+    "Delivered competitive 1- to 15-day probabilistic ensemble weather forecasts (matching ECMWF ENS) alongside stable 40-year atmospheric climate simulations.",
+    "Enabled direct gradient-based attribution and counterfactual optimization of extreme heatwaves through the differentiable climate simulator."
+  ],
+  "caveats": "Evaluated as an atmosphere-only model prescribed with observed sea-surface temperatures rather than a fully coupled ocean–sea-ice–biosphere Earth system model; extrapolating to extreme unseen +4 K warming still requires physical caution.",
+  "contributors": [
+    "Dmitrii Kochkov",
+    "Janni Yuval",
+    "Ian Langmore",
+    "Peter Battaglia",
+    "Michael P. Brenner",
+    "Stephan Hoyer"
+  ],
+  "institutions": [
+    "Google Research",
+    "Google DeepMind",
+    "Harvard University",
+    "ECMWF"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 92,
+    "verification": 97,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Resolved the divide between classical physics-based climate GCMs and pure deep-learning weather models via end-to-end differentiable hybrid physics.",
+    "ripple": "Open-source JAX platform is reshaping next-generation decadal climate modeling, extreme-event attribution, and Earth-system science.",
+    "verification": "Peer-reviewed in Nature with open code/checkpoints validated across both operational ensemble weather and 40-year historical climate benchmarks.",
+    "velocity": "Achieved cloud-resolving climate fidelity at orders-of-magnitude lower computational cost than classical supercomputer GCMs."
+  },
+  "enables": [
+    "aurora-earth-system-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Neural general circulation models for weather and climate (Jul 2024)",
+      "url": "https://doi.org/10.1038/s41586-024-07744-y",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC11357988",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11357988/",
+      "type": "paper"
+    }
+  ]
+}

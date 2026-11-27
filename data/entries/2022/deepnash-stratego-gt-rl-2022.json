@@ -1,0 +1,62 @@
+{
+  "id": "deepnash-stratego-gt-rl-2022",
+  "title": "DeepNash Game-Theoretic Deep RL Masters Stratego’s 10⁵³⁵ Imperfect-Information Game Tree",
+  "shortTitle": "DeepNash Masters Stratego (Science)",
+  "date": "2022-12-02",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Game-Theoretic Reinforcement Learning",
+    "Imperfect-Information Games",
+    "Multi-Agent AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DeepNash (Regularized Nash Dynamics R-NaD — Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Mastered Stratego’s 10⁵³⁵ imperfect-information game tree from scratch without tree search via Regularized Nash Dynamics (R-NaD), reaching an all-time top-3 ranking against human experts.",
+  "summary": "Published in Science in December 2022 by Julien Perolat, Bart De Vylder, Daniel Hennes, Eugene Tarassov, Karl Tuyls, Rémi Munos, and colleagues at Google DeepMind, DeepNash conquered Stratego—one of the last classic board games unsolved by AI, featuring a game tree of ~10⁵³⁵ nodes (~10¹⁷⁵× larger than Go) and massive hidden-information deployment and bluffing. Introducing Regularized Nash Dynamics (R-NaD), a model-free, search-free game-theoretic deep reinforcement learning algorithm with theoretical convergence guarantees to Nash equilibrium via reward regularization, DeepNash learned Stratego purely through self-play from scratch—crushing all prior Stratego bots (>97% win rate) and achieving an 84% win rate and all-time top-3 ranking against human grandmasters on the Gravon platform.",
+  "technicalHighlights": [
+    "Introduced Regularized Nash Dynamics (R-NaD), a principled model-free deep RL algorithm converging toward Nash equilibria in massive two-player imperfect-information games without online tree search.",
+    "Navigated Stratego’s 10⁵³⁵ game tree (including 10⁶⁶ initial hidden piece deployments), spontaneously discovering human-like bluffing, scouting, and deceptive sacrifice tactics.",
+    "Achieved 84% win rate against human experts and an all-time top-3 ranking on Gravon—defeating all existing Stratego AI engines."
+  ],
+  "caveats": "R-NaD targets two-player zero-sum imperfect-information games; multi-player cooperative/non-zero-sum settings (such as Diplomacy) require additional equilibrium-selection and communication mechanisms.",
+  "contributors": [
+    "Julien Perolat",
+    "Bart De Vylder",
+    "Daniel Hennes",
+    "Karl Tuyls",
+    "Rémi Munos"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 86,
+    "verification": 98,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Introduced R-NaD, solving a decades-long game-theoretic AI challenge combining deep strategic horizons with massive hidden information.",
+    "ripple": "Provides a scalable search-free Nash-equilibrium learning paradigm for security games, auctions, negotiation, and multi-agent LLM post-training.",
+    "verification": "Peer-reviewed in Science with blind tournament verification against top human grandmasters on Gravon.",
+    "velocity": "Achieved top-3 all-time human expert mastery in a 10⁵³⁵-state hidden-information domain purely via self-play without human games."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Science — Mastering the game of Stratego with model-free multiagent reinforcement learning (Dec 2022)",
+      "url": "https://doi.org/10.1126/science.add4679",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 36454847",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36454847/",
+      "type": "paper"
+    }
+  ]
+}

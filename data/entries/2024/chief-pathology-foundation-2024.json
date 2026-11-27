@@ -1,0 +1,63 @@
+{
+  "id": "chief-pathology-foundation-2024",
+  "title": "CHIEF Pan-Cancer Histopathology Foundation Model Diagnoses 19 Cancers & Predicts Survival",
+  "shortTitle": "CHIEF Pathology Foundation AI",
+  "date": "2024-09-04",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Computational Pathology",
+    "Precision Oncology",
+    "Medical Foundation Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "CHIEF (Clinical Histopathology Imaging Evaluation Foundation — Harvard Medical School)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Pretrained on 60,530 slides across 19 cancer types, CHIEF achieved ~94% cancer detection accuracy, predicted genomic mutations from routine H&E slides, and stratified survival across 32 independent cohorts.",
+  "summary": "Published in Nature in September 2024 by Xiyue Wang, Junhan Zhao, Eliana Marostica, Kun-Hsing Yu, and colleagues at Harvard Medical School, CHIEF (Clinical Histopathology Imaging Evaluation Foundation) combined unsupervised tile-level pretraining on 15 million image patches with weakly supervised whole-slide pretraining on 60,530 pathology slides spanning 19 cancer types. Evaluated across 19,491 whole-slide images from 32 independent international cohorts across 24 hospitals, CHIEF outperformed prior state-of-the-art pathology AI by up to 36%, achieved ~94% accuracy in cancer cell detection (and >96% across several cancer types), predicted driver gene mutations (including 54 key cancer genes) directly from standard H&E slides without sequencing, and stratified patient survival across diverse cancers.",
+  "technicalHighlights": [
+    "Pretrained via two-stage self-supervised + weakly supervised whole-slide learning across 15M tissue tiles and 60,530 slides covering 19 cancer types.",
+    "Validated on 19,491 slides from 32 independent multi-institutional cohorts across 24 hospitals—outperforming prior pathology models by up to 36%.",
+    "Predicted actionable genomic mutations, primary tumor origin, and patient survival directly from standard H&E microscopy slides."
+  ],
+  "caveats": "Retrospective multi-center validation still requires prospective randomized clinical workflow trials and regulatory clearance before replacing molecular genomic assays or board-certified pathologist sign-out.",
+  "contributors": [
+    "Xiyue Wang",
+    "Junhan Zhao",
+    "Eliana Marostica",
+    "Wei Yuan",
+    "Kun-Hsing Yu"
+  ],
+  "institutions": [
+    "Harvard Medical School",
+    "Brigham and Women's Hospital"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 89,
+    "verification": 96,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated generalizable whole-slide pan-cancer foundation modeling spanning diagnosis, molecular profiling, and survival prognosis.",
+    "ripple": "Accelerated clinical adoption of foundation models in digital pathology, especially for low-resource settings lacking rapid DNA sequencing.",
+    "verification": "Peer-reviewed in Nature with extensive external validation across 32 independent datasets from 24 hospitals.",
+    "velocity": "Infers molecular mutation signatures and prognosis from routine H&E slides in seconds rather than waiting weeks for genomic sequencing."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — A pathology foundation model for cancer diagnosis and prognosis prediction (Sep 2024)",
+      "url": "https://doi.org/10.1038/s41586-024-07894-z",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 39232164",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39232164/",
+      "type": "paper"
+    }
+  ]
+}

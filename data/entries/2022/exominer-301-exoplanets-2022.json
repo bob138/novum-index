@@ -1,0 +1,66 @@
+{
+  "id": "exominer-301-exoplanets-2022",
+  "title": "NASA ExoMiner Deep Neural Network Validates 301 Previously Unconfirmed Kepler Exoplanets",
+  "shortTitle": "NASA ExoMiner: 301 New Exoplanets",
+  "date": "2022-02-20",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Exoplanet Astronomy",
+    "Explainable Deep Learning",
+    "Space Science"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "ExoMiner (Explainable Multi-Branch Deep Neural Network — NASA Ames)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "NASA’s explainable deep neural network validated 301 brand-new exoplanets from Kepler archive data in a single sweep—nearly 7% of all exoplanets known at the time—setting a new accuracy and interpretability standard for transit astronomy.",
+  "summary": "Published in The Astrophysical Journal in February 2022 (announced by NASA in November 2021) by Hamed Valizadegan, Miguel J. S. Martinho, Laurent S. Wilkens, Jon M. Jenkins, Jeffrey C. Smith, and colleagues at NASA Ames Research Center and USRA, ExoMiner introduced a modular, explainable deep neural network mimicking domain-expert transit vetting across flux light curves, centroid offsets, secondary-eclipse diagnostics, and stellar parameters. Achieving 99% precision on Kepler transit data and significantly outperforming prior classifiers including AstroNet (Kepler-90i) and Robovetter, ExoMiner statistically validated 301 previously unconfirmed exoplanet candidates in the Kepler catalog in one stroke and subsequently expanded into ExoMiner++ for NASA’s TESS mission.",
+  "technicalHighlights": [
+    "Multi-branch deep neural architecture processed transit light curves, odd/even depth checks, centroid shifts, and stellar context while providing per-branch explainability for astronomers.",
+    "Validated 301 brand-new exoplanets directly added to the official NASA Exoplanet Archive—the largest single AI-driven batch validation of exoplanets.",
+    "Outperformed all prior human-engineered rule systems (Robovetter) and deep-learning classifiers on Kepler transit vetting benchmarks."
+  ],
+  "caveats": "Statistical validation confirms planetary probability >99% rather than measuring planet masses directly via radial-velocity spectroscopy; none of the 301 planets were confirmed Earth-sized habitable-zone worlds.",
+  "contributors": [
+    "Hamed Valizadegan",
+    "Miguel J. S. Martinho",
+    "Laurent S. Wilkens",
+    "Jon M. Jenkins",
+    "Jeffrey C. Smith"
+  ],
+  "institutions": [
+    "NASA Ames Research Center",
+    "Universities Space Research Association (USRA)",
+    "SETI Institute"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 84,
+    "verification": 97,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated domain-structured explainable deep learning exceeding expert statistical vetting pipelines at catalog scale.",
+    "ripple": "Adopted across NASA Kepler and TESS exoplanet-vetting pipelines (ExoMiner++), directly expanding the confirmed planetary census.",
+    "verification": "Peer-reviewed in The Astrophysical Journal and accepted directly into the official NASA Exoplanet Archive.",
+    "velocity": "Validated 301 new worlds in a single automated archival pass across thousands of noisy stellar light curves."
+  },
+  "enables": [
+    "btsbot-autonomous-supernova-2023"
+  ],
+  "sources": [
+    {
+      "label": "The Astrophysical Journal — ExoMiner: A Highly Accurate and Explainable Deep Learning Classifier That Validates 301 New Exoplanets (Feb 2022)",
+      "url": "https://doi.org/10.3847/1538-4357/ac4399",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2111.10009",
+      "url": "https://arxiv.org/abs/2111.10009",
+      "type": "paper"
+    }
+  ]
+}

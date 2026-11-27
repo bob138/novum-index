@@ -1,0 +1,64 @@
+{
+  "id": "otoc-1d-classical-simulation-2026",
+  "title": "Window Propagation: Provably Efficient Classical Algorithm for 1D Quantum Chaos OTOCs With GPT-6 Astra",
+  "shortTitle": "1D Quantum OTOC Simulation (GPT-6)",
+  "date": "2026-11-18",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Chaos",
+    "Classical Simulation of Quantum Circuits",
+    "Quantum Advantage Boundaries"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI ChatGPT 6 Astra",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Crediting ChatGPT 6 Astra with breaking key proof bottlenecks, researchers established the first provably polynomial-time classical algorithm for first-order OTOCs in arbitrary-depth 1D random circuits.",
+  "summary": "Posted to arXiv on November 18, 2026 (arXiv:2611.24640) by Laura Lewis, Antonio A. Mele, Ronald de Wolf, Jarrod R. McClean, and Amira Abbas (Google Quantum AI, UC Berkeley, and CWI), this paper sharpens the theoretical boundary of quantum advantage in quantum-chaos and information-scrambling probes. Introducing an algorithm called 'window propagation', the authors give the first rigorous, provably polynomial-time classical algorithm that approximates first-order out-of-time-order correlators (OTOC⁽¹⁾) in 1D Haar-random brickwork quantum circuits at arbitrary depth to inverse-polynomial mean-squared error—validated numerically up to 512 qubits. The authors explicitly report that key mathematical sticking points in the proof were resolved in sessions with ChatGPT 6 Astra after earlier models had failed.",
+  "technicalHighlights": [
+    "Introduces 'window propagation', the first provably polynomial-time classical algorithm with rigorous error guarantees for first-order OTOCs in 1D Haar-random brickwork circuits at any depth.",
+    "Numerically verified against exact computation on up to 512 qubits (Clifford + 768 T-gates) and 22-qubit Haar-random circuits.",
+    "Key technical obstructions in the rigorous error-bound proof were overcome through interactive sessions with ChatGPT 6 Astra."
+  ],
+  "caveats": "Preprint undergoing peer review; applies to first-order OTOCs in 1D random circuits and explicitly does not dequantize second-order OTOCs in 2D geometries targeted by recent experimental quantum-advantage proposals.",
+  "contributors": [
+    "Laura Lewis",
+    "Antonio A. Mele",
+    "Ronald de Wolf",
+    "Jarrod R. McClean",
+    "Amira Abbas"
+  ],
+  "institutions": [
+    "Google Quantum AI",
+    "University of California, Berkeley",
+    "Centrum Wiskunde & Informatica (CWI)"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 83,
+    "verification": 80,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Establishes the first rigorous polynomial-time classical complexity boundary for a major class of quantum-chaos OTOC observables.",
+    "ripple": "Directly sharpens where true quantum advantage lies versus classically simulable regimes in random-circuit quantum-scrambling experiments.",
+    "verification": "Rigorous analytical proof backed by up to 512-qubit numerical verification on arXiv, awaiting formal peer review.",
+    "velocity": "ChatGPT 6 Astra resolved critical proof sticking points where prior models and manual attempts had stalled."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.24640 — A provably efficient classical algorithm for simulating OTOC(1) in 1D (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.24640",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — AI Claims Entry (Nov 2026)",
+      "url": "https://quantumresearch.center/news/ai-claims/",
+      "type": "explainer"
+    }
+  ]
+}

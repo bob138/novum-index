@@ -1,0 +1,66 @@
+{
+  "id": "alphafold-nuclear-pore-complex-2022",
+  "title": "AlphaFold 2 + Cryo-Electron Tomography Resolves the 1,000-Protein Human Nuclear Pore Complex",
+  "shortTitle": "Human Nuclear Pore Complex (Science)",
+  "date": "2022-06-10",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Integrative Structural Biology",
+    "Cell Biology",
+    "Cryo-Electron Tomography"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaFold 2 + ColabFold + Cryo-ET Integrative Modeling (MPI Biophysics / EMBL)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Landmark real-world triumph of AlphaFold 2: combining AI structure prediction with cryo-electron tomography unlocked the near-atomic scaffold of the ~120 MDa, ~1,000-protein human nuclear pore complex inside intact cells.",
+  "summary": "Published in a special June 2022 Science issue by Shyamal Mosalaganti, Agnieszka Obarska-Kosinska, Marc Siggel, Jan Kosinski, Martin Beck, and colleagues at the Max Planck Institute of Biophysics and EMBL (alongside companion Science papers from the Hoelz and Schwartz labs), researchers paired AlphaFold 2 and ColabFold structural predictions with in-cell cryo-electron tomography and molecular dynamics to construct a nearly complete architectural model of the human nuclear pore complex (NPC)—one of the largest protein assemblies in eukaryotic cells (~120 megadaltons, ~1,000 protein subunits guarding all traffic into and out of the cell nucleus). AlphaFold 2 filled decades-long experimental blind spots across ~20% of previously unmapped scaffold regions and revealed how the pore dilates and contracts mechanically in live cells.",
+  "technicalHighlights": [
+    "Integrated AlphaFold 2 / ColabFold monomer and complex predictions directly into cryo-EM and in situ cryo-ET density maps of the ~120 MDa human NPC.",
+    "Doubled structural coverage of the human NPC scaffold (resolving ~70 MDa of the structured core across ~1,000 nucleoporin copies) including previously intractable linker and transmembrane subunits.",
+    "Revealed mechanistic plasticity showing how the nuclear pore dilates and constricts in response to cellular energy and mechanical stress."
+  ],
+  "caveats": "Intrinsically disordered FG-repeat nucleoporin hydrogels filling the central transport channel remain dynamic and cannot be captured as static atomic coordinates.",
+  "contributors": [
+    "Shyamal Mosalaganti",
+    "Agnieszka Obarska-Kosinska",
+    "Marc Siggel",
+    "Jan Kosinski",
+    "Martin Beck"
+  ],
+  "institutions": [
+    "Max Planck Institute of Biophysics",
+    "European Molecular Biology Laboratory (EMBL)"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 88,
+    "verification": 97,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated AI structure prediction directly solving one of eukaryotic cell biology’s most iconic megadalton molecular machines.",
+    "ripple": "Pioneered the hybrid AI + cryo-ET integrative structural biology workflow now standard across cellular structural biology.",
+    "verification": "Peer-reviewed in Science (with companion independent Science structural validations) fitted directly to experimental cryo-ET electron density.",
+    "velocity": "Compressed years of painstaking crystallography of recalcitrant nucleoporin subunits into rapid AI-guided integrative modeling."
+  },
+  "enables": [
+    "alphafold-fertilization-complex-2024",
+    "claude-prokaryotic-vault-2026"
+  ],
+  "sources": [
+    {
+      "label": "Science — AI-based structure prediction empowers integrative structural analysis of human nuclear pores (Jun 2022)",
+      "url": "https://doi.org/10.1126/science.abm9506",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 35679397",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35679397/",
+      "type": "paper"
+    }
+  ]
+}

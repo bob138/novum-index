@@ -1,0 +1,64 @@
+{
+  "id": "microns-mouse-cortex-connectome-2025",
+  "title": "MICrONS AI Connectomics Maps 84,000 Neurons & 524M Synapses in Mammalian Visual Cortex",
+  "shortTitle": "MICrONS Cortex Connectome (Nature)",
+  "date": "2025-04-09",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Connectomics",
+    "Systems Neuroscience",
+    "3D Electron Microscopy AI"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MICrONS 3D Convolutional Segmentation & Synapse-Detection AI (Princeton / Allen Institute / Baylor)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Deep-learning EM segmentation reconstructed 1 mm³ of mammalian visual cortex (~200,000 cells, 84,000 neurons, 524M synapses) fused with live functional recordings—revealing universal like-to-like cortical wiring rules.",
+  "summary": "Published in a landmark ten-paper Nature special package in April 2025 by the MICrONS Consortium (Princeton University, Allen Institute for Brain Science, Baylor College of Medicine, and >150 researchers), this breakthrough combined deep-learning 3D electron-microscopy segmentation and automated synapse detection across 1.6 petabytes of nanometer-scale imagery with live two-photon calcium imaging of the same living mouse watching natural movies. Reconstructing a cubic millimeter of mammalian neocortex spanning four visual areas (~200,000 cells, ~84,000 neurons, ~4 km of axons, and 524 million synapses—roughly 20× the synaptic scale of the whole fruit-fly brain), the co-registered structure–function map uncovered a general multi-area 'like-to-like' cortical wiring rule and enabled digital-twin foundation models of visual cortex.",
+  "technicalHighlights": [
+    "AI neural segmentation traced >200,000 cells (~84,000 neurons) and automatically detected 524 million synapses across 1.6 petabytes of 3D electron-microscopy data.",
+    "Co-registered nanoscale synaptic wiring directly with live neural firing responses of ~75,000 neurons recorded while the mouse viewed natural video clips.",
+    "Companion Nature analyses discovered general multi-area like-to-like excitatory and inhibitory cortical wiring rules and trained an AI digital twin predicting neuronal responses across unseen stimuli."
+  ],
+  "caveats": "Automated 3D segmentation required massive distributed human proofreading for complete axonal trees, and a 1 mm³ volume represents roughly 0.2% of a whole mouse brain (with whole-mouse connectome efforts still years ahead).",
+  "contributors": [
+    "The MICrONS Consortium",
+    "H. Sebastian Seung",
+    "Andreas S. Tolias",
+    "Nuno Maçarico da Costa",
+    "R. Clay Reid"
+  ],
+  "institutions": [
+    "Princeton University",
+    "Allen Institute for Brain Science",
+    "Baylor College of Medicine"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 91,
+    "verification": 98,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Delivered the first petascale, co-registered structure-and-function wiring diagram of mammalian neocortex, uncovering general cortical circuit principles.",
+    "ripple": "Open-access petascale dataset is transforming systems neuroscience, biologically inspired AI architectures, and mammalian brain digital twins.",
+    "verification": "Peer-reviewed across a ten-paper Nature / Nature Methods package with open public data and extensive human proofreading validation.",
+    "velocity": "AI segmentation automated petascale nanoscale tracing that would have taken thousands of human-lifetimes manually."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — Functional connectomics spanning multiple areas of mouse visual cortex (Apr 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-08790-w",
+      "type": "paper"
+    },
+    {
+      "label": "Nature — Functional connectomics reveals general wiring rule in mouse visual cortex (Apr 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-08840-3",
+      "type": "paper"
+    }
+  ]
+}

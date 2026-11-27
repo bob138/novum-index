@@ -1,0 +1,63 @@
+{
+  "id": "rfdiffusion-antivenom-binders-2025",
+  "title": "RFdiffusion De Novo Protein Binders Neutralize Lethal Snake Venom Neurotoxins With 100% Survival",
+  "shortTitle": "AI De Novo Antivenoms (Nature)",
+  "date": "2025-01-15",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Protein Therapeutics",
+    "Global Health & Toxicology",
+    "Generative Structural Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFdiffusion + ProteinMPNN (UW IPD / DTU)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "RFdiffusion and ProteinMPNN designed hyper-thermostable de novo minibinders neutralizing lethal cobra and mamba neurotoxins with up to 100% mouse survival—demonstrating low-cost AI therapeutics.",
+  "summary": "Published in Nature in January 2025 by Susana Vázquez Torres, Melisa Benard Valle, Søren Helweg Dam, Andreas H. Laustsen, David Baker, and colleagues at the University of Washington IPD and Technical University of Denmark (DTU), this landmark translational study used RFdiffusion and ProteinMPNN to design compact, hyper-thermostable de novo protein binders targeting three-finger toxins (3FTxs)—the small, poorly immunogenic lethal α-neurotoxins and cytotoxins of elapid snakes (cobras, mambas, kraits) that cause >100,000 deaths annually. Screened from small libraries without animal immunization, the AI-designed binders achieved sub-nanomolar affinity, atomic-accuracy crystal structures, survival against boiling-level heat, and 80–100% in vivo survival in mice challenged with lethal doses of neurotoxins (even when administered post-envenomation).",
+  "technicalHighlights": [
+    "Designed de novo sub-nanomolar minibinders against short-chain and long-chain α-neurotoxins and cytotoxins using RFdiffusion + ProteinMPNN without animal immunization.",
+    "Achieved 100% protection in mice against lethal neurotoxin challenge and 80–100% survival in post-envenomation rescue assays.",
+    "Binders are microbially produced at low cost and remain stable at extreme temperatures without cold-chain refrigeration—critical for rural tropical clinics."
+  ],
+  "caveats": "Real snake venoms are complex cocktails of dozens of distinct toxin families; clinical broad-spectrum antivenoms will require combining multiple AI-designed binders and completing human clinical safety trials.",
+  "contributors": [
+    "Susana Vázquez Torres",
+    "Melisa Benard Valle",
+    "Søren Helweg Dam",
+    "Andreas H. Laustsen",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (IPD)",
+    "Technical University of Denmark (DTU)"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 90,
+    "verification": 98,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Proved generative AI protein design can create animal-free, thermostable, in vivo life-saving therapeutics against historically intractable small toxins.",
+    "ripple": "Provides a low-cost, cold-chain-free therapeutic blueprint for neglected tropical diseases and rapid countermeasure engineering.",
+    "verification": "Peer-reviewed in Nature with atomic crystal structures, biophysical binding kinetics, and in vivo murine lethal-challenge survival data.",
+    "velocity": "Bypassed slow, expensive horse-immunization antivenom pipelines to generate potent binders computationally from minimal screening libraries."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — De novo designed proteins neutralize lethal snake venom toxins (Jan 2025)",
+      "url": "https://doi.org/10.1038/s41586-024-08393-x",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC11882462",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11882462/",
+      "type": "paper"
+    }
+  ]
+}

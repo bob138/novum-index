@@ -1,0 +1,67 @@
+{
+  "id": "melvin-quantum-experiments-2016",
+  "title": "Melvin & Active-Learning AI Autonomously Invent Novel Quantum Entanglement Experiments",
+  "shortTitle": "Melvin Quantum Optics AI (PRL/PNAS)",
+  "date": "2016-03-04",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Optics",
+    "Automated Experimental Design",
+    "Quantum Entanglement"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "Melvin Heuristic Search & Projective-Simulation RL (Vienna / Innsbruck)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First AI systems to autonomously invent counterintuitive high-dimensional multiphoton quantum entanglement experiments that human physicists subsequently built in optical laboratories—founding AI-designed physics apparatus.",
+  "summary": "Published in Physical Review Letters in March 2016 (Mario Krenn, Mehul Malik, Robert Fickler, Radek Lapkiewicz, and Nobel laureate Anton Zeilinger at the University of Vienna) and extended with reinforcement learning in PNAS in February 2018 (Alexey A. Melnikov, Hendrik Poulsen Nautrup, Mario Krenn, Anton Zeilinger, and Hans J. Briegel at Innsbruck and Vienna), Melvin and its active-learning RL successor autonomously searched combinations of optical elements (beam splitters, holograms, prisms, crystals) to discover previously unknown high-dimensional multipartite quantum-entangled states. Crucially, Melvin invented an asymmetric three-photon (3,3,2)-dimensional entangled state using counterintuitive interference loops that humans had never conceived—which experimentalists subsequently built and verified on an optical bench, launching the lineage directly leading to Urania (LIGO) and AlphaProof Nexus’s 2026 GHZ no-go theorem.",
+  "technicalHighlights": [
+    "Melvin (PRL 2016) autonomously invented 51 novel high-dimensional multiphoton quantum entanglement setups—including a counterintuitive cyclic optical interferometer built and confirmed experimentally.",
+    "Projective-simulation reinforcement learning (PNAS 2018) learned reusable optical 'gadgets' from scratch and rediscovered/invented novel experimental techniques without human optical intuition.",
+    "Directly birthed the graph-theoretic representation of quantum optics that led to Urania (2025) and AlphaProof Nexus’s Lean-verified GHZ no-go theorem (2026)."
+  ],
+  "caveats": "Operated over idealized discrete linear-optical component simulators; experimentalists still had to align, stabilize, and validate the AI-proposed optical tables in the laboratory.",
+  "contributors": [
+    "Mario Krenn",
+    "Mehul Malik",
+    "Alexey A. Melnikov",
+    "Hans J. Briegel",
+    "Anton Zeilinger"
+  ],
+  "institutions": [
+    "University of Vienna",
+    "University of Innsbruck",
+    "Austrian Academy of Sciences (IQOQI)"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 88,
+    "verification": 97,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Proved AI can autonomously invent counterintuitive physical experiments beyond human intuition in quantum optics.",
+    "ripple": "Founded automated AI experimental-apparatus design across quantum optics, gravitational-wave interferometry (Urania), and photonic circuits.",
+    "verification": "Peer-reviewed in PRL (2016) and PNAS (2018) with AI-invented quantum-entanglement setups physically built and experimentally confirmed in Zeilinger’s lab.",
+    "velocity": "Discovered dozens of novel high-dimensional quantum-state generation schemes in hours where human optical designers had stalled for years."
+  },
+  "enables": [
+    "urania-ligo-detector-topologies-2025",
+    "alphaproof-nexus-ghz-nogo-2026"
+  ],
+  "sources": [
+    {
+      "label": "Physical Review Letters — Automated Search for new Quantum Experiments (Mar 2016)",
+      "url": "https://doi.org/10.1103/PhysRevLett.116.090405",
+      "type": "paper"
+    },
+    {
+      "label": "PNAS — Active learning machine learns to create new quantum experiments (Feb 2018)",
+      "url": "https://doi.org/10.1073/pnas.1714936115",
+      "type": "paper"
+    }
+  ]
+}

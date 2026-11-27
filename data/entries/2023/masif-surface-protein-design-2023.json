@@ -1,0 +1,65 @@
+{
+  "id": "masif-surface-protein-design-2023",
+  "title": "MaSIF Geometric Deep Learning Designs De Novo Protein Binders From Molecular Surface Fingerprints",
+  "shortTitle": "MaSIF Surface Protein Design",
+  "date": "2023-04-26",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Geometric Deep Learning",
+    "De Novo Protein Design",
+    "Molecular Surfaces"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MaSIF-seed (Geometric Surface Deep Learning — EPFL)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Pioneered geometric deep learning directly on 3D chemical and electrostatic protein surfaces (MaSIF), designing experimentally validated de novo binders against SARS-CoV-2 spike, PD-1, PD-L1, and CTLA-4.",
+  "summary": "Published in Nature in April 2023 (building on the foundational Nature Methods 2020 MaSIF framework) by Pablo Gainza, Sarah Wehrle, Alexandra Van Hall-Beauvais, Michael M. Bronstein, Bruno E. Correia, and colleagues at EPFL and Oxford, MaSIF-seed applied geodesic convolutional neural networks directly to triangulated 3D protein molecular surfaces encoding shape and chemical electrostatics. By learning complementary 'surface fingerprints' of interaction hotspots, the model discovered binding motifs and generated novel de novo protein binders against four therapeutically relevant targets—including SARS-CoV-2 spike RBD, PD-1, PD-L1, and CTLA-4—with sub-nanomolar affinities and atomic-accuracy co-crystal structures.",
+  "technicalHighlights": [
+    "Represented proteins as continuous 3D geometric manifolds annotated with electrostatic, hydrophobic, and hydrogen-bonding surface features rather than discrete atom graphs alone.",
+    "Designed experimentally validated de novo binders against four challenging clinical targets (SARS-CoV-2 spike, PD-1, PD-L1, CTLA-4) including neutralization of SARS-CoV-2 variants.",
+    "X-ray crystallography confirmed sub-angstrom agreement between predicted and experimentally bound binder–target interfaces."
+  ],
+  "caveats": "Initial surface-seeded binders often required modest experimental affinity maturation for sub-nanomolar potency, and surface representations do not capture large target conformational rearrangements.",
+  "contributors": [
+    "Pablo Gainza",
+    "Sarah Wehrle",
+    "Freyr Sverrisson",
+    "Michael M. Bronstein",
+    "Bruno E. Correia"
+  ],
+  "institutions": [
+    "EPFL",
+    "University of Oxford"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 96,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Established molecular-surface geometric deep learning as a distinct, physics-grounded paradigm for de novo protein interaction design.",
+    "ripple": "Directly shaped surface-aware drug and binder design tools at EPFL (preceding BindCraft) and across computational structural biology.",
+    "verification": "Peer-reviewed in Nature (building on Nature Methods 2020) with wet-lab neutralization, affinity assays, and X-ray co-crystal structures.",
+    "velocity": "Enabled rapid hotspot identification and motif grafting across arbitrary protein surfaces without brute-force docking."
+  },
+  "enables": [
+    "bindcraft-oneshot-binders-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — De novo design of protein interactions with learned surface fingerprints (Apr 2023)",
+      "url": "https://doi.org/10.1038/s41586-023-05993-x",
+      "type": "paper"
+    },
+    {
+      "label": "Nature Methods — Deciphering interaction fingerprints from protein molecular surfaces (2020)",
+      "url": "https://doi.org/10.1038/s41592-019-0666-6",
+      "type": "paper"
+    }
+  ]
+}

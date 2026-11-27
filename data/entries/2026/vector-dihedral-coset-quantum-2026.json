@@ -1,0 +1,58 @@
+{
+  "id": "vector-dihedral-coset-quantum-2026",
+  "title": "GPT-5.6 Sol Discovers Quasipolynomial Quantum Algorithm for Smooth-Modulus Vector Dihedral Coset Problem",
+  "shortTitle": "Smooth-Modulus Dihedral Coset AI",
+  "date": "2026-11-13",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Algorithms",
+    "Post-Quantum Cryptography",
+    "Lattice & Group-Action Cryptanalysis"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-5.6 Sol & GPT-6 Astra",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "GPT-5.6 Sol discovered a quasipolynomial quantum sieving algorithm for the Vector Dihedral Coset Problem across arbitrary smooth moduli—breaking past the power-of-two modulus barrier in post-quantum cryptographic complexity.",
+  "summary": "Posted to arXiv on November 13, 2026 (arXiv:2611.18857) by Aparna Gupte, this paper presents a quasipolynomial-time quantum algorithm for the Vector Dihedral Coset Problem (DCP) and the Extrapolated Dihedral Coset Problem (EDCP) for arbitrary B-smooth moduli—generalizing prior quasipolynomial results that had been restricted exclusively to power-of-two moduli (ASIACRYPT 2018, CRYPTO 2025). The author explicitly states that the core prime-factor sieving algorithm—which eliminates nonlinear phase terms modulo each prime factor p via Ivanyos–Santha diagonal-equation solving—was discovered in a July 2026 conversation with ChatGPT-5.6 Sol and subsequently improved with ChatGPT-6 Astra before full human verification and simplification.",
+  "technicalHighlights": [
+    "Generalized quasipolynomial quantum DCP algorithms from power-of-two moduli to arbitrary B-smooth moduli with mixed prime factors.",
+    "Core prime-by-prime p-ary Fourier sieving algorithm discovered by GPT-5.6 Sol by coupling dihedral coset reduction with Ivanyos–Santha diagonal-equation subroutines.",
+    "Clarifies the exact sample-complexity boundary for post-quantum lattice cryptography: applies to EDCP with quasipolynomial samples while leaving standard polynomial-sample LWE unbroken."
+  ],
+  "caveats": "Preprint undergoing community peer review (concurrent independent work by Boucher, Fouque, and Shen achieved related prime-power bounds); requires quasipolynomially many coset samples and does not break practical LWE lattice encryption.",
+  "contributors": [
+    "Aparna Gupte"
+  ],
+  "institutions": [
+    "Massachusetts Institute of Technology"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 83,
+    "verification": 78,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Advances Kuperberg-style hidden-shift quantum algorithms beyond power-of-two moduli to general smooth moduli.",
+    "ripple": "Directly informs post-quantum security boundaries for dihedral-coset, group-action, and lattice-based cryptosystems.",
+    "verification": "Author-verified and simplified mathematical proof on arXiv, currently awaiting formal peer review.",
+    "velocity": "GPT-5.6 Sol autonomously synthesized the non-obvious cross-paper Ivanyos–Santha sieving reduction in interactive research sessions."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.18857 — A Quasipolynomial Quantum Algorithm for the Vector Dihedral Coset Problem with Smooth Modulus (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.18857",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — AI Claims Entry (Nov 2026)",
+      "url": "https://quantumresearch.center/news/ai-claims/",
+      "type": "explainer"
+    }
+  ]
+}

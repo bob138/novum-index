@@ -1,0 +1,63 @@
+{
+  "id": "fourier-neural-operator-2021",
+  "title": "Fourier Neural Operator (FNO) Learns Resolution-Invariant PDE Families 1,000× Faster Than Solvers",
+  "shortTitle": "Fourier Neural Operator (FNO)",
+  "date": "2021-05-03",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Neural Operators",
+    "Fluid Turbulence & PDEs",
+    "Computational Physics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Fourier Neural Operator (FNO — Caltech)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~1,000× faster than spectral PDE solvers",
+  "isAnchor": true,
+  "whyItMatters": "Pioneered resolution-invariant operator learning in Fourier frequency space—learning entire families of turbulent Navier–Stokes PDEs with zero-shot super-resolution and running up to 1,000× faster than classical numerical solvers.",
+  "summary": "Presented at ICLR 2021 (arXiv October 2020) by Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar at Caltech and Purdue, the Fourier Neural Operator (FNO) introduced a neural architecture that maps directly between infinite-dimensional function spaces rather than fixed finite grids. By parameterizing integral kernel layers directly in Fourier spectral space via Fast Fourier Transforms, FNO learned solution operators for entire families of nonlinear PDEs—including Darcy flow, Burgers’ equation, and chaotic 2D Navier–Stokes turbulence—achieving ~30% lower error than prior deep PDE surrogates, zero-shot super-resolution across unseen mesh resolutions, and up to 1,000× speedups over traditional numerical solvers.",
+  "technicalHighlights": [
+    "Parameterized integral operators directly in Fourier space via FFTs, achieving mesh- and resolution-invariance with zero-shot super-resolution (e.g., trained on 64×64, evaluated accurately on 256×256).",
+    "First deep-learning PDE operator to accurately emulate turbulent 2D Navier–Stokes fluid dynamics up to 1,000× faster than pseudo-spectral solvers.",
+    "Directly powered NVIDIA’s FourCastNet global weather AI and widespread neural-operator simulations across geophysics, fusion plasma, acoustics, and climate modeling."
+  ],
+  "caveats": "Standard FFT-based FNO assumes regular periodic/Cartesian grids and requires geometry-aware extensions (Geo-FNO, spherical FNO) for irregular engineering meshes or spherical planetary domains.",
+  "contributors": [
+    "Zongyi Li",
+    "Nikola Kovachki",
+    "Kamyar Azizzadenesheli",
+    "Kaushik Bhattacharya",
+    "Andrew Stuart",
+    "Anima Anandkumar"
+  ],
+  "institutions": [
+    "California Institute of Technology",
+    "Purdue University"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 94,
+    "verification": 95,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Established neural operator learning in infinite-dimensional function spaces as a foundational paradigm of scientific AI alongside PINNs.",
+    "ripple": "Directly seeded spherical/global AI weather forecasting (FourCastNet), neural PDE surrogates, CO₂ sequestration modeling, and fusion plasma emulation.",
+    "verification": "Peer-reviewed at ICLR 2021 with open-source code, rigorous universal-approximation theory, and thousands of independent scientific reproductions.",
+    "velocity": "Delivered up to 1,000× speedups over high-order pseudo-spectral Navier–Stokes solvers while generalizing across resolutions."
+  },
+  "enables": [
+    "pangu-weather-3d-ai-2023",
+    "graphcast-weather-2023",
+    "neuralgcm-hybrid-climate-2024"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2010.08895 — Fourier Neural Operator for Parametric Partial Differential Equations (ICLR 2021)",
+      "url": "https://arxiv.org/abs/2010.08895",
+      "type": "paper"
+    }
+  ]
+}

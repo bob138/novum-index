@@ -1,0 +1,62 @@
+{
+  "id": "epoch-oeis-open-147-conjectures-2026",
+  "title": "Epoch AI ‘OEIS Open’: Generic Tool-Using LLMs Autonomously Prove or Disprove 147 Open Conjectures in Lean 4",
+  "shortTitle": "OEIS Open: 147 Lean Proofs (Epoch AI)",
+  "date": "2026-08-12",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Number Theory & Integer Sequences",
+    "Automated Theorem Proving",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Epoch AI LeanOpenProblems Agent (GPT-6 Astra, Claude Fable 5 / 5.1 & Gemini + Lean 4)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "$50 compute budget per conjecture",
+  "isAnchor": false,
+  "whyItMatters": "Simple off-the-shelf tool-using LLM agents autonomously proved or disproved 147 of 492 formally stated open OEIS mathematical conjectures in Lean 4—all machine-verified with anti-cheating checks at just $50 per problem.",
+  "summary": "Posted in August 2026 (arXiv:2608.11941) by Tom Adamczewski at Epoch AI, OEIS Open evaluated generic ReAct-style language models equipped with minimal tools (bash, text editor, and Lean 4) against 492 formally stated open conjectures drawn from the Online Encyclopedia of Integer Sequences (auto-formalized by Tsoukalas et al. in Google DeepMind’s Formal Conjectures repository, where DeepMind’s bespoke May 2026 agent had solved 44). Using strict SafeVerify anti-exploit checking to guard against axiom injection, off-the-shelf frontier models autonomously proved or disproved 147 of the 492 open conjectures (30%) at a modest $50 budget per attempt—with subsequent leaderboard updates pushing GPT-6 Astra to 57/100 and Claude Fable 5.1 to 53/100 on OEIS Open Lite—demonstrating scalable, low-cost autonomous mathematical theorem discovery.",
+  "technicalHighlights": [
+    "Resolved 147 of 492 formalized open OEIS conjectures (more than 3× DeepMind’s initial 44/492 baseline) using minimal bash + editor + Lean 4 agent loops at $50/attempt.",
+    "Every accepted proof or disproof passed SafeVerify formal kernel checks against the exact theorem specification to prevent axiom-injection cheating.",
+    "Released open-source benchmark and evaluation scaffold (epoch-research/LeanOpenProblems), demonstrating that simple generic agent loops match or beat complex bespoke provers."
+  ],
+  "caveats": "As the author explicitly notes, most OEIS conjectures received little prior human mathematician attention and carry lower individual fame than Millennium/Erdős problems; auto-formalized statements also carry residual risk of subtle misformalization.",
+  "contributors": [
+    "Tom Adamczewski"
+  ],
+  "institutions": [
+    "Epoch AI"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 88,
+    "verification": 94,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated high-volume, reproducible autonomous resolution of open mathematical conjectures by generic tool-using LLMs rather than specialized math engines.",
+    "ripple": "Created the open standard benchmark (LeanOpenProblems) directly leading to GPT-6 Astra’s Köthe, Smale, and Dittert formalizations.",
+    "verification": "All 147 proofs/disproofs passed Lean 4 + SafeVerify specification checks, though auto-formalized source statements carry slight misformalization caveats.",
+    "velocity": "Resolved 147 open conjectures autonomously at $50/attempt—demonstrating mass-scale formal theorem production."
+  },
+  "enables": [
+    "kothe-conjecture-disproof-2026",
+    "smale-mean-value-disproof-2026",
+    "dittert-conjecture-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2608.11941 — OEIS Open: How many conjectures can language models turn into theorems? (Aug 2026)",
+      "url": "https://arxiv.org/abs/2608.11941",
+      "type": "paper"
+    },
+    {
+      "label": "GitHub — epoch-research/LeanOpenProblems",
+      "url": "https://github.com/epoch-research/LeanOpenProblems",
+      "type": "code"
+    }
+  ]
+}

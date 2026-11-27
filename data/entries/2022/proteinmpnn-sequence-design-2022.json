@@ -1,0 +1,69 @@
+{
+  "id": "proteinmpnn-sequence-design-2022",
+  "title": "ProteinMPNN Deep Graph Network Solves Inverse Protein Folding & Rescues Failed De Novo Folds",
+  "shortTitle": "ProteinMPNN Sequence Design",
+  "date": "2022-09-15",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Protein Design",
+    "Inverse Protein Folding",
+    "Graph Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "ProteinMPNN (Message-Passing Graph Neural Network — UW IPD)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "~1 second per protein sequence",
+  "isAnchor": true,
+  "whyItMatters": "Solved the inverse protein-folding bottleneck with a fast message-passing GNN (52.4% vs. 32.9% native recovery), rescuing previously unexpressible de novo proteins and becoming the universal sequence-design engine paired with RFdiffusion.",
+  "summary": "Published in Science in September 2022 by Justas Dauparas, Ivan Anishchenko, Nathaniel Bennett, David Baker, and colleagues at the University of Washington Institute for Protein Design (IPD), ProteinMPNN introduced a lightweight message-passing graph neural network that designs amino-acid sequences for arbitrary 3D protein backbones in ~1 second—more than 200× faster than physics-based Rosetta design. ProteinMPNN raised native sequence recovery on held-out monomers from 32.9% (Rosetta) to 52.4%, rescued previously failed protein monomers, symmetric cyclic homo-oligomers, tetrahedral nanoparticles, and enzyme scaffolds in wet-lab expression assays, and verified atomic-level accuracy via X-ray crystallography and cryo-EM.",
+  "technicalHighlights": [
+    "Order-agnostic autoregressive message-passing GNN over 3D backbone coordinates supporting multi-chain, symmetric, and fixed-residue design constraints.",
+    "Achieved 52.4% native sequence recovery (vs. 32.9% for Rosetta) in ~1 second on a single CPU, slashing experimental failure rates across complex assemblies.",
+    "Rescued dozens of previously failed de novo protein designs in wet-lab assays with sub-angstrom experimental X-ray and cryo-EM crystal verification."
+  ],
+  "caveats": "Designs sequences conditioned solely on protein backbones without explicitly modeling small-molecule ligands or nucleic acids (subsequently addressed by LigandMPNN and all-atom diffusion models).",
+  "contributors": [
+    "Justas Dauparas",
+    "Ivan Anishchenko",
+    "Nathaniel Bennett",
+    "Hua Bai",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (IPD)"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 96,
+    "verification": 98,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Cracked the deep-learning inverse folding problem with an elegant, rock-solid geometric graph architecture.",
+    "ripple": "Became the indispensable sequence-design half of nearly every modern generative protein pipeline (RFdiffusion, BindCraft, RFantibody, antivenoms, enzymes).",
+    "verification": "Peer-reviewed in Science with extensive wet-lab expression, thermal stability, X-ray crystallography, and cryo-EM structural verification.",
+    "velocity": "Accelerated sequence design >200× over Rosetta (seconds vs. hours) while dramatically raising experimental success rates."
+  },
+  "enables": [
+    "rfdiffusion-protein-design-2023",
+    "rfdiffusion-antivenom-binders-2025",
+    "bindcraft-oneshot-binders-2025",
+    "baker-serine-hydrolases-2025",
+    "baker-calcium-ion-channels-2025",
+    "rfantibody-de-novo-antibodies-2025"
+  ],
+  "sources": [
+    {
+      "label": "Science — Robust deep learning–based protein sequence design using ProteinMPNN (Sep 2022)",
+      "url": "https://doi.org/10.1126/science.add2187",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC9997061",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9997061/",
+      "type": "paper"
+    }
+  ]
+}

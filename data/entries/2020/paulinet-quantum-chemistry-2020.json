@@ -1,0 +1,62 @@
+{
+  "id": "paulinet-quantum-chemistry-2020",
+  "title": "PauliNet: Deep-Learning Quantum Monte Carlo Solves Electronic Schrödinger Equation",
+  "shortTitle": "PauliNet Quantum Chemistry",
+  "date": "2020-09-22",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Ab Initio Quantum Chemistry",
+    "Variational Quantum Monte Carlo",
+    "Neural Wavefunctions"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "PauliNet (SchNet + Antisymmetric Slater–Jastrow VMC — FU Berlin)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Co-pioneered deep-learning ab initio quantum chemistry alongside FermiNet, embedding Pauli antisymmetry and Hartree–Fock physics into neural wavefunctions to recover >99% of electronic correlation energy from first principles.",
+  "summary": "Published in Nature Chemistry in September 2020 (preprint September 2019) by Jan Hermann, Zeno Schätzle, and Frank Noé at Freie Universität Berlin, PauliNet introduced a physics-informed deep neural network wavefunction ansatz for variational quantum Monte Carlo (VMC). By augmenting multireference Hartree–Fock Slater determinants with SchNet-style graph neural backflow transformations and explicit cusp conditions while enforcing exact fermionic antisymmetry, PauliNet achieved near-exact ground-state energies—recovering 97–99.9% of correlation energy across challenging molecules such as cyclobutadiene and hydrogen chains using orders of magnitude fewer determinants than classical quantum chemistry.",
+  "technicalHighlights": [
+    "Embedded exact Pauli exclusion antisymmetry, Kato electron-nuclear/electron-electron cusp conditions, and multireference Hartree–Fock physics directly into a trainable graph neural network.",
+    "Recovered 97% to 99.9% of electronic correlation energy with only a handful of neural determinants—outperforming standard coupled-cluster CCSD(T) on strongly correlated bond-breaking regimes.",
+    "Trained purely from the variational principle of the electronic Schrödinger equation without requiring external quantum-chemistry reference datasets."
+  ],
+  "caveats": "Variational quantum Monte Carlo optimization scales steeply with electron count (roughly O(N⁴) per step), restricting early PauliNet calculations to small-to-medium molecules of up to ~30 electrons.",
+  "contributors": [
+    "Jan Hermann",
+    "Zeno Schätzle",
+    "Frank Noé"
+  ],
+  "institutions": [
+    "Freie Universität Berlin"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 86,
+    "verification": 95,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Co-founded neural-network variational Monte Carlo for real-space ab initio electronic structure alongside DeepMind’s FermiNet.",
+    "ripple": "Catalyzed a vibrant field of neural quantum chemistry wavefunctions (Psiformer, LapNet, DeepQMC) used to benchmark DFT and strongly correlated chemistry.",
+    "verification": "Peer-reviewed in Nature Chemistry with variational upper-bound guarantees verified against exact full-CI and diffusion Monte Carlo benchmarks.",
+    "velocity": "Achieved chemical accuracy on strongly correlated transition states with ~10 determinants where classical CI requires millions."
+  },
+  "enables": [
+    "dm21-neural-density-functional-2021"
+  ],
+  "sources": [
+    {
+      "label": "Nature Chemistry — Deep-neural-network solution of the electronic Schrödinger equation (Sep 2020)",
+      "url": "https://doi.org/10.1038/s41557-020-0544-y",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:1909.08423",
+      "url": "https://arxiv.org/abs/1909.08423",
+      "type": "paper"
+    }
+  ]
+}

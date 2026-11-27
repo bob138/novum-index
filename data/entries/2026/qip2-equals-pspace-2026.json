@@ -1,0 +1,58 @@
+{
+  "id": "qip2-equals-pspace-2026",
+  "title": "Two Messages Suffice for Quantum Interactive Proof Systems: Claimed Proof of QIP(2) = PSPACE",
+  "shortTitle": "QIP(2) = PSPACE Claim (ChatGPT)",
+  "date": "2026-11-23",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Complexity Theory",
+    "Interactive Proof Systems",
+    "Theoretical Computer Science"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI Frontier Models (ChatGPT for Academic Researchers)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 23,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "An EPFL preprint developed interactively with OpenAI models claims QIP(2) = QIP = PSPACE—compressing quantum interactive proofs from three messages to two and tackling a 23-year open problem.",
+  "summary": "Posted to arXiv on November 23, 2026 (arXiv:2611.31236) by Yupan Liu at EPFL, this preprint claims a resolution to one of quantum complexity theory’s flagship 23-year open questions: whether two-message quantum interactive proof systems capture all of PSPACE (QIP(2) = QIP = PSPACE), compressing the classic Kitaev–Watrous three-message parallelization theorem. Using quantum public coins (where the verifier sends halves of maximally entangled EPR pairs to the prover) and a stoquastic/classical-reversible verification reduction from TQBF via a sum-check uniformity problem (CIUniform), the paper establishes QIP(2) = qq-StoqAM = PSPACE. The author’s explicit AI disclosure reports interactive use of OpenAI models (via ChatGPT for Academic Researchers) across every stage from exploration and proof construction to revision.",
+  "technicalHighlights": [
+    "Claims QIP(2) = QIP = PSPACE, settling a 23-year open question posed since Watrous (2003) and Jain–Ji–Upadhyay–Watrous (2010).",
+    "Constructs a two-message protocol where the verifier sends halves of EPR pairs ('quantum public coins') and verifies the prover’s single reply with stoquastic / classical reversible gates.",
+    "Proves PSPACE-hardness of CIUniform via one-step sum-check transitions for TQBF and places CIUniform inside qq-StoqAM."
+  ],
+  "caveats": "Very recent November 23, 2026 arXiv preprint with no independent referee verdict or formal Lean verification yet; must be treated as an active-review claim until verified by quantum complexity specialists.",
+  "contributors": [
+    "Yupan Liu"
+  ],
+  "institutions": [
+    "EPFL"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 84,
+    "verification": 70,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "If verified, collapses the entire round hierarchy of quantum interactive proof systems down to two messages (QIP(2) = PSPACE).",
+    "ripple": "Reshapes quantum complexity theory, quantum public-coin interactive protocols, and stoquastic verification hierarchies.",
+    "verification": "Fresh arXiv preprint (Nov 23, 2026) with no independent audit or formal Lean certificate yet—scored conservatively pending community verification.",
+    "velocity": "Single researcher interactively collaborating with OpenAI reasoning models cracked a 23-year complexity barrier."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.31236 — Two messages suffice for quantum interactive proof systems (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.31236",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — AI Claims Entry (Nov 2026)",
+      "url": "https://quantumresearch.center/news/ai-claims/",
+      "type": "explainer"
+    }
+  ]
+}

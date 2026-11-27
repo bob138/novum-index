@@ -1,0 +1,58 @@
+{
+  "id": "adiabatic-quantum-advantage-2026",
+  "title": "AI-Devised Proof Establishes Subexponential Quantum Advantage for Textbook Adiabatic Optimization",
+  "shortTitle": "Adiabatic Quantum Advantage (GPT-6)",
+  "date": "2026-11-18",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Adiabatic Quantum Computing",
+    "Quantum Complexity Theory",
+    "Optimization"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6 Luna, GPT-6 Astra, GPT-6.1 Sol & Claude Opus 5",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 20,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Settles a 20-year open question: frontier AI models devised a proof that textbook linear-schedule adiabatic optimization achieves subexponential black-box quantum advantage over all classical algorithms.",
+  "summary": "Posted to arXiv on November 18, 2026 (arXiv:2611.24035) by Yufan Zheng (Visa Research), with an explicit AI contribution table crediting GPT-6 Luna (main strategy), GPT-6 Astra, GPT-6.1 Sol, and Claude Opus 5 with devising the mathematical approach and developing the proof, this paper resolves a ~20-year-old question dating back to Farhi et al.’s original adiabatic quantum optimization (AQO) proposal. Replacing the transverse-field Ising mixer required by earlier 2025 separations with the standard plain transverse-field mixer H_M = −∑ X_i and linear interpolation schedule, the construction proves a family of black-box objective functions f:{0,1}ⁿ → ℝ for which textbook 'vanilla' adiabatic quantum optimization finds the global minimum in poly(n) time while every classical black-box algorithm requires exp(n^Ω(1)) queries.",
+  "technicalHighlights": [
+    "Establishes the first super-quadratic (subexponential) black-box quantum speedup for textbook linear-schedule adiabatic optimization with the standard −∑ X_i transverse-field mixer.",
+    "Replaces the Ising-mixer linearization of Leng et al. (2025) with a new AI-devised perturbative reduction preserving polynomial spectral gap.",
+    "Explicit AI contribution disclosure documents GPT-6 Luna, GPT-6 Astra, GPT-6.1 Sol, and Claude Opus 5 devising the core strategy and proof steps."
+  ],
+  "caveats": "Recent November 2026 preprint awaiting independent peer review; establishes an idealized black-box/oracular separation rather than a direct speedup for noisy hardware on natural combinatorial benchmarks.",
+  "contributors": [
+    "Yufan Zheng"
+  ],
+  "institutions": [
+    "Visa Research"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 82,
+    "verification": 77,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Resolves a two-decade theoretical question on whether standard, textbook adiabatic quantum optimization can beat classical algorithms super-quadratically.",
+    "ripple": "Clarifies the ultimate complexity-theoretic potential of quantum annealing and adiabatic optimization hardware.",
+    "verification": "Complete proof posted to arXiv with transparent AI attribution, currently awaiting independent peer review.",
+    "velocity": "Frontier reasoning models devised the exact mixer-elimination reduction that had resisted decades of analysis."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.24035 — Vanilla Adiabatic Quantum Optimization Can Have Subexponential Advantage (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.24035",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — AI Claims Entry (Nov 2026)",
+      "url": "https://quantumresearch.center/news/ai-claims/",
+      "type": "explainer"
+    }
+  ]
+}

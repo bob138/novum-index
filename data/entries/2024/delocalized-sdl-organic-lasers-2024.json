@@ -1,0 +1,69 @@
+{
+  "id": "delocalized-sdl-organic-lasers-2024",
+  "title": "Globally Distributed Self-Driving Labs Autonomously Discover 21 Organic Laser Emitters",
+  "shortTitle": "Global Self-Driving Labs (Science)",
+  "date": "2024-05-17",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Self-Driving Laboratories",
+    "Organic Photonics",
+    "Autonomous Synthesis"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Delocalized Multi-Lab Asynchronous AI Orchestrator (Toronto / UIUC / UBC / Glasgow / Kyushu)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First cloud-orchestrated network of five autonomous laboratories across three continents asynchronously synthesized and tested >1,000 molecules, discovering 21 state-of-the-art organic solid-state laser emitters.",
+  "summary": "Published in Science in May 2024 by Felix Strieth-Kalthoff, Han Hao, Vandana Rathore, Martin D. Burke, Jason E. Hein, Leroy Cronin, Bartosz A. Grzybowski, Chihaya Adachi, Alán Aspuru-Guzik, and colleagues across five international laboratories (Toronto, Illinois, Vancouver, Glasgow, and Fukuoka), this breakthrough demonstrated the first delocalized, asynchronous closed-loop self-driving laboratory network. Using automated iterative Suzuki–Miyaura cross-coupling synthesis, automated photophysical characterization, and a central cloud-based AI optimization engine navigating >150,000 candidate molecules, the distributed robotic network synthesized and evaluated more than 1,000 novel organic compounds—discovering 21 top-performing organic solid-state laser (OSSL) gain materials, including two emitting at record-low amplified spontaneous emission thresholds.",
+  "technicalHighlights": [
+    "Coordinated five geographically distributed automated laboratories asynchronously via a cloud AI planner sharing experimental feedback in real time.",
+    "Synthesized, purified, and optically characterized >1,000 novel organic molecules from a 150,000+ combinatorial chemical space via automated Suzuki–Miyaura block chemistry.",
+    "Discovered 21 state-of-the-art organic solid-state laser emitters validated in physical thin-film lasing devices."
+  ],
+  "caveats": "Required standardized modular building-block chemistry (MIDA boronates) and human oversight for instrument maintenance, sample shipping between specialized optical-device fabs, and initial chemical-space definition.",
+  "contributors": [
+    "Felix Strieth-Kalthoff",
+    "Han Hao",
+    "Martin D. Burke",
+    "Jason E. Hein",
+    "Leroy Cronin",
+    "Alán Aspuru-Guzik"
+  ],
+  "institutions": [
+    "University of Toronto",
+    "University of Illinois Urbana-Champaign",
+    "University of British Columbia",
+    "University of Glasgow",
+    "Kyushu University"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 88,
+    "verification": 97,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that autonomous discovery can transcend single-room robotics into a globally distributed, asynchronously orchestrated cloud laboratory.",
+    "ripple": "Established the operational template for multi-institution self-driving laboratory consortia across chemistry, photonics, and pharmaceuticals.",
+    "verification": "Peer-reviewed in Science with physical synthesis, spectroscopic characterization, and thin-film lasing confirmation of all 21 emitters.",
+    "velocity": "Screened >1,000 newly synthesized compounds across five continents in a single closed-loop campaign to uncover 21 top-tier laser materials."
+  },
+  "enables": [
+    "autodna-autonomous-biomolecular-lab-2026"
+  ],
+  "sources": [
+    {
+      "label": "Science — Delocalized, asynchronous, closed-loop discovery of organic laser emitters (May 2024)",
+      "url": "https://doi.org/10.1126/science.adk9227",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 38753786",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38753786/",
+      "type": "paper"
+    }
+  ]
+}

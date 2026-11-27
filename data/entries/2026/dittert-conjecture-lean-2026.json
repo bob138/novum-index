@@ -1,0 +1,60 @@
+{
+  "id": "dittert-conjecture-lean-2026",
+  "title": "GPT-6 Astra Generates Autonomous Lean 4 Proof of the 43-Year-Old Dittert–Hajek Permanent Conjecture",
+  "shortTitle": "Dittert Conjecture (GPT-6 Lean)",
+  "date": "2026-09-10",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Combinatorics",
+    "Matrix Analysis & Permanents",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-6 Astra (Epoch AI LeanOpenProblems Harness)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 43,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "GPT-6 Astra autonomously produced a Lean 4 proof of the 1983 Dittert–Hajek matrix permanent conjecture across all dimensions n ≥ 2 (without seeing summer 2026 preprints past its April cutoff), adding to Epoch AI’s September 2026 Lean wave.",
+  "summary": "Released on September 10, 2026 by Tom Adamczewski (Epoch AI) via the open-source tadamcz/dittert Lean 4 repository alongside his Köthe, Smale Mean Value, and Ibragimov–Iosifescu runs, OpenAI’s GPT-6 Astra autonomously generated a complete Lean 4 proof of the 1983 Dittert (Dittert–Hajek) conjecture in matrix combinatorics. Generalizing the famous van der Waerden permanent theorem from doubly stochastic matrices to the entire simplex of nonnegative n × n real matrices whose entries sum to n, Dittert’s conjecture asserts that the functional ∏ r_i + ∏ c_j − per(A) is uniquely maximized by the uniform matrix J_n. Because GPT-6 Astra’s April 2026 training cutoff predated independent summer 2026 preprints closing remaining small dimensions, the result demonstrated independent autonomous theorem proving and Lean formalization on a 43-year-old open problem.",
+  "technicalHighlights": [
+    "Produced a Lean 4 formal proof of the full Dittert–Hajek matrix permanent inequality for all dimensions n ≥ 2, generalizing van der Waerden’s theorem.",
+    "Generated autonomously by GPT-6 Astra (whose April 2026 knowledge cutoff preceded independent summer 2026 preprints on remaining dimensions).",
+    "Published with complete Lean 4 source code, mathematical exposition, and verification logs at github.com/tadamcz/dittert."
+  ],
+  "caveats": "Tom Adamczewski explicitly cautioned that while Lean compiled the proof and AI auditors deemed the formalization faithful, independent human domain-expert verification of statement fidelity and exposition remains pending; independent preprints also resolved remaining dimensions of Dittert’s conjecture in summer 2026.",
+  "contributors": [
+    "Tom Adamczewski",
+    "Epoch AI"
+  ],
+  "institutions": [
+    "Epoch AI",
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 79,
+    "verification": 84,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Tackles a classic 43-year-old extremal permanent conjecture directly generalizing the landmark van der Waerden theorem.",
+    "ripple": "Reinforces Epoch AI’s September 2026 demonstration that GPT-6 Astra could independently prove and formalize decades-old open problems beyond its training cutoff.",
+    "verification": "Compiles in Lean 4, scored conservatively under Preprint / Active Review because human specialist audit of formal statement fidelity is still pending.",
+    "velocity": "Autonomously constructed and formalized a full-dimension proof in Lean 4 within days via Epoch AI’s evaluation harness."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "GitHub — tadamcz/dittert (Lean 4 proof of the full Dittert conjecture, Sep 2026)",
+      "url": "https://github.com/tadamcz/dittert",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Tom Adamczewski — Announcement & Formalization Notes (Sep 2026)",
+      "url": "https://bsky.app/profile/tadamcz.bsky.social",
+      "type": "social-post"
+    }
+  ]
+}

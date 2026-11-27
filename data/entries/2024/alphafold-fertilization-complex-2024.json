@@ -1,0 +1,63 @@
+{
+  "id": "alphafold-fertilization-complex-2024",
+  "title": "AlphaFold-Multimer Discovers the Conserved Vertebrate Sperm–Egg Fertilization Lock (Izumo1–Spaca6–Tmem81)",
+  "shortTitle": "Vertebrate Fertilization Complex (Cell)",
+  "date": "2024-10-17",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Developmental Biology",
+    "Structural Proteomics",
+    "Reproductive Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaFold-Multimer (Google DeepMind / IMP Vienna)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "AlphaFold-Multimer structural screening solved a fundamental mystery of vertebrate reproduction, discovering a previously unknown sperm protein (Tmem81) forming a conserved trimeric lock-and-key fertilization complex from fish to humans.",
+  "summary": "Published in Cell in October 2024 by Victoria E. Deneke, Andreas Blaha, Yonggang Lu, Andrea Pauli, and colleagues at the Research Institute of Molecular Pathology (IMP) in Vienna, researchers deployed AlphaFold-Multimer in a proteome-wide structural interaction screen of ~1,400 testis-expressed proteins to solve how sperm recognize and fuse with eggs across vertebrates. AlphaFold-Multimer predicted—and wet-lab CRISPR knockouts and biochemical assays in zebrafish, mice, and human proteins confirmed—that the known sperm factors Izumo1 and Spaca6 assemble with a previously uncharacterized protein, Tmem81, into a conserved heterotrimeric 'key' that engages egg surface receptors (Bouncer in fish, Juno in mammals) across hundreds of millions of years of vertebrate evolution.",
+  "technicalHighlights": [
+    "Used AlphaFold-Multimer to screen pairwise and multimeric interactions across ~1,400 candidate sperm proteins, pinpointing Tmem81 as the missing third subunit.",
+    "Experimentally validated via CRISPR knockouts in both zebrafish and mice that loss of Tmem81 causes complete male sterility, confirming its essential fertilization role.",
+    "Revealed a conserved trimeric Izumo1–Spaca6–Tmem81 architectural scaffold bridging sperm and egg recognition from teleost fish to humans."
+  ],
+  "caveats": "While AlphaFold-Multimer accurately predicted the trimeric complex and receptor-binding interface, full atomic experimental cryo-EM/X-ray resolution of the intact membrane-bound fusion pore remains ongoing.",
+  "contributors": [
+    "Victoria E. Deneke",
+    "Andreas Blaha",
+    "Yonggang Lu",
+    "Masahito Ikawa",
+    "Andrea Pauli"
+  ],
+  "institutions": [
+    "Research Institute of Molecular Pathology (IMP Vienna)",
+    "Osaka University"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 86,
+    "verification": 98,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Uncovered the missing core molecular component of vertebrate fertilization—one of biology’s most fundamental conserved mechanisms.",
+    "ripple": "Showcased in silico AlphaFold-Multimer interactome screening as a revolutionary tool for discovering hidden protein complexes across cell biology and reproductive medicine.",
+    "verification": "Peer-reviewed in Cell with cross-species experimental genetic knockouts in zebrafish and mice plus human protein interaction assays.",
+    "velocity": "Pinpointed a previously hidden essential protein complex from ~1,400 candidates via structural AI screening that decades of wet-lab biochemistry had missed."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Cell — A conserved fertilization complex bridges sperm and egg in vertebrates (Oct 2024)",
+      "url": "https://doi.org/10.1016/j.cell.2024.09.035",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 39423812",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39423812/",
+      "type": "paper"
+    }
+  ]
+}

@@ -43,7 +43,8 @@
     "velocity": "Cracked a combinatorial coloring threshold that resisted a century of mathematical and computational attacks."
   },
   "enables": [
-    "keller-conjecture-dim7-sat-2020"
+    "keller-conjecture-dim7-sat-2020",
+    "empty-hexagon-h6-sat-2024"
   ],
   "sources": [
     {

@@ -45,7 +45,9 @@
     "verification": "Peer-reviewed in The Astronomical Journal (doi:10.3847/1538-3881/aa9e09) and officially confirmed by NASA.",
     "velocity": "Automatically uncovered faint multi-planet signals across hundreds of archival star systems missed over years of prior searches."
   },
-  "enables": [],
+  "enables": [
+    "exominer-301-exoplanets-2022"
+  ],
   "sources": [
     {
       "label": "NASA (Dec 14, 2017) — Artificial Intelligence, NASA Data Used to Discover Eighth Planet Circling Distant Star",

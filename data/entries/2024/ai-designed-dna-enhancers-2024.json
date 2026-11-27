@@ -1,0 +1,68 @@
+{
+  "id": "ai-designed-dna-enhancers-2024",
+  "title": "Deep Learning Engineers Synthetic Cell-Type-Specific DNA Regulatory Enhancers Outperforming Evolution",
+  "shortTitle": "AI-Designed DNA Enhancers (Nature)",
+  "date": "2024-10-23",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Regulatory Genomics",
+    "Synthetic Biology",
+    "Gene Therapy"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Malinois Deep CNN + CODA Optimization Platform (Broad / JAX / Yale)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Deep-learning models designed thousands of synthetic 200-bp DNA enhancers that activate genes exclusively in targeted blood, liver, or brain cells—exceeding natural human enhancer specificity in vivo.",
+  "summary": "Published in Nature in October 2024 by Sager J. Gosai, Rodrigo I. Castro, Natalia Fuentes, Steven K. Reilly, Pardis C. Sabeti, Ryan Tewhey, and colleagues at the Broad Institute, The Jackson Laboratory, and Yale University, this study trained a deep convolutional neural network (Malinois) on 776,474 massively parallel reporter assay (MPRA) measurements of human regulatory DNA. Embedded inside the CODA generative optimization platform (combining FastSeqProp, simulated annealing, and AdaLead), Malinois designed thousands of completely synthetic 200-bp cis-regulatory elements (CREs) programmed to activate gene expression exclusively in erythroid blood, liver, or neuronal cells while remaining silent elsewhere. Experimental testing of thousands of synthetic sequences in human cells plus in vivo validation in transgenic zebrafish and mice showed the AI-designed DNA switches outperformed naturally occurring human enhancers in cell-type specificity.",
+  "technicalHighlights": [
+    "Trained Malinois on 776,474 MPRA regulatory sequences across K562 (blood), HepG2 (liver), and SK-N-SH (neural) human cell lines.",
+    "Generated thousands of de novo synthetic DNA enhancers using gradient-based and evolutionary optimization, achieving higher cell-type specificity than natural human enhancers.",
+    "Experimentally validated synthetic cell-type-specific expression in vitro and in vivo in developing zebrafish and mouse embryos."
+  ],
+  "caveats": "Initial designs targeted three primary cell-line lineages in short 200-bp episomal/integrated contexts; clinical gene-therapy deployment requires validating synthetic enhancers across dozens of primary human tissues and viral-vector packaging constraints.",
+  "contributors": [
+    "Sager J. Gosai",
+    "Rodrigo I. Castro",
+    "Natalia Fuentes",
+    "Steven K. Reilly",
+    "Pardis C. Sabeti",
+    "Ryan Tewhey"
+  ],
+  "institutions": [
+    "Broad Institute of MIT and Harvard",
+    "The Jackson Laboratory",
+    "Yale University"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 97,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated de novo AI programming of noncoding DNA regulatory switches with cell-type precision surpassing natural evolution.",
+    "ripple": "Opens programmable cell-type-targeted gene therapies and precision synthetic biology across oncology, neurology, and hematology.",
+    "verification": "Peer-reviewed in Nature with massive wet-lab MPRA synthesis and in vivo zebrafish and mouse embryo validation.",
+    "velocity": "Generates thousands of custom tissue-specific DNA regulatory switches computationally rather than hunting through evolutionary genomes by trial and error."
+  },
+  "enables": [
+    "alphagenome-regulatory-dna-2025",
+    "alphagenome-2-single-cell-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Machine-guided design of cell-type-targeting cis-regulatory elements (Oct 2024)",
+      "url": "https://doi.org/10.1038/s41586-024-08070-z",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC11525185",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11525185/",
+      "type": "paper"
+    }
+  ]
+}

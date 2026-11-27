@@ -1,0 +1,59 @@
+{
+  "id": "big-sleep-autonomous-zeroday-2024",
+  "title": "Google Project Zero & DeepMind ‘Big Sleep’ Makes First Autonomous AI Zero-Day Vulnerability Discovery",
+  "shortTitle": "Big Sleep: First AI Zero-Day (SQLite)",
+  "date": "2024-11-01",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Cybersecurity & Vulnerability Research",
+    "Autonomous Code Auditing",
+    "Systems Security"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Big Sleep (Gemini 1.5 Pro + Debugger/Browser Agent Harness — Google Project Zero / DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First real-world previously unknown exploitable zero-day memory-corruption vulnerability (a stack buffer underflow in widely deployed SQLite) discovered autonomously by an AI agent before release.",
+  "summary": "Announced on November 1, 2024 by Google Project Zero and Google DeepMind (evolving from the Naptime LLM vulnerability-research framework), Big Sleep became the first AI agent to autonomously discover a previously unknown, exploitable memory-safety vulnerability in widely used real-world production software. Equipped with code-navigation tools, Python scripting, and a live debugger to mimic human security researchers, the Gemini-powered agent inspected recent SQLite source commits, hypothesized a subtle edge case in index-column parsing, wrote and executed a triggering SQLite proof-of-concept crash, and confirmed an exploitable stack buffer underflow—reported to SQLite maintainers and patched the same day before ever shipping in a public release.",
+  "technicalHighlights": [
+    "First confirmed real-world zero-day vulnerability (stack buffer underflow in SQLite) autonomously discovered and reproduced with a working crashing PoC by an LLM security agent.",
+    "Paired Gemini reasoning with live code-browsing, debugging, and test-harness tools rather than blind fuzzing—finding a bug missed by SQLite’s extensive continuous fuzzers.",
+    "Demonstrated immediate defensive impact: reported to SQLite developers and patched prior to official release, inaugurating autonomous AI cyber-defense."
+  ],
+  "caveats": "Found in a pre-release development branch commit rather than a decades-old dormant flaw; autonomous auditing still produced false positives requiring human triage and remained early in scaling to full-codebase auditing.",
+  "contributors": [
+    "Sergei Glazunov",
+    "Mark Brand",
+    "Google Project Zero Team",
+    "Google DeepMind Security Research Team"
+  ],
+  "institutions": [
+    "Google Project Zero",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 92,
+    "verification": 98,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Marked the historic threshold where autonomous AI agents moved from synthetic CTF security benchmarks to finding real-world zero-day vulnerabilities in ubiquitous open-source software.",
+    "ripple": "Reshaped global cybersecurity, software-auditing workflows, and frontier AI cyber-capability evaluations across industry and governments.",
+    "verification": "Confirmed directly by Google Project Zero and independently verified and patched upstream by the SQLite engineering team with a reproducible crash PoC.",
+    "velocity": "Audited live software commits and synthesized a working memory-corruption trigger faster than continuous fuzzing pipelines."
+  },
+  "enables": [
+    "alphaproof-code-signal-2026"
+  ],
+  "sources": [
+    {
+      "label": "Google Project Zero — From Naptime to Big Sleep: Using Large Language Models To Catch Vulnerabilities In Real-World Code (Nov 2024)",
+      "url": "https://projectzero.google/2024/10/from-naptime-to-big-sleep.html",
+      "type": "announcement"
+    }
+  ]
+}

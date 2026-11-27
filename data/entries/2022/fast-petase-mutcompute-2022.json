@@ -1,0 +1,66 @@
+{
+  "id": "fast-petase-mutcompute-2022",
+  "title": "MutCompute 3D-CNN Engineers FAST-PETase Enzyme for Rapid Plastic Depolymerization",
+  "shortTitle": "FAST-PETase Plastic Enzyme (Nature)",
+  "date": "2022-04-27",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Enzyme Engineering",
+    "Biocatalysis",
+    "Polymer Recycling"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MutCompute (3D Convolutional Neural Network Ensemble — UT Austin)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "A structure-based 3D CNN ensemble predicted stabilizing mutations that created FAST-PETase—38× more active at 50 °C—depolymerizing 51 untreated postconsumer PET plastic products in under a week for closed-loop recycling.",
+  "summary": "Published in Nature in April 2022 by Hongyuan Lu, Daniel J. Diaz, Natalie J. Czarnecki, Andrew D. Ellington, Hal S. Alper, and colleagues at the University of Texas at Austin, this study used MutCompute—an ensemble of self-supervised 3D convolutional neural networks trained on ~19,000 protein microenvironments—to identify beneficial mutations in the plastic-degrading enzyme PETase. Combining three AI-predicted mutations (N233K, R224Q, S121E) with two prior scaffold mutations yielded FAST-PETase, which exhibited 38× higher depolymerization activity at 50 °C, nearly completely degraded 51 distinct untreated postconsumer PET items within 24 hours to 1 week, and enabled closed-loop enzymatic resynthesis of virgin-grade PET plastic.",
+  "technicalHighlights": [
+    "MutCompute 3D-CNN scanned every residue microenvironment of PETase scaffolds to predict stabilizing substitutions without requiring task-specific experimental mutagenesis training data.",
+    "FAST-PETase outperformed wild-type and prior engineered hydrolases (ThermoPETase, DuraPETase, LCC, ICCM) across 30–50 °C and varied pH regimes.",
+    "Demonstrated complete depolymerization of 51 different untreated commercial PET products and closed-loop chemical repolymerization into new PET film."
+  ],
+  "caveats": "Industrial-scale enzymatic plastic recycling still faces cost, reactor-engineering, and high-crystallinity PET feedstock challenges compared with mechanical recycling and virgin petrochemical production.",
+  "contributors": [
+    "Hongyuan Lu",
+    "Daniel J. Diaz",
+    "Natalie J. Czarnecki",
+    "Andrew D. Ellington",
+    "Hal S. Alper"
+  ],
+  "institutions": [
+    "University of Texas at Austin"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 88,
+    "verification": 97,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Proved self-supervised 3D structural neural networks can engineer industrial biocatalysts with dramatic activity and thermostability gains.",
+    "ripple": "Catalyzed a global wave of AI-engineered plastic-degrading enzymes and industrial enzymatic recycling pilots.",
+    "verification": "Peer-reviewed in Nature with X-ray crystallography of FAST-PETase, kinetics across 51 real consumer plastics, and closed-loop resynthesis.",
+    "velocity": "Bypassed massive directed-evolution screening libraries by pinpointing high-impact synergistic mutations directly from 3D structure."
+  },
+  "enables": [
+    "progen-de-novo-lysozymes-2023",
+    "baker-serine-hydrolases-2025",
+    "rfdiffusion2-enzyme-scaffolding-2025"
+  ],
+  "sources": [
+    {
+      "label": "Nature — Machine learning-aided engineering of hydrolases for PET depolymerization (Apr 2022)",
+      "url": "https://doi.org/10.1038/s41586-022-04599-z",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 35478237",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35478237/",
+      "type": "paper"
+    }
+  ]
+}

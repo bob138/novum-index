@@ -50,7 +50,9 @@
     "verification": "Peer-reviewed across flagship Nature (Oct 2024) and Cell (Sep 2026) collections with open-access community proofreading and public data portals.",
     "velocity": "Compressed an estimated ~50,000 person-years of impossible manual tracing into a feasible multi-year human–AI collaboration."
   },
-  "enables": [],
+  "enables": [
+    "microns-mouse-cortex-connectome-2025"
+  ],
   "sources": [
     {
       "label": "PubMed / Nature (Oct 2, 2024) — Neuronal wiring diagram of an adult brain (DOI: 10.1038/s41586-024-07558-y)",

@@ -1,0 +1,58 @@
+{
+  "id": "quantum-switch-impossibility-lean-2026",
+  "title": "Lean-Verified Proof Establishes Impossibility & Query Cost of Simulating the Quantum Switch",
+  "shortTitle": "Quantum Switch Impossibility (Lean)",
+  "date": "2026-11-12",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Causality",
+    "Quantum Query Complexity",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT, Claude & Gemini Frontier Models + Lean 4 (Yale)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Machine-checked in Lean 4 with AI models working out most technical details, this proof settles Bavaresco et al.’s quantum-causality conjecture: no finite causally ordered quantum circuit can exactly simulate the quantum switch.",
+  "summary": "Posted to arXiv on November 12, 2026 (arXiv:2611.16229) by Dantong Li at Yale University, with frontier GPT, Claude, and Gemini models explicitly credited with working out most technical proof details and writing the Lean 4 formalization, this paper settles the conjecture of Bavaresco et al. on indefinite causal order. It proves that no causally ordered quantum circuit using any finite number of black-box calls can exactly simulate the quantum switch—which applies quantum operations in a coherent superposition of causal orders—establishes a polynomial query lower bound of Ω(d^{1/4}) (with diamond-norm bounds scaling in dimension d) for approximate simulation, and demonstrates an exponential query advantage of the quantum switch over ordinary circuits on a practical quantum error-correction noise-discrimination task.",
+  "technicalHighlights": [
+    "Settled Bavaresco et al.’s conjecture by proving exact simulation of the quantum switch with finitely many causally ordered circuit queries is mathematically impossible.",
+    "Established quantitative approximate simulation query lower bounds scaling with Hilbert-space dimension d and an exponential separation on channel noise characterization.",
+    "Accompanied by a machine-checked Lean 4 formalization produced primarily by collaborating frontier GPT, Claude, and Gemini models."
+  ],
+  "caveats": "Recent November 2026 arXiv preprint; while the core proof is formalized in Lean 4, independent peer review of the physical/quantum-information exposition and statement alignment is ongoing.",
+  "contributors": [
+    "Dantong Li"
+  ],
+  "institutions": [
+    "Yale University"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 79,
+    "verification": 90,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Resolves a central theoretical question on the computational power of indefinite causal order in quantum mechanics.",
+    "ripple": "Clarifies provable query-complexity separations relevant to quantum metrology, channel discrimination, and quantum error-correction noise diagnostics.",
+    "verification": "Core impossibility and query-complexity theorems are machine-checked in Lean 4, awaiting journal peer review.",
+    "velocity": "Multi-model AI reasoning and automated Lean 4 formalization compressed intricate supermap/diamond-norm proof engineering."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.16229 — Infinite or indefinite: the query cost of simulating the quantum switch (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.16229",
+      "type": "paper"
+    },
+    {
+      "label": "Quantum Research Center — AI Claims Entry (Nov 2026)",
+      "url": "https://quantumresearch.center/news/ai-claims/",
+      "type": "explainer"
+    }
+  ]
+}

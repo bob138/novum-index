@@ -1,0 +1,66 @@
+{
+  "id": "mace-mp0-materials-foundation-2023",
+  "title": "MACE-MP-0: Universal Equivariant Foundation Model for Atomistic Materials Chemistry",
+  "shortTitle": "MACE-MP-0 Universal MLIP",
+  "date": "2023-12-29",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Atomistic Foundation Models",
+    "Materials Chemistry",
+    "Equivariant GNNs"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MACE-MP-0 (Higher-Order Equivariant Message Passing — Cambridge / LBNL)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First widely adopted universal equivariant interatomic foundation model capable of stable, out-of-the-box molecular dynamics across 89 chemical elements—from MOFs and liquid electrolytes to heterogeneous catalysts.",
+  "summary": "Released in December 2023 (arXiv:2401.00096) and published in The Journal of Chemical Physics in November 2025 by Ilyes Batatia, Philipp Benner, Yuan Chiang, Kristin A. Persson, Gábor Csányi, and an international consortium led by the University of Cambridge and Lawrence Berkeley National Laboratory, MACE-MP-0 trained a higher-order E(3)-equivariant message-passing architecture on 1.5 million Materials Project DFT relaxations spanning 89 elements. Despite seeing mostly inorganic crystals during training, MACE-MP-0 generalized zero-shot to stable molecular dynamics across solids, liquids, gases, metal–organic frameworks, heterogeneous catalytic surfaces, and battery interfaces—and required only tiny fine-tuning sets to reach ab initio accuracy.",
+  "technicalHighlights": [
+    "Built on MACE higher-order many-body equivariant message passing trained across 89 periodic-table elements from the Materials Project trajectory dataset.",
+    "Demonstrated zero-shot physical stability across over 30 diverse chemistry domains—including water, MOFs, perovskites, battery electrolytes, and catalytic reactions.",
+    "Enabled rapid fine-tuning to coupled-cluster or hybrid-DFT accuracy from dozens of snapshots, becoming the community standard open-source universal MLIP."
+  ],
+  "caveats": "Inherits systematic softening and PBE-GGA dispersion biases from its Materials Project DFT training data, requiring dispersion corrections (D3) or targeted fine-tuning for high-precision barrier heights and soft-matter densities.",
+  "contributors": [
+    "Ilyes Batatia",
+    "Philipp Benner",
+    "Yuan Chiang",
+    "Kristin A. Persson",
+    "Gábor Csányi"
+  ],
+  "institutions": [
+    "University of Cambridge",
+    "Lawrence Berkeley National Laboratory",
+    "University of California, Berkeley"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 93,
+    "verification": 95,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Proved a single pretrained equivariant neural force field can serve as a universal out-of-the-box simulator across 89 elements of chemistry.",
+    "ripple": "Adopted across thousands of academic and industrial materials labs and directly catalyzed the universal MLIP era (Meta UMA, MatterSim, Orb).",
+    "verification": "Peer-reviewed in The Journal of Chemical Physics (Nov 2025) with open MIT-licensed weights extensively validated by independent groups worldwide.",
+    "velocity": "Eliminated months of bespoke force-field fitting per material system by providing immediate zero-shot quantum-level molecular dynamics."
+  },
+  "enables": [
+    "meta-omol25-uma-atoms-2025"
+  ],
+  "sources": [
+    {
+      "label": "Journal of Chemical Physics — A foundation model for atomistic materials chemistry (Nov 2025)",
+      "url": "https://doi.org/10.1063/5.0297006",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2401.00096 — MACE-MP-0 (Dec 2023)",
+      "url": "https://arxiv.org/abs/2401.00096",
+      "type": "paper"
+    }
+  ]
+}

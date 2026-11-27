@@ -1,0 +1,62 @@
+{
+  "id": "ucdavis-speech-bci-nejm-2024",
+  "title": "UC Davis Deep-Learning Speech Neuroprosthesis Achieves Sustained 97.5% Accuracy in ALS",
+  "shortTitle": "97.5%-Accurate Speech BCI (NEJM)",
+  "date": "2024-08-15",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Brain–Computer Interfaces",
+    "Clinical Neurology",
+    "Neural Speech Decoding"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Recurrent Neural Decoder + Self-Updating Language Model (UC Davis / BrainGate2)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "30 min calibration on Day 1",
+  "isAnchor": false,
+  "whyItMatters": "An intracortical deep-learning speech BCI restored 97.5%-accurate, self-paced conversation across a 125,000-word vocabulary for a man with severe ALS—sustained over 8.4 months of real-world home use.",
+  "summary": "Published in The New England Journal of Medicine in August 2024 by Nicholas S. Card, Maitreyee Wairagkar, Carrina Iacobacci, Sergey D. Stavisky, David M. Brandman, and colleagues at UC Davis Health, this clinical milestone implanted four microelectrode arrays (256 electrodes) into the left precentral gyrus of a 45-year-old man with severe dysarthria from ALS. On the very first day of use—after just 30 minutes of neural calibration—a recurrent neural network paired with a beam-search language model achieved 99.6% accuracy on a 50-word vocabulary; on day two it reached 90.2% across 125,000 words, and with continuous unsupervised self-recalibration sustained 97.5% accuracy at ~32 words per minute across 248 hours of real-world conversational use over 8.4 months, voiced in the participant’s own pre-ALS voice.",
+  "technicalHighlights": [
+    "Achieved 99.6% accuracy (50 words) on Day 1 after 30 minutes of training and sustained 97.5% accuracy across a 125,000-word vocabulary over 8.4 months.",
+    "Introduced continuous online self-recalibration adapting the neural network automatically to cortical signal drift without burdensome daily retraining.",
+    "Delivered >248 hours of spontaneous, self-paced home and family communication synthesized in the patient’s own pre-illness voice."
+  ],
+  "caveats": "Single-patient clinical trial report requiring invasive neurosurgery and wired pedestal hardware; broader multi-center trials and fully implantable wireless devices are required for routine clinical deployment.",
+  "contributors": [
+    "Nicholas S. Card",
+    "Maitreyee Wairagkar",
+    "Carrina Iacobacci",
+    "Sergey D. Stavisky",
+    "David M. Brandman"
+  ],
+  "institutions": [
+    "University of California, Davis"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 92,
+    "verification": 98,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Crossed the clinical usability threshold (~97.5% open-vocabulary accuracy sustained for months) for neural speech restoration.",
+    "ripple": "Demonstrated practical, real-world conversational restoration for severe paralysis, accelerating clinical BCI translation worldwide.",
+    "verification": "Peer-reviewed in The New England Journal of Medicine with 8.4 months of longitudinal clinical telemetry.",
+    "velocity": "Achieved usable open-vocabulary neural speech decoding within 30 minutes on Day 1 and slashed 125K-word error rate nearly 10× compared to 2023."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "NEJM — An Accurate and Rapidly Calibrating Speech Neuroprosthesis (Aug 2024)",
+      "url": "https://doi.org/10.1056/NEJMoa2314132",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 39141853",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39141853/",
+      "type": "paper"
+    }
+  ]
+}

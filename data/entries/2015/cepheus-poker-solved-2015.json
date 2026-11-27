@@ -45,7 +45,9 @@
     "verification": "Peer-reviewed in Science (Vol. 347, pp. 145–149) with publicly queryable strategy database.",
     "velocity": "Solved a 10¹⁴-state hidden-information game tree in 68 days of cluster compute."
   },
-  "enables": [],
+  "enables": [
+    "pluribus-six-player-poker-2019"
+  ],
   "sources": [
     {
       "label": "Science Vol. 347(6218), pp. 145–149 (Jan 9, 2015) — Heads-up limit hold’em poker is solved",

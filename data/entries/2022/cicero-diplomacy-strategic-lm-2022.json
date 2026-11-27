@@ -1,0 +1,62 @@
+{
+  "id": "cicero-diplomacy-strategic-lm-2022",
+  "title": "Cicero Fuses Strategic Game-Theoretic Planning & Natural-Language Negotiation to Master Diplomacy",
+  "shortTitle": "Cicero Masters Diplomacy (Science)",
+  "date": "2022-12-09",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Strategic Multi-Agent AI",
+    "Language-Grounded Planning",
+    "Game Theory"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Cicero (piKL Strategic Planner + Grounded Dialogue LLM — Meta FAIR)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First AI to reach top-10% human-level play in full-press Diplomacy—combining game-theoretic strategic planning with natural-language dialogue to negotiate alliances, build trust, and coordinate complex multi-player moves.",
+  "summary": "Published in Science in December 2022 by Anton Bakhtin, Noam Brown, Emily Dinan, Gabriele Farina, Mike Lewis, and the Meta Fundamental AI Research (FAIR) Diplomacy Team, Cicero conquered full-press Diplomacy—a seven-player strategy game requiring open-ended natural-language persuasion, coalition building, and simultaneous strategic planning where pure game-theoretic solvers fail because players must negotiate in English. By coupling an iterative strategic reasoning engine (piKL regularized equilibrium search) with a dialogue language model explicitly conditioned on Cicero’s planned moves and predicted ally intentions, Cicero played anonymously across 40 games in an online human league—achieving more than double the average human score and ranking in the top 10% of experienced human players without revealing its AI identity.",
+  "technicalHighlights": [
+    "Unified game-theoretic strategic planning (piKL equilibrium search) with a controllable natural-language dialogue model grounded in concrete future move plans.",
+    "Ranked in the top 10% of human players who played multiple games across 40 anonymous online Diplomacy league matches, scoring >2× the human average.",
+    "Pioneered the integration of formal game-theoretic reasoning loops with large language models for cooperative and competitive multi-agent communication."
+  ],
+  "caveats": "Evaluated in fast-paced online 'speed' Diplomacy rather than multi-week championship tournament formats; occasionally produced minor strategic inconsistencies between dialogue promises and executed moves under tight time controls.",
+  "contributors": [
+    "Anton Bakhtin",
+    "Noam Brown",
+    "Emily Dinan",
+    "Gabriele Farina",
+    "Mike Lewis"
+  ],
+  "institutions": [
+    "Meta FAIR"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 89,
+    "verification": 98,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated the first human-level integration of deep game-theoretic strategic planning with open-ended natural-language negotiation.",
+    "ripple": "Directly influenced multi-agent LLM negotiation, grounded tool-planning agents, and reasoning-coupled language models.",
+    "verification": "Peer-reviewed in Science with blind, anonymous 40-game evaluation against experienced human players on WebDiplomacy.",
+    "velocity": "Solved a long-standing grand challenge bridging symbolic/game-theoretic AI and natural language processing."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Science — Human-level play in the game of Diplomacy by combining language models with strategic reasoning (Dec 2022)",
+      "url": "https://doi.org/10.1126/science.ade9097",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 36413172",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36413172/",
+      "type": "paper"
+    }
+  ]
+}

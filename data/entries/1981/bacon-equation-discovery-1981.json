@@ -1,0 +1,65 @@
+{
+  "id": "bacon-equation-discovery-1981",
+  "title": "BACON Symbolic Discovery System Induces Quantitative Laws of Physics Directly From Data",
+  "shortTitle": "BACON Symbolic Law Discovery (1981)",
+  "date": "1981-01-01",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Symbolic Regression",
+    "Computational Scientific Discovery",
+    "Classical Symbolic AI"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Symbolic / Classical",
+  "aiSystem": "BACON (BACON.1–BACON.6 Heuristic Production System — CMU)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Pioneered automated equation discovery from data: Simon and Langley’s BACON autonomously induced Kepler’s Third Law, Ohm’s Law, and the Ideal Gas Law—launching the lineage behind Eureqa, SINDy, and AI Feynman.",
+  "summary": "Developed at Carnegie Mellon University by Pat Langley, Gary L. Bradshaw, Jan M. Żytkow, and Nobel laureate Herbert A. Simon (landmark journal paper in Cognitive Science, 1981, culminating in MIT Press’s 1987 Scientific Discovery), the BACON family of production-rule AI systems demonstrated that domain-general heuristic search over numerical measurements could autonomously rediscover canonical quantitative laws of physics and chemistry. Using recursive product/ratio constancy heuristics and intrinsic-property inference, BACON induced Kepler’s Third Law, Boyle’s Law, Galileo’s law of uniform acceleration, Ohm’s Law, the Ideal Gas Law, Black’s specific-heat law, and conservation of momentum directly from experimental tables—founding the field of computational scientific discovery.",
+  "technicalHighlights": [
+    "Introduced domain-general heuristic search over numerical ratios, products, and linear trends to induce exact algebraic invariants from tabular measurements.",
+    "BACON.4–BACON.6 inferred hidden intrinsic physical properties (such as electrical resistance, refractive index, and atomic weights) directly from relational data without prior theoretical hints.",
+    "Founded computational scientific discovery and symbolic regression, directly inspiring Eureqa (2009), SINDy (2016), and AI Feynman (2020)."
+  ],
+  "caveats": "BACON rediscovered historically known physical laws from clean, pre-selected experimental variables rather than discovering previously unknown physics from raw noisy observations.",
+  "contributors": [
+    "Pat Langley",
+    "Gary L. Bradshaw",
+    "Jan M. Żytkow",
+    "Herbert A. Simon"
+  ],
+  "institutions": [
+    "Carnegie Mellon University"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 78
+  },
+  "scoreRationale": {
+    "foundational": "Established computational scientific law discovery as a core branch of AI, proving algorithmic heuristics can induce fundamental physics equations from data.",
+    "ripple": "Directly seeded four decades of symbolic regression and AI-for-physics equation discovery (Eureqa, SINDy, AI Feynman, dusty plasma neural laws).",
+    "verification": "Peer-reviewed in Cognitive Science (1981) and extensively documented in MIT Press (1987) with exact mathematical reproduction of canonical laws.",
+    "velocity": "Early symbolic prototype executed in seconds on 1980s hardware once experimental data were cleanly structured."
+  },
+  "enables": [
+    "eureqa-conservation-laws-2009",
+    "sindy-governing-equations-2016",
+    "ai-feynman-symbolic-regression-2020"
+  ],
+  "sources": [
+    {
+      "label": "Cognitive Science — Data-Driven Discovery of Physical Laws (Pat Langley, 1981)",
+      "url": "https://doi.org/10.1111/j.1551-6708.1981.tb00869.x",
+      "type": "paper"
+    },
+    {
+      "label": "Pat Langley — Computational Scientific Discovery Archive",
+      "url": "http://www.isle.org/~langley/discovery.html",
+      "type": "explainer"
+    }
+  ]
+}

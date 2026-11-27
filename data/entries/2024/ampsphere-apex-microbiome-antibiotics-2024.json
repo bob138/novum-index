@@ -1,0 +1,66 @@
+{
+  "id": "ampsphere-apex-microbiome-antibiotics-2024",
+  "title": "AMPSphere & APEX Deep Learning Mine Global Microbiomes & Extinct Species for Novel Antibiotics",
+  "shortTitle": "AMPSphere & APEX Antibiotics",
+  "date": "2024-06-05",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Antimicrobial Discovery",
+    "Metagenomics",
+    "Molecular De-Extinction"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Macrel & APEX Deep Learning Peptide Miners (UPenn / Fudan / QUT)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Deep learning mined 63,410 global metagenomes (863,498 antimicrobial peptides) and extinct species proteomes (including woolly mammoths), discovering potent preclinical antibiotics validated in mouse infection models.",
+  "summary": "Published in back-to-back landmark June 2024 studies in Cell (June 5) and Nature Biomedical Engineering (June 11) led by César de la Fuente-Nunez at the University of Pennsylvania with Luis Pedro Coelho (Fudan / QUT), Célio Dias Santos-Júnior, Fangping Wan, and Marcelo D. T. Torres, machine-learning peptide discovery pipelines unlocked two vast unexplored reservoirs of antibiotics. In AMPSphere (Cell), ML surveyed 63,410 global metagenomes and 87,920 microbial genomes to catalog 863,498 non-redundant candidate antimicrobial peptides (AMPs), with 79 of 100 synthesized peptides killing pathogens in vitro and leading hits matching polymyxin B in mice. Days later in Nature Biomedical Engineering, the recurrent-attention deep learning model APEX mined >10.3 million peptides across all known extinct organisms ('molecular de-extinction'), yielding active preclinical antibiotics including mammuthusin-2 (woolly mammoth), hydrodamin-1 (ancient sea cow), and mylodonin-2 (giant sloth) with confirmed efficacy in mouse infection models.",
+  "technicalHighlights": [
+    "AMPSphere (Cell) uncovered 863,498 candidate antimicrobial peptides across 63,410 global metagenomes; 79% of 100 synthesized candidates showed antibacterial activity.",
+    "APEX (Nature Biomedical Engineering) used a recurrent-attention deep neural network to mine 10,311,899 peptides from extinct proteomes, identifying 11,035 candidates absent from extant species.",
+    "Validated top metagenomic (e.g., lachnospirin-1, enterococcin-1) and de-extinct (e.g., mammuthusin-2, elephasin-2) peptides in vivo in murine skin-abscess and thigh-infection models against drug-resistant pathogens."
+  ],
+  "caveats": "Antimicrobial peptides face known clinical translation barriers including proteolytic degradation, systemic toxicity, and manufacturing cost; candidates remain preclinical pending IND-enabling toxicology and human trials.",
+  "contributors": [
+    "Célio Dias Santos-Júnior",
+    "Fangping Wan",
+    "Marcelo D. T. Torres",
+    "Luis Pedro Coelho",
+    "César de la Fuente-Nunez"
+  ],
+  "institutions": [
+    "University of Pennsylvania",
+    "Fudan University",
+    "Queensland University of Technology"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 97,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated AI mining of planetary metagenomes and extinct evolutionary proteomes as systematic new paradigms for antibiotic discovery.",
+    "ripple": "Created AMPSphere—a massive open global resource of ~863K candidate peptides—and launched molecular de-extinction as a mainstream drug-discovery strategy.",
+    "verification": "Peer-reviewed in Cell and Nature Biomedical Engineering with wet-lab chemical synthesis of >160 peptides and in vivo murine infection validation.",
+    "velocity": "Compressed years of conventional natural-product bioassay screening across tens of thousands of ecosystems into computational screening followed by targeted synthesis."
+  },
+  "enables": [
+    "mit-generative-antibiotics-2025"
+  ],
+  "sources": [
+    {
+      "label": "Cell — Discovery of antimicrobial peptides in the global microbiome with machine learning (Jun 2024)",
+      "url": "https://doi.org/10.1016/j.cell.2024.05.013",
+      "type": "paper"
+    },
+    {
+      "label": "Nature Biomedical Engineering — Deep-learning-enabled antibiotic discovery through molecular de-extinction (Jun 2024)",
+      "url": "https://doi.org/10.1038/s41551-024-01201-x",
+      "type": "paper"
+    }
+  ]
+}

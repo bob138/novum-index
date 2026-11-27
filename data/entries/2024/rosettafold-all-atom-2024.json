@@ -1,0 +1,66 @@
+{
+  "id": "rosettafold-all-atom-2024",
+  "title": "RoseTTAFold All-Atom Generalizes Deep-Learning Structure Prediction & Design to All Biomolecules",
+  "shortTitle": "RoseTTAFold All-Atom (Science)",
+  "date": "2024-04-19",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "All-Atom Structural Biology",
+    "Biomolecular Design",
+    "Protein–Ligand Complexes"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RoseTTAFold All-Atom & RFdiffusionAA (UW IPD)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First open peer-reviewed all-atom deep network to jointly model proteins, nucleic acids, small-molecule drugs, metals, and covalent modifications—and via RFdiffusionAA, to design de novo small-molecule-binding proteins.",
+  "summary": "Published in Science in April 2024 (preprint October 2023) by Rohith Krishna, Jue Wang, Woody Ahern, Minkyung Baek, Frank DiMaio, David Baker, and colleagues at the University of Washington Institute for Protein Design, RoseTTAFold All-Atom (RFAA) extended residue-level protein folding into a unified three-track atomic-and-residue architecture capable of modeling arbitrary biomolecular assemblies containing proteins, DNA, RNA, small-molecule ligands, metal ions, and covalent post-translational modifications. Pairing RFAA with generative diffusion (RFdiffusionAA), the team designed novel proteins binding small molecules—including digoxigenin, heme, and bilin—and confirmed atomic accuracy experimentally via X-ray crystallography.",
+  "technicalHighlights": [
+    "Unified 1D/2D/3D neural network jointly representing amino-acid residues and arbitrary atomic covalent graphs (small molecules, nucleic acids, metals, cofactors).",
+    "Achieved competitive blind protein–ligand docking and nucleic-acid complex accuracy in a single fully open-source, peer-reviewed academic model.",
+    "RFdiffusionAA generated experimentally validated de novo small-molecule binders (digoxigenin, heme, bilin) directly preceding RFdiffusion3 and all-atom co-folding models."
+  ],
+  "caveats": "Small-molecule docking accuracy on unseen ligands lagged later diffusion-based all-atom models such as AlphaFold 3 (May 2024) and Boltz-2 (2025), though RFAA pioneered open-source all-atom biomolecular modeling and design.",
+  "contributors": [
+    "Rohith Krishna",
+    "Jue Wang",
+    "Woody Ahern",
+    "Minkyung Baek",
+    "Frank DiMaio",
+    "David Baker"
+  ],
+  "institutions": [
+    "University of Washington (IPD)"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Broke structural biology out of protein-only folding into unified all-atom modeling and generative design across chemistry and biology.",
+    "ripple": "Direct open-source progenitor of RFdiffusion2, RFdiffusion3, and modern all-atom co-folding architectures.",
+    "verification": "Peer-reviewed in Science with open code/weights and experimental X-ray crystal structures confirming de novo small-molecule-binding proteins.",
+    "velocity": "Enabled direct de novo generation of cofactor- and drug-binding protein pockets without physics-based rotamer libraries."
+  },
+  "enables": [
+    "rfdiffusion2-enzyme-scaffolding-2025",
+    "rfdiffusion3-all-atom-design-2026"
+  ],
+  "sources": [
+    {
+      "label": "Science — Generalized biomolecular modeling and design with RoseTTAFold All-Atom (Apr 2024)",
+      "url": "https://doi.org/10.1126/science.adl2528",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 38452047",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38452047/",
+      "type": "paper"
+    }
+  ]
+}

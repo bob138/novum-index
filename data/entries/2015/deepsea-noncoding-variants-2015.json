@@ -46,7 +46,8 @@
   },
   "enables": [
     "spliceai-cryptic-splicing-2019",
-    "alphagenome-regulatory-dna-2025"
+    "alphagenome-regulatory-dna-2025",
+    "enformer-gene-expression-2021"
   ],
   "sources": [
     {

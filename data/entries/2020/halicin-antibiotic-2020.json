@@ -53,7 +53,8 @@
     "boltz-2-binding-affinity-2025",
     "alphafold-3-2024",
     "abaucin-antibiotic-2023",
-    "explainable-gnn-mrsa-antibiotics-2023"
+    "explainable-gnn-mrsa-antibiotics-2023",
+    "ampsphere-apex-microbiome-antibiotics-2024"
   ],
   "sources": [
     {

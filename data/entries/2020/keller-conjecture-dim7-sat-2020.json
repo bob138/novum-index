@@ -47,7 +47,9 @@
     "verification": "Formally certified via DRAT proof checking and peer-reviewed in IJCAR 2020 and Journal of the ACM.",
     "velocity": "Resolved a search space far beyond human casework via automated symmetry breaking and parallel SAT solving."
   },
-  "enables": [],
+  "enables": [
+    "empty-hexagon-h6-sat-2024"
+  ],
   "sources": [
     {
       "label": "PMC / IJCAR 2020 — The Resolution of Keller’s Conjecture (Brakensiek, Heule, Mackey, Narváez)",

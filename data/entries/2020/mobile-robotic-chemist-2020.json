@@ -1,0 +1,68 @@
+{
+  "id": "mobile-robotic-chemist-2020",
+  "title": "Liverpool Autonomous Mobile Robotic Chemist Discovers 6× More Active Hydrogen Photocatalyst",
+  "shortTitle": "Mobile Robotic Chemist (Nature)",
+  "date": "2020-07-08",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Self-Driving Laboratories",
+    "Photocatalysis",
+    "Bayesian Optimization"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Mobile Robotic Chemist (Batched Bayesian Optimization — Liverpool)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "8 days (688 experiments)",
+  "isAnchor": true,
+  "whyItMatters": "First free-roaming autonomous robotic chemist navigated a standard human laboratory, executing 688 experiments across a 10-variable space in 8 days to discover a 6× more active hydrogen-evolving photocatalyst.",
+  "summary": "Published in Nature in July 2020 by Benjamin Burger, Phillip M. Maffettone, Vladimir V. Gusev, Reiner Sebastian Sprick, Andrew I. Cooper, and colleagues at the University of Liverpool, this landmark paper introduced a mobile robotic chemist built around a KUKA manipulator navigating a standard wet laboratory via laser scanning and touch feedback. Guided by a batched Bayesian optimization algorithm over a 10-dimensional formulation space of ~98 million candidate mixtures, the robot worked 21.6 hours per day over 8 days—performing 688 autonomous experiments and 319 moves—to discover photocatalyst mixtures with six times higher hydrogen-evolution activity than the initial baseline.",
+  "technicalHighlights": [
+    "Operated unmodified human benchtop instruments (solid/liquid dispensers, sonicator, photolysis reactor, gas chromatograph) while roaming a standard laboratory.",
+    "Used batched Gaussian-process Bayesian optimization to navigate a 10-variable experimental space of ~98 million possible catalyst formulations without prior mechanistic equations.",
+    "Executed 688 closed-loop experiments over 8 days, discovering a formulation with 6× higher hydrogen production rate while operating ~1,000× faster than manual human exploration."
+  ],
+  "caveats": "Limited to a pre-defined reagent set and fixed analytical workflow designed by human chemists; the robot optimized within a known photocatalyst family rather than inventing new molecular scaffolds.",
+  "contributors": [
+    "Benjamin Burger",
+    "Phillip M. Maffettone",
+    "Vladimir V. Gusev",
+    "Catherine M. Aitchison",
+    "Reiner Sebastian Sprick",
+    "Andrew I. Cooper"
+  ],
+  "institutions": [
+    "University of Liverpool"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Established the architectural template for embodied, human-compatible self-driving chemistry laboratories.",
+    "ripple": "Directly inspired Berkeley A-Lab, global distributed self-driving labs, and modern autonomous biomolecular platforms like AutoDNA.",
+    "verification": "Peer-reviewed in Nature with complete autonomous experimental telemetry and verified 6× photocatalytic improvement.",
+    "velocity": "Completed 688 multi-step wet-lab experiments in 8 continuous days across a ~98M-point search space."
+  },
+  "enables": [
+    "a-lab-autonomous-materials-2023",
+    "coscientist-autonomous-chemistry-2023",
+    "delocalized-sdl-organic-lasers-2024",
+    "autodna-autonomous-biomolecular-lab-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature — A mobile robotic chemist (Jul 2020)",
+      "url": "https://doi.org/10.1038/s41586-020-2442-2",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 32641813",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32641813/",
+      "type": "paper"
+    }
+  ]
+}

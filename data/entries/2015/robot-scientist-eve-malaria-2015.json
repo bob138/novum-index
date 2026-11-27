@@ -57,7 +57,9 @@
     "velocity": "Active-learning experimental selection sharply cut screening cost and assay volume."
   },
   "enables": [
-    "coscientist-autonomous-chemistry-2023"
+    "coscientist-autonomous-chemistry-2023",
+    "mobile-robotic-chemist-2020",
+    "chalmers-neurosymbolic-ai-scientist-2026"
   ],
   "sources": [
     {

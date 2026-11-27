@@ -1,0 +1,64 @@
+{
+  "id": "evescape-viral-immune-escape-2023",
+  "title": "EVEscape Generative AI Forecasts Pandemic Viral Immune-Escape Variants Before Emergence",
+  "shortTitle": "EVEscape Viral Forecast (Nature)",
+  "date": "2023-10-11",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Virology & Pandemic Preparedness",
+    "Generative Protein Modeling",
+    "Immunology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "EVEscape (Deep Generative Variational Model + Biophysical Constraints — Harvard / Oxford)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Forecasted SARS-CoV-2, HIV, influenza, Lassa, and Nipah immune-escape variants before they appeared using only prepandemic evolutionary sequences and biophysical constraints—matching high-throughput wet-lab deep mutational scans.",
+  "summary": "Published in Nature in October 2023 by Nicole N. Thadani, Sarah Gurev, Pascal Notin, Yarin Gal, Debora S. Marks, and colleagues at Harvard Medical School and the University of Oxford, EVEscape combines a deep generative evolutionary sequence model (EVE) with structural antibody accessibility and biophysical dissimilarity scores to predict which viral mutations will evade human immunity while preserving viral fitness. Crucially, trained solely on prepandemic coronavirus sequences available before January 2020, EVEscape prospectively anticipated the dominant SARS-CoV-2 escape mutations that emerged across Alpha through Omicron—matching or outperforming labor-intensive experimental deep mutational scanning and generalizing across influenza, HIV, Lassa, and Nipah viruses.",
+  "technicalHighlights": [
+    "Combined deep variational evolutionary fitness modeling with 3D surface accessibility and physicochemical charge/hydrophobicity disruption to score every possible viral mutation.",
+    "Trained exclusively on pre-2020 coronavirus data, accurately anticipated pandemic SARS-CoV-2 variants of concern and real-world antibody escape mutations.",
+    "Generalized zero-shot to under-studied high-consequence pathogens (Lassa, Nipah, HIV, influenza) without requiring pathogen-specific antibody experimental assays."
+  ],
+  "caveats": "Scores single-point and additive multi-mutation escape risk rather than complex epistatic recombination or host-epidemiological transmission dynamics.",
+  "contributors": [
+    "Nicole N. Thadani",
+    "Sarah Gurev",
+    "Pascal Notin",
+    "Yarin Gal",
+    "Debora S. Marks"
+  ],
+  "institutions": [
+    "Harvard Medical School",
+    "University of Oxford",
+    "Broad Institute of MIT and Harvard"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 96,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated that generative evolutionary models paired with structural biophysics can forecast real-world viral immune escape before outbreaks unfold.",
+    "ripple": "Adopted as an active open pandemic-preparedness forecasting platform guiding proactive vaccine and monoclonal-antibody design.",
+    "verification": "Peer-reviewed in Nature with strict temporal holdout validation against real-world SARS-CoV-2 emergence and experimental neutralization assays.",
+    "velocity": "Provides day-one mutation risk forecasts for newly sequenced pathogens months before wet-lab antibody-escape screens can be constructed."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — Learning from prepandemic data to forecast viral escape (Oct 2023)",
+      "url": "https://doi.org/10.1038/s41586-023-06617-0",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC10599991",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10599991/",
+      "type": "paper"
+    }
+  ]
+}

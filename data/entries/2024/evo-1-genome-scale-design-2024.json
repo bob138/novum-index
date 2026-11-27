@@ -1,0 +1,67 @@
+{
+  "id": "evo-1-genome-scale-design-2024",
+  "title": "Evo: 7B-Parameter Genomic Foundation Model Generates Functional CRISPR–Cas & Transposon Systems",
+  "shortTitle": "Evo 1 Genomic Design (Science)",
+  "date": "2024-11-15",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Genomic Foundation Models",
+    "Molecular & Genome Design",
+    "CRISPR Engineering"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Evo 1 (7B StripedHyena DNA Foundation Model — Arc Institute / Stanford)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First single-nucleotide genomic foundation model scaling to 131 kb context (7B parameters) to jointly model DNA, RNA, and proteins—designing experimentally active CRISPR–Cas9 complexes and IS200/IS605 transposons.",
+  "summary": "Published in Science in November 2024 (preprint February 2024) by Eric Nguyen, Michael Poli, Matthew G. Durrant, Brian L. Hie, Patrick D. Hsu, and colleagues at the Arc Institute, Stanford University, and Together AI, Evo introduced a 7-billion-parameter StripedHyena hybrid convolutional-attention model pretrained on 2.7 million prokaryotic and phage genomes (300 billion nucleotides) at single-nucleotide resolution with a 131-kilobase context window. Operating across molecular-to-genome scales, Evo accurately predicted mutational effects across coding proteins and noncoding RNAs, co-designed novel functional protein–RNA CRISPR–Cas9 systems and IS200/IS605 transposable elements validated in the wet lab, and generated megabase-scale synthetic genomic sequences—directly paving the path to Evo 2 and viable AI-designed bacteriophages.",
+  "technicalHighlights": [
+    "7B-parameter StripedHyena architecture processing 131 kb of raw DNA at single-nucleotide resolution trained on 300B prokaryotic and phage nucleotides.",
+    "First AI model to jointly co-design multi-component protein–RNA complexes (functional CRISPR–Cas9 enzymes with guide RNAs and IS200/IS605 transposases with target RNAs) confirmed in wet-lab cleavage assays.",
+    "Directly established the genomic foundation-model lineage leading to 40B-parameter Evo 2 (2025) and viable AI-generated bacteriophage genomes (Science 2026)."
+  ],
+  "caveats": "Evo 1 was trained exclusively on prokaryotic and viral genomes (excluding eukaryotic/human genomes) and its generated megabase genome scaffolds were structurally plausible rather than experimentally booted into living cells (achieved for phages in 2026).",
+  "contributors": [
+    "Eric Nguyen",
+    "Michael Poli",
+    "Matthew G. Durrant",
+    "Brian L. Hie",
+    "Patrick D. Hsu"
+  ],
+  "institutions": [
+    "Arc Institute",
+    "Stanford University",
+    "Together AI"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated unified single-nucleotide modeling and multi-component molecular design from single mutations up to whole-genome scales.",
+    "ripple": "Directly launched Evo 2 (40B cross-domain biology) and the first viable AI-designed bacteriophages.",
+    "verification": "Peer-reviewed in Science with wet-lab biochemical validation of AI-co-designed CRISPR–Cas and transposon protein–RNA systems.",
+    "velocity": "Replaced separate protein, RNA, and operon engineering pipelines with a single generative nucleotide model."
+  },
+  "enables": [
+    "evo-2-genome-design-2025",
+    "evo-viable-bacteriophages-2026"
+  ],
+  "sources": [
+    {
+      "label": "Science — Sequence modeling and design from molecular to genome scale with Evo (Nov 2024)",
+      "url": "https://doi.org/10.1126/science.ado9336",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 39541441",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39541441/",
+      "type": "paper"
+    }
+  ]
+}

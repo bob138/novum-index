@@ -46,7 +46,9 @@
     "velocity": "Generated accurate multi-protein complex models in ~10–30 minutes on a single consumer GPU."
   },
   "enables": [
-    "rfdiffusion-protein-design-2023"
+    "rfdiffusion-protein-design-2023",
+    "proteinmpnn-sequence-design-2022",
+    "rosettafold-all-atom-2024"
   ],
   "sources": [
     {

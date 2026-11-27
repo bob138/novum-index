@@ -1,0 +1,59 @@
+{
+  "id": "pinns-physics-informed-nn-2019",
+  "title": "Physics-Informed Neural Networks (PINNs) Embed Differential Conservation Laws Inside Deep Learning",
+  "shortTitle": "Physics-Informed Neural Nets (PINNs)",
+  "date": "2019-02-01",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Scientific Machine Learning",
+    "Partial Differential Equations",
+    "Fluid & Continuum Mechanics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Physics-Informed Neural Networks (PINNs — Brown University / UPenn)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Founded a core paradigm of scientific machine learning by encoding PDE conservation laws into neural losses—enabling mesh-free inverse physics discovery and 2025’s unstable fluid singularities.",
+  "summary": "Published in Journal of Computational Physics in February 2019 (preprint November 2017) by Maziar Raissi, Paris Perdikaris, and George Em Karniadakis at Brown University and the University of Pennsylvania, Physics-Informed Neural Networks (PINNs) leveraged automatic differentiation to embed nonlinear partial differential equations—such as Navier–Stokes, Schrödinger, Burgers, and Allen–Cahn equations—directly into deep neural network loss functions. Operating completely mesh-free on scattered, sparse, or noisy observations, PINNs simultaneously solved forward boundary-value PDE problems and inverse parameter-discovery problems, launching a massive scientific-ML discipline (>15,000 citations) that directly enabled DeepMind and NYU’s 2025 discovery of new unstable self-similar singularities in fluid PDEs.",
+  "technicalHighlights": [
+    "Used reverse-mode automatic differentiation to enforce exact PDE residuals and boundary/initial conditions directly inside neural network training objectives.",
+    "Unified mesh-free forward PDE solving and data-driven inverse discovery of hidden physical parameters (e.g., inferring Navier–Stokes pressure fields and viscosity from sparse velocity measurements).",
+    "Directly enabled high-precision Gauss–Newton PINNs that discovered previously unknown unstable singularities in 3D Euler and IPM fluid equations in 2025."
+  ],
+  "caveats": "Vanilla PINNs can suffer from spectral bias, stiff multi-scale optimization pathologies, and slower runtime than mature classical FEM/spectral solvers on clean well-posed forward PDEs, requiring specialized architectures and second-order optimizers for frontier precision.",
+  "contributors": [
+    "Maziar Raissi",
+    "Paris Perdikaris",
+    "George Em Karniadakis"
+  ],
+  "institutions": [
+    "Brown University",
+    "University of Pennsylvania"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 95,
+    "verification": 96,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Co-founded modern Scientific Machine Learning (SciML) by unifying deep neural approximation with exact governing differential laws of physics.",
+    "ripple": "Cited >15,000 times across fluid mechanics, geophysics, solid mechanics, biomedicine, plasma physics, and mathematical PDE singularity discovery.",
+    "verification": "Peer-reviewed in Journal of Computational Physics and independently replicated across thousands of computational-physics studies.",
+    "velocity": "Unlocked mesh-free inverse physics discovery from sparse experimental fields without hand-coded finite-element meshes."
+  },
+  "enables": [
+    "fourier-neural-operator-2021",
+    "unstable-singularities-pinns-2025"
+  ],
+  "sources": [
+    {
+      "label": "Journal of Computational Physics — Physics-informed neural networks (Feb 2019)",
+      "url": "https://doi.org/10.1016/j.jcp.2018.10.045",
+      "type": "paper"
+    }
+  ]
+}

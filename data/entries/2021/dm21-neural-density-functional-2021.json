@@ -1,0 +1,64 @@
+{
+  "id": "dm21-neural-density-functional-2021",
+  "title": "DeepMind DM21 Neural Density Functional Solves Fractional-Electron Errors in DFT",
+  "shortTitle": "DeepMind DM21 Neural DFT (Science)",
+  "date": "2021-12-10",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Density Functional Theory",
+    "Quantum Chemistry",
+    "Electronic Structure"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "DM21 (DeepMind 21 Neural Exchange-Correlation Functional)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 30,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "DeepMind’s DM21 neural network learned a universal DFT exchange-correlation functional obeying exact fractional-charge and spin constraints, overcoming three-decade delocalization errors across main-group chemistry.",
+  "summary": "Published in Science in December 2021 by James Kirkpatrick, Brendan McMorrow, David H. P. Turban, Alexander L. Gaunt, Aron J. Cohen, and colleagues at Google DeepMind, DM21 (DeepMind 21) trained a deep neural network to approximate the exact exchange-correlation functional of Kohn–Sham density functional theory (DFT)—the workhorse simulation engine of chemistry and materials science. By incorporating exact mathematical constraints for fractional electron numbers and fractional spins directly into training data, DM21 eliminated notorious delocalization and strong-correlation errors that had plagued human-engineered functionals for over three decades, surpassing every hybrid functional on the comprehensive GMTKN55 main-group chemistry benchmark.",
+  "technicalHighlights": [
+    "Trained a local neural exchange-correlation functional on 1,161 molecular reactions augmented with 1,074 exact fractional-charge and fractional-spin systems.",
+    "Resolved long-standing systematic DFT failures including symmetric radical-cation dissociation (H₂⁺), stretched chemical bonds, and open-shell spin states.",
+    "Outperformed all established human-designed hybrid density functionals across the 55-subset GMTKN55 benchmark of main-group thermochemistry, kinetics, and noncovalent interactions."
+  ],
+  "caveats": "DM21 is computationally heavier than semi-local functionals, can exhibit self-consistent-field convergence difficulties on some transition-metal and periodic solid-state systems, and was trained primarily on main-group molecules.",
+  "contributors": [
+    "James Kirkpatrick",
+    "Brendan McMorrow",
+    "David H. P. Turban",
+    "Alexander L. Gaunt",
+    "Aron J. Cohen"
+  ],
+  "institutions": [
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 88,
+    "verification": 95,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Broke a three-decade impasse in approximating the universal Kohn–Sham exchange-correlation functional with exact fractional-electron physics.",
+    "ripple": "Sparked a new generation of machine-learned density functionals (e.g., Skala, neural meta-GGAs) impacting millions of DFT calculations worldwide.",
+    "verification": "Peer-reviewed in Science with open-source weights independently evaluated across GMTKN55 and transition-state benchmarks.",
+    "velocity": "Replaced decades of manual analytical functional fitting with data- and constraint-driven neural functional discovery."
+  },
+  "enables": [
+    "meta-omol25-uma-atoms-2025"
+  ],
+  "sources": [
+    {
+      "label": "Science — Pushing the frontiers of density functionals by solving the fractional electron problem (Dec 2021)",
+      "url": "https://doi.org/10.1126/science.abj6511",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 34882476",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34882476/",
+      "type": "paper"
+    }
+  ]
+}

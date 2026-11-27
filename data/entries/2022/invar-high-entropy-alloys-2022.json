@@ -1,0 +1,68 @@
+{
+  "id": "invar-high-entropy-alloys-2022",
+  "title": "Closed-Loop Active Learning Discovers Novel Ultra-Low-Expansion High-Entropy Invar Alloys",
+  "shortTitle": "Active-ML Invar Alloys (Science)",
+  "date": "2022-10-07",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Metallurgy & Alloys",
+    "Active Learning",
+    "Generative Materials Design"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "HEA-GAD Active Learning + Wasserstein Autoencoder (MPIE)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "A generative active-learning loop screened millions of sparse multi-element alloy compositions—synthesizing only 17 candidates—to discover two novel high-entropy Invar alloys with record-low thermal expansion (~2 × 10⁻⁶ K⁻¹).",
+  "summary": "Published in Science in October 2022 by Ziyuan Rao, Po-Yen Tung, Ruiwen Xie, Fritz Körmann, Dierk Raabe, and colleagues at the Max-Planck-Institut für Eisenforschung (MPIE) and TU Darmstadt, this work combined a generative Wasserstein autoencoder, ensemble neural networks, density functional theory, thermodynamic modeling, and metallurgical synthesis in a six-iteration closed active-learning loop. Searching millions of candidate Fe–Ni–Co–Cr multi-principal-element compositions from very sparse experimental data, the system required synthesizing and characterizing only 17 new alloys to discover two previously unknown high-entropy Invar alloys exhibiting ultra-low thermal expansion coefficients near 2 × 10⁻⁶ K⁻¹ across wide temperature ranges.",
+  "technicalHighlights": [
+    "Combined a Wasserstein autoencoder (HEA-GAD) with ensemble neural predictors, DFT magnetic-moment calculations, and CALPHAD thermodynamics in six closed experimental loops.",
+    "Pinpointed two novel high-entropy Invar alloys with thermal expansion coefficients ~2 × 10⁻⁶ K⁻¹ at 300 K after testing just 17 synthesized compositions out of millions.",
+    "Uncovered a physics-informed magnetic descriptor governing the Invar anomaly in concentrated solid-solution alloys."
+  ],
+  "caveats": "Each experimental iteration still required manual arc-melting, homogenization, and dilatometry characterization by metallurgists; scaling to broader mechanical/corrosion multi-objective alloy design requires richer high-throughput characterization.",
+  "contributors": [
+    "Ziyuan Rao",
+    "Po-Yen Tung",
+    "Ruiwen Xie",
+    "Ye Wei",
+    "Fritz Körmann",
+    "Dierk Raabe"
+  ],
+  "institutions": [
+    "Max-Planck-Institut für Eisenforschung",
+    "TU Darmstadt",
+    "Delft University of Technology"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 84,
+    "verification": 96,
+    "velocity": 87
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated generative active learning conquering sparse-data, high-dimensional multi-principal-element metallurgy where empirical rules fail.",
+    "ripple": "Provided a widely replicated blueprint for AI-guided discovery of sustainable structural, magnetic, and cryogenic high-entropy alloys.",
+    "verification": "Peer-reviewed in Science with physical synthesis, microstructural characterization, and dilatometry confirming both novel Invar alloys.",
+    "velocity": "Navigated millions of candidate alloy compositions to two record-performing physical alloys in just 17 experimental trials."
+  },
+  "enables": [
+    "gnome-materials-2023",
+    "mattergen-materials-2025"
+  ],
+  "sources": [
+    {
+      "label": "Science — Machine learning–enabled high-entropy alloy discovery (Oct 2022)",
+      "url": "https://doi.org/10.1126/science.abo4940",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 36201584",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36201584/",
+      "type": "paper"
+    }
+  ]
+}

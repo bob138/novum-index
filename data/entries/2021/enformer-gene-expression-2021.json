@@ -1,0 +1,67 @@
+{
+  "id": "enformer-gene-expression-2021",
+  "title": "Enformer Transformer Extends Genomic Receptive Field 5× to Predict Gene Expression From DNA",
+  "shortTitle": "Enformer Genomic Transformer",
+  "date": "2021-10-04",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Functional Genomics",
+    "Gene Regulation",
+    "Variant Effect Prediction"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Enformer (CNN-Transformer Genomic Model — Google DeepMind / Calico)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Extended sequence-to-expression modeling 5× to ~200 kb via self-attention, accurately predicting 5,313 human chromatin and gene-expression tracks directly from DNA and laying the direct architectural foundation for AlphaGenome.",
+  "summary": "Published in Nature Methods in October 2021 by Žiga Avsec, Vikram Agarwal, Daniel Visentin, Pushmeet Kohli, David R. Kelley, and colleagues at Google DeepMind and Calico Life Sciences, Enformer replaced dilated convolutions with multi-head transformer self-attention across 196,608-base-pair DNA windows. This 5× expansion of receptive field allowed the model to capture distal enhancer–promoter interactions up to 100 kb away directly from raw nucleotide sequences, dramatically improving prediction of 5,313 human and 1,643 mouse functional-genomics tracks (CAGE, DNase, ChIP-seq) and outperforming prior models on noncoding variant effect prediction and eQTL fine-mapping.",
+  "technicalHighlights": [
+    "Integrated dilated convolutional towers with 11 transformer self-attention layers spanning 196.6 kb of raw genomic DNA (~5× longer than Basenji2).",
+    "Jointly predicted 5,313 human and 1,643 mouse epigenomic and transcriptional tracks, improving human CAGE gene-expression correlation from 0.81 to 0.85.",
+    "Learned distal enhancer–promoter prioritization directly from sequence without 3D Hi-C chromatin supervision, directly inspiring DeepMind’s 1-megabase AlphaGenome."
+  ],
+  "caveats": "Operated at 128-bp output bin resolution rather than single-nucleotide resolution and struggled to predict the direction of cross-individual personal genome expression differences (later addressed by Borzoi and AlphaGenome).",
+  "contributors": [
+    "Žiga Avsec",
+    "Vikram Agarwal",
+    "Daniel Visentin",
+    "Pushmeet Kohli",
+    "David R. Kelley"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Calico Life Sciences"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Proved transformer self-attention over ~200 kb genomic sequences can capture long-range cis-regulatory grammar directly from DNA.",
+    "ripple": "Became the flagship genomic regulatory foundation model of the early 2020s and the direct ancestor to AlphaGenome (2025) and AlphaGenome 2 (2026).",
+    "verification": "Peer-reviewed in Nature Methods with open weights benchmarked across CRISPRi enhancer perturbation and eQTL datasets.",
+    "velocity": "Enabled instant in silico mutagenesis across thousands of human regulatory tracks without wet-lab reporter assays."
+  },
+  "enables": [
+    "ai-designed-dna-enhancers-2024",
+    "alphagenome-regulatory-dna-2025",
+    "alphagenome-2-single-cell-2026"
+  ],
+  "sources": [
+    {
+      "label": "Nature Methods — Effective gene expression prediction from sequence by integrating long-range interactions (Oct 2021)",
+      "url": "https://doi.org/10.1038/s41592-021-01252-x",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC8490152",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8490152/",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "wagner-rl-graph-conjectures-2021",
+  "title": "Deep Reinforcement Learning Refutes Five Open Conjectures in Graph Theory & Combinatorics",
+  "shortTitle": "Wagner RL Graph Disproofs (2021)",
+  "date": "2021-04-29",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Extremal Combinatorics",
+    "Graph Theory",
+    "Reinforcement Learning"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Deep Cross-Entropy Reinforcement Learning (Adam Zsolt Wagner)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Minutes to hours on a standard laptop",
+  "isAnchor": true,
+  "whyItMatters": "Pioneered deep reinforcement learning for extremal combinatorics: a lightweight deep cross-entropy agent autonomously constructed explicit counterexamples refuting five published open conjectures in graph theory and permanent theory.",
+  "summary": "Posted in April 2021 (arXiv:2104.14516) by Adam Zsolt Wagner at Tel Aviv University, this landmark paper showed that a simple, lightweight deep cross-entropy reinforcement learning algorithm—formulating graph construction as a sequential edge-addition game rewarded by violation of a conjectured inequality—could autonomously discover explicit mathematical counterexamples to five published open conjectures in spectral graph theory, extremal combinatorics, and geometry (including conjectures of Aouchiche–Hansen, Brualdi–Solheid, and Collins). Every counterexample was an explicit finite graph or matrix directly checkable by exact arithmetic, launching the modern deep-RL-for-combinatorics movement that directly inspired PatternBoost, FunSearch, AlphaEvolve, and PackingStar.",
+  "technicalHighlights": [
+    "Modeled extremal combinatorial object construction as a finite-horizon Markov decision process solved by a deep cross-entropy method (CEM) neural network.",
+    "Autonomously constructed explicit finite counterexamples disproving five published open conjectures—including Aouchiche–Hansen spectral-radius/matching inequalities and Brualdi–Solheid permanent conjectures.",
+    "Ran on consumer laptop hardware in minutes to hours and directly catalyzed PatternBoost (2024), AlphaEvolve Ramsey/kissing bounds, and PackingStar (2025)."
+  ],
+  "caveats": "Limited to finite, computationally scoreable extremal constructions and counterexamples rather than general symbolic theorem proving; could not prove a conjecture true when no counterexample existed.",
+  "contributors": [
+    "Adam Zsolt Wagner"
+  ],
+  "institutions": [
+    "Tel Aviv University"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 92,
+    "verification": 98,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Established deep reinforcement learning as a practical, general-purpose refutation engine for open extremal combinatorics conjectures.",
+    "ripple": "Directly spawned PatternBoost (2024), FunSearch/AlphaEvolve combinatorial search, and PackingStar (2025).",
+    "verification": "Every refutation consists of an explicit finite combinatorial object whose inequality violation is verified by exact deterministic computation.",
+    "velocity": "Refuted five published conjectures open for years using minutes to hours of consumer-grade compute."
+  },
+  "enables": [
+    "funsearch-2023",
+    "patternboost-hypercube-conjecture-2024",
+    "alphaevolve-67-math-problems-2025",
+    "packingstar-kissing-numbers-rl-2025"
+  ],
+  "sources": [
+    {
+      "label": "arXiv:2104.14516 — Constructions in combinatorics via neural networks (Apr 2021)",
+      "url": "https://arxiv.org/abs/2104.14516",
+      "type": "paper"
+    }
+  ]
+}

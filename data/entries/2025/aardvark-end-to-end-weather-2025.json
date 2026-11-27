@@ -1,0 +1,66 @@
+{
+  "id": "aardvark-end-to-end-weather-2025",
+  "title": "Aardvark Weather Replaces Entire Numerical Forecasting Pipeline With End-to-End Observational AI",
+  "shortTitle": "Aardvark End-to-End Weather (Nature)",
+  "date": "2025-03-20",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Atmospheric Physics",
+    "End-to-End Data Assimilation",
+    "Earth System AI"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Aardvark Weather (End-to-End Observation-to-Forecast AI — Cambridge / Turing / Microsoft)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Minutes on a desktop computer",
+  "isAnchor": false,
+  "whyItMatters": "First weather AI system to eliminate numerical supercomputer data assimilation completely—producing global and local station forecasts directly from raw satellite and surface observations on a desktop computer.",
+  "summary": "Published in Nature in March 2025 by Anna Allen, Stratis Markou, Will Tebbutt, James Requeima, J. Scott Hosking, Richard E. Turner, and colleagues at the University of Cambridge, the Alan Turing Institute, Microsoft Research, and ECMWF, Aardvark Weather solved a major hidden dependency of earlier weather AIs (Pangu-Weather, GraphCast, GenCast, Aurora): all previous systems still depended on classical supercomputer numerical data-assimilation pipelines to construct their initial gridded state. Aardvark replaced the entire multi-stage numerical weather prediction chain—data assimilation, global forecasting, and local station downscaling—with a single end-to-end neural network ingesting raw satellite radiances, scatterometers, radiosondes, and ground stations. Using only ~10% of the observations consumed by operational systems, Aardvark outperformed the operational US GFS system on multiple variables and ran in minutes on a single desktop computer.",
+  "technicalHighlights": [
+    "Eliminated classical numerical data assimilation by mapping raw sparse satellite and weather-station observations directly to gridded global and local station forecasts.",
+    "Matched or outperformed the operational US Global Forecast System (GFS) on numerous variables using just ~10% of the observational inputs and orders of magnitude less compute.",
+    "Runs end-to-end in minutes on a desktop computer, unlocking bespoke, ultra-low-cost weather and agricultural forecasting for developing regions."
+  ],
+  "caveats": "First-generation 1.5° horizontal resolution still trailed high-resolution 0.25° ECMWF IFS and GraphCast on fine-scale localized extreme weather, establishing the blueprint rather than the final resolution ceiling.",
+  "contributors": [
+    "Anna Allen",
+    "Stratis Markou",
+    "Will Tebbutt",
+    "James Requeima",
+    "J. Scott Hosking",
+    "Richard E. Turner"
+  ],
+  "institutions": [
+    "University of Cambridge",
+    "The Alan Turing Institute",
+    "Microsoft Research",
+    "ECMWF"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 90,
+    "verification": 97,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrated the first truly end-to-end observation-to-forecast AI weather system free of classical supercomputer data-assimilation pipelines.",
+    "ripple": "Unlocks lightweight, end-to-end Earth observation forecasting customizable to local stations, agriculture, renewable grids, and developing nations.",
+    "verification": "Peer-reviewed in Nature with rigorous benchmarks against operational US GFS and ECMWF forecasting systems.",
+    "velocity": "Compressed the entire multi-supercomputer data-assimilation and forecasting stack into minutes on a single desktop computer."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nature — End-to-end data-driven weather prediction (Mar 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-08897-0",
+      "type": "paper"
+    },
+    {
+      "label": "PMC — PMC12119340",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12119340/",
+      "type": "paper"
+    }
+  ]
+}

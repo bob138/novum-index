@@ -1,0 +1,65 @@
+{
+  "id": "stanford-speech-neuroprosthesis-2023",
+  "title": "Deep-Learning Intracortical Speech Neuroprosthesis Decodes 62 Words/Min From a Paralyzed Patient",
+  "shortTitle": "62-WPM AI Speech BCI (Nature)",
+  "date": "2023-08-23",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Brain–Computer Interfaces",
+    "Neuroengineering",
+    "Neural Speech Decoding"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RNN Phoneme Decoder + Large-Vocabulary Language Model (Stanford / BrainGate)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "First high-performance intracortical speech BCI paired a recurrent neural network with a language model to decode attempted speech from a paralyzed ALS patient at 62 words per minute (3.4× the prior record) across a 125,000-word vocabulary.",
+  "summary": "Published in Nature in August 2023 (alongside a companion UCSF/Chang Lab Nature paper) by Francis R. Willett, Erin M. Kunz, Chaofei Fan, Jaimie M. Henderson, Krishna V. Shenoy, and colleagues at Stanford University and HHMI, this clinical breakthrough recorded spiking activity from microelectrode arrays implanted in the ventral premotor cortex of a clinical trial participant unable to speak intelligibly due to amyotrophic lateral sclerosis (ALS). A five-layer gated recurrent neural network decoded attempted phonemes in real time, coupled with a beam-search language model—achieving 62 words per minute (3.4× faster than any prior BCI and approaching natural conversation speed) with a 9.1% word error rate on a 50-word vocabulary and 23.8% on a 125,000-word vocabulary.",
+  "technicalHighlights": [
+    "Decoded attempted facial/vocal-tract motor cortex spike trains into phoneme probabilities via a 5-layer GRU neural network trained with CTC loss.",
+    "Achieved 62 words per minute—3.4× faster than prior BCI communication records—across a large 125,000-word English vocabulary.",
+    "Demonstrated fine-grained orofacial and phoneme representation preserved in speech motor cortex years after severe paralysis."
+  ],
+  "caveats": "Single-participant clinical feasibility trial (BrainGate2) requiring neurosurgical implantation, daily recalibration for neural drift, and exhibiting a 23.8% word error rate at 125,000-word vocabulary scale (subsequently cut dramatically in UC Davis’s 2024 NEJM study).",
+  "contributors": [
+    "Francis R. Willett",
+    "Erin M. Kunz",
+    "Chaofei Fan",
+    "Jaimie M. Henderson",
+    "Krishna V. Shenoy"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Howard Hughes Medical Institute"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 91,
+    "verification": 97,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Proved deep sequence models + language models can restore near-conversational, open-vocabulary speech directly from cortical spike recordings.",
+    "ripple": "Transformed clinical neuroprosthetics, directly paving the way for long-term 97.5%-accurate home-use speech BCIs.",
+    "verification": "Peer-reviewed in Nature in an FDA IDE human clinical trial (BrainGate2) alongside an independent UCSF Nature companion demonstration.",
+    "velocity": "Leaped 3.4× past prior BCI communication speed records while scaling vocabulary 2,500× from 50 words to 125,000 words."
+  },
+  "enables": [
+    "ucdavis-speech-bci-nejm-2024"
+  ],
+  "sources": [
+    {
+      "label": "Nature — A high-performance speech neuroprosthesis (Aug 2023)",
+      "url": "https://doi.org/10.1038/s41586-023-06377-x",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed — PMID 37612500",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37612500/",
+      "type": "paper"
+    }
+  ]
+}
