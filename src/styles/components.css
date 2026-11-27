@@ -209,7 +209,7 @@
 }
 
 [data-theme='dark'] .hero__artwork img {
-  filter: invert(0.9) hue-rotate(180deg) brightness(0.86) contrast(1.06);
+  filter: invert(0.96) hue-rotate(180deg) brightness(0.84) contrast(1.12);
 }
 
 .hero__artwork-caption {
@@ -1046,10 +1046,18 @@
   stroke-dasharray: 3 4;
 }
 
-.viz-axis-label {
+.viz-axis-label,
+.viz-axis-tick {
   font-family: var(--font-mono);
   font-size: 11px;
   fill: var(--ink-muted);
+}
+
+.viz-node-label {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 500;
+  fill: var(--ink-primary);
 }
 
 .viz-annotation {
