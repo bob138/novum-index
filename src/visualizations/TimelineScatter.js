@@ -976,7 +976,7 @@ export function renderTimelineScatter(items, opts = {}) {
           data-split-zones="${serializedZones}"
           data-interaction-mode="${interactionMode}"
           role="img"
-          aria-label="Scatter plot of AI scientific breakthroughs by date and ${escapeHtml(metricMeta.label)}"
+          aria-label="Scatter plot of AI-enabled scientific breakthroughs by date and ${escapeHtml(metricMeta.label)}"
         >
           <defs>
             <clipPath id="scatter-plot-clip">

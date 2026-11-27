@@ -62,7 +62,7 @@ const AI_SERIES = [
 const CURVE_METRICS = {
   count: {
     label: 'Count',
-    legend: 'Cumulative AI Breakthroughs',
+    legend: 'Cumulative AI-Enabled Breakthroughs',
     axisLabel: 'CUMULATIVE BREAKTHROUGHS',
     getVal: (b) => b.cumulativeCount,
     format: (v) => String(v),
@@ -403,7 +403,7 @@ export function renderVelocityChart(items, opts = {}) {
           id="velocity-chart-svg"
           viewBox="0 0 ${width} ${height}"
           role="img"
-          aria-label="Stacked bar and cumulative line chart showing exponential acceleration of AI scientific breakthroughs"
+          aria-label="Stacked bar and cumulative line chart showing exponential acceleration of AI-enabled scientific breakthroughs"
         >
           <defs>
             <pattern id="pioneer-bar-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
@@ -446,7 +446,7 @@ export function renderVelocityChart(items, opts = {}) {
               text-anchor="middle"
               class="viz-annotation"
               pointer-events="none"
-            >${granularity === 'annual' ? '2024–2026 Neural & Neuro-Symbolic Surge' : 'Quarterly AI Breakthrough Cadence (2024–2026)'}</text>
+            >${granularity === 'annual' ? '2024–2026 Neural & Neuro-Symbolic Surge' : 'Quarterly AI-Enabled Breakthrough Cadence (2024–2026)'}</text>
           `
               : ''
           }
@@ -623,7 +623,7 @@ export function renderVelocityChart(items, opts = {}) {
 
           <!-- Baseline & Axis Titles -->
           <line x1="${margin.left}" y1="${margin.top + innerH}" x2="${width - margin.right}" y2="${margin.top + innerH}" class="viz-axis-line" pointer-events="none" />
-          <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">${barMode === 'rate' ? 'ANNUALIZED PACE (BREAKTHROUGHS / YR)' : 'AI BREAKTHROUGHS / PERIOD'}</text>
+          <text x="15" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(-90 15 ${margin.top + innerH / 2})" class="viz-axis-label">${barMode === 'rate' ? 'ANNUALIZED PACE (BREAKTHROUGHS / YR)' : 'AI-ENABLED BREAKTHROUGHS / PERIOD'}</text>
           <text x="${width - 14}" y="${margin.top + innerH / 2}" text-anchor="middle" transform="rotate(90 ${width - 14} ${margin.top + innerH / 2})" class="viz-axis-label" style="fill: var(--accent-primary);">${escapeHtml(curveMeta.axisLabel)}${yScale === 'log' ? ' (LOG)' : ''}</text>
           <text x="${width - margin.right}" y="${height - 8}" text-anchor="end" class="viz-axis-label" style="font-size:10px;">${escapeHtml(footnoteText)}</text>
         </svg>
@@ -636,7 +636,7 @@ export function renderVelocityChart(items, opts = {}) {
         </div>
         <div>
           <div class="viz-callout__num">${h2_2026} milestones</div>
-          <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 26), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of active AI breakthroughs.</div>
+          <div class="viz-callout__text">Landed in H2 2026 alone (Jul – Nov 26), accounting for ${items.length ? Math.round((h2_2026 / items.length) * 100) : 0}% of active AI-enabled breakthroughs.</div>
         </div>
         <div>
           <div class="viz-callout__num">${q4NeuroSymPct}% neuro-sym</div>

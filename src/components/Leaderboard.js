@@ -54,11 +54,11 @@ export function renderLeaderboard(items, totalCount, sortBy = 'impact') {
 
   return `
     <div class="results-meta">
-      <span>Showing <strong class="mono">${items.length}</strong> of <span class="mono">${totalCount}</span> AI breakthroughs · ${sortLabel}</span>
+      <span>Showing <strong class="mono">${items.length}</strong> of <span class="mono">${totalCount}</span> AI-enabled breakthroughs · ${sortLabel}</span>
       <span>Click any entry to inspect its dossier, score rationale &amp; primary sources</span>
     </div>
 
-    <div class="leaderboard" role="region" aria-label="Ranked AI breakthroughs leaderboard">
+    <div class="leaderboard" role="region" aria-label="Ranked AI-enabled breakthroughs leaderboard">
       <div class="leaderboard__head" aria-hidden="true">
         <span>Rank</span>
         <span>Breakthrough &amp; Significance</span>

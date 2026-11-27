@@ -50,7 +50,7 @@ export function renderHeader(meta, allItems, theme) {
         <div class="pulse-strip" aria-label="Index overview metrics">
           <div class="pulse-stat">
             <div class="pulse-stat__value">${totalCount}</div>
-            <div class="pulse-stat__label">AI Breakthroughs</div>
+            <div class="pulse-stat__label">AI-Enabled Breakthroughs</div>
             <div class="pulse-stat__note">${waveCount} wave · ${earlyNeuralCount} early neural · ${pioneerCount} pre-2020</div>
           </div>
           <div class="pulse-stat">

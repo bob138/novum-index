@@ -475,7 +475,7 @@ function renderMethodologyPage() {
             The entire ledger lives in a single human-readable JSON file (<code>data/breakthroughs.json</code>) licensed under the MIT License. Every commit and pull request is automatically validated by GitHub Actions against <code>data/schema.json</code> via <code>scripts/validate-data.mjs</code>—enforcing valid ISO dates, strict AI-only provenance, required <code>aiParadigm</code> and <code>aiSystem</code> fields, bounded 0–100 sub-scores, primary source URLs, and referential integrity across every <code>enables</code> lineage edge.
           </p>
           <div class="meth-cta-row">
-            <a class="nav-btn nav-btn--primary" href="${REPO_URL}/issues/new?template=submit-breakthrough.yml" target="_blank" rel="noopener noreferrer">Submit a New AI Breakthrough</a>
+            <a class="nav-btn nav-btn--primary" href="${REPO_URL}/issues/new?template=submit-breakthrough.yml" target="_blank" rel="noopener noreferrer">Submit a New AI-Enabled Breakthrough</a>
             <a class="nav-btn" href="${REPO_URL}/issues/new?template=challenge-score.yml" target="_blank" rel="noopener noreferrer">Challenge / Update a Score or Audit Status</a>
             <a class="nav-btn" href="${REPO_URL}/blob/main/data/breakthroughs.json" target="_blank" rel="noopener noreferrer">Inspect Raw JSON Ledger</a>
             <a class="nav-btn" href="./">← Return to Live Index</a>
