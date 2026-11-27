@@ -35,11 +35,29 @@
 }
 
 .site-brand__mark {
-  width: 26px;
-  height: 26px;
+  display: block;
+  width: 28px;
+  height: 28px;
   border-radius: var(--radius-xs);
   flex-shrink: 0;
 }
+
+.site-brand__mark .bm-bg { fill: var(--bg-canvas); }
+.site-brand__mark .bm-frame { stroke: var(--border-strong); }
+.site-brand__mark .bm-axis { stroke: var(--ink-muted); }
+.site-brand__mark .bm-math { stroke: var(--disc-math); }
+.site-brand__mark .bm-math-fill { fill: var(--disc-math); }
+.site-brand__mark .bm-cs { stroke: var(--disc-cs); }
+.site-brand__mark .bm-cs-fill { fill: var(--disc-cs); }
+.site-brand__mark .bm-physics { stroke: var(--disc-physics); }
+.site-brand__mark .bm-physics-fill { fill: var(--disc-physics); }
+.site-brand__mark .bm-bio { stroke: var(--disc-bio); }
+.site-brand__mark .bm-bio-fill { fill: var(--disc-bio); }
+.site-brand__mark .bm-chem { stroke: var(--disc-chem); }
+.site-brand__mark .bm-chem-fill { fill: var(--disc-chem); }
+.site-brand__mark .bm-core { fill: var(--ink-primary); }
+
+[data-theme='dark'] .site-brand__mark .bm-bg { fill: #0a0a0d; }
 
 .site-brand__title {
   font-family: var(--font-serif);

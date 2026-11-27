@@ -1,9 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="12" fill="#F7F4EE"/>
-  <rect x="1.5" y="1.5" width="61" height="61" rx="10.5" stroke="#D8D1C5" stroke-width="2"/>
-  <path d="M12 46C22 46 28 38 33 26C36 18 42 14 52 14" stroke="#1E4B8F" stroke-width="3" stroke-linecap="round"/>
-  <path d="M12 36C24 36 32 31 40 22" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
-  <circle cx="33" cy="26" r="4.5" fill="#B45309"/>
-  <circle cx="52" cy="14" r="3.5" fill="#1E4B8F"/>
-  <line x1="12" y1="50" x2="52" y2="50" stroke="#2D2A26" stroke-width="1.5" stroke-linecap="round"/>
+  <style>
+    .bg { fill: #f7f4ee; }
+    .frame { stroke: #cfc6b5; }
+    .axis { stroke: #8a8174; }
+    .math { stroke: #1e4b8f; }
+    .math-fill { fill: #1e4b8f; }
+    .cs { stroke: #0f766e; }
+    .cs-fill { fill: #0f766e; }
+    .physics { stroke: #b45309; }
+    .physics-fill { fill: #b45309; }
+    .bio { stroke: #2e6b47; }
+    .bio-fill { fill: #2e6b47; }
+    .chem { stroke: #9a3b3b; }
+    .chem-fill { fill: #9a3b3b; }
+    .core { fill: #1c1915; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0a0a0d; }
+      .frame { stroke: #2d2d36; }
+      .axis { stroke: #6e6b64; }
+      .math { stroke: #6da1f2; }
+      .math-fill { fill: #6da1f2; }
+      .cs { stroke: #38bfa8; }
+      .cs-fill { fill: #38bfa8; }
+      .physics { stroke: #e59c4a; }
+      .physics-fill { fill: #e59c4a; }
+      .bio { stroke: #5cc184; }
+      .bio-fill { fill: #5cc184; }
+      .chem { stroke: #e07b7b; }
+      .chem-fill { fill: #e07b7b; }
+      .core { fill: #f4f2ee; }
+    }
+  </style>
+
+  <!-- Archival plate tile & crisp frame -->
+  <rect class="bg frame" x="1.5" y="1.5" width="61" height="61" rx="13.5" stroke-width="2"/>
+
+  <!-- Cartographic crosshair axes meeting at central singularity (29.5, 32) -->
+  <line class="axis" x1="7.5" y1="32" x2="56.5" y2="32" stroke-width="1.2" opacity="0.5" stroke-linecap="round"/>
+  <line class="axis" x1="29.5" y1="8.5" x2="29.5" y2="55.5" stroke-width="1.2" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Left Hemisphere: Mathematics disk (19.5, 32, r=10) + EXACT geometric tangent polytope crowns -->
+  <path class="math" d="M11.86 25.55 L19.5 16.5 L27.14 25.55 M11.86 38.45 L19.5 47.5 L27.14 38.45" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round" opacity="0.86"/>
+  <circle class="math" cx="19.5" cy="32" r="10" stroke-width="2.65"/>
+
+  <!-- Inner CS/AI resonance circle & conjugate upper coupling arc (Teal) -->
+  <circle class="cs" cx="24" cy="32" r="5.5" stroke-width="2.15" opacity="0.94"/>
+  <path class="cs" d="M29.5 32 Q34.5 23.2 42 19.5" stroke-width="1.85" stroke-linecap="round" opacity="0.82"/>
+
+  <!-- Right Hemisphere: Grand Empirical Orbit (upper Biology Emerald, lower Physics Amber) -->
+  <path class="bio" d="M29.5 32 A12.5 12.5 0 0 1 54.5 32" stroke-width="2.75" stroke-linecap="round"/>
+  <path class="physics" d="M54.5 32 A12.5 12.5 0 0 1 29.5 32" stroke-width="2.75" stroke-linecap="round"/>
+
+  <!-- Inner Empirical Harmonics terminating EXACTLY on right circle perimeter at ±48° -->
+  <path class="physics" d="M29.5 32 Q40.5 29.5 50.36 22.71" stroke-width="1.95" stroke-linecap="round" opacity="0.9"/>
+  <path class="chem" d="M29.5 32 Q40.5 34.5 50.36 41.29" stroke-width="2.1" stroke-linecap="round" opacity="0.94"/>
+
+  <!-- Five-discipline exact-intersection focal nodes -->
+  <circle class="math-fill" cx="19.5" cy="16.5" r="2.2"/>
+  <circle class="bio-fill" cx="42" cy="19.5" r="2.35"/>
+  <circle class="physics-fill" cx="54.5" cy="32" r="2.35"/>
+  <circle class="chem-fill" cx="50.36" cy="41.29" r="2.35"/>
+
+  <!-- Central Novum 4-point singularity star -->
+  <path class="bg" d="M29.5 25.3 L31.6 29.9 L36.2 32 L31.6 34.1 L29.5 38.7 L27.4 34.1 L22.8 32 L27.4 29.9 Z"/>
+  <path class="core" d="M29.5 26.7 L31.1 30.4 L34.8 32 L31.1 33.6 L29.5 37.3 L27.9 33.6 L24.2 32 L27.9 30.4 Z"/>
 </svg>

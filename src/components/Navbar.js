@@ -1,4 +1,5 @@
 import { escapeHtml } from '../scoring.js';
+import { BRAND_MARK_SVG } from './brandMarkSvg.js';
 
 const REPO_URL = 'https://github.com/bob138/novum-index';
 
@@ -19,7 +20,7 @@ export function renderNavbar({ activePage, theme, editionLabel }) {
     <header class="site-nav" role="banner">
       <div class="container site-nav__inner">
         <a href="${brandHref}" class="site-brand" ${activePage === 'index' ? 'id="brand-home"' : ''}>
-          <img src="./favicon.svg" alt="" class="site-brand__mark" width="26" height="26" />
+          ${BRAND_MARK_SVG}
           <span class="site-brand__title">Novum Index</span>
           ${editionLabel ? `<span class="site-brand__edition">${escapeHtml(editionLabel)}</span>` : ''}
         </a>
