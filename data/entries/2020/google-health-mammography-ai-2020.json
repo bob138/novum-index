@@ -51,7 +51,8 @@
   },
   "enables": [
     "chief-pathology-foundation-2024",
-    "google-amie-clinical-diagnosis-2025"
+    "google-amie-clinical-diagnosis-2025",
+    "masai-mammography-ai-rct-2026"
   ],
   "sources": [
     {

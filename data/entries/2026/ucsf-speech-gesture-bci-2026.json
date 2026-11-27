@@ -1,0 +1,68 @@
+{
+  "id": "ucsf-speech-gesture-bci-2026",
+  "title": "Single Cortical Implant Simultaneously Decodes Speech and Body-Language Gestures in Paralysis",
+  "shortTitle": "Simultaneous Speech & Gesture BCI (UCSF)",
+  "date": "2026-09-14",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Brain-Computer Interfaces",
+    "Neural Decoding",
+    "Neuroprosthetics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "UCSF Parallel ECoG Speech & Gesture Neural Decoders",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature Neuroscience, UCSF’s parallel neural decoders enabled paralyzed participants to control a personalized avatar with simultaneous speech and upper-limb gestures from a single cortical implant.",
+  "summary": "Published in Nature Neuroscience on September 14, 2026 (doi:10.1038/s41593-026-02446-2, PMID 42736415), Samantha C. Brosler, Jessie R. Liu, Alexander B. Silva, Edward F. Chang, and colleagues at UCSF demonstrated the first brain-computer interface capable of simultaneously decoding spoken communication and nonverbal upper-limb gestures from a single high-density electrocorticography (ECoG) cortical array in people with paralysis. Prior clinical neuroprostheses decoded speech or motor gestures only in isolation. Across three participants, the team first decoded isolated orofacial and upper-limb movements from shared sensorimotor cortex, then trained parallel deep-learning speech and gesture decoders jointly on both isolated and simultaneous movement data—showing that joint multimodal training improved decoding performance across behavioral contexts and enabled real-time multi-effector avatar control.",
+  "technicalHighlights": [
+    "First demonstration that a single high-density ECoG cortical implant can decode real-time speech and nonverbal body-language gestures simultaneously in paralyzed individuals.",
+    "Parallel deep-learning speech and gesture decoders drove a personalized virtual avatar during both isolated and simultaneous attempted speech and upper-limb movements.",
+    "Jointly training decoders on isolated and simultaneous neural data improved accuracy across contexts, proving multi-effector control without degrading speech decoding."
+  ],
+  "caveats": "Small clinical feasibility cohort (three participants) using investigational implanted ECoG arrays; long-term home deployment and expanded gesture vocabularies remain future work.",
+  "contributors": [
+    "Samantha C. Brosler",
+    "Jessie R. Liu",
+    "Alexander B. Silva",
+    "Karunesh Ganguly",
+    "Edward F. Chang"
+  ],
+  "institutions": [
+    "University of California, San Francisco",
+    "University of California, Berkeley"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 84,
+    "verification": 91,
+    "velocity": 80
+  },
+  "scoreRationale": {
+    "foundational": "Overcomes single-effector limitations in neural prosthetics by revealing that overlapping cortical representations can be cleanly demixed into concurrent speech and gesture streams.",
+    "ripple": "Advances multimodal neuroprostheses toward natural expressive human communication combining voice, facial expression, and physical gesture.",
+    "verification": "Peer-reviewed in Nature Neuroscience with prospective human clinical testing across three paralyzed participants.",
+    "velocity": "Real-time closed-loop decoding translates simultaneous attempted speech and gestures directly to avatar actuation."
+  },
+  "sources": [
+    {
+      "label": "Nature Neuroscience (2026) — Simultaneous Speech and Gesture Decoding for Multimodal Communication in Paralysis",
+      "url": "https://doi.org/10.1038/s41593-026-02446-2",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 42736415)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42736415/",
+      "type": "paper"
+    },
+    {
+      "label": "NIH News Release — Neuroprosthesis Enables Simultaneous Speech and Body Language",
+      "url": "https://www.nih.gov/news-events/news-releases/neuroprosthesis-paralysis-enables-simultaneous-speech-body-language",
+      "type": "announcement"
+    }
+  ],
+  "enables": []
+}

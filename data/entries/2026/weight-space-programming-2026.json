@@ -1,0 +1,66 @@
+{
+  "id": "weight-space-programming-2026",
+  "title": "Weight-Space Programming: Frontier LLMs Natively Read, Debug, and Write Neural Network Weights",
+  "shortTitle": "Weight-Space Programming (MIT CSAIL)",
+  "date": "2026-11-02",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Mechanistic Interpretability",
+    "Neural Network Synthesis",
+    "AI Self-Modification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6 Astra & Claude Opus 5.5 (MIT CSAIL)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "1-shot / zero-gradient synthesis",
+  "isAnchor": false,
+  "whyItMatters": "MIT CSAIL showed frontier LLMs can inspect raw parameter tensors to diagnose bugs, edit 0.016% of Qwen3.5-0.8B weights to jump MATH-500 from 7.9% to 48.1%, and write MinAtar Breakout weights beating 500M-step PPO.",
+  "summary": "On November 2, 2026, Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab at MIT CSAIL introduced Weight-Space Programming—showing that frontier LLMs (primarily GPT-6 Astra, independently replicated with Claude Opus 5.5) can natively read, diagnose, edit, and synthesize neural network parameter matrices without gradient descent. Given only raw weight tensors, models identified training tasks and localized induction heads; on a failing Kinetix physics-control policy, editing just 3.5% of weights in a single shot restored 100% task success. Writing weights directly from scratch without RL training, the LLM synthesized a MinAtar Breakout network scoring 517.4 across 1,000 episodes versus 25.3 for a 500M-step PPO baseline. On Qwen3.5-0.8B, inspecting weights and surgically editing 0.016% of parameters to fix an inference-loop failure lifted MATH-500 accuracy from 7.9% to 48.1% (and GSM8K from 13.8% to 67.1%) with zero gradient updates.",
+  "technicalHighlights": [
+    "Synthesized neural network weights from scratch with zero gradient training for MinAtar Breakout, scoring 517.4 across 1,000 episodes versus 25.3 for 500M-step PPO.",
+    "Surgically edited just 0.016% of Qwen3.5-0.8B weights without backpropagation to boost MATH-500 from 7.9% to 48.1% and GSM8K from 13.8% to 67.1%.",
+    "Repaired a failing Kinetix control policy in one shot by editing 3.5% of weights (reaching 100% success) and was independently replicated across frontier models."
+  ],
+  "caveats": "Research blog release and follow-up replications remain pre-peer-review; the Qwen3.5-0.8B jump repaired an existing inference-loop defect rather than synthesizing new frontier capabilities from scratch, and scalability to large dense models remains open.",
+  "contributors": [
+    "Rikiya Takehi",
+    "Jayden Teoh",
+    "Alex Zhang",
+    "Omar Khattab"
+  ],
+  "institutions": [
+    "MIT CSAIL"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 88,
+    "verification": 76,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Opens a new paradigm treating neural parameter tensors as human- and LLM-programmable code rather than opaque gradient-optimized artifacts.",
+    "ripple": "Carries major implications for mechanistic interpretability, surgical model repair, weight-level safety auditing, and non-gradient neural synthesis.",
+    "verification": "Quantitative benchmarks and public code replications verified the core edits and zero-shot MinAtar scores, though peer review and larger-scale generalization are still underway.",
+    "velocity": "Replaced hundreds of millions of RL steps or full fine-tuning loops with single-shot weight synthesis and micro-edits."
+  },
+  "sources": [
+    {
+      "label": "MIT CSAIL Research Post — Sparks of Weight-Space Programming",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "type": "paper"
+    },
+    {
+      "label": "Independent Follow-Up Evaluation (arXiv:2611.08070)",
+      "url": "https://arxiv.org/abs/2611.08070",
+      "type": "paper"
+    },
+    {
+      "label": "Independent Open-Source Replication Repository",
+      "url": "https://github.com/MatinKhajavi/Weight-Space-Programming",
+      "type": "code"
+    }
+  ],
+  "enables": []
+}

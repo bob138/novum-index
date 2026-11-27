@@ -51,7 +51,8 @@
   "enables": [
     "gnome-materials-2023",
     "meta-omol25-uma-atoms-2025",
-    "ibs-cbnn-cross-material-catalyst-2026"
+    "ibs-cbnn-cross-material-catalyst-2026",
+    "sargent-acidic-oer-catalyst-ai-2026"
   ],
   "sources": [
     {

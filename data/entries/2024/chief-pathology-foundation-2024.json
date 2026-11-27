@@ -47,7 +47,9 @@
     "verification": "Peer-reviewed in Nature with extensive external validation across 32 independent datasets from 24 hospitals.",
     "velocity": "Infers molecular mutation signatures and prognosis from routine H&E slides in seconds rather than waiting weeks for genomic sequencing."
   },
-  "enables": [],
+  "enables": [
+    "sleepfm-multimodal-disease-2026"
+  ],
   "sources": [
     {
       "label": "Nature — A pathology foundation model for cancer diagnosis and prognosis prediction (Sep 2024)",

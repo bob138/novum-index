@@ -50,7 +50,11 @@
   },
   "enables": [
     "c2s-scale-cancer-therapy-2025",
-    "alphagenome-2-single-cell-2026"
+    "alphagenome-2-single-cell-2026",
+    "nicheformer-spatial-omics-2025",
+    "arc-state-virtual-cell-2025",
+    "transcriptformer-112m-cells-2026",
+    "uce-universal-cell-embedding-2026"
   ],
   "sources": [
     {

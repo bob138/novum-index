@@ -1,0 +1,70 @@
+{
+  "id": "sleepfm-multimodal-disease-2026",
+  "title": "SleepFM: Multimodal Sleep Foundation Model Forecasts Risk of 130 Diseases from One Night of Sleep",
+  "shortTitle": "SleepFM Disease Foundation Model",
+  "date": "2026-01-06",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical Foundation Models",
+    "Sleep Physiology",
+    "Preventive Medicine"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "SleepFM (Multimodal Contrastive PSG Foundation Model, Stanford)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature Medicine, SleepFM trained on >585,000 hours of polysomnography across 65,000 people to forecast future risk of 130 diseases—including dementia (C-Index 0.85) and mortality (0.84)—from one night of sleep.",
+  "summary": "Published in Nature Medicine on January 6, 2026 (Vol. 32, pp. 752–762, doi:10.1038/s41591-025-04133-4, PMID 41495409), Rahul Thapa, Magnus Ruud Kjaer, Emmanuel Mignot, James Zou, and colleagues at Stanford University, Technical University of Denmark, Rigshospitalet, and Harvard Medical School introduced SleepFM—a multimodal physiological foundation model trained with leave-one-out contrastive learning on over 585,000 hours of polysomnography (brain EEG, cardiac ECG, respiratory, and electromyography) from ~65,000 participants. From a single night of sleep recording, SleepFM’s latent representations accurately predicted future onset of 130 distinct medical conditions with C-Index >= 0.75 (Bonferroni-corrected P < 0.01), including dementia (0.85), all-cause mortality (0.84), myocardial infarction (0.81), heart failure (0.80), chronic kidney disease (0.79), stroke (0.78), and atrial fibrillation (0.78), while transferring strongly to the held-out Sleep Heart Health Study cohort.",
+  "technicalHighlights": [
+    "Pretrained on >585,000 hours of multimodal polysomnography across ~65,000 participants using modality-flexible contrastive learning.",
+    "Forecasts future risk of 130 diseases from a single night of sleep with C-Index >= 0.75 (P < 0.01), including dementia (0.85), all-cause mortality (0.84), myocardial infarction (0.81), and heart failure (0.80).",
+    "Demonstrates strong zero-shot/transfer generalization on the external Sleep Heart Health Study cohort and competitive clinical sleep-staging and apnea classification."
+  ],
+  "caveats": "Trained on clinical sleep-lab polysomnography cohorts that skew toward patients referred for sleep evaluation; adaptation to consumer wearables and prospective interventional clinical trials remain future steps.",
+  "contributors": [
+    "Rahul Thapa",
+    "Magnus Ruud Kjaer",
+    "Bryan He",
+    "Emmanuel Mignot",
+    "James Zou"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Technical University of Denmark",
+    "Rigshospitalet (Copenhagen)",
+    "Harvard Medical School"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 86,
+    "verification": 92,
+    "velocity": 83
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates that multimodal overnight physiological signals encode a general language of systemic organ health predictive of 130 future diseases.",
+    "ripple": "Unlocks non-invasive, single-night preventive risk stratification across neurology, cardiology, oncology, and renal medicine.",
+    "verification": "Peer-reviewed in Nature Medicine across ~65,000 participants with Bonferroni-corrected statistical rigor and external cohort transfer validation.",
+    "velocity": "Extracts 130 long-horizon disease risk profiles simultaneously from one routine overnight sleep study."
+  },
+  "sources": [
+    {
+      "label": "Nature Medicine (2026) — A Multimodal Sleep Foundation Model for Disease Prediction",
+      "url": "https://doi.org/10.1038/s41591-025-04133-4",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 41495409)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41495409/",
+      "type": "paper"
+    },
+    {
+      "label": "Open Code & Pretraining Release (GitHub)",
+      "url": "https://github.com/zou-group/sleepfm-clinical",
+      "type": "code"
+    }
+  ],
+  "enables": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "molrsi-self-improving-discovery-2026",
+  "title": "MolRSI: Recursive Self-Improving AI Agent Beats Expert Workflows in Wet-Lab Antibiotic and pMHC Binder Discovery",
+  "shortTitle": "MolRSI Self-Improving Molecular Agent",
+  "date": "2026-10-30",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Antibiotic Discovery",
+    "De Novo Protein Design",
+    "Autonomous Scientific Agents"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "MolRSI (Experience-Guided MCTS + Persistent Memory Agent)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "MolRSI recursively refined its search policy via cross-task memory, nearly doubling expert wet-lab antibiotic hit rates against S. aureus/MRSA (15.9% vs 8.7%) and discovering 8 specific pMHC binders where Claude Science found zero.",
+  "summary": "On October 30, 2026, researchers led by Wengong Jin, James J. Collins, Nir Hacohen, Yuanqi Du, and Tianyu Liu (Broad Institute of MIT and Harvard, Northeastern University, MIT, Harvard, Microsoft Research New England, and Yale) introduced MolRSI (arXiv:2610.39714), a recursive self-improving AI agent for molecular discovery. MolRSI compiles scientific papers and code into validated executable skills and runs experience-guided Monte Carlo tree search (MCTS) backed by persistent solution, refinement, and execution memories that update its search policy across tasks. In prospective wet-lab antibiotic discovery from the same 12.1M-compound library used in Collins’s prior expert-led MRSA campaign, MolRSI achieved a 15.9% experimental hit rate (17/107 compounds with MIC <= 32 ug/mL against S. aureus) versus 8.7% (21/241) for the expert-led workflow—raising held-out AUROC from 0.590 to 0.828 and identifying potent, low-cytotoxicity MRSA inhibitors C3 (MIC 1 ug/mL) and C32 (MIC 8 ug/mL). In de novo peptide–MHC (pMHC) minibinder design screened via E. coli phage display, MolRSI yielded 8 target-specific experimental hits (5/251 for MART-1, 3/266 for SARS-CoV-1) whereas Claude Science under the same budget produced zero hits.",
+  "technicalHighlights": [
+    "Achieved a 15.9% wet-lab antibacterial hit rate (17/107) versus 8.7% (21/241) for a prior expert-led workflow on the identical 12.1M-compound library (+82% relative gain), lifting held-out AUROC from 0.590 to 0.828.",
+    "Identified low-cytotoxicity anti-MRSA hits C3 (MIC 1 ug/mL) and C32 (MIC 8 ug/mL) balancing potency, human-cell safety, and structural novelty.",
+    "Produced 8 phage-display-validated target-specific pMHC minibinders (5 against MART-1, 3 against SARS-CoV-1) with preferential on-target binding over peptide-swapped off-targets, while Claude Science yielded 0/555 hits."
+  ],
+  "caveats": "Preprint under active review; wet-lab results establish in vitro antibacterial MICs and phage-display binding enrichment rather than in vivo animal efficacy or clinical candidates.",
+  "contributors": [
+    "Yikun Zhang",
+    "Xiwei Cheng",
+    "Nir Hacohen",
+    "James J. Collins",
+    "Wengong Jin"
+  ],
+  "institutions": [
+    "Broad Institute of MIT and Harvard",
+    "Northeastern University",
+    "Massachusetts Institute of Technology",
+    "Harvard University",
+    "Microsoft Research"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 85,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates genuine cross-task recursive search-policy improvement translating into head-to-head prospective wet-lab gains over both human expert workflows and frontier agents.",
+    "ripple": "Provides a general blueprint for persistent-memory scientific agents across small-molecule screening and precision immunotherapy binder design.",
+    "verification": "Backed by prospective experimental microbiology MIC/cytotoxicity assays and E. coli phage-display sequencing enrichment against matched off-targets.",
+    "velocity": "Cross-task memory enabled strong first-iteration transfer workflows that surpassed 20-round searches from scratch."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2610.39714 — MolRSI: A Recursive Self-Improving AI Agent for Molecular Discovery",
+      "url": "https://arxiv.org/abs/2610.39714",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv HTML Full Text (arXiv:2610.39714v2)",
+      "url": "https://arxiv.org/html/2610.39714v2",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

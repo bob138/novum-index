@@ -1,0 +1,61 @@
+{
+  "id": "arc-state-virtual-cell-2025",
+  "title": "Arc Institute State: First-Generation Virtual Cell Predicts Genetic and Drug Perturbations Across Unseen Contexts",
+  "shortTitle": "Arc State Virtual Cell Model",
+  "date": "2025-06-27",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Virtual Cell Modeling",
+    "Perturbation Biology",
+    "Single-Cell Transcriptomics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "State Virtual Cell Architecture (Arc Institute)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Trained on >100M perturbed cells and 167M observational human cells, Arc Institute’s State improved perturbation discrimination by >50% and differentially expressed gene identification >2× across unseen cell contexts.",
+  "summary": "Released on June 27, 2025 (bioRxiv 10.1101/2025.06.26.661135) by Abhinav K. Adduri, Dhruv Gautam, Beatrice Bevilacqua, Hani Goodarzi, Yusuf H. Roohani, and colleagues at the Arc Institute, State is a first-generation multiscale virtual cell architecture built to predict single-cell transcriptional responses to genetic, signaling, and chemical perturbations while preserving cell-to-cell heterogeneity. State pairs a cell embedding model trained on 167 million observational human cells with a set-to-set state-transition transformer trained on over 100 million perturbed cells across 70 cellular contexts (including Tahoe-100M). Evaluated using the accompanying Cell-Eval benchmark, State improved perturbation effect discrimination by over 50% across major datasets, achieved more than 2-fold higher accuracy identifying true differentially expressed genes across genetic and drug perturbations, and transferred to novel cell types where zero perturbations were seen during training.",
+  "technicalHighlights": [
+    "Combines a 167M-cell observational embedding model with a state-transition model trained on >100M perturbed cells across 70 cellular contexts.",
+    "Improved perturbation discrimination by >50% and achieved >2× accuracy identifying true differentially expressed genes across genetic, cytokine, and chemical perturbations.",
+    "Predicts strong cell-type-specific perturbation responses (including cell survival) in novel cell contexts with zero perturbation training data."
+  ],
+  "caveats": "bioRxiv preprint under active peer review; virtual-cell perturbation prediction on completely unseen drug mechanisms remains noisy relative to experimental Perturb-seq.",
+  "contributors": [
+    "Abhinav K. Adduri",
+    "Dhruv Gautam",
+    "Beatrice Bevilacqua",
+    "Hani Goodarzi",
+    "Yusuf H. Roohani"
+  ],
+  "institutions": [
+    "Arc Institute",
+    "University of California, San Francisco",
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 87,
+    "verification": 80,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates that scaling set-level transition transformers over >100M perturbed cells unlocks cross-context virtual-cell response prediction.",
+    "ripple": "Accelerates in silico target prioritization, drug-mechanism screening, and the broader virtual-cell ecosystem with open weights and Cell-Eval benchmarks.",
+    "verification": "Evaluated across multi-million-cell genetic and chemical Perturb-seq benchmarks via Cell-Eval, though formal journal peer review is pending.",
+    "velocity": "Simulates thousands of candidate genetic and chemical perturbations across unseen cell types computationally before running wet-lab screens."
+  },
+  "sources": [
+    {
+      "label": "bioRxiv (2025) — Predicting Cellular Responses to Perturbation Across Diverse Contexts with State",
+      "url": "https://doi.org/10.1101/2025.06.26.661135",
+      "type": "paper"
+    }
+  ],
+  "enables": [
+    "uce-universal-cell-embedding-2026"
+  ]
+}

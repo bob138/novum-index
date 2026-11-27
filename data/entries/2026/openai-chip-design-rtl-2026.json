@@ -1,0 +1,57 @@
+{
+  "id": "openai-chip-design-rtl-2026",
+  "title": "OpenAI Models Optimize Production Jalapeño Silicon, AMD Flagship GPU RTL, and RISC-V Cores",
+  "shortTitle": "OpenAI Silicon & AMD RTL Chip Design",
+  "date": "2026-11-18",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Hardware Architecture",
+    "Electronic Design Automation",
+    "RTL Synthesis"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-6.2 Astra / GPT-o3 mini + Synopsys EDA",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "<5 months (AMD GPU IP)",
+  "isAnchor": false,
+  "whyItMatters": "OpenAI frontier models rewrote production SystemVerilog RTL to cut silicon-proven Jalapeño area by 10–13% and deliver up to 14% PPA gains on AMD flagship GPU IP sent for manufacturing.",
+  "summary": "On November 18, 2026, OpenAI reported expert-level hardware microarchitecture and SystemVerilog RTL optimizations verified with Synopsys EDA tools across production silicon and open-source processors. On OpenAI’s first custom inference chip, Jalapeño, model-proposed redesigns across floating-point adders, multipliers (including one cutting cell area ~15% while halving latency from two cycles to one), dot-product logic, and pipeline stages reduced standard-cell area by roughly 13% in the vector unit and 10% in the matrix unit—gains confirmed during physical silicon bring-up. In a collaboration with AMD, OpenAI’s model rewrote production SystemVerilog RTL verified in Synopsys to achieve up to 14% power-performance-area (PPA) improvements over heavily optimized baselines on AMD’s flagship GPU IP (roughly a year of microarchitectural progress in under five months, already taped into manufacturing designs), plus single-digit PPA gains on next-generation flagship CPU blocks. Across 9,881 scored evaluation runs on open-source 32-bit RISC-V cores (PicoRV32 and OpenTitan Ibex), GPT-6.2 Astra achieved the highest throughput both when optimizing existing RTL and when designing cores directly from written specifications.",
+  "technicalHighlights": [
+    "Silicon-proven ~13% vector-unit and ~10% matrix-unit standard-cell area reductions on OpenAI’s Jalapeño inference chip, including a 15% smaller multiplier halving latency from 2 cycles to 1.",
+    "Delivered up to 14% PPA improvement over heavily optimized baselines on AMD flagship GPU IP in under 5 months—with changes integrated into manufacturing tapeouts—plus verified gains on next-gen AMD CPU blocks.",
+    "Across 9,881 Yosys/simulation-verified runs on PicoRV32 and Ibex RISC-V cores, GPT-6.2 Astra topped all models in both RTL optimization and from-specification processor design."
+  ],
+  "caveats": "Reported via company technical publication rather than peer-reviewed hardware conference proceedings; RISC-V from-specification evaluations omit certain production features and physical place-and-route timing signoff.",
+  "contributors": [
+    "OpenAI Hardware & Frontier Research",
+    "AMD Engineering",
+    "Synopsys EDA Collaboration"
+  ],
+  "institutions": [
+    "OpenAI",
+    "AMD",
+    "Synopsys"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 90,
+    "verification": 84,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates frontier reasoning models performing expert-level SystemVerilog microarchitecture redesign grounded in formal EDA equivalence and synthesis checks.",
+    "ripple": "Directly accelerates the recursive hardware loop powering future AI compute across custom inference accelerators, flagship GPUs, and CPUs.",
+    "verification": "Jalapeño optimizations are silicon-proven at bring-up and AMD GPU RTL rewrites passed Synopsys formal equivalence and entered manufacturing tapeouts.",
+    "velocity": "Compressed roughly a year of elite GPU microarchitecture PPA progress into under five months."
+  },
+  "sources": [
+    {
+      "label": "OpenAI Research — Advancing Chip Design with OpenAI Models",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "type": "announcement"
+    }
+  ],
+  "enables": []
+}

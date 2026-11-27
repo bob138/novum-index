@@ -47,7 +47,8 @@
   },
   "enables": [
     "alphatensor-2022",
-    "alphadev-sorting-2023"
+    "alphadev-sorting-2023",
+    "openai-chip-design-rtl-2026"
   ],
   "sources": [
     {

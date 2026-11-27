@@ -1,0 +1,63 @@
+{
+  "id": "uce-universal-cell-embedding-2026",
+  "title": "Universal Cell Embedding (UCE): Zero-Shot Cross-Species Foundation Model for Cell Biology",
+  "shortTitle": "Universal Cell Embedding (Nature)",
+  "date": "2026-07-08",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Single-Cell Genomics",
+    "Cross-Species Cell Atlases",
+    "Virtual Cell Foundation Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Universal Cell Embedding / UCE (Stanford / CZ Biohub / Arc Institute)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, UCE maps ~36M cells across 8 species into a shared protein-grounded representation space, enabling zero-shot cell-type discovery and atlas integration across entirely unseen species.",
+  "summary": "Published in Nature on July 8, 2026 (Vol. 656, Issue 8126, pp. 183–191, doi:10.1038/s41586-026-10689-z, PMID 42420460), Yanay Rosen, Yusuf Roohani, Stephen Quake, Jure Leskovec, and collaborators at Stanford University, the Chan Zuckerberg Biohub, and the Arc Institute introduced Universal Cell Embedding (UCE), a foundation model for single-cell biology. Rather than tying tokens to a single species’ gene vocabulary, UCE encodes each expressed gene using protein language model embeddings alongside chromosomal coordinates across ~36 million cells spanning eight diverse species. This species-agnostic representation allows UCE to embed cells from completely unseen organisms zero-shot without fine-tuning, align homologous cell types across hundreds of millions of years of evolution, and uncover novel cell-state relationships across disparate tissues and experimental batches.",
+  "technicalHighlights": [
+    "Trained on ~36 million single-cell transcriptomes across 8 species using protein-language-model gene representations, eliminating fixed single-species gene vocabularies.",
+    "Embeds single-cell datasets from entirely unseen species zero-shot without retraining, accurately aligning conserved and divergent cell types across evolution.",
+    "Published in Nature (Vol. 656, PMC13441871) as a foundational representation layer for virtual-cell atlases and cross-species comparative biology."
+  ],
+  "caveats": "Captures static single-cell transcriptomic states rather than causal perturbation dynamics or spatial tissue architecture on its own.",
+  "contributors": [
+    "Yanay Rosen",
+    "Yusuf Roohani",
+    "Stephen Quake",
+    "Jure Leskovec"
+  ],
+  "institutions": [
+    "Stanford University",
+    "Chan Zuckerberg Biohub",
+    "Arc Institute"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 91,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Solves cross-species single-cell alignment by grounding gene identity in universal protein sequence embeddings rather than species-specific gene IDs.",
+    "ripple": "Enables zero-shot annotation of newly sequenced non-model organisms and unifies disparate cell atlases across biomedicine.",
+    "verification": "Peer-reviewed in Nature with extensive zero-shot cross-species, batch-integration, and cell-ontology validation.",
+    "velocity": "Eliminates custom ortholog mapping and per-dataset retraining when analyzing newly profiled tissues or species."
+  },
+  "sources": [
+    {
+      "label": "Nature (2026) — Universal Cell Embedding Provides a Foundation Model for Cell Biology",
+      "url": "https://doi.org/10.1038/s41586-026-10689-z",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 42420460)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42420460/",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

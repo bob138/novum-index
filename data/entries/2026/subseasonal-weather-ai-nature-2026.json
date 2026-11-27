@@ -1,0 +1,65 @@
+{
+  "id": "subseasonal-weather-ai-nature-2026",
+  "title": "Probabilistic ML Bias Correction Doubles Subseasonal AI Weather Skill (3–6 Weeks Out)",
+  "shortTitle": "ML Subseasonal Weather Forecasting",
+  "date": "2026-10-14",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Atmospheric Physics",
+    "Subseasonal Forecasting",
+    "Probabilistic Machine Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Probabilistic Bias Correction ML Framework (Microsoft Research / MIT / ECMWF)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, probabilistic ML bias correction doubled the subseasonal skill of AI weather forecasts 3–6 weeks ahead, improved dynamical models on 91–98% of targets, and won the 2025 ECMWF competition.",
+  "summary": "Published in Nature on October 14, 2026 (Vol. 658, doi:10.1038/s41586-026-11126-x), Hannah Guan, Soukayna Mouatadid, Paulo Orenstein, Judah Cohen, Lester Mackey, and collaborators across Microsoft Research, MIT, the University of Toronto, and ECMWF introduced probabilistic bias correction—a machine learning framework that learns to remove systematic distributional errors from historical probabilistic weather ensembles at subseasonal (3–6 week) lead times, the notoriously chaotic \"predictability desert\" between medium-range weather and seasonal climate. Applied to operational ECMWF dynamical and AI weather ensembles, the method doubled subseasonal skill for AI weather models and improved dynamical forecast accuracy across 91% of geopotential-pressure targets, 92% of temperature targets, and 98% of precipitation targets. In the real-time 2025 ECMWF subseasonal forecasting competition, the ML-corrected ensembles outperformed six national operational centers, an international multimodel ensemble, ECMWF’s standalone AI system, and 34 competing teams.",
+  "technicalHighlights": [
+    "Doubled subseasonal (3–6 week) forecast skill of AI weather models while improving dynamical model accuracy on 91% of pressure, 92% of temperature, and 98% of precipitation targets.",
+    "Won the 2025 real-time ECMWF subseasonal forecasting competition, outperforming six major operational meteorological centers, an international ensemble, ECMWF’s AI system, and 34 other teams.",
+    "Published peer-reviewed in Nature (Vol. 658, Issue 8137, PMID 42875498), improving extreme-event probability calibration for agriculture, energy, water, and disaster planning."
+  ],
+  "caveats": "Post-processing bias correction remains bounded by the underlying predictability horizon of chaotic atmospheric dynamics and relies on multi-decade reforecast archives for training.",
+  "contributors": [
+    "Hannah Guan",
+    "Soukayna Mouatadid",
+    "Paulo Orenstein",
+    "Judah Cohen",
+    "Lester Mackey"
+  ],
+  "institutions": [
+    "Microsoft Research",
+    "Massachusetts Institute of Technology",
+    "ECMWF",
+    "University of Toronto"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 87,
+    "verification": 92,
+    "velocity": 84
+  },
+  "scoreRationale": {
+    "foundational": "Cracks the long-intractable 3–6 week subseasonal \"predictability desert\" by learning full probabilistic error structures rather than point debiasing.",
+    "ripple": "Immediately deployable atop both physics-based and AI global forecasting systems for agriculture, grid management, wildfire, and drought preparedness.",
+    "verification": "Peer-reviewed in Nature and validated prospectively in the live 2025 ECMWF real-time forecasting competition.",
+    "velocity": "Delivers substantial real-time skill gains without requiring costly re-integration of coupled ocean–atmosphere physics models."
+  },
+  "sources": [
+    {
+      "label": "Nature (2026) — Advancing Subseasonal Forecasting with Machine Learning",
+      "url": "https://doi.org/10.1038/s41586-026-11126-x",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 42875498)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42875498/",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

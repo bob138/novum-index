@@ -1,0 +1,56 @@
+{
+  "id": "sargent-acidic-oer-catalyst-ai-2026",
+  "title": "Mixed-Acceleration ML Discovers Ruthenium Acidic OER Catalysts with 12× Lower Dissolution for Green Hydrogen",
+  "shortTitle": "AI Acidic OER Green-Hydrogen Catalysts",
+  "date": "2026-01-06",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Electrocatalysis",
+    "Green Hydrogen",
+    "Active-Learning Materials Discovery"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Mixed-Acceleration Active-Learning ML Platform (Univ. of Toronto)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "379 closed-loop experiments",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature Catalysis, ML-guided mixed acceleration across 379 experiments discovered 7 ruthenium acidic OER catalysts surpassing the activity–stability Pareto frontier, cutting dissolution 12× vs RuO₂.",
+  "summary": "Published in Nature Catalysis on January 6, 2026 (Vol. 9, Issue 1, pp. 28–36, doi:10.1038/s41929-025-01463-x), Yang Bai, Edward H. Sargent, Jason Hattrick-Simpers, and collaborators at the University of Toronto solved a central bottleneck in proton-exchange-membrane (PEM) green hydrogen electrolysis: replacing scarce, prohibitively expensive iridium oxygen-evolution catalysts with durable ruthenium oxides that resist rapid acidic dissolution. By pairing machine learning active search with high-throughput synthesis and electrochemical screening (\"mixed acceleration\") across just 379 multi-element oxide experiments, the closed-loop workflow discovered seven ruthenium-based catalysts surpassing the prior activity–stability Pareto frontier. The lead composition, Ru0.5Zr0.1Zn0.4Ox, achieved an overpotential of 194 mV at 10 mA/cm² while exhibiting 12-fold lower ruthenium dissolution than benchmark RuO2 in harsh acid.",
+  "technicalHighlights": [
+    "Active-learning ML paired with high-throughput electrochemical screening explored multi-metal oxide space in 379 experiments to discover 7 catalysts beating the acidic OER activity–stability Pareto frontier.",
+    "Lead catalyst Ru0.5Zr0.1Zn0.4Ox delivered 194 mV overpotential at 10 mA/cm² with 12× lower ruthenium dissolution than RuO2 under corrosive acidic operation.",
+    "Directly addresses the iridium scarcity bottleneck limiting gigawatt-scale PEM green-hydrogen water electrolyzers."
+  ],
+  "caveats": "Multi-thousand-hour industrial membrane-electrode-assembly durability at commercial current densities (>1 A/cm²) still requires scale-up engineering.",
+  "contributors": [
+    "Yang Bai",
+    "Jason Hattrick-Simpers",
+    "Edward H. Sargent"
+  ],
+  "institutions": [
+    "University of Toronto",
+    "Northwestern University"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 86,
+    "verification": 93,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Breaks the classic activity–stability trade-off in acidic oxygen-evolution electrocatalysis using multi-element ruthenium oxides discovered via closed-loop ML.",
+    "ripple": "Targets the single most critical precious-metal supply constraint (iridium) in global PEM green-hydrogen deployment.",
+    "verification": "Peer-reviewed in Nature Catalysis with experimental synthesis, electrochemical activity, and ICP-MS dissolution measurements.",
+    "velocity": "Navigated a vast multi-metal compositional space to 7 Pareto-optimal catalysts in just 379 closed-loop experiments."
+  },
+  "sources": [
+    {
+      "label": "Nature Catalysis (2026) — Stable Acidic Oxygen-Evolving Catalyst Discovery Through Mixed Accelerations",
+      "url": "https://doi.org/10.1038/s41929-025-01463-x",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

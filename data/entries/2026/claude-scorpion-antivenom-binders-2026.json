@@ -1,0 +1,67 @@
+{
+  "id": "claude-scorpion-antivenom-binders-2026",
+  "title": "Claude Science Autonomously Designs 17 Lab-Confirmed Protein Binders Against Scorpion Neurotoxins in 64 Hours",
+  "shortTitle": "Claude Scorpion Toxin Minibinders",
+  "date": "2026-10-20",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Protein Design",
+    "Neglected Tropical Diseases",
+    "Autonomous Bio-Agents"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Science Internal Research Model + 12 Protein Tools (Anthropic)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "64 hours autonomous campaign",
+  "isAnchor": false,
+  "whyItMatters": "In a 64-hour autonomous run orchestrating 12 protein-design tools, Claude generated 318,484 minibinder candidates against five lethal scorpion neurotoxins, yielding 17 independently lab-confirmed binders across two CROs.",
+  "summary": "On October 20, 2026, Anthropic (initiated in collaboration with Citrini Research) released a technical report and open dataset showing an internal research model inside Claude Science autonomously orchestrating a 64-hour de novo protein design campaign targeting five high-risk scorpion neurotoxins—addressing a neglected tropical burden causing ~1.2 million stings annually. Drawing on 12 specialist protein structure and design tools, Claude generated 318,484 candidate minibinders, computationally screened 553,052 design–toxin pairs, and selected 180 designs (augmented with 31 researcher picks for 211 total) synthesized and assayed independently by Adaptyv Bio and Twist Bioscience. Seventeen designs met strict binding criteria across both laboratories against four of the five target toxins with zero off-target CLEC12A binding—including two tight nanomolar-class binders to Centruroides noxius Cn2 and an ~18% hit rate (11/60) on single-toxin designs. Anthropic released all 211 designs, structures, and wet-lab measurements publicly on Hugging Face.",
+  "technicalHighlights": [
+    "Autonomously orchestrated 12 specialist bio-design tools for 64 hours, generating 318,484 minibinder candidates and evaluating 553,052 design–toxin pairs against five scorpion neurotoxins.",
+    "Independent wet-lab synthesis and binding assays by two CROs (Adaptyv Bio and Twist Bioscience) confirmed 17 binders out of 211 tested across four target toxins with no CLEC12A off-target binding (11/60 or ~18% on dedicated single-toxin designs).",
+    "All 211 sequences, structures, computational scores, and experimental assay measurements were released openly on Hugging Face for independent audit."
+  ],
+  "caveats": "Preprint/technical report, not yet peer-reviewed; experiments confirmed in vitro target binding only—no cellular toxin neutralization or animal survival studies have been performed, and no single design achieved cross-reactive multi-toxin binding.",
+  "contributors": [
+    "Anthropic Life Sciences Team",
+    "Citrini Research"
+  ],
+  "institutions": [
+    "Anthropic",
+    "Citrini Research",
+    "Adaptyv Bio",
+    "Twist Bioscience"
+  ],
+  "scores": {
+    "foundational": 76,
+    "ripple": 81,
+    "verification": 82,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates a general-purpose frontier agent autonomously planning target epitopes, coordinating 12 specialist protein tools, and prioritizing candidates for real wet-lab validation.",
+    "ripple": "Lowers the barrier to early-stage biologics discovery for neglected tropical diseases and underfunded therapeutic targets.",
+    "verification": "Binding verified independently across two external laboratories (Adaptyv Bio and Twist Bioscience) with full open dataset release, though neutralization remains untested.",
+    "velocity": "Completed end-to-end 318k-candidate design and filtering in a single 64-hour autonomous run."
+  },
+  "sources": [
+    {
+      "label": "Anthropic Technical Report — De Novo Design of Protein Binders Against Scorpion Toxins with Claude (PDF)",
+      "url": "https://assets.claude.com/31ac578806cffd8b3d92d8affe6edc4c04d502e1.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "Anthropic Research — How Claude Designed Protein Binders Against Scorpion Neurotoxins",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "type": "announcement"
+    },
+    {
+      "label": "Open Experimental Dataset (Hugging Face)",
+      "url": "https://huggingface.co/datasets/Anthropic/scorpion-toxin-binder-design",
+      "type": "code"
+    }
+  ],
+  "enables": []
+}

@@ -1,0 +1,64 @@
+{
+  "id": "masai-mammography-ai-rct-2026",
+  "title": "MASAI Randomized Controlled Trial (105,934 Women) Proves AI Mammography Boosts Sensitivity and Cuts Aggressive Interval Cancers",
+  "shortTitle": "MASAI Mammography AI Trial (Lancet)",
+  "date": "2026-01-31",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Clinical Oncology AI",
+    "Randomized Controlled Trials",
+    "Medical Imaging"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Transpara AI Mammography Triage & Detection (MASAI Trial / Lund University)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in The Lancet, the first population-based breast-AI RCT (105,934 women) proved AI-supported mammography raised sensitivity (80.5% vs 73.8%), lowered aggressive interval cancers, and cut radiologist workload with equal specificity.",
+  "summary": "Published in The Lancet on January 31, 2026 (Vol. 407, Issue 10527, pp. 505–514, doi:10.1016/S0140-6736(25)02464-X, PMID 41620232), Jessie Gommers, Kristina Lång, and colleagues at Lund University, Skåne University Hospital, and Radboudumc reported the primary-outcome results of MASAI (NCT04838756)—the first population-based randomized controlled trial of AI-supported mammography screening. Across 105,934 women randomly assigned 1:1 in Sweden’s national screening program, AI triaged exams to single or double radiologist reading and provided detection support. Compared with standard double reading without AI, AI-supported screening met its primary non-inferiority endpoint with a lower overall interval cancer rate (1.55 vs 1.76 per 1,000 participants; proportion ratio 0.88), produced fewer invasive (75 vs 89), T2+ (38 vs 48), and non-luminal A (43 vs 59) interval cancers, significantly raised cancer detection sensitivity (80.5% vs 73.8%, p = 0.031) across ages and breast densities, maintained identical 98.5% specificity, and substantially reduced screen-reading workload.",
+  "technicalHighlights": [
+    "First population-based randomized controlled trial of AI in breast cancer screening (105,934 women, NCT04838756), establishing gold-standard clinical outcome evidence.",
+    "Increased screening sensitivity from 73.8% to 80.5% (p = 0.031) at identical 98.5% specificity while reducing radiologist screen-reading workload.",
+    "Achieved non-inferior, lower interval cancer rates (1.55 vs 1.76 per 1,000) with fewer invasive (75 vs 89), T2+ (38 vs 48), and non-luminal A (43 vs 59) missed cancers."
+  ],
+  "caveats": "Single-country Swedish screening program using one commercial AI platform; while interval cancers declined descriptively, the trial was powered for non-inferiority (p = 0.41 for superiority on overall interval cancer rate).",
+  "contributors": [
+    "Jessie Gommers",
+    "Veronica Hernström",
+    "Viktoria Josefsson",
+    "Hanna Sartor",
+    "Kristina Lång"
+  ],
+  "institutions": [
+    "Lund University",
+    "Skåne University Hospital",
+    "Radboud University Medical Centre"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 83
+  },
+  "scoreRationale": {
+    "foundational": "Crosses the clinical-evidence chasm from retrospective AI imaging benchmarks to a 105,934-patient randomized controlled trial with hard 2-year interval-cancer outcomes.",
+    "ripple": "Directly informs national cancer-screening policy across Europe and globally, easing radiologist shortages while detecting more aggressive tumors early.",
+    "verification": "Gold-standard single-blinded, population-based randomized controlled trial (NCT04838756) published in The Lancet.",
+    "velocity": "AI triage nearly halved radiologist reading workload in routine clinical practice while improving sensitivity."
+  },
+  "sources": [
+    {
+      "label": "The Lancet (2026) — Interval Cancer, Sensitivity, and Specificity in the MASAI Randomized Controlled Trial",
+      "url": "https://doi.org/10.1016/S0140-6736(25)02464-X",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 41620232)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41620232/",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

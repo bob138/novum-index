@@ -1,0 +1,53 @@
+{
+  "id": "regenerating-codes-tradeoff-gpt6-2026",
+  "title": "GPT-6 Astra Characterizes Exact Storage–Repair-Bandwidth Tradeoffs for (6,5,5) and (7,6,6) Regenerating Codes",
+  "shortTitle": "Regenerating Code Tradeoffs (GPT-6)",
+  "date": "2026-10-20",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Information Theory",
+    "Distributed Storage Coding",
+    "Linear Programming Certificates"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "GPT-6 Astra + Entropy-LP Integer Certifier (Texas A&M)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "GPT-6 Astra discovered new conditioning arguments and entropy-LP outer bounds with exact integer certificates, completely characterizing optimal storage-repair tradeoffs for (6,5,5) and (7,6,6) regenerating codes.",
+  "summary": "On October 20, 2026, Chao Tian (Texas A&M University) published arXiv:2610.28199 completely characterizing the exact information-theoretic storage–repair-bandwidth tradeoff regions for exact-repair regenerating codes at parameters (n,k,d) = (6,5,5) and (7,6,6), proving that the layered codes of Tian et al. are strictly optimal. Determining exact tradeoff regions for regenerating codes beyond tiny parameter regimes has long defeated direct Shannon-type linear programs due to combinatorial explosion. GPT-6 Astra assisted in discovering both a new conditioning reduction and a structured search over restricted subsets of entropy linear-program constraints, yielding exact integer-valued proof certificates bundled with an independent Python verifier for machine checking.",
+  "technicalHighlights": [
+    "Establishes exact information-theoretic outer bounds completely determining the storage–repair-bandwidth regions for (6,5,5) and (7,6,6) exact-repair regenerating codes.",
+    "Proves optimality of Tian et al.’s layered regenerating codes in both parameter regimes, extending exact distributed-storage limits beyond prior tractable cases.",
+    "GPT-6 Astra discovered a new conditioning argument and structured entropy-LP search, producing exact integer-valued proof certificates checked by a bundled Python verifier."
+  ],
+  "caveats": "Preprint under active review; certificates are checked via exact integer arithmetic in Python rather than a kernel-verified proof assistant like Lean 4.",
+  "contributors": [
+    "Chao Tian"
+  ],
+  "institutions": [
+    "Texas A&M University"
+  ],
+  "scores": {
+    "foundational": 76,
+    "ripple": 74,
+    "verification": 84,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Resolves exact fundamental information-theoretic limits for two longstanding open parameter regimes of distributed storage regenerating codes.",
+    "ripple": "Demonstrates a general AI-guided conditioning and restricted entropy-LP workflow applicable to network coding and multi-user information theory.",
+    "verification": "Accompanied by exact integer-valued proof certificates and an executable Python verifier eliminating floating-point LP ambiguity.",
+    "velocity": "Overcame decades of combinatorial entropy-LP intractability via AI-discovered conditioning reductions."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2610.28199 — Exact Storage-Repair-Bandwidth Tradeoffs for (6,5,5) and (7,6,6) Regenerating Codes",
+      "url": "https://arxiv.org/abs/2610.28199",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

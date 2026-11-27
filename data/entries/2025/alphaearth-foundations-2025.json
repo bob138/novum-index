@@ -1,0 +1,63 @@
+{
+  "id": "alphaearth-foundations-2025",
+  "title": "AlphaEarth Foundations: Universal Planetary Embedding Field Cuts Global Mapping Error by 24%",
+  "shortTitle": "AlphaEarth Foundations Planetary AI",
+  "date": "2025-07-29",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Earth Observation",
+    "Geospatial Foundation Models",
+    "Remote Sensing"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "AlphaEarth Foundations (Google DeepMind)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "AlphaEarth Foundations fuses multi-sensor satellite archives into compact 64-dimensional 10m global embedding fields, cutting planetary mapping error by 24% while requiring 16× less storage.",
+  "summary": "Released on July 29, 2025 (arXiv:2507.22291) by Christopher F. Brown, Michal R. Kazmierski, Valerie J. Pasquarella, Pushmeet Kohli, and colleagues at Google DeepMind, AlphaEarth Foundations acts as a virtual satellite unifying petabytes of asynchronous optical, radar, LiDAR, climate, and topographic Earth-observation streams into continuous spatiotemporal embedding fields at 10-meter resolution. Each 10×10 m patch of terrestrial land and coastal water is summarized into a compact 64-dimensional unit-sphere vector requiring 16× less storage than prior AI geospatial representations. Across a diverse suite of sparse-label global mapping benchmarks—spanning crop monitoring, deforestation, water dynamics, and cloud-obscured regions like Ecuador and Antarctica—AlphaEarth Foundations reduced average mapping error by 24% without retraining, and DeepMind released global annual Satellite Embedding layers (2017–2024) openly in Google Earth Engine.",
+  "technicalHighlights": [
+    "Assimilates multi-sensor satellite imagery, radar, LiDAR, and climate feeds into continuous 10m spatiotemporal embedding fields that see through persistent cloud cover.",
+    "Reduced average error rate by 24% across diverse sparse-label planetary mapping evaluations without retraining, while cutting representation storage requirements 16×.",
+    "Released open global annual Satellite Embedding datasets (2017–2024) on Google Earth Engine, immediately adopted by conservation and land-use initiatives such as MapBiomas."
+  ],
+  "caveats": "Published as an arXiv technical report and Google Earth Engine dataset release rather than a peer-reviewed journal article; annual static layers trade sub-annual temporal granularity for storage efficiency.",
+  "contributors": [
+    "Christopher F. Brown",
+    "Michal R. Kazmierski",
+    "Valerie J. Pasquarella",
+    "Rebecca Moore",
+    "Pushmeet Kohli"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Google Research"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 89,
+    "verification": 84,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Establishes the first universal continuous-time planetary embedding field fusing disparate Earth-observation modalities into one analysis-ready representation.",
+    "ripple": "Open 2017–2024 10m global embeddings democratize deforestation tracking, biodiversity conservation, agriculture, and climate adaptation mapping worldwide.",
+    "verification": "Benchmarked systematically against all major geospatial foundation models across sparse-label tasks and publicly deployed on Google Earth Engine.",
+    "velocity": "Replaces months of bespoke multi-satellite preprocessing and model training with lightweight linear classifiers over 16× smaller embeddings."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2507.22291 — AlphaEarth Foundations: An Embedding Field Model for Global Mapping",
+      "url": "https://arxiv.org/abs/2507.22291",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind — AlphaEarth Foundations Helps Map Our Planet in Unprecedented Detail",
+      "url": "https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/",
+      "type": "announcement"
+    }
+  ],
+  "enables": []
+}

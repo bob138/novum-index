@@ -47,7 +47,10 @@
     "velocity": "Produces full 15-day global stochastic weather trajectories in 8 minutes on a single TPU instead of hours on HPC clusters."
   },
   "enables": [
-    "aurora-earth-system-2025"
+    "aurora-earth-system-2025",
+    "weathernext-cyclones-nature-2026",
+    "weathernext-3-raw-obs-2026",
+    "subseasonal-weather-ai-nature-2026"
   ],
   "sources": [
     {

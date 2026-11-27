@@ -1,0 +1,64 @@
+{
+  "id": "weathernext-3-raw-obs-2026",
+  "title": "WeatherNext 3: Raw-Observation AI Global Weather Model Reaches Hourly 0.1° Resolution",
+  "shortTitle": "WeatherNext 3 Raw-Observation Weather AI",
+  "date": "2026-09-03",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Atmospheric Physics",
+    "Direct Satellite Assimilation",
+    "Global Weather Prediction"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "WeatherNext 3 + SatWeave & PARDIG (Google DeepMind)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "WeatherNext 3 breaks AI weather models’ reliance on 6-hourly physics analysis grids—ingesting live geostationary satellite mosaics to issue hourly 0.1° global forecasts and direct unseen-station predictions.",
+  "summary": "Posted on September 3, 2026 (arXiv:2609.03582) and followed on November 13, 2026 by the open release of its foundational Earth-science training datasets (SatWeave and PARDIG), Google DeepMind’s WeatherNext 3 overcomes the two core bottlenecks of prior AI weather models: coarse spatial/temporal grids and exclusive dependence on physics-based reanalysis initialization. By directly ingesting low-latency global geostationary satellite mosaics (SatWeave) alongside AI-derived global precipitation estimates (PARDIG, which improves hourly light-to-moderate precipitation detection >30% over NASA IMERG-Final), WeatherNext 3 generates new global probabilistic forecasts every hour—rather than every 6 hours—at 0.1° spatial resolution and hourly time steps matching top physics-based global models. Moving beyond gridded analysis variables, it directly predicts satellite precipitation, tropical cyclones, and sparse weather-station 2m temperature and dewpoint at arbitrary unseen locations conditioned on local geography.",
+  "technicalHighlights": [
+    "Breaks AI weather forecasting’s analysis-only barrier by ingesting live geostationary satellite observations (SatWeave) to issue new global forecasts every hour instead of every 6 hours.",
+    "Matches physics-based global models at 0.1° spatial resolution and hourly time steps for single-level fields including solar radiation and cloud cover.",
+    "Directly models satellite precipitation (via PARDIG, >30% CSI gain over IMERG-Final), tropical cyclones, and sparse ground stations—cutting 2m temperature/dewpoint error at unseen stations."
+  ],
+  "caveats": "Preprint posted September 2026 under active community review; operational meteorological agencies continue to evaluate extreme-event calibration alongside numerical assimilation pipelines.",
+  "contributors": [
+    "Stephan Rasp",
+    "Boris Babenko",
+    "Dominic Masters",
+    "Ferran Alet",
+    "Peter Battaglia",
+    "Alvaro Sanchez-Gonzalez"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Google Research"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 82,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Unifies data assimilation, medium-range forecasting, and local station post-processing into a single end-to-end observation-driven global weather model.",
+    "ripple": "Open release of SatWeave and PARDIG (1999–2026 archive + live feeds) catalyzes hydrology, flood, solar-energy, and localized climate forecasting worldwide.",
+    "verification": "Comprehensive quantitative verification across global benchmarks, unseen weather stations, and US/Europe/Japan ground radar networks; journal peer review is pending.",
+    "velocity": "Updates global 0.1° probabilistic forecasts hourly from live satellite data at a tiny fraction of numerical assimilation compute."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2609.03582 — WeatherNext 3: Increasing Resolution and Performance of Global Weather Models with Raw Observations",
+      "url": "https://arxiv.org/abs/2609.03582",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind — PARDIG & SatWeave: Foundational Datasets for Earth Science",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "type": "announcement"
+    }
+  ],
+  "enables": []
+}

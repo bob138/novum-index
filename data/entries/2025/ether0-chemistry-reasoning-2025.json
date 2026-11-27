@@ -1,0 +1,67 @@
+{
+  "id": "ether0-chemistry-reasoning-2025",
+  "title": "ether0: Open-Weight 24B Scientific Reasoning Model Beats Frontier LLMs and Experts on Molecular Design",
+  "shortTitle": "ether0 Chemistry Reasoning Model",
+  "date": "2025-06-04",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Scientific Reasoning LLMs",
+    "Molecular Design",
+    "Reinforcement Learning for Chemistry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "ether0 (24B RL Chemistry Reasoning Model, FutureHouse)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Accepted to NeurIPS 2025, FutureHouse’s open-weight 24B model ether0 was RL-trained on 640,730 verifiable chemistry problems across 375 tasks, outperforming frontier models and human experts on molecular design.",
+  "summary": "Released on June 4, 2025 (arXiv:2506.17238) and accepted to the NeurIPS 2025 main track, Siddharth M. Narayanan, James D. Braza, Ryan-Rhys Griffiths, Samuel G. Rodriques, Andrew D. White, and colleagues at FutureHouse proved that reinforcement-learning reasoning models generalize beyond math and coding to experimental chemistry without domain pretraining. Built on Mistral-Small-24B, ether0 was post-trained with verifiable chemical reward functions across 640,730 experimentally grounded problems spanning 375 tasks—including reaction prediction, retrosynthesis, synthesizability, blood–brain barrier permeability, human receptor activity, and odorant design. Reasoning in natural language before emitting valid SMILES chemical structures, the open-weight 24B model outperformed general-purpose frontier LLMs, specialized chemistry transformers, and human chemistry experts on molecular design benchmarks with far higher data efficiency.",
+  "technicalHighlights": [
+    "First open-weight reinforcement-learning scientific reasoning model for chemistry (24B parameters), post-trained on 640,730 experimentally grounded problems across 375 chemical tasks.",
+    "Outperformed frontier general LLMs, specialized chemistry models (including Molecular Transformer), and human experts on molecular design and reaction tasks.",
+    "Accepted to NeurIPS 2025 main track with fully open weights, verifiable chemical reward functions, and evaluation suite."
+  ],
+  "caveats": "Benchmarked computationally against experimental datasets and verifiable chemical evaluators rather than prospective de novo wet-lab synthesis of new drugs.",
+  "contributors": [
+    "Siddharth M. Narayanan",
+    "James D. Braza",
+    "Ryan-Rhys Griffiths",
+    "Samuel G. Rodriques",
+    "Andrew D. White"
+  ],
+  "institutions": [
+    "FutureHouse"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 85,
+    "verification": 88,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Proves RL with verifiable scientific rewards transfers long chain-of-thought reasoning directly into experimental chemistry and molecular structure generation.",
+    "ripple": "Open-weight 24B release and reward environments catalyzed a wave of verifiable-reward scientific reasoning models across chemistry and biology.",
+    "verification": "Peer-reviewed at NeurIPS 2025 with open model weights, benchmarks, and deterministic chemical verification functions.",
+    "velocity": "Achieved expert-beating molecular design with a compact 24B model and far less data than domain-pretrained chemistry transformers."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2506.17238 (NeurIPS 2025) — Training a Scientific Reasoning Model for Chemistry",
+      "url": "https://arxiv.org/abs/2506.17238",
+      "type": "paper"
+    },
+    {
+      "label": "FutureHouse Research Announcement — ether0",
+      "url": "https://www.futurehouse.org/research-announcements/ether0-a-scientific-reasoning-model-for-chemistry",
+      "type": "announcement"
+    },
+    {
+      "label": "Open Weights on Hugging Face (futurehouse/ether0)",
+      "url": "https://huggingface.co/futurehouse/ether0",
+      "type": "code"
+    }
+  ],
+  "enables": []
+}

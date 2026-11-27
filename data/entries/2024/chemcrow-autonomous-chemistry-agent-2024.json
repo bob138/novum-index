@@ -48,7 +48,8 @@
     "velocity": "Compressed multi-step retrosynthesis planning, safety screening, and robotic execution scripting into autonomous minutes-long agent sessions."
   },
   "enables": [
-    "futurehouse-robin-dry-amd-2026"
+    "futurehouse-robin-dry-amd-2026",
+    "ether0-chemistry-reasoning-2025"
   ],
   "sources": [
     {

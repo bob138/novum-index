@@ -45,7 +45,9 @@
     "verification": "Peer-reviewed in Nature Methods with open weights, public datasets, and massive independent adoption across biology.",
     "velocity": "Eliminated months of lab-specific segmentation retraining per microscope or tissue type."
   },
-  "enables": [],
+  "enables": [
+    "mitospace-4d-virtual-cell-2026"
+  ],
   "sources": [
     {
       "label": "Nature Methods (2021 / epub Dec 2020): Cellpose: a generalist algorithm for cellular segmentation",

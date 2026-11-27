@@ -47,7 +47,9 @@
     "verification": "Peer-reviewed in Nature with atomic crystal structures, biophysical binding kinetics, and in vivo murine lethal-challenge survival data.",
     "velocity": "Bypassed slow, expensive horse-immunization antivenom pipelines to generate potent binders computationally from minimal screening libraries."
   },
-  "enables": [],
+  "enables": [
+    "claude-scorpion-antivenom-binders-2026"
+  ],
   "sources": [
     {
       "label": "Nature — De novo designed proteins neutralize lethal snake venom toxins (Jan 2025)",

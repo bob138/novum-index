@@ -1,0 +1,54 @@
+{
+  "id": "claude-uv-sky-map-2026",
+  "title": "Claude Science Pipeline Constructs First Complete Full-Sky Ultraviolet Map from Six Space Missions",
+  "shortTitle": "First Full-Sky UV Map (Claude Science)",
+  "date": "2026-10-08",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Astrophysics",
+    "Multi-Wavelength Survey Fusion",
+    "Astronomical Inpainting"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Science Multi-Agent Pipeline (Johns Hopkins & Anthropic)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Several days iterative synthesis",
+  "isAnchor": false,
+  "whyItMatters": "Astrophysicist Brice Ménard used a multi-agent Claude Science pipeline to cross-calibrate 38,000 GALEX pointings with Swift, Gaia, and Planck data—filling the missing third of the sky to create the first full-sky UV map.",
+  "summary": "On October 8, 2026, Johns Hopkins University astrophysicist and Anthropic researcher Brice Ménard unveiled the first complete all-sky map in ultraviolet light, built through an iterative multi-day workflow inside Claude Science. Because NASA’s GALEX space telescope avoided the bright Milky Way galactic plane to protect its detectors, roughly one-third of the ultraviolet sky had remained unmapped for over a decade. Claude autonomously orchestrated deterministic cross-calibration across 38,000 GALEX observations, NASA Swift-UVOT, South Korea’s FIMS/SPEAR, TD-1, Planck dust maps, and H-alpha templates—diagnosing and removing residual atmospheric airglow discs across all 38,000 pointings when Ménard flagged subtle circular artifacts. Claude then trained statistical inpainting models to reconstruct the missing diffuse UV background (validated to within ~10% on held-out masked sky patches) and overlaid predicted UV fluxes from more than 100 million individual ESA Gaia DR3 stars, accompanied by per-pixel uncertainty and measured-vs-predicted layers.",
+  "technicalHighlights": [
+    "Cross-calibrated 38,000 NASA GALEX observations with Swift-UVOT, FIMS/SPEAR, TD-1, Planck, and H-alpha datasets, removing residual atmospheric airglow across all pointings.",
+    "Statistically inpainted the unobserved ~1/3 of the ultraviolet sky (including the Milky Way plane) to within ~10% accuracy on held-out masked sky validation patches.",
+    "Fused the diffuse background with UV flux estimates inferred from over 100 million ESA Gaia DR3 stars, releasing per-pixel measurement flags and uncertainty maps."
+  ],
+  "caveats": "Published as an Anthropic research release rather than a peer-reviewed astrophysics catalog paper; the unobserved galactic-plane third is statistically predicted rather than directly measured in UV.",
+  "contributors": [
+    "Brice Ménard"
+  ],
+  "institutions": [
+    "Johns Hopkins University",
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 75,
+    "ripple": 79,
+    "verification": 77,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Completes the missing ultraviolet counterpart to canonical all-sky visible, infrared, radio, and X-ray astronomical maps.",
+    "ripple": "Provides a calibrated reference and uncertainty-quantified dataset for studying galactic dust, star formation, and superbubbles—and exemplifies AI clearing longstanding scientific data backlogs.",
+    "verification": "Validated quantitatively via held-out sky masking (~10% error) and visual artifact audits by an expert astrophysicist, though not yet peer-reviewed.",
+    "velocity": "Compressed weeks of painstaking pixel-level multi-mission calibration and statistical fusion into several days of autonomous agent runs."
+  },
+  "sources": [
+    {
+      "label": "Anthropic Research — The Missing Map of the Sky",
+      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+      "type": "announcement"
+    }
+  ],
+  "enables": []
+}

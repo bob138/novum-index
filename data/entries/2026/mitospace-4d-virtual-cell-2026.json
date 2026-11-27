@@ -1,0 +1,62 @@
+{
+  "id": "mitospace-4d-virtual-cell-2026",
+  "title": "MitoSpace: Self-Supervised 4D Live-Cell Microscopy Foundation Model Maps Organelle Form to Function",
+  "shortTitle": "MitoSpace 4D Microscopy Foundation Model",
+  "date": "2026-09-10",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "4D Live-Cell Imaging",
+    "Self-Supervised Microscopy",
+    "Phenotypic Drug Screening"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "MitoSpace (4D Contrastive Representation Foundation Model, UC San Diego)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Cell, MitoSpace trained without labels on terabytes of 4D lattice light-sheet movies to predict mitochondrial membrane potential (R² = 0.91) from dynamics alone and generalize zero-shot to human lung organoids.",
+  "summary": "Published in Cell on September 10, 2026 (Vol. 189, Issue 19, pp. 5962–5979.e6, doi:10.1016/j.cell.2026.08.028, PMID 42721963), Dhruv Agarwal, Zichen Wang, Eric Arkfeld, Johannes Schöneberg, and colleagues at UC San Diego introduced MitoSpace—the first self-supervised 4D live-cell microscopy foundation model. Trained without human labels on terabytes of volumetric time-lapse (x, y, z, t) lattice light-sheet microscopy movies of mitochondria under mechanistically distinct drug perturbations, MitoSpace learns interpretable spatiotemporal representations that beat hand-crafted morphological features in mechanism-of-action classification. Simple regression probes on MitoSpace embeddings predict single-cell mitochondrial membrane potential directly from unlabeled 4D morphology and dynamics with R² = 0.91, establishing a quantitative single-cell form-to-function law. Dimensionality ablations proved monotonic gains from 2D to 3D to 4D, and the pretrained model generalized zero-shot to unseen chemical perturbations and complex human lung organoids.",
+  "technicalHighlights": [
+    "Trained self-supervised on terabytes of 4D (3D + time) lattice light-sheet microscopy movies, outperforming hand-engineered features on drug mechanism-of-action classification.",
+    "Predicts single-cell mitochondrial membrane potential purely from learned 4D structural/dynamic representations at R² = 0.91, quantifying live organelle form-to-function mapping.",
+    "Generalizes zero-shot to unseen perturbations and human lung organoids, with ablations proving strictly monotonic accuracy improvements from 2D → 3D → 4D."
+  ],
+  "caveats": "Focused primarily on mitochondrial dynamics imaged via specialized lattice light-sheet microscopy; broader multi-organelle and cross-microscope transfer requires additional pretraining.",
+  "contributors": [
+    "Dhruv Agarwal",
+    "Zichen Wang",
+    "Eric Arkfeld",
+    "Andre Modolo",
+    "Johannes Schöneberg"
+  ],
+  "institutions": [
+    "University of California, San Diego"
+  ],
+  "scores": {
+    "foundational": 81,
+    "ripple": 82,
+    "verification": 90,
+    "velocity": 82
+  },
+  "scoreRationale": {
+    "foundational": "Pioneers 4D volumetric-temporal foundation modeling for live-cell biology, showing dynamic 4D organelle movies directly encode bioenergetic state.",
+    "ripple": "Opens label-free 4D phenotypic screening across drug discovery, organoid biology, and subcellular virtual-cell modeling with public model and data release.",
+    "verification": "Peer-reviewed in Cell with rigorous dimensionality ablations, quantitative membrane-potential validation (R² = 0.91), and zero-shot organoid generalization.",
+    "velocity": "Replaces slow manual 4D microscopy annotation and invasive functional dyes with instant self-supervised embedding probes."
+  },
+  "sources": [
+    {
+      "label": "Cell (2026) — 4D Spatiotemporal Landscape of Mitochondrial Phenotypes Unlocked Through Representation Learning",
+      "url": "https://doi.org/10.1016/j.cell.2026.08.028",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 42721963)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42721963/",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

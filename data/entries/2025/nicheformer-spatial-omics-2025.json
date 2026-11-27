@@ -1,0 +1,65 @@
+{
+  "id": "nicheformer-spatial-omics-2025",
+  "title": "Nicheformer: 110M-Cell Foundation Model Unifies Dissociated Single-Cell and Spatial Transcriptomics",
+  "shortTitle": "Nicheformer Spatial-Omics Foundation Model",
+  "date": "2025-10-30",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Spatial Transcriptomics",
+    "Single-Cell Genomics",
+    "Tissue Microenvironment"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Nicheformer (Helmholtz Munich & Technical University of Munich)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature Methods, Nicheformer pretrained on SpatialCorpus-110M (>57M dissociated + >53M spatial cells across 73 tissues) to infer tissue spatial niches directly from standard dissociated scRNA-seq.",
+  "summary": "Published in Nature Methods on October 30, 2025 (Vol. 22, Issue 12, pp. 2525–2538, doi:10.1038/s41592-025-02814-z, PMID 41168487), Alejandro Tejada-Lapuerta, Anna C. Schaar, Fabian J. Theis, and colleagues at Helmholtz Munich and Technical University of Munich introduced Nicheformer—the first multiscale foundation model jointly pretrained on dissociated single-cell RNA-seq and spatially resolved transcriptomics. Pretrained on SpatialCorpus-110M (over 57 million dissociated and 53 million spatially resolved human and mouse cells spanning 73 organs and tissues), Nicheformer encodes assay and species covariates so cells from different spatial technologies share one unified latent space. The authors proved that foundation models trained only on dissociated cells fail to capture spatial microenvironment structure, whereas Nicheformer accurately transfers spatial neighborhood composition and niche labels back onto standard dissociated scRNA-seq datasets.",
+  "technicalHighlights": [
+    "Pretrained on SpatialCorpus-110M (>57M dissociated + >53M spatially resolved human and mouse cells across 73 tissues and organs).",
+    "First unified transformer encoding both dissociated scRNA-seq and targeted spatial transcriptomics modalities across orthologous human/mouse genes.",
+    "Enables predicting local spatial microenvironments and niche labels for dissociated single cells—unlocking spatial biology across legacy scRNA-seq atlases."
+  ],
+  "caveats": "Targeted spatial panels capture fewer genes than whole-transcriptome scRNA-seq, creating modality trade-offs for rare transcriptional subtypes.",
+  "contributors": [
+    "Alejandro Tejada-Lapuerta",
+    "Anna C. Schaar",
+    "Robert Gutgesell",
+    "Giovanni Palla",
+    "Fabian J. Theis"
+  ],
+  "institutions": [
+    "Helmholtz Munich",
+    "Technical University of Munich"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 85,
+    "verification": 91,
+    "velocity": 83
+  },
+  "scoreRationale": {
+    "foundational": "Bridges single-cell gene expression and 3D tissue architecture inside one foundation model, proving dissociated-only pretraining misses microenvironmental biology.",
+    "ripple": "Allows researchers worldwide to impute spatial niche context onto massive existing scRNA-seq disease and tumor-microenvironment datasets.",
+    "verification": "Peer-reviewed in Nature Methods with open SpatialCorpus-110M benchmarks across mouse cortex MERFISH and multi-organ human datasets.",
+    "velocity": "Transfers spatial annotations to dissociated datasets via fast linear probing rather than expensive de novo spatial imaging."
+  },
+  "sources": [
+    {
+      "label": "Nature Methods (2025) — Nicheformer: A Foundation Model for Single-Cell and Spatial Omics",
+      "url": "https://doi.org/10.1038/s41592-025-02814-z",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Central Full Text (PMC12695652)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12695652/",
+      "type": "paper"
+    }
+  ],
+  "enables": [
+    "mitospace-4d-virtual-cell-2026"
+  ]
+}

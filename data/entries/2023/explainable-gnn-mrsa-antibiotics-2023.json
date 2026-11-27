@@ -48,7 +48,8 @@
     "velocity": "Evaluated 12 million compounds computationally and distilled actionable medicinal-chemistry substructures in months."
   },
   "enables": [
-    "mit-generative-antibiotics-2025"
+    "mit-generative-antibiotics-2025",
+    "molrsi-self-improving-discovery-2026"
   ],
   "sources": [
     {

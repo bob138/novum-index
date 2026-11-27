@@ -1,0 +1,61 @@
+{
+  "id": "transcriptformer-112m-cells-2026",
+  "title": "TranscriptFormer: Generative Cell Atlas Foundation Model Trained Across 112M Cells and 1.5 Billion Years of Evolution",
+  "shortTitle": "TranscriptFormer 112M-Cell Atlas (Science)",
+  "date": "2026-07-02",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Single-Cell Genomics",
+    "Evolutionary Cell Biology",
+    "Generative Biology"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "TranscriptFormer (Chan Zuckerberg Initiative & Stanford)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Science, TranscriptFormer trained on 112 million cells across 12 species spanning 1.53 billion years of evolution—transferring cell-type annotations across >685M years of divergence and spotting human disease states zero-shot.",
+  "summary": "Published in Science on July 2, 2026 (Vol. 393, Issue 6806, ead/aec8514, doi:10.1126/science.aec8514, PMID 42096520), James D. Pearce, Sara E. Simmonds, Stephen Quake, and colleagues at the Chan Zuckerberg Initiative and Stanford University introduced TranscriptFormer, a family of generative single-cell foundation models trained on 112 million cells from 12 diverse species spanning 1.53 billion years of evolutionary history. By pairing protein-embedding gene representations with a generative transformer over joint gene-identity and expression distributions, TranscriptFormer learns conserved transcriptional programs across distantly related kingdoms and phyla. It transfers cell-type annotations accurately across more than 685 million years of evolutionary distance, predicts cell-type-specific transcription factor and gene-regulatory interactions without supervision, and identifies infected or diseased human cell states zero-shot.",
+  "technicalHighlights": [
+    "Pretrained on 112 million single cells spanning 12 species and 1.53 billion years of evolutionary divergence in a unified generative transformer.",
+    "Transfers cell-type annotations accurately across >685 million years of evolutionary separation without species-specific supervision.",
+    "Identifies human disease and pathogen-infected cell states zero-shot and infers cell-type-specific transcription factor programs."
+  ],
+  "caveats": "Evaluates observational transcriptomic atlases rather than direct causal intervention outcomes; clinical disease-state diagnostics require prospective validation.",
+  "contributors": [
+    "James D. Pearce",
+    "Sara E. Simmonds",
+    "Stephen Quake"
+  ],
+  "institutions": [
+    "Chan Zuckerberg Initiative",
+    "Stanford University"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 87,
+    "verification": 92,
+    "velocity": 85
+  },
+  "scoreRationale": {
+    "foundational": "Establishes a generative evolutionary foundation model spanning 1.53 billion years of cellular transcriptomes in a single probabilistic framework.",
+    "ripple": "Accelerates cross-species cell-atlas annotation, evolutionary developmental biology, and zero-shot disease-state detection across human tissues.",
+    "verification": "Peer-reviewed in Science with systematic cross-species transfer, gene-regulation, and human disease benchmarks.",
+    "velocity": "Enables instant zero-shot annotation and generative transcriptomic querying across 112M-cell evolutionary scale."
+  },
+  "sources": [
+    {
+      "label": "Science (2026) — TranscriptFormer: A Generative Cell Atlas Across 1.5 Billion Years of Evolution",
+      "url": "https://doi.org/10.1126/science.aec8514",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 42096520)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42096520/",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

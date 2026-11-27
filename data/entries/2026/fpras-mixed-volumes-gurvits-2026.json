@@ -1,0 +1,59 @@
+{
+  "id": "fpras-mixed-volumes-gurvits-2026",
+  "title": "GPT-6 Astra Designs First FPRAS for Mixed Volumes, Disproving Gurvits’s 2009 Conjecture",
+  "shortTitle": "FPRAS for Mixed Volumes (Gurvits Disproof)",
+  "date": "2026-11-01",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Approximation Algorithms",
+    "Convex Geometry",
+    "Computational Complexity"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "GPT-6 Astra (MIT Exposition)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 17,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "GPT-6 Astra generated the core algorithmic ideas for the first fully polynomial-time randomized approximation scheme for mixed volumes of arbitrary convex bodies, disproving Gurvits’s 2009 conjecture.",
+  "summary": "On November 1, 2026, Xiaoyu Chen and Kuikui Liu (MIT) posted arXiv:2611.01368 presenting the first fully polynomial-time randomized approximation scheme (FPRAS) to estimate the mixed volume of n arbitrary compact convex sets in R^n given by weak membership oracles. This resolves a 17-year-old problem in convex geometry and theoretical computer science by disproving Gurvits’s 2009 conjecture that no general FPRAS exists. The authors include a stark AI disclosure in the abstract: \"The main ideas were generated entirely by GPT 6 Astra. The purpose of this paper is to provide a human-written exposition of the algorithm.\" The algorithm chains a sequence of reductions: normalizing exponentially skewed body scales via a dual maximum-entropy convex program (the Gurvits capacity), well-rounding via global affine transformation of a perturbed Minkowski sum, smoothing nonsmooth bodies via convolution, and reducing smooth well-rounded instances via MCMC to mixed-discriminant approximation.",
+  "technicalHighlights": [
+    "Constructs the first FPRAS for estimating the mixed volume of n arbitrary compact convex bodies in R^n under weak membership oracles, disproving Gurvits’s 2009 conjecture.",
+    "Authors explicitly disclose in the abstract that the main algorithmic ideas were generated entirely by GPT-6 Astra, with human authors writing the exposition and proof verification.",
+    "Combines Gurvits-capacity convex programming for scale normalization, global affine rounding, convolution smoothing, and MCMC reduction to mixed discriminants."
+  ],
+  "caveats": "Preprint under active community review; the theoretical polynomial exponent is astronomically large (non-practical), leaving a genuinely fast FPRAS as an open problem.",
+  "contributors": [
+    "Xiaoyu Chen",
+    "Kuikui Liu"
+  ],
+  "institutions": [
+    "Massachusetts Institute of Technology"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 82,
+    "verification": 78,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Refutes a prominent 17-year-old hardness conjecture in algorithmic convex geometry and establishes polynomial-time approximability of general mixed volumes.",
+    "ripple": "Connects convex programming, capacity scaling, and MCMC sampling across algebraic root counting, combinatorics, and geometric algorithms.",
+    "verification": "Complete human-vetted mathematical exposition published on arXiv by MIT theoretical computer scientists; formal peer review is pending.",
+    "velocity": "GPT-6 Astra autonomously originated the entire reduction architecture resolving a 17-year-old open conjecture."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2611.01368 — An FPRAS for Mixed Volumes",
+      "url": "https://arxiv.org/abs/2611.01368",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv HTML Full Text (arXiv:2611.01368v1)",
+      "url": "https://arxiv.org/html/2611.01368v1",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}

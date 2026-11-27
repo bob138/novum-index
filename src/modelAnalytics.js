@@ -1527,6 +1527,236 @@ const EXPLICIT_ATTRIBUTIONS = {
       lab: 'University of Zurich / Intel',
     },
   ],
+  'non-commutative-binomial-gemini-2026': [
+    {
+      familyId: 'google-gemini',
+      familyName: 'Google Gemini & Gemma',
+      modelId: 'gemini-4-carbon-agent',
+      modelName: 'Gemini 4 Carbon (Agentic Proof Search)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'openai-chip-design-rtl-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'weight-space-programming-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+      roleNote: 'Primary',
+    },
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-opus-5-5',
+      modelName: 'Claude Opus 5.5',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'Anthropic',
+      roleNote: 'Independent Replication',
+    },
+  ],
+  'fpras-mixed-volumes-gurvits-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+    },
+  ],
+  'molrsi-self-improving-discovery-2026': [
+    {
+      familyId: 'mit-collins-antibiotics-ai',
+      familyName: 'MIT Collins Antibiotics-AI & Chemprop',
+      modelId: 'molrsi-agent',
+      modelName: 'MolRSI (Recursive Self-Improving MCTS Agent)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Broad Institute / MIT / Northeastern',
+    },
+  ],
+  'regenerating-codes-tradeoff-gpt6-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'claude-scorpion-antivenom-binders-2026': [
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-science-agent',
+      modelName: 'Claude Science Multi-Agent Research Model',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+    },
+  ],
+  'subseasonal-weather-ai-nature-2026': [
+    {
+      familyId: 'microsoft-aurora',
+      familyName: 'Aurora Earth System (Microsoft Research)',
+      modelId: 'subseasonal-prob-bias-ml',
+      modelName: 'Probabilistic Bias Correction ML (MSR / MIT / ECMWF)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Microsoft Research',
+    },
+  ],
+  'claude-uv-sky-map-2026': [
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-science-agent',
+      modelName: 'Claude Science Multi-Agent Research Model',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+    },
+  ],
+  'ucsf-speech-gesture-bci-2026': [
+    {
+      familyId: 'braingate-speech-bci',
+      familyName: 'Deep-Learning Speech Neuroprostheses (BrainGate)',
+      modelId: 'ucsf-speech-gesture-bci',
+      modelName: 'UCSF Parallel ECoG Speech & Gesture BCI',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'UCSF / UC Berkeley',
+    },
+  ],
+  'mitospace-4d-virtual-cell-2026': [
+    {
+      familyId: 'mitospace-ucsd',
+      familyName: 'MitoSpace 4D Microscopy AI (UC San Diego)',
+      modelId: 'mitospace-4d',
+      modelName: 'MitoSpace (4D Contrastive Foundation Model)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'UC San Diego',
+    },
+  ],
+  'weathernext-3-raw-obs-2026': [
+    {
+      familyId: 'graphcast-gencast',
+      familyName: 'GraphCast & GenCast',
+      modelId: 'weathernext-3',
+      modelName: 'WeatherNext 3 (Raw-Observation 0.1° Global Model)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'weathernext-cyclones-nature-2026': [
+    {
+      familyId: 'graphcast-gencast',
+      familyName: 'GraphCast & GenCast',
+      modelId: 'weathernext-cyclones',
+      modelName: 'WeatherNext Cyclones (Functional Generative Network)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'uce-universal-cell-embedding-2026': [
+    {
+      familyId: 'virtual-cell-atlases',
+      familyName: 'Universal Virtual Cell Models (UCE / State / TranscriptFormer)',
+      modelId: 'uce-foundation',
+      modelName: 'Universal Cell Embedding (UCE)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Stanford / CZ Biohub / Arc Institute',
+    },
+  ],
+  'transcriptformer-112m-cells-2026': [
+    {
+      familyId: 'virtual-cell-atlases',
+      familyName: 'Universal Virtual Cell Models (UCE / State / TranscriptFormer)',
+      modelId: 'transcriptformer',
+      modelName: 'TranscriptFormer (112M-Cell Evolutionary Atlas)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Chan Zuckerberg Initiative / Stanford',
+    },
+  ],
+  'masai-mammography-ai-rct-2026': [
+    {
+      familyId: 'masai-clinical-mammography',
+      familyName: 'MASAI Clinical Mammography AI (Lund / ScreenPoint)',
+      modelId: 'transpara-masai',
+      modelName: 'Transpara AI Mammography Triage (MASAI RCT)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Lund University / Skåne University Hospital',
+    },
+  ],
+  'sleepfm-multimodal-disease-2026': [
+    {
+      familyId: 'sleepfm-stanford',
+      familyName: 'SleepFM Clinical Foundation Model (Stanford)',
+      modelId: 'sleepfm',
+      modelName: 'SleepFM (Multimodal Contrastive PSG Model)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Stanford University',
+    },
+  ],
+  'sargent-acidic-oer-catalyst-ai-2026': [
+    {
+      familyId: 'gaspy-catalyst-ml',
+      familyName: 'GASpy Active-ML Catalysis (Toronto / CMU)',
+      modelId: 'mixed-accel-oer-ml',
+      modelName: 'Mixed-Acceleration Active-Learning OER Platform',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'University of Toronto',
+    },
+  ],
+  'nicheformer-spatial-omics-2025': [
+    {
+      familyId: 'nicheformer-helmholtz',
+      familyName: 'Nicheformer Spatial-Omics AI (Helmholtz Munich)',
+      modelId: 'nicheformer',
+      modelName: 'Nicheformer (110M-Cell Spatial Transformer)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Helmholtz Munich / TUM',
+    },
+  ],
+  'alphaearth-foundations-2025': [
+    {
+      familyId: 'alphaearth-foundations',
+      familyName: 'AlphaEarth Foundations (Google DeepMind)',
+      modelId: 'alphaearth-foundations',
+      modelName: 'AlphaEarth Foundations (Planetary Embedding Field)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'arc-state-virtual-cell-2025': [
+    {
+      familyId: 'virtual-cell-atlases',
+      familyName: 'Universal Virtual Cell Models (UCE / State / TranscriptFormer)',
+      modelId: 'arc-state',
+      modelName: 'State (Arc Institute Virtual Cell Perturbation Model)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Arc Institute',
+    },
+  ],
+  'ether0-chemistry-reasoning-2025': [
+    {
+      familyId: 'futurehouse-edison',
+      familyName: 'FutureHouse / Edison AI Scientists (Robin & Kosmos)',
+      modelId: 'ether0-24b',
+      modelName: 'ether0 (24B RL Chemistry Reasoning Model)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'FutureHouse / Edison Scientific',
+    },
+  ],
 };
 
 /**

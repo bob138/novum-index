@@ -1,0 +1,74 @@
+{
+  "id": "weathernext-cyclones-nature-2026",
+  "title": "WeatherNext Cyclones Gains a Full Day of Tropical Cyclone Warning Lead Time Using Coarse-Grid AI",
+  "shortTitle": "WeatherNext Cyclones (Nature)",
+  "date": "2026-08-06",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Tropical Cyclone Physics",
+    "Probabilistic Ensemble Forecasting",
+    "Functional Generative Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "WeatherNext Cyclones / WeatherNext 2 (Google DeepMind)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "<1 min per 15-day forecast",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature, WeatherNext Cyclones gained a full day of cyclone track, intensity, and size lead time—a decade of meteorological progress—using 100× coarser grids and aiding NHC’s Hurricane Melissa warning.",
+  "summary": "Published in Nature on August 6, 2026 (Vol. 657, pp. 680–688, doi:10.1038/s41586-026-10953-2, PMID 42717078) alongside open-sourced weights and code, Google DeepMind, Google Research, NOAA’s National Hurricane Center (NHC), CIRA, and the UK Met Office introduced WeatherNext Cyclones (WN-C). Built on Functional Generative Networks (FGNs), WN-C generates 15-day global forecasts in under a minute on a TPU and scales to 1,000-member ensembles (vs 50 in conventional systems) to capture rare rapid-intensification tails. Evaluated across 2023–2025 global tropical cyclones, WN-C delivered an average lead-time advantage of 1 full day or more on track, intensity, and wind radius over leading operational physics models—matching an entire decade of operational meteorological progress. Strikingly, it achieved state-of-the-art intensity forecasts from 28×28 km inputs (100× coarser than regional hurricane models), overturning meteorological assumptions that kilometer-scale resolution is strictly required, and operationally helped NHC forecast Hurricane Melissa’s 2025 rapid intensification and Jamaica landfall.",
+  "technicalHighlights": [
+    "Gained >= 1 full day of forecast lead time on tropical cyclone track, intensity, and wind radius over leading operational models across 2023–2025 storms—comparable to a decade of meteorological progress.",
+    "Functional Generative Networks scale operational forecasts to 1,000-member ensembles in <1 minute per member, capturing rare rapid intensification such as 2025 Hurricane Melissa.",
+    "Achieved state-of-the-art intensity skill from 28×28 km inputs (100× coarser than regional hurricane models), revealing unexpected intensity signal in coarse global fields; weights open-sourced for commercial and operational use."
+  ],
+  "caveats": "Physical mechanisms explaining why coarse 28 km and even 111 km inputs support superior cyclone intensity skill remain an active open research question; deployed as consensus guidance alongside human forecasters.",
+  "contributors": [
+    "Ferran Alet",
+    "Tom R. Andersson",
+    "Ilan Price",
+    "Stratis Markou",
+    "Alvaro Sanchez-Gonzalez",
+    "Peter Battaglia"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Google Research",
+    "NOAA National Hurricane Center",
+    "Colorado State University (CIRA)",
+    "UK Met Office"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 92,
+    "verification": 94,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Challenges long-held atmospheric-physics orthodoxy by proving coarse global fields contain rich cyclone intensity information unlocked by Functional Generative Networks.",
+    "ripple": "Open-sourced weights and operational NHC/Met Office adoption directly translate into extra evacuation lead time and saved lives worldwide.",
+    "verification": "Peer-reviewed in Nature and validated prospectively across 2023–2025 hurricane seasons including live operational use during Hurricane Melissa.",
+    "velocity": "Generates 15-day global cyclone ensembles in under one minute on a TPU, scaling to 1,000 members vs 50 in traditional numerical centers."
+  },
+  "sources": [
+    {
+      "label": "Nature (2026) — Operational Tropical Cyclone Forecasting with AI",
+      "url": "https://doi.org/10.1038/s41586-026-10953-2",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record (PMID 42717078)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42717078/",
+      "type": "paper"
+    },
+    {
+      "label": "Google DeepMind — WeatherNext: AI Model Achieves Breakthrough in Forecasting Cyclones",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "type": "announcement"
+    }
+  ],
+  "enables": [
+    "weathernext-3-raw-obs-2026"
+  ]
+}

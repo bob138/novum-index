@@ -1,0 +1,60 @@
+{
+  "id": "non-commutative-binomial-gemini-2026",
+  "title": "Gemini Carbon Discovers Proof of the Non-Commutative Matrix Binomial Theorem",
+  "shortTitle": "Non-Commutative Binomial Theorem",
+  "date": "2026-11-25",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Matrix Analysis",
+    "Functional Analysis",
+    "Free Probability"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Gemini Carbon Agentic System (Google Research & DeepMind)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Gemini Carbon discovered the core proof of a non-commutative matrix binomial trace inequality that strengthens Golden–Thompson term-by-term and yields short proofs of Schatten-p, Hanner, and free-convolution inequalities.",
+  "summary": "On November 25, 2026, Ravi Kumar (Google Research) and Raghu Meka (Google DeepMind) posted arXiv:2611.33774 proving a natural non-commutative matrix analogue of the scalar binomial theorem: for any d×d Hermitian matrices A and B and every nonnegative even integer k (and every integer k >= 0 when A, B are positive semi-definite), tr((A + B)^k) <= sum_{l=0}^k C(k,l) tr(A^l B^{k-l}). The authors disclose that the main proof was discovered by Gemini Carbon within an agentic system—built around a key truncated-cubic trace lemma tr((A+B)_+^3) <= sum W_{ij} (lambda_i + mu_j)_+^3 integrated by parts—before human refinement simplified it to a self-contained argument. The inequality implies the classical 1965 Golden–Thompson inequality coefficient by coefficient, refutes Zhang’s (2026) odd-k conjecture via a 2×2 counterexample, and generalizes to tr(f(A+B)) <= sum W_{ij} f(lambda_i + mu_j) whenever f^(4) >= 0, delivering short proofs of the Schatten-p two-point and Hanner inequalities (p >= 3) and Heinävaara’s (2026) free-versus-classical additive convolution comparison.",
+  "technicalHighlights": [
+    "Proves tr((A+B)^k) <= sum C(k,l) tr(A^l B^{k-l}) for all Hermitian matrices and even k >= 0, and for all k >= 0 on positive semi-definite matrices, strengthening Golden–Thompson coefficient by coefficient.",
+    "AI Acknowledgements explicitly credit Gemini Carbon in an agentic loop with finding the main proof, which hinges on a truncated-cubic trace inequality integrated three times by parts.",
+    "Extends to all C^4 functions with f^(4) >= 0, giving short proofs of Schatten-p two-point and Hanner inequalities (p >= 3) and recovering Heinävaara’s free additive convolution inequality."
+  ],
+  "caveats": "Preprint posted November 25, 2026; peer review is pending and the original long AI proof required human simplification and literature attribution to reach its published self-contained form.",
+  "contributors": [
+    "Ravi Kumar",
+    "Raghu Meka"
+  ],
+  "institutions": [
+    "Google Research",
+    "Google DeepMind"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 80,
+    "verification": 78,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Establishes a remarkably clean, fundamental matrix trace inequality unifying Golden–Thompson, Schatten-p geometry, and free probability.",
+    "ripple": "Directly simplifies classical functional-analysis inequalities and provides a general eigenbasis-overlap framework for non-commutative trace bounds.",
+    "verification": "Short, self-contained elementary proof published in full on arXiv for rapid community verification, though not yet peer-reviewed or formalized in Lean.",
+    "velocity": "Cracked a statement Raghu Meka had posed since 2013 and experts had no known proof for, via Gemini Carbon agentic search."
+  },
+  "sources": [
+    {
+      "label": "arXiv:2611.33774 — A Non-Commutative Binomial Theorem, Extensions, and Applications",
+      "url": "https://arxiv.org/abs/2611.33774",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv HTML Full Text (arXiv:2611.33774v1)",
+      "url": "https://arxiv.org/html/2611.33774v1",
+      "type": "paper"
+    }
+  ],
+  "enables": []
+}
