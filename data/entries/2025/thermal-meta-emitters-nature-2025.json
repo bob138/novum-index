@@ -1,0 +1,65 @@
+{
+  "id": "thermal-meta-emitters-nature-2025",
+  "title": "Machine Learning Inverse-Designs Over 1,500 3D Thermal Meta-Emitters for Passive Radiative Cooling",
+  "shortTitle": "AI 3D Thermal Meta-Emitters (Nature)",
+  "date": "2025-07-02",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Metamaterials",
+    "Thermal Nanophotonics",
+    "Passive Radiative Cooling"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Three-Plane Sparse-Data ML Metamaterial Designer",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: transcends 2D nanophotonic limits by inverse-designing >1,500 3D thermal metamaterials; 7 fabricated cooling prototypes beat SOTA and keep roofs 5–20 °C cooler than commercial paint.",
+  "summary": "Researchers from Shanghai Jiao Tong University, UT Austin, the National University of Singapore, and Umeå University introduced a sparse-data three-plane machine-learning framework in Nature that automates inverse design across vast three-dimensional nanophotonic geometries and material libraries. Generating over 1,500 ultrabroadband and band-selective 3D thermal meta-emitters previously unreachable by human trial-and-error, the team physically fabricated seven proof-of-concept emitters demonstrating record optical selectivity and outdoor passive radiative cooling—keeping model building roofs 5 to 20 °C cooler than commercial paints with substantial energy-saving potential.",
+  "technicalHighlights": [
+    "Three-plane ML inverse-design architecture breaks out of flat 2D nanophotonic constraints to jointly optimize 3D geometry and material composition from sparse data.",
+    "Generated over 1,500 distinct ultrabroadband and band-selective thermal meta-emitters tailored for cooling, camouflage, and thermophotovoltaics.",
+    "Seven physically fabricated prototypes surpassed state-of-the-art radiative coolers, keeping outdoor test roofs 5–20 °C cooler than standard paints."
+  ],
+  "caveats": "Scalable roll-to-roll manufacturing cost and multi-year outdoor weathering durability of 3D nanostructured emitters remain engineering steps toward mass building adoption.",
+  "contributors": [
+    "Chengyu Xiao",
+    "Yuebing Zheng",
+    "Di Zhang",
+    "Cheng-Wei Qiu",
+    "Han Zhou"
+  ],
+  "institutions": [
+    "Shanghai Jiao Tong University",
+    "University of Texas at Austin",
+    "National University of Singapore",
+    "Umeå University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 95,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Solves sparse-data 3D inverse design across both geometry and material diversity in thermal nanophotonics.",
+    "ripple": "Directly impacts zero-energy building cooling, urban heat mitigation, aerospace thermal control, and thermophotovoltaics.",
+    "verification": "Peer-reviewed in Nature (Jul 2025) with physical fabrication and outdoor thermal measurements of seven distinct prototypes.",
+    "velocity": "Generated >1,500 optimized 3D thermal metamaterial blueprints across an intractable multiparameter design space."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Xiao, Zheng, Qiu, Zhou et al. — Ultrabroadband and band-selective thermal meta-emitters by machine learning (Nature, 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-09102-y",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 40604179",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40604179/",
+      "type": "paper"
+    }
+  ]
+}

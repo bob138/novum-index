@@ -47,7 +47,8 @@
   "enables": [
     "coscientist-autonomous-chemistry-2023",
     "mit-ai-robotic-flow-synthesis-2019",
-    "molecular-transformer-reaction-ai-2019"
+    "molecular-transformer-reaction-ai-2019",
+    "chematica-synthia-natural-products-2020"
   ],
   "sources": [
     {

@@ -48,7 +48,8 @@
   "enables": [
     "gencast-probabilistic-weather-2024",
     "unstable-singularities-pinns-2025",
-    "aurora-earth-system-2025"
+    "aurora-earth-system-2025",
+    "google-flood-hub-ungauged-2024"
   ],
   "sources": [
     {

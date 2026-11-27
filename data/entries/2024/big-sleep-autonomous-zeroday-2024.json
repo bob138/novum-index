@@ -47,7 +47,8 @@
     "velocity": "Audited live software commits and synthesized a working memory-corruption trigger faster than continuous fuzzing pipelines."
   },
   "enables": [
-    "alphaproof-code-signal-2026"
+    "alphaproof-code-signal-2026",
+    "darpa-aixcc-autonomous-cyber-2025"
   ],
   "sources": [
     {

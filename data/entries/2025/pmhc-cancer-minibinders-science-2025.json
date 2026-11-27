@@ -1,0 +1,63 @@
+{
+  "id": "pmhc-cancer-minibinders-science-2025",
+  "title": "Generative AI Designs De Novo pMHC Minibinders Turning Human T Cells into Precision Cancer Killers",
+  "shortTitle": "AI pMHC Cancer-Killing T-Cell Binders",
+  "date": "2025-07-24",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Cancer Immunotherapy",
+    "De Novo Protein Design",
+    "CAR-T Engineering"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "RFdiffusion + ProteinMPNN + AlphaFold 2",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "Weeks (vs. years for patient TCR isolation)",
+  "isAnchor": false,
+  "whyItMatters": "Published in Science: uses RFdiffusion, ProteinMPNN, and AlphaFold 2 to design precision minibinders against intracellular cancer pMHC neoantigens in weeks—driving CAR-T killing of melanoma cells.",
+  "summary": "Researchers from the Technical University of Denmark and The Scripps Research Institute published a generative de novo minibinder platform in Science that replaces years-long patient T-cell receptor (TCR) screening with computational design in weeks. Combining RFdiffusion, ProteinMPNN, AlphaFold 2, and in silico cross-reactivity screening, the team engineered high-affinity minibinders targeting the intracellular cancer antigen complex NY-ESO-1/HLA-A*02:01 (confirmed by cryo-EM) as well as a tumor neoantigen pMHC of unknown experimental structure; engineered into chimeric antigen receptors on human T cells, the AI-designed binders triggered potent, selective killing of melanoma cells.",
+  "technicalHighlights": [
+    "Uses RFdiffusion, ProteinMPNN, and AlphaFold 2 with in silico cross-panning to engineer specific binders for hard-to-target intracellular cancer pMHC complexes.",
+    "Confirmed atomic-level binding accuracy of the NY-ESO-1 cancer minibinder via cryo-electron microscopy.",
+    "Arming human T cells with the AI-designed binders induced selective melanoma cell killing and generalized to a tumor neoantigen with no prior solved crystal structure."
+  ],
+  "caveats": "Validated in cryo-EM and human cancer cell-killing assays in vitro; in vivo tumor clearance, off-target tissue safety, and human clinical trials remain future milestones.",
+  "contributors": [
+    "Kristoffer Haurum Johansen",
+    "Darian Stephan Wolff",
+    "Andrew B. Ward",
+    "Sine Reker Hadrup",
+    "Timothy P. Jenkins"
+  ],
+  "institutions": [
+    "Technical University of Denmark (DTU)",
+    "The Scripps Research Institute"
+  ],
+  "scores": {
+    "foundational": 87,
+    "ripple": 91,
+    "verification": 95,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Cracks the longstanding challenge of targeting intracellular cancer neoantigens presented on MHC molecules using de novo AI-designed binders.",
+    "ripple": "Paves the way for rapid, patient-specific personalized T-cell cancer immunotherapies across solid tumors.",
+    "verification": "Peer-reviewed in Science (Jul 24, 2025) with cryo-EM structure confirmation and functional T-cell cytotoxicity assays against melanoma.",
+    "velocity": "Compresses therapeutic receptor discovery for patient neoantigens from years of wet-lab screening down to weeks."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Johansen, Hadrup, Jenkins et al. — De novo-designed pMHC binders facilitate T cell-mediated cytotoxicity toward cancer cells (Science, 2025)",
+      "url": "https://doi.org/10.1126/science.adv0422",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 40705893",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40705893/",
+      "type": "paper"
+    }
+  ]
+}

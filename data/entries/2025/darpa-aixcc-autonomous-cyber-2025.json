@@ -1,0 +1,67 @@
+{
+  "id": "darpa-aixcc-autonomous-cyber-2025",
+  "title": "DARPA AIxCC Autonomous Cyber Reasoning Systems Find and Patch 18 Real Zero-Day Bugs Across 54M LOC",
+  "shortTitle": "DARPA AIxCC: Autonomous Cyber Defense",
+  "date": "2025-08-08",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Cybersecurity",
+    "Automated Vulnerability Discovery",
+    "Automated Program Repair"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Team Atlanta & DARPA AIxCC Cyber Reasoning Systems",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "45 min avg patch (~$152/task)",
+  "isAnchor": false,
+  "whyItMatters": "At DARPA AIxCC Finals (DEF CON 33), autonomous AI systems audited 54M lines of C/Java open-source code, discovering and patching 43/54 synthetic bugs plus 18 real zero-days (11 patched) at ~$152 per task.",
+  "summary": "In the Final Competition of DARPA and ARPA-H’s two-year AI Cyber Challenge (AIxCC) at DEF CON 33—systematically analyzed in USENIX Security 2026 (arXiv:2602.07666)—seven autonomous LLM-and-fuzzer Cyber Reasoning Systems (won by Team Atlanta from Georgia Tech, Samsung Research, KAIST, and POSTECH, followed by Trail of Bits and Theori) audited 54 million lines of real-world C and Java open-source software without human intervention. Finalist systems found 54 of 63 synthetic vulnerabilities (86%) and patched 43 (68%), while also uncovering 18 previously unknown real-world zero-day vulnerabilities (6 in C, 12 in Java) and autonomously generating 11 real patches in an average of 45 minutes at ~$152 per task.",
+  "technicalHighlights": [
+    "Autonomously analyzed 54 million lines of production open-source C and Java code, discovering 86% (54/63) and patching 68% (43/63) of challenge vulnerabilities.",
+    "Uncovered 18 genuine, non-synthetic zero-day vulnerabilities in real open-source projects and generated 11 working patches autonomously.",
+    "Average turnaround of 45 minutes per patch at ~$152 per task, with all seven finalist Cyber Reasoning Systems open-sourced for critical-infrastructure defense."
+  ],
+  "caveats": "Evaluated inside a structured DARPA competition harness; real-world deployment on arbitrary enterprise codebases still requires integration with build systems, regression suites, and maintainer review.",
+  "contributors": [
+    "Team Atlanta",
+    "Trail of Bits",
+    "Theori",
+    "Cen Zhang",
+    "Taesoo Kim"
+  ],
+  "institutions": [
+    "DARPA",
+    "Georgia Tech",
+    "Samsung Research",
+    "KAIST",
+    "POSTECH",
+    "Trail of Bits"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 94,
+    "verification": 95,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Marks the inflection point where fully autonomous neuro-symbolic AI systems both discover and patch real zero-day bugs at multi-million-LOC scale.",
+    "ripple": "Directly transforms global open-source and critical-infrastructure cybersecurity with seven open-sourced Cyber Reasoning Systems.",
+    "verification": "Independently scored live by DARPA/ARPA-H at DEF CON 33 and peer-reviewed in USENIX Security 2026 (SoK paper).",
+    "velocity": "Compresses weeks of human security auditing and patch engineering into ~45 minutes and ~$152 per task."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "DARPA — AI Cyber Challenge Marks Pivotal Inflection Point for Cyber Defense (Aug 8, 2025)",
+      "url": "https://www.darpa.mil/news/2025/aixcc-results",
+      "type": "announcement"
+    },
+    {
+      "label": "Zhang, Kim et al. — SoK: DARPA’s AI Cyber Challenge (USENIX Security 2026 / arXiv:2602.07666)",
+      "url": "https://arxiv.org/abs/2602.07666",
+      "type": "paper"
+    }
+  ]
+}

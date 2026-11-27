@@ -1,0 +1,65 @@
+{
+  "id": "deepmind-aeneas-ancient-texts-2025",
+  "title": "Google DeepMind Aeneas Restores, Dates, and Contextualizes Fragmentary Roman Inscriptions",
+  "shortTitle": "DeepMind Aeneas (Ancient Texts AI)",
+  "date": "2025-07-23",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Multimodal Generative AI",
+    "Computational Epigraphy",
+    "Human-AI Collaboration"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Aeneas (Multimodal Epigraphic Transformer)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: first multimodal neural model restoring arbitrary-length missing ancient Latin inscriptions, dating texts within 13 years, and boosting historian attribution accuracy beyond humans or AI alone.",
+  "summary": "Google DeepMind and classicists from the Universities of Nottingham, Warwick, Oxford, and Athens introduced Aeneas in Nature, a multimodal generative neural network trained on 176,000+ Latin inscriptions and photographs. Unlike prior models limited to fixed-length gaps, Aeneas restores arbitrary-length missing passages, predicts geographic provenance and date within an average 13-year margin, and retrieves deep contextual parallels across the Roman world. In a controlled study with 23 epigraphers—including analysis of the Res Gestae Divi Augusti—historians rated Aeneas’s parallels useful in 90% of cases, raised confidence by 44%, and achieved superior accuracy collaboratively compared to either humans or AI alone.",
+  "technicalHighlights": [
+    "First multimodal model fusing visual photographs and text to restore arbitrary-length damaged passages in ancient Latin inscriptions.",
+    "Dates inscriptions within 13 years of ground truth and retrieves deep historical parallels across Roman provinces.",
+    "Controlled study with 23 historians showed 90% parallel utility, +44% confidence, and human+AI performance surpassing both experts and AI working alone."
+  ],
+  "caveats": "Focused on Latin epigraphy and dependent on digitized corpora; final historical interpretation remains anchored in human philological judgment.",
+  "contributors": [
+    "Yannis Assael",
+    "Thea Sommerschield",
+    "Alison Cooley",
+    "Jonathan Prag",
+    "Shakir Mohamed"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "University of Nottingham",
+    "University of Warwick",
+    "University of Oxford"
+  ],
+  "scores": {
+    "foundational": 82,
+    "ripple": 84,
+    "verification": 95,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Establishes multimodal parallel-retrieval generative AI for arbitrary-length restoration and historical contextualization of fragmentary human records.",
+    "ripple": "Transforms archaeology, epigraphy, and digital humanities while providing a rigorous controlled benchmark for human-AI scholarly synergy.",
+    "verification": "Peer-reviewed in Nature (2025) with a 23-historian controlled evaluation and open-source interactive release.",
+    "velocity": "Surfaces cross-Mediterranean epigraphic parallels and restorations in seconds versus months of manual corpus searches."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Assael, Sommerschield et al. — Contextualizing ancient texts with generative neural networks (Nature, 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-09292-5",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 40702185",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40702185/",
+      "type": "paper"
+    }
+  ]
+}

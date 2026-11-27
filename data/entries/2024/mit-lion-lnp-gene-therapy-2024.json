@@ -1,0 +1,63 @@
+{
+  "id": "mit-lion-lnp-gene-therapy-2024",
+  "title": "MIT LiON Deep Learning Screens 1.6M Lipids to Discover Pulmonary mRNA Gene-Therapy Nanoparticles",
+  "shortTitle": "MIT LiON: AI Pulmonary mRNA Lipids",
+  "date": "2024-12-10",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "mRNA Therapeutics",
+    "Gene Delivery",
+    "Graph Neural Networks"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "LiON (Directed Message-Passing Neural Network)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature Biotechnology: trained on >9,000 LNP measurements, LiON screened 1.6 million ionizable lipids to discover FO-32 and FO-35—achieving potent nebulized mRNA delivery in mouse and ferret lungs.",
+  "summary": "MIT researchers led by Daniel G. Anderson and Robert Langer (with the University of Iowa) introduced LiON (Lipid Optimization using Neural Networks) in Nature Biotechnology to break the liver-targeting bottleneck of non-viral mRNA delivery. Generating a dataset of >9,000 lipid nanoparticle activity measurements to train a directed message-passing neural network, the team screened 1.6 million virtual lipids and extrapolated to structurally divergent chemical families—discovering two novel ionizable lipids, FO-32 and FO-35, that delivered nebulized mRNA efficiently into mouse and ferret lungs (a key preclinical model for cystic fibrosis gene therapy).",
+  "technicalHighlights": [
+    "Trained a directed message-passing graph neural network (LiON) on >9,000 experimental lipid nanoparticle activity measurements.",
+    "Screened 1.6 million candidate ionizable lipids in silico, generalizing accurately to structurally novel lipid chemistries outside the training distribution.",
+    "Discovered FO-32 and FO-35, achieving state-of-the-art nebulized mRNA delivery in mouse lungs and efficient pulmonary mRNA delivery in ferrets."
+  ],
+  "caveats": "Demonstrated in preclinical mouse and ferret models; human clinical safety, repeat-dosing tolerability, and GMP manufacturing remain to be established.",
+  "contributors": [
+    "Jacob Witten",
+    "Idris Raji",
+    "Rajith S. Manan",
+    "Robert Langer",
+    "Daniel G. Anderson"
+  ],
+  "institutions": [
+    "MIT (Koch Institute / Chemical Engineering)",
+    "University of Iowa"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 88,
+    "verification": 95,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates deep graph neural networks extrapolating across chemical space to solve extra-hepatic organ-targeted nucleic-acid delivery.",
+    "ripple": "Directly advances inhaled mRNA and CRISPR gene therapies for cystic fibrosis, asthma, and pulmonary diseases.",
+    "verification": "Peer-reviewed in Nature Biotechnology with extensive in vitro assays and in vivo validation in both mice and ferrets.",
+    "velocity": "Evaluated 1.6 million candidate lipids computationally to uncover two high-potency pulmonary delivery vehicles."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Witten, Raji, Langer, Anderson et al. — Artificial intelligence-guided design of lipid nanoparticles for pulmonary gene therapy (Nature Biotechnology, 2024/2025)",
+      "url": "https://doi.org/10.1038/s41587-024-02490-y",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 39658727",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39658727/",
+      "type": "paper"
+    }
+  ]
+}

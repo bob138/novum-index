@@ -49,7 +49,8 @@
     "velocity": "Jumped enzyme active-site benchmark solvability from 39% (16/41) to 100% (41/41) in a single generative leap."
   },
   "enables": [
-    "rfdiffusion3-all-atom-design-2026"
+    "rfdiffusion3-all-atom-design-2026",
+    "riff-diff-de-novo-enzymes-2025"
   ],
   "sources": [
     {

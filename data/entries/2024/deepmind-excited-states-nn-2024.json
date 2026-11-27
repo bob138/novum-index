@@ -1,0 +1,65 @@
+{
+  "id": "deepmind-excited-states-nn-2024",
+  "title": "Google DeepMind Computes Electronic Quantum Excited States with Parameter-Free Neural Wavefunctions",
+  "shortTitle": "DeepMind Excited-State Neural QMC",
+  "date": "2024-08-23",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Quantum Chemistry",
+    "Neural Wavefunctions",
+    "Electronic Excited States"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "FermiNet & Psiformer (Natural Excited States VMC)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Science: transforms excited-state quantum mechanics into a parameter-free expanded ground-state problem for FermiNet/Psiformer, cracking hard double excitations and optical spectra at chemical accuracy.",
+  "summary": "Google DeepMind researchers David Pfau, Simon Axelrod, Halvard Sutterud, Ingrid von Glehn, and James S. Spencer (with Imperial College London, Harvard, and MIT) published Natural Excited States (NES-VMC) in Science, solving a decades-old obstacle in quantum Monte Carlo: computing electronic excited states without arbitrary penalty hyperparameters or explicit orthogonalization. By reformulating the search for the lowest K excited states as finding the ground state of an expanded multi-state system and pairing it with FermiNet and Psiformer neural wavefunctions, the method accurately predicts excitation energies, transition dipole moments, oscillator strengths, and notoriously difficult double excitations on benzene-scale molecules.",
+  "technicalHighlights": [
+    "Introduces a parameter-free variational Monte Carlo formulation (NES-VMC) requiring no state orthogonalization or penalty tuning.",
+    "Computes arbitrary quantum observables including off-diagonal transition dipole moments and oscillator strengths governing light absorption and emission.",
+    "Paired with FermiNet and Psiformer, achieves chemical accuracy on benzene-scale vertical excitations and challenging double-excitation states."
+  ],
+  "caveats": "Variational Monte Carlo with deep neural wavefunctions remains computationally intensive for very large macromolecules compared to TD-DFT, though vastly more accurate on correlated excited states.",
+  "contributors": [
+    "David Pfau",
+    "Simon Axelrod",
+    "Halvard Sutterud",
+    "Ingrid von Glehn",
+    "James S. Spencer"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "Imperial College London",
+    "Harvard University",
+    "MIT"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 86,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Extends ab initio deep neural wavefunctions from ground states to the full excited-state spectrum governing photochemistry, solar harvesting, and vision.",
+    "ripple": "Impacts computational chemistry, photocatalysis, OLEDs, atomic/nuclear physics, and correlated condensed-matter physics.",
+    "verification": "Peer-reviewed in Science (Aug 2024) with rigorous ab initio benchmarks against experimental spectra and coupled-cluster references.",
+    "velocity": "Eliminates brittle penalty tuning and enables accurate neural computation of double excitations that defeat standard quantum chemistry."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Pfau et al. — Accurate computation of quantum excited states with neural networks (Science, 2024)",
+      "url": "https://doi.org/10.1126/science.adn0137",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 39172822",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39172822/",
+      "type": "paper"
+    }
+  ]
+}

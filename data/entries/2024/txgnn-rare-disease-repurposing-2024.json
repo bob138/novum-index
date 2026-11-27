@@ -1,0 +1,64 @@
+{
+  "id": "txgnn-rare-disease-repurposing-2024",
+  "title": "TxGNN Graph Foundation Model Enables Zero-Shot Drug Repurposing Across 17,080 Diseases",
+  "shortTitle": "TxGNN: 17,080-Disease Drug AI",
+  "date": "2024-09-25",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Drug Repurposing",
+    "Rare Diseases",
+    "Graph Foundation Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "TxGNN (Medical Knowledge Graph GNN)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature Medicine: zero-shot medical knowledge-graph foundation model ranking therapeutic indications (+49.2%) and contraindications (+35.1%) across 17,080 diseases—including rare diseases with zero approved drugs.",
+  "summary": "Harvard Medical School, Stanford, and Mount Sinai researchers led by Marinka Zitnik introduced TxGNN in Nature Medicine, a graph neural network foundation model pretrained on a comprehensive medical knowledge graph spanning 17,080 clinically recognized diseases and 7,957 therapeutic candidates. Unlike prior repurposing models restricted to diseases with existing approved therapies, TxGNN performs zero-shot repurposing for neglected and rare diseases lacking any known treatment—improving indication accuracy by 49.2% and contraindication prediction by 35.1% over eight baselines while aligning strongly with real-world off-label clinician prescriptions and providing multi-hop mechanistic rationales.",
+  "technicalHighlights": [
+    "Pretrained on a unified medical knowledge graph covering 17,080 diseases and 7,957 drugs to enable zero-shot drug repurposing for untreated rare diseases.",
+    "Improved zero-shot indication accuracy by 49.2% and contraindication accuracy by 35.1% over eight competing methods.",
+    "Includes an interactive multi-hop Explainer validated with clinicians, with predictions aligning closely to real-world off-label hospital prescriptions."
+  ],
+  "caveats": "Computational repurposing predictions and retrospective health-system alignments still require prospective clinical trials to confirm efficacy and safety for each newly proposed indication.",
+  "contributors": [
+    "Kexin Huang",
+    "Payal Chandak",
+    "Jure Leskovec",
+    "Nils Gehlenborg",
+    "Marinka Zitnik"
+  ],
+  "institutions": [
+    "Harvard Medical School",
+    "Stanford University",
+    "Icahn School of Medicine at Mount Sinai"
+  ],
+  "scores": {
+    "foundational": 83,
+    "ripple": 89,
+    "verification": 93,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Solves zero-shot therapeutic inference across thousands of rare and neglected diseases lacking historical drug-label training data.",
+    "ripple": "Directly empowers clinician-centered drug repurposing across over 7,000 rare diseases affecting hundreds of millions of patients worldwide.",
+    "verification": "Peer-reviewed in Nature Medicine (2024) with rigorous zero-shot evaluation, clinician human-factors studies, and electronic health-record validation.",
+    "velocity": "Screens 7,957 candidates across 17,080 diseases simultaneously with transparent multi-hop mechanistic explanations."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Huang, Chandak, Zitnik et al. — A foundation model for clinician-centered drug repurposing (Nature Medicine, 2024)",
+      "url": "https://doi.org/10.1038/s41591-024-03233-x",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 39322717",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39322717/",
+      "type": "paper"
+    }
+  ]
+}

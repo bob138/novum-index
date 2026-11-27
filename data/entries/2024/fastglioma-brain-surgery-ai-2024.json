@@ -1,0 +1,65 @@
+{
+  "id": "fastglioma-brain-surgery-ai-2024",
+  "title": "FastGlioma Visual Foundation Model Detects Residual Brain Tumor Infiltration in Under 10 Seconds",
+  "shortTitle": "FastGlioma: 10-Sec Brain Surgery AI",
+  "date": "2024-11-13",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Neurosurgery",
+    "Clinical Oncology AI",
+    "Medical Foundation Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "FastGlioma (Self-Supervised Optical Foundation Model)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "<10 seconds intraoperatively",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: detects microscopic glioma infiltration in fresh brain-surgery tissue in <10 seconds (92.1% AUROC across 220 international patients), beating MRI and 5-ALA fluorescence head-to-head.",
+  "summary": "Neurosurgeons and AI researchers led by Todd Hollon (University of Michigan) and Shawn Hervey-Jumper (UCSF), with NYU and the Medical University of Vienna, developed FastGlioma in Nature—an open-source visual foundation model pretrained via self-supervision on ~4 million rapid, label-free stimulated Raman histology images. In a prospective, multicenter international cohort of 220 diffuse glioma patients, FastGlioma quantified microscopic tumor infiltration in fresh surgical tissue in under 10 seconds with 92.1 ± 0.9% AUROC, outperforming standard image-guided and 5-ALA fluorescence surgical adjuncts by a wide margin in a head-to-head prospective study (n = 129) while generalizing zero-shot to pediatric brain tumors.",
+  "technicalHighlights": [
+    "Pretrained on ~4 million label-free optical microscopy images to score microscopic glioma infiltration in fresh surgical tissue in <10 seconds.",
+    "Achieved 92.1 ± 0.9% AUROC across a prospective, multicenter international cohort of 220 patients across WHO molecular subtypes.",
+    "Dramatically outperformed standard MRI navigation and 5-ALA fluorescence in a head-to-head prospective study (n = 129) and generalized zero-shot to pediatric brain tumors."
+  ],
+  "caveats": "Requires intraoperative stimulated Raman histology imaging hardware in the operating room; randomized survival-outcome trials evaluating long-term patient progression-free survival are ongoing.",
+  "contributors": [
+    "Akhil Kondepudi",
+    "Melike Pekmezci",
+    "Daniel A. Orringer",
+    "Shawn Hervey-Jumper",
+    "Todd Hollon"
+  ],
+  "institutions": [
+    "University of Michigan",
+    "UCSF",
+    "New York University",
+    "Medical University of Vienna"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 94
+  },
+  "scoreRationale": {
+    "foundational": "Establishes real-time label-free optical foundation models as a transformative surgical guidance paradigm in oncology.",
+    "ripple": "Directly addresses the #1 driver of early glioma recurrence—missed microscopic tumor margins—and extends zero-shot to pediatric brain tumors.",
+    "verification": "Peer-reviewed in Nature with prospective, multicenter international validation (n = 220) and head-to-head clinical comparison (n = 129).",
+    "velocity": "Delivers whole-slide intraoperative pathology guidance in under 10 seconds without tissue staining or frozen-section delays."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Kondepudi, Hervey-Jumper, Hollon et al. — Foundation models for fast, label-free detection of glioma infiltration (Nature, 2024/2025)",
+      "url": "https://doi.org/10.1038/s41586-024-08169-3",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 39537921",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39537921/",
+      "type": "paper"
+    }
+  ]
+}

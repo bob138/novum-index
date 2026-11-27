@@ -1,0 +1,64 @@
+{
+  "id": "prov-gigapath-pathology-ai-2024",
+  "title": "Prov-GigaPath Whole-Slide Pathology Foundation Model Pretrained on 1.3 Billion Cancer Tiles",
+  "shortTitle": "Prov-GigaPath: 1.3B-Tile Pathology AI",
+  "date": "2024-05-22",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Digital Pathology",
+    "Oncology",
+    "Vision Foundation Models"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Prov-GigaPath (1.1B LongNet Slide Transformer)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: open-weight 1.1B-parameter whole-slide foundation model pretrained on 1.3 billion real-world clinical tiles across 171,189 slides, reaching SOTA on 25/26 cancer subtyping and mutation tasks.",
+  "summary": "Microsoft Research, Providence Genomics, and the University of Washington released Prov-GigaPath in Nature—the first open-weight gigapixel whole-slide pathology foundation model pretrained on 1.3 billion image tiles from 171,189 real-world slides spanning over 30,000 patients and 31 major tissue types across 28 US cancer centers. Adapting LongNet dilated attention to model tens of thousands of tiles simultaneously per slide, Prov-GigaPath achieved state-of-the-art performance on 25 of 26 digital pathology tasks (9 cancer subtyping and 17 pathomics/mutation-prediction benchmarks), significantly outperforming prior models on 18 tasks.",
+  "technicalHighlights": [
+    "Pretrained on 1.3 billion clinical pathology tiles across 171,189 whole slides from 30,000+ patients and 31 tissue types across 28 cancer centers.",
+    "Adapts LongNet ultra-long-context attention to reason over entire gigapixel slides rather than isolated tile subsamples.",
+    "Achieved SOTA on 25 of 26 cancer subtyping and genetic-mutation prediction tasks and released as an open-weight foundation model."
+  ],
+  "caveats": "Pretraining cohort comes from a single large US health system (Providence), so prospective multi-country clinical trials and regulatory clearance are required before autonomous diagnostic use.",
+  "contributors": [
+    "Hanwen Xu",
+    "Naoto Usuyama",
+    "Carlo Bifulco",
+    "Sheng Wang",
+    "Hoifung Poon"
+  ],
+  "institutions": [
+    "Microsoft Research",
+    "Providence Genomics",
+    "University of Washington"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Solves whole-slide gigapixel context modeling in computational pathology via LongNet dilated-attention pretraining.",
+    "ripple": "Open-weight release became a foundational backbone for global computational oncology, biomarker prediction, and vision-language pathology.",
+    "verification": "Peer-reviewed in Nature (May 2024) with multi-benchmark validation across both Providence clinical cohorts and TCGA.",
+    "velocity": "Unlocks pan-cancer mutation prediction and subtyping directly from routine H&E biopsy slides without costly genomic sequencing."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Xu, Usuyama, Bifulco, Wang, Poon et al. — A whole-slide foundation model for digital pathology from real-world data (Nature, 2024)",
+      "url": "https://doi.org/10.1038/s41586-024-07441-w",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 38778098",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38778098/",
+      "type": "paper"
+    }
+  ]
+}

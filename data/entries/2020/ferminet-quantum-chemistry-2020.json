@@ -48,7 +48,8 @@
   },
   "enables": [
     "gnome-materials-2023",
-    "dm21-neural-density-functional-2021"
+    "dm21-neural-density-functional-2021",
+    "deepmind-excited-states-nn-2024"
   ],
   "sources": [
     {

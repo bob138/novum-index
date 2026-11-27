@@ -49,7 +49,8 @@
     "velocity": "Compressed years of conventional natural-product bioassay screening across tens of thousands of ecosystems into computational screening followed by targeted synthesis."
   },
   "enables": [
-    "mit-generative-antibiotics-2025"
+    "mit-generative-antibiotics-2025",
+    "apex-archaeasins-antibiotics-2025"
   ],
   "sources": [
     {

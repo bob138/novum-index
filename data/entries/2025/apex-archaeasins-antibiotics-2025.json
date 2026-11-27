@@ -1,0 +1,60 @@
+{
+  "id": "apex-archaeasins-antibiotics-2025",
+  "title": "APEX 1.1 Deep Learning Discovers Archaeasins—A New Domain-of-Life Class of Antibiotics",
+  "shortTitle": "APEX 1.1: Archaeasin Antibiotics",
+  "date": "2025-08-12",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Antimicrobial Discovery",
+    "Archaeal Proteomics",
+    "Deep Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "APEX 1.1 (Deep Peptide Antibiotic Miner)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Mines 233 archaeal proteomes to uncover 12,623 archaeasins—an untapped domain of life for antibiotics—with 93% of 80 synthesized peptides killing superbugs and archaeasin-73 matching polymyxin B in mice.",
+  "summary": "University of Pennsylvania researchers led by César de la Fuente-Núñez deployed APEX 1.1, a deep learning antimicrobial-peptide discovery model, to systematically mine 233 archaeal proteomes—opening the entire Archaea domain of life as a new source of antibiotics. APEX 1.1 identified 12,623 candidate molecules (\"archaeasins\") with distinct amino-acid compositions and cytoplasmic-membrane depolarization mechanisms; 93% of 80 synthesized archaeasins killed multidrug-resistant ESKAPE pathogens in vitro, and lead candidate archaeasin-73 significantly reduced Acinetobacter baumannii infection loads in mice at efficacy comparable to polymyxin B.",
+  "technicalHighlights": [
+    "Systematically mined 233 archaeal proteomes with APEX 1.1, identifying 12,623 novel candidate antimicrobial peptides (\"archaeasins\").",
+    "93% of 80 chemically synthesized archaeasins demonstrated in vitro activity against clinically critical ESKAPE pathogens.",
+    "In vivo lead archaeasin-73 cleared Acinetobacter baumannii in mouse infection models comparably to last-resort antibiotic polymyxin B."
+  ],
+  "caveats": "Results are preclinical (in vitro and mouse infection models); systemic toxicity, stability, and clinical efficacy in humans remain to be evaluated.",
+  "contributors": [
+    "Marcelo D. T. Torres",
+    "Fangping Wan",
+    "César de la Fuente-Núñez"
+  ],
+  "institutions": [
+    "University of Pennsylvania"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 86,
+    "verification": 94,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Unlocks the previously untapped Archaea domain of life as a rich structural reservoir of antibiotics with distinct membrane-depolarization action.",
+    "ripple": "Expands AI-driven molecular bioprospecting beyond bacteria and fungi to combat global antimicrobial resistance.",
+    "verification": "Peer-reviewed in Nature Microbiology (2025) with 80 synthesized peptides (93% hit rate) and in vivo mouse efficacy vs. polymyxin B.",
+    "velocity": "Screened 233 extremophile proteomes computationally to achieve a 93% wet-lab validation rate."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Torres, Wan & de la Fuente-Núñez — Deep learning reveals antibiotics in the archaeal proteome (Nature Microbiology, 2025)",
+      "url": "https://doi.org/10.1038/s41564-025-02061-0",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 40796684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40796684/",
+      "type": "paper"
+    }
+  ]
+}

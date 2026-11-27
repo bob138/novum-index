@@ -1,0 +1,66 @@
+{
+  "id": "foldseek-cluster-protein-universe-2023",
+  "title": "Foldseek Cluster Maps All 214 Million AlphaFold Structures, Revealing Ancient Immune Evolution",
+  "shortTitle": "Foldseek 214M Protein Universe (Nature)",
+  "date": "2023-09-13",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "Structural Biology",
+    "Evolutionary Biology",
+    "Proteomics"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Foldseek Cluster (3Di Structural Alphabet + AlphaFold DB)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature: structurally clustered all 214 million AlphaFold protein predictions into 2.30M clusters (31% unannotated dark proteome), uncovering ancient links between bacterial defense and human immunity.",
+  "summary": "Martin Steinegger (Seoul National University), Pedro Beltrao (ETH Zürich), and EMBL-EBI collaborators developed Foldseek Cluster in Nature—encoding 3D tertiary interactions into a learned structural alphabet (3Di) to cluster all 214 million predicted structures in the AlphaFold Database in days rather than millennia. The structural atlas partitioned the known protein universe into 2.30 million non-singleton clusters, exposing 31% as previously unannotated \"dark proteome\" families and revealing remote structural homologies linking human immune proteins directly back to ancient prokaryotic defense systems across the tree of life.",
+  "technicalHighlights": [
+    "Clustered the entire 214-million-structure AlphaFold Protein Structure Database into 2.30 million structural clusters using Foldseek’s 3Di structural alphabet.",
+    "Revealed that 31% of non-singleton structural clusters lack prior functional annotations, mapping the dark protein universe.",
+    "Uncovered remote evolutionary homologies connecting human immune-related proteins to ancient bacterial and prokaryotic defense systems."
+  ],
+  "caveats": "Relies on predicted AlphaFold 2 structural models (some low-confidence or disordered clusters require experimental confirmation); indexed as a 2023 historical calibration anchor.",
+  "contributors": [
+    "Inigo Barrio-Hernandez",
+    "Jingi Yeo",
+    "Sameer Velankar",
+    "Pedro Beltrao",
+    "Martin Steinegger"
+  ],
+  "institutions": [
+    "Seoul National University",
+    "ETH Zürich",
+    "EMBL-EBI"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 92,
+    "verification": 96,
+    "velocity": 95
+  },
+  "scoreRationale": {
+    "foundational": "Created the first complete structural taxonomy of the 214-million-protein universe, revealing deep evolutionary origins of immunity.",
+    "ripple": "Became the indispensable search and clustering backbone for post-AlphaFold structural biology and metagenomic discovery.",
+    "verification": "Peer-reviewed in Nature (2023) with open-source software (github.com/steineggerlab/foldseek) and public structural cluster databases.",
+    "velocity": "Compressed all-vs-all 3D structural clustering of 214M proteins by orders of magnitude into tractable compute."
+  },
+  "enables": [
+    "lucaprot-161979-rna-viruses-2024"
+  ],
+  "sources": [
+    {
+      "label": "Barrio-Hernandez, Yeo, Beltrao, Steinegger et al. — Clustering predicted structures at the scale of the known protein universe (Nature, 2023)",
+      "url": "https://doi.org/10.1038/s41586-023-06510-w",
+      "type": "paper"
+    },
+    {
+      "label": "Steinegger Lab — github.com/steineggerlab/foldseek",
+      "url": "https://github.com/steineggerlab/foldseek",
+      "type": "code"
+    }
+  ]
+}

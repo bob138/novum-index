@@ -1,0 +1,65 @@
+{
+  "id": "frnn-tokamak-disruption-2019",
+  "title": "FRNN Deep Learning Achieves Cross-Machine Forecasting of Catastrophic Fusion Plasma Disruptions",
+  "shortTitle": "FRNN Fusion Disruption AI (Nature)",
+  "date": "2019-04-17",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Nuclear Fusion",
+    "Plasma Physics",
+    "Deep Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "FRNN (Fusion Recurrent Neural Network)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature: first deep learning model to forecast destructive tokamak plasma disruptions across distinct reactors (DIII-D and JET)—a crucial prerequisite for ITER and active deep-RL fusion control.",
+  "summary": "Julian Kates-Harbeck, Alexey Svyatkovskiy, and William Tang (Harvard, Princeton, and Princeton Plasma Physics Laboratory) introduced the Fusion Recurrent Neural Network (FRNN) in Nature, demonstrating that large-scale deep learning trained on high-dimensional experimental tokamak diagnostics from DIII-D (US) and JET (Europe) can accurately forecast catastrophic plasma disruptions with long warning times. Crucially, FRNN generalized across machines—predicting disruptions on reactors different from the one it was trained on—laying the experimental and methodological foundation for ITER safety and subsequent active deep-RL plasma control.",
+  "technicalHighlights": [
+    "Trained large-scale deep convolutional-recurrent networks on multi-diagnostic experimental plasma discharges from both DIII-D and JET.",
+    "Achieved reliable cross-machine disruption prediction—essential for future burning-plasma reactors like ITER that cannot afford training disruptions.",
+    "Provided long warning horizons enabling the transition from passive plasma disruption forecasting to active AI-driven tokamak control."
+  ],
+  "caveats": "Focused on forecasting disruptions rather than closing the active magnetic/heating actuator control loop (achieved later by TCV and DIII-D deep-RL controllers); indexed as a 2019 anchor.",
+  "contributors": [
+    "Julian Kates-Harbeck",
+    "Alexey Svyatkovskiy",
+    "William Tang"
+  ],
+  "institutions": [
+    "Harvard University",
+    "Princeton University",
+    "Princeton Plasma Physics Laboratory (PPPL)"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 95,
+    "velocity": 86
+  },
+  "scoreRationale": {
+    "foundational": "Established deep learning as a viable cross-machine forecasting paradigm for catastrophic magnetohydrodynamic instabilities in fusion tokamaks.",
+    "ripple": "Directly paved the way for DeepMind TCV tokamak shaping RL (2022) and Princeton DIII-D tearing-avoidance RL (2024).",
+    "verification": "Peer-reviewed in Nature (Apr 2019) using real experimental discharge datasets from the world’s largest tokamaks (JET and DIII-D).",
+    "velocity": "Accelerated multi-diagnostic disruption forecasting far beyond classical first-principles MHD models."
+  },
+  "enables": [
+    "deepmind-tokamak-plasma-2022",
+    "diii-d-fusion-tearing-rl-2024"
+  ],
+  "sources": [
+    {
+      "label": "Kates-Harbeck, Svyatkovskiy & Tang — Predicting disruptive instabilities in controlled fusion plasmas through deep learning (Nature, 2019)",
+      "url": "https://doi.org/10.1038/s41586-019-1116-4",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 30996348",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30996348/",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "google-flood-hub-ungauged-2024",
+  "title": "Google AI Achieves 5-Day Extreme Flood Prediction in Ungauged Watersheds Across 80+ Countries",
+  "shortTitle": "Google Flood Hub AI (Nature)",
+  "date": "2024-03-20",
+  "discipline": "Physics & Quantum",
+  "subfields": [
+    "Hydrology",
+    "Earth System Science",
+    "Disaster Forecasting"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Google Flood Hub LSTM Hydrological AI",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: delivers 5-day-ahead extreme riverine flood predictions in completely ungauged watersheds matching or beating GloFAS same-day nowcasts, deployed free in real time across 80+ countries.",
+  "summary": "Google Research hydrologists led by Grey Nearing (with ECMWF and UFZ) demonstrated in Nature that deep LSTM hydrological neural networks can reliably forecast extreme riverine floods in completely ungauged watersheds—solving a grand challenge of global hydrology that disproportionately leaves developing nations vulnerable. At up to five-day lead times in ungauged basins, the AI model matched or exceeded the accuracy of zero-day nowcasts from the state-of-the-art global physics system (Copernicus GloFAS) and achieved accuracy on severe five-year return-period floods matching GloFAS on routine one-year events, powering free live public warnings across over 80 countries.",
+  "technicalHighlights": [
+    "Achieves five-day-ahead extreme flood forecast reliability in ungauged watersheds comparable to or better than Copernicus GloFAS zero-day nowcasts.",
+    "Extends high-skill warnings to rarer, more destructive five-year return-period floods in data-scarce regions of Africa, Asia, and Latin America.",
+    "Deployed operationally as a free, real-time public early warning system (Google Flood Hub) serving over 80 countries."
+  ],
+  "caveats": "Focuses on riverine (fluvial) flooding rather than flash floods or coastal storm surges, and ultimate accuracy in extreme climate regimes still benefits from expanded local gauge observations.",
+  "contributors": [
+    "Grey Nearing",
+    "Frederik Kratzert",
+    "Florian Pappenberger",
+    "Yossi Matias"
+  ],
+  "institutions": [
+    "Google Research",
+    "ECMWF",
+    "Helmholtz Centre for Environmental Research (UFZ)"
+  ],
+  "scores": {
+    "foundational": 85,
+    "ripple": 94,
+    "verification": 96,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Solves the decades-old Predictions in Ungauged Basins (PUB) grand challenge of global hydrology with deep sequence modeling.",
+    "ripple": "Directly protects hundreds of millions of people across 80+ developing and developed countries with free real-time flood warnings.",
+    "verification": "Peer-reviewed in Nature (Mar 2024) with global cross-validation across thousands of watersheds and live operational deployment.",
+    "velocity": "Delivers a five-day advance warning advantage over global physics-based hydrological simulations in ungauged rivers."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Nearing et al. — Global prediction of extreme floods in ungauged watersheds (Nature, 2024)",
+      "url": "https://doi.org/10.1038/s41586-024-07145-1",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 38509278",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38509278/",
+      "type": "paper"
+    }
+  ]
+}

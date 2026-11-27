@@ -2026,6 +2026,214 @@ const EXPLICIT_ATTRIBUTIONS = {
       lab: 'Alibaba Cloud Apsara Lab / Sun Yat-sen University',
     },
   ],
+  'tencent-oridtp-dual-peptides-2026': [
+    {
+      familyId: 'tencent-oridtp',
+      familyName: 'ORIDTP Dual-Target Peptide AI (Tencent)',
+      modelId: 'oridtp-nature-2026',
+      modelName: 'ORIDTP (Transfer + Dual-Target RL Peptide Designer)',
+      architecture: 'Deep RL & Evolutionary Agent',
+      lab: 'Tencent AI for Life Sciences Lab',
+    },
+  ],
+  'riff-diff-de-novo-enzymes-2025': [
+    {
+      familyId: 'riff-diff-tugraz',
+      familyName: 'Riff-Diff Enzyme Scaffolding AI (TU Graz)',
+      modelId: 'riff-diff-nature-2025',
+      modelName: 'Riff-Diff (Catalytic Motif Scaffolding Diffusion)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Graz University of Technology',
+    },
+    {
+      familyId: 'rosettafold-rfdiffusion',
+      familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+      modelId: 'rfdiffusion',
+      modelName: 'RFdiffusion (SE(3) Diffusion)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'University of Washington (IPD)',
+      roleNote: 'Backbone Diffusion Engine',
+    },
+  ],
+  'apex-archaeasins-antibiotics-2025': [
+    {
+      familyId: 'apex-ampsphere',
+      familyName: 'APEX & AMPSphere Peptide AI (UPenn)',
+      modelId: 'apex-1-1-archaeasins',
+      modelName: 'APEX 1.1 (Archaeome Antibiotic Miner)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'University of Pennsylvania',
+    },
+  ],
+  'darpa-aixcc-autonomous-cyber-2025': [
+    {
+      familyId: 'darpa-aixcc-crs',
+      familyName: 'DARPA AIxCC Cyber Reasoning Systems',
+      modelId: 'aixcc-team-atlanta-crs',
+      modelName: 'Team Atlanta & AIxCC Autonomous CRSs',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'DARPA / Georgia Tech / Samsung / KAIST / POSTECH',
+    },
+  ],
+  'pmhc-cancer-minibinders-science-2025': [
+    {
+      familyId: 'rosettafold-rfdiffusion',
+      familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+      modelId: 'rfdiffusion',
+      modelName: 'RFdiffusion (SE(3) Diffusion)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'University of Washington (IPD)',
+      roleNote: 'De Novo pMHC Minibinder Scaffolding',
+    },
+    {
+      familyId: 'rosettafold-rfdiffusion',
+      familyName: 'RoseTTAFold & RFdiffusion (UW IPD)',
+      modelId: 'proteinmpnn',
+      modelName: 'ProteinMPNN (Inverse Folding GNN)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'University of Washington (IPD)',
+      roleNote: 'Sequence Design',
+    },
+    {
+      familyId: 'alphafold',
+      familyName: 'AlphaFold Structural Suite',
+      modelId: 'alphafold-2',
+      modelName: 'AlphaFold 2',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Google DeepMind & Research',
+      roleNote: 'In Silico Structural Filtering',
+    },
+  ],
+  'deepmind-aeneas-ancient-texts-2025': [
+    {
+      familyId: 'deepmind-aeneas',
+      familyName: 'Aeneas Multimodal Epigraphy AI (DeepMind)',
+      modelId: 'aeneas-nature-2025',
+      modelName: 'Aeneas (Multimodal Epigraphic Transformer)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'thermal-meta-emitters-nature-2025': [
+    {
+      familyId: 'sjtu-uta-thermal-ml',
+      familyName: 'Three-Plane Thermal Metamaterial AI (SJTU / UT Austin)',
+      modelId: 'three-plane-meta-emitter-ml',
+      modelName: 'Three-Plane Sparse-Data ML Inverse Designer',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Shanghai Jiao Tong University / UT Austin / NUS',
+    },
+  ],
+  'ml-ductile-fenicoalta-alloy-2025': [
+    {
+      familyId: 'xjtu-alloy-active-ml',
+      familyName: 'Active-ML High-Entropy Alloy AI (XJTU)',
+      modelId: 'xjtu-fenicoalta-ml',
+      modelName: 'Domain-Knowledge Active ML Alloy Loop',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Xi’an Jiaotong University',
+    },
+  ],
+  'perovskite-htm-inverse-design-2024': [
+    {
+      familyId: 'hiern-kit-solar-ai',
+      familyName: 'Closed-Loop Perovskite Inverse-Design AI (HI-ERN / KIT)',
+      modelId: 'perovskite-bayesian-htm',
+      modelName: 'High-Throughput Bayesian Organic Semiconductor AI',
+      architecture: 'Domain Science Neural Net',
+      lab: 'HI-ERN / FAU / KIT / UNIST',
+    },
+  ],
+  'mit-lion-lnp-gene-therapy-2024': [
+    {
+      familyId: 'mit-lion-lnp',
+      familyName: 'MIT LiON Lipid Nanoparticle AI',
+      modelId: 'mit-lion-dmpnn',
+      modelName: 'LiON (Directed MPNN Ionizable Lipid Designer)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'MIT',
+    },
+  ],
+  'fastglioma-brain-surgery-ai-2024': [
+    {
+      familyId: 'fastglioma-umich',
+      familyName: 'FastGlioma Surgical Foundation AI (U-M / UCSF)',
+      modelId: 'fastglioma-srh',
+      modelName: 'FastGlioma (Self-Supervised Optical Foundation Model)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'University of Michigan / UCSF',
+    },
+  ],
+  'txgnn-rare-disease-repurposing-2024': [
+    {
+      familyId: 'harvard-txgnn',
+      familyName: 'TxGNN Drug Repurposing Foundation AI (Harvard)',
+      modelId: 'txgnn-kg-gnn',
+      modelName: 'TxGNN (17,080-Disease Medical Knowledge Graph GNN)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Harvard Medical School / Stanford',
+    },
+  ],
+  'deepmind-excited-states-nn-2024': [
+    {
+      familyId: 'ferminet',
+      familyName: 'FermiNet',
+      modelId: 'ferminet-psiformer-nes',
+      modelName: 'FermiNet & Psiformer (Natural Excited States VMC)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'prov-gigapath-pathology-ai-2024': [
+    {
+      familyId: 'microsoft-prov-gigapath',
+      familyName: 'Prov-GigaPath Pathology AI (Microsoft / Providence)',
+      modelId: 'prov-gigapath-1b',
+      modelName: 'Prov-GigaPath (1.1B LongNet Slide Transformer)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Microsoft Research / Providence Genomics',
+    },
+  ],
+  'google-flood-hub-ungauged-2024': [
+    {
+      familyId: 'google-flood-hub',
+      familyName: 'Google Flood Hub Hydrological AI',
+      modelId: 'google-flood-lstm',
+      modelName: 'Google Flood Hub LSTM Global Hydrology Model',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Google DeepMind & Research',
+    },
+  ],
+  'foldseek-cluster-protein-universe-2023': [
+    {
+      familyId: 'foldseek-steinegger',
+      familyName: 'Foldseek Structural Search & Clustering AI (SNU / ETH)',
+      modelId: 'foldseek-cluster-3di',
+      modelName: 'Foldseek Cluster (3Di Structural Alphabet)',
+      architecture: 'Bio & Genomic Neural Net',
+      lab: 'Seoul National University / ETH Zürich / EMBL-EBI',
+    },
+  ],
+  'chematica-synthia-natural-products-2020': [
+    {
+      familyId: 'chematica-synthia',
+      familyName: 'Chematica / Synthia Retrosynthesis AI (PAS / UNIST)',
+      modelId: 'chematica-synthia-2020',
+      modelName: 'Chematica / Synthia (Causal + AI Retrosynthesis)',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Polish Academy of Sciences / UNIST / Northwestern',
+    },
+  ],
+  'frnn-tokamak-disruption-2019': [
+    {
+      familyId: 'princeton-fusion-rl',
+      familyName: 'Princeton / PPPL Fusion Deep RL',
+      modelId: 'frnn-disruption-predictor',
+      modelName: 'FRNN (Fusion Recurrent Neural Network)',
+      architecture: 'Domain Science Neural Net',
+      lab: 'Princeton / PPPL',
+    },
+  ],
 };
 
 /**

@@ -54,7 +54,9 @@
     "alphafold-3-2024",
     "abaucin-antibiotic-2023",
     "explainable-gnn-mrsa-antibiotics-2023",
-    "ampsphere-apex-microbiome-antibiotics-2024"
+    "ampsphere-apex-microbiome-antibiotics-2024",
+    "mit-lion-lnp-gene-therapy-2024",
+    "txgnn-rare-disease-repurposing-2024"
   ],
   "sources": [
     {

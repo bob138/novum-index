@@ -1,0 +1,63 @@
+{
+  "id": "ml-ductile-fenicoalta-alloy-2025",
+  "title": "Active Machine Learning Designs Ultra-Strong Ductile FeNiCoAlTa Alloy (1.8 GPa, 25% Elongation)",
+  "shortTitle": "ML Ultra-Strong Ductile Alloy (Nature)",
+  "date": "2025-06-18",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Metallurgy",
+    "High-Entropy Alloys",
+    "Active Learning"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Domain-Knowledge Active ML Alloy Designer",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": "4 ML iterations (8 alloys)",
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: active ML discovers Fe35Ni29Co21Al12Ta3 alloy breaking the centuries-old strength–ductility trade-off, achieving 1.8 GPa yield strength with 25% truly uniform tensile elongation.",
+  "summary": "Metallurgists at Xi’an Jiaotong University led by En Ma, Jun Sun, and Jinyu Zhang used a six-step domain-knowledge-informed active machine-learning loop in Nature to navigate the vast Fe–Ni–Co–Al–Ta multi-principal-element composition space in just four experimental iterations (eight synthesized alloys). Their ML-designed Fe35Ni29Co21Al12Ta3 alloy shattered the classical strength–ductility barrier at room temperature—delivering 1.8 GPa yield strength alongside 25% truly uniform elongation free of Lüders instabilities by combining dense coherent L1_2 nanoprecipitates with deformable multicomponent B2 microparticles.",
+  "technicalHighlights": [
+    "Discovered Fe35Ni29Co21Al12Ta3 in just four closed-loop active-learning iterations (8 synthesized alloys), predicting yield strength with high experimental fidelity.",
+    "Achieves an unprecedented room-temperature combination of 1.8 GPa yield strength and 25% truly uniform elongation without plastic instability plateaus.",
+    "Revealed a new microstructural synergy pairing coherent L1_2 nanoprecipitates with deformable, low-ordering-energy B2 microparticles that sustain strain hardening."
+  ],
+  "caveats": "Contains expensive cobalt and tantalum (21 at.% Co, 3 at.% Ta), so industrial adoption outside aerospace and specialty tooling will depend on cost-reduced derivative compositions.",
+  "contributors": [
+    "Yasir Sohail",
+    "Chongle Zhang",
+    "Dezhen Xue",
+    "Jinyu Zhang",
+    "Jun Sun",
+    "En Ma"
+  ],
+  "institutions": [
+    "Xi’an Jiaotong University"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 85,
+    "verification": 95,
+    "velocity": 89
+  },
+  "scoreRationale": {
+    "foundational": "Breaks a centuries-old metallurgical ceiling by achieving near-2-GPa strength alongside 25% uniform room-temperature ductility.",
+    "ripple": "Provides an active-learning metallurgical blueprint for aerospace, energy, and extreme-environment structural alloys.",
+    "verification": "Peer-reviewed in Nature (Jul 2025) with full physical alloy synthesis, tensile testing, and electron microscopy characterization.",
+    "velocity": "Pinpointed record-breaking five-element alloy compositions in only four closed-loop ML iterations."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Sohail, Zhang, Sun, Ma et al. — Machine-learning design of ductile FeNiCoAlTa alloys with high strength (Nature, 2025)",
+      "url": "https://doi.org/10.1038/s41586-025-09160-2",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 40533553",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40533553/",
+      "type": "paper"
+    }
+  ]
+}

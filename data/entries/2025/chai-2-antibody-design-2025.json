@@ -43,7 +43,8 @@
     "velocity": "Compressed multi-month million-variant phage/yeast-display campaigns into <50 zero-shot in silico designs."
   },
   "enables": [
-    "gpt6-intrinsic-protein-design-2026"
+    "gpt6-intrinsic-protein-design-2026",
+    "tencent-oridtp-dual-peptides-2026"
   ],
   "sources": [
     {

@@ -1,0 +1,56 @@
+{
+  "id": "tencent-oridtp-dual-peptides-2026",
+  "title": "Tencent ORIDTP Designs Dual-Target Obesity and Cancer Immunotherapy Peptides in Nature",
+  "shortTitle": "ORIDTP Dual-Target Peptides (Nature)",
+  "date": "2026-11-25",
+  "discipline": "Biology & Medicine",
+  "subfields": [
+    "De Novo Peptide Design",
+    "Reinforcement Learning",
+    "Oncology & Metabolism"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "ORIDTP (Single-Target Transfer + Dual-Target RL)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: designs high-potency dual-receptor peptides—GLP-1R/GCGR co-agonists surpassing natural binders without nausea, and zero-shot PD-1/CTLA-4 co-inhibitors cutting mouse tumor volume by 94.2%.",
+  "summary": "Tencent’s AI for Life Sciences Lab (with Monash University and partner Chinese hospitals) published ORIDTP in Nature, a generative peptide-design framework combining single-target knowledge transfer with dual-target reinforcement learning to engineer single peptides engaging two distinct biological receptors simultaneously. Six ORIDTP-designed GLP-1R/GCGR co-agonists surpassed the strongest natural binders in bioactivity, with lead GA-Dual.R5.S3 producing substantial weight loss and glycemic improvement in obese and db/db mice without nausea or aversion; in a zero-shot test against structurally distinct immune checkpoints PD-1 and CTLA-4, 8 of 15 peptides blocked both targets and lead IC-Dual.P3 reduced tumor volume by 94.2% in humanized-checkpoint mice.",
+  "technicalHighlights": [
+    "Combines single-target knowledge transfer with dual-target reinforcement learning to overcome historically low hit rates for multi-receptor peptide drugs.",
+    "Six designed GLP-1R/GCGR co-agonists outperformed natural ligands; lead GA-Dual.R5.S3 drove weight loss and antidiabetic efficacy in obese and db/db mice without nausea.",
+    "Zero-shot dual checkpoint campaign against PD-1 and CTLA-4 yielded 8/15 dual blockers and lead IC-Dual.P3 cutting mouse tumor volume by 94.2% vs. controls."
+  ],
+  "caveats": "All efficacy data reported in the Nature paper are preclinical (cell assays and mouse models); human clinical safety, pharmacokinetics, and immunogenicity remain to be tested.",
+  "contributors": [
+    "Tianxu Lv",
+    "Bing He"
+  ],
+  "institutions": [
+    "Tencent AI for Life Sciences Lab",
+    "Shenzhen University of Advanced Technology",
+    "Monash University"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 90,
+    "verification": 93,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Solves the multi-objective dual-receptor peptide engineering bottleneck across both metabolic GPCRs and cancer immune checkpoints.",
+    "ripple": "Directly targets two of the highest-impact therapeutic classes in modern medicine: GLP-1/glucagon metabolic drugs and checkpoint immunotherapies.",
+    "verification": "Peer-reviewed in Nature (Nov 25, 2026) with in vitro binding and in vivo mouse validation across two distinct disease areas.",
+    "velocity": "Demonstrated zero-shot dual-target immune-checkpoint design succeeding on 8 of just 15 synthesized peptides."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Lv, He et al. — De novo design of high-potency dual-target therapeutic peptides with ORIDTP (Nature, 2026)",
+      "url": "https://doi.org/10.1038/s41586-026-11338-1",
+      "type": "paper"
+    }
+  ]
+}

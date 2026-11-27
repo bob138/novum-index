@@ -1,0 +1,62 @@
+{
+  "id": "riff-diff-de-novo-enzymes-2025",
+  "title": "Riff-Diff Hybrid Diffusion Designs De Novo Enzymes Rivaling Directed Evolution",
+  "shortTitle": "Riff-Diff De Novo Enzymes (Nature)",
+  "date": "2025-12-03",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Biocatalysis",
+    "De Novo Enzyme Design",
+    "Protein Diffusion"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Riff-Diff (Rotamer Fragment Finder + RFdiffusion)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Nature: scaffolds catalytic motifs into de novo proteins for retro-aldol and Morita–Baylis–Hillman reactions, achieving activities rivaling in vitro evolution with exquisite stereoselectivity.",
+  "summary": "Researchers at Graz University of Technology and the University of Graz introduced Riff-Diff (Rotamer Inverted Fragment Finder–Diffusion) in Nature, combining atomistic catalytic-motif geometry with generative protein diffusion to scaffold custom active sites from scratch without massive experimental screening campaigns. Demonstrated across two mechanistically distinct organic synthesis reactions—the retro-aldol and Morita–Baylis–Hillman reactions—Riff-Diff produced de novo biocatalysts matching catalytic efficiencies previously attainable only after rounds of directed evolution, with six high-resolution crystal structures confirming near-atomic active-site precision.",
+  "technicalHighlights": [
+    "Hybridizes atomistic rotamer-motif scaffolding with generative protein diffusion to position multi-residue catalytic arrays at sub-angstrom accuracy.",
+    "Delivered de novo catalysts for both retro-aldol and Morita–Baylis–Hillman chemistry rivaling directed-evolution activity with high stereoselectivity.",
+    "Six high-resolution X-ray crystal structures confirmed near-atomic agreement between designed and experimental active sites."
+  ],
+  "caveats": "Catalytic turnover still depends on carefully specified quantum-chemical transition-state geometries (theozymes); industrial-scale thermal/solvent stability remains target-dependent.",
+  "contributors": [
+    "Markus Braun",
+    "Adrian Tripp",
+    "Mélanie Hall",
+    "Gustav Oberdorfer"
+  ],
+  "institutions": [
+    "Graz University of Technology",
+    "University of Graz"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 87,
+    "verification": 96,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Overcomes the historic weak-activity bottleneck of computational enzyme design, matching directed-evolution efficiencies out of the box.",
+    "ripple": "Opens general-purpose green biocatalysis for non-natural organic synthesis across pharmaceuticals and fine chemicals.",
+    "verification": "Peer-reviewed in Nature with kinetic assays, stereoselectivity measurements, and six high-resolution experimental crystal structures.",
+    "velocity": "Replaces large-library random mutagenesis campaigns with direct computational generation of high-activity enzymes."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Braun, Tripp, Oberdorfer et al. — Computational enzyme design by catalytic motif scaffolding (Nature, 2025/2026)",
+      "url": "https://doi.org/10.1038/s41586-025-09747-9",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 41339546",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41339546/",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "chematica-synthia-natural-products-2020",
+  "title": "Chematica (Synthia) Plans Complex Natural-Product Syntheses Passing Expert Chemical Turing Test",
+  "shortTitle": "Chematica / Synthia Retrosynthesis",
+  "date": "2020-10-13",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Organic Synthesis",
+    "Retrosynthesis Planning",
+    "Natural Products"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Chematica / Synthia (Causal Rules + AI Search)",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": 51,
+  "aiTimeToSolve": null,
+  "isAnchor": true,
+  "whyItMatters": "Published in Nature: solves the 50-year challenge of multistep computer-planned natural-product synthesis—passing a blind Turing test judged by top organic chemists and verified in wet-lab synthesis of three complex targets.",
+  "summary": "Bartosz A. Grzybowski’s team (Polish Academy of Sciences, UNIST, and Northwestern University) solved the 50-year grand challenge of multistep organic synthesis planning in Nature with Chematica (now Merck’s Synthia). By augmenting deep heuristic search and an expert-curated reaction knowledge base with causal multi-step strategic planning, Chematica designed novel multistep syntheses for intricate natural products that proved indistinguishable from human-designed routes in a blind Turing-like test judged by world-leading synthetic chemists—and the team physically executed three of the AI-planned natural-product syntheses in the laboratory.",
+  "technicalHighlights": [
+    "Overcame 50 years of single-step retrosynthesis limitations by combining causal multi-step strategic reasoning with AI search over chemical reaction networks.",
+    "Passed a blind chemical Turing test in which top synthetic organic chemists could not distinguish Chematica’s complex natural-product routes from human literature.",
+    "Physically validated three computer-designed multistep total syntheses of complex natural products in the wet laboratory."
+  ],
+  "caveats": "Relies on a large expert-coded reaction rule library (~100,000 transformations) alongside AI search heuristics rather than pure end-to-end neural learning; indexed as a 2020 calibration anchor.",
+  "contributors": [
+    "Barbara Mikulak-Klucznik",
+    "Karol Molga",
+    "Jacek Mlynarski",
+    "Milan Mrksich",
+    "Bartosz A. Grzybowski"
+  ],
+  "institutions": [
+    "Polish Academy of Sciences",
+    "Northwestern University",
+    "UNIST",
+    "IBS Center for Soft and Living Matter"
+  ],
+  "scores": {
+    "foundational": 88,
+    "ripple": 90,
+    "verification": 96,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Resolved the 50-year Corey/LHASA grand challenge of strategic multistep computer-planned synthesis of complex natural products.",
+    "ripple": "Commercialized globally as Synthia and directly shaped modern pharmaceutical synthesis planning and autonomous chemistry agents.",
+    "verification": "Peer-reviewed in Nature (2020) with blind expert Turing-test evaluation and full wet-lab experimental total syntheses.",
+    "velocity": "Generates expert-level multistep total-synthesis blueprints in minutes instead of weeks of manual literature planning."
+  },
+  "enables": [
+    "chemcrow-autonomous-chemistry-agent-2024",
+    "ether0-chemistry-reasoning-2025"
+  ],
+  "sources": [
+    {
+      "label": "Mikulak-Klucznik, Grzybowski et al. — Computational planning of the synthesis of complex natural products (Nature, 2020)",
+      "url": "https://doi.org/10.1038/s41586-020-2855-y",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 33049755",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33049755/",
+      "type": "paper"
+    }
+  ]
+}

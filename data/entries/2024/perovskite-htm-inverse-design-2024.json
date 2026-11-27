@@ -1,0 +1,66 @@
+{
+  "id": "perovskite-htm-inverse-design-2024",
+  "title": "Closed-Loop AI Inverse Design Discovers 26.2%-Efficient Perovskite Solar-Cell Molecules",
+  "shortTitle": "AI Perovskite Solar Molecules (Science)",
+  "date": "2024-12-12",
+  "discipline": "Chemistry & Materials",
+  "subfields": [
+    "Photovoltaics",
+    "Organic Semiconductors",
+    "Bayesian Optimization"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Closed-Loop Bayesian Inverse-Design Workflow",
+  "verificationStatus": "Peer-Reviewed",
+  "yearsUnsolved": null,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Published in Science: couples high-throughput organic semiconductor synthesis with Bayesian optimization to inverse-design tailored hole-transport molecules achieving 26.2% (certified 25.9%) perovskite solar efficiency.",
+  "summary": "An international team across Helmholtz-Institute Erlangen-Nürnberg (HI-ERN), FAU Erlangen-Nürnberg, Karlsruhe Institute of Technology (KIT), and UNIST demonstrated in Science a closed-loop inverse-design workflow uniting automated high-throughput synthesis with Bayesian optimization and interpretable molecular descriptors. Overcoming the sparse-data bottleneck in complex optoelectronic devices, the AI workflow proposed a minimal set of newly synthesized organic hole-transporting materials that reached up to 26.2% (independently certified 25.9%) power conversion efficiency in working perovskite solar cells.",
+  "technicalHighlights": [
+    "First closed-loop inverse-design workflow delivering record-tier device-level organic semiconductors tailored for complex perovskite solar cells.",
+    "Links interpretable molecular descriptors to solar-cell efficiency via Bayesian optimization trained on high-throughput synthetic libraries.",
+    "Discovered novel hole-transporting molecules achieving up to 26.2% (independently certified 25.9%) power conversion efficiency."
+  ],
+  "caveats": "Efficiency records were demonstrated on laboratory-scale perovskite solar cells; multi-decade outdoor stability and module-scale manufacturing remain ongoing commercialization challenges.",
+  "contributors": [
+    "Jianchang Wu",
+    "Luca Torresi",
+    "ManMan Hu",
+    "Sang Il Seok",
+    "Pascal Friederich",
+    "Christoph J. Brabec"
+  ],
+  "institutions": [
+    "Helmholtz-Institute Erlangen-Nürnberg (HI-ERN)",
+    "FAU Erlangen-Nürnberg",
+    "Karlsruhe Institute of Technology (KIT)",
+    "UNIST"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 89,
+    "verification": 96,
+    "velocity": 90
+  },
+  "scoreRationale": {
+    "foundational": "Demonstrates end-to-end closed-loop inverse molecular design optimizing full optoelectronic device efficiency rather than isolated quantum proxies.",
+    "ripple": "Directly accelerates next-generation clean-energy photovoltaics, OLEDs, and organic electronics.",
+    "verification": "Peer-reviewed in Science (Dec 2024) with physical synthesis and independently certified 25.9% solar-cell efficiency.",
+    "velocity": "Identified 26.2%-efficient hole-transport molecules from minimal closed-loop experimental suggestions."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Wu, Torresi, Seok, Friederich, Brabec et al. — Inverse design workflow discovers hole-transport materials tailored for perovskite solar cells (Science, 2024)",
+      "url": "https://doi.org/10.1126/science.ads0901",
+      "type": "paper"
+    },
+    {
+      "label": "PubMed Record — PMID 39666797",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39666797/",
+      "type": "paper"
+    }
+  ]
+}

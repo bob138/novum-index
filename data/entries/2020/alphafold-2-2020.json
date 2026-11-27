@@ -59,7 +59,8 @@
     "bioemu-protein-dynamics-2025",
     "alphafold-nuclear-pore-complex-2022",
     "proteinmpnn-sequence-design-2022",
-    "alphafold-fertilization-complex-2024"
+    "alphafold-fertilization-complex-2024",
+    "foldseek-cluster-protein-universe-2023"
   ],
   "sources": [
     {

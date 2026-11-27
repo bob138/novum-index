@@ -55,7 +55,9 @@
     "baker-calcium-ion-channels-2025",
     "rfdiffusion2-enzyme-scaffolding-2025",
     "rfdiffusion3-all-atom-design-2026",
-    "rfdiffusion-antivenom-binders-2025"
+    "rfdiffusion-antivenom-binders-2025",
+    "pmhc-cancer-minibinders-science-2025",
+    "riff-diff-de-novo-enzymes-2025"
   ],
   "sources": [
     {
