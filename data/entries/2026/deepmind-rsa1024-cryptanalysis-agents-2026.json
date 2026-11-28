@@ -1,0 +1,69 @@
+{
+  "id": "deepmind-rsa1024-cryptanalysis-agents-2026",
+  "title": "AI Cryptanalysis Agents Cut 1024-Bit RSA Oracle Forgery 3.5× & Introduce Fan Factories",
+  "shortTitle": "DeepMind RSA-1024 Cryptanalysis AI",
+  "date": "2026-11-06",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Cryptanalysis",
+    "Integer Factorization",
+    "Autonomous Security Agents"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Google DeepMind Cryptanalysis Agent Harness + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 33,
+  "aiTimeToSolve": "3 days 22 hrs (~20 human msgs)",
+  "isAnchor": false,
+  "whyItMatters": "DeepMind AI agents wrote 33,500 lines of code in under 4 days to cut a 5-month 1024-bit RSA signature forgery cost by 3.5× and proved Lean-checked Fan Factories cutting batch factoring cost ~30× per key.",
+  "summary": "On November 6, 2026, Google DeepMind (Dj Dvijotham, Abhradeep Thakurta, Pushmeet Kohli) with cryptographers Nadia Heninger (UCSD/Inria) and Emmanuel Thomé (Inria) released two cryptanalysis working papers—Modular Roots from a Restricted Oracle and Fan Factories. In a sandboxed 1024-bit RSA benchmark, two supervised AI agents wrote 33,500 lines of C++, CUDA, and Python across 336 distributed experiments (16,292 tool calls) in 3 days 22 hours with ~20 human approval messages, cutting CPU cost 3.5× (391 vs. 1,380 core-years) while proposing a theoretical ~1,600× improvement for 32-byte digests. Separately, a two-agent prover/verifier harness formalized Fan Factories in Lean 4, improving Coppersmith’s 1993 batch-factoring exponent from L[1.9019] to L[1.7929] (~30× cheaper per extra 1024-bit key after precomputation).",
+  "technicalHighlights": [
+    "Two supervised AI agents autonomously wrote 33,500 lines of C++/CUDA/Python, ran 336 distributed jobs (up to 300,000 CPU cores & 16 GPUs), diagnosed a 32-bit overflow bug, and reduced 1024-bit RSA oracle forgery from 1,380 to 391 CPU core-years in 3 days 22 hours.",
+    "Derived a theoretical ~1,600× improvement for forging 1024-bit RSA signatures when an attacker controls only a 32-byte digest under a restricted signing oracle.",
+    "Introduced Lean 4-checked Fan Factories (multiple number fields sharing one rational precomputation), lowering the batch-NFS exponent from L[1.9019] to L[1.7929] (~1/58 of single-key GNFS cost per extra 1024-bit target)."
+  ],
+  "caveats": "Both papers are unrefereed working papers targeting deprecated 1024-bit RSA keys; 2048-bit and larger RSA deployments remain secure. The 1,600× and 30× figures are leading-order theoretical estimates, no Fan Factory has been implemented, and the 3.5× speedup is an implementation/sieving optimization rather than a new factoring algorithm.",
+  "contributors": [
+    "Dj Dvijotham",
+    "Abhradeep Thakurta",
+    "Pushmeet Kohli",
+    "Nadia Heninger",
+    "Emmanuel Thomé"
+  ],
+  "institutions": [
+    "Google DeepMind",
+    "UC San Diego",
+    "Inria"
+  ],
+  "scores": {
+    "foundational": 84,
+    "ripple": 88,
+    "verification": 74,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Improves Coppersmith’s 1993 multiple-target factorization factory exponent with Lean-checked algebra and advances affine-oracle RSA cryptanalysis.",
+    "ripple": "Demonstrates that autonomous AI agents can compress months of elite distributed cryptanalysis engineering into under four days, accelerating legacy RSA-1024 retirement.",
+    "verification": "The 391 core-year 1024-bit forged root was empirically verified and Fan Factories algebra was machine-checked in Lean 4, though both working papers await external peer review.",
+    "velocity": "Compressed a 5-month academic cryptanalysis campaign into 3 days 22 hours with ~20 human approval messages."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Google DeepMind Working Paper — Fan Factories: Multiple Number Fields in Factorization Factories and Batch NFS (PDF)",
+      "url": "https://storage.googleapis.com/deepmind-media/papers/Fan_Factories_Multiple_Number_Fields_in_Factorization_Factories_and_Batch_NFS.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "MACCUS — Technical Analysis of Google DeepMind’s 1024-Bit RSA Agent Run & Working Papers",
+      "url": "https://maccus.fr/en/ai-agents-rsa-1024/",
+      "type": "explainer"
+    },
+    {
+      "label": "enjoy.dev — DeepMind’s AI Agents Found Two Weaknesses in 1024-Bit RSA (Summary & Benchmarks)",
+      "url": "https://enjoy.dev/blog/deepmind-rsa-1024/",
+      "type": "explainer"
+    }
+  ]
+}

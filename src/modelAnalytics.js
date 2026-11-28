@@ -2274,6 +2274,160 @@ const EXPLICIT_ATTRIBUTIONS = {
       lab: 'Stanford University',
     },
   ],
+  'deterministic-subexp-dlp-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'openai-internal-math',
+      modelName: 'OpenAI Internal Frontier Math',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'deepmind-rsa1024-cryptanalysis-agents-2026': [
+    {
+      familyId: 'deepmind-cryptanalysis-agents',
+      familyName: 'Google DeepMind Cryptanalysis Agents',
+      modelId: 'deepmind-rsa1024-agent-harness',
+      modelName: 'DeepMind Two-Agent Cryptanalysis Harness + Lean 4',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Google DeepMind',
+    },
+  ],
+  'rsa-896-factored-claude-2026': [
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-code-agents',
+      modelName: 'Claude Code Agents',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'Anthropic',
+    },
+  ],
+  'logcfl-unambiguous-gpt62-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Frontier Reasoning LLM',
+      lab: 'OpenAI',
+    },
+  ],
+  'quasi-riemann-hypothesis-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'openai-internal-math',
+      modelName: 'OpenAI Internal Frontier Math',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'unique-games-conjecture-openai-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'openai-internal-math',
+      modelName: 'OpenAI Internal Frontier Math',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'catalans-constant-irrational-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'openai-internal-math',
+      modelName: 'OpenAI Internal Frontier Math',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'kaplansky-conjectures-disproof-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'openai-internal-math',
+      modelName: 'OpenAI Internal Frontier Math',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'absolute-galois-group-q2-2026': [
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-fable-5',
+      modelName: 'Claude Fable 5 / 5.2',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+    },
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-5-series',
+      modelName: 'GPT-5.2 / 5.5 Pro',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'inverse-galois-mathieu-m23-2026': [
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-fable-5',
+      modelName: 'Claude Fable 5 / 5.2',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+    },
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-5-6-sol',
+      modelName: 'GPT-5.6 Sol / Pro',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'genus-2-curve-rational-points-record-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+    {
+      familyId: 'anthropic-claude',
+      familyName: 'Anthropic Claude Lineage',
+      modelId: 'claude-fable-5',
+      modelName: 'Claude Fable 5 / 5.2',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'Anthropic',
+    },
+  ],
+  'short-superpermutations-8-9-10-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-5-6-sol',
+      modelName: 'GPT-5.6 Sol / Pro',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
+  'n-conjecture-n4-disproof-gpt6-2026': [
+    {
+      familyId: 'openai-gpt',
+      familyName: 'OpenAI GPT Lineage',
+      modelId: 'gpt-6-astra',
+      modelName: 'GPT-6 / 6.2 Astra',
+      architecture: 'Neuro-Symbolic LLM + Verifier',
+      lab: 'OpenAI',
+    },
+  ],
 };
 
 /**

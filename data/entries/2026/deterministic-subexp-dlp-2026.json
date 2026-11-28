@@ -1,0 +1,67 @@
+{
+  "id": "deterministic-subexp-dlp-2026",
+  "title": "Deterministic Subexponential-Time Algorithm for Elliptic-Curve & Prime-Field DLP",
+  "shortTitle": "Deterministic Subexp. DLP (2026/3020)",
+  "date": "2026-11-27",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Cryptanalysis",
+    "Elliptic Curve Cryptography",
+    "Algorithmic Number Theory"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Cauchy–Hermite Tensor-Contraction Engine (Oct 2026 ETH Refutation)",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 41,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "Assuming OpenAI’s AI-discovered Cauchy–Hermite tensor-contraction theorem, gives a deterministic subexponential p^o(1) algorithm for both elliptic-curve and prime-field discrete logarithms with zero randomness.",
+  "summary": "Building directly on OpenAI’s October 2026 AI-discovered Cauchy–Hermite Boolean tensor-contraction construction (and advancing Akshima et al.’s October 28 randomized subexponential ECDLP algorithm), Shuchang Liu, Bingsheng Zhang, and Kui Ren (Zhejiang University, IACR ePrint 2026/3020) construct a uniform deterministic multitape Turing machine solving the discrete logarithm problem on both prime-order elliptic curves E(F_p) and prime fields F_p* in worst-case time 2^{O(b/√(log log b))} = p^{o(1)} and space 2^{O(b/(log b)^{1/4})}. The algorithm requires zero random bits and relies on neither the Generalized Riemann Hypothesis nor smoothness heuristics.",
+  "technicalHighlights": [
+    "Solves both prime-order elliptic-curve DLP over E(F_p) and prime-field DLP in F_p* deterministically in worst-case time 2^{O(b/√(log log b))} = p^{o(1)} using zero random bits.",
+    "Combines deterministic conditional-expectation construction of small affine-interval factor bases whose k-fold sumsets cover the group with a terminal-preserving partial tensor-contraction procedure.",
+    "Extends Akshima et al.’s October 28, 2026 randomized 2^{O(b/(log b)^{1/4})} ECDLP reduction by eliminating all randomness, GRH dependencies, and smoothness heuristics, conditional on OpenAI’s Oct 2026 contraction theorem."
+  ],
+  "caveats": "Strictly asymptotic and conditional on OpenAI’s unrefereed October 2026 Cauchy–Hermite tensor-contraction theorem, which yields asymptotic savings only above astronomical network sizes (≥ 2^{2^17}); deployed curves such as P-256 and Ed25519 are completely unaffected in practice.",
+  "contributors": [
+    "Shuchang Liu",
+    "Bingsheng Zhang",
+    "Kui Ren",
+    "OpenAI Science Team (Upstream Tensor Contraction)"
+  ],
+  "institutions": [
+    "Zhejiang University (State Key Laboratory of Blockchain and Data Security)",
+    "OpenAI (Upstream Construction)"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 85,
+    "verification": 56,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "If OpenAI’s upstream tensor-contraction theorem holds, breaks the four-decade exponential-time barrier for general prime-order elliptic-curve discrete logarithms deterministically.",
+    "ripple": "Directly demonstrates how AI-discovered complexity primitives cascade into foundational cryptographic hardness assumptions within weeks.",
+    "verification": "Marked down candidly: freshly posted Nov 27 ePrint preprint without Lean formalization and explicitly conditional on OpenAI’s unrefereed Oct 2026 ETH contraction theorem.",
+    "velocity": "Derived within one month of OpenAI’s October 2026 ETH tensor-contraction preprint and Akshima et al.’s randomized ECDLP reduction."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "IACR ePrint 2026/3020 — A Deterministic Subexponential-time Algorithm for the Discrete Logarithm Problem",
+      "url": "https://eprint.iacr.org/2026/3020",
+      "type": "paper"
+    },
+    {
+      "label": "ellipticnews — Commentary on Conditional Subexponential ECDLP (Akshima et al. & OpenAI Contraction Theorem)",
+      "url": "https://ellipticnews.wordpress.com/2026/10/29/subexponential-time-elliptic-curve-discrete-logarithms/",
+      "type": "explainer"
+    },
+    {
+      "label": "OpenAI Math — The Exponential Time Hypothesis is False (Upstream Cauchy–Hermite Tensor Contraction)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "type": "paper"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "logcfl-unambiguous-gpt62-2026",
+  "title": "Unambiguous Characterization of LogCFL via GPT Astra 6.2 Isolation Extension",
+  "shortTitle": "LogCFL = UAuxPDA (GPT Astra 6.2)",
+  "date": "2026-11-23",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Computational Complexity",
+    "Circuit Complexity",
+    "Derandomization"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "OpenAI GPT-6.2 Astra",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 35,
+  "aiTimeToSolve": "3 days post-Hoza",
+  "isAnchor": false,
+  "whyItMatters": "GPT Astra 6.2 discovered how to extend William Hoza’s NL = UL isolation technique to log-depth SAC¹ circuits, proving unconditionally that LogCFL = UAuxPDA(O(log n), poly(n)).",
+  "summary": "Just three days after William Hoza’s purely human proof of NL = UL (ECCC TR26-323), complexity theorists A. Pavan and N. V. Vinodchandran posted ECCC TR26-340 / arXiv:2611.30892 proving unconditionally that every language in LogCFL (logspace-uniform SAC¹ circuits) is accepted by an unambiguous auxiliary pushdown automaton in polynomial time and O(log n) workspace. In their explicit AI disclosure, the authors credit OpenAI’s GPT Astra 6.2 with discovering the core extension of Hoza’s bit-flipping isolation argument to semi-unbounded certificate trees via a clean 6^h level-weighted polynomial-size weight family.",
+  "technicalHighlights": [
+    "Resolves the decades-old question of unambiguous simulation for LogCFL (SAC¹), proving LogCFL = UAuxPDA(O(log n), poly(n)) unconditionally.",
+    "Replaces Hoza’s 2-adic path-interval weighting with a simpler 6^h level-scaled weight family over log-depth semi-unbounded Boolean circuit certificate trees so ≥ 3/4 of seeds are min-unique.",
+    "Explicitly discloses in the arXiv/ECCC manuscript: “GPT Astra 6.2 found the extension of Hoza’s isolation technique to LogCFL.”"
+  ],
+  "caveats": "Short, clean, elementary complexity-theory note posted on ECCC (Nov 21) and arXiv (Nov 23, 2026), not yet formally peer-reviewed; builds directly on William Hoza’s purely human NL = UL isolation framework (which is excluded from this index as non-AI).",
+  "contributors": [
+    "A. Pavan",
+    "N. V. Vinodchandran"
+  ],
+  "institutions": [
+    "Iowa State University",
+    "University of Nebraska–Lincoln"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 81,
+    "verification": 76,
+    "velocity": 96
+  },
+  "scoreRationale": {
+    "foundational": "Unconditionally eliminates ambiguity across the entire LogCFL / SAC¹ complexity class, settling a classic open question in space-bounded and circuit complexity.",
+    "ripple": "Illustrates a new mode of human–AI mathematical collaboration where frontier models immediately generalize freshly published human complexity breakthroughs.",
+    "verification": "A crisp, self-contained elementary proof vetted by senior complexity theorists (Pavan & Vinodchandran), awaiting formal journal refereeing.",
+    "velocity": "Discovered and written up within three days of William Hoza’s November 20, 2026 NL = UL preprint."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2611.30892 — LogCFL = UAuxPDA(O(log n), poly(n)) (with GPT Astra 6.2 AI Disclosure)",
+      "url": "https://arxiv.org/html/2611.30892v1",
+      "type": "paper"
+    },
+    {
+      "label": "ECCC TR26-340 — LogCFL = UAuxPDA(O(log n), poly(n)) (A. Pavan & N. V. Vinodchandran)",
+      "url": "https://eccc.weizmann.ac.il/report/2026/340",
+      "type": "paper"
+    }
+  ]
+}

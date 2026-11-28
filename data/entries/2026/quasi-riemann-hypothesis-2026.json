@@ -1,0 +1,67 @@
+{
+  "id": "quasi-riemann-hypothesis-2026",
+  "title": "Formal Lean Proof of the Quasi-Riemann Hypothesis (Zero-Free Strip Re(s) > 7/8)",
+  "shortTitle": "Quasi-Riemann Hypothesis (7/8)",
+  "date": "2026-10-06",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Analytic Number Theory",
+    "Metaplectic Forms",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Math Model + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 167,
+  "aiTimeToSolve": "~3 hrs / family",
+  "isAnchor": false,
+  "whyItMatters": "OpenAI’s internal model proved the 167-year-old Quasi-Riemann Hypothesis—confining all nontrivial zeta zeros to Re(s) ∈ [1/8, 7/8] in Lean 4—unlocking scores of prime-distribution consequences.",
+  "summary": "As the centerpiece of OpenAI’s October 6, 2026 mathematical release (Family 003), an unreleased internal OpenAI model produced two proofs of the Quasi-Riemann Hypothesis: a 199-page Lean-formalized proof showing no nontrivial zeros of the Riemann zeta function have Re(s) > 7/8 (confining all zeros to [1/8, 7/8]), and a shorter 49-page proof for [1/12, 11/12]. Unpacked by number theorists Maksym Radziwiłł, Alexander Dunn, and Peter Sarnak and profiled by Quanta Magazine, the AI unexpectedly linked metaplectic forms with a 2021 Dunn–Radziwiłł formula to establish the first fixed-strip zero-free half-plane—described at the time as “the most significant AI-for-math achievement so far” prior to Alpöge and Claude’s November 20 full Riemann Hypothesis proof.",
+  "technicalHighlights": [
+    "Proved the first unconditional fixed zero-free half-plane Re(s) > 7/8 for the Riemann zeta function (with Lean 4 formalization) plus a 49-page argument for Re(s) > 11/12.",
+    "Autonomously identified an overlooked family of metaplectic forms and synthesized it with a 2021 formula of Alexander Dunn and Maksym Radziwiłł.",
+    "Unpacked by leading analytic number theorists (Radziwiłł, Dunn, Sarnak) and spurred immediate arXiv follow-ups (e.g., arXiv:2610.12234 tightening the zero-free half-plane)."
+  ],
+  "caveats": "Experts noted the raw AI manuscripts were poorly written by journal standards (leading researchers to focus first on unpacking the 49-page 11/12 version), and Peter Sarnak cautioned full human refereeing is required for canonical theorem status; subsequently superseded in strength by Alpöge & Claude’s Nov 20, 2026 Lean proof of the full Riemann Hypothesis.",
+  "contributors": [
+    "OpenAI Frontier Mathematics Team",
+    "Maksym Radziwiłł & Alexander Dunn (Independent Unpacking)"
+  ],
+  "institutions": [
+    "OpenAI",
+    "NYU & Georgia Tech (Exposition)"
+  ],
+  "scores": {
+    "foundational": 95,
+    "ripple": 91,
+    "verification": 88,
+    "velocity": 98
+  },
+  "scoreRationale": {
+    "foundational": "Settled the 167-year-old Quasi-Riemann Hypothesis, establishing the first fixed exponent below 1 for the prime-counting error term.",
+    "ripple": "Converted scores of RH-conditional results across number theory, geometry, and TCS into unconditional theorems and demonstrated creative cross-field synthesis.",
+    "verification": "Backed by a Lean 4 formalization for the 7/8 bound plus independent technical unpacking by Dunn, Radziwiłł, and Sarnak, though formal journal publication is pending.",
+    "velocity": "Generated in a single automated compute sweep and unpacked by leading number theorists within two weeks."
+  },
+  "enables": [
+    "riemann-hypothesis-lean-2026"
+  ],
+  "sources": [
+    {
+      "label": "Quanta Magazine — AI Proved the Quasi-Riemann Hypothesis. What Happens Now? (Oct 19, 2026)",
+      "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
+      "type": "explainer"
+    },
+    {
+      "label": "OpenAI Math — The Quasi-Riemann Hypothesis (Oct 5, 2026 Preprint & Lean Formalization)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf",
+      "type": "paper"
+    },
+    {
+      "label": "arXiv:2610.12234 — Improved Zero-Free Half-Planes for the Quasi-Riemann Hypothesis",
+      "url": "https://arxiv.org/abs/2610.12234",
+      "type": "paper"
+    }
+  ]
+}

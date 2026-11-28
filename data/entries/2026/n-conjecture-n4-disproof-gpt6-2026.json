@@ -1,0 +1,59 @@
+{
+  "id": "n-conjecture-n4-disproof-gpt6-2026",
+  "title": "Lean-Verified Counterexample to the Final Open n = 4 Case of Ramaekers’s n-Conjecture",
+  "shortTitle": "Ramaekers n = 4 Conjecture Disproof",
+  "date": "2026-09-05",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Number Theory",
+    "Diophantine Equations",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-6 Astra + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 15,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "GPT-6 Astra produced a Lean 4-verified counterexample refuting the sole remaining open n = 4 case of Ramaekers’s strong n-conjecture (generalizing the abc-conjecture to 4-tuples).",
+  "summary": "In 2011, Ramaekers conjectured that the quality of pairwise-coprime integer n-tuples summing to zero with no vanishing proper subsum equals 1 (generalizing the n = 3 abc-conjecture). After Hölzl, Kleine, and Stephan disproved the conjecture for all n ≥ 5, only the n = 4 case remained open. On September 5, 2026, Epoch AI researcher Tom Adamczewski used OpenAI’s GPT-6 Astra to discover and formalize in Lean 4 an infinite family of counterexamples settling the final open n = 4 case—a result cataloged among 2026’s landmark AI mathematical discoveries and analyzed alongside human-crafted Lean formalizations in Jeremy Tan’s Redhill paper (arXiv:2610.16323).",
+  "technicalHighlights": [
+    "Extends the disproof of Ramaekers’s strong n-conjecture from n ≥ 5 down to the final open case n = 4, leaving only the classical n = 3 abc-conjecture.",
+    "Delivered as a machine-checked Lean 4 proof generated autonomously with GPT-6 Astra.",
+    "Independently cited and compared for Lean code structure against human-authored Mathlib-style formalizations in Jeremy Tan’s October 2026 Redhill paper (arXiv:2610.16323)."
+  ],
+  "caveats": "Disproves the n = 4 generalization of the abc-conjecture (Ramaekers’s conjecture), not the classical n = 3 abc-conjecture itself; independent Lean formalizers (arXiv:2610.16323) noted that LLM-generated Lean files trade code elegance and Mathlib reusability for rapid kernel certification.",
+  "contributors": [
+    "Tom Adamczewski"
+  ],
+  "institutions": [
+    "Epoch AI",
+    "OpenAI (GPT-6 Astra)"
+  ],
+  "scores": {
+    "foundational": 80,
+    "ripple": 74,
+    "verification": 95,
+    "velocity": 93
+  },
+  "scoreRationale": {
+    "foundational": "Closes the sole remaining open case (n = 4) of a 15-year-old Diophantine generalization of the abc-conjecture.",
+    "ripple": "Became a canonical case study in the Lean community comparing autonomous LLM formalizations against human-curated libraries (Redhill).",
+    "verification": "Machine-checked in Lean 4 and independently examined by formalization researchers (arXiv:2610.16323).",
+    "velocity": "Settled autonomously in Lean 4 immediately following GPT-6 Astra’s September 2026 launch."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Wikipedia — List of Mathematical Discoveries Made with Artificial Intelligence (Sep 5, 2026 n = 4 N-Conjecture Entry)",
+      "url": "https://en.wikipedia.org/wiki/List_of_mathematical_discoveries_made_with_artificial_intelligence",
+      "type": "explainer"
+    },
+    {
+      "label": "arXiv:2610.16323 — A Lean Formalisation of the Disproof of Ramaekers’s Conjecture (Comparing n = 4 LLM Extension)",
+      "url": "https://arxiv.org/abs/2610.16323",
+      "type": "paper"
+    }
+  ]
+}

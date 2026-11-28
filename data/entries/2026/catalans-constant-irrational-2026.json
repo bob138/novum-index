@@ -1,0 +1,63 @@
+{
+  "id": "catalans-constant-irrational-2026",
+  "title": "Formal Lean Proof of the Irrationality of Catalan’s Constant G",
+  "shortTitle": "Irrationality of Catalan’s Constant",
+  "date": "2026-10-06",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Transcendental Number Theory",
+    "Diophantine Approximation",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Math Model + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 161,
+  "aiTimeToSolve": "~3 hrs / family",
+  "isAnchor": false,
+  "whyItMatters": "Resolves the 161-year-old question of whether Catalan’s constant G = Σ (-1)^k/(2k+1)² is irrational via a Lean-formalized determinant proof—a flagship target on Epoch AI’s FrontierMath: Open Problems.",
+  "summary": "Dated September 24 and published on October 6, 2026 as Family 005 of OpenAI’s mathematical release, an unreleased internal OpenAI model produced a manuscript and Lean 4 formalization proving that Catalan’s constant G = β(2) = 1 − 1/3² + 1/5² − 1/7² + ··· is irrational, using a sophisticated determinant method rather than classical Apéry linear recurrences. Epoch AI’s FrontierMath: Open Problems explicitly logged the result as resolving a second headline target of its “Apéry-Style Irrationality Proofs” breakthrough challenge (after ζ(5)), and follow-up work quickly extracted an explicit irrationality measure (Hexagon Math 2610.00187).",
+  "technicalHighlights": [
+    "Establishes the irrationality of Catalan’s constant G = β(2) with an accompanying Lean 4 formalization (OpenAI Family 005).",
+    "Uses an advanced determinant-method construction bypassing the longstanding convergence obstruction of classical Apéry-style Padé approximants.",
+    "Recorded by Epoch AI as resolving a second target of its Breakthrough-tier FrontierMath: Open Problems irrationality challenge and extended to an irrationality measure within days."
+  ],
+  "caveats": "Part of OpenAI’s unrefereed October 6 bulk release; while backed by a Lean 4 formalization and rapidly built upon by independent follow-up preprints, full journal peer review and community definition audits remain underway.",
+  "contributors": [
+    "OpenAI Frontier Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 91,
+    "ripple": 83,
+    "verification": 84,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Settles one of the most famous unresolved irrationality problems in number theory since Eugène Catalan introduced G in 1865.",
+    "ripple": "Demonstrates determinant-method machinery applicable to Dirichlet L-values and prompted immediate quantitative irrationality-measure extensions.",
+    "verification": "Accompanied by a Lean 4 formalization and recognized by Epoch AI’s FrontierMath: Open Problems tracker, docked slightly pending full peer review.",
+    "velocity": "Resolved autonomously in a single frontier compute sweep alongside ζ(5) and other classical constants."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Epoch AI FrontierMath: Open Problems — Apéry-Style Irrationality Proofs (Catalan’s Constant Update)",
+      "url": "https://epoch.ai/frontiermath/open-problems/apery-irrationality",
+      "type": "explainer"
+    },
+    {
+      "label": "OpenAI — github.com/openai/math (Family 005: Catalan’s Constant Irrationality & Lean Files)",
+      "url": "https://github.com/openai/math",
+      "type": "code"
+    },
+    {
+      "label": "Hexagon Math 2610.00187 — An Irrationality Measure for Catalan’s Constant (Building on OpenAI Sep 24 Preprint)",
+      "url": "https://hexagonmath.org/2610.00187v5",
+      "type": "paper"
+    }
+  ]
+}

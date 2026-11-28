@@ -1,0 +1,56 @@
+{
+  "id": "short-superpermutations-8-9-10-2026",
+  "title": "Record Short Superpermutations on 8, 9, and 10 Symbols Beating Egan’s 2018 Bound",
+  "shortTitle": "Short Superpermutations (n=8,9,10)",
+  "date": "2026-07-26",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Combinatorics",
+    "Permutations",
+    "Algorithmic Search"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-5.6 Sol (Codex)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 8,
+  "aiTimeToSolve": "1 Codex session (n=9,10)",
+  "isAnchor": false,
+  "whyItMatters": "Beats Greg Egan’s 8-year-old 2018 upper bound on minimum superpermutation lengths for n = 8, 9, and 10 symbols, solving an Epoch AI FrontierMath: Open Problems combinatorics challenge.",
+  "summary": "A superpermutation on n symbols is a string containing every one of the n! permutations as a contiguous substring; for n ≥ 6 the minimum length is open, and Greg Egan’s 2018 construction held the standing upper bound for n ≥ 8. On July 26, 2026, following Uku Raudvere’s improved n = 8 construction, William Echols used OpenAI’s GPT-5.6 Sol at xhigh reasoning in an interactive Codex session to construct explicit superpermutations beating Egan’s upper bound for n = 9 (length ≤ 408,965) and n = 10 (length ≤ 4,037,046). Epoch AI’s exact verifier confirmed all n! contiguous permutation windows, marking the FrontierMath: Open Problems challenge solved.",
+  "technicalHighlights": [
+    "Constructs explicit verified superpermutations strictly beating Greg Egan’s 2018 upper bound for n = 8 (≤ 46,204), n = 9 (≤ 408,965), and n = 10 (≤ 4,037,046).",
+    "William Echols generated the n = 9 and n = 10 record sequences in an interactive Codex session powered by OpenAI GPT-5.6 Sol (xhigh reasoning) on July 26, 2026.",
+    "Exact programmatic verification confirms zero missing permutations across all 10! = 3,628,800 contiguous windows."
+  ],
+  "caveats": "The n = 8 breakthrough was first posted by Uku Raudvere before William Echols and GPT-5.6 Sol rapidly extended it to n = 9 and n = 10 the same day; Epoch AI noted GPT-5.6 Sol retrieved those newly posted sequences during its July 27 pre-release test, counting the challenge solved because AI co-created the n = 9, 10 constructions after benchmark acceptance.",
+  "contributors": [
+    "William Echols",
+    "Uku Raudvere"
+  ],
+  "institutions": [
+    "Independent Researchers",
+    "OpenAI (GPT-5.6 Sol)",
+    "Epoch AI (Verifier)"
+  ],
+  "scores": {
+    "foundational": 73,
+    "ripple": 70,
+    "verification": 100,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Improves an 8-year-old combinatorial upper bound on superpermutation lengths across n = 8, 9, 10 with potential generalization to all n ≥ 8.",
+    "ripple": "Highlights rapid human–AI combinatorial construction in interactive coding-agent loops on open FrontierMath problems.",
+    "verification": "Unconditionally verified by exact finite substring enumeration checking all n! permutations.",
+    "velocity": "Extended from n = 8 to n = 9 and n = 10 within a single day using GPT-5.6 Sol in Codex."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Epoch AI FrontierMath: Open Problems — Short Superpermutations over 8, 9, and 10",
+      "url": "https://epoch.ai/frontiermath/open-problems/superpermutations",
+      "type": "formal-verification"
+    }
+  ]
+}

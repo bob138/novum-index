@@ -1,0 +1,63 @@
+{
+  "id": "kaplansky-conjectures-disproof-2026",
+  "title": "Lean-Formalized Counterexamples to Kaplansky’s Zero-Divisor & Direct-Finiteness Conjectures",
+  "shortTitle": "Kaplansky Zero-Divisor Disproof",
+  "date": "2026-10-06",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Geometric Group Theory",
+    "Ring Theory",
+    "Formal Verification"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Math Model + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 86,
+  "aiTimeToSolve": "~3 hrs / family",
+  "isAnchor": false,
+  "whyItMatters": "Constructs Lean-formalized torsion-free groups refuting Kaplansky’s 86-year-old Zero-Divisor Conjecture and Direct-Finiteness Conjecture over finite fields of positive characteristic.",
+  "summary": "In its October 6, 2026 release (including Family 196, dated September 23, 2026), OpenAI’s internal frontier math model published explicit, Lean 4-formalized counterexamples to two of Irving Kaplansky’s celebrated conjectures on group rings of torsion-free groups: constructing a torsion-free group whose group algebra over F₂ contains nonzero zero divisors, as well as counterexamples to Kaplansky’s Direct-Finiteness Conjecture in both characteristic two and odd characteristic. Following Giles Gardam’s 2021 human disproof of the Unit Conjecture, these results shatter the remaining positive-characteristic pillars of Kaplansky’s group-ring hierarchy.",
+  "technicalHighlights": [
+    "Explicitly constructs a torsion-free group G and two nonzero elements in F₂[G] whose product vanishes, refuting Kaplansky’s Zero-Divisor Conjecture in characteristic 2.",
+    "Provides parallel Lean 4-formalized counterexamples to Kaplansky’s Direct-Finiteness Conjecture in characteristic two and odd characteristic.",
+    "Lean theorem statements and proof certificates were indexed in openai/math/lean/formalization.yaml and inspected by external formal-verification trackers (Prove2Me)."
+  ],
+  "caveats": "Disproves the positive-characteristic cases; the characteristic-zero versions (e.g., over ℂ or ℚ) remain open, and like all items from OpenAI’s Oct 6 bulk release, independent algebraist peer review of the group-presentation definitions in Lean is still ongoing.",
+  "contributors": [
+    "OpenAI Frontier Mathematics Team"
+  ],
+  "institutions": [
+    "OpenAI"
+  ],
+  "scores": {
+    "foundational": 90,
+    "ripple": 86,
+    "verification": 82,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "Overturns two landmark 1940s conjectures in algebra and geometric group theory that resisted eight decades of human attempts.",
+    "ripple": "Directly connects to non-sofic groups, Gottschalk surjunctivity, and operator-algebraic finiteness problems across group rings.",
+    "verification": "Explicit algebraic counterexamples accompanied by Lean 4 formalizations, docked pending formal journal refereeing of specification fidelity.",
+    "velocity": "Constructed and formalized across multiple positive characteristics within a single automated research sweep."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI — github.com/openai/math (lean/formalization.yaml: Kaplansky Counterexamples)",
+      "url": "https://github.com/openai/math/blob/main/lean/formalization.yaml",
+      "type": "code"
+    },
+    {
+      "label": "Prove2Me — Formal Lean Theorem Record: OAI.KaplanskyCounterexample.main_theorem",
+      "url": "https://prove2.me/theorems/1f5b3f25-df5c-4558-b43e-7d9ebcaa9ef2",
+      "type": "formal-verification"
+    },
+    {
+      "label": "BinaryVerse AI — Kaplansky Zero-Divisor Conjecture: OpenAI’s Proof Explained",
+      "url": "https://binaryverseai.com/kaplansky-zero-divisor-conjecture/",
+      "type": "explainer"
+    }
+  ]
+}

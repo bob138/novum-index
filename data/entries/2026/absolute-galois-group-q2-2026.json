@@ -1,0 +1,60 @@
+{
+  "id": "absolute-galois-group-q2-2026",
+  "title": "Explicit Profinite Presentation of the Absolute Galois Group of ℚ₂",
+  "shortTitle": "Absolute Galois Group of ℚ₂",
+  "date": "2026-06-09",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Algebraic Number Theory",
+    "Local Fields",
+    "Formal Verification"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Fable 5 + OpenAI GPT-5.5 Pro + Lean 4",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 44,
+  "aiTimeToSolve": "26-hr ChatGPT Pro session",
+  "isAnchor": false,
+  "whyItMatters": "Closes the missing dyadic p = 2 case left open for 44 years since Jannsen–Wingberg (1982), giving an explicit 4-generator, 2-relation presentation of G_{ℚ₂} verified by two independent Lean 4 formalizations.",
+  "summary": "Posed by MIT mathematician David Roe on Epoch AI’s FrontierMath: Open Problems, finding an explicit profinite presentation of the absolute Galois group of the 2-adic numbers ℚ₂ had remained open for 44 years after Jannsen and Wingberg solved all odd primes p in 1982. After Claude Fable 5 produced the first verifier-passing candidate on June 9, 2026, David Turturean ran a 26-hour voice-directed ChatGPT Pro (GPT-5.5 Pro) session in mid-June that produced an explicit marked presentation (four generators σ, τ, x₀, x₁, the tame relation τ^σ = τ², one explicit wild relation, and a pro-2 wild condition) plus a 60-page proof. Roe and Turturean then independently verified the theorem via two separate Lean 4 formalizations and a 5,402-group finite-quotient verifier.",
+  "technicalHighlights": [
+    "Gives an explicit marked profinite presentation of G_{ℚ₂} using four generators, two explicit word relations, and a pro-2 condition on wild generators—completing the local absolute Galois group program started in 1982.",
+    "Proof matches surjection counts onto every finite group via Fox–Jacobian calculus, local Tate duality, quadratic Gauss-sum comparisons, and Fourier inversion.",
+    "Verified at three independent levels: two separately initiated Lean 4 formalizations (down to 7–9 classical literature interfaces) plus exact finite-quotient checks across all 5,402 test groups."
+  ],
+  "caveats": "The July 26, 2026 manuscript has not yet completed external journal peer review, and the two Lean 4 formalizations axiomatize 7–9 standard classical interfaces from local class field theory and Galois cohomology.",
+  "contributors": [
+    "David Roe",
+    "David Turturean"
+  ],
+  "institutions": [
+    "MIT",
+    "Epoch AI (FrontierMath: Open Problems)"
+  ],
+  "scores": {
+    "foundational": 86,
+    "ripple": 81,
+    "verification": 93,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Resolves a 44-year-old structural gap in p-adic algebraic number theory classified as a “Solid result” on Epoch AI’s FrontierMath: Open Problems.",
+    "ripple": "Turns questions about 2-adic field extensions, counts, and local Langlands parameters into explicit finite group computations.",
+    "verification": "Independently checked by two separate Lean 4 formalizations plus exact extension counts on all 5,402 finite test groups.",
+    "velocity": "Solved in a 26-hour AI-assisted session after resisting explicit presentation since 1982."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "David Roe & David Turturean — A Presentation of the Absolute Galois Group of ℚ₂ (Interactive Paper & Lean 4 Repos)",
+      "url": "https://roed314.github.io/gq2/",
+      "type": "paper"
+    },
+    {
+      "label": "Epoch AI FrontierMath: Open Problems — A Presentation of the Absolute Galois Group of ℚ₂",
+      "url": "https://epoch.ai/frontiermath/open-problems/q2-absolute-galois",
+      "type": "explainer"
+    }
+  ]
+}

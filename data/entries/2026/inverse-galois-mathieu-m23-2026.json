@@ -1,0 +1,71 @@
+{
+  "id": "inverse-galois-mathieu-m23-2026",
+  "title": "Inverse Galois Problem Resolved for Mathieu Group M₂₃ (Final Sporadic Group)",
+  "shortTitle": "Inverse Galois Problem for M₂₃",
+  "date": "2026-08-08",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Algebraic Number Theory",
+    "Inverse Galois Problem",
+    "Arithmetic Geometry"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "Claude Fable 5, Claude Opus 4.8 & OpenAI GPT-5.6 Sol",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 37,
+  "aiTimeToSolve": "<12 CPU-hrs final compute",
+  "isAnchor": false,
+  "whyItMatters": "Constructs an explicit degree-23 polynomial in ℤ[x] realizing the Mathieu group M₂₃ over ℚ—resolving the last of the 26 sporadic finite simple groups left open since 1989.",
+  "summary": "Between 1984 and 1989, mathematicians realized 25 of the 26 sporadic finite simple groups as Galois groups over ℚ, leaving only the Mathieu group M₂₃ unresolved for nearly four decades and prompting Epoch AI to include it on FrontierMath: Open Problems. On August 8, 2026 (arXiv:2608.08538), Xiaoyu Huang, Blake Jackson, Kyu-Hwan Lee, Bjorn Poonen, Rachel Pries, and Shaowu Zhang realized M₂₃ over ℚ(t) and explicitly specialized to a degree-23 polynomial in ℤ[x]. Working in a tightly human-directed collaboration with Claude Fable 5, Claude Opus 4.8, and ChatGPT 5.6 Sol multi-agent workflows—where humans chose Galois-equivariant Belyi coordinates and reduction strategies while AI accelerated code generation, data analysis, and computation orchestration—the final claims were rigorously verified without AI in Magma and PARI/GP.",
+  "technicalHighlights": [
+    "Completes the 42-year program to realize all 26 sporadic finite simple groups as Galois groups over ℚ by constructing a regular M₂₃-extension of ℚ(t) and explicit degree-23 polynomial in ℤ[x].",
+    "Combines genus-4 non-hyperelliptic Hurwitz-space computations for conjugacy triple (2A, 23A, 23B) with Galois-equivariant Belyi coordinates reducing coefficient height from 10³⁶ to < 10³.",
+    "Rigorously verified in Magma and PARI/GP with public code (github.com/shaowuz/m23isgalois); upgraded by Epoch AI on Sep 16, 2026 to “Solved (human + AI)”."
+  ],
+  "caveats": "Human collaborators made the decisive strategic choices (selecting Galois-equivariant coordinates and reduction algorithms when AI suggested brute-forcing higher precision); Epoch AI initially marked it human-solved on Aug 11 before updating it to “human + AI” on Sep 16 based on author accounts of AI’s instrumental workflow role.",
+  "contributors": [
+    "Xiaoyu Huang",
+    "Blake Jackson",
+    "Kyu-Hwan Lee",
+    "Bjorn Poonen",
+    "Rachel Pries",
+    "Shaowu Zhang"
+  ],
+  "institutions": [
+    "MIT",
+    "Caltech",
+    "Colorado State University",
+    "University of Connecticut"
+  ],
+  "scores": {
+    "foundational": 89,
+    "ripple": 82,
+    "verification": 92,
+    "velocity": 88
+  },
+  "scoreRationale": {
+    "foundational": "Resolves the final open sporadic finite simple group for the Inverse Galois Problem over ℚ after 37 years.",
+    "ripple": "Demonstrates a blueprint for tightly steered human–AI collaboration in explicit arithmetic geometry and Hurwitz-space computation.",
+    "verification": "Explicit degree-23 integer polynomial and regular cover rigorously verified in Magma and PARI/GP with open-source replication scripts; preprint undergoing journal refereeing.",
+    "velocity": "Final genus-4 recovery and descent computations ran in under 12 CPU-hours within a single day after multi-agent AI workflow acceleration."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "arXiv:2608.08538 — The Mathieu group M₂₃ is a Galois group over ℚ (Huang, Jackson, Lee, Poonen, Pries, Zhang)",
+      "url": "https://arxiv.org/abs/2608.08538",
+      "type": "paper"
+    },
+    {
+      "label": "Epoch AI FrontierMath: Open Problems — The Inverse Galois Problem for the Mathieu Group M₂₃",
+      "url": "https://epoch.ai/frontiermath/open-problems/inverse-galois",
+      "type": "explainer"
+    },
+    {
+      "label": "Shaowu Zhang (The California Tech) — Where to Point the Telescope: AI, Mathematical Judgment, and M₂₃",
+      "url": "https://tech.caltech.edu/where-to-point-the-telescope-ai-mathematical-judgment-and-m23",
+      "type": "explainer"
+    }
+  ]
+}

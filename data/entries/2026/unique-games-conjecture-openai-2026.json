@@ -1,0 +1,65 @@
+{
+  "id": "unique-games-conjecture-openai-2026",
+  "title": "Claimed Lean-Formalized Proof of Subhash Khot’s Unique Games Conjecture",
+  "shortTitle": "Unique Games Conjecture (OpenAI)",
+  "date": "2026-10-06",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Computational Complexity",
+    "Hardness of Approximation",
+    "Coding Theory"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI Internal Frontier Math Model + Lean 4",
+  "verificationStatus": "Preprint / Active Review",
+  "yearsUnsolved": 24,
+  "aiTimeToSolve": "~3 hrs / family",
+  "isAnchor": false,
+  "whyItMatters": "OpenAI’s internal model produced a Lean-formalized claimed proof of Subhash Khot’s 2002 Unique Games Conjecture via a novel “Hadamard with a noise test” code—unpacked by Dana Moshkovitz, Khot, Håstad, and Minzer.",
+  "summary": "Released on October 6, 2026 as Family 102 of github.com/openai/math alongside a Lean 4 formalization, an internal OpenAI frontier reasoning model claimed a full proof of Subhash Khot’s 2002 Unique Games Conjecture—one of theoretical computer science’s most consequential open conjectures, implying optimal NP-hardness of approximation for Max-Cut, Vertex Cover, and dozens of constraint satisfaction problems. After weeks of intensive collaborative scrutiny with Subhash Khot, Johan Håstad, and Dor Minzer, UT Austin complexity theorist Dana Moshkovitz presented a detailed November 4, 2026 seminar unpacking the core AI-discovered “Hadamard with a noise test” code construction.",
+  "technicalHighlights": [
+    "Introduces a novel code construction—described by Dana Moshkovitz as “Hadamard with a noise test”—alongside a quadratic-behaving-like-linear ingredient and harmonic-number probability bound.",
+    "Accompanied by a Lean 4 formalization in OpenAI’s Family 102 repository plus related Family 105 (perfect completeness for 2-to-1 games).",
+    "Prompted intensive multi-week specialist verification by Dana Moshkovitz, Subhash Khot, Johan Håstad, and Dor Minzer, culminating in a Nov 4, 2026 UT Austin technical exposition."
+  ],
+  "caveats": "Remains an unrefereed preprint under active community review. Specialists noted the original AI manuscript was extremely difficult for humans to parse without AI assistance, and final consensus requires full peer-reviewed verification that the Lean statement matches Khot’s exact conjecture without specification gaps.",
+  "contributors": [
+    "OpenAI Frontier Mathematics Team",
+    "Dana Moshkovitz, Subhash Khot, Johan Håstad & Dor Minzer (Audit & Exposition)"
+  ],
+  "institutions": [
+    "OpenAI",
+    "University of Texas at Austin (Audit Seminar)"
+  ],
+  "scores": {
+    "foundational": 95,
+    "ripple": 94,
+    "verification": 68,
+    "velocity": 97
+  },
+  "scoreRationale": {
+    "foundational": "If fully certified, settles the central conjecture of hardness of approximation since Subhash Khot’s 2002 paper.",
+    "ripple": "Immediately upgrades dozens of UGC-conditional optimal inapproximability results (including Goemans–Williamson Max-Cut) into unconditional P ≠ NP consequences.",
+    "verification": "Includes a Lean 4 formalization and favorable initial specialist unpacking by Moshkovitz, Khot, Håstad, and Minzer, but formal refereeing is still ongoing.",
+    "velocity": "Autonomous discovery of a genuinely novel PCP/coding-theory construction in hours of frontier reasoning compute."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "OpenAI — github.com/openai/math (Family 102: Unique Games Conjecture Preprint & Lean Files)",
+      "url": "https://github.com/openai/math",
+      "type": "code"
+    },
+    {
+      "label": "Scott Aaronson (Shtetl-Optimized) — Dana Moshkovitz Seminar: The Unique Games Conjecture – Proved (!!?)",
+      "url": "https://scottaaronson.blog/?p=10232",
+      "type": "explainer"
+    },
+    {
+      "label": "Quanta Magazine — As AI Closed In on “Unique Games” Proof, Researchers Raced to Beat the Machines",
+      "url": "https://www.quantamagazine.org/as-ai-closed-in-on-unique-games-proof-researchers-raced-to-beat-the-machines-20261007/",
+      "type": "explainer"
+    }
+  ]
+}

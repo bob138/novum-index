@@ -1,0 +1,65 @@
+{
+  "id": "rsa-896-factored-claude-2026",
+  "title": "Claude-Ported GPU Number Field Sieve Factors 270-Digit RSA-896 Challenge",
+  "shortTitle": "RSA-896 Factored With Claude",
+  "date": "2026-09-19",
+  "discipline": "Computer Science & AI",
+  "subfields": [
+    "Cryptanalysis",
+    "Integer Factorization",
+    "GPU High-Performance Computing"
+  ],
+  "aiRole": "AI-Assisted",
+  "aiParadigm": "Neural / Deep Learning",
+  "aiSystem": "Anthropic Claude (CADO-NFS GPU Port & Fleet Orchestration)",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 35,
+  "aiTimeToSolve": "10.07 days (~30 GPU-yrs)",
+  "isAnchor": false,
+  "whyItMatters": "Stephen A. Weis used Claude to port CADO-NFS to GPUs and orchestrate 2,048 H100s, factoring the 270-digit RSA-896 challenge number—setting a new public 896-bit integer factoring record.",
+  "summary": "On September 19, 2026, Anthropic researcher Stephen A. Weis published the exact prime factorization of RSA-896, a 270-decimal-digit (896-bit) RSA Factoring Challenge modulus open since 1991. Using Claude to port the CADO-NFS General Number Field Sieve pipeline to NVIDIA H100 GPUs and orchestrate preemptible execution across up to 2,048 idle GPUs, the computation sieved 1.774 billion special-q lattices, gathered 29.08 billion unique relations, and solved a 1.48-billion-row sparse matrix in 10.07 calendar days (~30 GPU-years), extending the public factoring frontier from 862 to 896 bits.",
+  "technicalHighlights": [
+    "Published exact 135-digit prime factors p and q multiplying identically to the 270-digit RSA-896 challenge modulus (trivially and unconditionally verifiable).",
+    "Claude ported CADO-NFS sieving and ECM cofactorization to H100 GPUs and orchestrated distributed runs across up to 256 preemptible 8-GPU nodes over 10.07 calendar days.",
+    "Extended the public integer factorization record from RSA-260 (862 bits) to 896 bits, demonstrating practical vulnerability of legacy RSA-1024 to GPU data-center fleets."
+  ],
+  "caveats": "Does not improve the asymptotic complexity of the General Number Field Sieve (GNFS) and poses no threat to RSA-2048 or larger keys; represents an AI-accelerated HPC engineering and systems breakthrough rather than a new factoring algorithm.",
+  "contributors": [
+    "Stephen A. Weis"
+  ],
+  "institutions": [
+    "Anthropic"
+  ],
+  "scores": {
+    "foundational": 78,
+    "ripple": 85,
+    "verification": 100,
+    "velocity": 92
+  },
+  "scoreRationale": {
+    "foundational": "Sets a landmark 896-bit public integer factoring record on a 35-year-old RSA Factoring Challenge target.",
+    "ripple": "Demonstrates that AI-assisted GPU porting and orchestration bring legacy RSA-1024 well within reach of modern AI data centers.",
+    "verification": "Exact prime factors p and q are publicly posted and unconditionally verified in milliseconds by integer multiplication and primality testing.",
+    "velocity": "Completed a world-record 896-bit GNFS factorization in 10.07 calendar days using AI-ported GPU code on idle cluster capacity."
+  },
+  "enables": [
+    "deepmind-rsa1024-cryptanalysis-agents-2026"
+  ],
+  "sources": [
+    {
+      "label": "Stephen A. Weis — RSA-896 Prime Factors & Full CADO-NFS GPU Computation Report",
+      "url": "https://saweis.net/posts/rsa-896.html",
+      "type": "announcement"
+    },
+    {
+      "label": "Wikipedia — RSA Factoring Challenge (Verified RSA-896 Record)",
+      "url": "https://en.wikipedia.org/wiki/RSA_Factoring_Challenge",
+      "type": "explainer"
+    },
+    {
+      "label": "PostQuantum — RSA-896 Factored With Claude, 16 Days After RSA-260",
+      "url": "https://postquantum.com/security-pqc/rsa-896-factored-claude-gpus/",
+      "type": "explainer"
+    }
+  ]
+}

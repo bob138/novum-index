@@ -46,7 +46,8 @@
     "velocity": "An extraordinary surprise given that most complexity theorists strongly expected ETH to be true."
   },
   "enables": [
-    "deterministic-factoring-lean-2026"
+    "deterministic-factoring-lean-2026",
+    "deterministic-subexp-dlp-2026"
   ],
   "sources": [
     {

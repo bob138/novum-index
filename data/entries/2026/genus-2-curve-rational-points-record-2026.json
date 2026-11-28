@@ -1,0 +1,62 @@
+{
+  "id": "genus-2-curve-rational-points-record-2026",
+  "title": "AI Breaks 2008 Genus-2 Curve Rational Points Record (648 via GPT-6 Astra, 738 via Claude Fable 5.2)",
+  "shortTitle": "Genus-2 Curve Record (648 → 738 pts)",
+  "date": "2026-09-03",
+  "discipline": "Mathematics",
+  "subfields": [
+    "Diophantine Geometry",
+    "Arithmetic Geometry",
+    "Computational Number Theory"
+  ],
+  "aiRole": "Autonomous AI",
+  "aiParadigm": "Neuro-Symbolic",
+  "aiSystem": "OpenAI GPT-6 Astra & Anthropic Claude Fable 5.2",
+  "verificationStatus": "Formally Verified",
+  "yearsUnsolved": 18,
+  "aiTimeToSolve": null,
+  "isAnchor": false,
+  "whyItMatters": "First GPT-6 Astra (648 points) and then Claude Fable 5.2 (738 points, generic S₆ sextic) shattered Elkies & Stoll’s 18-year-old record of 642 rational points on a genus-2 hyperelliptic curve.",
+  "summary": "By Faltings’ theorem, every genus-2 hyperelliptic curve y² = f(x) (deg f = 6) over ℚ has finitely many rational points, and Caporaso–Harris–Mazur conjectured a uniform upper bound whose optimal value remains unknown. In a pre-release evaluation on Epoch AI’s FrontierMath: Open Problems, OpenAI’s GPT-6 Astra autonomously broke Noam Elkies and Michael Stoll’s 2008 record (642 rational points) with an explicit genus-2 curve carrying 648 exact rational points. Two months later, on November 12, 2026, Anthropic’s Claude Fable 5.2 pushed the record dramatically further—discovering a generic (Galois group S₆, no extra automorphisms) genus-2 curve with at least 738 exact rational points, published and verified by MIT’s Andrew Sutherland.",
+  "technicalHighlights": [
+    "GPT-6 Astra autonomously solved Epoch AI’s FrontierMath: Open Problems challenge with a degree-6 integer polynomial yielding 648 exact rational points, beating the 2008 Elkies–Stoll record of 642.",
+    "On November 12, 2026, Claude Fable 5.2 discovered y² = 743425x⁶ − 16144220x⁵ + 60026500x⁴ + 172162750x³ + 40133975x² − 46160230x + 6838225, a generic S₆ genus-2 curve with ≥ 738 exact rational points.",
+    "All point coordinates and squarefree sextic identities are unconditionally verified via exact arbitrary-precision rational arithmetic."
+  ],
+  "caveats": "Provides concrete lower bounds on the maximum number of rational points on genus-2 curves over ℚ rather than resolving the overarching Caporaso–Harris–Mazur uniformity conjecture itself.",
+  "contributors": [
+    "Epoch AI (Evaluation)",
+    "Andrew Sutherland (MIT Verification & Record Hosting)"
+  ],
+  "institutions": [
+    "OpenAI",
+    "Anthropic",
+    "Epoch AI",
+    "MIT"
+  ],
+  "scores": {
+    "foundational": 79,
+    "ripple": 74,
+    "verification": 100,
+    "velocity": 91
+  },
+  "scoreRationale": {
+    "foundational": "Breaks an 18-year-old Diophantine geometry world record twice in one autumn, jumping +96 rational points past Elkies & Stoll (2008) on a generic S₆ curve.",
+    "ripple": "Illustrates autonomous AI mastery of arithmetic-geometric search spaces and provides new extremal testbeds for uniform boundedness conjectures.",
+    "verification": "Every rational coordinate satisfies y² = f(x) identically in exact rational arithmetic; independently hosted and confirmed by MIT’s Andrew Sutherland.",
+    "velocity": "Shattered an 18-year-old human record twice within ten weeks across competing frontier models."
+  },
+  "enables": [],
+  "sources": [
+    {
+      "label": "Epoch AI FrontierMath: Open Problems — Many Rational Points on a Genus-2 Curve (GPT-6 Astra 648 Record)",
+      "url": "https://epoch.ai/frontiermath/open-problems/genus-2-rational-points",
+      "type": "formal-verification"
+    },
+    {
+      "label": "Andrew Sutherland (MIT) — Genus 2 Rational Points Record (Claude Fable 5.2, 738 Points, Nov 12, 2026)",
+      "url": "https://math.mit.edu/~drew/g2ratpoints.html",
+      "type": "formal-verification"
+    }
+  ]
+}
